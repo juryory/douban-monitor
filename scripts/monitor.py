@@ -8,9 +8,10 @@ import urllib.parse
 import urllib.request
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timedelta, timezone
-from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
+
+from playwright.sync_api import sync_playwright
 
 
 CST = timezone(timedelta(hours=8))
@@ -28,6 +29,14 @@ def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
     return datetime.fromisoformat(value)
+
+
+def log_step(title: str) -> None:
+    print(title, flush=True)
+
+
+def log_kv(label: str, value: Any) -> None:
+    print(f"  - {label}: {value}", flush=True)
 
 
 @dataclass
@@ -99,9 +108,7 @@ DEFAULT_CONFIG = {
     "admission_min_rating": 7.5,
     "admission_min_rating_count": 1000,
     "drop_rating_threshold": 7.5,
-    "weak_growth_threshold": 100,
     "realert_cooldown_days": 7,
-    "post_alert_watch_days": 21,
     "high_watch_days": 30,
     "medium_watch_days": 14,
     "low_watch_days": 7,
@@ -113,20 +120,20 @@ DEFAULT_CONFIG = {
     "tmdb_region": "CN",
     "tmdb_movie_pages": 1,
     "tmdb_tv_pages": 1,
-    "douban_weekly_url": "https://m.douban.com/subject_collection/movie_weekly_best",
-    "ptgen_static_base_url": "https://ourbits.github.io/PtGen",
-    "ptgen_api_base_url": "https://api.ourhelp.club/infogen",
+    "douban_collection_urls": [
+        "https://m.douban.com/subject_collection/movie_weekly_best",
+        "https://m.douban.com/subject_collection/tv_chinese_best_weekly",
+        "https://m.douban.com/subject_collection/tv_global_best_weekly",
+        "https://m.douban.com/subject_collection/show_domestic_best_weekly",
+        "https://m.douban.com/subject_collection/show_global_best_weekly",
+    ],
     "request_timeout_seconds": 20,
+    "browser_headless": True,
+    "browser_wait_ms": 5000,
+    "browser_executable_path": "",
     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/123.0 Safari/537.36",
 }
-
-PTGEN_SCORE_KEYS = {"rating", "rate", "score", "average", "douban_rating"}
-PTGEN_COUNT_KEYS = {"rating_count", "vote_count", "votes", "num_raters", "douban_vote_count"}
-PTGEN_TITLE_KEYS = {"title", "name", "chinese_title", "translated_title", "subject_title"}
-PTGEN_YEAR_KEYS = {"year", "release_year"}
-PTGEN_URL_KEYS = {"url", "link", "subject_url", "douban_url"}
-PTGEN_IMDB_KEYS = {"imdb_id", "imdb"}
 
 
 def load_json(path: Path, default: dict[str, Any]) -> dict[str, Any]:
@@ -159,23 +166,6 @@ def candidate_key(candidate: Candidate) -> str:
     return f"{title}:{candidate.category}:{year}"
 
 
-class DoubanWeeklyParser(HTMLParser):
-    def __init__(self) -> None:
-        super().__init__()
-        self.subject_urls: list[str] = []
-
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag != "a":
-            return
-        attr_map = dict(attrs)
-        href = attr_map.get("href")
-        if not href:
-            return
-        if "/movie/subject/" in href or "/subject/" in href:
-            if href not in self.subject_urls:
-                self.subject_urls.append(href)
-
-
 def fetch_url(url: str, config: dict[str, Any]) -> str:
     request = urllib.request.Request(
         url,
@@ -186,10 +176,6 @@ def fetch_url(url: str, config: dict[str, Any]) -> str:
     )
     with urllib.request.urlopen(request, timeout=config["request_timeout_seconds"]) as response:
         return response.read().decode("utf-8", errors="replace")
-
-
-def fetch_json_url(url: str, config: dict[str, Any]) -> dict[str, Any]:
-    return json.loads(fetch_url(url, config))
 
 
 def get_env(name: str, default: str | None = None) -> str | None:
@@ -211,160 +197,235 @@ def normalize_douban_subject_url(url: str) -> tuple[str | None, str]:
     return None, url
 
 
-def parse_rating_count_text(value: Any) -> int | None:
-    if value is None:
-        return None
-    if isinstance(value, (int, float)):
-        return int(value)
-    text = str(value)
-    match = re.search(r"(\d[\d,]*)", text)
+def fetch_page_with_browser(url: str, config: dict[str, Any]) -> str:
+    launch_kwargs: dict[str, Any] = {"headless": bool(config.get("browser_headless", True))}
+    executable_path = str(config.get("browser_executable_path", "")).strip()
+    if executable_path:
+        launch_kwargs["executable_path"] = executable_path
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(**launch_kwargs)
+        context = browser.new_context(
+            locale="zh-CN",
+            timezone_id="Asia/Shanghai",
+            viewport={"width": 1440, "height": 1200},
+            user_agent=config["user_agent"],
+        )
+        page = context.new_page()
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=int(config["request_timeout_seconds"]) * 1000)
+            page.wait_for_timeout(int(config.get("browser_wait_ms", 5000)))
+            try:
+                page.wait_for_load_state("networkidle", timeout=5000)
+            except Exception:
+                pass
+            return page.content()
+        finally:
+            context.close()
+            browser.close()
+
+
+def extract_weekly_candidates_with_browser(url: str, config: dict[str, Any]) -> list[dict[str, str]]:
+    launch_kwargs: dict[str, Any] = {"headless": bool(config.get("browser_headless", True))}
+    executable_path = str(config.get("browser_executable_path", "")).strip()
+    if executable_path:
+        launch_kwargs["executable_path"] = executable_path
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(**launch_kwargs)
+        context = browser.new_context(
+            locale="zh-CN",
+            timezone_id="Asia/Shanghai",
+            viewport={"width": 1440, "height": 1200},
+            user_agent=config["user_agent"],
+        )
+        page = context.new_page()
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=int(config["request_timeout_seconds"]) * 1000)
+            page.wait_for_timeout(int(config.get("browser_wait_ms", 5000)))
+            try:
+                page.wait_for_load_state("networkidle", timeout=5000)
+            except Exception:
+                pass
+
+            return page.evaluate(
+                """
+                () => {
+                  const normalize = (value) => (value || '').replace(/\\s+/g, ' ').trim();
+                  const rows = [];
+                  const seen = new Set();
+
+                  for (const node of document.querySelectorAll('a[href*="/subject/"], a[href*="/movie/subject/"]')) {
+                    const href = node.href || node.getAttribute('href') || '';
+                    if (!href || !/\\/subject\\/\\d+/.test(href)) continue;
+                    const title =
+                      normalize(node.querySelector('img[alt]')?.getAttribute('alt')) ||
+                      normalize(node.getAttribute('title')) ||
+                      normalize(node.innerText) ||
+                      normalize(node.textContent);
+                    if (!seen.has(href)) {
+                      rows.push({ href, title });
+                      seen.add(href);
+                    }
+                  }
+
+                  if (rows.length > 0) return rows;
+
+                  const bodyText = normalize(document.body?.innerText || '');
+                  const lines = bodyText.split('\\n').map(normalize).filter(Boolean);
+                  for (let i = 0; i < lines.length - 2; i++) {
+                    if (!/^\\d+$/.test(lines[i])) continue;
+                    const title = lines[i + 1];
+                    const score = lines[i + 2];
+                    if (!title || !/^\\d+(\\.\\d+)?$/.test(score)) continue;
+                    const key = `title:${title}`;
+                    if (seen.has(key)) continue;
+                    rows.push({ href: '', title });
+                    seen.add(key);
+                  }
+
+                  return rows;
+                }
+                """
+            )
+        finally:
+            context.close()
+            browser.close()
+
+
+def resolve_douban_url_from_search(candidate: Candidate, config: dict[str, Any]) -> Candidate:
+    if candidate.url or not candidate.title:
+        return candidate
+
+    search_url = "https://www.douban.com/search?cat=1002&q=" + urllib.parse.quote(candidate.title)
+    html = fetch_url(search_url, config)
+    match = re.search(r"https?://movie\.douban\.com/subject/\d+/?", html)
     if not match:
-        return None
-    return int(match.group(1).replace(",", ""))
+        return candidate
 
-
-def parse_rating_text(value: Any) -> float | None:
-    if value is None:
-        return None
-    if isinstance(value, (int, float)):
-        return float(value)
-    match = re.search(r"(\d+(?:\.\d+)?)", str(value))
-    if not match:
-        return None
-    rating = float(match.group(1))
-    return rating if 0.0 <= rating <= 10.0 else None
-
-
-def recursive_collect(obj: Any, key_bag: set[str], out: list[Any]) -> None:
-    if isinstance(obj, dict):
-        for key, value in obj.items():
-            if str(key).lower() in key_bag:
-                out.append(value)
-            recursive_collect(value, key_bag, out)
-    elif isinstance(obj, list):
-        for item in obj:
-            recursive_collect(item, key_bag, out)
-
-
-def recursive_find_first_matching_url(obj: Any) -> str | None:
-    if isinstance(obj, dict):
-        for key, value in obj.items():
-            if str(key).lower() in PTGEN_URL_KEYS and isinstance(value, str) and "douban.com/subject/" in value:
-                return value
-            found = recursive_find_first_matching_url(value)
-            if found:
-                return found
-    elif isinstance(obj, list):
-        for item in obj:
-            found = recursive_find_first_matching_url(item)
-            if found:
-                return found
-    elif isinstance(obj, str) and "douban.com/subject/" in obj:
-        return obj
-    return None
-
-
-def recursive_find_imdb_id(obj: Any) -> str | None:
-    if isinstance(obj, dict):
-        for key, value in obj.items():
-            if str(key).lower() in PTGEN_IMDB_KEYS and isinstance(value, str) and value.startswith("tt"):
-                return value
-            found = recursive_find_imdb_id(value)
-            if found:
-                return found
-    elif isinstance(obj, list):
-        for item in obj:
-            found = recursive_find_imdb_id(item)
-            if found:
-                return found
-    elif isinstance(obj, str):
-        match = re.search(r"\btt\d+\b", obj)
-        if match:
-            return match.group(0)
-    return None
-
-
-def parse_ptgen_payload(payload: dict[str, Any], candidate: Candidate) -> Candidate:
-    title_values: list[Any] = []
-    score_values: list[Any] = []
-    count_values: list[Any] = []
-    year_values: list[Any] = []
-
-    recursive_collect(payload, PTGEN_TITLE_KEYS, title_values)
-    recursive_collect(payload, PTGEN_SCORE_KEYS, score_values)
-    recursive_collect(payload, PTGEN_COUNT_KEYS, count_values)
-    recursive_collect(payload, PTGEN_YEAR_KEYS, year_values)
-
-    title = next((str(v).strip() for v in title_values if str(v).strip()), candidate.title)
-    rating = next((parse_rating_text(v) for v in score_values if parse_rating_text(v) is not None), candidate.rating)
-    rating_count = next(
-        (parse_rating_count_text(v) for v in count_values if parse_rating_count_text(v) is not None),
-        candidate.rating_count,
-    )
-    year = next((int(str(v)[:4]) for v in year_values if str(v)[:4].isdigit()), candidate.year)
-
-    subject_url = recursive_find_first_matching_url(payload)
-    imdb_id = recursive_find_imdb_id(payload) or candidate.imdb_id
-    douban_id = candidate.douban_id
-    if subject_url:
-        resolved_douban_id, normalized_url = normalize_douban_subject_url(subject_url)
-        douban_id = resolved_douban_id or douban_id
-        candidate.url = normalized_url
-
-    blob = json.dumps(payload, ensure_ascii=False)
-    if rating is None:
-        score_match = re.search(r"豆瓣评分[^\d]*(\d+(?:\.\d+)?)", blob)
-        if score_match:
-            rating = float(score_match.group(1))
-    if rating_count is None:
-        count_match = re.search(r"(\d[\d,]*)人评价", blob)
-        if count_match:
-            rating_count = int(count_match.group(1).replace(",", ""))
-    if not candidate.url:
-        url_match = re.search(r"https?://(?:movie|www)\.douban\.com/subject/\d+/?", blob)
-        if url_match:
-            resolved_douban_id, normalized_url = normalize_douban_subject_url(url_match.group(0))
-            douban_id = resolved_douban_id or douban_id
-            candidate.url = normalized_url
-
-    candidate.title = title
-    candidate.rating = rating
-    candidate.rating_count = rating_count
-    candidate.year = year
-    candidate.imdb_id = imdb_id
-    candidate.douban_id = douban_id
+    douban_id, normalized_url = normalize_douban_subject_url(match.group(0))
+    candidate.url = normalized_url
+    if douban_id:
+        candidate.douban_id = douban_id
     return candidate
 
 
-def ptgen_fetch_payload(site: str, sid: str, config: dict[str, Any]) -> dict[str, Any]:
-    static_url = f"{config['ptgen_static_base_url'].rstrip('/')}/{site}/{sid}.json"
-    try:
-        return fetch_json_url(static_url, config)
-    except Exception:
-        fallback_url = f"{config['ptgen_api_base_url']}?site={urllib.parse.quote(site)}&sid={urllib.parse.quote(sid)}"
-        try:
-            return fetch_json_url(fallback_url, config)
-        except Exception:
-            return {}
-
-
 def fetch_douban_weekly_candidates_with_config(config: dict[str, Any]) -> list[Candidate]:
-    html = fetch_url(config["douban_weekly_url"], config)
-    parser = DoubanWeeklyParser()
-    parser.feed(html)
     candidates: list[Candidate] = []
-    for raw_url in parser.subject_urls:
-        douban_id, normalized_url = normalize_douban_subject_url(raw_url)
-        candidates.append(
-            Candidate(
-                title=f"douban-subject-{douban_id or 'unknown'}",
-                category="unknown",
-                source="douban_weekly",
-                douban_id=douban_id,
-                url=normalized_url,
+    collection_urls = config.get("douban_collection_urls") or []
+    for collection_url in collection_urls:
+        rows = extract_weekly_candidates_with_browser(str(collection_url), config)
+        category = "unknown"
+        source = "douban_weekly"
+        url_text = str(collection_url)
+        if "movie_" in url_text:
+            category = "movie"
+            source = "douban_movie_weekly"
+        elif "tv_chinese" in url_text:
+            category = "tv"
+            source = "douban_tv_chinese_weekly"
+        elif "tv_global" in url_text:
+            category = "tv"
+            source = "douban_tv_global_weekly"
+        elif "show_domestic" in url_text:
+            category = "variety"
+            source = "douban_show_domestic_weekly"
+        elif "show_global" in url_text:
+            category = "variety"
+            source = "douban_show_global_weekly"
+
+        for row in rows:
+            raw_url = str(row.get("href", "")).strip()
+            title = str(row.get("title", "")).strip()
+            douban_id = None
+            normalized_url = None
+            if raw_url:
+                douban_id, normalized_url = normalize_douban_subject_url(raw_url)
+            candidates.append(
+                Candidate(
+                    title=title or f"douban-subject-{douban_id or 'unknown'}",
+                    category=category,
+                    source=source,
+                    douban_id=douban_id,
+                    url=normalized_url,
+                )
             )
-        )
     return candidates
+
+
+def fetch_douban_subject_detail(candidate: Candidate, config: dict[str, Any]) -> Candidate:
+    candidate = resolve_douban_url_from_search(candidate, config)
+    if not candidate.url and candidate.douban_id:
+        candidate.url = f"https://movie.douban.com/subject/{candidate.douban_id}/"
+    if not candidate.url:
+        return candidate
+
+    html = fetch_url(candidate.url, config)
+
+    title_match = re.search(r"<title>(.*?)</title>", html, re.IGNORECASE | re.DOTALL)
+    if title_match:
+        title = re.sub(r"\s+", " ", title_match.group(1)).strip()
+        title = re.sub(r"\s*\(豆瓣\)\s*$", "", title)
+        if title:
+            candidate.title = title
+
+    rating_match = re.search(r'property="v:average">([^<]+)<', html)
+    if rating_match:
+        try:
+            candidate.rating = float(rating_match.group(1).strip())
+        except ValueError:
+            pass
+
+    count_match = re.search(r'property="v:votes">([^<]+)<', html)
+    if count_match:
+        try:
+            candidate.rating_count = int(count_match.group(1).strip().replace(",", ""))
+        except ValueError:
+            pass
+    if candidate.rating_count is None:
+        count_match = re.search(r"(\d[\d,]*)人评价", html)
+        if count_match:
+            candidate.rating_count = int(count_match.group(1).replace(",", ""))
+
+    year_match = re.search(r"(\d{4})", html)
+    if year_match and candidate.year is None:
+        candidate.year = int(year_match.group(1))
+
+    # Some container environments get redirected to a generic Douban page when using plain HTTP fetch.
+    # In that case, retry the detail page with a browser context and re-parse the rendered HTML.
+    if candidate.rating is None or candidate.rating_count is None or candidate.title == "豆瓣":
+        html = fetch_page_with_browser(candidate.url, config)
+
+        title_match = re.search(r"<title>(.*?)</title>", html, re.IGNORECASE | re.DOTALL)
+        if title_match:
+            title = re.sub(r"\s+", " ", title_match.group(1)).strip()
+            title = re.sub(r"\s*\(豆瓣\)\s*$", "", title)
+            if title:
+                candidate.title = title
+
+        rating_match = re.search(r'property="v:average">([^<]+)<', html)
+        if rating_match:
+            try:
+                candidate.rating = float(rating_match.group(1).strip())
+            except ValueError:
+                pass
+
+        count_match = re.search(r'property="v:votes">([^<]+)<', html)
+        if count_match:
+            try:
+                candidate.rating_count = int(count_match.group(1).strip().replace(",", ""))
+            except ValueError:
+                pass
+        if candidate.rating_count is None:
+            count_match = re.search(r"(\d[\d,]*)人评价", html)
+            if count_match:
+                candidate.rating_count = int(count_match.group(1).replace(",", ""))
+
+        year_match = re.search(r"(\d{4})", html)
+        if year_match and candidate.year is None:
+            candidate.year = int(year_match.group(1))
+
+    return candidate
 
 
 def tmdb_get(path: str, config: dict[str, Any], params: dict[str, Any]) -> dict[str, Any]:
@@ -374,10 +435,7 @@ def tmdb_get(path: str, config: dict[str, Any], params: dict[str, Any]) -> dict[
         return {}
 
     query = dict(params)
-    headers = {
-        "User-Agent": config["user_agent"],
-        "Accept": "application/json",
-    }
+    headers = {"User-Agent": config["user_agent"], "Accept": "application/json"}
     if bearer:
         headers["Authorization"] = f"Bearer {bearer}"
     else:
@@ -389,19 +447,13 @@ def tmdb_get(path: str, config: dict[str, Any], params: dict[str, Any]) -> dict[
         return json.loads(response.read().decode("utf-8"))
 
 
-def tmdb_external_ids(media_type: str, tmdb_id: int, config: dict[str, Any]) -> dict[str, Any]:
-    return tmdb_get(f"/{media_type}/{tmdb_id}/external_ids", config, {})
-
-
-def tmdb_results_to_candidates(media_type: str, payload: dict[str, Any], config: dict[str, Any]) -> list[Candidate]:
+def tmdb_results_to_candidates(media_type: str, payload: dict[str, Any]) -> list[Candidate]:
     results = payload.get("results") or []
     candidates: list[Candidate] = []
     for item in results:
         tmdb_id = item.get("id")
         if tmdb_id is None:
             continue
-        external_ids = tmdb_external_ids(media_type, int(tmdb_id), config)
-        imdb_id = external_ids.get("imdb_id")
         title = item.get("title") or item.get("name") or f"tmdb-{media_type}-{tmdb_id}"
         date_value = item.get("release_date") or item.get("first_air_date") or ""
         year = int(date_value[:4]) if len(date_value) >= 4 and date_value[:4].isdigit() else None
@@ -411,7 +463,6 @@ def tmdb_results_to_candidates(media_type: str, payload: dict[str, Any], config:
                 category="movie" if media_type == "movie" else "tv",
                 source=f"tmdb_{payload.get('_source_name', 'popular')}",
                 tmdb_id=int(tmdb_id),
-                imdb_id=imdb_id,
                 year=year,
             )
         )
@@ -431,30 +482,13 @@ def fetch_tmdb_hot_candidates_with_config(config: dict[str, Any]) -> list[Candid
             payload = tmdb_get(
                 path,
                 config,
-                {
-                    "language": config["tmdb_language"],
-                    "region": config["tmdb_region"],
-                    "page": page,
-                },
+                {"language": config["tmdb_language"], "region": config["tmdb_region"], "page": page},
             )
             if not payload:
                 continue
             payload["_source_name"] = source_name
-            candidates.extend(tmdb_results_to_candidates(media_type, payload, config))
+            candidates.extend(tmdb_results_to_candidates(media_type, payload))
     return candidates
-
-
-def resolve_with_ptgen_config(candidate: Candidate, config: dict[str, Any]) -> Candidate:
-    if candidate.douban_id:
-        payload = ptgen_fetch_payload("douban", candidate.douban_id, config)
-        if payload:
-            return parse_ptgen_payload(payload, candidate)
-        return candidate
-    if candidate.imdb_id:
-        payload = ptgen_fetch_payload("imdb", candidate.imdb_id, config)
-        if payload:
-            return parse_ptgen_payload(payload, candidate)
-    return candidate
 
 
 def enrich_with_tmdb(candidate: Candidate) -> Candidate:
@@ -477,10 +511,6 @@ def dedupe_candidates(candidates: list[Candidate]) -> list[Candidate]:
             existing.url = candidate.url
         if candidate.douban_id:
             existing.douban_id = candidate.douban_id
-        if candidate.imdb_id:
-            existing.imdb_id = candidate.imdb_id
-        if candidate.tmdb_id is not None:
-            existing.tmdb_id = candidate.tmdb_id
     return list(merged.values())
 
 
@@ -495,20 +525,16 @@ def assign_watch_tier(candidate: Candidate, config: dict[str, Any]) -> str:
 
 
 def watch_days_for_tier(tier: str, config: dict[str, Any]) -> int:
-    return {
-        "high": config["high_watch_days"],
-        "medium": config["medium_watch_days"],
-        "low": config["low_watch_days"],
-    }[tier]
+    return {"high": config["high_watch_days"], "medium": config["medium_watch_days"], "low": config["low_watch_days"]}[tier]
 
 
 def admission_reason(candidate: Candidate, config: dict[str, Any]) -> str | None:
     rating = candidate.rating or 0.0
     count = candidate.rating_count or 0
-    if candidate.source == "douban_weekly":
+    if candidate.source.startswith("douban_"):
         return "appeared_on_douban_weekly"
-    if candidate.source.startswith("tmdb") and (candidate.douban_id or candidate.imdb_id):
-        return "appeared_on_tmdb_hot_and_mappable"
+    if candidate.source.startswith("tmdb"):
+        return "appeared_on_tmdb_hot"
     if rating >= config["admission_min_rating"]:
         return "rating_at_least_7_5"
     if count >= config["admission_min_rating_count"]:
@@ -520,12 +546,7 @@ def should_qualify(candidate: Candidate, config: dict[str, Any]) -> bool:
     return (candidate.rating or 0.0) > config["min_rating"] and (candidate.rating_count or 0) > config["min_rating_count"]
 
 
-def update_library(
-    library_data: dict[str, Any],
-    candidates: list[Candidate],
-    config: dict[str, Any],
-    now: datetime,
-) -> dict[str, Any]:
+def update_library(library_data: dict[str, Any], candidates: list[Candidate], config: dict[str, Any], now: datetime) -> dict[str, Any]:
     items = library_data.setdefault("items", {})
     for candidate in candidates:
         reason = admission_reason(candidate, config)
@@ -562,7 +583,6 @@ def update_library(
             )
             items[key] = asdict(item)
             continue
-
         entry["last_discovered_at"] = iso(now)
         entry["last_seen_in_sources_at"] = iso(now)
         entry["watch_tier"] = tier
@@ -575,11 +595,6 @@ def update_library(
             entry["qualified_at"] = iso(now)
         if candidate.source not in entry["sources"]:
             entry["sources"].append(candidate.source)
-        for field_name in ("douban_id", "tmdb_id", "imdb_id", "url", "year"):
-            value = getattr(candidate, field_name)
-            if value is not None:
-                entry[field_name] = value
-
     library_data["updated_at"] = iso(now)
     return library_data
 
@@ -603,16 +618,10 @@ def archive_expired_library_items(library_data: dict[str, Any], config: dict[str
     return library_data
 
 
-def update_state(
-    state_data: dict[str, Any],
-    candidates: list[Candidate],
-    config: dict[str, Any],
-    now: datetime,
-) -> tuple[dict[str, Any], list[Candidate], list[tuple[Candidate, str]]]:
+def update_state(state_data: dict[str, Any], candidates: list[Candidate], config: dict[str, Any], now: datetime) -> tuple[dict[str, Any], list[Candidate], list[tuple[Candidate, str]]]:
     items = state_data.setdefault("items", {})
     new_qualified: list[Candidate] = []
     second_look: list[tuple[Candidate, str]] = []
-
     for candidate in candidates:
         key = candidate.douban_id or candidate_key(candidate)
         entry = items.get(key)
@@ -641,6 +650,9 @@ def update_state(
 
         previous_rating = entry.get("last_rating") or 0.0
         previous_count = entry.get("last_rating_count") or 0
+        entry["title"] = candidate.title
+        entry["category"] = candidate.category
+        entry["url"] = candidate.url
         entry["last_seen_at"] = iso(now)
         entry["last_rating"] = candidate.rating
         entry["last_rating_count"] = candidate.rating_count
@@ -654,10 +666,8 @@ def update_state(
             entry["qualified"] = True
             new_qualified.append(candidate)
             continue
-
         if not qualifies:
             continue
-
         cooldown_cutoff = now - timedelta(days=config["realert_cooldown_days"])
         last_notified_at = parse_dt(entry.get("last_notified_at"))
         if last_notified_at and last_notified_at > cooldown_cutoff:
@@ -665,16 +675,15 @@ def update_state(
 
         trigger: str | None = None
         if (candidate.rating or 0.0) - previous_rating >= config["rating_delta_for_realert"]:
-            trigger = f"rating +{(candidate.rating or 0.0) - previous_rating:.1f} since last alert"
+            trigger = f"评分较上次提醒提升 {(candidate.rating or 0.0) - previous_rating:.1f}"
         elif (candidate.rating_count or 0) - previous_count >= config["rating_count_delta_for_realert"]:
-            trigger = f"rating_count +{(candidate.rating_count or 0) - previous_count} since last alert"
+            trigger = f"评分人数较上次提醒增加 {(candidate.rating_count or 0) - previous_count}"
         else:
             for milestone in config["milestone_counts"]:
                 if previous_count < milestone <= (candidate.rating_count or 0) and milestone not in entry["milestones_notified"]:
                     entry["milestones_notified"].append(milestone)
-                    trigger = f"crossed {milestone} ratings"
+                    trigger = f"评分人数跨过 {milestone}"
                     break
-
         if trigger:
             entry["last_notified_at"] = iso(now)
             entry["notified_stage"] = "second_look"
@@ -684,13 +693,7 @@ def update_state(
     return state_data, new_qualified, second_look
 
 
-def render_report(
-    new_qualified: list[Candidate],
-    second_look: list[tuple[Candidate, str]],
-    observed: list[Candidate],
-    config: dict[str, Any],
-    now: datetime,
-) -> str:
+def render_report(new_qualified: list[Candidate], second_look: list[tuple[Candidate, str]], observed: list[Candidate], config: dict[str, Any], now: datetime) -> str:
     lines = [
         "# 豆瓣高分监控",
         "",
@@ -702,51 +705,40 @@ def render_report(
     if not new_qualified:
         lines.append("- 无")
     for item in new_qualified:
-        lines.extend(
-            [
-                f"- 标题: {item.title}",
-                f"- 类型: {item.category}",
-                f"- 评分: {item.rating}",
-                f"- 评分人数: {item.rating_count}",
-                f"- 链接: {item.url or 'N/A'}",
-                "- 触发原因: 首次达标",
-            ]
-        )
-
+        lines.extend([
+            f"- 标题: {item.title}",
+            f"- 类型: {item.category}",
+            f"- 评分: {item.rating}",
+            f"- 评分人数: {item.rating_count}",
+            f"- 链接: {item.url or 'N/A'}",
+            "- 触发原因: 首次达标",
+        ])
     lines.extend(["", "## 值得二次关注"])
     if not second_look:
         lines.append("- 无")
     for item, trigger in second_look:
-        lines.extend(
-            [
-                f"- 标题: {item.title}",
-                f"- 类型: {item.category}",
-                f"- 评分: {item.rating}",
-                f"- 评分人数: {item.rating_count}",
-                f"- 链接: {item.url or 'N/A'}",
-                f"- 触发原因: {trigger}",
-            ]
-        )
-
+        lines.extend([
+            f"- 标题: {item.title}",
+            f"- 类型: {item.category}",
+            f"- 评分: {item.rating}",
+            f"- 评分人数: {item.rating_count}",
+            f"- 链接: {item.url or 'N/A'}",
+            f"- 触发原因: {trigger}",
+        ])
     lines.extend(["", "## 继续观察"])
     pending = [item for item in observed if not should_qualify(item, config)]
     if not pending:
         lines.append("- 无")
     for item in pending:
-        lines.extend(
-            [
-                f"- 标题: {item.title}",
-                f"- 评分: {item.rating}",
-                f"- 评分人数: {item.rating_count}",
-            ]
-        )
+        lines.extend([
+            f"- 标题: {item.title}",
+            f"- 评分: {item.rating}",
+            f"- 评分人数: {item.rating_count}",
+        ])
     return "\n".join(lines) + "\n"
 
 
-def run(
-    base_dir: Path,
-    config: dict[str, Any] | None = None,
-) -> dict[str, Path]:
+def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]:
     project_root = base_dir.parent
     file_config = load_toml(project_root / "config.toml")
     config = {**DEFAULT_CONFIG, **file_config, **(config or {})}
@@ -759,30 +751,52 @@ def run(
     state_data = load_json(state_path, {"version": 1, "updated_at": None, "items": {}})
     library_data = load_json(library_path, {"version": 1, "updated_at": None, "items": {}})
 
-    candidates: list[Candidate] = []
-    candidates.extend(fetch_douban_weekly_candidates_with_config(config))
-    candidates.extend(fetch_tmdb_hot_candidates_with_config(config))
-    candidates = [enrich_with_tmdb(resolve_with_ptgen_config(item, config)) for item in dedupe_candidates(candidates)]
+    log_step("[1/5] 抓取豆瓣榜单候选...")
+    douban_candidates = fetch_douban_weekly_candidates_with_config(config)
+    log_kv("豆瓣榜单候选数", len(douban_candidates))
 
+    log_step("[2/5] 抓取 TMDB 候选...")
+    tmdb_candidates = fetch_tmdb_hot_candidates_with_config(config)
+    log_kv("TMDB 候选数", len(tmdb_candidates))
+
+    log_step("[3/5] 去重并补详情页...")
+    candidates: list[Candidate] = []
+    candidates.extend(douban_candidates)
+    candidates.extend(tmdb_candidates)
+    deduped_candidates = dedupe_candidates(candidates)
+    log_kv("去重后候选数", len(deduped_candidates))
+    candidates = [enrich_with_tmdb(fetch_douban_subject_detail(item, config)) for item in deduped_candidates]
+    detail_ready = sum(1 for item in candidates if item.url)
+    rating_ready = sum(1 for item in candidates if item.rating is not None)
+    rating_count_ready = sum(1 for item in candidates if item.rating_count is not None)
+    log_kv("已有详情页链接", detail_ready)
+    log_kv("已获取评分", rating_ready)
+    log_kv("已获取评分人数", rating_count_ready)
+
+    log_step("[4/5] 更新状态与监控库...")
     library_data = update_library(library_data, candidates, config, now)
     library_data = archive_expired_library_items(library_data, config, now)
     state_data, new_qualified, second_look = update_state(state_data, candidates, config, now)
-
     report = render_report(new_qualified, second_look, candidates, config, now)
+    pending_count = sum(1 for item in candidates if not should_qualify(item, config))
+    log_kv("新增命中", len(new_qualified))
+    log_kv("值得二次关注", len(second_look))
+    log_kv("继续观察", pending_count)
+    log_kv("监控库条目数", len(library_data.get("items", {})))
+    log_kv("状态条目数", len(state_data.get("items", {})))
 
+    log_step("[5/5] 写入文件...")
     save_json(state_path, state_data)
     save_json(library_path, library_data)
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(report, encoding="utf-8")
 
-    return {
-        "state_path": state_path,
-        "library_path": library_path,
-        "report_path": report_path,
-    }
+    log_kv("状态文件", state_path)
+    log_kv("监控库文件", library_path)
+    log_kv("报告文件", report_path)
+
+    return {"state_path": state_path, "library_path": library_path, "report_path": report_path}
 
 
 if __name__ == "__main__":
-    result = run(Path(__file__).resolve().parent)
-    for name, path in result.items():
-        print(f"{name}: {path}")
+    run(Path(__file__).resolve().parent)
