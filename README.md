@@ -26,6 +26,13 @@
 - 国内综艺
 - 国外综艺
 
+当前版本已经验证可用的榜单类型：
+
+- 电影
+- 华语剧集
+- 全球剧集
+- 国外综艺
+
 ## 目录结构
 
 - `SKILL.md`
@@ -72,11 +79,11 @@ apt-get update && apt-get install -y libnspr4 libnss3 libatk1.0-0 libdbus-1-3 li
 ## 配置建议
 
 - `SKILL.md`
-  放监控规则、默认行为、入库和退库逻辑
+  放监控规则、默认行为、已知限制和后续扩展方向
 - `.env`
   只放密钥或敏感环境变量，例如 `TMDB_API_KEY`
 - `config.toml`
-  放非敏感运行参数，例如阈值、观察期、多榜单候选源地址、请求页数和浏览器参数
+  放非敏感运行参数，例如阈值、观察期、多榜单候选源地址和浏览器参数
 
 ## 运行方式
 
@@ -91,3 +98,27 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 - `data/douban-monitor-state.json`
 - `data/douban-monitor-library.json`
 - `reports/douban-monitor-YYYYMMDD.md`
+
+## 当前状态
+
+当前版本已经具备这些能力：
+
+- 多榜单候选抓取
+- 榜单点击补详情页链接
+- 豆瓣详情页评分和评分人数核验
+- 状态文件与监控库维护
+- Markdown 报告生成
+- 新增命中与继续观察判定
+
+## 已知限制
+
+- 国内综艺榜单尚未完成适配
+- 少量详情页在当前环境下可能无法稳定提取评分或评分人数
+- 未配置 `TMDB_API_KEY` 时，TMDB 候选源不会生效
+- 未配置豆瓣 Cookie 时，不依赖豆瓣搜索页补链接
+
+## 后续方向
+
+- 支持豆瓣 Cookie，提升抓取稳定性
+- 接入 MoviePilot，实现命中内容自动推送或下载
+- 生成适合公众号发布的内容稿件

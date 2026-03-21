@@ -5,14 +5,14 @@
 ## 当前模块职责
 
 - `extract_weekly_candidates_with_browser(...)`
-  使用 Playwright 打开豆瓣榜单页，从浏览器 DOM 中提取候选标题和详情页线索。
+  使用 Playwright 打开豆瓣榜单页，从浏览器 DOM 中提取候选标题。
 
-- `resolve_douban_url_from_search(...)`
-  当榜单页没有直接详情链接时，用豆瓣搜索结果补详情页链接。
+- `resolve_candidate_urls_from_collection_page(...)`
+  对没有直链的榜单候选，直接在榜单页内点击对应卡片，回填详情页链接。
 
 - `fetch_douban_subject_detail(...)`
   访问豆瓣详情页，提取标题、评分、评分人数和年份。
-  如果普通 HTML 请求拿不到关键字段，会自动回退到浏览器抓取详情页。
+  如果普通 HTML 请求拿不到关键字段，会自动回退到浏览器抓取。
 
 - `fetch_tmdb_hot_candidates_with_config(...)`
   调用 TMDB 热门接口获取补充候选。
@@ -64,5 +64,18 @@ apt-get update && apt-get install -y libnspr4 libnss3 libatk1.0-0 libdbus-1-3 li
   豆瓣详情页
 - 抓取分层
   榜单页走浏览器，详情页走 HTML，必要时浏览器兜底
+- 补链接策略
+  优先使用榜单页卡片点击补详情页链接
 - TMDB 作用
   补充展示元数据，不覆盖豆瓣评分和评分人数
+
+当前已验证：
+
+- 电影榜
+- 华语剧集榜
+- 全球剧集榜
+- 国外综艺榜
+
+待单独适配：
+
+- 国内综艺榜

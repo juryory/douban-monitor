@@ -186,6 +186,12 @@ def get_env(name: str, default: str | None = None) -> str | None:
 
 
 def normalize_douban_subject_url(url: str) -> tuple[str | None, str]:
+    if "sec.douban.com/c?" in url:
+        parsed = urllib.parse.urlparse(url)
+        query = urllib.parse.parse_qs(parsed.query)
+        redirect = query.get("r", [None])[0]
+        if redirect:
+            url = urllib.parse.unquote(redirect)
     if url.startswith("//"):
         url = "https:" + url
     elif url.startswith("/"):
@@ -225,6 +231,64 @@ def fetch_page_with_browser(url: str, config: dict[str, Any]) -> str:
             browser.close()
 
 
+def resolve_candidate_urls_from_collection_page(
+    collection_url: str,
+    rows: list[dict[str, str]],
+    config: dict[str, Any],
+) -> list[dict[str, str]]:
+    unresolved_titles = [row["title"] for row in rows if row.get("title") and not row.get("href")]
+    if not unresolved_titles:
+        return rows
+
+    launch_kwargs: dict[str, Any] = {"headless": bool(config.get("browser_headless", True))}
+    executable_path = str(config.get("browser_executable_path", "")).strip()
+    if executable_path:
+        launch_kwargs["executable_path"] = executable_path
+
+    resolved_map: dict[str, str] = {}
+    with sync_playwright() as p:
+        browser = p.chromium.launch(**launch_kwargs)
+        context = browser.new_context(
+            locale="zh-CN",
+            timezone_id="Asia/Shanghai",
+            viewport={"width": 1440, "height": 1200},
+            user_agent=config["user_agent"],
+        )
+        page = context.new_page()
+        try:
+            page.goto(collection_url, wait_until="domcontentloaded", timeout=int(config["request_timeout_seconds"]) * 1000)
+            page.wait_for_timeout(int(config.get("browser_wait_ms", 5000)))
+            try:
+                page.wait_for_load_state("networkidle", timeout=5000)
+            except Exception:
+                pass
+
+            for title in unresolved_titles:
+                try:
+                    locator = page.get_by_text(title, exact=True).first
+                    if locator.count() == 0:
+                        continue
+                    with context.expect_page(timeout=8000) as new_page_info:
+                        locator.click()
+                    detail_page = new_page_info.value
+                    try:
+                        detail_page.wait_for_load_state("domcontentloaded", timeout=8000)
+                    except Exception:
+                        pass
+                    resolved_map[title] = detail_page.url
+                    detail_page.close()
+                except Exception:
+                    continue
+        finally:
+            context.close()
+            browser.close()
+
+    for row in rows:
+        if not row.get("href") and row.get("title") in resolved_map:
+            row["href"] = resolved_map[row["title"]]
+    return rows
+
+
 def extract_weekly_candidates_with_browser(url: str, config: dict[str, Any]) -> list[dict[str, str]]:
     launch_kwargs: dict[str, Any] = {"headless": bool(config.get("browser_headless", True))}
     executable_path = str(config.get("browser_executable_path", "")).strip()
@@ -248,31 +312,15 @@ def extract_weekly_candidates_with_browser(url: str, config: dict[str, Any]) -> 
             except Exception:
                 pass
 
-            return page.evaluate(
+            rows = page.evaluate(
                 """
                 () => {
                   const normalize = (value) => (value || '').replace(/\\s+/g, ' ').trim();
                   const rows = [];
                   const seen = new Set();
 
-                  for (const node of document.querySelectorAll('a[href*="/subject/"], a[href*="/movie/subject/"]')) {
-                    const href = node.href || node.getAttribute('href') || '';
-                    if (!href || !/\\/subject\\/\\d+/.test(href)) continue;
-                    const title =
-                      normalize(node.querySelector('img[alt]')?.getAttribute('alt')) ||
-                      normalize(node.getAttribute('title')) ||
-                      normalize(node.innerText) ||
-                      normalize(node.textContent);
-                    if (!seen.has(href)) {
-                      rows.push({ href, title });
-                      seen.add(href);
-                    }
-                  }
-
-                  if (rows.length > 0) return rows;
-
-                  const bodyText = normalize(document.body?.innerText || '');
-                  const lines = bodyText.split('\\n').map(normalize).filter(Boolean);
+                  const rawText = document.body?.innerText || '';
+                  const lines = rawText.split('\\n').map(line => normalize(line)).filter(Boolean);
                   for (let i = 0; i < lines.length - 2; i++) {
                     if (!/^\\d+$/.test(lines[i])) continue;
                     const title = lines[i + 1];
@@ -284,10 +332,32 @@ def extract_weekly_candidates_with_browser(url: str, config: dict[str, Any]) -> 
                     seen.add(key);
                   }
 
+                  const textMap = new Map(rows.map(item => [item.title, item]));
+
+                  for (const node of document.querySelectorAll('a[href*="/subject/"], a[href*="/movie/subject/"]')) {
+                    const href = node.href || node.getAttribute('href') || '';
+                    if (!href || !/\\/subject\\/\\d+/.test(href)) continue;
+                    const title =
+                      normalize(node.querySelector('img[alt]')?.getAttribute('alt')) ||
+                      normalize(node.getAttribute('title')) ||
+                      normalize(node.innerText) ||
+                      normalize(node.textContent);
+                    if (!title) continue;
+                    if (textMap.has(title)) {
+                      textMap.get(title).href = href;
+                      continue;
+                    }
+                    if (!seen.has(href)) {
+                      rows.push({ href, title });
+                      seen.add(href);
+                    }
+                  }
+
                   return rows;
                 }
                 """
             )
+            return rows if isinstance(rows, list) else []
         finally:
             context.close()
             browser.close()
@@ -298,7 +368,7 @@ def resolve_douban_url_from_search(candidate: Candidate, config: dict[str, Any])
         return candidate
 
     search_url = "https://www.douban.com/search?cat=1002&q=" + urllib.parse.quote(candidate.title)
-    html = fetch_url(search_url, config)
+    html = fetch_page_with_browser(search_url, config)
     match = re.search(r"https?://movie\.douban\.com/subject/\d+/?", html)
     if not match:
         return candidate
@@ -315,6 +385,7 @@ def fetch_douban_weekly_candidates_with_config(config: dict[str, Any]) -> list[C
     collection_urls = config.get("douban_collection_urls") or []
     for collection_url in collection_urls:
         rows = extract_weekly_candidates_with_browser(str(collection_url), config)
+        rows = resolve_candidate_urls_from_collection_page(str(collection_url), rows, config)
         category = "unknown"
         source = "douban_weekly"
         url_text = str(collection_url)
@@ -391,8 +462,6 @@ def fetch_douban_subject_detail(candidate: Candidate, config: dict[str, Any]) ->
     if year_match and candidate.year is None:
         candidate.year = int(year_match.group(1))
 
-    # Some container environments get redirected to a generic Douban page when using plain HTTP fetch.
-    # In that case, retry the detail page with a browser context and re-parse the rendered HTML.
     if candidate.rating is None or candidate.rating_count is None or candidate.title == "豆瓣":
         html = fetch_page_with_browser(candidate.url, config)
 
@@ -503,6 +572,8 @@ def dedupe_candidates(candidates: list[Candidate]) -> list[Candidate]:
         if not existing:
             merged[key] = candidate
             continue
+        if candidate.title and (not existing.title or existing.title.startswith("douban-subject-")):
+            existing.title = candidate.title
         if candidate.rating is not None:
             existing.rating = candidate.rating
         if candidate.rating_count is not None:
@@ -583,6 +654,9 @@ def update_library(library_data: dict[str, Any], candidates: list[Candidate], co
             )
             items[key] = asdict(item)
             continue
+        entry["title"] = candidate.title
+        entry["category"] = candidate.category
+        entry["url"] = candidate.url
         entry["last_discovered_at"] = iso(now)
         entry["last_seen_in_sources_at"] = iso(now)
         entry["watch_tier"] = tier
@@ -790,7 +864,6 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     save_json(library_path, library_data)
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(report, encoding="utf-8")
-
     log_kv("状态文件", state_path)
     log_kv("监控库文件", library_path)
     log_kv("报告文件", report_path)
