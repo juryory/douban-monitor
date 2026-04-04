@@ -1,5 +1,8 @@
 # 豆瓣高分监控示例配置
 
+# 运行模式: "lite" (Frodo API, 无需浏览器) 或 "full" (Playwright 浏览器)
+mode = "lite"
+
 # 最终提醒阈值
 min_rating = 8.0
 min_rating_count = 3000

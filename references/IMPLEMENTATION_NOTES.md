@@ -4,6 +4,25 @@
 
 ## 当前模块职责
 
+### 轻量模式（Frodo API）
+
+- `frodo_get(...)`
+  调用豆瓣 Frodo API，自动完成 HMAC-SHA1 签名。
+
+- `fetch_douban_collection_via_frodo(...)`
+  通过 Frodo API 获取豆瓣榜单候选列表。
+
+- `fetch_douban_subject_detail_via_frodo(...)`
+  通过 Frodo API 获取条目详情（评分、评分人数、标题、年份）。
+
+- `fetch_douban_weekly_candidates_lite(...)`
+  轻量模式下的榜单候选抓取入口。
+
+- `fetch_douban_subject_detail_lite(...)`
+  轻量模式下的详情补全入口。
+
+### 完整模式（浏览器）
+
 - `extract_weekly_candidates_with_browser(...)`
   使用 Playwright 打开豆瓣榜单页，从浏览器 DOM 中提取候选标题。
 
@@ -13,6 +32,8 @@
 - `fetch_douban_subject_detail(...)`
   访问豆瓣详情页，提取标题、评分、评分人数和年份。
   如果普通 HTML 请求拿不到关键字段，会自动回退到浏览器抓取。
+
+### 通用模块
 
 - `fetch_tmdb_hot_candidates_with_config(...)`
   调用 TMDB 热门接口获取补充候选。
@@ -28,19 +49,20 @@
 
 ## Python 依赖
 
-- `playwright`
+轻量模式不需要额外依赖，仅使用 Python 标准库。
 
-安装示例：
+完整模式需要 `playwright`：
 
 ```bash
-pip install -r requirements.txt
+pip install playwright
 python -m playwright install chromium
 ```
 
 ## Linux 容器依赖
 
-完整模式要求容器内具备浏览器自动化运行环境。
+轻量模式不需要任何系统级依赖。
 
+完整模式要求容器内具备浏览器自动化运行环境。
 如果使用 Playwright 自带 Chromium，通常需要额外安装 Linux 系统库，例如：
 
 ```bash
