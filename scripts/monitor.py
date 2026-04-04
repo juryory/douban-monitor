@@ -1,8 +1,12 @@
 from __future__ import annotations
 
+import base64
+import hashlib
+import hmac
 import json
 import os
 import re
+import time
 import tomllib
 import urllib.parse
 import urllib.request
@@ -11,7 +15,10 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
-from playwright.sync_api import sync_playwright
+try:
+    from playwright.sync_api import sync_playwright
+except ImportError:
+    sync_playwright = None  # type: ignore[assignment,misc]
 
 
 CST = timezone(timedelta(hours=8))
@@ -103,6 +110,7 @@ class StateItem:
 
 
 DEFAULT_CONFIG = {
+    "mode": "lite",
     "min_rating": 8.0,
     "min_rating_count": 3000,
     "admission_min_rating": 7.5,
@@ -185,6 +193,95 @@ def get_env(name: str, default: str | None = None) -> str | None:
     return value.strip()
 
 
+# ---------------------------------------------------------------------------
+# Douban Frodo API (mobile/mini-program internal API)
+# ---------------------------------------------------------------------------
+
+_FRODO_BASE = "https://frodo.douban.com/api/v2"
+_FRODO_API_KEY = "0dad551ec0f84ed02907ff5c42e8ec70"
+_FRODO_SECRET = "bf7dddc7c9cfe6f7"
+_FRODO_UA = (
+    "api-client/1 com.douban.frodo/7.22.0.beta9(231) Android/33 "
+    "product/lark model/sdk_gphone64_arm64 brand/google  "
+    "rom/android  network/wifi  platform/AndroidPad"
+)
+
+
+def _frodo_sign(method: str, url_path: str, ts: str) -> str:
+    raw = "&".join([method.upper(), urllib.parse.quote(url_path, safe=""), ts])
+    sig = hmac.new(_FRODO_SECRET.encode(), raw.encode(), hashlib.sha1).digest()
+    return base64.b64encode(sig).decode()
+
+
+def frodo_get(path: str, params: dict[str, Any] | None = None, config: dict[str, Any] | None = None) -> dict[str, Any]:
+    """Call Douban Frodo API with proper signing."""
+    timeout = (config or {}).get("request_timeout_seconds", 20)
+    ts = str(int(time.time()))
+    query: dict[str, Any] = {
+        "apiKey": _FRODO_API_KEY,
+        "os_rom": "android",
+        "_ts": ts,
+    }
+    if params:
+        query.update(params)
+    query["_sig"] = _frodo_sign("GET", path, ts)
+
+    url = f"{_FRODO_BASE}{path}?{urllib.parse.urlencode(query)}"
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": _FRODO_UA,
+            "Accept": "application/json",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_douban_collection_via_frodo(collection_id: str, config: dict[str, Any]) -> list[dict[str, Any]]:
+    """Fetch items from a Douban subject_collection using Frodo API.
+
+    Returns list of raw item dicts from the API.
+    """
+    all_items: list[dict[str, Any]] = []
+    start = 0
+    count = 20
+    while True:
+        data = frodo_get(
+            f"/subject_collection/{collection_id}/items",
+            params={"start": start, "count": count},
+            config=config,
+        )
+        items = data.get("subject_collection_items") or []
+        if not items:
+            break
+        all_items.extend(items)
+        total = data.get("total", 0)
+        start += count
+        if start >= total:
+            break
+        time.sleep(0.5)
+    return all_items
+
+
+def fetch_douban_subject_detail_via_frodo(douban_id: str, config: dict[str, Any]) -> dict[str, Any]:
+    """Fetch subject detail (rating, rating_count, title, year) via Frodo API."""
+    try:
+        return frodo_get(f"/movie/{douban_id}", config=config)
+    except Exception:
+        try:
+            return frodo_get(f"/tv/{douban_id}", config=config)
+        except Exception:
+            return {}
+
+
+def _require_playwright() -> None:
+    if sync_playwright is None:
+        raise RuntimeError(
+            "完整模式需要 playwright，请执行: pip install playwright && python -m playwright install chromium"
+        )
+
+
 def normalize_douban_subject_url(url: str) -> tuple[str | None, str]:
     if "sec.douban.com/c?" in url:
         parsed = urllib.parse.urlparse(url)
@@ -204,6 +301,7 @@ def normalize_douban_subject_url(url: str) -> tuple[str | None, str]:
 
 
 def fetch_page_with_browser(url: str, config: dict[str, Any]) -> str:
+    _require_playwright()
     launch_kwargs: dict[str, Any] = {"headless": bool(config.get("browser_headless", True))}
     executable_path = str(config.get("browser_executable_path", "")).strip()
     if executable_path:
@@ -422,6 +520,91 @@ def fetch_douban_weekly_candidates_with_config(config: dict[str, Any]) -> list[C
                 )
             )
     return candidates
+
+
+def _collection_id_from_url(url: str) -> str:
+    """Extract collection id like 'movie_weekly_best' from the full URL."""
+    match = re.search(r"subject_collection/([^/?#]+)", url)
+    return match.group(1) if match else url
+
+
+def _category_and_source_from_collection(url_text: str) -> tuple[str, str]:
+    """Determine category and source tag from collection URL."""
+    if "movie_" in url_text:
+        return "movie", "douban_movie_weekly"
+    if "tv_chinese" in url_text:
+        return "tv", "douban_tv_chinese_weekly"
+    if "tv_global" in url_text:
+        return "tv", "douban_tv_global_weekly"
+    if "show_domestic" in url_text:
+        return "variety", "douban_show_domestic_weekly"
+    if "show_global" in url_text:
+        return "variety", "douban_show_global_weekly"
+    return "unknown", "douban_weekly"
+
+
+def fetch_douban_weekly_candidates_lite(config: dict[str, Any]) -> list[Candidate]:
+    """Fetch weekly candidates via Frodo API (no browser needed)."""
+    candidates: list[Candidate] = []
+    collection_urls = config.get("douban_collection_urls") or []
+    for collection_url in collection_urls:
+        url_text = str(collection_url)
+        collection_id = _collection_id_from_url(url_text)
+        category, source = _category_and_source_from_collection(url_text)
+        try:
+            items = fetch_douban_collection_via_frodo(collection_id, config)
+        except Exception as exc:
+            log_kv(f"Frodo 榜单 {collection_id} 失败", str(exc))
+            continue
+        for item in items:
+            subject = item if "id" in item else item.get("subject") or item
+            douban_id = str(subject.get("id", "")).strip() or None
+            title = subject.get("title") or ""
+            rating_info = subject.get("rating") or {}
+            rating_val = rating_info.get("value")
+            rating_count = rating_info.get("count")
+            year_str = subject.get("year") or ""
+            year = int(year_str) if year_str and year_str.isdigit() else None
+            url = f"https://movie.douban.com/subject/{douban_id}/" if douban_id else None
+            candidates.append(
+                Candidate(
+                    title=title or f"douban-subject-{douban_id or 'unknown'}",
+                    category=category,
+                    source=source,
+                    douban_id=douban_id,
+                    url=url,
+                    year=year,
+                    rating=float(rating_val) if rating_val else None,
+                    rating_count=int(rating_count) if rating_count else None,
+                )
+            )
+        time.sleep(0.5)
+    return candidates
+
+
+def fetch_douban_subject_detail_lite(candidate: Candidate, config: dict[str, Any]) -> Candidate:
+    """Fetch subject detail via Frodo API (no browser needed)."""
+    if not candidate.douban_id:
+        return candidate
+    if not candidate.url:
+        candidate.url = f"https://movie.douban.com/subject/{candidate.douban_id}/"
+    data = fetch_douban_subject_detail_via_frodo(candidate.douban_id, config)
+    if not data:
+        return candidate
+    title = data.get("title")
+    if title:
+        candidate.title = title
+    rating_info = data.get("rating") or {}
+    rating_val = rating_info.get("value")
+    rating_count = rating_info.get("count")
+    if rating_val is not None:
+        candidate.rating = float(rating_val)
+    if rating_count is not None:
+        candidate.rating_count = int(rating_count)
+    year_str = data.get("year") or ""
+    if year_str and year_str.isdigit() and candidate.year is None:
+        candidate.year = int(year_str)
+    return candidate
 
 
 def fetch_douban_subject_detail(candidate: Candidate, config: dict[str, Any]) -> Candidate:
@@ -818,6 +1001,12 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     config = {**DEFAULT_CONFIG, **file_config, **(config or {})}
     now = now_cst()
 
+    mode = str(config.get("mode", "lite")).strip().lower()
+    use_lite = mode != "full"
+    if not use_lite:
+        _require_playwright()
+    log_step(f"运行模式: {'轻量 (Frodo API)' if use_lite else '完整 (浏览器)'}")
+
     state_path = project_root / "data" / "douban-monitor-state.json"
     library_path = project_root / "data" / "douban-monitor-library.json"
     report_path = project_root / "reports" / f"douban-monitor-{now.strftime('%Y%m%d')}.md"
@@ -826,7 +1015,10 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     library_data = load_json(library_path, {"version": 1, "updated_at": None, "items": {}})
 
     log_step("[1/5] 抓取豆瓣榜单候选...")
-    douban_candidates = fetch_douban_weekly_candidates_with_config(config)
+    if use_lite:
+        douban_candidates = fetch_douban_weekly_candidates_lite(config)
+    else:
+        douban_candidates = fetch_douban_weekly_candidates_with_config(config)
     log_kv("豆瓣榜单候选数", len(douban_candidates))
 
     log_step("[2/5] 抓取 TMDB 候选...")
@@ -839,7 +1031,17 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     candidates.extend(tmdb_candidates)
     deduped_candidates = dedupe_candidates(candidates)
     log_kv("去重后候选数", len(deduped_candidates))
-    candidates = [enrich_with_tmdb(fetch_douban_subject_detail(item, config)) for item in deduped_candidates]
+    if use_lite:
+        enriched: list[Candidate] = []
+        for item in deduped_candidates:
+            if item.rating is not None and item.rating_count is not None:
+                enriched.append(enrich_with_tmdb(item))
+            else:
+                enriched.append(enrich_with_tmdb(fetch_douban_subject_detail_lite(item, config)))
+                time.sleep(0.3)
+        candidates = enriched
+    else:
+        candidates = [enrich_with_tmdb(fetch_douban_subject_detail(item, config)) for item in deduped_candidates]
     detail_ready = sum(1 for item in candidates if item.url)
     rating_ready = sum(1 for item in candidates if item.rating is not None)
     rating_count_ready = sum(1 for item in candidates if item.rating_count is not None)
