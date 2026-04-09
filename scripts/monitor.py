@@ -1076,12 +1076,22 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     python = sys.executable
     posters_script = base_dir / "fetch_posters.py"
     metadata_script = base_dir / "fetch_metadata.py"
-    if posters_script.exists():
-        log_kv("运行", "fetch_posters.py")
-        subprocess.run([python, str(posters_script)], cwd=str(project_root))
-    if metadata_script.exists():
-        log_kv("运行", "fetch_metadata.py")
-        subprocess.run([python, str(metadata_script)], cwd=str(project_root))
+    for script_name in ("fetch_posters.py", "fetch_metadata.py"):
+        script_path = base_dir / script_name
+        if not script_path.exists():
+            continue
+        log_kv("运行", script_name)
+        result = subprocess.run(
+            [python, str(script_path)],
+            cwd=str(project_root),
+            capture_output=True, text=True,
+        )
+        if result.stdout:
+            print(result.stdout, end="", flush=True)
+        if result.returncode != 0:
+            log_kv(f"{script_name} 失败 (exit {result.returncode})", "")
+            if result.stderr:
+                print(result.stderr, end="", flush=True)
 
     log_step("[7/7] 提交并推送到 GitHub...")
     git_kw = {"cwd": str(project_root), "capture_output": True, "text": True}
