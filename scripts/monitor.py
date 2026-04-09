@@ -6,6 +6,8 @@ import hmac
 import json
 import os
 import re
+import subprocess
+import sys
 import time
 import tomllib
 import urllib.parse
@@ -1014,18 +1016,18 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     state_data = load_json(state_path, {"version": 1, "updated_at": None, "items": {}})
     library_data = load_json(library_path, {"version": 1, "updated_at": None, "items": {}})
 
-    log_step("[1/5] 抓取豆瓣榜单候选...")
+    log_step("[1/7] 抓取豆瓣榜单候选...")
     if use_lite:
         douban_candidates = fetch_douban_weekly_candidates_lite(config)
     else:
         douban_candidates = fetch_douban_weekly_candidates_with_config(config)
     log_kv("豆瓣榜单候选数", len(douban_candidates))
 
-    log_step("[2/5] 抓取 TMDB 候选...")
+    log_step("[2/7] 抓取 TMDB 候选...")
     tmdb_candidates = fetch_tmdb_hot_candidates_with_config(config)
     log_kv("TMDB 候选数", len(tmdb_candidates))
 
-    log_step("[3/5] 去重并补详情页...")
+    log_step("[3/7] 去重并补详情页...")
     candidates: list[Candidate] = []
     candidates.extend(douban_candidates)
     candidates.extend(tmdb_candidates)
@@ -1049,7 +1051,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     log_kv("已获取评分", rating_ready)
     log_kv("已获取评分人数", rating_count_ready)
 
-    log_step("[4/5] 更新状态与监控库...")
+    log_step("[4/7] 更新状态与监控库...")
     library_data = update_library(library_data, candidates, config, now)
     library_data = archive_expired_library_items(library_data, config, now)
     state_data, new_qualified, second_look = update_state(state_data, candidates, config, now)
@@ -1061,7 +1063,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     log_kv("监控库条目数", len(library_data.get("items", {})))
     log_kv("状态条目数", len(state_data.get("items", {})))
 
-    log_step("[5/5] 写入文件...")
+    log_step("[5/7] 写入文件...")
     save_json(state_path, state_data)
     save_json(library_path, library_data)
     report_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1069,6 +1071,32 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     log_kv("状态文件", state_path)
     log_kv("监控库文件", library_path)
     log_kv("报告文件", report_path)
+
+    log_step("[6/7] 生成网页数据（封面 + 元数据）...")
+    python = sys.executable
+    posters_script = base_dir / "fetch_posters.py"
+    metadata_script = base_dir / "fetch_metadata.py"
+    if posters_script.exists():
+        log_kv("运行", "fetch_posters.py")
+        subprocess.run([python, str(posters_script)], cwd=str(project_root))
+    if metadata_script.exists():
+        log_kv("运行", "fetch_metadata.py")
+        subprocess.run([python, str(metadata_script)], cwd=str(project_root))
+
+    log_step("[7/7] 提交并推送到 GitHub...")
+    git_kw = {"cwd": str(project_root), "capture_output": True, "text": True}
+    subprocess.run(["git", "add", "data/", "reports/"], **git_kw)
+    diff = subprocess.run(["git", "diff", "--cached", "--quiet"], **git_kw)
+    if diff.returncode != 0:
+        msg = f"data: 更新监控数据 {now.strftime('%Y-%m-%d %H:%M')}"
+        subprocess.run(["git", "commit", "-m", msg], **git_kw)
+        push = subprocess.run(["git", "push"], **git_kw)
+        if push.returncode == 0:
+            log_kv("推送", "成功")
+        else:
+            log_kv("推送失败", push.stderr.strip())
+    else:
+        log_kv("跳过", "数据无变化，无需提交")
 
     return {"state_path": state_path, "library_path": library_path, "report_path": report_path}
 
