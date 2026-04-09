@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "Bash(where:*)",
+      "Bash(echo exit: $?:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(grep -r \"APScheduler\\\\|schedule\\\\|cron\\\\|@hourly\\\\|@daily\\\\|interval\" /c/Users/EgonHomePC/Documents/GitHub/douban-monitor/*.py)",
+      "Bash(git push:*)"
+    ]
+  }
+}
