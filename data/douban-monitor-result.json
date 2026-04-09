@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-04-09T09:00:03.249763+08:00",
+  "run_at": "2026-04-10T01:46:13.221855+08:00",
   "total": 190,
   "qualified": [
     {
@@ -7,7 +7,7 @@
       "category": "movie",
       "douban_id": "35010610",
       "rating": 8.6,
-      "rating_count": 317426,
+      "rating_count": 321063,
       "year": "",
       "url": "https://movie.douban.com/subject/35010610/"
     },
@@ -16,7 +16,7 @@
       "category": "movie",
       "douban_id": "36394612",
       "rating": 8.0,
-      "rating_count": 13933,
+      "rating_count": 14028,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36394612/"
     },
@@ -25,7 +25,7 @@
       "category": "movie",
       "douban_id": "36176155",
       "rating": 8.0,
-      "rating_count": 236630,
+      "rating_count": 236958,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36176155/"
     },
@@ -34,7 +34,7 @@
       "category": "movie",
       "douban_id": "37312482",
       "rating": 8.1,
-      "rating_count": 9502,
+      "rating_count": 9599,
       "year": "2025",
       "url": "https://movie.douban.com/subject/37312482/"
     },
@@ -43,7 +43,7 @@
       "category": "movie",
       "douban_id": "26817136",
       "rating": 8.3,
-      "rating_count": 759177,
+      "rating_count": 759819,
       "year": "2025",
       "url": "https://movie.douban.com/subject/26817136/"
     },
@@ -52,7 +52,7 @@
       "category": "movie",
       "douban_id": "36919136",
       "rating": 8.1,
-      "rating_count": 5180,
+      "rating_count": 5214,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36919136/"
     },
@@ -61,7 +61,7 @@
       "category": "movie",
       "douban_id": "36207047",
       "rating": 8.1,
-      "rating_count": 4651,
+      "rating_count": 4710,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36207047/"
     },
@@ -70,7 +70,7 @@
       "category": "tv",
       "douban_id": "36317421",
       "rating": 8.3,
-      "rating_count": 147632,
+      "rating_count": 147969,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36317421/"
     },
@@ -79,7 +79,7 @@
       "category": "tv",
       "douban_id": "36363991",
       "rating": 8.4,
-      "rating_count": 114370,
+      "rating_count": 114614,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36363991/"
     },
@@ -88,7 +88,7 @@
       "category": "tv",
       "douban_id": "36714178",
       "rating": 8.8,
-      "rating_count": 16758,
+      "rating_count": 16987,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36714178/"
     },
@@ -97,7 +97,7 @@
       "category": "tv",
       "douban_id": "35424715",
       "rating": 8.3,
-      "rating_count": 315494,
+      "rating_count": 315719,
       "year": "2026",
       "url": "https://movie.douban.com/subject/35424715/"
     },
@@ -106,7 +106,7 @@
       "category": "tv",
       "douban_id": "36829083",
       "rating": 9.0,
-      "rating_count": 13019,
+      "rating_count": 13217,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36829083/"
     },
@@ -114,8 +114,8 @@
       "title": "真相捕捉 第三季",
       "category": "tv",
       "douban_id": "37168326",
-      "rating": 9.1,
-      "rating_count": 6093,
+      "rating": 9.0,
+      "rating_count": 6228,
       "year": "2026",
       "url": "https://movie.douban.com/subject/37168326/"
     },
@@ -124,7 +124,7 @@
       "category": "tv",
       "douban_id": "35341071",
       "rating": 8.9,
-      "rating_count": 44952,
+      "rating_count": 45132,
       "year": "2026",
       "url": "https://movie.douban.com/subject/35341071/"
     },
@@ -133,7 +133,7 @@
       "category": "tv",
       "douban_id": "37134598",
       "rating": 9.0,
-      "rating_count": 6483,
+      "rating_count": 6617,
       "year": "2026",
       "url": "https://movie.douban.com/subject/37134598/"
     },
@@ -142,7 +142,7 @@
       "category": "tv",
       "douban_id": "36559697",
       "rating": 8.7,
-      "rating_count": 13177,
+      "rating_count": 13292,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36559697/"
     },
@@ -151,34 +151,34 @@
       "category": "tv",
       "douban_id": "36803607",
       "rating": 9.3,
-      "rating_count": 6545,
+      "rating_count": 6668,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36803607/"
-    },
-    {
-      "title": "匹兹堡医护前线 第二季",
-      "category": "tv",
-      "douban_id": "37239408",
-      "rating": 9.2,
-      "rating_count": 11280,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/37239408/"
     },
     {
       "title": "戴洛奇小镇 第二季",
       "category": "tv",
       "douban_id": "36955778",
       "rating": 8.6,
-      "rating_count": 3929,
+      "rating_count": 4064,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36955778/"
+    },
+    {
+      "title": "匹兹堡医护前线 第二季",
+      "category": "tv",
+      "douban_id": "37239408",
+      "rating": 9.2,
+      "rating_count": 11370,
+      "year": "2026",
+      "url": "https://movie.douban.com/subject/37239408/"
     },
     {
       "title": "真相捕捉 第三季",
       "category": "tv",
       "douban_id": "37168326",
-      "rating": 9.1,
-      "rating_count": 6093,
+      "rating": 9.0,
+      "rating_count": 6228,
       "year": "",
       "url": "https://movie.douban.com/subject/37168326/"
     },
@@ -187,7 +187,7 @@
       "category": "tv",
       "douban_id": "37239408",
       "rating": 9.2,
-      "rating_count": 11280,
+      "rating_count": 11370,
       "year": "",
       "url": "https://movie.douban.com/subject/37239408/"
     },
@@ -196,7 +196,7 @@
       "category": "tv",
       "douban_id": "36955778",
       "rating": 8.6,
-      "rating_count": 3929,
+      "rating_count": 4064,
       "year": "",
       "url": "https://movie.douban.com/subject/36955778/"
     },
@@ -205,16 +205,25 @@
       "category": "tv",
       "douban_id": "36559697",
       "rating": 8.7,
-      "rating_count": 13177,
+      "rating_count": 13292,
       "year": "",
       "url": "https://movie.douban.com/subject/36559697/"
+    },
+    {
+      "title": "心动密码",
+      "category": "tv",
+      "douban_id": "37657523",
+      "rating": 9.0,
+      "rating_count": 3003,
+      "year": "",
+      "url": "https://movie.douban.com/subject/37657523/"
     },
     {
       "title": "四个愿望",
       "category": "show",
       "douban_id": "38188936",
       "rating": 9.4,
-      "rating_count": 4712,
+      "rating_count": 4730,
       "year": "",
       "url": "https://movie.douban.com/subject/38188936/"
     },
@@ -223,7 +232,7 @@
       "category": "show",
       "douban_id": "37233693",
       "rating": 8.0,
-      "rating_count": 7702,
+      "rating_count": 7716,
       "year": "",
       "url": "https://movie.douban.com/subject/37233693/"
     },
@@ -232,7 +241,7 @@
       "category": "show",
       "douban_id": "37407388",
       "rating": 8.2,
-      "rating_count": 38791,
+      "rating_count": 38841,
       "year": "2025",
       "url": "https://movie.douban.com/subject/37407388/"
     },
@@ -241,7 +250,7 @@
       "category": "show",
       "douban_id": "37233693",
       "rating": 8.0,
-      "rating_count": 7702,
+      "rating_count": 7716,
       "year": "2026",
       "url": "https://movie.douban.com/subject/37233693/"
     },
@@ -250,7 +259,7 @@
       "category": "show",
       "douban_id": "38188936",
       "rating": 9.4,
-      "rating_count": 4712,
+      "rating_count": 4730,
       "year": "2026",
       "url": "https://movie.douban.com/subject/38188936/"
     },
@@ -259,7 +268,7 @@
       "category": "show",
       "douban_id": "37835662",
       "rating": 9.1,
-      "rating_count": 8565,
+      "rating_count": 8579,
       "year": "2025",
       "url": "https://movie.douban.com/subject/37835662/"
     },
@@ -268,7 +277,7 @@
       "category": "show",
       "douban_id": "36598430",
       "rating": 9.1,
-      "rating_count": 5926,
+      "rating_count": 5931,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36598430/"
     },
@@ -277,7 +286,7 @@
       "category": "show",
       "douban_id": "36754329",
       "rating": 9.0,
-      "rating_count": 5937,
+      "rating_count": 5945,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36754329/"
     },
@@ -286,7 +295,7 @@
       "category": "show",
       "douban_id": "36829129",
       "rating": 8.5,
-      "rating_count": 4537,
+      "rating_count": 4540,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36829129/"
     }
