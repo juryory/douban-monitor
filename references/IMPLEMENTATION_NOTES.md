@@ -47,6 +47,16 @@
 - `render_report(...)`
   输出每日 Markdown 报告。
 
+### 网页数据生成
+
+- `fetch_posters.py`
+  从 TMDB 获取封面图 URL。查找策略：Frodo API 取 IMDB ID → TMDB `/find/{imdb_id}`（最准确）→ TMDB 标题模糊搜索（逐步简化标题，去除季数后缀，拆分中外文混合词）。
+  输出：`data/douban-monitor-posters.json`
+
+- `fetch_metadata.py`
+  从 TMDB 获取 original_title、overview、genres、runtime、release_date。使用与 fetch_posters.py 相同的 IMDB→TMDB 查找策略。
+  输出：`data/douban-monitor-metadata.json`
+
 ## Python 依赖
 
 轻量模式不需要额外依赖，仅使用 Python 标准库。
@@ -90,14 +100,15 @@ apt-get update && apt-get install -y libnspr4 libnss3 libatk1.0-0 libdbus-1-3 li
   优先使用榜单页卡片点击补详情页链接
 - TMDB 作用
   补充展示元数据，不覆盖豆瓣评分和评分人数
+- 网页数据生成
+  `fetch_posters.py` 和 `fetch_metadata.py` 从 TMDB 获取封面和元数据，供 `index.html` 展示
+- 数据版本管理
+  `data/` 和 `reports/` 目录已纳入 Git 跟踪，每次运行后自动提交推送
 
 当前已验证：
 
 - 电影榜
 - 华语剧集榜
 - 全球剧集榜
-- 国外综艺榜
-
-待单独适配：
-
 - 国内综艺榜
+- 国外综艺榜

@@ -95,7 +95,10 @@
     /* ── Tabs ── */
     .tabs {
       display: flex; gap: 6px; flex-wrap: wrap;
-      margin-bottom: 24px;
+      position: sticky; top: 54px; z-index: 99;
+      background: rgba(9,9,9,0.88);
+      backdrop-filter: blur(16px);
+      padding: 12px 0; margin: 0 0 16px;
     }
     .tab {
       display: inline-flex; align-items: center; gap: 7px;
@@ -252,8 +255,25 @@
       max-width: 560px; white-space: pre-wrap; word-break: break-all;
     }
 
+    /* ── Back to top ── */
+    .back-top {
+      position: fixed; bottom: 24px; right: 24px; z-index: 200;
+      width: 44px; height: 44px; border-radius: 50%;
+      border: 1px solid var(--line);
+      background: rgba(18,18,18,0.85);
+      backdrop-filter: blur(12px);
+      color: var(--accent); font-size: 1.2rem;
+      cursor: pointer; display: none;
+      align-items: center; justify-content: center;
+      transition: transform 0.2s, border-color 0.2s;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    .back-top:hover { transform: translateY(-2px); border-color: var(--accent); }
+    .back-top.show { display: flex; }
+
     @media (max-width: 600px) {
       header { padding: 12px 16px; }
+      .tabs { top: 46px; padding: 8px 0; }
       main   { padding: 16px 12px 56px; }
     }
   </style>
@@ -283,9 +303,15 @@
   <div class="grid" id="grid" style="display:none"></div>
 </main>
 
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
+
 <script>
+  // ── Back to top ────────────────────────────────────────────────────────────
+  window.addEventListener('scroll', () => {
+    document.getElementById('backTop').classList.toggle('show', window.scrollY > 400);
+  });
+
   // ── Masonry ────────────────────────────────────────────────────────────────
-  const MIN_COL = 210;
   const GAP = 14;
   let masonryTimer;
 
@@ -297,7 +323,9 @@
     const W = grid.offsetWidth;
     if (!W) return;
 
-    const numCols = Math.max(1, Math.floor((W + GAP) / (MIN_COL + GAP)));
+    // 小屏时降低最小列宽以保证至少 2 列
+    const minCol = W < 420 ? Math.floor((W - GAP) / 2) : 210;
+    const numCols = Math.max(2, Math.floor((W + GAP) / (minCol + GAP)));
     const colW    = Math.floor((W - (numCols - 1) * GAP) / numCols);
     const heights = new Array(numCols).fill(0);
 
