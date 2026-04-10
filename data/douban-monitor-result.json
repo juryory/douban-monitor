@@ -1,184 +1,31 @@
 {
-  "run_at": "2026-04-10T09:00:06.936167+08:00",
-  "total": 189,
+  "run_at": "2026-04-10T18:35:04.128234+08:00",
+  "total": 106,
   "qualified": [
     {
       "title": "挽救计划",
       "category": "movie",
       "douban_id": "35010610",
       "rating": 8.6,
-      "rating_count": 321323,
+      "rating_count": 322671,
       "year": "",
       "url": "https://movie.douban.com/subject/35010610/"
     },
     {
-      "title": "你好，爱美丽",
+      "title": "我，许可",
       "category": "movie",
-      "douban_id": "36394612",
-      "rating": 8.0,
-      "rating_count": 14036,
-      "year": "2025",
-      "url": "https://movie.douban.com/subject/36394612/"
-    },
-    {
-      "title": "一战再战",
-      "category": "movie",
-      "douban_id": "36176155",
-      "rating": 8.0,
-      "rating_count": 236997,
-      "year": "2025",
-      "url": "https://movie.douban.com/subject/36176155/"
-    },
-    {
-      "title": "爱上平行时空的你",
-      "category": "movie",
-      "douban_id": "37312482",
-      "rating": 8.1,
-      "rating_count": 9606,
-      "year": "2025",
-      "url": "https://movie.douban.com/subject/37312482/"
-    },
-    {
-      "title": "疯狂动物城2",
-      "category": "movie",
-      "douban_id": "26817136",
+      "douban_id": "37332784",
       "rating": 8.3,
-      "rating_count": 759884,
-      "year": "2025",
-      "url": "https://movie.douban.com/subject/26817136/"
-    },
-    {
-      "title": "爱的证明",
-      "category": "movie",
-      "douban_id": "36919136",
-      "rating": 8.1,
-      "rating_count": 5219,
-      "year": "2025",
-      "url": "https://movie.douban.com/subject/36919136/"
-    },
-    {
-      "title": "诗人",
-      "category": "movie",
-      "douban_id": "36207047",
-      "rating": 8.1,
-      "rating_count": 4715,
-      "year": "2025",
-      "url": "https://movie.douban.com/subject/36207047/"
-    },
-    {
-      "title": "太平年",
-      "category": "tv",
-      "douban_id": "36317421",
-      "rating": 8.3,
-      "rating_count": 147995,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/36317421/"
-    },
-    {
-      "title": "爱情怎么翻译？",
-      "category": "tv",
-      "douban_id": "36363991",
-      "rating": 8.4,
-      "rating_count": 114644,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/36363991/"
-    },
-    {
-      "title": "生命树",
-      "category": "tv",
-      "douban_id": "35424715",
-      "rating": 8.3,
-      "rating_count": 315734,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/35424715/"
-    },
-    {
-      "title": "咒术回战 第三季",
-      "category": "tv",
-      "douban_id": "36714178",
-      "rating": 8.8,
-      "rating_count": 17016,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/36714178/"
-    },
-    {
-      "title": "葬送的芙莉莲 第二季",
-      "category": "tv",
-      "douban_id": "36829083",
-      "rating": 9.0,
-      "rating_count": 13235,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/36829083/"
+      "rating_count": 122444,
+      "year": "",
+      "url": "https://movie.douban.com/subject/37332784/"
     },
     {
       "title": "真相捕捉 第三季",
       "category": "tv",
       "douban_id": "37168326",
       "rating": 9.0,
-      "rating_count": 6243,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/37168326/"
-    },
-    {
-      "title": "相反的你和我",
-      "category": "tv",
-      "douban_id": "37134598",
-      "rating": 9.0,
-      "rating_count": 6629,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/37134598/"
-    },
-    {
-      "title": "七王国的骑士 第一季",
-      "category": "tv",
-      "douban_id": "35341071",
-      "rating": 8.9,
-      "rating_count": 45154,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/35341071/"
-    },
-    {
-      "title": "海贼王(真人版) 第二季",
-      "category": "tv",
-      "douban_id": "36559697",
-      "rating": 8.7,
-      "rating_count": 13301,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/36559697/"
-    },
-    {
-      "title": "异国日记",
-      "category": "tv",
-      "douban_id": "36803607",
-      "rating": 9.3,
-      "rating_count": 6682,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/36803607/"
-    },
-    {
-      "title": "戴洛奇小镇 第二季",
-      "category": "tv",
-      "douban_id": "36955778",
-      "rating": 8.6,
-      "rating_count": 4076,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/36955778/"
-    },
-    {
-      "title": "匹兹堡医护前线 第二季",
-      "category": "tv",
-      "douban_id": "37239408",
-      "rating": 9.2,
-      "rating_count": 11382,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/37239408/"
-    },
-    {
-      "title": "真相捕捉 第三季",
-      "category": "tv",
-      "douban_id": "37168326",
-      "rating": 9.0,
-      "rating_count": 6243,
+      "rating_count": 6295,
       "year": "",
       "url": "https://movie.douban.com/subject/37168326/"
     },
@@ -187,7 +34,7 @@
       "category": "tv",
       "douban_id": "37239408",
       "rating": 9.2,
-      "rating_count": 11382,
+      "rating_count": 11437,
       "year": "",
       "url": "https://movie.douban.com/subject/37239408/"
     },
@@ -196,7 +43,7 @@
       "category": "tv",
       "douban_id": "36955778",
       "rating": 8.6,
-      "rating_count": 4076,
+      "rating_count": 4115,
       "year": "",
       "url": "https://movie.douban.com/subject/36955778/"
     },
@@ -205,7 +52,7 @@
       "category": "tv",
       "douban_id": "36559697",
       "rating": 8.7,
-      "rating_count": 13301,
+      "rating_count": 13348,
       "year": "",
       "url": "https://movie.douban.com/subject/36559697/"
     },
@@ -214,90 +61,18 @@
       "category": "tv",
       "douban_id": "37657523",
       "rating": 9.0,
-      "rating_count": 3007,
+      "rating_count": 3016,
       "year": "",
       "url": "https://movie.douban.com/subject/37657523/"
     },
     {
       "title": "四个愿望",
-      "category": "show",
+      "category": "variety",
       "douban_id": "38188936",
       "rating": 9.4,
-      "rating_count": 4732,
+      "rating_count": 4735,
       "year": "",
       "url": "https://movie.douban.com/subject/38188936/"
-    },
-    {
-      "title": "单身即地狱 第五季",
-      "category": "show",
-      "douban_id": "37233693",
-      "rating": 8.0,
-      "rating_count": 7721,
-      "year": "",
-      "url": "https://movie.douban.com/subject/37233693/"
-    },
-    {
-      "title": "现在就出发 第三季",
-      "category": "show",
-      "douban_id": "37407388",
-      "rating": 8.2,
-      "rating_count": 38847,
-      "year": "2025",
-      "url": "https://movie.douban.com/subject/37407388/"
-    },
-    {
-      "title": "单身即地狱 第五季",
-      "category": "show",
-      "douban_id": "37233693",
-      "rating": 8.0,
-      "rating_count": 7721,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/37233693/"
-    },
-    {
-      "title": "四个愿望",
-      "category": "show",
-      "douban_id": "38188936",
-      "rating": 9.4,
-      "rating_count": 4732,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/38188936/"
-    },
-    {
-      "title": "请回答1988 十周年MT",
-      "category": "show",
-      "douban_id": "37835662",
-      "rating": 9.1,
-      "rating_count": 8580,
-      "year": "2025",
-      "url": "https://movie.douban.com/subject/37835662/"
-    },
-    {
-      "title": "豆豆笑笑",
-      "category": "show",
-      "douban_id": "36754329",
-      "rating": 9.0,
-      "rating_count": 5945,
-      "year": "2025",
-      "url": "https://movie.douban.com/subject/36754329/"
-    },
-    {
-      "title": "犯罪现场 Zero",
-      "category": "show",
-      "douban_id": "36598430",
-      "rating": 9.1,
-      "rating_count": 5931,
-      "year": "2025",
-      "url": "https://movie.douban.com/subject/36598430/"
-    },
-    {
-      "title": "三傻游肯尼亚",
-      "category": "show",
-      "douban_id": "36829129",
-      "rating": 8.5,
-      "rating_count": 4540,
-      "year": "2025",
-      "url": "https://movie.douban.com/subject/36829129/"
     }
   ],
   "status": "has_qualified"
