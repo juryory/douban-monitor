@@ -51,7 +51,13 @@ def _load_json(path: Path) -> dict | list:
 
 def _fetch_subject(douban_id: str) -> dict | None:
     """Fetch movie/tv details from Douban Frodo API."""
-    for ep, cat in (("/movie/" + douban_id, "movie"), ("/tv/" + douban_id, "tv")):
+    # Try multiple endpoints: /subject/ (universal), /movie/, /tv/
+    endpoints = [
+        (f"/subject/{douban_id}", None),
+        (f"/movie/{douban_id}", "movie"),
+        (f"/tv/{douban_id}", "tv"),
+    ]
+    for ep, forced_cat in endpoints:
         try:
             d = frodo_get(ep)
             title = d.get("title", "")
@@ -61,11 +67,24 @@ def _fetch_subject(douban_id: str) -> dict | None:
             rating = rating_obj.get("value")
             rating_count = rating_obj.get("count")
             year_str = str(d.get("year") or "")
+
+            # Determine category
+            if forced_cat:
+                category = forced_cat
+            else:
+                subtype = d.get("subtype") or d.get("type") or ""
+                if subtype in ("movie",):
+                    category = "movie"
+                elif subtype in ("tv",):
+                    category = "tv"
+                else:
+                    category = "movie"
+
             # Check if it's actually a variety show
-            category = cat
             genres = [g.get("name", "") for g in (d.get("genres") or [])]
-            if cat == "tv" and any(k in " ".join(genres) for k in ("真人秀", "综艺", "脱口秀")):
+            if category == "tv" and any(k in " ".join(genres) for k in ("真人秀", "综艺", "脱口秀")):
                 category = "variety"
+
             return {
                 "title": title,
                 "category": category,
