@@ -1,6 +1,79 @@
 {
-  "run_at": "2026-04-10T22:01:55.551290+08:00",
-  "total": 66,
-  "qualified": [],
-  "status": "no_qualified"
+  "run_at": "2026-04-10T22:04:44.802874+08:00",
+  "total": 107,
+  "qualified": [
+    {
+      "title": "挽救计划",
+      "category": "movie",
+      "douban_id": "35010610",
+      "rating": 8.6,
+      "rating_count": 323997,
+      "year": "",
+      "url": "https://movie.douban.com/subject/35010610/"
+    },
+    {
+      "title": "我，许可",
+      "category": "movie",
+      "douban_id": "37332784",
+      "rating": 8.3,
+      "rating_count": 124172,
+      "year": "",
+      "url": "https://movie.douban.com/subject/37332784/"
+    },
+    {
+      "title": "真相捕捉 第三季",
+      "category": "tv",
+      "douban_id": "37168326",
+      "rating": 9.0,
+      "rating_count": 6324,
+      "year": "",
+      "url": "https://movie.douban.com/subject/37168326/"
+    },
+    {
+      "title": "匹兹堡医护前线 第二季",
+      "category": "tv",
+      "douban_id": "37239408",
+      "rating": 9.2,
+      "rating_count": 11462,
+      "year": "",
+      "url": "https://movie.douban.com/subject/37239408/"
+    },
+    {
+      "title": "戴洛奇小镇 第二季",
+      "category": "tv",
+      "douban_id": "36955778",
+      "rating": 8.6,
+      "rating_count": 4140,
+      "year": "",
+      "url": "https://movie.douban.com/subject/36955778/"
+    },
+    {
+      "title": "海贼王(真人版) 第二季",
+      "category": "tv",
+      "douban_id": "36559697",
+      "rating": 8.7,
+      "rating_count": 13378,
+      "year": "",
+      "url": "https://movie.douban.com/subject/36559697/"
+    },
+    {
+      "title": "心动密码",
+      "category": "tv",
+      "douban_id": "37657523",
+      "rating": 9.0,
+      "rating_count": 3020,
+      "year": "",
+      "url": "https://movie.douban.com/subject/37657523/"
+    },
+    {
+      "title": "四个愿望",
+      "category": "variety",
+      "douban_id": "38188936",
+      "rating": 9.4,
+      "rating_count": 4740,
+      "year": "",
+      "url": "https://movie.douban.com/subject/38188936/"
+    }
+  ],
+  "status": "has_qualified"
 }
