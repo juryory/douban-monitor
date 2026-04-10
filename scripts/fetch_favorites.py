@@ -52,6 +52,7 @@ def _load_json(path: Path) -> dict | list:
 def _fetch_subject(douban_id: str) -> dict | None:
     """Fetch movie/tv details from Douban Frodo API."""
     # Try multiple endpoints: /subject/ (universal), /movie/, /tv/
+    last_err = None
     endpoints = [
         (f"/subject/{douban_id}", None),
         (f"/movie/{douban_id}", "movie"),
@@ -95,8 +96,11 @@ def _fetch_subject(douban_id: str) -> dict | None:
                 "url": f"https://movie.douban.com/subject/{douban_id}/",
                 "imdb_id": str(d.get("imdb") or d.get("imdb_id") or "").strip() or None,
             }
-        except Exception:
+        except Exception as e:
+            last_err = e
             continue
+    if last_err:
+        print(f"  (错误: {last_err})", end="", flush=True)
     return None
 
 
