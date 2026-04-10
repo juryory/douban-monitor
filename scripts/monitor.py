@@ -1199,8 +1199,16 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
             if result.stderr:
                 print(result.stderr, end="", flush=True)
 
-    log_step("[8/8] 提交并推送到 GitHub...")
+    log_step("[8/8] 同步并推送到 GitHub...")
     git_kw = {"cwd": str(project_root), "capture_output": True, "text": True}
+
+    # 先拉取远端最新，避免 push 被拒绝
+    pull = subprocess.run(["git", "pull", "--rebase", "--autostash"], **git_kw)
+    if pull.returncode == 0:
+        log_kv("拉取", "成功")
+    else:
+        log_kv("拉取失败", (pull.stderr or "").strip())
+
     subprocess.run(["git", "add", "data/", "reports/"], **git_kw)
     diff = subprocess.run(["git", "diff", "--cached", "--quiet"], **git_kw)
     if diff.returncode != 0:
@@ -1210,7 +1218,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
         if push.returncode == 0:
             log_kv("推送", "成功")
         else:
-            log_kv("推送失败", push.stderr.strip())
+            log_kv("推送失败", (push.stderr or "").strip())
     else:
         log_kv("跳过", "数据无变化，无需提交")
 

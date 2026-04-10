@@ -67,8 +67,8 @@
 3. 去重并补全详情页，提取评分和评分人数
 4. 更新状态与监控库，判定新增命中、继续观察和二次提醒
 5. 写入状态文件、监控库和 Markdown 报告
-6. 生成网页数据：调用 `fetch_posters.py` 获取封面、`fetch_metadata.py` 获取元数据
-7. 提交数据变更并推送到 GitHub
+6. 生成网页数据：调用 `fetch_posters.py` 获取封面、`fetch_metadata.py` 获取元数据、`fetch_reviews.py` 获取豆瓣短评
+7. 拉取远端最新代码，提交数据变更并推送到 GitHub
 
 ## 可视化网页
 
