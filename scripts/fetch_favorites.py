@@ -11,8 +11,10 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import time
+import urllib.request
 from pathlib import Path
 
 _ROOT = Path(__file__).parent.parent
@@ -50,15 +52,88 @@ def _load_json(path: Path) -> dict | list:
 
 
 def _fetch_subject(douban_id: str) -> dict | None:
-    """Fetch movie/tv details from Douban Frodo API."""
-    # Try multiple endpoints: /subject/ (universal), /movie/, /tv/
-    last_err = None
-    endpoints = [
-        (f"/subject/{douban_id}", None),
-        (f"/movie/{douban_id}", "movie"),
-        (f"/tv/{douban_id}", "tv"),
-    ]
-    for ep, forced_cat in endpoints:
+    """Fetch movie/tv details from Douban HTML page + Frodo API fallback."""
+
+    # Method 1: HTML scraping (most reliable for arbitrary IDs)
+    url = f"https://movie.douban.com/subject/{douban_id}/"
+    try:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                          "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+        })
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+
+        # Title
+        title_m = re.search(r'<title>(.*?)</title>', html, re.DOTALL)
+        title = ""
+        if title_m:
+            title = re.sub(r'\s+', ' ', title_m.group(1)).strip()
+            title = re.sub(r'\s*\(豆瓣\)\s*$', '', title).strip()
+
+        if not title:
+            print("  (HTML无标题)", end="", flush=True)
+            return None
+
+        # Rating
+        rating = None
+        rating_m = re.search(r'property="v:average">([^<]+)<', html)
+        if rating_m:
+            try:
+                rating = float(rating_m.group(1).strip())
+            except ValueError:
+                pass
+
+        # Rating count
+        rating_count = None
+        count_m = re.search(r'property="v:votes">([^<]+)<', html)
+        if count_m:
+            try:
+                rating_count = int(count_m.group(1).strip().replace(",", ""))
+            except ValueError:
+                pass
+        if rating_count is None:
+            count_m2 = re.search(r'(\d[\d,]*)人评价', html)
+            if count_m2:
+                rating_count = int(count_m2.group(1).replace(",", ""))
+
+        # Year
+        year_str = ""
+        year_m = re.search(r'<span class="year">\((\d{4})\)</span>', html)
+        if year_m:
+            year_str = year_m.group(1)
+
+        # Category: check if it's a TV series or variety show
+        category = "movie"
+        if re.search(r'<span class="pl">集数:</span>|<span class="pl">单集片长:</span>', html):
+            category = "tv"
+        genre_m = re.findall(r'property="v:genre">([^<]+)<', html)
+        genres_text = " ".join(genre_m)
+        if any(k in genres_text for k in ("真人秀", "综艺", "脱口秀")):
+            category = "variety"
+
+        # IMDB ID
+        imdb_id = None
+        imdb_m = re.search(r'(tt\d{7,})', html)
+        if imdb_m:
+            imdb_id = imdb_m.group(1)
+
+        return {
+            "title": title,
+            "category": category,
+            "douban_id": douban_id,
+            "rating": rating,
+            "rating_count": rating_count,
+            "year": year_str,
+            "url": url,
+            "imdb_id": imdb_id,
+        }
+    except Exception as e:
+        print(f"  (HTML: {e})", end="", flush=True)
+
+    # Method 2: Frodo API fallback
+    for ep, cat in ((f"/movie/{douban_id}", "movie"), (f"/tv/{douban_id}", "tv")):
         try:
             d = frodo_get(ep)
             title = d.get("title", "")
@@ -68,24 +143,10 @@ def _fetch_subject(douban_id: str) -> dict | None:
             rating = rating_obj.get("value")
             rating_count = rating_obj.get("count")
             year_str = str(d.get("year") or "")
-
-            # Determine category
-            if forced_cat:
-                category = forced_cat
-            else:
-                subtype = d.get("subtype") or d.get("type") or ""
-                if subtype in ("movie",):
-                    category = "movie"
-                elif subtype in ("tv",):
-                    category = "tv"
-                else:
-                    category = "movie"
-
-            # Check if it's actually a variety show
+            category = cat
             genres = [g.get("name", "") for g in (d.get("genres") or [])]
-            if category == "tv" and any(k in " ".join(genres) for k in ("真人秀", "综艺", "脱口秀")):
+            if cat == "tv" and any(k in " ".join(genres) for k in ("真人秀", "综艺", "脱口秀")):
                 category = "variety"
-
             return {
                 "title": title,
                 "category": category,
@@ -96,11 +157,8 @@ def _fetch_subject(douban_id: str) -> dict | None:
                 "url": f"https://movie.douban.com/subject/{douban_id}/",
                 "imdb_id": str(d.get("imdb") or d.get("imdb_id") or "").strip() or None,
             }
-        except Exception as e:
-            last_err = e
+        except Exception:
             continue
-    if last_err:
-        print(f"  (错误: {last_err})", end="", flush=True)
     return None
 
 
