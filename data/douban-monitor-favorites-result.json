@@ -1,3 +1,85 @@
 {
-  "qualified": []
+  "qualified": [
+    {
+      "title": "非穷尽列举",
+      "category": "movie",
+      "douban_id": "37293378",
+      "rating": 9.2,
+      "rating_count": 69323,
+      "year": "2025",
+      "url": "https://movie.douban.com/subject/37293378/"
+    },
+    {
+      "title": "巴黎夏日",
+      "category": "movie",
+      "douban_id": "36742572",
+      "rating": 8.1,
+      "rating_count": 28899,
+      "year": "2025",
+      "url": "https://movie.douban.com/subject/36742572/"
+    },
+    {
+      "title": "好孩子",
+      "category": "movie",
+      "douban_id": "36085606",
+      "rating": 8.0,
+      "rating_count": 3143,
+      "year": "2025",
+      "url": "https://movie.douban.com/subject/36085606/"
+    },
+    {
+      "title": "妥瑞氏与我",
+      "category": "movie",
+      "douban_id": "36860441",
+      "rating": 8.3,
+      "rating_count": 4027,
+      "year": "2025",
+      "url": "https://movie.douban.com/subject/36860441/"
+    },
+    {
+      "title": "超时空辉夜姬！",
+      "category": "movie",
+      "douban_id": "37825206",
+      "rating": 8.3,
+      "rating_count": 21639,
+      "year": "2026",
+      "url": "https://movie.douban.com/subject/37825206/"
+    },
+    {
+      "title": "世界的主人",
+      "category": "movie",
+      "douban_id": "37116612",
+      "rating": 9.0,
+      "rating_count": 4123,
+      "year": "2025",
+      "url": "https://movie.douban.com/subject/37116612/"
+    },
+    {
+      "title": "爱上平行时空的你",
+      "category": "movie",
+      "douban_id": "37312482",
+      "rating": 8.1,
+      "rating_count": 9663,
+      "year": "2025",
+      "url": "https://movie.douban.com/subject/37312482/"
+    },
+    {
+      "title": "黑袍纠察队 第五季",
+      "category": "tv",
+      "douban_id": "36343491",
+      "rating": 9.0,
+      "rating_count": 3331,
+      "year": "2026",
+      "url": "https://movie.douban.com/subject/36343491/"
+    },
+    {
+      "title": "爱情怎么翻译？",
+      "category": "tv",
+      "douban_id": "36363991",
+      "rating": 8.4,
+      "rating_count": 114825,
+      "year": "2026",
+      "url": "https://movie.douban.com/subject/36363991/"
+    }
+  ]
 }

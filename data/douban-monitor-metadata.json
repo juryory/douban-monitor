@@ -874,5 +874,929 @@
         "vote_average": 6.1
       }
     ]
+  },
+  "37293378": {
+    "tmdb_id": 1454209,
+    "tmdb_type": "movie",
+    "original_title": "National Theatre Live: Inter Alia",
+    "overview": "Jessica Parks是一位精明的刑事法庭法官，正处于事业巅峰期。在法袍背后，她是一个卡拉OK发烧友、有爱的妻子和支持孩子的家长。当一起事件有可能让她的生活完全失去平衡时，她能否支撑起自己的家庭？",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 112,
+    "release_date": "2025-09-25",
+    "backdrop_path": "/gpQwPhKmUmBZxmA9bcBeFDbDgdS.jpg",
+    "countries": [
+      "United Kingdom"
+    ],
+    "director": "Justin Martin",
+    "cast": [
+      {
+        "name": "裴淳华",
+        "character": "Jessica Parks",
+        "profile_path": "/8ObNklHDi2hjdz0ayzJFB9jtqzm.jpg"
+      },
+      {
+        "name": "杰米·格洛弗",
+        "character": "Michael Parks",
+        "profile_path": "/yvw1rJqo0c5BEIUOYWk63Te5xDx.jpg"
+      },
+      {
+        "name": "Jasper Talbot",
+        "character": "Harry Parks",
+        "profile_path": "/2EZHXs0MUhgWSVnjYZo0A01lpTb.jpg"
+      },
+      {
+        "name": "Charles Dark",
+        "character": "Young Harry / Ensemble",
+        "profile_path": ""
+      },
+      {
+        "name": "Esma Akar",
+        "character": "Ensemble",
+        "profile_path": ""
+      },
+      {
+        "name": "Louisa Clein",
+        "character": "Ensemble",
+        "profile_path": ""
+      },
+      {
+        "name": "Liliana Argenio-Winch",
+        "character": "Ensemble",
+        "profile_path": ""
+      },
+      {
+        "name": "Ella Critchell",
+        "character": "Ensemble",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/gpQwPhKmUmBZxmA9bcBeFDbDgdS.jpg",
+      "/1UXL9ve4zBfSMZYwhHbcOGPTA99.jpg",
+      "/jWG8hT90CAfoH1VO0NL1zGnHQNx.jpg",
+      "/oOo3ITRROacUAmceDMlVq8JYYwy.jpg",
+      "/kbcvzOXJbHDvyudC23SSFhnycZl.jpg",
+      "/fx8UNI1SuuAzq7zGE8qdExqziqI.jpg",
+      "/8pi6oUIhtoawcr7qFg1dWcEDq4U.jpg",
+      "/4oMpZ8iQsSi2jLcI9TD3LtNpwDj.jpg",
+      "/1dGHsEE6s15PgEHQmriolQkYe18.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 251455,
+        "title": "Nach Mitternacht",
+        "poster_path": "/q8PtFYjZDxAkgWGV2KCECPebr3K.jpg",
+        "vote_average": 2.7
+      },
+      {
+        "tmdb_id": 424313,
+        "title": "The Sandman",
+        "poster_path": "/mrGQpylyMtXX47pW0k7Jmp33EEa.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 153,
+        "title": "迷失东京",
+        "poster_path": "/uomqRqnDtYQoLt2n9yO5KI00zgL.jpg",
+        "vote_average": 7.383
+      },
+      {
+        "tmdb_id": 93,
+        "title": "桃色血案",
+        "poster_path": "/b2G1QSAwtBv9luhEwErIgSRaU92.jpg",
+        "vote_average": 7.8
+      },
+      {
+        "tmdb_id": 110,
+        "title": "蓝白红三部曲之红",
+        "poster_path": "/5fkgMKovYZgbGngbHJg19zmsSaT.jpg",
+        "vote_average": 7.905
+      },
+      {
+        "tmdb_id": 124,
+        "title": "无休无止",
+        "poster_path": "/9L92cHw17f4V79q1JmGiRPpKtLr.jpg",
+        "vote_average": 6.948
+      },
+      {
+        "tmdb_id": 389,
+        "title": "十二怒汉",
+        "poster_path": "/ztYF7nf1SBJYMWPMzjWv52U6T41.jpg",
+        "vote_average": 8.559
+      },
+      {
+        "tmdb_id": 598192,
+        "title": "After the Ball Was Over",
+        "poster_path": "/3hNO5qZRditr0bViNhqriLR5J8Y.jpg",
+        "vote_average": 1.0
+      }
+    ]
+  },
+  "36742572": {
+    "tmdb_id": 1294706,
+    "tmdb_type": "movie",
+    "original_title": "Le Rendez-vous de l'été",
+    "overview": "2024年巴黎奥运会期间，30岁的布兰丁（ 布兰迪尼·马德克 饰）专程从诺曼底赶来观看游泳赛事。这座城市的繁华与快节奏让她感到无所适从，仿佛所有事情都在与她作对。在巴黎的喧嚣中穿行时，她意外地迎来了一次久别重逢。",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "runtime": 77,
+    "release_date": "2025-06-11",
+    "backdrop_path": "/iRAQwlMZ5L2TfQ4kx0YUg69VEdW.jpg",
+    "countries": [
+      "France"
+    ],
+    "director": "Valentine Cadic",
+    "cast": [
+      {
+        "name": "Blandine Madec",
+        "character": "Blandine Bolbec",
+        "profile_path": "/uxxUtr7g7qaSRBodARYYKRDe3CC.jpg"
+      },
+      {
+        "name": "India Hair",
+        "character": "Julie",
+        "profile_path": "/gThHB2y6frehGeYJmOxMtkp7icc.jpg"
+      },
+      {
+        "name": "Arcadi Radeff",
+        "character": "Benjamin",
+        "profile_path": "/5e8phMITmDTHRbdF3KaB46x6pOl.jpg"
+      },
+      {
+        "name": "Matthias Jacquin",
+        "character": "Paul",
+        "profile_path": "/r19Gva0L5UufEFma0QQHmf1uUw3.jpg"
+      },
+      {
+        "name": "Lou Deleuze",
+        "character": "Alma",
+        "profile_path": "/slrxdRqaSoMh7LIodeIIr8scD1q.jpg"
+      },
+      {
+        "name": "Béryl Gastaldello",
+        "character": "Self",
+        "profile_path": ""
+      },
+      {
+        "name": "皮埃尔·塞瓦尔",
+        "character": "Isidore",
+        "profile_path": "/7tWEI7s8USICKYUv6e6y0QipoNJ.jpg"
+      },
+      {
+        "name": "Aurélia Petit",
+        "character": "",
+        "profile_path": "/s42zuQHecWuexXyO4GwbenumMxF.jpg"
+      }
+    ],
+    "stills": [
+      "/iRAQwlMZ5L2TfQ4kx0YUg69VEdW.jpg",
+      "/cL1KkSnyKqcuZynGmHaa5hfOQbQ.jpg",
+      "/dDSjOLUj61eKkzF8xgqjKX1GsXO.jpg",
+      "/ib0kM4SUx9zWfERVgnhWbGLATJ9.jpg",
+      "/xtHEKIRnTLvUrXxOFmkKzziSmHo.jpg",
+      "/2PCtExHjCf3WoQumpsyj6FN1R8d.jpg",
+      "/nf9hq7w9qKYWzZX08eGyGdCfWx1.jpg",
+      "/tUStlkArWM6itVl1OeiYMpzA4WP.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 958335,
+        "title": "Two Tickets to Greece",
+        "poster_path": "/t974TGJkpoWO8mQaB574pcZFL5i.jpg",
+        "vote_average": 5.9
+      },
+      {
+        "tmdb_id": 1154312,
+        "title": "慢慢说",
+        "poster_path": "/AvFeqvY7tqOR6VuXFKPvz9efKPz.jpg",
+        "vote_average": 6.536
+      },
+      {
+        "tmdb_id": 829774,
+        "title": "皇后区的某处",
+        "poster_path": "/wMDULYu46bN72oZnZAiINfCODE9.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 651881,
+        "title": "拜拜笨蛋",
+        "poster_path": "/zh1jvhxWVJC1FEhYPCw9Joz0xMk.jpg",
+        "vote_average": 7.179
+      },
+      {
+        "tmdb_id": 419459,
+        "title": "固定电话",
+        "poster_path": "/p7RVsyi67S95RyNJjX99E1MaOsA.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 27834,
+        "title": "完美女人",
+        "poster_path": "/aFAPOT77Jh7lNWYtojC6nxi4CpJ.jpg",
+        "vote_average": 5.889
+      },
+      {
+        "tmdb_id": 1102938,
+        "title": "吉姆的故事",
+        "poster_path": "/tUqCflwDzyPwmv8J5rUrVLoQUY.jpg",
+        "vote_average": 6.863
+      },
+      {
+        "tmdb_id": 964877,
+        "title": "Meet the Leroys",
+        "poster_path": "/8s3Wkt7V96yLOqLMbYUsxG5H49w.jpg",
+        "vote_average": 6.22
+      }
+    ]
+  },
+  "36085606": {
+    "tmdb_id": 1287782,
+    "tmdb_type": "movie",
+    "original_title": "好孩子",
+    "overview": "一位才华横溢的变装皇后回到家乡，照顾患有痴呆症的疏远母亲，并假扮成她失散多年的女儿，试图重建母女关系。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 105,
+    "release_date": "2025-10-09",
+    "backdrop_path": "/9sKL9wRddO1x24PoM9uEjV6sYta.jpg",
+    "countries": [
+      "Singapore"
+    ],
+    "director": "Wang Guoshen",
+    "cast": [
+      {
+        "name": "许瑞奇",
+        "character": "Jia Hao",
+        "profile_path": "/4afH3euSsrjQlmfQLopvxt5zntu.jpg"
+      },
+      {
+        "name": "洪慧芳",
+        "character": "Ju Hua",
+        "profile_path": "/8hVnIyAFsKTjsA56ickfXRhI7WT.jpg"
+      },
+      {
+        "name": "路斯明",
+        "character": "David",
+        "profile_path": "/pDxowsnjEKco2X4LNEt5U33vYV5.jpg"
+      },
+      {
+        "name": "Charlie Goh",
+        "character": "Jia Hao's Elder Brother",
+        "profile_path": "/jehc6JMwObYHaAmFCtI6szEjgaM.jpg"
+      },
+      {
+        "name": "周智慧",
+        "character": "Jia Hao's Sister-in-Law",
+        "profile_path": "/sGTUrXh2LT7I0KvDTFUNuUcmqrr.jpg"
+      }
+    ],
+    "stills": [
+      "/9sKL9wRddO1x24PoM9uEjV6sYta.jpg",
+      "/ltVZFTIPAJBs1yuO4NPM46XZqTo.jpg",
+      "/jnLzWu18GvZvJhaJWKIIKvLNltq.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 251594,
+        "title": "脱光我",
+        "poster_path": "/9uonem5TUObM0i5rKeN8HNd3yh1.jpg",
+        "vote_average": 5.7
+      },
+      {
+        "tmdb_id": 26,
+        "title": "水中漫步",
+        "poster_path": "/yz1vQRrvOhF4yiypQ8Rx4rOdR9E.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 140,
+        "title": "不良教育",
+        "poster_path": "/6NbE3mOyUA6tek6LXvshCVJB9lp.jpg",
+        "vote_average": 7.4
+      },
+      {
+        "tmdb_id": 776501,
+        "title": "我们都要去世界博览会",
+        "poster_path": "/fXn4Nz1WCTEmzAFvwgEZoPHvptR.jpg",
+        "vote_average": 5.47
+      },
+      {
+        "tmdb_id": 599513,
+        "title": "Haus",
+        "poster_path": "/40Ub8k9PjqMEDOKy0jDjHzvpATj.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 1313219,
+        "title": "Les Ailes collées",
+        "poster_path": "/nBVcwihnLUIukd5rpYoDpnf98AA.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 1312855,
+        "title": "Por Você",
+        "poster_path": "/f9TFnqBGogNrLPbY2VGbWABseP6.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 1312863,
+        "title": "全套服务",
+        "poster_path": "/2xhEBT1QtRWug9yKINZDJVG4db6.jpg",
+        "vote_average": 5.4
+      }
+    ]
+  },
+  "36860441": {
+    "tmdb_id": 1317149,
+    "tmdb_type": "movie",
+    "original_title": "I Swear",
+    "overview": "　　本片根据社会活动家约翰·戴维森的真实人生经历改编。讲述他从20世纪80年代英国一名被误解的少年，成长为致力于推动人们理解与接纳妥瑞氏综合症的倡导者的故事。约翰在十五岁时被确诊，在逆境中艰难度过动荡的青春期，一步步走向成年。在他人善意的鼓舞下，他找到了人生真正的意义与方向。\r 　　（妥瑞氏综合症表现为：不受控制地抽动身体或口吐恶言）",
+    "genres": [
+      "剧情",
+      "历史"
+    ],
+    "runtime": 121,
+    "release_date": "2025-09-22",
+    "backdrop_path": "/fe6kkxaxn0mCU2gl1vfU44IYWsy.jpg",
+    "countries": [
+      "United Kingdom",
+      "Ireland"
+    ],
+    "director": "柯克·琼斯",
+    "cast": [
+      {
+        "name": "罗伯特·阿拉马约",
+        "character": "John",
+        "profile_path": "/o7qAOrcW70LD4oz8fcubZUcYDAU.jpg"
+      },
+      {
+        "name": "玛克辛·皮克",
+        "character": "Dottie",
+        "profile_path": "/uChlrL5WyeXhvGFaNvbzw1KqMgP.jpg"
+      },
+      {
+        "name": "彼得·穆兰",
+        "character": "Tommy",
+        "profile_path": "/dvu5PWJK6Vv4xnYyMzdMvH73Laj.jpg"
+      },
+      {
+        "name": "雪莉·亨德森",
+        "character": "Heather",
+        "profile_path": "/dxVvLjGNKVMl5lDXXInJ7xWpCvl.jpg"
+      },
+      {
+        "name": "Scott Ellis Watson",
+        "character": "Young John",
+        "profile_path": "/rRDFMBujtG0pZXpozYiIqUxM9Hh.jpg"
+      },
+      {
+        "name": "David Carlyle",
+        "character": "Chris",
+        "profile_path": "/mqHwE8bLoPGIG7iQPfQj1NHOFDs.jpg"
+      },
+      {
+        "name": "Francesco Piacentini-Smith",
+        "character": "Murray",
+        "profile_path": "/ie8Ln0agehVwFDn7F6frqGIy4zr.jpg"
+      },
+      {
+        "name": "Somerled Campbell",
+        "character": "Palace Official",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/fe6kkxaxn0mCU2gl1vfU44IYWsy.jpg",
+      "/lfQz7AMn9kKpjLaQjs4nRuEFuRp.jpg",
+      "/8RDGeDnfsHNgm7PxKAMc443IahH.jpg",
+      "/xTINRp3krG76DzrCIIt2cCZVYte.jpg",
+      "/oNwKbQnpQyX0zHNg2VFn0trjP64.jpg",
+      "/gHpCIz6nE7jNmKQJcfuMgA4bobT.jpg",
+      "/u1ZvMpwc7wHXOzktdWbZ4agNU5V.jpg",
+      "/58j4EevbmnsKyATkJ7fUoQqNTBS.jpg",
+      "/YnuLRK3ZWJvKerShvn0Ceuv0fh.jpg",
+      "/xbEPgXjRP1trZElWPNw5aU8bjbN.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1142518,
+        "title": "自由",
+        "poster_path": "/pCk9abAWbgVZWvjuxwSLgU338D.jpg",
+        "vote_average": 6.3
+      },
+      {
+        "tmdb_id": 961891,
+        "title": "The Ball Method",
+        "poster_path": "/4uGodf6t659N7nVlFXpKjUhn5nr.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 670,
+        "title": "老男孩",
+        "poster_path": "/2Kj88PyDqG0DSGv0m3LeSweoVVY.jpg",
+        "vote_average": 8.239
+      },
+      {
+        "tmdb_id": 637,
+        "title": "美丽人生",
+        "poster_path": "/q5uZjTEq1CCDNJDkxzJkFtWGTAU.jpg",
+        "vote_average": 8.439
+      },
+      {
+        "tmdb_id": 640,
+        "title": "猫鼠游戏",
+        "poster_path": "/8gVelCmO4TifM6rcBfTTOYyspak.jpg",
+        "vote_average": 7.977
+      },
+      {
+        "tmdb_id": 659,
+        "title": "铁皮鼓",
+        "poster_path": "/fgeTqkO43chJJi2DbEt0GbrUWUo.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 639,
+        "title": "当哈利遇到莎莉",
+        "poster_path": "/mb2b04MAjem65yy8CXe2O3jWNKp.jpg",
+        "vote_average": 7.405
+      },
+      {
+        "tmdb_id": 651,
+        "title": "陆军野战医院",
+        "poster_path": "/on8Q9LhtHYNhmITjUMpgOUkIG8o.jpg",
+        "vote_average": 6.951
+      }
+    ]
+  },
+  "37825206": {
+    "tmdb_id": 1575337,
+    "tmdb_type": "movie",
+    "original_title": "超かぐや姫！",
+    "overview": "在梦想与希望汇聚的虚拟空间“月读”，少女们相遇，以及离别的舞台，就此拉开帷幕——  在不远的未来，就读于东京都内重点高中的17岁少女酒寄彩叶，过着兼顾打工与学业的超忙碌生活。月见八千代是互联网虚拟空间“月读”的管理员兼超人气主播，彩叶平日透过观看她的直播放松身心。在这个任何人都能创造自己的分身，自由进行创作活动的“月读”里，彩叶一边支持着自己的偶像八千代，一边靠对战游戏零零散散赚点零用钱。  某天放学回家的路上，彩叶发现了一根闪烁着七彩光芒的电线杆，从里面钻出来的，竟是个极其可爱的婴儿。放心不下的彩叶将其带回了家，没想到对方转眼间长大，长成了与彩叶年纪相仿的少女。  「你……该不会是辉夜姬吧？」长大后的辉夜姬十分任性。在她那任性的请求下，彩叶开始帮她在月读开展主播活动。彩叶作为制作人创作音乐，而辉夜则作为主播负责演唱，两人也在合作中一点点拉近了距离。然而她们并不知道，一道不祥的阴影，为将辉夜带回月球，已悄然逼近——  这是一个，还从未有人见过的「辉夜姬」的故事。",
+    "genres": [
+      "动画",
+      "奇幻",
+      "音乐",
+      "科幻"
+    ],
+    "runtime": 143,
+    "release_date": "2026-01-22",
+    "backdrop_path": "/1jdPUUSy37Wzw3xuc8otI86X2gv.jpg",
+    "countries": [
+      "Japan"
+    ],
+    "director": "山下清悟",
+    "cast": [
+      {
+        "name": "夏吉优子",
+        "character": "Kaguya (voice)",
+        "profile_path": "/62JhZDG70JAzht71e1B0Y7Ny14r.jpg"
+      },
+      {
+        "name": "永濑安奈",
+        "character": "Iroha Sakayori (voice)",
+        "profile_path": "/gFKRUlUlqTD7jGdysg5IWIvgoCH.jpg"
+      },
+      {
+        "name": "早见沙织",
+        "character": "Yachiyo Runami  (voice)",
+        "profile_path": "/gLv9lO7dlUbIsmyJUvgegqAAXki.jpg"
+      },
+      {
+        "name": "入野自由",
+        "character": "Akira Mikado / Asahi Sakayori (voice)",
+        "profile_path": "/8qEEhHUObNvGQr4e6eqLu5z4qTz.jpg"
+      },
+      {
+        "name": "内田雄马",
+        "character": "Rai Komazawa (voice)",
+        "profile_path": "/2otstbLfQ7MXuFt1X8MFOb4OIgd.jpg"
+      },
+      {
+        "name": "松冈祯丞",
+        "character": "Noi Komazawa (voice)",
+        "profile_path": "/ugDwdWEXnmv43jcbnfAi4XwiQ8C.jpg"
+      },
+      {
+        "name": "青山吉能",
+        "character": "Roka Ayatsumugi (voice)",
+        "profile_path": "/yPOprcT7tPKR3p79RMYtogTEXGr.jpg"
+      },
+      {
+        "name": "小原好美",
+        "character": "Mami Isayama (voice)",
+        "profile_path": "/3SA4eE579Fqex1qpMPcF4bTRFyT.jpg"
+      }
+    ],
+    "stills": [
+      "/1jdPUUSy37Wzw3xuc8otI86X2gv.jpg",
+      "/sWetMJTqLsXuMxUg03F5W0nv62H.jpg",
+      "/tL9IWUQ14XTQf7FWIkH9ArabJJo.jpg",
+      "/tRQZUR3oTHSsSmZHDX77bbDxNxT.jpg",
+      "/7x3Nl3BX22lDqqXf2x3It3IbddB.jpg",
+      "/lqQfj9sOZ9fT3waHvUUtmbnJjwT.jpg",
+      "/5hm3h9avEklsseVXDdqdKFMnKHK.jpg",
+      "/s2F10LKaW54jiwNBwrCfMw7QRZ6.jpg",
+      "/6bPc6gIRXnwrdvJPDk1ohFwsoer.jpg",
+      "/gA1v14KnfPDiTVPzgFWBcqgN9Qd.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 673,
+        "title": "哈利·波特与阿兹卡班的囚徒",
+        "poster_path": "/iCwifbvs8pZNPo8o485143y3FdC.jpg",
+        "vote_average": 8.008
+      },
+      {
+        "tmdb_id": 63,
+        "title": "十二猴子",
+        "poster_path": "/jysTIOwc3BSAsIF0GpiM4evLX8a.jpg",
+        "vote_average": 7.604
+      },
+      {
+        "tmdb_id": 128,
+        "title": "幽灵公主",
+        "poster_path": "/mgxuL4rDqAHdcZvO3fXRhrcifpv.jpg",
+        "vote_average": 8.325
+      },
+      {
+        "tmdb_id": 168,
+        "title": "星际旅行4：抢救未来",
+        "poster_path": "/mKK2L17XGHFbVp4SPoII9PLVCvd.jpg",
+        "vote_average": 7.171
+      },
+      {
+        "tmdb_id": 251385,
+        "title": "Arve Rezzle -机器化的妖精们-",
+        "poster_path": "/1ukoNPb4P11yt1NGlY1iiv3NkZ4.jpg",
+        "vote_average": 5.5
+      },
+      {
+        "tmdb_id": 251516,
+        "title": "功之怒",
+        "poster_path": "/rkkV1wcGQEgWyLdQkpB7BVTBL5M.jpg",
+        "vote_average": 7.468
+      },
+      {
+        "tmdb_id": 598099,
+        "title": "天降火雨",
+        "poster_path": "/cBYiyHe4EVLLjPrdf0gBIvQEfmP.jpg",
+        "vote_average": 5.5
+      },
+      {
+        "tmdb_id": 129,
+        "title": "千与千寻",
+        "poster_path": "/9oZmkkNlI4Ktx6NTkdpeU525qSc.jpg",
+        "vote_average": 8.534
+      }
+    ]
+  },
+  "37116612": {
+    "tmdb_id": 1317512,
+    "tmdb_type": "movie",
+    "original_title": "세계의 주인",
+    "overview": "一时气急，17岁的高中生李珠仁说出的几句话引发了轩然大波，她原本平静的世界随之出现了裂痕。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 119,
+    "release_date": "2025-10-22",
+    "backdrop_path": "/rYYUi8m3YdPxDRbjs3xU5ct3Rzi.jpg",
+    "countries": [
+      "South Korea"
+    ],
+    "director": "윤가은",
+    "cast": [
+      {
+        "name": "서수빈",
+        "character": "Lee Jooin",
+        "profile_path": "/dY1DDKfP9FEoNKpRY9QbbxaaNGx.jpg"
+      },
+      {
+        "name": "张慧珍",
+        "character": "Kang Taesun",
+        "profile_path": "/pZiQXSWwo9F4gncHfa1yw0CQjxk.jpg"
+      },
+      {
+        "name": "김정식",
+        "character": "Jang Suho",
+        "profile_path": ""
+      },
+      {
+        "name": "강채윤",
+        "character": "Gong Yura",
+        "profile_path": "/sSFYPvM108KUqc7HBdmHficibbL.jpg"
+      },
+      {
+        "name": "이재희",
+        "character": "Lee Haein",
+        "profile_path": ""
+      },
+      {
+        "name": "박지윤",
+        "character": "Jang Noori",
+        "profile_path": "/m29bhTZnI8zSg9xWJIBcp6uZCaA.jpg"
+      },
+      {
+        "name": "김예창",
+        "character": "Park Chanwoo",
+        "profile_path": "/jhbwmASe0n6Webg22gqixXY3BiC.jpg"
+      },
+      {
+        "name": "高旻示",
+        "character": "Han Mido",
+        "profile_path": "/tgBb9dDyewLlautcmJH9KSXZz1O.jpg"
+      }
+    ],
+    "stills": [
+      "/rYYUi8m3YdPxDRbjs3xU5ct3Rzi.jpg",
+      "/ngU92713nvaHFakggcEuFYmy8Sc.jpg",
+      "/xKHCuiTyQNqXREHZ6DgByouFXTe.jpg",
+      "/xprEhdpLGHpcWnU2YYpCgHhpCJs.jpg",
+      "/69bqdc0JYcEKRV25xHexaYGFoAv.jpg",
+      "/yvQ6PpSYHyJjLX3KOjGFUaVcx71.jpg",
+      "/bnAMQ5CDCYzsQ64pY8zM0nn8Jsg.jpg",
+      "/59mSjWO3J1a8bGxngQsooHd2cqc.jpg",
+      "/iyEZGTjgCGQ0f7CBXkHWdyF5hgD.jpg",
+      "/ibWpAJbPjbDXFydr6CwYgWBZtV6.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 141,
+        "title": "死亡幻觉",
+        "poster_path": "/zkFYMf4yvifziIVIBo55ux2hpSw.jpg",
+        "vote_average": 7.764
+      },
+      {
+        "tmdb_id": 4951,
+        "title": "我恨你的十件事",
+        "poster_path": "/ujERk3aKABXU3NDXOAxEQYTHe9A.jpg",
+        "vote_average": 7.59
+      },
+      {
+        "tmdb_id": 603131,
+        "title": "Elliott's To Do List",
+        "poster_path": "/eFNKwAbhbrPqGMjugnWuNV4yvxr.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 5248,
+        "title": "Virtual Sexuality",
+        "poster_path": "/lMx1firCTM9gs7kVxyRKjHx56Lm.jpg",
+        "vote_average": 5.3
+      },
+      {
+        "tmdb_id": 3176,
+        "title": "大逃杀",
+        "poster_path": "/iJzrwIZuiLEO8M4gRL0zwn7faOb.jpg",
+        "vote_average": 7.273
+      },
+      {
+        "tmdb_id": 1315691,
+        "title": "Hollow",
+        "poster_path": "/qRzWjRZWSOH8stQEAGll0Fp9Gme.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 8966,
+        "title": "暮光之城",
+        "poster_path": "/cmxhdokJTv8L35vqhnwkMorfRXR.jpg",
+        "vote_average": 6.28
+      },
+      {
+        "tmdb_id": 783588,
+        "title": "An Intervention",
+        "poster_path": "/kxyDed45nkZLtbaf1GSNby7lEgl.jpg",
+        "vote_average": 10.0
+      }
+    ]
+  },
+  "37312482": {
+    "tmdb_id": 1489187,
+    "tmdb_type": "movie",
+    "original_title": "Сводишь с ума",
+    "overview": "艾莉莎搬进了圣彼得堡一间宽敞的公寓，公寓里的镜子却开始出现故障。它向这位年轻的房客展现了同一个公寓的平行世界，只不过，在这个平行世界里生活的不是艾丽莎，而是和她抢这间公寓的派对狂人伊万。这两位年轻人能否认清真爱？他们又能否让两个世界相连，在现实中相遇，只为简单地触碰彼此？",
+    "genres": [
+      "喜剧",
+      "爱情",
+      "奇幻"
+    ],
+    "runtime": 99,
+    "release_date": "2025-10-09",
+    "backdrop_path": "/kM2l7BoPrlP7hx6bSKrp6MHZ1Aa.jpg",
+    "countries": [
+      "Russia"
+    ],
+    "director": "Дарья Лебедева",
+    "cast": [
+      {
+        "name": "Мила Ершова",
+        "character": "Alisa",
+        "profile_path": "/hT8apUnYK2PEjGQ5VzW6DdlaIa5.jpg"
+      },
+      {
+        "name": "Юрий Насонов",
+        "character": "Ivan",
+        "profile_path": "/oafx2coiUnwLi0W7Kd4KlAuHXsl.jpg"
+      },
+      {
+        "name": "安东·瓦西里耶夫",
+        "character": "Kostya",
+        "profile_path": "/2P2TeC5HdVl6ujEbvvrRml41qvU.jpg"
+      },
+      {
+        "name": "Антон Артемьев",
+        "character": "",
+        "profile_path": "/1XpKyTWNsMka3kxQ4ndoHzS3ibj.jpg"
+      },
+      {
+        "name": "Надя Иванова",
+        "character": "",
+        "profile_path": "/7LFZe5MO1GdcyrICOAyPqnNpXup.jpg"
+      },
+      {
+        "name": "Людмила Артемьева",
+        "character": "",
+        "profile_path": "/cVg0SeQI82S1539aQAojgvQKpWq.jpg"
+      },
+      {
+        "name": "Hilda Karmen",
+        "character": "Kostya's Wife",
+        "profile_path": "/ssKD1zzFwSIg0XhbAERw0fZ9fKR.jpg"
+      },
+      {
+        "name": "Mikhail Lokshin",
+        "character": "The Estate Agent",
+        "profile_path": "/vXR4IrmyOSqORFzVHPp3x9Vi1D0.jpg"
+      }
+    ],
+    "stills": [
+      "/kM2l7BoPrlP7hx6bSKrp6MHZ1Aa.jpg",
+      "/yCOvpPxpnh2x0Nc66sLEXoTJF0Z.jpg",
+      "/3pM2kecLklDlJmuwUhJCdbmS3v9.jpg",
+      "/5SkOSJaIGt6hWecyIY1fBghmYiD.jpg",
+      "/6QKDBQRFHe6aG7QflvG5NQV1zr3.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 73576,
+        "title": "水仙女",
+        "poster_path": "/eG2zuCJ2Z02WU15EymSWGLbNEw9.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 47320,
+        "title": "爱上那个她",
+        "poster_path": "/sTlOUvhrsiGdtwVKbdlB5pAdE2U.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 24071,
+        "title": "冒牌医生",
+        "poster_path": "/a2uqenG3BZICDrcrr49IZwoHA8Y.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 38031,
+        "title": "遭遇陌生人",
+        "poster_path": "/oBhnI8UZQzTkAH1LMEtrBUmfpjS.jpg",
+        "vote_average": 5.923
+      },
+      {
+        "tmdb_id": 22215,
+        "title": "谢利",
+        "poster_path": "/b35rv11ebJdqCe5chVmSUZ0RIlX.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 13650,
+        "title": "纽约迷幻",
+        "poster_path": "/gO1rApi3dfHYUjKnB5JXOMvXxUd.jpg",
+        "vote_average": 6.3
+      },
+      {
+        "tmdb_id": 64736,
+        "title": "彼得调频",
+        "poster_path": "/5OBg9S8JCH7AFNQ7LDb3pJbBX4f.jpg",
+        "vote_average": 6.7
+      },
+      {
+        "tmdb_id": 28370,
+        "title": "天使在人间",
+        "poster_path": "/yMycyIhlWF8GimBNHJjTUyoiayt.jpg",
+        "vote_average": 6.7
+      }
+    ]
+  },
+  "36363991": {
+    "tmdb_id": 229891,
+    "tmdb_type": "tv",
+    "original_title": "이 사랑 통역 되나요?",
+    "overview": "女明星车茂熙与她的口译员周浩镇为了拍摄节目而周游多国，当两人的情感迷失在翻译之中，爱情是否能找到属于自己的语言？",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ],
+    "runtime": 75,
+    "release_date": "2026-01-16",
+    "backdrop_path": "/zL3BlyLxr5rrbZYITeOBAW2K5xv.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "洪定恩",
+    "cast": [
+      {
+        "name": "金宣虎",
+        "character": "Joo Ho-jin",
+        "profile_path": "/qG8QeXHCn3iAJxeUCsPswM3Zw5l.jpg"
+      },
+      {
+        "name": "高胤桢",
+        "character": "Cha Mu-hee",
+        "profile_path": "/yQcX0c5q65CFax9kAEkZl0a8HZc.jpg"
+      },
+      {
+        "name": "福士苍汰",
+        "character": "Hiro Kurosawa",
+        "profile_path": "/htkmq6HD2PckU8HagGVkL9Qyw1C.jpg"
+      },
+      {
+        "name": "李伊潭",
+        "character": "Shin Ji-seon",
+        "profile_path": "/raND8efeLH0TmIgs6ZSzgp42the.jpg"
+      },
+      {
+        "name": "崔宇成",
+        "character": "Kim Yong-woo",
+        "profile_path": "/rtVfcQa6ZNbOky8qllrlyER0XV9.jpg"
+      }
+    ],
+    "stills": [
+      "/zL3BlyLxr5rrbZYITeOBAW2K5xv.jpg",
+      "/60Hm8JC1Ps8DsrstAt4PTQuBdIB.jpg",
+      "/kn4RmKUMA1C7oBU9JOesEz6ZXG9.jpg",
+      "/rVuQpU2oU82fqEgKSuRjFaEeEr5.jpg",
+      "/6RNeYjd54ajlW92dwJUvQp5m4tg.jpg",
+      "/doetiEB8TU7zjQxNe9BZ0k03EH7.jpg",
+      "/m1rBIr615iAZU034zd8cX0y0iUK.jpg",
+      "/eG30PcQcMM5Nm4j23g1iPfRIrJC.jpg",
+      "/yA7pTPzf0q4MoPcHySVUWcB5VbW.jpg",
+      "/geHDVHESnuwyOxifT89TNn7ZGOs.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 195670,
+        "title": "爱你的基蒂",
+        "poster_path": "/z8QwhurSNdnpntLSA0YtLSLj1ul.jpg",
+        "vote_average": 8.091
+      },
+      {
+        "tmdb_id": 256649,
+        "title": "双生炽爱",
+        "poster_path": "/rFyPhcKTP5D78hHActbP0OMZZll.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 47,
+        "title": "查沃德尔奥乔",
+        "poster_path": "/1TdBpVOASafzfWlnecwW17UL6a5.jpg",
+        "vote_average": 8.029
+      },
+      {
+        "tmdb_id": 27167,
+        "title": "恋爱★情结",
+        "poster_path": "/upz1NpOpWo4coEicGFKb2VwWhmV.jpg",
+        "vote_average": 8.3
+      },
+      {
+        "tmdb_id": 346,
+        "title": "美国龙：杰克龙",
+        "poster_path": "/mzJNakRdg3UdiEngfkeLHDvCNza.jpg",
+        "vote_average": 7.718
+      },
+      {
+        "tmdb_id": 86888,
+        "title": "单身情歌",
+        "poster_path": "/zMG7iaDwwf2EtKswr2s55nltvS5.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 86989,
+        "title": "怦然心碎",
+        "poster_path": "/bvO996L6yjGLjPJ9zFPI4y2F2Wu.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 86997,
+        "title": "妄想彼女",
+        "poster_path": "/l34tkhuzFOnscFXKdkFwCSc2eCn.jpg",
+        "vote_average": 5.7
+      }
+    ]
   }
 }
