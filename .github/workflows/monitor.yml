@@ -23,17 +23,20 @@ jobs:
         with:
           python-version: '3.13'
 
-      - name: 配置 Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: 创建 .env
-        run: |
-          echo "TMDB_API_KEY=${{ secrets.TMDB_API_KEY }}" > .env
-
-      - name: 运行监控
+      - name: 运行监控（轻量模式）
         run: python scripts/monitor.py
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           TMDB_BEARER_TOKEN: ${{ secrets.TMDB_BEARER_TOKEN }}
+
+      - name: 提交并推送数据
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ reports/
+          if git diff --cached --quiet; then
+            echo "没有数据变更，跳过提交"
+          else
+            git commit -m "chore: 更新监控数据 $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M')"
+            git push
+          fi

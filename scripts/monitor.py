@@ -997,6 +997,107 @@ def render_report(new_qualified: list[Candidate], second_look: list[tuple[Candid
     return "\n".join(lines) + "\n"
 
 
+def build_result_json(candidates: list[Candidate], config: dict[str, Any], now: datetime) -> dict[str, Any]:
+    """Build the result.json consumed by the frontend (index.html)."""
+    qualified = [
+        c for c in candidates if should_qualify(c, config)
+    ]
+    items = []
+    for c in qualified:
+        items.append({
+            "title": c.title,
+            "category": c.category,
+            "douban_id": c.douban_id,
+            "rating": c.rating,
+            "rating_count": c.rating_count,
+            "year": str(c.year) if c.year else "",
+            "url": c.url or "",
+        })
+    return {
+        "run_at": iso(now),
+        "total": len(candidates),
+        "qualified": items,
+        "status": "has_qualified" if items else "no_qualified",
+    }
+
+
+def build_posters_json(candidates: list[Candidate], config: dict[str, Any]) -> dict[str, str]:
+    """Fetch TMDB poster URLs for qualified candidates, keyed by douban_id."""
+    posters: dict[str, str] = {}
+    api_key = get_env("TMDB_API_KEY")
+    bearer = get_env("TMDB_BEARER_TOKEN")
+    if not api_key and not bearer:
+        return posters
+
+    for c in candidates:
+        if not c.douban_id or not should_qualify(c, config):
+            continue
+        if not c.tmdb_id:
+            # Try searching TMDB by title
+            try:
+                media_type = "movie" if c.category == "movie" else "tv"
+                params: dict[str, Any] = {
+                    "query": c.title,
+                    "language": config["tmdb_language"],
+                }
+                if c.year:
+                    params["year" if media_type == "movie" else "first_air_date_year"] = c.year
+                data = tmdb_get(f"/search/{media_type}", config, params)
+                results = data.get("results") or []
+                if results:
+                    c.tmdb_id = results[0].get("id")
+            except Exception:
+                continue
+        if c.tmdb_id:
+            try:
+                media_type = "movie" if c.category == "movie" else "tv"
+                data = tmdb_get(f"/{media_type}/{c.tmdb_id}", config, {"language": config["tmdb_language"]})
+                poster_path = data.get("poster_path")
+                if poster_path:
+                    posters[c.douban_id] = f"https://image.tmdb.org/t/p/w500{poster_path}"
+            except Exception:
+                continue
+        time.sleep(0.15)
+    return posters
+
+
+def build_metadata_json(candidates: list[Candidate], config: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    """Fetch TMDB metadata for qualified candidates, keyed by douban_id."""
+    meta: dict[str, dict[str, Any]] = {}
+    api_key = get_env("TMDB_API_KEY")
+    bearer = get_env("TMDB_BEARER_TOKEN")
+    if not api_key and not bearer:
+        return meta
+
+    for c in candidates:
+        if not c.douban_id or not should_qualify(c, config):
+            continue
+        if not c.tmdb_id:
+            continue
+        try:
+            media_type = "movie" if c.category == "movie" else "tv"
+            data = tmdb_get(f"/{media_type}/{c.tmdb_id}", config, {"language": config["tmdb_language"]})
+            entry: dict[str, Any] = {}
+            original_title = data.get("original_title") or data.get("original_name") or ""
+            if original_title:
+                entry["original_title"] = original_title
+            overview = data.get("overview") or ""
+            if overview:
+                entry["overview"] = overview
+            genres = [g.get("name") for g in (data.get("genres") or []) if g.get("name")]
+            if genres:
+                entry["genres"] = genres
+            release_date = data.get("release_date") or data.get("first_air_date") or ""
+            if release_date:
+                entry["release_date"] = release_date
+            if entry:
+                meta[c.douban_id] = entry
+        except Exception:
+            continue
+        time.sleep(0.15)
+    return meta
+
+
 def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]:
     project_root = base_dir.parent
     file_config = load_toml(project_root / "config.toml")
@@ -1063,7 +1164,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     log_kv("监控库条目数", len(library_data.get("items", {})))
     log_kv("状态条目数", len(state_data.get("items", {})))
 
-    log_step("[5/7] 写入文件...")
+    log_step("[5/7] 写入状态与报告...")
     save_json(state_path, state_data)
     save_json(library_path, library_data)
     report_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1072,10 +1173,15 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     log_kv("监控库文件", library_path)
     log_kv("报告文件", report_path)
 
-    log_step("[6/7] 生成网页数据（封面 + 元数据）...")
+    log_step("[6/7] 生成前端数据...")
+    result_path = project_root / "data" / "douban-monitor-result.json"
+    result_data = build_result_json(candidates, config, now)
+    save_json(result_path, result_data)
+    log_kv("前端结果文件", result_path)
+    log_kv("达标条目数", len(result_data["qualified"]))
+
+    log_step("[7/7] 生成网页数据（封面 + 元数据）...")
     python = sys.executable
-    posters_script = base_dir / "fetch_posters.py"
-    metadata_script = base_dir / "fetch_metadata.py"
     for script_name in ("fetch_posters.py", "fetch_metadata.py"):
         script_path = base_dir / script_name
         if not script_path.exists():
@@ -1093,22 +1199,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
             if result.stderr:
                 print(result.stderr, end="", flush=True)
 
-    log_step("[7/7] 提交并推送到 GitHub...")
-    git_kw = {"cwd": str(project_root), "capture_output": True, "text": True}
-    subprocess.run(["git", "add", "data/", "reports/"], **git_kw)
-    diff = subprocess.run(["git", "diff", "--cached", "--quiet"], **git_kw)
-    if diff.returncode != 0:
-        msg = f"data: 更新监控数据 {now.strftime('%Y-%m-%d %H:%M')}"
-        subprocess.run(["git", "commit", "-m", msg], **git_kw)
-        push = subprocess.run(["git", "push"], **git_kw)
-        if push.returncode == 0:
-            log_kv("推送", "成功")
-        else:
-            log_kv("推送失败", push.stderr.strip())
-    else:
-        log_kv("跳过", "数据无变化，无需提交")
-
-    return {"state_path": state_path, "library_path": library_path, "report_path": report_path}
+    return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
 
 
 if __name__ == "__main__":

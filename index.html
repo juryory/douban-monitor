@@ -499,15 +499,15 @@
   async function init() {
     try {
       const [rRes, pRes, mRes] = await Promise.all([
-        fetch('./data/douban-monitor-result.json'),
-        fetch('./data/douban-monitor-posters.json').catch(()=>null),
-        fetch('./data/douban-monitor-metadata.json').catch(()=>null),
+        fetch('/data/douban-monitor-result.json'),
+        fetch('/data/douban-monitor-posters.json').catch(()=>null),
+        fetch('/data/douban-monitor-metadata.json').catch(()=>null),
       ]);
       if (!rRes.ok) throw new Error(`HTTP ${rRes.status}`);
 
       const result = await rRes.json();
-      if (pRes && pRes.ok) posters  = await pRes.json();
-      if (mRes && mRes.ok) metadata = await mRes.json();
+      if (pRes && pRes.ok) try { posters  = await pRes.json(); } catch(_){}
+      if (mRes && mRes.ok) try { metadata = await mRes.json(); } catch(_){}
 
       allItems = dedupe(result.qualified || []);
 
