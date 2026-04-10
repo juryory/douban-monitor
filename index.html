@@ -444,6 +444,7 @@
     <div class="header-meta" id="meta">正在加载…</div>
   </div>
   <select class="sort-select" id="sortSelect">
+    <option value="added_desc">最近入库</option>
     <option value="rating_desc">评分最高</option>
     <option value="count_desc">评价最多</option>
     <option value="year_desc">最新优先</option>
@@ -539,6 +540,7 @@
   function getSorted(items) {
     const sort = document.getElementById('sortSelect').value;
     const a = [...items];
+    if (sort === 'added_desc')  a.sort((x,y) => (y._idx||0) - (x._idx||0));
     if (sort === 'rating_desc') a.sort((x,y) => y.rating - x.rating);
     if (sort === 'count_desc')  a.sort((x,y) => y.rating_count - x.rating_count);
     if (sort === 'year_desc')   a.sort((x,y) => (y.year||0) - (x.year||0));
@@ -878,7 +880,7 @@
       if (mRes && mRes.ok) try { metadata = await mRes.json(); } catch(_){}
       if (rvRes && rvRes.ok) try { reviews = await rvRes.json(); } catch(_){}
 
-      allItems = dedupe(result.qualified || []);
+      allItems = dedupe((result.qualified || []).map((it, i) => ({ ...it, _idx: i })));
 
       const runAt = new Date(result.run_at);
       const ts = runAt.toLocaleString('zh-CN', {
