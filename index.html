@@ -867,11 +867,12 @@
 
   async function init() {
     try {
-      const [rRes, pRes, mRes, rvRes] = await Promise.all([
+      const [rRes, pRes, mRes, rvRes, fRes] = await Promise.all([
         fetch('/data/douban-monitor-result.json'),
         fetch('/data/douban-monitor-posters.json').catch(()=>null),
         fetch('/data/douban-monitor-metadata.json').catch(()=>null),
         fetch('/data/douban-monitor-reviews.json').catch(()=>null),
+        fetch('/data/douban-monitor-favorites-result.json').catch(()=>null),
       ]);
       if (!rRes.ok) throw new Error(`HTTP ${rRes.status}`);
 
@@ -880,7 +881,11 @@
       if (mRes && mRes.ok) try { metadata = await mRes.json(); } catch(_){}
       if (rvRes && rvRes.ok) try { reviews = await rvRes.json(); } catch(_){}
 
-      allItems = dedupe((result.qualified || []).map((it, i) => ({ ...it, _idx: i })));
+      let favItems = [];
+      if (fRes && fRes.ok) try { favItems = (await fRes.json()).qualified || []; } catch(_){}
+
+      const merged = [...(result.qualified || []), ...favItems];
+      allItems = dedupe(merged.map((it, i) => ({ ...it, _idx: i })));
 
       const runAt = new Date(result.run_at);
       const ts = runAt.toLocaleString('zh-CN', {
