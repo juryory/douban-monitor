@@ -107,13 +107,68 @@ def _find_by_search(title: str, category: str, year: str, config: dict) -> tuple
 def _fetch_detail(tmdb_id: int, tmdb_type: str, config: dict) -> dict:
     ep = f"/movie/{tmdb_id}" if tmdb_type == "movie" else f"/tv/{tmdb_id}"
     try:
-        d = tmdb_get(ep, config, {"language": "zh-CN"})
+        d = tmdb_get(ep, config, {
+            "language": "zh-CN",
+            "append_to_response": "credits,images,similar,recommendations",
+            "include_image_language": "null,zh,en",
+        })
         genres = [g["name"] for g in (d.get("genres") or [])]
         runtime = d.get("runtime")
         if runtime is None:
             ep_rt = d.get("episode_run_time") or []
             runtime = ep_rt[0] if ep_rt else None
         release_date = d.get("release_date") or d.get("first_air_date") or ""
+
+        # Backdrop
+        backdrop_path = d.get("backdrop_path") or ""
+
+        # Countries
+        if tmdb_type == "movie":
+            countries = [c.get("name", c.get("iso_3166_1", ""))
+                         for c in (d.get("production_countries") or [])]
+        else:
+            countries = list(d.get("origin_country") or [])
+
+        # Director / Creator
+        credits = d.get("credits") or {}
+        if tmdb_type == "movie":
+            directors = [p["name"] for p in (credits.get("crew") or [])
+                         if p.get("job") == "Director"]
+            director = directors[0] if directors else ""
+        else:
+            creators = d.get("created_by") or []
+            director = creators[0]["name"] if creators else ""
+
+        # Cast (top 8)
+        cast_raw = (credits.get("cast") or [])[:8]
+        cast = [{"name": p.get("name", ""),
+                 "character": p.get("character", ""),
+                 "profile_path": p.get("profile_path") or ""}
+                for p in cast_raw]
+
+        # Stills / backdrops (top 10)
+        images = d.get("images") or {}
+        stills = [img["file_path"] for img in (images.get("backdrops") or [])[:10]
+                  if img.get("file_path")]
+
+        # Similar + Recommendations (merge, dedupe, top 8)
+        sim_raw = (d.get("similar") or {}).get("results") or []
+        rec_raw = (d.get("recommendations") or {}).get("results") or []
+        seen_ids: set[int] = set()
+        similar: list[dict] = []
+        for r in sim_raw + rec_raw:
+            rid = r.get("id")
+            if rid and rid not in seen_ids:
+                seen_ids.add(rid)
+                similar.append({
+                    "tmdb_id": rid,
+                    "title": r.get("title") or r.get("name") or "",
+                    "poster_path": r.get("poster_path") or "",
+                    "vote_average": r.get("vote_average") or 0,
+                })
+            if len(similar) >= 8:
+                break
+
         return {
             "tmdb_id":        tmdb_id,
             "tmdb_type":      tmdb_type,
@@ -122,6 +177,12 @@ def _fetch_detail(tmdb_id: int, tmdb_type: str, config: dict) -> dict:
             "genres":         genres,
             "runtime":        runtime,
             "release_date":   release_date,
+            "backdrop_path":  backdrop_path,
+            "countries":      countries,
+            "director":       director,
+            "cast":           cast,
+            "stills":         stills,
+            "similar":        similar,
         }
     except Exception:
         return {}
@@ -153,7 +214,7 @@ def main() -> None:
         year     = str(item.get("year") or "")
         prefix   = f"[{i+1}/{total}]"
 
-        if did in meta:
+        if did in meta and "backdrop_path" in meta[did]:
             mark = "✓" if meta[did].get("overview") else "∅"
             print(f"{prefix} skip {mark} {title}")
             continue

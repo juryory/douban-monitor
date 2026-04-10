@@ -272,6 +272,165 @@
       header { padding: 12px 16px; }
       main   { padding: 16px 12px 56px; }
     }
+
+    /* ── Detail Page ── */
+    .detail-view { display: none; min-height: 100vh; }
+    .detail-view.active { display: block; }
+
+    .detail-backdrop {
+      position: relative; width: 100%; height: 56vh; min-height: 360px;
+      overflow: hidden; background: linear-gradient(145deg, rgba(140,80,40,0.4), rgba(22,12,8,0.95));
+    }
+    .detail-backdrop img {
+      width: 100%; height: 100%; object-fit: cover; opacity: 0.55;
+    }
+    .detail-backdrop::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(0deg, var(--bg) 0%, rgba(9,9,9,0.7) 40%, transparent 100%);
+    }
+
+    .detail-back-btn {
+      position: fixed; top: 20px; left: 20px; z-index: 300;
+      width: 44px; height: 44px; border-radius: 50%; border: none;
+      background: rgba(0,0,0,0.55); backdrop-filter: blur(12px);
+      color: var(--ink); font-size: 1.3rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .detail-back-btn:hover { background: rgba(0,0,0,0.75); transform: scale(1.08); }
+
+    .detail-hero {
+      position: relative; z-index: 2; max-width: 1200px; margin: -180px auto 0; padding: 0 28px;
+      display: flex; gap: 32px; align-items: flex-end;
+    }
+    .detail-poster-wrap {
+      flex-shrink: 0; width: 220px;
+      border-radius: var(--radius); overflow: hidden;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.6);
+      border: 1px solid rgba(255,241,205,0.1);
+      aspect-ratio: 2/3; background: rgba(140,80,40,0.5);
+    }
+    .detail-poster-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .detail-info { flex: 1; min-width: 0; padding-bottom: 8px; }
+    .detail-title {
+      font-family: "Noto Serif SC", serif; font-size: 2rem; font-weight: 700; line-height: 1.2; margin-bottom: 6px;
+    }
+    .detail-orig-title { color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
+    .detail-meta-row {
+      display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center;
+      color: var(--muted); font-size: 0.88rem; margin-bottom: 14px;
+    }
+    .detail-meta-row .sep { opacity: 0.3; }
+    .detail-genres { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+    .detail-genres .genre-pill { font-size: 0.78rem; padding: 3px 10px; }
+
+    .detail-rating-block {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 18px;
+    }
+    .detail-rating-num {
+      font-size: 2.4rem; font-weight: 700; line-height: 1;
+      background: linear-gradient(180deg, var(--accent-strong), var(--accent));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .detail-rating-info { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+    .detail-rating-stars { color: var(--accent); letter-spacing: 1px; }
+
+    .detail-director { color: var(--muted); font-size: 0.88rem; margin-bottom: 14px; }
+    .detail-director span { color: var(--ink); }
+
+    .detail-overview {
+      color: rgba(245,239,223,0.78); font-size: 0.92rem; line-height: 1.75;
+      max-width: 720px;
+    }
+
+    /* Sections */
+    .detail-content { max-width: 1200px; margin: 0 auto; padding: 36px 28px 72px; }
+    .detail-section { margin-bottom: 36px; }
+    .detail-section-title {
+      font-family: "Noto Serif SC", serif; font-size: 1.15rem; font-weight: 700;
+      margin-bottom: 16px; padding-left: 12px;
+      border-left: 3px solid var(--accent);
+    }
+
+    .detail-scroll {
+      display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px;
+      scrollbar-width: none;
+    }
+    .detail-scroll::-webkit-scrollbar { display: none; }
+
+    /* Cast */
+    .detail-cast-item {
+      flex-shrink: 0; width: 100px; text-align: center;
+    }
+    .detail-cast-photo {
+      width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 8px;
+      overflow: hidden; background: rgba(255,255,255,0.06);
+      border: 1px solid var(--line);
+    }
+    .detail-cast-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .detail-cast-name { font-size: 0.8rem; font-weight: 600; line-height: 1.3; }
+    .detail-cast-char { font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
+
+    /* Stills */
+    .detail-still {
+      flex-shrink: 0; width: 320px; border-radius: var(--radius-sm); overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .detail-still img { width: 100%; height: auto; display: block; }
+
+    /* Reviews */
+    .detail-reviews-list { display: flex; flex-direction: column; gap: 14px; }
+    .detail-review-card {
+      background: var(--panel-2); border: 1px solid var(--line);
+      border-radius: var(--radius-sm); padding: 16px 18px;
+    }
+    .detail-review-header {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;
+    }
+    .detail-review-user { font-size: 0.82rem; font-weight: 600; }
+    .detail-review-date { font-size: 0.72rem; color: var(--muted); }
+    .detail-review-stars { color: var(--accent); font-size: 0.78rem; margin-bottom: 6px; }
+    .detail-review-text { font-size: 0.86rem; line-height: 1.65; color: rgba(245,239,223,0.82); }
+
+    /* Similar */
+    .detail-similar-card {
+      flex-shrink: 0; width: 140px; cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .detail-similar-card:hover { transform: translateY(-3px); }
+    .detail-similar-poster {
+      aspect-ratio: 2/3; border-radius: var(--radius-sm); overflow: hidden;
+      background: rgba(140,80,40,0.5); border: 1px solid var(--line); margin-bottom: 8px;
+    }
+    .detail-similar-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .detail-similar-title {
+      font-size: 0.78rem; font-weight: 600; line-height: 1.3;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .detail-similar-rating { font-size: 0.72rem; color: var(--accent); margin-top: 3px; }
+
+    .detail-douban-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 22px; border-radius: 999px; margin-top: 8px;
+      background: rgba(255,255,255,0.06); border: 1px solid var(--line);
+      color: var(--ink); font-size: 0.86rem; text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .detail-douban-link:hover { border-color: rgba(240,191,98,0.35); background: rgba(255,255,255,0.1); }
+
+    @media (max-width: 700px) {
+      .detail-hero { flex-direction: column; align-items: center; text-align: center; margin-top: -120px; gap: 20px; padding: 0 16px; }
+      .detail-poster-wrap { width: 160px; }
+      .detail-info { padding-bottom: 0; }
+      .detail-title { font-size: 1.5rem; }
+      .detail-meta-row { justify-content: center; }
+      .detail-genres { justify-content: center; }
+      .detail-rating-block { justify-content: center; }
+      .detail-overview { text-align: left; }
+      .detail-content { padding: 24px 16px 56px; }
+    }
   </style>
 </head>
 <body>
@@ -298,6 +457,8 @@
   <div id="error"></div>
   <div class="grid" id="grid" style="display:none"></div>
 </main>
+
+<div class="detail-view" id="detailView"></div>
 
 <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><span class="material-symbols-rounded">keyboard_arrow_up</span></button>
 
@@ -347,10 +508,12 @@
 
   const CAT_LABEL = { movie:'电影', tv:'剧集', show:'综艺' };
   const CAT_ICON  = { movie:'🎬', tv:'📺', show:'🎤' };
+  const TMDB_IMG  = 'https://image.tmdb.org/t/p/';
 
   let allItems = [];
   let posters  = {};
   let metadata = {};
+  let reviews  = {};
   let activeTab = 'all';
 
   function esc(s) {
@@ -433,7 +596,7 @@
     const delay = `animation-delay:${Math.min(idx*35, 560)}ms`;
 
     return `
-      <div class="card" style="${delay}" onclick="window.open('${esc(it.url)}','_blank','noopener')">
+      <div class="card" style="${delay};cursor:pointer" onclick="location.hash='#detail/${esc(it.douban_id)}'">
         <div class="card-poster">
           ${fallback}
           ${posterImg}
@@ -496,18 +659,224 @@
     });
   }
 
+  // ── Detail Page ──────────────────────────────────────────────────────────
+  function showGrid() {
+    document.getElementById('detailView').classList.remove('active');
+    document.getElementById('detailView').innerHTML = '';
+    document.querySelector('header').style.display = '';
+    document.querySelector('main').style.display = '';
+    document.getElementById('backTop').style.removeProperty('display');
+  }
+
+  function showDetail(doubanId) {
+    const item = allItems.find(it => it.douban_id === doubanId);
+    if (!item) return;
+
+    const enriched = enrichItem(item);
+    const meta = metadata[doubanId] || {};
+    const revs = reviews[doubanId] || [];
+
+    document.querySelector('header').style.display = 'none';
+    document.querySelector('main').style.display = 'none';
+    document.getElementById('backTop').style.display = 'none';
+
+    const dv = document.getElementById('detailView');
+    dv.innerHTML = buildDetailHTML(enriched, meta, revs);
+    dv.classList.add('active');
+    window.scrollTo({ top: 0 });
+  }
+
+  function ratingStars(n) {
+    if (!n) return '';
+    const full = Math.round(n / 2);
+    return '<span class="detail-rating-stars">' + '★'.repeat(full) + '☆'.repeat(5 - full) + '</span>';
+  }
+
+  function reviewStars(n) {
+    if (!n) return '';
+    return '<span class="detail-review-stars">' + '★'.repeat(n) + '☆'.repeat(5 - n) + '</span>';
+  }
+
+  function buildDetailHTML(it, meta, revs) {
+    const label = CAT_LABEL[it.category] || it.category;
+    const year = it.year || '';
+    const runtime = meta.runtime ? `${meta.runtime}分钟` : '';
+    const countries = (meta.countries || []).join(' / ');
+    const director = meta.director || '';
+    const backdropUrl = meta.backdrop_path
+      ? `${TMDB_IMG}w1280${meta.backdrop_path}` : '';
+    const posterUrl = it.poster || '';
+
+    // Meta items (year · category · runtime · countries)
+    const metaParts = [year, label, runtime, countries].filter(Boolean);
+    const metaRow = metaParts.join(' <span class="sep">·</span> ');
+
+    // Genres
+    const genres = (it.genres || [])
+      .map(g => `<span class="genre-pill">${esc(g)}</span>`).join('');
+
+    // Backdrop
+    const backdrop = backdropUrl
+      ? `<div class="detail-backdrop"><img src="${esc(backdropUrl)}" alt="" onerror="this.style.display='none'"></div>`
+      : `<div class="detail-backdrop"></div>`;
+
+    // Poster
+    const poster = posterUrl
+      ? `<div class="detail-poster-wrap"><img src="${esc(posterUrl)}" alt="${esc(it.title)}" onerror="this.style.display='none'"></div>`
+      : `<div class="detail-poster-wrap"></div>`;
+
+    // Original title
+    const origTitle = (it.original_title && it.original_title !== it.title)
+      ? `<div class="detail-orig-title">${esc(it.original_title)}</div>` : '';
+
+    // Rating block
+    const ratingBlock = it.rating ? `
+      <div class="detail-rating-block">
+        <span class="detail-rating-num">${it.rating}</span>
+        <div class="detail-rating-info">
+          ${ratingStars(it.rating)}
+          <div>豆瓣 · ${fmt(it.rating_count)}人评价</div>
+        </div>
+      </div>` : '';
+
+    // Director
+    const directorLine = director
+      ? `<div class="detail-director">导演：<span>${esc(director)}</span></div>` : '';
+
+    // Overview
+    const overview = it.overview
+      ? `<div class="detail-overview">${esc(it.overview)}</div>` : '';
+
+    // Cast section
+    const castData = meta.cast || [];
+    const castSection = castData.length ? `
+      <div class="detail-section">
+        <div class="detail-section-title">主演</div>
+        <div class="detail-scroll">
+          ${castData.map(c => {
+            const photo = c.profile_path
+              ? `<img src="${TMDB_IMG}w185${c.profile_path}" alt="${esc(c.name)}" onerror="this.style.display='none'">`
+              : `<span class="material-symbols-rounded" style="font-size:2rem;opacity:0.2;line-height:80px">person</span>`;
+            return `
+              <div class="detail-cast-item">
+                <div class="detail-cast-photo">${photo}</div>
+                <div class="detail-cast-name">${esc(c.name)}</div>
+                <div class="detail-cast-char">${esc(c.character)}</div>
+              </div>`;
+          }).join('')}
+        </div>
+      </div>` : '';
+
+    // Stills section
+    const stills = meta.stills || [];
+    const stillsSection = stills.length ? `
+      <div class="detail-section">
+        <div class="detail-section-title">剧照</div>
+        <div class="detail-scroll">
+          ${stills.map(s => `
+            <div class="detail-still">
+              <img src="${TMDB_IMG}w780${s}" alt="剧照" loading="lazy" onerror="this.parentElement.style.display='none'">
+            </div>`).join('')}
+        </div>
+      </div>` : '';
+
+    // Reviews section
+    const reviewsSection = revs.length ? `
+      <div class="detail-section">
+        <div class="detail-section-title">豆瓣短评</div>
+        <div class="detail-reviews-list">
+          ${revs.map(r => `
+            <div class="detail-review-card">
+              <div class="detail-review-header">
+                <span class="detail-review-user">${esc(r.user)}</span>
+                <span class="detail-review-date">${esc(r.date)}</span>
+              </div>
+              ${reviewStars(r.rating)}
+              <div class="detail-review-text">${esc(r.comment)}</div>
+            </div>`).join('')}
+        </div>
+      </div>` : '';
+
+    // Similar section
+    const similar = meta.similar || [];
+    const similarSection = similar.length ? `
+      <div class="detail-section">
+        <div class="detail-section-title">喜欢这部的人也喜欢</div>
+        <div class="detail-scroll">
+          ${similar.map(s => {
+            const sp = s.poster_path
+              ? `<img src="${TMDB_IMG}w342${s.poster_path}" alt="${esc(s.title)}" loading="lazy" onerror="this.style.display='none'">`
+              : '';
+            const sr = s.vote_average ? `<div class="detail-similar-rating">★ ${s.vote_average.toFixed(1)}</div>` : '';
+            return `
+              <div class="detail-similar-card">
+                <div class="detail-similar-poster">${sp}</div>
+                <div class="detail-similar-title">${esc(s.title)}</div>
+                ${sr}
+              </div>`;
+          }).join('')}
+        </div>
+      </div>` : '';
+
+    // Douban link
+    const doubanLink = it.url ? `
+      <div class="detail-section">
+        <a class="detail-douban-link" href="${esc(it.url)}" target="_blank" rel="noopener">
+          在豆瓣查看 <span class="material-symbols-rounded" style="font-size:1rem">open_in_new</span>
+        </a>
+      </div>` : '';
+
+    return `
+      <button class="detail-back-btn" onclick="history.back()">
+        <span class="material-symbols-rounded">arrow_back</span>
+      </button>
+      ${backdrop}
+      <div class="detail-hero">
+        ${poster}
+        <div class="detail-info">
+          <h1 class="detail-title">${esc(it.title)}</h1>
+          ${origTitle}
+          <div class="detail-meta-row">${metaRow}</div>
+          ${genres ? `<div class="detail-genres">${genres}</div>` : ''}
+          ${ratingBlock}
+          ${directorLine}
+          ${overview}
+        </div>
+      </div>
+      <div class="detail-content">
+        ${castSection}
+        ${stillsSection}
+        ${reviewsSection}
+        ${similarSection}
+        ${doubanLink}
+      </div>`;
+  }
+
+  function handleRoute() {
+    const match = location.hash.match(/^#detail\/(\d+)$/);
+    if (match) {
+      showDetail(match[1]);
+    } else {
+      showGrid();
+    }
+  }
+
+  window.addEventListener('hashchange', handleRoute);
+
   async function init() {
     try {
-      const [rRes, pRes, mRes] = await Promise.all([
+      const [rRes, pRes, mRes, rvRes] = await Promise.all([
         fetch('/data/douban-monitor-result.json'),
         fetch('/data/douban-monitor-posters.json').catch(()=>null),
         fetch('/data/douban-monitor-metadata.json').catch(()=>null),
+        fetch('/data/douban-monitor-reviews.json').catch(()=>null),
       ]);
       if (!rRes.ok) throw new Error(`HTTP ${rRes.status}`);
 
       const result = await rRes.json();
       if (pRes && pRes.ok) try { posters  = await pRes.json(); } catch(_){}
       if (mRes && mRes.ok) try { metadata = await mRes.json(); } catch(_){}
+      if (rvRes && rvRes.ok) try { reviews = await rvRes.json(); } catch(_){}
 
       allItems = dedupe(result.qualified || []);
 
@@ -524,6 +893,7 @@
 
       renderTabs();
       renderGrid();
+      handleRoute();
 
       document.getElementById('sortSelect').addEventListener('change', renderGrid);
 
