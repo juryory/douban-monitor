@@ -179,7 +179,7 @@
     }
     .badge-movie { background: rgba(52,100,170,0.82); color: #cde; }
     .badge-tv    { background: rgba(32,120, 85,0.82); color: #cec; }
-    .badge-show  { background: rgba(110,50,145,0.82); color: #dcc; }
+    .badge-variety { background: rgba(110,50,145,0.82); color: #dcc; }
     .badge-rating {
       padding: 3px 9px; border-radius: var(--radius-sm);
       background: linear-gradient(180deg, var(--accent-strong), var(--accent));
@@ -507,8 +507,8 @@
 
   window.addEventListener('resize', masonryLater);
 
-  const CAT_LABEL = { movie:'电影', tv:'剧集', show:'综艺' };
-  const CAT_ICON  = { movie:'🎬', tv:'📺', show:'🎤' };
+  const CAT_LABEL = { movie:'电影', tv:'剧集', variety:'综艺' };
+  const CAT_ICON  = { movie:'🎬', tv:'📺', variety:'🎤' };
   const TMDB_IMG  = 'https://image.tmdb.org/t/p/';
 
   let allItems = [];
