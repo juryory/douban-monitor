@@ -193,11 +193,13 @@ def _fetch_tmdb_detail(tmdb_id: int, tmdb_type: str, config: dict) -> dict:
 
 
 def main() -> None:
-    # Load favorites (list of douban IDs)
-    fav_ids: list[str] = _load_json(FAVORITES_FILE)
-    if not isinstance(fav_ids, list):
-        fav_ids = []
-    fav_ids = [str(i).strip() for i in fav_ids if str(i).strip()]
+    # Load favorites (one douban ID per line, plain text)
+    fav_ids: list[str] = []
+    if FAVORITES_FILE.exists():
+        for line in FAVORITES_FILE.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line and not line.startswith("#"):
+                fav_ids.append(line)
 
     if not fav_ids:
         print("收藏列表为空，跳过")
@@ -220,7 +222,7 @@ def main() -> None:
     if removed:
         print(f"自动移除已收录的: {', '.join(removed)}")
         FAVORITES_FILE.write_text(
-            json.dumps(cleaned_ids, ensure_ascii=False, indent=2), encoding="utf-8"
+            "\n".join(cleaned_ids) + ("\n" if cleaned_ids else ""), encoding="utf-8"
         )
 
     if not cleaned_ids:
