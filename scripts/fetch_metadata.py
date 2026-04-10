@@ -202,7 +202,9 @@ def main() -> None:
 
     meta: dict[str, dict] = {}
     if META_FILE.exists():
-        meta = json.loads(META_FILE.read_text(encoding="utf-8"))
+        text = META_FILE.read_text(encoding="utf-8").strip()
+        if text:
+            meta = json.loads(text)
 
     config = {**DEFAULT_CONFIG, "tmdb_language": "zh-CN", "tmdb_region": "CN"}
     total = len(unique)

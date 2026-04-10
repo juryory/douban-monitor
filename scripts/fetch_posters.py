@@ -178,7 +178,9 @@ def main() -> None:
 
     posters: dict[str, str] = {}
     if POSTERS_FILE.exists():
-        posters = json.loads(POSTERS_FILE.read_text(encoding="utf-8"))
+        text = POSTERS_FILE.read_text(encoding="utf-8").strip()
+        if text:
+            posters = json.loads(text)
 
     config = {**DEFAULT_CONFIG, "tmdb_language": "zh-CN", "tmdb_region": "CN"}
 

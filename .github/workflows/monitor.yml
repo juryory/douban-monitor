@@ -33,6 +33,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash || true
           git add data/ reports/
           if git diff --cached --quiet; then
             echo "没有数据变更，跳过提交"

@@ -68,10 +68,12 @@ def main() -> None:
 
     reviews: dict[str, list] = {}
     if REVIEWS_FILE.exists():
-        try:
-            reviews = json.loads(REVIEWS_FILE.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, ValueError):
-            reviews = {}
+        text = REVIEWS_FILE.read_text(encoding="utf-8").strip()
+        if text:
+            try:
+                reviews = json.loads(text)
+            except (json.JSONDecodeError, ValueError):
+                reviews = {}
 
     total = len(unique)
     for i, item in enumerate(unique):
