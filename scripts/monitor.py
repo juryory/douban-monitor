@@ -995,6 +995,107 @@ def render_report(new_qualified: list[Candidate], second_look: list[tuple[Candid
     return "\n".join(lines) + "\n"
 
 
+def build_result_json(candidates: list[Candidate], config: dict[str, Any], now: datetime) -> dict[str, Any]:
+    """Build the result.json consumed by the frontend (index.html)."""
+    qualified = [
+        c for c in candidates if should_qualify(c, config)
+    ]
+    items = []
+    for c in qualified:
+        items.append({
+            "title": c.title,
+            "category": c.category,
+            "douban_id": c.douban_id,
+            "rating": c.rating,
+            "rating_count": c.rating_count,
+            "year": str(c.year) if c.year else "",
+            "url": c.url or "",
+        })
+    return {
+        "run_at": iso(now),
+        "total": len(candidates),
+        "qualified": items,
+        "status": "has_qualified" if items else "no_qualified",
+    }
+
+
+def build_posters_json(candidates: list[Candidate], config: dict[str, Any]) -> dict[str, str]:
+    """Fetch TMDB poster URLs for qualified candidates, keyed by douban_id."""
+    posters: dict[str, str] = {}
+    api_key = get_env("TMDB_API_KEY")
+    bearer = get_env("TMDB_BEARER_TOKEN")
+    if not api_key and not bearer:
+        return posters
+
+    for c in candidates:
+        if not c.douban_id or not should_qualify(c, config):
+            continue
+        if not c.tmdb_id:
+            # Try searching TMDB by title
+            try:
+                media_type = "movie" if c.category == "movie" else "tv"
+                params: dict[str, Any] = {
+                    "query": c.title,
+                    "language": config["tmdb_language"],
+                }
+                if c.year:
+                    params["year" if media_type == "movie" else "first_air_date_year"] = c.year
+                data = tmdb_get(f"/search/{media_type}", config, params)
+                results = data.get("results") or []
+                if results:
+                    c.tmdb_id = results[0].get("id")
+            except Exception:
+                continue
+        if c.tmdb_id:
+            try:
+                media_type = "movie" if c.category == "movie" else "tv"
+                data = tmdb_get(f"/{media_type}/{c.tmdb_id}", config, {"language": config["tmdb_language"]})
+                poster_path = data.get("poster_path")
+                if poster_path:
+                    posters[c.douban_id] = f"https://image.tmdb.org/t/p/w500{poster_path}"
+            except Exception:
+                continue
+        time.sleep(0.15)
+    return posters
+
+
+def build_metadata_json(candidates: list[Candidate], config: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    """Fetch TMDB metadata for qualified candidates, keyed by douban_id."""
+    meta: dict[str, dict[str, Any]] = {}
+    api_key = get_env("TMDB_API_KEY")
+    bearer = get_env("TMDB_BEARER_TOKEN")
+    if not api_key and not bearer:
+        return meta
+
+    for c in candidates:
+        if not c.douban_id or not should_qualify(c, config):
+            continue
+        if not c.tmdb_id:
+            continue
+        try:
+            media_type = "movie" if c.category == "movie" else "tv"
+            data = tmdb_get(f"/{media_type}/{c.tmdb_id}", config, {"language": config["tmdb_language"]})
+            entry: dict[str, Any] = {}
+            original_title = data.get("original_title") or data.get("original_name") or ""
+            if original_title:
+                entry["original_title"] = original_title
+            overview = data.get("overview") or ""
+            if overview:
+                entry["overview"] = overview
+            genres = [g.get("name") for g in (data.get("genres") or []) if g.get("name")]
+            if genres:
+                entry["genres"] = genres
+            release_date = data.get("release_date") or data.get("first_air_date") or ""
+            if release_date:
+                entry["release_date"] = release_date
+            if entry:
+                meta[c.douban_id] = entry
+        except Exception:
+            continue
+        time.sleep(0.15)
+    return meta
+
+
 def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]:
     project_root = base_dir.parent
     file_config = load_toml(project_root / "config.toml")
@@ -1061,7 +1162,31 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     log_kv("监控库条目数", len(library_data.get("items", {})))
     log_kv("状态条目数", len(state_data.get("items", {})))
 
-    log_step("[5/5] 写入文件...")
+    log_step("[5/6] 生成前端数据...")
+    result_path = project_root / "data" / "douban-monitor-result.json"
+    posters_path = project_root / "data" / "douban-monitor-posters.json"
+    metadata_path = project_root / "data" / "douban-monitor-metadata.json"
+
+    result_data = build_result_json(candidates, config, now)
+    save_json(result_path, result_data)
+    log_kv("前端结果文件", result_path)
+    log_kv("达标条目数", len(result_data["qualified"]))
+
+    posters_data = build_posters_json(candidates, config)
+    if posters_data:
+        save_json(posters_path, posters_data)
+        log_kv("海报文件", f"{posters_path} ({len(posters_data)} 条)")
+    else:
+        log_kv("海报文件", "跳过（未配置 TMDB_API_KEY）")
+
+    metadata_out = build_metadata_json(candidates, config)
+    if metadata_out:
+        save_json(metadata_path, metadata_out)
+        log_kv("元数据文件", f"{metadata_path} ({len(metadata_out)} 条)")
+    else:
+        log_kv("元数据文件", "跳过（未配置 TMDB_API_KEY）")
+
+    log_step("[6/6] 写入状态与报告...")
     save_json(state_path, state_data)
     save_json(library_path, library_data)
     report_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1070,7 +1195,14 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     log_kv("监控库文件", library_path)
     log_kv("报告文件", report_path)
 
-    return {"state_path": state_path, "library_path": library_path, "report_path": report_path}
+    return {
+        "state_path": state_path,
+        "library_path": library_path,
+        "report_path": report_path,
+        "result_path": result_path,
+        "posters_path": posters_path,
+        "metadata_path": metadata_path,
+    }
 
 
 if __name__ == "__main__":
