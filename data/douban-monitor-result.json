@@ -1,13 +1,13 @@
 {
-  "run_at": "2026-04-10T22:04:44.802874+08:00",
-  "total": 107,
+  "run_at": "2026-04-11T09:00:07.843609+08:00",
+  "total": 106,
   "qualified": [
     {
       "title": "挽救计划",
       "category": "movie",
       "douban_id": "35010610",
       "rating": 8.6,
-      "rating_count": 323997,
+      "rating_count": 326487,
       "year": "",
       "url": "https://movie.douban.com/subject/35010610/"
     },
@@ -16,7 +16,7 @@
       "category": "movie",
       "douban_id": "37332784",
       "rating": 8.3,
-      "rating_count": 124172,
+      "rating_count": 126360,
       "year": "",
       "url": "https://movie.douban.com/subject/37332784/"
     },
@@ -25,7 +25,7 @@
       "category": "tv",
       "douban_id": "37168326",
       "rating": 9.0,
-      "rating_count": 6324,
+      "rating_count": 6384,
       "year": "",
       "url": "https://movie.douban.com/subject/37168326/"
     },
@@ -34,7 +34,7 @@
       "category": "tv",
       "douban_id": "37239408",
       "rating": 9.2,
-      "rating_count": 11462,
+      "rating_count": 11522,
       "year": "",
       "url": "https://movie.douban.com/subject/37239408/"
     },
@@ -43,7 +43,7 @@
       "category": "tv",
       "douban_id": "36955778",
       "rating": 8.6,
-      "rating_count": 4140,
+      "rating_count": 4182,
       "year": "",
       "url": "https://movie.douban.com/subject/36955778/"
     },
@@ -52,7 +52,7 @@
       "category": "tv",
       "douban_id": "36559697",
       "rating": 8.7,
-      "rating_count": 13378,
+      "rating_count": 13427,
       "year": "",
       "url": "https://movie.douban.com/subject/36559697/"
     },
@@ -61,7 +61,7 @@
       "category": "tv",
       "douban_id": "37657523",
       "rating": 9.0,
-      "rating_count": 3020,
+      "rating_count": 3025,
       "year": "",
       "url": "https://movie.douban.com/subject/37657523/"
     },
@@ -70,7 +70,7 @@
       "category": "variety",
       "douban_id": "38188936",
       "rating": 9.4,
-      "rating_count": 4740,
+      "rating_count": 4757,
       "year": "",
       "url": "https://movie.douban.com/subject/38188936/"
     }
