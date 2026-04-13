@@ -1,13 +1,13 @@
 {
-  "run_at": "2026-04-12T09:03:15.139566+08:00",
-  "total": 104,
+  "run_at": "2026-04-13T09:00:08.182295+08:00",
+  "total": 103,
   "qualified": [
     {
       "title": "挽救计划",
       "category": "movie",
       "douban_id": "35010610",
       "rating": 8.6,
-      "rating_count": 338092,
+      "rating_count": 349503,
       "year": "",
       "url": "https://movie.douban.com/subject/35010610/"
     },
@@ -16,7 +16,7 @@
       "category": "movie",
       "douban_id": "37332784",
       "rating": 8.3,
-      "rating_count": 136163,
+      "rating_count": 144482,
       "year": "",
       "url": "https://movie.douban.com/subject/37332784/"
     },
@@ -24,8 +24,8 @@
       "title": "真相捕捉 第三季",
       "category": "tv",
       "douban_id": "37168326",
-      "rating": 9.0,
-      "rating_count": 6568,
+      "rating": 8.9,
+      "rating_count": 8065,
       "year": "",
       "url": "https://movie.douban.com/subject/37168326/"
     },
@@ -34,7 +34,7 @@
       "category": "tv",
       "douban_id": "37239408",
       "rating": 9.2,
-      "rating_count": 11685,
+      "rating_count": 11848,
       "year": "",
       "url": "https://movie.douban.com/subject/37239408/"
     },
@@ -43,7 +43,7 @@
       "category": "tv",
       "douban_id": "36955778",
       "rating": 8.6,
-      "rating_count": 4358,
+      "rating_count": 4513,
       "year": "",
       "url": "https://movie.douban.com/subject/36955778/"
     },
@@ -52,7 +52,7 @@
       "category": "tv",
       "douban_id": "36559697",
       "rating": 8.7,
-      "rating_count": 13611,
+      "rating_count": 13790,
       "year": "",
       "url": "https://movie.douban.com/subject/36559697/"
     },
@@ -61,7 +61,7 @@
       "category": "tv",
       "douban_id": "37657523",
       "rating": 9.0,
-      "rating_count": 3051,
+      "rating_count": 3092,
       "year": "",
       "url": "https://movie.douban.com/subject/37657523/"
     },
@@ -70,7 +70,7 @@
       "category": "variety",
       "douban_id": "38188936",
       "rating": 9.4,
-      "rating_count": 4791,
+      "rating_count": 4820,
       "year": "",
       "url": "https://movie.douban.com/subject/38188936/"
     }
