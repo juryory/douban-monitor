@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-04-13T09:00:08.182295+08:00",
+  "run_at": "2026-04-14T09:00:06.093712+08:00",
   "total": 103,
   "qualified": [
     {
@@ -7,7 +7,7 @@
       "category": "movie",
       "douban_id": "35010610",
       "rating": 8.6,
-      "rating_count": 349503,
+      "rating_count": 354444,
       "year": "",
       "url": "https://movie.douban.com/subject/35010610/"
     },
@@ -16,7 +16,7 @@
       "category": "movie",
       "douban_id": "37332784",
       "rating": 8.3,
-      "rating_count": 144482,
+      "rating_count": 148218,
       "year": "",
       "url": "https://movie.douban.com/subject/37332784/"
     },
@@ -24,8 +24,8 @@
       "title": "真相捕捉 第三季",
       "category": "tv",
       "douban_id": "37168326",
-      "rating": 8.9,
-      "rating_count": 8065,
+      "rating": 8.7,
+      "rating_count": 9862,
       "year": "",
       "url": "https://movie.douban.com/subject/37168326/"
     },
@@ -34,7 +34,7 @@
       "category": "tv",
       "douban_id": "37239408",
       "rating": 9.2,
-      "rating_count": 11848,
+      "rating_count": 11994,
       "year": "",
       "url": "https://movie.douban.com/subject/37239408/"
     },
@@ -43,7 +43,7 @@
       "category": "tv",
       "douban_id": "36955778",
       "rating": 8.6,
-      "rating_count": 4513,
+      "rating_count": 4630,
       "year": "",
       "url": "https://movie.douban.com/subject/36955778/"
     },
@@ -52,7 +52,7 @@
       "category": "tv",
       "douban_id": "36559697",
       "rating": 8.7,
-      "rating_count": 13790,
+      "rating_count": 13912,
       "year": "",
       "url": "https://movie.douban.com/subject/36559697/"
     },
@@ -61,18 +61,9 @@
       "category": "tv",
       "douban_id": "37657523",
       "rating": 9.0,
-      "rating_count": 3092,
+      "rating_count": 3112,
       "year": "",
       "url": "https://movie.douban.com/subject/37657523/"
-    },
-    {
-      "title": "四个愿望",
-      "category": "variety",
-      "douban_id": "38188936",
-      "rating": 9.4,
-      "rating_count": 4820,
-      "year": "",
-      "url": "https://movie.douban.com/subject/38188936/"
     }
   ],
   "status": "has_qualified"
