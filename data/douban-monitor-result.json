@@ -1,13 +1,13 @@
 {
-  "run_at": "2026-04-14T09:00:06.093712+08:00",
-  "total": 103,
+  "run_at": "2026-04-15T09:00:03.904212+08:00",
+  "total": 101,
   "qualified": [
     {
       "title": "挽救计划",
       "category": "movie",
       "douban_id": "35010610",
       "rating": 8.6,
-      "rating_count": 354444,
+      "rating_count": 358569,
       "year": "",
       "url": "https://movie.douban.com/subject/35010610/"
     },
@@ -16,7 +16,7 @@
       "category": "movie",
       "douban_id": "37332784",
       "rating": 8.3,
-      "rating_count": 148218,
+      "rating_count": 151213,
       "year": "",
       "url": "https://movie.douban.com/subject/37332784/"
     },
@@ -24,8 +24,8 @@
       "title": "真相捕捉 第三季",
       "category": "tv",
       "douban_id": "37168326",
-      "rating": 8.7,
-      "rating_count": 9862,
+      "rating": 8.6,
+      "rating_count": 11222,
       "year": "",
       "url": "https://movie.douban.com/subject/37168326/"
     },
@@ -34,7 +34,7 @@
       "category": "tv",
       "douban_id": "37239408",
       "rating": 9.2,
-      "rating_count": 11994,
+      "rating_count": 12120,
       "year": "",
       "url": "https://movie.douban.com/subject/37239408/"
     },
@@ -43,7 +43,7 @@
       "category": "tv",
       "douban_id": "36955778",
       "rating": 8.6,
-      "rating_count": 4630,
+      "rating_count": 4743,
       "year": "",
       "url": "https://movie.douban.com/subject/36955778/"
     },
@@ -52,7 +52,7 @@
       "category": "tv",
       "douban_id": "36559697",
       "rating": 8.7,
-      "rating_count": 13912,
+      "rating_count": 13997,
       "year": "",
       "url": "https://movie.douban.com/subject/36559697/"
     },
@@ -61,7 +61,7 @@
       "category": "tv",
       "douban_id": "37657523",
       "rating": 9.0,
-      "rating_count": 3112,
+      "rating_count": 3128,
       "year": "",
       "url": "https://movie.douban.com/subject/37657523/"
     }
