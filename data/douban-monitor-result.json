@@ -1,13 +1,13 @@
 {
-  "run_at": "2026-04-15T09:00:03.904212+08:00",
-  "total": 101,
+  "run_at": "2026-04-16T09:00:05.602594+08:00",
+  "total": 103,
   "qualified": [
     {
       "title": "挽救计划",
       "category": "movie",
       "douban_id": "35010610",
       "rating": 8.6,
-      "rating_count": 358569,
+      "rating_count": 362096,
       "year": "",
       "url": "https://movie.douban.com/subject/35010610/"
     },
@@ -16,54 +16,54 @@
       "category": "movie",
       "douban_id": "37332784",
       "rating": 8.3,
-      "rating_count": 151213,
+      "rating_count": 153840,
       "year": "",
       "url": "https://movie.douban.com/subject/37332784/"
+    },
+    {
+      "title": "黑袍纠察队 第五季",
+      "category": "tv",
+      "douban_id": "36343491",
+      "rating": 9.1,
+      "rating_count": 6147,
+      "year": "",
+      "url": "https://movie.douban.com/subject/36343491/"
+    },
+    {
+      "title": "21世纪大君夫人",
+      "category": "tv",
+      "douban_id": "37147970",
+      "rating": 8.1,
+      "rating_count": 5750,
+      "year": "",
+      "url": "https://movie.douban.com/subject/37147970/"
     },
     {
       "title": "真相捕捉 第三季",
       "category": "tv",
       "douban_id": "37168326",
-      "rating": 8.6,
-      "rating_count": 11222,
+      "rating": 8.5,
+      "rating_count": 12149,
       "year": "",
       "url": "https://movie.douban.com/subject/37168326/"
-    },
-    {
-      "title": "匹兹堡医护前线 第二季",
-      "category": "tv",
-      "douban_id": "37239408",
-      "rating": 9.2,
-      "rating_count": 12120,
-      "year": "",
-      "url": "https://movie.douban.com/subject/37239408/"
-    },
-    {
-      "title": "戴洛奇小镇 第二季",
-      "category": "tv",
-      "douban_id": "36955778",
-      "rating": 8.6,
-      "rating_count": 4743,
-      "year": "",
-      "url": "https://movie.douban.com/subject/36955778/"
     },
     {
       "title": "海贼王(真人版) 第二季",
       "category": "tv",
       "douban_id": "36559697",
       "rating": 8.7,
-      "rating_count": 13997,
+      "rating_count": 14084,
       "year": "",
       "url": "https://movie.douban.com/subject/36559697/"
     },
     {
-      "title": "心动密码",
+      "title": "戴洛奇小镇 第二季",
       "category": "tv",
-      "douban_id": "37657523",
-      "rating": 9.0,
-      "rating_count": 3128,
+      "douban_id": "36955778",
+      "rating": 8.6,
+      "rating_count": 4859,
       "year": "",
-      "url": "https://movie.douban.com/subject/37657523/"
+      "url": "https://movie.douban.com/subject/36955778/"
     }
   ],
   "status": "has_qualified"

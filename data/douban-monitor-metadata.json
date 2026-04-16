@@ -1798,5 +1798,237 @@
         "vote_average": 5.7
       }
     ]
+  },
+  "36343491": {
+    "tmdb_id": 76479,
+    "tmdb_type": "tv",
+    "original_title": "The Boys",
+    "overview": "这是一个超能力者和普通人共存的世界，祖国人、火车头、深海、梅芙女王、透明人和玄色隶属于全球最大的超级英雄公司沃特集团，在帮助政府惩奸除恶维护世界和平的同时，他们也以偶像的身份帮助公司赚取了难以计数的利润。休伊是一个平凡的男孩，她的女友死于一场意外，而这场意外的制造者正是火车头。休伊不愿意接受沃特公司潦草的致歉和赔偿，决定替女友报仇。",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "动作冒险"
+    ],
+    "runtime": null,
+    "release_date": "2019-07-25",
+    "backdrop_path": "/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "埃里克·克里普克",
+    "cast": [
+      {
+        "name": "卡尔·厄本",
+        "character": "Billy Butcher",
+        "profile_path": "/6CkZLwEJxfqqcJHyeXegMAvOlPh.jpg"
+      },
+      {
+        "name": "杰克·奎德",
+        "character": "Hugh 'Hughie' Campbell",
+        "profile_path": "/320qW5yEbxpmyxQ3evmClJbtKag.jpg"
+      },
+      {
+        "name": "安东尼·斯塔尔",
+        "character": "Homelander",
+        "profile_path": "/b0T56GMrHM24hDDjJ4DNPJcEUp6.jpg"
+      },
+      {
+        "name": "艾琳·莫里亚蒂",
+        "character": "Annie January / Starlight",
+        "profile_path": "/dG7gLzlZCjZkjKMyoGIL8h5wjRj.jpg"
+      },
+      {
+        "name": "杰西·厄舍",
+        "character": "Reggie Franklin / A-Train",
+        "profile_path": "/bkFM2GHKU1rr6CRCgeaojY1TDCS.jpg"
+      },
+      {
+        "name": "赖斯·艾隆索",
+        "character": "Marvin T. 'Mother's Milk' Milk / M.M.",
+        "profile_path": "/nmgOd3X2Xn3jIp9OLCRJzLExRWN.jpg"
+      },
+      {
+        "name": "切斯·克劳福",
+        "character": "Kevin Moskowitz / The Deep",
+        "profile_path": "/yWZILsr2mBQBCG1LOcCYYshIbts.jpg"
+      },
+      {
+        "name": "托默·卡彭",
+        "character": "Serge / Frenchie",
+        "profile_path": "/3IhYEhV3Tmx2CawG5DvcWQyephv.jpg"
+      }
+    ],
+    "stills": [
+      "/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
+      "/n6vVs6z8obNbExdD3QHTr4Utu1Z.jpg",
+      "/mGVrXeIjyecj6TKmwPVpHlscEmw.jpg",
+      "/7cqKGQMnNabzOpi7qaIgZvQ7NGV.jpg",
+      "/czffzEgaBko4mXW84B1J1EnQBzo.jpg",
+      "/bI37vIHSH7o4IVkq37P8cfxQGMx.jpg",
+      "/ietgGEAYDluH65hlIjvgaMtjeEL.jpg",
+      "/thLAoL6VeZGmCyDpCOeoxLvA8yS.jpg",
+      "/dKSLSL6R21YntEa7HDWR8HOoSMO.jpg",
+      "/eub9xDaIfNwvg0oEv5tvkAlFqrO.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 87491,
+        "title": "DC超级英雄美少女",
+        "poster_path": "/sjjyQ0OKUnUTzJpLi5CDOzZCE88.jpg",
+        "vote_average": 7.9
+      },
+      {
+        "tmdb_id": 888,
+        "title": "蜘蛛侠动画系列",
+        "poster_path": "/wXthtEN5kdWA1bHz03lkuCJS6hA.jpg",
+        "vote_average": 8.286
+      },
+      {
+        "tmdb_id": 87689,
+        "title": "修女战士",
+        "poster_path": "/wcowxjd1ur4mmbmJDwU7d5Zo5sS.jpg",
+        "vote_average": 7.943
+      },
+      {
+        "tmdb_id": 1029,
+        "title": "Birdman and the Galaxy Trio",
+        "poster_path": "/52DGvCSbyKfprQ9OwPcxpBMdpv6.jpg",
+        "vote_average": 7.377
+      },
+      {
+        "tmdb_id": 229518,
+        "title": "映画公開記念！１分間ストーリー",
+        "poster_path": "/gE98fRzTXWmSt5X3D13vZtTBnIE.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 258228,
+        "title": "MOMENTARY LILY 刹那之花",
+        "poster_path": "/dk9ane7GBEAH7eiHjoUea4hqlBK.jpg",
+        "vote_average": 5.875
+      },
+      {
+        "tmdb_id": 56343,
+        "title": "笨蛋、测验、召唤兽",
+        "poster_path": "/beWcnNoRMDEERMdSxDWMkkpzw1z.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 120398,
+        "title": "机界战队全开者",
+        "poster_path": "/xrrg5XAOz1A1fr08fVoH6hqgxXA.jpg",
+        "vote_average": 8.2
+      }
+    ]
+  },
+  "37147970": {
+    "tmdb_id": 278573,
+    "tmdb_type": "tv",
+    "original_title": "21세기 대군부인",
+    "overview": "欢迎来到21世纪的韩国，一个传统与现代交织的君主立宪制国家。在光鲜亮丽的外表下，隐藏着壁垒分明的社会阶级制度。成熙周，一位才华洋溢的财阀继承人兼首席执行官，似乎拥有一切，但出身平民的她却始终得不到应有的尊重。在诞日宴上与理安大君相遇后，她决心掌握自己的命运。她拥有一切，唯独缺少身份；而他空有尊贵的身份，实际上却一无所有。两人缔结了世纪婚约。他们能否打破社会壁垒，开创属于自己的命运？",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-04-10",
+    "backdrop_path": "/6ekykPwvAywJRjFEnUoCFWTO9O3.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "刘智媛",
+    "cast": [
+      {
+        "name": "李知恩 (IU)",
+        "character": "Seong Hui-ju",
+        "profile_path": "/uNhKOO9lIAFXF11LM6gjCrX2CJz.jpg"
+      },
+      {
+        "name": "边佑锡",
+        "character": "Grand Prince I-an",
+        "profile_path": "/iACGQCFJZUMsy4ywEzNiPokXFB9.jpg"
+      },
+      {
+        "name": "鲁尚炫",
+        "character": "Min Jeong-u",
+        "profile_path": "/wdevvu2YLIvAPVEkScjO9JGbioq.jpg"
+      },
+      {
+        "name": "孔升妍",
+        "character": "Yun I-rang",
+        "profile_path": "/6WFV2xISsuhArOHBMwTou8KdgH9.jpg"
+      },
+      {
+        "name": "刘秀彬",
+        "character": "Choi Hyeon",
+        "profile_path": "/vulO1ngz0s3jUBXQbW2ADuyK3Fa.jpg"
+      },
+      {
+        "name": "李妍",
+        "character": "Do Hye-jeong",
+        "profile_path": "/uTZMewSjjx4MxDYAaZrhbl1fAGX.jpg"
+      }
+    ],
+    "stills": [
+      "/6ekykPwvAywJRjFEnUoCFWTO9O3.jpg",
+      "/l5F7zrjACILbCwYAozRs74q3W18.jpg",
+      "/9FSFceY7affPBlaooIiEvJPHL1A.jpg",
+      "/mSQMpy24u9Gx2Prl3IjtxBVauDw.jpg",
+      "/c5K6ZtCbOFjcfpuQA1DNWyU9ebF.jpg",
+      "/4vwbeygqnva1nWvMqyVv0irN4gi.jpg",
+      "/d8IFxohKbDx3vuA9zty251zdfse.jpg",
+      "/pT3ddhhhyMoZq2uYsJlUWT5UC9L.jpg",
+      "/p1k6sDGyCfkYRTlkYngRXsCclXc.jpg",
+      "/vLfypOElnhPbe0WN7AYwZzYTUH7.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 473,
+        "title": "Kapmanerang Kuba",
+        "poster_path": "/iit8yrsK9arR652LBrJX4jhIaYs.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 196454,
+        "title": "夏洛特王后：布里杰顿家族前传",
+        "poster_path": "/eR7btjpvOugivUYSoEsD2iAOYsJ.jpg",
+        "vote_average": 8.007
+      },
+      {
+        "tmdb_id": 196474,
+        "title": "走进你的时间",
+        "poster_path": "/F9lNsFr1VdNtT5vF8z6lCxGIZW.jpg",
+        "vote_average": 8.265
+      },
+      {
+        "tmdb_id": 292035,
+        "title": "逆爱",
+        "poster_path": "/qXB8wIuRQ4boWSZSoLFAu5g6K9l.jpg",
+        "vote_average": 8.336
+      },
+      {
+        "tmdb_id": 292043,
+        "title": "两个好宝贝",
+        "poster_path": "/tSnsJJpiTxanYlWxMcBx5WZAZXs.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 196495,
+        "title": "吉祥寺Losers",
+        "poster_path": "/uzYauUOScNwbhxRwu0ptxwjONaZ.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 292084,
+        "title": "我们存在的理由",
+        "poster_path": "/pJj2yILsnwEVXj5Fm4qBesCgMvG.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 292122,
+        "title": "คุณแม่แก้ขัด",
+        "poster_path": "/tXMZt1ZSXcCKCrSOFezSuvVFxqg.jpg",
+        "vote_average": 0
+      }
+    ]
   }
 }
