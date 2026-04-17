@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-04-16T09:00:05.602594+08:00",
+  "run_at": "2026-04-17T09:00:05.445284+08:00",
   "total": 103,
   "qualified": [
     {
@@ -7,7 +7,7 @@
       "category": "movie",
       "douban_id": "35010610",
       "rating": 8.6,
-      "rating_count": 362096,
+      "rating_count": 365350,
       "year": "",
       "url": "https://movie.douban.com/subject/35010610/"
     },
@@ -16,7 +16,7 @@
       "category": "movie",
       "douban_id": "37332784",
       "rating": 8.3,
-      "rating_count": 153840,
+      "rating_count": 156046,
       "year": "",
       "url": "https://movie.douban.com/subject/37332784/"
     },
@@ -25,7 +25,7 @@
       "category": "tv",
       "douban_id": "36343491",
       "rating": 9.1,
-      "rating_count": 6147,
+      "rating_count": 6565,
       "year": "",
       "url": "https://movie.douban.com/subject/36343491/"
     },
@@ -34,7 +34,7 @@
       "category": "tv",
       "douban_id": "37147970",
       "rating": 8.1,
-      "rating_count": 5750,
+      "rating_count": 6073,
       "year": "",
       "url": "https://movie.douban.com/subject/37147970/"
     },
@@ -43,7 +43,7 @@
       "category": "tv",
       "douban_id": "37168326",
       "rating": 8.5,
-      "rating_count": 12149,
+      "rating_count": 12945,
       "year": "",
       "url": "https://movie.douban.com/subject/37168326/"
     },
@@ -52,7 +52,7 @@
       "category": "tv",
       "douban_id": "36559697",
       "rating": 8.7,
-      "rating_count": 14084,
+      "rating_count": 14190,
       "year": "",
       "url": "https://movie.douban.com/subject/36559697/"
     },
@@ -61,7 +61,7 @@
       "category": "tv",
       "douban_id": "36955778",
       "rating": 8.6,
-      "rating_count": 4859,
+      "rating_count": 4959,
       "year": "",
       "url": "https://movie.douban.com/subject/36955778/"
     }
