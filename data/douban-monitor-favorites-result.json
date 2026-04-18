@@ -5,7 +5,7 @@
       "category": "movie",
       "douban_id": "37293378",
       "rating": 9.2,
-      "rating_count": 70705,
+      "rating_count": 70828,
       "year": "2025",
       "url": "https://movie.douban.com/subject/37293378/"
     },
@@ -14,7 +14,7 @@
       "category": "movie",
       "douban_id": "36742572",
       "rating": 8.1,
-      "rating_count": 29959,
+      "rating_count": 30042,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36742572/"
     },
@@ -23,7 +23,7 @@
       "category": "movie",
       "douban_id": "36085606",
       "rating": 8.0,
-      "rating_count": 3388,
+      "rating_count": 3424,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36085606/"
     },
@@ -32,7 +32,7 @@
       "category": "movie",
       "douban_id": "36860441",
       "rating": 8.3,
-      "rating_count": 4169,
+      "rating_count": 4193,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36860441/"
     },
@@ -41,7 +41,7 @@
       "category": "movie",
       "douban_id": "37825206",
       "rating": 8.3,
-      "rating_count": 22001,
+      "rating_count": 22048,
       "year": "2026",
       "url": "https://movie.douban.com/subject/37825206/"
     },
@@ -49,8 +49,8 @@
       "title": "世界的主人",
       "category": "movie",
       "douban_id": "37116612",
-      "rating": 9.0,
-      "rating_count": 4370,
+      "rating": 8.9,
+      "rating_count": 4413,
       "year": "2025",
       "url": "https://movie.douban.com/subject/37116612/"
     },
@@ -59,7 +59,7 @@
       "category": "movie",
       "douban_id": "37312482",
       "rating": 8.1,
-      "rating_count": 10321,
+      "rating_count": 10403,
       "year": "2025",
       "url": "https://movie.douban.com/subject/37312482/"
     },
@@ -68,7 +68,7 @@
       "category": "tv",
       "douban_id": "36363991",
       "rating": 8.3,
-      "rating_count": 116665,
+      "rating_count": 116941,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36363991/"
     }
