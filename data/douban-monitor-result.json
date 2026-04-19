@@ -1,6 +1,84 @@
 {
-  "run_at": "2026-04-19T19:22:58.040931+08:00",
-  "total": 0,
-  "qualified": [],
-  "status": "no_qualified"
+  "run_at": "2026-04-19T09:05:15.950017+08:00",
+  "total": 100,
+  "qualified": [
+    {
+      "title": "我，许可",
+      "category": "movie",
+      "douban_id": "37332784",
+      "rating": 8.3,
+      "rating_count": 163569,
+      "year": "",
+      "url": "https://movie.douban.com/subject/37332784/",
+      "qualified_at": "2026-04-10T18:24:50.467940+08:00",
+      "first_discovered_at": "2026-04-10T18:24:50.467940+08:00"
+    },
+    {
+      "title": "挽救计划",
+      "category": "movie",
+      "douban_id": "35010610",
+      "rating": 8.6,
+      "rating_count": 377178,
+      "year": "",
+      "url": "https://movie.douban.com/subject/35010610/",
+      "qualified_at": "2026-04-10T18:24:50.467940+08:00",
+      "first_discovered_at": "2026-04-10T18:24:50.467940+08:00"
+    },
+    {
+      "title": "黑袍纠察队 第五季",
+      "category": "tv",
+      "douban_id": "36343491",
+      "rating": 9.1,
+      "rating_count": 7182,
+      "year": "",
+      "url": "https://movie.douban.com/subject/36343491/",
+      "qualified_at": "2026-04-16T09:00:05.602594+08:00",
+      "first_discovered_at": "2026-04-16T09:00:05.602594+08:00"
+    },
+    {
+      "title": "21世纪大君夫人",
+      "category": "tv",
+      "douban_id": "37147970",
+      "rating": 8.1,
+      "rating_count": 7164,
+      "year": "",
+      "url": "https://movie.douban.com/subject/37147970/",
+      "qualified_at": "2026-04-16T09:00:05.602594+08:00",
+      "first_discovered_at": "2026-04-16T09:00:05.602594+08:00"
+    },
+    {
+      "title": "真相捕捉 第三季",
+      "category": "tv",
+      "douban_id": "37168326",
+      "rating": 8.4,
+      "rating_count": 14518,
+      "year": "",
+      "url": "https://movie.douban.com/subject/37168326/",
+      "qualified_at": "2026-04-10T18:24:50.467940+08:00",
+      "first_discovered_at": "2026-04-10T18:24:50.467940+08:00"
+    },
+    {
+      "title": "海贼王(真人版) 第二季",
+      "category": "tv",
+      "douban_id": "36559697",
+      "rating": 8.7,
+      "rating_count": 14395,
+      "year": "",
+      "url": "https://movie.douban.com/subject/36559697/",
+      "qualified_at": "2026-04-10T18:24:50.467940+08:00",
+      "first_discovered_at": "2026-04-10T18:24:50.467940+08:00"
+    },
+    {
+      "title": "戴洛奇小镇 第二季",
+      "category": "tv",
+      "douban_id": "36955778",
+      "rating": 8.6,
+      "rating_count": 5151,
+      "year": "",
+      "url": "https://movie.douban.com/subject/36955778/",
+      "qualified_at": "2026-04-10T18:24:50.467940+08:00",
+      "first_discovered_at": "2026-04-10T18:24:50.467940+08:00"
+    }
+  ],
+  "status": "has_qualified"
 }
