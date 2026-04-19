@@ -1204,7 +1204,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
                 print(result.stderr, end="", flush=True)
 
     log_step("[8/8] 同步并推送到 GitHub...")
-    git_kw = {"cwd": str(project_root), "capture_output": True, "text": True}
+    git_kw = {"cwd": str(project_root), "capture_output": True, "text": True, "encoding": "utf-8", "errors": "replace"}
 
     # 先拉取远端最新，避免 push 被拒绝
     pull = subprocess.run(["git", "pull", "--rebase", "--autostash"], **git_kw)
