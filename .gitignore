@@ -1,3 +1,5 @@
 .venv/
 test-output/
 .env
+__pycache__/
+.claude/settings.local.json
