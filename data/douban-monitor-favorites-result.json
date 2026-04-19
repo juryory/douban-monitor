@@ -5,7 +5,11 @@
       "category": "movie",
       "douban_id": "37293378",
       "rating": 9.1,
+<<<<<<< Updated upstream
       "rating_count": 71078,
+=======
+      "rating_count": 71079,
+>>>>>>> Stashed changes
       "year": "2025",
       "url": "https://movie.douban.com/subject/37293378/"
     },
@@ -14,7 +18,11 @@
       "category": "movie",
       "douban_id": "36742572",
       "rating": 8.1,
+<<<<<<< Updated upstream
       "rating_count": 30328,
+=======
+      "rating_count": 30329,
+>>>>>>> Stashed changes
       "year": "2025",
       "url": "https://movie.douban.com/subject/36742572/"
     },
@@ -50,7 +58,11 @@
       "category": "movie",
       "douban_id": "37116612",
       "rating": 9.0,
+<<<<<<< Updated upstream
       "rating_count": 4492,
+=======
+      "rating_count": 4493,
+>>>>>>> Stashed changes
       "year": "2025",
       "url": "https://movie.douban.com/subject/37116612/"
     },
