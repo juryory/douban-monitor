@@ -1208,23 +1208,33 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
 
     # 先拉取远端最新，避免 push 被拒绝
     pull = subprocess.run(["git", "pull", "--rebase", "--autostash"], **git_kw)
-    if pull.returncode == 0:
-        log_kv("拉取", "成功")
-    else:
-        log_kv("拉取失败", (pull.stderr or "").strip())
+    if pull.returncode != 0:
+        log_kv("拉取失败（中止提交，避免推送坏数据）", (pull.stderr or pull.stdout or "").strip())
+        return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
+    log_kv("拉取", "成功")
 
     subprocess.run(["git", "add", "data/", "reports/"], **git_kw)
     diff = subprocess.run(["git", "diff", "--cached", "--quiet"], **git_kw)
-    if diff.returncode != 0:
-        msg = f"data: 更新监控数据 {now.strftime('%Y-%m-%d %H:%M')}"
-        subprocess.run(["git", "commit", "-m", msg], **git_kw)
-        push = subprocess.run(["git", "push"], **git_kw)
-        if push.returncode == 0:
-            log_kv("推送", "成功")
-        else:
-            log_kv("推送失败", (push.stderr or "").strip())
-    else:
+    if diff.returncode == 0:
         log_kv("跳过", "数据无变化，无需提交")
+        return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
+
+    # 提交前扫一遍待提交文件，防止冲突标记混进去
+    staged_diff = subprocess.run(["git", "diff", "--cached"], **git_kw)
+    conflict_markers = ("<<<<<<<", "=======", ">>>>>>>")
+    suspicious = [m for m in conflict_markers if f"\n+{m}" in (staged_diff.stdout or "")]
+    if suspicious:
+        log_kv("检测到冲突标记，中止提交", " ".join(suspicious))
+        subprocess.run(["git", "reset", "HEAD", "--", "data/", "reports/"], **git_kw)
+        return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
+
+    msg = f"data: 更新监控数据 {now.strftime('%Y-%m-%d %H:%M')}"
+    subprocess.run(["git", "commit", "-m", msg], **git_kw)
+    push = subprocess.run(["git", "push"], **git_kw)
+    if push.returncode == 0:
+        log_kv("推送", "成功")
+    else:
+        log_kv("推送失败", (push.stderr or "").strip())
 
     return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
 
