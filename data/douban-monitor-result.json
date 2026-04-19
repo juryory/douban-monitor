@@ -1,13 +1,13 @@
 {
-  "run_at": "2026-04-18T09:00:05.874306+08:00",
-  "total": 102,
+  "run_at": "2026-04-19T09:05:15.950017+08:00",
+  "total": 100,
   "qualified": [
     {
       "title": "我，许可",
       "category": "movie",
       "douban_id": "37332784",
       "rating": 8.3,
-      "rating_count": 158947,
+      "rating_count": 163569,
       "year": "",
       "url": "https://movie.douban.com/subject/37332784/"
     },
@@ -16,7 +16,7 @@
       "category": "movie",
       "douban_id": "35010610",
       "rating": 8.6,
-      "rating_count": 369426,
+      "rating_count": 377178,
       "year": "",
       "url": "https://movie.douban.com/subject/35010610/"
     },
@@ -25,7 +25,7 @@
       "category": "tv",
       "douban_id": "36343491",
       "rating": 9.1,
-      "rating_count": 6884,
+      "rating_count": 7182,
       "year": "",
       "url": "https://movie.douban.com/subject/36343491/"
     },
@@ -34,7 +34,7 @@
       "category": "tv",
       "douban_id": "37147970",
       "rating": 8.1,
-      "rating_count": 6456,
+      "rating_count": 7164,
       "year": "",
       "url": "https://movie.douban.com/subject/37147970/"
     },
@@ -43,7 +43,7 @@
       "category": "tv",
       "douban_id": "37168326",
       "rating": 8.4,
-      "rating_count": 13660,
+      "rating_count": 14518,
       "year": "",
       "url": "https://movie.douban.com/subject/37168326/"
     },
@@ -52,7 +52,7 @@
       "category": "tv",
       "douban_id": "36559697",
       "rating": 8.7,
-      "rating_count": 14283,
+      "rating_count": 14395,
       "year": "",
       "url": "https://movie.douban.com/subject/36559697/"
     },
@@ -61,7 +61,7 @@
       "category": "tv",
       "douban_id": "36955778",
       "rating": 8.6,
-      "rating_count": 5042,
+      "rating_count": 5151,
       "year": "",
       "url": "https://movie.douban.com/subject/36955778/"
     }
