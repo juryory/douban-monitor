@@ -9,14 +9,12 @@
 
 ## 工作方式
 
-支持两种运行模式，通过 `config.toml` 中的 `mode` 字段切换：
+纯 HTTP 抓取，不需要浏览器环境：
 
-- **轻量模式**（`mode = "lite"`，默认）
-  通过豆瓣 Frodo API 获取榜单候选和详情数据，不需要浏览器环境
-- **完整模式**（`mode = "full"`）
-  使用 Playwright 浏览器抓取豆瓣榜单，详情页优先 HTML 解析
+- **豆瓣**
+  优先使用 Frodo API（带 HMAC 签名）；Frodo 被风控或签名失败时自动降级到 Rexxar API（`m.douban.com` 移动网页版接口，无需签名）
 - **TMDB**
-  作为候选补充和展示元数据来源（封面、简介、类型等）
+  提供额外候选和展示元数据来源（封面、简介、类型等）
 
 默认抓取的豆瓣榜单（全部已验证可用）：
 
@@ -34,8 +32,6 @@
   非敏感运行参数
 - `.env.example`
   环境变量模板（TMDB API key）
-- `requirements.txt`
-  Python 依赖
 - `index.html`
   可视化网页，展示监控库中的达标内容
 - `scripts/monitor.py`
@@ -59,24 +55,7 @@
 
 ## 运行依赖
 
-### 轻量模式
-
 仅使用 Python 标准库，无额外依赖。
-
-### 完整模式
-
-需要 `playwright`：
-
-```bash
-pip install -r requirements.txt
-python -m playwright install chromium
-```
-
-Linux 容器中还需要安装 Playwright 所依赖的系统库：
-
-```bash
-apt-get update && apt-get install -y libnspr4 libnss3 libatk1.0-0 libdbus-1-3 libcups2 libxkbcommon0 libatspi2.0-0 libgbm1 libasound2 libxcomposite1 libxdamage1 libxfixes3 libxrandr2
-```
 
 ### TMDB 数据
 
@@ -145,10 +124,8 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 
 ## 已知限制
 
-- 轻量模式优先走豆瓣 Frodo API（带签名），失败时自动降级到 Rexxar API（`m.douban.com` 移动网页版接口，无需签名）。Frodo 常因 IP 风控或签名方案变化返回 400，Rexxar 作为兜底通常仍然可用
-- 完整模式下少量详情页在特定环境下可能无法稳定提取评分或评分人数
+- 豆瓣优先走 Frodo API（带签名），失败时自动降级到 Rexxar API（`m.douban.com` 移动网页版接口，无需签名）。Frodo 常因 IP 风控或签名方案变化返回 400，Rexxar 作为兜底通常仍然可用
 - 未配置 `TMDB_API_KEY` 时，TMDB 候选源和网页封面/元数据不会生效
-- 未配置豆瓣 Cookie 时，不依赖豆瓣搜索页补链接
 
 ## 后续方向
 

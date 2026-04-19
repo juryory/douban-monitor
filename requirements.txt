@@ -1,3 +1,1 @@
-# 轻量模式 (mode = "lite") 不需要额外依赖，仅使用 Python 标准库
-# 完整模式 (mode = "full") 需要取消以下注释：
-# playwright>=1.54.0
+# 本项目仅使用 Python 标准库，无需额外依赖

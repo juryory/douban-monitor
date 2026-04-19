@@ -1,8 +1,5 @@
 # 豆瓣高分监控运行配置
 
-# 运行模式: "lite" (Frodo API, 无需浏览器) 或 "full" (Playwright 浏览器)
-mode = "lite"
-
 # 最终提醒阈值
 min_rating = 8.0
 min_rating_count = 3000
@@ -40,8 +37,3 @@ tmdb_tv_pages = 1
 
 # 请求设置
 request_timeout_seconds = 20
-
-# 浏览器设置
-browser_headless = true
-browser_wait_ms = 5000
-browser_executable_path = ""

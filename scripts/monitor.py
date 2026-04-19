@@ -17,12 +17,6 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
-try:
-    from playwright.sync_api import sync_playwright
-except ImportError:
-    sync_playwright = None  # type: ignore[assignment,misc]
-
-
 CST = timezone(timedelta(hours=8))
 
 
@@ -112,7 +106,6 @@ class StateItem:
 
 
 DEFAULT_CONFIG = {
-    "mode": "lite",
     "min_rating": 8.0,
     "min_rating_count": 3000,
     "admission_min_rating": 7.5,
@@ -138,9 +131,6 @@ DEFAULT_CONFIG = {
         "https://m.douban.com/subject_collection/show_global_best_weekly",
     ],
     "request_timeout_seconds": 20,
-    "browser_headless": True,
-    "browser_wait_ms": 5000,
-    "browser_executable_path": "",
     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/123.0 Safari/537.36",
 }
@@ -174,18 +164,6 @@ def candidate_key(candidate: Candidate) -> str:
     title = candidate.title.strip().lower()
     year = candidate.year or 0
     return f"{title}:{candidate.category}:{year}"
-
-
-def fetch_url(url: str, config: dict[str, Any]) -> str:
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": config["user_agent"],
-            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-        },
-    )
-    with urllib.request.urlopen(request, timeout=config["request_timeout_seconds"]) as response:
-        return response.read().decode("utf-8", errors="replace")
 
 
 def get_env(name: str, default: str | None = None) -> str | None:
@@ -342,253 +320,6 @@ def fetch_douban_subject_detail_via_rexxar(douban_id: str, config: dict[str, Any
     return {}
 
 
-def _require_playwright() -> None:
-    if sync_playwright is None:
-        raise RuntimeError(
-            "完整模式需要 playwright，请执行: pip install playwright && python -m playwright install chromium"
-        )
-
-
-def normalize_douban_subject_url(url: str) -> tuple[str | None, str]:
-    if "sec.douban.com/c?" in url:
-        parsed = urllib.parse.urlparse(url)
-        query = urllib.parse.parse_qs(parsed.query)
-        redirect = query.get("r", [None])[0]
-        if redirect:
-            url = urllib.parse.unquote(redirect)
-    if url.startswith("//"):
-        url = "https:" + url
-    elif url.startswith("/"):
-        url = "https://m.douban.com" + url
-    match = re.search(r"/subject/(\d+)/", url)
-    if match:
-        subject_id = match.group(1)
-        return subject_id, f"https://movie.douban.com/subject/{subject_id}/"
-    return None, url
-
-
-def fetch_page_with_browser(url: str, config: dict[str, Any]) -> str:
-    _require_playwright()
-    launch_kwargs: dict[str, Any] = {"headless": bool(config.get("browser_headless", True))}
-    executable_path = str(config.get("browser_executable_path", "")).strip()
-    if executable_path:
-        launch_kwargs["executable_path"] = executable_path
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch(**launch_kwargs)
-        context = browser.new_context(
-            locale="zh-CN",
-            timezone_id="Asia/Shanghai",
-            viewport={"width": 1440, "height": 1200},
-            user_agent=config["user_agent"],
-        )
-        page = context.new_page()
-        try:
-            page.goto(url, wait_until="domcontentloaded", timeout=int(config["request_timeout_seconds"]) * 1000)
-            page.wait_for_timeout(int(config.get("browser_wait_ms", 5000)))
-            try:
-                page.wait_for_load_state("networkidle", timeout=5000)
-            except Exception:
-                pass
-            return page.content()
-        finally:
-            context.close()
-            browser.close()
-
-
-def resolve_candidate_urls_from_collection_page(
-    collection_url: str,
-    rows: list[dict[str, str]],
-    config: dict[str, Any],
-) -> list[dict[str, str]]:
-    unresolved_titles = [row["title"] for row in rows if row.get("title") and not row.get("href")]
-    if not unresolved_titles:
-        return rows
-
-    launch_kwargs: dict[str, Any] = {"headless": bool(config.get("browser_headless", True))}
-    executable_path = str(config.get("browser_executable_path", "")).strip()
-    if executable_path:
-        launch_kwargs["executable_path"] = executable_path
-
-    resolved_map: dict[str, str] = {}
-    with sync_playwright() as p:
-        browser = p.chromium.launch(**launch_kwargs)
-        context = browser.new_context(
-            locale="zh-CN",
-            timezone_id="Asia/Shanghai",
-            viewport={"width": 1440, "height": 1200},
-            user_agent=config["user_agent"],
-        )
-        page = context.new_page()
-        try:
-            page.goto(collection_url, wait_until="domcontentloaded", timeout=int(config["request_timeout_seconds"]) * 1000)
-            page.wait_for_timeout(int(config.get("browser_wait_ms", 5000)))
-            try:
-                page.wait_for_load_state("networkidle", timeout=5000)
-            except Exception:
-                pass
-
-            for title in unresolved_titles:
-                try:
-                    locator = page.get_by_text(title, exact=True).first
-                    if locator.count() == 0:
-                        continue
-                    with context.expect_page(timeout=8000) as new_page_info:
-                        locator.click()
-                    detail_page = new_page_info.value
-                    try:
-                        detail_page.wait_for_load_state("domcontentloaded", timeout=8000)
-                    except Exception:
-                        pass
-                    resolved_map[title] = detail_page.url
-                    detail_page.close()
-                except Exception:
-                    continue
-        finally:
-            context.close()
-            browser.close()
-
-    for row in rows:
-        if not row.get("href") and row.get("title") in resolved_map:
-            row["href"] = resolved_map[row["title"]]
-    return rows
-
-
-def extract_weekly_candidates_with_browser(url: str, config: dict[str, Any]) -> list[dict[str, str]]:
-    launch_kwargs: dict[str, Any] = {"headless": bool(config.get("browser_headless", True))}
-    executable_path = str(config.get("browser_executable_path", "")).strip()
-    if executable_path:
-        launch_kwargs["executable_path"] = executable_path
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch(**launch_kwargs)
-        context = browser.new_context(
-            locale="zh-CN",
-            timezone_id="Asia/Shanghai",
-            viewport={"width": 1440, "height": 1200},
-            user_agent=config["user_agent"],
-        )
-        page = context.new_page()
-        try:
-            page.goto(url, wait_until="domcontentloaded", timeout=int(config["request_timeout_seconds"]) * 1000)
-            page.wait_for_timeout(int(config.get("browser_wait_ms", 5000)))
-            try:
-                page.wait_for_load_state("networkidle", timeout=5000)
-            except Exception:
-                pass
-
-            rows = page.evaluate(
-                """
-                () => {
-                  const normalize = (value) => (value || '').replace(/\\s+/g, ' ').trim();
-                  const rows = [];
-                  const seen = new Set();
-
-                  const rawText = document.body?.innerText || '';
-                  const lines = rawText.split('\\n').map(line => normalize(line)).filter(Boolean);
-                  for (let i = 0; i < lines.length - 2; i++) {
-                    if (!/^\\d+$/.test(lines[i])) continue;
-                    const title = lines[i + 1];
-                    const score = lines[i + 2];
-                    if (!title || !/^\\d+(\\.\\d+)?$/.test(score)) continue;
-                    const key = `title:${title}`;
-                    if (seen.has(key)) continue;
-                    rows.push({ href: '', title });
-                    seen.add(key);
-                  }
-
-                  const textMap = new Map(rows.map(item => [item.title, item]));
-
-                  for (const node of document.querySelectorAll('a[href*="/subject/"], a[href*="/movie/subject/"]')) {
-                    const href = node.href || node.getAttribute('href') || '';
-                    if (!href || !/\\/subject\\/\\d+/.test(href)) continue;
-                    const title =
-                      normalize(node.querySelector('img[alt]')?.getAttribute('alt')) ||
-                      normalize(node.getAttribute('title')) ||
-                      normalize(node.innerText) ||
-                      normalize(node.textContent);
-                    if (!title) continue;
-                    if (textMap.has(title)) {
-                      textMap.get(title).href = href;
-                      continue;
-                    }
-                    if (!seen.has(href)) {
-                      rows.push({ href, title });
-                      seen.add(href);
-                    }
-                  }
-
-                  return rows;
-                }
-                """
-            )
-            return rows if isinstance(rows, list) else []
-        finally:
-            context.close()
-            browser.close()
-
-
-def resolve_douban_url_from_search(candidate: Candidate, config: dict[str, Any]) -> Candidate:
-    if candidate.url or not candidate.title:
-        return candidate
-
-    search_url = "https://www.douban.com/search?cat=1002&q=" + urllib.parse.quote(candidate.title)
-    html = fetch_page_with_browser(search_url, config)
-    match = re.search(r"https?://movie\.douban\.com/subject/\d+/?", html)
-    if not match:
-        return candidate
-
-    douban_id, normalized_url = normalize_douban_subject_url(match.group(0))
-    candidate.url = normalized_url
-    if douban_id:
-        candidate.douban_id = douban_id
-    return candidate
-
-
-def fetch_douban_weekly_candidates_with_config(config: dict[str, Any]) -> list[Candidate]:
-    candidates: list[Candidate] = []
-    collection_urls = config.get("douban_collection_urls") or []
-    for collection_url in collection_urls:
-        rows = extract_weekly_candidates_with_browser(str(collection_url), config)
-        rows = resolve_candidate_urls_from_collection_page(str(collection_url), rows, config)
-        category = "unknown"
-        source = "douban_weekly"
-        url_text = str(collection_url)
-        if "movie_" in url_text:
-            category = "movie"
-            source = "douban_movie_weekly"
-        elif "tv_chinese" in url_text:
-            category = "tv"
-            source = "douban_tv_chinese_weekly"
-        elif "tv_global" in url_text:
-            category = "tv"
-            source = "douban_tv_global_weekly"
-        elif "show_domestic" in url_text:
-            category = "variety"
-            source = "douban_show_domestic_weekly"
-        elif "show_global" in url_text:
-            category = "variety"
-            source = "douban_show_global_weekly"
-
-        for row in rows:
-            raw_url = str(row.get("href", "")).strip()
-            title = str(row.get("title", "")).strip()
-            douban_id = None
-            normalized_url = None
-            if raw_url:
-                douban_id, normalized_url = normalize_douban_subject_url(raw_url)
-            candidates.append(
-                Candidate(
-                    title=title or f"douban-subject-{douban_id or 'unknown'}",
-                    category=category,
-                    source=source,
-                    douban_id=douban_id,
-                    url=normalized_url,
-                )
-            )
-    return candidates
-
-
 def _collection_id_from_url(url: str) -> str:
     """Extract collection id like 'movie_weekly_best' from the full URL."""
     match = re.search(r"subject_collection/([^/?#]+)", url)
@@ -681,79 +412,6 @@ def fetch_douban_subject_detail_lite(candidate: Candidate, config: dict[str, Any
     year_str = data.get("year") or ""
     if year_str and year_str.isdigit() and candidate.year is None:
         candidate.year = int(year_str)
-    return candidate
-
-
-def fetch_douban_subject_detail(candidate: Candidate, config: dict[str, Any]) -> Candidate:
-    candidate = resolve_douban_url_from_search(candidate, config)
-    if not candidate.url and candidate.douban_id:
-        candidate.url = f"https://movie.douban.com/subject/{candidate.douban_id}/"
-    if not candidate.url:
-        return candidate
-
-    html = fetch_url(candidate.url, config)
-
-    title_match = re.search(r"<title>(.*?)</title>", html, re.IGNORECASE | re.DOTALL)
-    if title_match:
-        title = re.sub(r"\s+", " ", title_match.group(1)).strip()
-        title = re.sub(r"\s*\(豆瓣\)\s*$", "", title)
-        if title:
-            candidate.title = title
-
-    rating_match = re.search(r'property="v:average">([^<]+)<', html)
-    if rating_match:
-        try:
-            candidate.rating = float(rating_match.group(1).strip())
-        except ValueError:
-            pass
-
-    count_match = re.search(r'property="v:votes">([^<]+)<', html)
-    if count_match:
-        try:
-            candidate.rating_count = int(count_match.group(1).strip().replace(",", ""))
-        except ValueError:
-            pass
-    if candidate.rating_count is None:
-        count_match = re.search(r"(\d[\d,]*)人评价", html)
-        if count_match:
-            candidate.rating_count = int(count_match.group(1).replace(",", ""))
-
-    year_match = re.search(r"(\d{4})", html)
-    if year_match and candidate.year is None:
-        candidate.year = int(year_match.group(1))
-
-    if candidate.rating is None or candidate.rating_count is None or candidate.title == "豆瓣":
-        html = fetch_page_with_browser(candidate.url, config)
-
-        title_match = re.search(r"<title>(.*?)</title>", html, re.IGNORECASE | re.DOTALL)
-        if title_match:
-            title = re.sub(r"\s+", " ", title_match.group(1)).strip()
-            title = re.sub(r"\s*\(豆瓣\)\s*$", "", title)
-            if title:
-                candidate.title = title
-
-        rating_match = re.search(r'property="v:average">([^<]+)<', html)
-        if rating_match:
-            try:
-                candidate.rating = float(rating_match.group(1).strip())
-            except ValueError:
-                pass
-
-        count_match = re.search(r'property="v:votes">([^<]+)<', html)
-        if count_match:
-            try:
-                candidate.rating_count = int(count_match.group(1).strip().replace(",", ""))
-            except ValueError:
-                pass
-        if candidate.rating_count is None:
-            count_match = re.search(r"(\d[\d,]*)人评价", html)
-            if count_match:
-                candidate.rating_count = int(count_match.group(1).replace(",", ""))
-
-        year_match = re.search(r"(\d{4})", html)
-        if year_match and candidate.year is None:
-            candidate.year = int(year_match.group(1))
-
     return candidate
 
 
@@ -1183,11 +841,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     config = {**DEFAULT_CONFIG, **file_config, **(config or {})}
     now = now_cst()
 
-    mode = str(config.get("mode", "lite")).strip().lower()
-    use_lite = mode != "full"
-    if not use_lite:
-        _require_playwright()
-    log_step(f"运行模式: {'轻量 (Frodo API)' if use_lite else '完整 (浏览器)'}")
+    log_step("运行模式: 豆瓣 Frodo → Rexxar 自动降级")
 
     state_path = project_root / "data" / "douban-monitor-state.json"
     library_path = project_root / "data" / "douban-monitor-library.json"
@@ -1197,10 +851,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     library_data = load_json(library_path, {"version": 1, "updated_at": None, "items": {}})
 
     log_step("[1/8] 抓取豆瓣榜单候选...")
-    if use_lite:
-        douban_candidates = fetch_douban_weekly_candidates_lite(config)
-    else:
-        douban_candidates = fetch_douban_weekly_candidates_with_config(config)
+    douban_candidates = fetch_douban_weekly_candidates_lite(config)
     log_kv("豆瓣榜单候选数", len(douban_candidates))
 
     log_step("[2/8] 抓取 TMDB 候选...")
@@ -1213,17 +864,14 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     candidates.extend(tmdb_candidates)
     deduped_candidates = dedupe_candidates(candidates)
     log_kv("去重后候选数", len(deduped_candidates))
-    if use_lite:
-        enriched: list[Candidate] = []
-        for item in deduped_candidates:
-            if item.rating is not None and item.rating_count is not None:
-                enriched.append(enrich_with_tmdb(item))
-            else:
-                enriched.append(enrich_with_tmdb(fetch_douban_subject_detail_lite(item, config)))
-                time.sleep(0.3)
-        candidates = enriched
-    else:
-        candidates = [enrich_with_tmdb(fetch_douban_subject_detail(item, config)) for item in deduped_candidates]
+    enriched: list[Candidate] = []
+    for item in deduped_candidates:
+        if item.rating is not None and item.rating_count is not None:
+            enriched.append(enrich_with_tmdb(item))
+        else:
+            enriched.append(enrich_with_tmdb(fetch_douban_subject_detail_lite(item, config)))
+            time.sleep(0.3)
+    candidates = enriched
     detail_ready = sum(1 for item in candidates if item.url)
     rating_ready = sum(1 for item in candidates if item.rating is not None)
     rating_count_ready = sum(1 for item in candidates if item.rating_count is not None)

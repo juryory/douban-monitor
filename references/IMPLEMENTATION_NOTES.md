@@ -4,82 +4,51 @@
 
 ## 当前模块职责
 
-### 轻量模式（Frodo API）
+### 豆瓣抓取（Frodo → Rexxar 双通道）
 
 - `frodo_get(...)`
   调用豆瓣 Frodo API，自动完成 HMAC-SHA1 签名。
-
-- `fetch_douban_collection_via_frodo(...)`
-  通过 Frodo API 获取豆瓣榜单候选列表。
-
-- `fetch_douban_subject_detail_via_frodo(...)`
-  通过 Frodo API 获取条目详情（评分、评分人数、标题、年份）。
-
+- `fetch_douban_collection_via_frodo(...)` / `fetch_douban_subject_detail_via_frodo(...)`
+  通过 Frodo API 获取榜单候选或条目详情。
+- `rexxar_get(...)`
+  调用 `m.douban.com` 移动网页版 Rexxar API，无需签名。
+- `fetch_douban_collection_via_rexxar(...)` / `fetch_douban_subject_detail_via_rexxar(...)`
+  Rexxar 版的榜单和详情抓取，字段与 Frodo 一致，可直接互换。
 - `fetch_douban_weekly_candidates_lite(...)`
-  轻量模式下的榜单候选抓取入口。
-
+  榜单候选抓取入口：先试 Frodo，任一榜单失败自动改用 Rexxar。
 - `fetch_douban_subject_detail_lite(...)`
-  轻量模式下的详情补全入口。
-
-### 完整模式（浏览器）
-
-- `extract_weekly_candidates_with_browser(...)`
-  使用 Playwright 打开豆瓣榜单页，从浏览器 DOM 中提取候选标题。
-
-- `resolve_candidate_urls_from_collection_page(...)`
-  对没有直链的榜单候选，直接在榜单页内点击对应卡片，回填详情页链接。
-
-- `fetch_douban_subject_detail(...)`
-  访问豆瓣详情页，提取标题、评分、评分人数和年份。
-  如果普通 HTML 请求拿不到关键字段，会自动回退到浏览器抓取。
+  详情补全入口：同样 Frodo 失败时自动降级到 Rexxar。
 
 ### 通用模块
 
 - `fetch_tmdb_hot_candidates_with_config(...)`
   调用 TMDB 热门接口获取补充候选。
-
 - `update_library(...)`
   应用入库规则、分配观察层级、刷新监控库条目。
-
 - `update_state(...)`
   判定首次提醒和二次提醒。
-
 - `render_report(...)`
   输出每日 Markdown 报告。
+- `build_result_json(...)`
+  生成前端结果数据，每条达标条目附带 `qualified_at` / `first_discovered_at`。
 
 ### 网页数据生成
 
+- `fetch_favorites.py`
+  读取 `data/douban-monitor-favorites.json` 的手动收藏豆瓣 ID，通过 Rexxar API 获取详情，同时附带 TMDB 封面和元数据。
 - `fetch_posters.py`
-  从 TMDB 获取封面图 URL。查找策略：Frodo API 取 IMDB ID → TMDB `/find/{imdb_id}`（最准确）→ TMDB 标题模糊搜索（逐步简化标题，去除季数后缀，拆分中外文混合词）。
+  从 TMDB 获取封面图 URL。查找策略：Frodo/Rexxar 取 IMDB ID → TMDB `/find/{imdb_id}`（最准确）→ TMDB 标题模糊搜索（逐步简化标题，去除季数后缀，拆分中外文混合词）。
   输出：`data/douban-monitor-posters.json`
-
 - `fetch_metadata.py`
-  从 TMDB 获取 original_title、overview、genres、runtime、release_date。使用与 fetch_posters.py 相同的 IMDB→TMDB 查找策略。
+  从 TMDB 获取 original_title、overview、genres、runtime、release_date、cast 等。使用与 fetch_posters.py 相同的 IMDB→TMDB 查找策略。
   输出：`data/douban-monitor-metadata.json`
+- `fetch_reviews.py`
+  抓取豆瓣短评。
+  输出：`data/douban-monitor-reviews.json`
 
 ## Python 依赖
 
-轻量模式不需要额外依赖，仅使用 Python 标准库。
-
-完整模式需要 `playwright`：
-
-```bash
-pip install playwright
-python -m playwright install chromium
-```
-
-## Linux 容器依赖
-
-轻量模式不需要任何系统级依赖。
-
-完整模式要求容器内具备浏览器自动化运行环境。
-如果使用 Playwright 自带 Chromium，通常需要额外安装 Linux 系统库，例如：
-
-```bash
-apt-get update && apt-get install -y libnspr4 libnss3 libatk1.0-0 libdbus-1-3 libcups2 libxkbcommon0 libatspi2.0-0 libgbm1 libasound2 libxcomposite1 libxdamage1 libxfixes3 libxrandr2
-```
-
-如果容器中已经有可用浏览器与依赖，也可以直接通过 `config.toml` 中的 `browser_executable_path` 复用。
+仅使用 Python 标准库，无需 `pip install` 额外依赖。
 
 ## 环境变量
 
@@ -93,19 +62,17 @@ apt-get update && apt-get install -y libnspr4 libnss3 libatk1.0-0 libdbus-1-3 li
 - 候选发现
   豆瓣多榜单页 + TMDB 热门接口
 - 评分与评分人数真值
-  豆瓣详情页
-- 抓取分层
-  榜单页走浏览器，详情页走 HTML，必要时浏览器兜底
-- 补链接策略
-  优先使用榜单页卡片点击补详情页链接
+  豆瓣详情页（Frodo 优先，Rexxar 兜底）
 - TMDB 作用
   补充展示元数据，不覆盖豆瓣评分和评分人数
 - 网页数据生成
-  `fetch_posters.py` 和 `fetch_metadata.py` 从 TMDB 获取封面和元数据，供 `index.html` 展示
+  `fetch_posters.py` / `fetch_metadata.py` / `fetch_reviews.py` 从 TMDB 和豆瓣获取展示用数据
 - 数据版本管理
-  `data/` 和 `reports/` 目录已纳入 Git 跟踪，每次运行后自动提交推送
+  `data/` 和 `reports/` 目录纳入 Git 跟踪，每次运行后自动提交推送
+- 抓取失败兜底
+  候选为 0 时跳过 Markdown 报告和 `result.json` 的写入，保留上一份好数据；git pull 失败或检测到冲突标记时中止提交
 
-当前已验证：
+当前已验证的榜单：
 
 - 电影榜
 - 华语剧集榜
