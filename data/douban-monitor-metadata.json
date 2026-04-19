@@ -923,5 +923,770 @@
         "vote_average": 8.0
       }
     ]
+  },
+  "37332784": {
+    "tmdb_id": 1546855,
+    "tmdb_type": "movie",
+    "original_title": "我，许可",
+    "overview": "00后“母单”女孩儿许可（文淇 饰）面临一场迫在眉睫的妇科手术，却因妈妈胡春蓉（秦海璐 饰）的突袭式造访打乱了所有计划。母女同居，冲突乍起。在新旧观念的摩擦中，没想到女儿对妈妈展开了一次又一次反向教育——跟妈谈心，不如带妈蹦迪；给妈上生理课，不如直接送妈小玩具……最终许可能否顺利手术，胡春蓉又能否鼓起勇气开始新生活？这场笑点和泪点齐飞的大戏，又将如何重塑两人之间的母女关系……",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ],
+    "runtime": 118,
+    "release_date": "2026-03-21",
+    "backdrop_path": "/sc2Q8HwhUOb49IfbkHHvi8dB7yy.jpg",
+    "countries": [
+      "China"
+    ],
+    "director": "杨荔钠",
+    "cast": [
+      {
+        "name": "文淇",
+        "character": "Xu Ke",
+        "profile_path": "/5sV0c3iCnLhepzfR1OA2dqAtaEr.jpg"
+      },
+      {
+        "name": "秦海璐",
+        "character": "Hu Chunrong",
+        "profile_path": "/uhiUlT5c5RU3Qmo42Kjtm8gZRy.jpg"
+      },
+      {
+        "name": "白客",
+        "character": "Doctor",
+        "profile_path": "/t7Hi7qYnXPaeehR7K5rbf0hHX0B.jpg"
+      },
+      {
+        "name": "李雪琴",
+        "character": "Editor",
+        "profile_path": "/sr3mNlb7ute2hj8AOen8HR5Vm7e.jpg"
+      },
+      {
+        "name": "牛莉",
+        "character": "Landlady",
+        "profile_path": "/zsj8gHSsV2duAhObxZvGC3pyd9P.jpg"
+      },
+      {
+        "name": "刘佳",
+        "character": "Doctor",
+        "profile_path": "/wcFTjV0UpEyPh7bOtmMWdpBbKNr.jpg"
+      },
+      {
+        "name": "啜妮",
+        "character": "Ms. Sun",
+        "profile_path": "/3K0RFTpCKVYmyhltY7RND0vyFw5.jpg"
+      },
+      {
+        "name": "王和",
+        "character": "Teacher",
+        "profile_path": "/vMc2vJNc5UjYITlPzxGJrh2o5Sn.jpg"
+      }
+    ],
+    "stills": [
+      "/sc2Q8HwhUOb49IfbkHHvi8dB7yy.jpg",
+      "/3RKbP73oyvKtxiNNfrH5C868UEw.jpg",
+      "/5ItVFV9zuFMRSmSGZbWgAppuIE3.jpg",
+      "/sZVE0aUpb96HsmmagO3eeEfYzpl.jpg",
+      "/c0ZSr1L2ToYc0iCQsVjsSPqDS5I.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 436459,
+        "title": "不只是朋友",
+        "poster_path": "/uJMknKxZagbhAYiiMjEaFnsZzRR.jpg",
+        "vote_average": 6.309
+      },
+      {
+        "tmdb_id": 172631,
+        "title": "家庭周末",
+        "poster_path": "/RiUNV96HPP14OfB7ILEOe2Vj26.jpg",
+        "vote_average": 6.3
+      },
+      {
+        "tmdb_id": 1077661,
+        "title": "成年人们",
+        "poster_path": "/qFuBi5JDZdJLoNDBOA9U2PM9wpy.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 1147596,
+        "title": "第二十条",
+        "poster_path": "/nTKeuNKbnUgiZZ4vEZWpUds3DYP.jpg",
+        "vote_average": 6.944
+      },
+      {
+        "tmdb_id": 31459,
+        "title": "三代同堂",
+        "poster_path": "/xmnZQwgNoTuzPr65QwLAEpFu9UP.jpg",
+        "vote_average": 5.981
+      },
+      {
+        "tmdb_id": 77633,
+        "title": "大腕",
+        "poster_path": "/3BrFwSIug0CzgmR3LxbVkkzkMKQ.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 419459,
+        "title": "固定电话",
+        "poster_path": "/p7RVsyi67S95RyNJjX99E1MaOsA.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 1220515,
+        "title": "宝藏",
+        "poster_path": "/uDMrdPAQHjvbSxFiYrWWVE3dYrD.jpg",
+        "vote_average": 6.535
+      }
+    ]
+  },
+  "35010610": {
+    "tmdb_id": 687163,
+    "tmdb_type": "movie",
+    "original_title": "Project Hail Mary",
+    "overview": "　　太阳即将熄灭，地球命悬一线，对太空一窍不通的中学老师瑞恩（瑞恩·高斯林 饰）竟成为全人类的希望。被迫成为宇航员的他，踏上有去无回的太空孤旅。他能否力挽狂澜，为人类带来新的黎明？\r 　　影片改编自安迪·威尔的同名畅销科幻小说。",
+    "genres": [
+      "科幻",
+      "冒险"
+    ],
+    "runtime": 157,
+    "release_date": "2026-03-15",
+    "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "菲尔·洛德",
+    "cast": [
+      {
+        "name": "瑞恩·高斯林",
+        "character": "Ryland Grace",
+        "profile_path": "/lyUyVARQKhGxaxy0FbPJCQRpiaW.jpg"
+      },
+      {
+        "name": "桑德拉·惠勒",
+        "character": "Eva Stratt",
+        "profile_path": "/jQfKXVCPTH9KEnzHHU4QemCnlMe.jpg"
+      },
+      {
+        "name": "詹姆斯·奥尔蒂斯",
+        "character": "Rocky (voice)",
+        "profile_path": "/zYYDXniHb36mjG7xK59r9IoOKvt.jpg"
+      },
+      {
+        "name": "莱昂内尔·博伊斯",
+        "character": "Carl",
+        "profile_path": "/hpIxX5nkfA3pWCW8rYkEUCSBVyS.jpg"
+      },
+      {
+        "name": "米拉娜·薇恩翠",
+        "character": "Olesya Ilyukhina",
+        "profile_path": "/i5Cou9ExwTZvRRtl79V75CsI7oC.jpg"
+      },
+      {
+        "name": "肯·兰格",
+        "character": "Yao",
+        "profile_path": "/hpatUP6u74gkpDRmn9voNY9V43O.jpg"
+      },
+      {
+        "name": "普里亚·坎萨拉",
+        "character": "Mary (voice)",
+        "profile_path": "/zv9kpaQ8AVBfjI2LAAZV58NeVQg.jpg"
+      },
+      {
+        "name": "米娅·索特里乌",
+        "character": "Dr. Browne",
+        "profile_path": "/bU4Twfk4as290gPFouByj7Wjd2.jpg"
+      }
+    ],
+    "stills": [
+      "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
+      "/fFyLcR22R4ynrecqjMniKXm0UTp.jpg",
+      "/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
+      "/qL4dBGLkWOVP5vImN7EEoqJQYd8.jpg",
+      "/afHAM9qOTmrVDeaLIU7zfssotUY.jpg",
+      "/ckgitpsGKUFVO8yHinQdKSSyrFC.jpg",
+      "/6BI8cpbzCjwZRoLxiFILrzMIxtZ.jpg",
+      "/o8d54pvtPMYQdR5uPSYaMzKZJdB.jpg",
+      "/qjLiHYCzCfgqeyZlcKKNHk1eLHa.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 964933,
+        "title": "Blind Date",
+        "poster_path": "/aB6h5Z4XsfgnBfBWkHvOsm9E4x1.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 348,
+        "title": "异形",
+        "poster_path": "/62Z3qXj2X3b3f97CIjKaran2wAV.jpg",
+        "vote_average": 8.17
+      },
+      {
+        "tmdb_id": 395,
+        "title": "异形大战铁血战士",
+        "poster_path": "/twqPWgGumWuFWhBHwEwgwp2bAdt.jpg",
+        "vote_average": 5.945
+      },
+      {
+        "tmdb_id": 479,
+        "title": "杀戮战警",
+        "poster_path": "/5ncvnNPaN73cOqD4muE413sSOyY.jpg",
+        "vote_average": 6.008
+      },
+      {
+        "tmdb_id": 440,
+        "title": "异形大战铁血战士2",
+        "poster_path": "/xYoxxoCCEYHOGXkqOZaCWpeWcmn.jpg",
+        "vote_average": 5.181
+      },
+      {
+        "tmdb_id": 426183,
+        "title": "飞跃巅峰 剧场版2",
+        "poster_path": "/8q4IXf89P0xgU9oY4AUddPXOg2p.jpg",
+        "vote_average": 7.1
+      },
+      {
+        "tmdb_id": 271,
+        "title": "绿林女儿",
+        "poster_path": "/wJYkdYN4OzS5s9kiF4EtGvvnFm3.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 411,
+        "title": "纳尼亚传奇1：狮子、女巫和魔衣橱",
+        "poster_path": "/3T12AJ1T9Gs7DKQmO7cN7kurB44.jpg",
+        "vote_average": 7.136
+      }
+    ]
+  },
+  "36343491": {
+    "tmdb_id": 76479,
+    "tmdb_type": "tv",
+    "original_title": "The Boys",
+    "overview": "这是一个超能力者和普通人共存的世界，祖国人、火车头、深海、梅芙女王、透明人和玄色隶属于全球最大的超级英雄公司沃特集团，在帮助政府惩奸除恶维护世界和平的同时，他们也以偶像的身份帮助公司赚取了难以计数的利润。休伊是一个平凡的男孩，她的女友死于一场意外，而这场意外的制造者正是火车头。休伊不愿意接受沃特公司潦草的致歉和赔偿，决定替女友报仇。",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "动作冒险"
+    ],
+    "runtime": null,
+    "release_date": "2019-07-25",
+    "backdrop_path": "/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "埃里克·克里普克",
+    "cast": [
+      {
+        "name": "卡尔·厄本",
+        "character": "Billy Butcher",
+        "profile_path": "/6CkZLwEJxfqqcJHyeXegMAvOlPh.jpg"
+      },
+      {
+        "name": "杰克·奎德",
+        "character": "Hugh 'Hughie' Campbell",
+        "profile_path": "/320qW5yEbxpmyxQ3evmClJbtKag.jpg"
+      },
+      {
+        "name": "安东尼·斯塔尔",
+        "character": "Homelander",
+        "profile_path": "/b0T56GMrHM24hDDjJ4DNPJcEUp6.jpg"
+      },
+      {
+        "name": "艾琳·莫里亚蒂",
+        "character": "Annie January / Starlight",
+        "profile_path": "/dG7gLzlZCjZkjKMyoGIL8h5wjRj.jpg"
+      },
+      {
+        "name": "杰西·厄舍",
+        "character": "Reggie Franklin / A-Train",
+        "profile_path": "/bkFM2GHKU1rr6CRCgeaojY1TDCS.jpg"
+      },
+      {
+        "name": "赖斯·艾隆索",
+        "character": "Marvin T. 'Mother's Milk' Milk / M.M.",
+        "profile_path": "/nmgOd3X2Xn3jIp9OLCRJzLExRWN.jpg"
+      },
+      {
+        "name": "切斯·克劳福",
+        "character": "Kevin Moskowitz / The Deep",
+        "profile_path": "/yWZILsr2mBQBCG1LOcCYYshIbts.jpg"
+      },
+      {
+        "name": "托默·卡彭",
+        "character": "Serge / Frenchie",
+        "profile_path": "/3IhYEhV3Tmx2CawG5DvcWQyephv.jpg"
+      }
+    ],
+    "stills": [
+      "/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
+      "/n6vVs6z8obNbExdD3QHTr4Utu1Z.jpg",
+      "/mGVrXeIjyecj6TKmwPVpHlscEmw.jpg",
+      "/7cqKGQMnNabzOpi7qaIgZvQ7NGV.jpg",
+      "/czffzEgaBko4mXW84B1J1EnQBzo.jpg",
+      "/bI37vIHSH7o4IVkq37P8cfxQGMx.jpg",
+      "/ietgGEAYDluH65hlIjvgaMtjeEL.jpg",
+      "/thLAoL6VeZGmCyDpCOeoxLvA8yS.jpg",
+      "/dKSLSL6R21YntEa7HDWR8HOoSMO.jpg",
+      "/eub9xDaIfNwvg0oEv5tvkAlFqrO.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 160,
+        "title": "忍者神龟",
+        "poster_path": "/AaihPizftZo5YCqzEgHMwkceaEo.jpg",
+        "vote_average": 7.759
+      },
+      {
+        "tmdb_id": 131,
+        "title": "Space Sentinels",
+        "poster_path": "/pc4W8UW3hCbvSHrrbBFuCaGXhRu.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 132,
+        "title": "神奇四侠：世界最伟大的英雄们",
+        "poster_path": "/zCtCW0JlbMpzfQDAX1bO1o1KLi.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 184,
+        "title": "Jeremiah",
+        "poster_path": "/yBaq79cbv8Lmhaa7ej3z6GOp9zK.jpg",
+        "vote_average": 6.9
+      },
+      {
+        "tmdb_id": 196,
+        "title": "Captain Star",
+        "poster_path": "/w4Q0cfVPFHyvR5tEaoNwvppGGDK.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 216,
+        "title": "太空英雄鸭",
+        "poster_path": "/d2PpdUKSTHSLsnlkScMyHkAxC2i.jpg",
+        "vote_average": 7.445
+      },
+      {
+        "tmdb_id": 354,
+        "title": "My Hero",
+        "poster_path": "/ultFCYTFjTudEsCrGLFr4Sugdbf.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 236,
+        "title": "闪电侠",
+        "poster_path": "/fi1GEdCbyWRDHpyJcB25YYK7fh4.jpg",
+        "vote_average": 7.417
+      }
+    ]
+  },
+  "37147970": {
+    "tmdb_id": 278573,
+    "tmdb_type": "tv",
+    "original_title": "21세기 대군부인",
+    "overview": "欢迎来到21世纪的韩国，一个传统与现代交织的君主立宪制国家。在光鲜亮丽的外表下，隐藏着壁垒分明的社会阶级制度。成熙周，一位才华洋溢的财阀继承人兼首席执行官，似乎拥有一切，但出身平民的她却始终得不到应有的尊重。在诞日宴上与理安大君相遇后，她决心掌握自己的命运。她拥有一切，唯独缺少身份；而他空有尊贵的身份，实际上却一无所有。两人缔结了世纪婚约。他们能否打破社会壁垒，开创属于自己的命运？",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-04-10",
+    "backdrop_path": "/6ekykPwvAywJRjFEnUoCFWTO9O3.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "刘智媛",
+    "cast": [
+      {
+        "name": "IU",
+        "character": "Seong Hui-ju",
+        "profile_path": "/uNhKOO9lIAFXF11LM6gjCrX2CJz.jpg"
+      },
+      {
+        "name": "边佑锡",
+        "character": "Grand Prince I-an",
+        "profile_path": "/iACGQCFJZUMsy4ywEzNiPokXFB9.jpg"
+      },
+      {
+        "name": "鲁常泫",
+        "character": "Min Jeong-u",
+        "profile_path": "/wdevvu2YLIvAPVEkScjO9JGbioq.jpg"
+      },
+      {
+        "name": "孔升妍",
+        "character": "Yun I-rang",
+        "profile_path": "/6WFV2xISsuhArOHBMwTou8KdgH9.jpg"
+      },
+      {
+        "name": "刘秀彬",
+        "character": "Choi Hyeon",
+        "profile_path": "/vulO1ngz0s3jUBXQbW2ADuyK3Fa.jpg"
+      },
+      {
+        "name": "李妍",
+        "character": "Do Hye-jeong",
+        "profile_path": "/uTZMewSjjx4MxDYAaZrhbl1fAGX.jpg"
+      }
+    ],
+    "stills": [
+      "/6ekykPwvAywJRjFEnUoCFWTO9O3.jpg",
+      "/l5F7zrjACILbCwYAozRs74q3W18.jpg",
+      "/9FSFceY7affPBlaooIiEvJPHL1A.jpg",
+      "/mSQMpy24u9Gx2Prl3IjtxBVauDw.jpg",
+      "/a1VPCApnJLAaTN2zSsG2mNeQN1p.jpg",
+      "/c5K6ZtCbOFjcfpuQA1DNWyU9ebF.jpg",
+      "/4vwbeygqnva1nWvMqyVv0irN4gi.jpg",
+      "/d8IFxohKbDx3vuA9zty251zdfse.jpg",
+      "/pT3ddhhhyMoZq2uYsJlUWT5UC9L.jpg",
+      "/p1k6sDGyCfkYRTlkYngRXsCclXc.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1,
+        "title": "冰上恋人",
+        "poster_path": "/9Ub2BwnLYKoiSaQF93ItyXriCon.jpg",
+        "vote_average": 7.8
+      },
+      {
+        "tmdb_id": 152,
+        "title": "Maging Sino Ka Man",
+        "poster_path": "/a3tNcvpPkeTpvG2QltojMujl3fQ.jpg",
+        "vote_average": 8.1
+      },
+      {
+        "tmdb_id": 171,
+        "title": "马丁·劳伦斯秀",
+        "poster_path": "/inQQEpHiaSy8BEd9XEFF2W39vO0.jpg",
+        "vote_average": 7.6
+      },
+      {
+        "tmdb_id": 196193,
+        "title": "你好呀，我的橘子恋人",
+        "poster_path": "/dT0FOdUQQQ1bnFOEpSMMPOq7Xsd.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 86605,
+        "title": "奈何BOSS要娶我",
+        "poster_path": "/3V8k1UoEDWFoZeES0qARGXatBuh.jpg",
+        "vote_average": 7.2
+      },
+      {
+        "tmdb_id": 228663,
+        "title": "堀与宫村 -piece-",
+        "poster_path": "/g9UvwFdURGJInEjtoKNyg1QeGx2.jpg",
+        "vote_average": 7.6
+      },
+      {
+        "tmdb_id": 228707,
+        "title": "武神主宰",
+        "poster_path": "/mLsMYvzIVzZV2SCNzalSvCIJD0R.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 228819,
+        "title": "鱼生知有你",
+        "poster_path": "/oYDUtBGgUnfd3njqR4gxH8wRY2K.jpg",
+        "vote_average": 0
+      }
+    ]
+  },
+  "37168326": {
+    "tmdb_id": 93166,
+    "tmdb_type": "tv",
+    "original_title": "The Capture",
+    "overview": "当士兵肖恩埃默里在阿富汗谋杀的罪名被推翻，因为有缺陷的视频证据，他作为一个自由人和他的小女儿返回生活。但当伦敦一个夜晚的闭路电视镜头曝光时，肖恩的生活发生了令人震惊的转折，他必须很快再次为自由而战。随着新晋升的迪雷切尔凯里起草调查肖恩的案件，她很快了解到，真相有时可能是一个角度的问题。她应该信任肖恩·埃默里吗？",
+    "genres": [
+      "犯罪",
+      "剧情",
+      "悬疑"
+    ],
+    "runtime": null,
+    "release_date": "2019-09-03",
+    "backdrop_path": "/10D67q6rDL0jhWVxkz5zZwNJOmd.jpg",
+    "countries": [
+      "GB"
+    ],
+    "director": "本·查安南",
+    "cast": [
+      {
+        "name": "霍利迪·格兰杰",
+        "character": "DI Rachel Carey",
+        "profile_path": "/oAqAaZhpVTJJoYdfJdhkncICoFs.jpg"
+      },
+      {
+        "name": "朗·普尔曼",
+        "character": "Frank Napier",
+        "profile_path": "/pOgMRdJhbBsvwGLRFXPRASTfcay.jpg"
+      },
+      {
+        "name": "本·迈尔斯",
+        "character": "Commander Danny Hart",
+        "profile_path": "/mT3BqoFUkyktXLvefQA6VxaGHJz.jpg"
+      },
+      {
+        "name": "莉娅·威廉姆斯",
+        "character": "DSU Gemma Garland",
+        "profile_path": "/d7BIswSeHeAdIobNjsWEFG2uj1H.jpg"
+      },
+      {
+        "name": "金妮·霍尔德",
+        "character": "DC / DI Nadia Latif",
+        "profile_path": "/gk6BypIs5txRIDe55e1I6xdyf04.jpg"
+      },
+      {
+        "name": "帕帕·埃西杜",
+        "character": "Isaac Turner MP",
+        "profile_path": "/rucljrM3pdyDLLH3mvZIjtxJ45L.jpg"
+      },
+      {
+        "name": "殷蒂拉·瓦玛",
+        "character": "Khadija Khan",
+        "profile_path": "/yaFCI907dcK2XkzO0HQgtK25kp2.jpg"
+      },
+      {
+        "name": "王国旌",
+        "character": "DC Chloe Tan",
+        "profile_path": "/8bgwte22fpOPlPtBtItxYBk5HjT.jpg"
+      }
+    ],
+    "stills": [
+      "/hoJzpWgnlaqyl26fEGCqOwyXv14.jpg",
+      "/3XTeeV0EB3lWXUGQYnxDW0v1h6j.jpg",
+      "/10D67q6rDL0jhWVxkz5zZwNJOmd.jpg",
+      "/nU5ZeZZ9iV5c9orHBOgkYiGM4DM.jpg",
+      "/m6xlBwvGlA90jvvbH2C3YLIap8c.jpg",
+      "/5bQ4eGwQy0jTeMzk7XE1ES0xSb6.jpg",
+      "/xBswLZOKye9X7F7dcj0nXMeZEWV.jpg",
+      "/btWghV6scZ1uTLYRFnJuk3bZ5bw.jpg",
+      "/wyLmylPqsJWM4EpNZg8sD3teB2k.jpg",
+      "/etZqJ0qY1x0Mfi1XQycZgIkDgls.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 196474,
+        "title": "走进你的时间",
+        "poster_path": "/F9lNsFr1VdNtT5vF8z6lCxGIZW.jpg",
+        "vote_average": 8.258
+      },
+      {
+        "tmdb_id": 292012,
+        "title": "Desagertuta",
+        "poster_path": "/kWv557omNtOZKtCevvYUYUvHzAN.jpg",
+        "vote_average": 5.591
+      },
+      {
+        "tmdb_id": 229278,
+        "title": "事件",
+        "poster_path": "/keUkvUBHQAodcQruIdKLEKvJw75.jpg",
+        "vote_average": 8.7
+      },
+      {
+        "tmdb_id": 292153,
+        "title": "Untitled The Secret of Secrets Series",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 87104,
+        "title": "未来岁月",
+        "poster_path": "/7DTUqddsptvouhT28fRFAI1L4PU.jpg",
+        "vote_average": 7.558
+      },
+      {
+        "tmdb_id": 87435,
+        "title": "Al Filo de la Muerte",
+        "poster_path": "/i0tVQwZQTdvucmPPjBvCZyw5w8f.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 87436,
+        "title": "Sirens",
+        "poster_path": "/f3kHvhKGUzrFGoQ3mkB6q0W3GEZ.jpg",
+        "vote_average": 3.7
+      },
+      {
+        "tmdb_id": 229513,
+        "title": "无人注目时",
+        "poster_path": "/h1gYHnadcTJQJzIuWBdz51mI1M3.jpg",
+        "vote_average": 6.5
+      }
+    ]
+  },
+  "36559697": {
+    "tmdb_id": 316804,
+    "tmdb_type": "tv",
+    "original_title": "ONE PIECE BONUS CONTENT",
+    "overview": "",
+    "genres": [
+      "纪录"
+    ],
+    "runtime": null,
+    "release_date": "2026-03-17",
+    "backdrop_path": "",
+    "countries": [
+      "US"
+    ],
+    "director": "",
+    "cast": [],
+    "stills": [],
+    "similar": [
+      {
+        "tmdb_id": 87155,
+        "title": "블랙핑크 다이어리",
+        "poster_path": "/nDkuvrq0eEmuPrfaE8k61Zp7KSz.jpg",
+        "vote_average": 9.3
+      },
+      {
+        "tmdb_id": 1056,
+        "title": "神秘博士：幕后揭秘",
+        "poster_path": "/3TAO5VgSyICVTL5Hvv6L4V12nig.jpg",
+        "vote_average": 8.2
+      },
+      {
+        "tmdb_id": 229734,
+        "title": "Keeping Up with Krystal Versace",
+        "poster_path": "/iFDF9m0qtItFaOX3NBLf6udWR.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 118924,
+        "title": "Marvel Studios Assembled",
+        "poster_path": "/oifejV8UbNnU0TuMRD6aZdmo0is.jpg",
+        "vote_average": 7.2
+      },
+      {
+        "tmdb_id": 454,
+        "title": "Totally Doctor Who",
+        "poster_path": "/l9QRZphKBrpEmL8HPg0Y946DMN8.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 28197,
+        "title": "Ultimate Zoo",
+        "poster_path": "/cbh2jwy2Jmp6ZyT57kiXyxS3Zho.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 28213,
+        "title": "Movie Life: House of Wax",
+        "poster_path": "/9djnx37A44tUsaQynSDmQiEgBek.jpg",
+        "vote_average": 7.6
+      },
+      {
+        "tmdb_id": 28902,
+        "title": "Backstory",
+        "poster_path": "/56lyJWiKO9blp1esmc9tLD7Y4Hn.jpg",
+        "vote_average": 6.5
+      }
+    ]
+  },
+  "36955778": {
+    "tmdb_id": 225780,
+    "tmdb_type": "tv",
+    "original_title": "Deadloch",
+    "overview": "　　本剧是一部澳大利亚黑色喜剧悬疑剧。宁静的澳洲小镇戴洛克突发离奇命案，一名男性教练赤身陈尸海滩，舌头被割。作风稳重的本地女警长杜尔茜，与性格火爆粗犷的外派警探艾迪被迫搭档。随着多名劣迹斑斑的男性接连以相同手法遇害，案件升级为连环凶杀。全镇男性陷入恐慌，小镇暗流涌动的性别矛盾、群体冲突与陈年旧怨接连浮出水面。两位风格迥异的警探在摩擦与合作中逐步追查，最终揭开一场针对“恶男”的有组织复仇真相，悬疑密集且讽刺辛辣。",
+    "genres": [
+      "喜剧",
+      "犯罪"
+    ],
+    "runtime": null,
+    "release_date": "2023-06-01",
+    "backdrop_path": "/n58Py8VN2Z677AslZyfc3Aj3uUI.jpg",
+    "countries": [
+      "AU"
+    ],
+    "director": "Kate McCartney",
+    "cast": [
+      {
+        "name": "凯特·博克斯",
+        "character": "Dulcie Collins",
+        "profile_path": "/zv4NckgNBn6Tc2xhCdNFFx9o9EZ.jpg"
+      },
+      {
+        "name": "Madeleine Sami",
+        "character": "Eddie Redcliffe",
+        "profile_path": "/tXBBz4WdTfFECUBEnheFxTUPV5N.jpg"
+      },
+      {
+        "name": "Nina Oyama",
+        "character": "Abbie Matsuda",
+        "profile_path": "/n962NDYS5WVZQbx8urApmrlkQhT.jpg"
+      },
+      {
+        "name": "Alicia Gardiner",
+        "character": "Cath York",
+        "profile_path": ""
+      },
+      {
+        "name": "Brian Coll",
+        "character": "",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/zsnbjtdTSeeYISrPVCsWhQqxida.jpg",
+      "/2jI99p771Moj3XivHaVOK2lt68p.jpg",
+      "/n58Py8VN2Z677AslZyfc3Aj3uUI.jpg",
+      "/4rqniELFDAYVaHT3fQz5l7BU8Pd.jpg",
+      "/llIhZpxagZkooJq0KedHMIkIpWH.jpg",
+      "/hGCwSPBVTkatEb1YbxW986nvMcK.jpg",
+      "/nbTTLP4JWzQ1ZpHmAgf7UgUDZUv.jpg",
+      "/sSgwPQDhWKgkoYD1MLYPfh69G0a.jpg",
+      "/hfTIDueBUBHRg8ZqFYnopxVD7zg.jpg",
+      "/u7tW2pXHcyeVLxCsGUlr5JScCv9.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 229153,
+        "title": "背锅船长",
+        "poster_path": "/qJk5ks6g9FYT2nQ82UzkJDTKRDW.jpg",
+        "vote_average": 6.6
+      },
+      {
+        "tmdb_id": 229305,
+        "title": "天赋异禀",
+        "poster_path": "/nlEm3VqfTdoHU1rRVOL1HrDpRIt.jpg",
+        "vote_average": 8.4
+      },
+      {
+        "tmdb_id": 292121,
+        "title": "稻草人",
+        "poster_path": "/44A3X7IooAugA2TwvDPqGFjJqDI.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 292175,
+        "title": "死亡假期",
+        "poster_path": "/v2JhIST4PR3QzF1ePEpPX06xC45.jpg",
+        "vote_average": 8.5
+      },
+      {
+        "tmdb_id": 87185,
+        "title": "杀之",
+        "poster_path": "/hIv4dai6NlxGME9Qi3RidKZsyve.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 660,
+        "title": "The FBI Files",
+        "poster_path": "/xY7A8Gn4L9iyLDMv2ziOo8aXItW.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 790,
+        "title": "大侦探波洛",
+        "poster_path": "/SsZqoAFVgY8aw7bHfhXWvjM6Mq.jpg",
+        "vote_average": 8.166
+      },
+      {
+        "tmdb_id": 764,
+        "title": "杀机四伏",
+        "poster_path": "/lAFBd4y5aTPj9GskvvO4osloSsR.jpg",
+        "vote_average": 7.52
+      }
+    ]
   }
 }
