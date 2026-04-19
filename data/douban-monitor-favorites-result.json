@@ -14,7 +14,7 @@
       "category": "movie",
       "douban_id": "36742572",
       "rating": 8.1,
-      "rating_count": 30329,
+      "rating_count": 30330,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36742572/"
     },
@@ -68,7 +68,7 @@
       "category": "tv",
       "douban_id": "36363991",
       "rating": 8.3,
-      "rating_count": 117388,
+      "rating_count": 117392,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36363991/"
     }
