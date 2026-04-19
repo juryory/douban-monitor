@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>豆瓣 Frodo API 可用性检测</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px 48px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: #f5efdf;
+    background: #121212;
+    line-height: 1.6;
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 { font-size: 1.4rem; margin: 0 0 4px; color: #f0bf62; }
+  .subtitle { color: #9b9b9b; font-size: 0.9rem; margin: 0 0 24px; }
+  .card {
+    background: #1c1c1c;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .card h2 { font-size: 1.05rem; margin: 0 0 12px; color: #f0bf62; }
+  label { display: block; font-size: 0.88rem; color: #c8c2b4; margin-bottom: 6px; }
+  select, input[type=text] {
+    width: 100%;
+    padding: 10px 12px;
+    background: #262626;
+    border: 1px solid #353535;
+    border-radius: 8px;
+    color: #f5efdf;
+    font-size: 0.95rem;
+    font-family: inherit;
+  }
+  select:focus, input:focus { outline: none; border-color: #f0bf62; }
+  button {
+    padding: 10px 16px;
+    background: #f0bf62;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  button:hover { background: #ffca6e; }
+  button.secondary { background: #2a2a2a; color: #f5efdf; }
+  button.secondary:hover { background: #353535; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .url-box {
+    background: #262626;
+    border: 1px solid #353535;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 12px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    word-break: break-all;
+    color: #c8c2b4;
+    max-height: 120px;
+    overflow: auto;
+  }
+  .result-box {
+    background: #0e1a0e;
+    border: 1px solid #2a4a2a;
+    color: #a8d89a;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.85rem;
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin-top: 12px;
+    max-height: 400px;
+    overflow: auto;
+  }
+  .result-box.error { background: #2a0e0e; border-color: #5a2020; color: #ff9a8a; }
+  .result-box.warn  { background: #2a220e; border-color: #5a4a20; color: #ffd28a; }
+  .kv { display: grid; grid-template-columns: 120px 1fr; gap: 6px 12px; margin-top: 8px; font-size: 0.88rem; }
+  .kv dt { color: #9b9b9b; }
+  .kv dd { margin: 0; color: #f5efdf; font-family: ui-monospace, monospace; font-size: 0.82rem; word-break: break-all; }
+  details { margin-top: 8px; }
+  summary { cursor: pointer; color: #9b9b9b; font-size: 0.88rem; padding: 4px 0; }
+  summary:hover { color: #f0bf62; }
+  code { background: #262626; padding: 2px 6px; border-radius: 4px; font-size: 0.85rem; color: #f0bf62; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; margin-left: 8px; }
+  .badge.ok { background: #1e4020; color: #a8d89a; }
+  .badge.bad { background: #401e1e; color: #ff9a8a; }
+  .badge.warn { background: #403a1e; color: #ffd28a; }
+  a { color: #f0bf62; }
+</style>
+</head>
+<body>
+<h1>豆瓣 Frodo API 可用性检测</h1>
+<p class="subtitle">生成带正确 HMAC-SHA1 签名的 Frodo 请求，看当前网络环境下豆瓣服务器是否放行。<br>
+<strong>用法</strong>：换到要测的网络（手机 4G / 家庭宽带 / VPN / 公司 WiFi 等），打开这个页面点"开始检测"即可。</p>
+
+<div class="card">
+  <h2>1. 选择要测的榜单</h2>
+  <label for="collection">榜单</label>
+  <select id="collection">
+    <option value="movie_weekly_best">电影 · 一周口碑电影榜</option>
+    <option value="tv_chinese_best_weekly">华语剧集 · 一周华语口碑剧集榜</option>
+    <option value="tv_global_best_weekly">全球剧集 · 一周全球口碑剧集榜</option>
+    <option value="show_domestic_best_weekly">国内综艺 · 一周口碑综艺榜</option>
+    <option value="show_global_best_weekly">国外综艺 · 一周口碑综艺榜</option>
+  </select>
+  <div class="row">
+    <button id="run">开始检测</button>
+    <button class="secondary" id="openUrl">在新标签页打开 URL</button>
+    <button class="secondary" id="copyUrl">复制 URL</button>
+  </div>
+</div>
+
+<div class="card" id="requestCard" style="display:none">
+  <h2>2. 本次请求</h2>
+  <dl class="kv">
+    <dt>时间戳 _ts</dt><dd id="reqTs"></dd>
+    <dt>本地时间</dt><dd id="reqLocal"></dd>
+    <dt>签名 _sig</dt><dd id="reqSig"></dd>
+  </dl>
+  <details>
+    <summary>完整 URL</summary>
+    <div class="url-box" id="reqUrl"></div>
+  </details>
+</div>
+
+<div class="card" id="resultCard" style="display:none">
+  <h2>3. 结果 <span id="verdict"></span></h2>
+  <div id="resultBody"></div>
+</div>
+
+<div class="card">
+  <h2>结果怎么看</h2>
+  <ul>
+    <li>返回 JSON 含 <code>subject_collection_items</code> 字段，且状态 200 → <strong>通了 ✅</strong>，当前网络可以正常抓取</li>
+    <li><code>{"code": 996, "localized_message": "签名错误"}</code> → 当前 IP 被豆瓣风控（最常见的"浏览器能开、程序 400"就是这种），换网络或等一段时间</li>
+    <li><code>{"code": 112, "msg": "invalid apikey"}</code> → apiKey 被豆瓣回收了，项目需要换 key</li>
+    <li><code>{"code": 115, ...}</code> 或提到限流、rate limit → 当前 IP 被限速</li>
+    <li>浏览器超时、连接失败 → 网络层问题（DNS、代理、防火墙）</li>
+    <li>页面提示 <code>Failed to fetch</code> 但点"在新标签页打开 URL"能看到 JSON → 是浏览器 CORS 拦截了 fetch，<strong>接口实际是通的</strong>，按新标签页里看到的 JSON 判断</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>为什么"浏览器能开链接，程序却 400"？</h2>
+  <p style="margin-top:0; font-size:0.88rem; color:#c8c2b4;">两种是完全不同的接口：</p>
+  <ul style="font-size:0.88rem;">
+    <li>浏览器打开 <code>m.douban.com/subject_collection/...</code> 是<strong>给人看的 HTML 网页</strong>，任何人无需鉴权都能访问</li>
+    <li>监控脚本请求的是 <code>frodo.douban.com/api/v2/...</code>，是<strong>豆瓣手机 App 的内部接口</strong>，要 apiKey + HMAC 签名 + 特定 UA</li>
+  </ul>
+  <p style="font-size:0.88rem; color:#c8c2b4;">豆瓣的反作弊会针对"某 IP + Frodo apiKey 组合"单独限流，返回 "签名错误"作烟雾弹。这个页面用和脚本一模一样的签名算法来复现那个 API 请求，所以它的结果才能代表监控脚本在当前网络下的真实情况。</p>
+</div>
+
+<script>
+  // 和 scripts/monitor.py 里一致
+  const API_KEY = "0dad551ec0f84ed02907ff5c42e8ec70";
+  const SECRET  = "bf7dddc7c9cfe6f7";
+  const BASE    = "https://frodo.douban.com/api/v2";
+  const UA      = "api-client/1 com.douban.frodo/7.22.0.beta9(231) Android/33 product/lark model/sdk_gphone64_arm64 brand/google  rom/android  network/wifi  platform/AndroidPad";
+
+  async function hmacSha1Base64(secret, message) {
+    const enc = new TextEncoder();
+    const key = await crypto.subtle.importKey(
+      "raw", enc.encode(secret),
+      { name: "HMAC", hash: "SHA-1" },
+      false, ["sign"]
+    );
+    const sig = await crypto.subtle.sign("HMAC", key, enc.encode(message));
+    const bytes = new Uint8Array(sig);
+    let bin = "";
+    for (const b of bytes) bin += String.fromCharCode(b);
+    return btoa(bin);
+  }
+
+  async function buildSignedUrl(collectionId) {
+    const path = `/subject_collection/${collectionId}/items`;
+    const ts = String(Math.floor(Date.now() / 1000));
+    const raw = `GET&${encodeURIComponent(path)}&${ts}`;
+    const sig = await hmacSha1Base64(SECRET, raw);
+    const params = new URLSearchParams({
+      apiKey: API_KEY,
+      os_rom: "android",
+      _ts: ts,
+      start: "0",
+      count: "3",
+    });
+    params.set("_sig", sig);
+    return {
+      ts, sig,
+      path,
+      url: `${BASE}${path}?${params.toString()}`,
+    };
+  }
+
+  function showRequest(info) {
+    document.getElementById("requestCard").style.display = "";
+    document.getElementById("reqTs").textContent = info.ts;
+    document.getElementById("reqLocal").textContent = new Date(parseInt(info.ts) * 1000).toLocaleString("zh-CN");
+    document.getElementById("reqSig").textContent = info.sig;
+    document.getElementById("reqUrl").textContent = info.url;
+  }
+
+  function showResult(kind, title, bodyHtml) {
+    const card = document.getElementById("resultCard");
+    card.style.display = "";
+    const verdict = document.getElementById("verdict");
+    verdict.className = "badge " + kind;
+    verdict.textContent = title;
+    document.getElementById("resultBody").innerHTML = bodyHtml;
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+  }
+
+  function analyze(status, body) {
+    let parsed = null;
+    try { parsed = JSON.parse(body); } catch(_) {}
+    const pretty = parsed ? JSON.stringify(parsed, null, 2) : body.slice(0, 2000);
+
+    if (status === 200 && parsed && parsed.subject_collection_items) {
+      const n = parsed.subject_collection_items.length;
+      return {
+        kind: "ok",
+        title: `通了 ${n} 条`,
+        body: `<div class="result-box">HTTP 200 OK\n${esc(pretty)}</div>`,
+      };
+    }
+    if (parsed && parsed.code === 996) {
+      return {
+        kind: "bad",
+        title: "签名错误 / IP 风控",
+        body: `<div class="result-box error">HTTP ${status}\n${esc(pretty)}</div>
+          <p style="margin-top:10px; font-size:0.88rem;">当前网络 IP 被豆瓣针对性风控（Frodo 返回"签名错误"作烟雾弹）。换个网络（手机热点 / VPN）再试，或者等 12-24 小时自动解除。</p>`,
+      };
+    }
+    if (parsed && parsed.code === 112) {
+      return {
+        kind: "bad",
+        title: "apiKey 失效",
+        body: `<div class="result-box error">HTTP ${status}\n${esc(pretty)}</div>
+          <p style="margin-top:10px; font-size:0.88rem;">豆瓣回收了这个 apiKey，监控项目需要更换。</p>`,
+      };
+    }
+    if (parsed && [115, 118, 1000].includes(parsed.code)) {
+      return {
+        kind: "warn",
+        title: "被限流",
+        body: `<div class="result-box warn">HTTP ${status}\n${esc(pretty)}</div>
+          <p style="margin-top:10px; font-size:0.88rem;">当前 IP 被限速，稍后再试。</p>`,
+      };
+    }
+    return {
+      kind: "warn",
+      title: `HTTP ${status}`,
+      body: `<div class="result-box warn">${esc(pretty)}</div>`,
+    };
+  }
+
+  let latestUrl = "";
+
+  async function run() {
+    const collection = document.getElementById("collection").value;
+    const info = await buildSignedUrl(collection);
+    latestUrl = info.url;
+    showRequest(info);
+
+    showResult("warn", "请求中...", `<div class="result-box warn">正在请求 Frodo 接口……</div>`);
+
+    try {
+      const resp = await fetch(info.url, {
+        method: "GET",
+        headers: { "Accept": "application/json" },
+      });
+      const body = await resp.text();
+      const verdict = analyze(resp.status, body);
+      showResult(verdict.kind, verdict.title, verdict.body);
+    } catch (err) {
+      // Most common: CORS blocked. Tell user to open in new tab.
+      showResult("warn", "浏览器拦截",
+        `<div class="result-box warn">${esc(err.message || err.toString())}</div>
+         <p style="margin-top:10px; font-size:0.88rem;">
+         浏览器 CORS 拦住了这次请求（Frodo 是 App 内部接口，不给网页用）。
+         这<strong>不代表接口通不通</strong>。请点上面"在新标签页打开 URL"按钮，直接看豆瓣返回的 JSON。
+         </p>`);
+    }
+  }
+
+  document.getElementById("run").addEventListener("click", run);
+  document.getElementById("openUrl").addEventListener("click", async () => {
+    if (!latestUrl) {
+      const info = await buildSignedUrl(document.getElementById("collection").value);
+      latestUrl = info.url;
+      showRequest(info);
+    }
+    window.open(latestUrl, "_blank", "noopener");
+  });
+  document.getElementById("copyUrl").addEventListener("click", async () => {
+    if (!latestUrl) {
+      const info = await buildSignedUrl(document.getElementById("collection").value);
+      latestUrl = info.url;
+      showRequest(info);
+    }
+    try {
+      await navigator.clipboard.writeText(latestUrl);
+      const btn = document.getElementById("copyUrl");
+      const old = btn.textContent;
+      btn.textContent = "已复制";
+      setTimeout(() => btn.textContent = old, 1500);
+    } catch (_) {
+      prompt("复制这段 URL:", latestUrl);
+    }
+  });
+</script>
+</body>
+</html>
