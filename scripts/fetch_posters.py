@@ -165,7 +165,15 @@ def search_poster_fuzzy(title: str, category: str, year: str, config: dict) -> s
 # ---------------------------------------------------------------------------
 
 def main() -> None:
-    result = json.loads(RESULT_FILE.read_text(encoding="utf-8"))
+    text = RESULT_FILE.read_text(encoding="utf-8").strip() if RESULT_FILE.exists() else ""
+    if not text:
+        print(f"{RESULT_FILE} 缺失或为空，跳过封面抓取")
+        return
+    try:
+        result = json.loads(text)
+    except json.JSONDecodeError as e:
+        print(f"{RESULT_FILE} 解析失败（{e}），跳过封面抓取")
+        return
     items = result.get("qualified", [])
 
     seen: set[str] = set()

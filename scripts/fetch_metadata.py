@@ -189,7 +189,15 @@ def _fetch_detail(tmdb_id: int, tmdb_type: str, config: dict) -> dict:
 
 
 def main() -> None:
-    result = json.loads(RESULT_FILE.read_text(encoding="utf-8"))
+    text = RESULT_FILE.read_text(encoding="utf-8").strip() if RESULT_FILE.exists() else ""
+    if not text:
+        print(f"{RESULT_FILE} 缺失或为空，跳过元数据抓取")
+        return
+    try:
+        result = json.loads(text)
+    except json.JSONDecodeError as e:
+        print(f"{RESULT_FILE} 解析失败（{e}），跳过元数据抓取")
+        return
     items = result.get("qualified", [])
 
     seen: set[str] = set()
