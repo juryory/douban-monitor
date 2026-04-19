@@ -145,7 +145,7 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 
 ## 已知限制
 
-- 轻量模式依赖豆瓣 Frodo API，如果接口变更、签名方式变化或 IP 被限流会出现全榜单 400；建议等风控解除或依赖 Actions 在境外 IP 运行
+- 轻量模式优先走豆瓣 Frodo API（带签名），失败时自动降级到 Rexxar API（`m.douban.com` 移动网页版接口，无需签名）。Frodo 常因 IP 风控或签名方案变化返回 400，Rexxar 作为兜底通常仍然可用
 - 完整模式下少量详情页在特定环境下可能无法稳定提取评分或评分人数
 - 未配置 `TMDB_API_KEY` 时，TMDB 候选源和网页封面/元数据不会生效
 - 未配置豆瓣 Cookie 时，不依赖豆瓣搜索页补链接

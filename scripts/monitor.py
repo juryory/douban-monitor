@@ -277,6 +277,71 @@ def fetch_douban_subject_detail_via_frodo(douban_id: str, config: dict[str, Any]
             return {}
 
 
+# ---------------------------------------------------------------------------
+# Rexxar API（m.douban.com 移动网页版内部接口）
+# 作为 Frodo 不可用时的降级通道。不需要签名和 apiKey。
+# ---------------------------------------------------------------------------
+
+_REXXAR_BASE = "https://m.douban.com/rexxar/api/v2"
+_REXXAR_UA = (
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) "
+    "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 "
+    "Mobile/15E148 Safari/604.1"
+)
+
+
+def rexxar_get(path: str, params: dict[str, Any] | None = None, config: dict[str, Any] | None = None) -> dict[str, Any]:
+    """Call Douban Rexxar API (m.douban.com)."""
+    timeout = (config or {}).get("request_timeout_seconds", 20)
+    query: dict[str, Any] = dict(params or {})
+    query.setdefault("ck", "")
+    query.setdefault("for_mobile", 1)
+    url = f"{_REXXAR_BASE}{path}?{urllib.parse.urlencode(query)}"
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": _REXXAR_UA,
+            "Accept": "application/json",
+            "Referer": "https://m.douban.com/",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_douban_collection_via_rexxar(collection_id: str, config: dict[str, Any]) -> list[dict[str, Any]]:
+    """Rexxar 版本的榜单抓取，接口结构和 Frodo 一致。"""
+    all_items: list[dict[str, Any]] = []
+    start = 0
+    count = 20
+    while True:
+        data = rexxar_get(
+            f"/subject_collection/{collection_id}/items",
+            params={"start": start, "count": count},
+            config=config,
+        )
+        items = data.get("subject_collection_items") or []
+        if not items:
+            break
+        all_items.extend(items)
+        total = data.get("total", 0)
+        start += count
+        if start >= total:
+            break
+        time.sleep(0.5)
+    return all_items
+
+
+def fetch_douban_subject_detail_via_rexxar(douban_id: str, config: dict[str, Any]) -> dict[str, Any]:
+    """Rexxar 版本的影片详情抓取。"""
+    for media_type in ("movie", "tv"):
+        try:
+            return rexxar_get(f"/{media_type}/{douban_id}", config=config)
+        except Exception:
+            continue
+    return {}
+
+
 def _require_playwright() -> None:
     if sync_playwright is None:
         raise RuntimeError(
@@ -546,17 +611,25 @@ def _category_and_source_from_collection(url_text: str) -> tuple[str, str]:
 
 
 def fetch_douban_weekly_candidates_lite(config: dict[str, Any]) -> list[Candidate]:
-    """Fetch weekly candidates via Frodo API (no browser needed)."""
+    """Fetch weekly candidates via Frodo API，失败时自动降级到 Rexxar。"""
     candidates: list[Candidate] = []
     collection_urls = config.get("douban_collection_urls") or []
     for collection_url in collection_urls:
         url_text = str(collection_url)
         collection_id = _collection_id_from_url(url_text)
         category, source = _category_and_source_from_collection(url_text)
+        items: list[dict[str, Any]] = []
         try:
             items = fetch_douban_collection_via_frodo(collection_id, config)
         except Exception as exc:
-            log_kv(f"Frodo 榜单 {collection_id} 失败", str(exc))
+            log_kv(f"Frodo 榜单 {collection_id} 失败，降级 Rexxar", str(exc))
+            try:
+                items = fetch_douban_collection_via_rexxar(collection_id, config)
+                log_kv(f"Rexxar 榜单 {collection_id} 成功", f"{len(items)} 条")
+            except Exception as exc2:
+                log_kv(f"Rexxar 榜单 {collection_id} 也失败", str(exc2))
+                continue
+        if not items:
             continue
         for item in items:
             subject = item if "id" in item else item.get("subject") or item
@@ -585,12 +658,14 @@ def fetch_douban_weekly_candidates_lite(config: dict[str, Any]) -> list[Candidat
 
 
 def fetch_douban_subject_detail_lite(candidate: Candidate, config: dict[str, Any]) -> Candidate:
-    """Fetch subject detail via Frodo API (no browser needed)."""
+    """Fetch subject detail via Frodo API，失败时自动降级到 Rexxar。"""
     if not candidate.douban_id:
         return candidate
     if not candidate.url:
         candidate.url = f"https://movie.douban.com/subject/{candidate.douban_id}/"
     data = fetch_douban_subject_detail_via_frodo(candidate.douban_id, config)
+    if not data:
+        data = fetch_douban_subject_detail_via_rexxar(candidate.douban_id, config)
     if not data:
         return candidate
     title = data.get("title")
