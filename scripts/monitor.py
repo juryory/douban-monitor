@@ -997,13 +997,15 @@ def render_report(new_qualified: list[Candidate], second_look: list[tuple[Candid
     return "\n".join(lines) + "\n"
 
 
-def build_result_json(candidates: list[Candidate], config: dict[str, Any], now: datetime) -> dict[str, Any]:
+def build_result_json(candidates: list[Candidate], config: dict[str, Any], now: datetime, library_data: dict[str, Any]) -> dict[str, Any]:
     """Build the result.json consumed by the frontend (index.html)."""
     qualified = [
         c for c in candidates if should_qualify(c, config)
     ]
+    library_items = library_data.get("items", {})
     items = []
     for c in qualified:
+        entry = library_items.get(candidate_key(c)) or {}
         items.append({
             "title": c.title,
             "category": c.category,
@@ -1012,6 +1014,8 @@ def build_result_json(candidates: list[Candidate], config: dict[str, Any], now: 
             "rating_count": c.rating_count,
             "year": str(c.year) if c.year else "",
             "url": c.url or "",
+            "qualified_at": entry.get("qualified_at"),
+            "first_discovered_at": entry.get("first_discovered_at"),
         })
     return {
         "run_at": iso(now),
@@ -1175,7 +1179,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
 
     log_step("[6/8] 生成前端数据...")
     result_path = project_root / "data" / "douban-monitor-result.json"
-    result_data = build_result_json(candidates, config, now)
+    result_data = build_result_json(candidates, config, now, library_data)
     save_json(result_path, result_data)
     log_kv("前端结果文件", result_path)
     log_kv("达标条目数", len(result_data["qualified"]))

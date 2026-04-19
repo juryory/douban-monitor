@@ -540,7 +540,14 @@
   function getSorted(items) {
     const sort = document.getElementById('sortSelect').value;
     const a = [...items];
-    if (sort === 'added_desc')  a.sort((x,y) => (y._idx||0) - (x._idx||0));
+    if (sort === 'added_desc')  a.sort((x,y) => {
+      const xt = x.qualified_at || x.first_discovered_at || '';
+      const yt = y.qualified_at || y.first_discovered_at || '';
+      if (xt && yt) return yt.localeCompare(xt);
+      if (xt) return -1;
+      if (yt) return 1;
+      return (y._idx||0) - (x._idx||0);
+    });
     if (sort === 'rating_desc') a.sort((x,y) => y.rating - x.rating);
     if (sort === 'count_desc')  a.sort((x,y) => y.rating_count - x.rating_count);
     if (sort === 'year_desc')   a.sort((x,y) => (y.year||0) - (x.year||0));
