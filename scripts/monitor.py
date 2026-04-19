@@ -1168,21 +1168,31 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     log_kv("监控库条目数", len(library_data.get("items", {})))
     log_kv("状态条目数", len(state_data.get("items", {})))
 
+    # 若本次一条候选都没拉到（豆瓣/TMDB 全挂），跳过日报和前端数据的写入，
+    # 保留上一份好数据，避免网页刷新出空列表。state/library 只是 updated_at 微更新，照常写。
+    fetch_empty = len(candidates) == 0
+
     log_step("[5/8] 写入状态与报告...")
     save_json(state_path, state_data)
     save_json(library_path, library_data)
-    report_path.parent.mkdir(parents=True, exist_ok=True)
-    report_path.write_text(report, encoding="utf-8")
     log_kv("状态文件", state_path)
     log_kv("监控库文件", library_path)
-    log_kv("报告文件", report_path)
+    if fetch_empty:
+        log_kv("跳过日报写入", "候选为 0，保留上一份")
+    else:
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+        report_path.write_text(report, encoding="utf-8")
+        log_kv("报告文件", report_path)
 
     log_step("[6/8] 生成前端数据...")
     result_path = project_root / "data" / "douban-monitor-result.json"
-    result_data = build_result_json(candidates, config, now, library_data)
-    save_json(result_path, result_data)
-    log_kv("前端结果文件", result_path)
-    log_kv("达标条目数", len(result_data["qualified"]))
+    if fetch_empty:
+        log_kv("跳过前端结果写入", "候选为 0，保留上一份")
+    else:
+        result_data = build_result_json(candidates, config, now, library_data)
+        save_json(result_path, result_data)
+        log_kv("前端结果文件", result_path)
+        log_kv("达标条目数", len(result_data["qualified"]))
 
     log_step("[7/8] 生成网页数据（封面 + 元数据）...")
     python = sys.executable
