@@ -39,13 +39,17 @@
 - `index.html`
   可视化网页，展示监控库中的达标内容
 - `scripts/monitor.py`
-  主执行脚本（7 步流程）
+  主执行脚本（8 步流程）
+- `scripts/fetch_favorites.py`
+  读取 `data/douban-monitor-favorites.json` 中的豆瓣 ID，获取手动收藏详情
 - `scripts/fetch_posters.py`
   从 TMDB 获取封面图 URL
 - `scripts/fetch_metadata.py`
   从 TMDB 获取简介、类型、时长等元数据
+- `scripts/fetch_reviews.py`
+  从豆瓣获取短评
 - `data/`
-  运行产生的 JSON 数据文件（result、posters、metadata）
+  运行产生的 JSON 数据文件（state、library、result、favorites、posters、metadata、reviews）
 - `reports/`
   每日 Markdown 报告
 - `.github/workflows/monitor.yml`
@@ -100,17 +104,22 @@ cp .env.example .env
 python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 ```
 
-运行后依次执行 7 个步骤，并写入以下文件：
+运行后依次执行 8 个步骤，并写入以下文件：
 
 - `data/douban-monitor-state.json`（状态文件）
-- `data/douban-monitor-library.json`（监控库）
-- `data/douban-monitor-result.json`（达标结果）
+- `data/douban-monitor-library.json`（监控库，带 `qualified_at` / `first_discovered_at`）
+- `data/douban-monitor-result.json`（达标结果，条目携带入库时间，供前端"最近入库"排序）
+- `data/douban-monitor-favorites-result.json`（手动收藏详情）
 - `data/douban-monitor-posters.json`（封面 URL）
 - `data/douban-monitor-metadata.json`（TMDB 元数据）
+- `data/douban-monitor-reviews.json`（豆瓣短评）
 - `reports/douban-monitor-YYYYMMDD.md`（Markdown 报告）
 
-步骤 6 会自动调用 `fetch_posters.py` 和 `fetch_metadata.py` 生成网页所需数据。
-步骤 7 会自动将 `data/` 和 `reports/` 的变更提交并推送到 GitHub。
+步骤 6 生成前端结果数据 `douban-monitor-result.json`。
+步骤 7 会自动调用 `fetch_favorites.py`、`fetch_posters.py`、`fetch_metadata.py`、`fetch_reviews.py` 生成网页所需数据。
+步骤 8 会自动将 `data/` 和 `reports/` 的变更提交并推送到 GitHub。
+
+**容错**：若第 1、2 步抓取全部失败，当日候选为 0 时，脚本跳过第 5、6 步对报告和 `result.json` 的写入，保留上一份好数据；若第 8 步 `git pull --rebase` 失败，或待提交文件里出现合并冲突标记，脚本立即中止，不提交或推送。
 
 ## 自动运行
 
@@ -124,16 +133,19 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 
 - 多榜单候选抓取（5 个榜单全部打通）
 - 豆瓣详情页评分和评分人数核验
-- 状态文件与监控库维护
+- 状态文件与监控库维护（含入库时间戳）
 - Markdown 报告生成
 - 新增命中与继续观察判定
-- 网页可视化展示（瀑布流卡片、封面、简介、评分）
+- 网页可视化展示（瀑布流卡片、封面、简介、评分、短评）
+- 手动收藏：在 `data/douban-monitor-favorites.json` 填豆瓣 ID 即可
+- 最近入库排序：按真实入库时间倒序
 - TMDB 封面和元数据自动获取
 - GitHub Actions 定时自动运行
+- 抓取失败与推送冲突兜底：自动保留历史数据，不覆盖、不提交坏文件
 
 ## 已知限制
 
-- 轻量模式依赖豆瓣 Frodo API，如果接口变更或限流需要关注
+- 轻量模式依赖豆瓣 Frodo API，如果接口变更、签名方式变化或 IP 被限流会出现全榜单 400；建议等风控解除或依赖 Actions 在境外 IP 运行
 - 完整模式下少量详情页在特定环境下可能无法稳定提取评分或评分人数
 - 未配置 `TMDB_API_KEY` 时，TMDB 候选源和网页封面/元数据不会生效
 - 未配置豆瓣 Cookie 时，不依赖豆瓣搜索页补链接

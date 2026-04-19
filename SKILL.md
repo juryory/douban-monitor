@@ -60,24 +60,29 @@
 
 ## 执行流程
 
-对应 `monitor.py` 的 `[1/7]` ~ `[7/7]`：
+对应 `monitor.py` 的 `[1/8]` ~ `[8/8]`：
 
 1. 抓取豆瓣多榜单候选
 2. 抓取 TMDB 候选
 3. 去重并补全详情页，提取评分和评分人数
 4. 更新状态与监控库，判定新增命中、继续观察和二次提醒
 5. 写入状态文件、监控库和 Markdown 报告
-6. 生成网页数据：调用 `fetch_posters.py` 获取封面、`fetch_metadata.py` 获取元数据、`fetch_reviews.py` 获取豆瓣短评
-7. 拉取远端最新代码，提交数据变更并推送到 GitHub
+6. 生成前端结果数据 `douban-monitor-result.json`，为每条达标条目附带入库时间（`qualified_at` / `first_discovered_at`）
+7. 生成网页附加数据：`fetch_favorites.py` 手动收藏、`fetch_posters.py` 封面、`fetch_metadata.py` 元数据、`fetch_reviews.py` 短评
+8. 拉取远端最新代码，提交数据变更并推送到 GitHub
+
+**抓取失败保护**：若第 1、2 步豆瓣和 TMDB 全部失败、当日候选数为 0，第 5 步跳过 Markdown 报告写入、第 6 步跳过 `result.json` 写入，保留上一份好数据，避免网页刷新成空。
+
+**推送保护**：第 8 步 `git pull --rebase --autostash` 失败或检测到待提交文件中出现合并冲突标记时立即中止，不提交坏数据。
 
 ## 可视化网页
 
 项目根目录的 `index.html` 是一个静态网页，读取 `data/` 下的 JSON 文件展示达标内容。
 
 - 暗色主题瀑布流卡片布局
-- 支持电影 / 剧集 / 综艺分类切换和多维排序
+- 支持电影 / 剧集 / 综艺分类切换和多维排序，默认"最近入库"按真实入库时间（`qualified_at` / `first_discovered_at`）倒序
 - 卡片包含封面、评分、类型标签、简介、上映日期，点击跳转豆瓣详情页
-- 数据来源：`douban-monitor-result.json`、`douban-monitor-posters.json`、`douban-monitor-metadata.json`
+- 数据来源：`douban-monitor-result.json`、`douban-monitor-favorites-result.json`、`douban-monitor-posters.json`、`douban-monitor-metadata.json`、`douban-monitor-reviews.json`
 
 ## 核心规则
 
@@ -113,9 +118,12 @@
 - 完整模式：浏览器抓取豆瓣榜单候选、点击卡片补链接、详情页提取评分
 - 状态文件、监控库、Markdown 报告输出
 - 阈值筛选与新增命中判定
-- 网页可视化展示（瀑布流卡片布局、封面、简介、评分）
+- 网页可视化展示（瀑布流卡片布局、封面、简介、评分、短评）
+- 手动收藏：`data/douban-monitor-favorites.json` 填豆瓣 ID 即可在网页展示
+- 最近入库排序：达标条目携带入库时间戳，网页按真实入库时间排序
 - TMDB 封面和元数据自动获取
 - GitHub Actions 定时自动运行（每天 09:00 / 21:00）
+- 抓取失败和推送冲突有兜底保护，不会覆盖或污染历史数据
 
 当前已打通的榜单类型：
 
@@ -127,7 +135,7 @@
 
 ## 已知限制
 
-- 轻量模式依赖豆瓣 Frodo API，如果接口变更或限流需要关注
+- 轻量模式依赖豆瓣 Frodo API，如果接口变更、签名方式变化或 IP 被限流会全榜单 400；此时建议等风控解除或依赖 Actions 在境外 IP 上跑
 - 完整模式下少量详情页在特定环境下可能无法稳定提取评分或评分人数
 - 未配置 `TMDB_API_KEY` 时，TMDB 候选源和网页封面/元数据不会生效
 - 未配置豆瓣 Cookie 时，不依赖豆瓣搜索页补链接
