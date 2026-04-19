@@ -1,880 +1,4 @@
 {
-  "35010610": {
-    "tmdb_id": 687163,
-    "tmdb_type": "movie",
-    "original_title": "Project Hail Mary",
-    "overview": "　　太阳即将熄灭，地球命悬一线，对太空一窍不通的中学老师瑞恩（瑞恩·高斯林 饰）竟成为全人类的希望。被迫成为宇航员的他，踏上有去无回的太空孤旅。他能否力挽狂澜，为人类带来新的黎明？\r 　　影片改编自安迪·威尔的同名畅销科幻小说。",
-    "genres": [
-      "科幻",
-      "冒险"
-    ],
-    "runtime": 157,
-    "release_date": "2026-03-15",
-    "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
-    "countries": [
-      "United States of America"
-    ],
-    "director": "菲尔·洛德",
-    "cast": [
-      {
-        "name": "瑞恩·高斯林",
-        "character": "Ryland Grace",
-        "profile_path": "/lyUyVARQKhGxaxy0FbPJCQRpiaW.jpg"
-      },
-      {
-        "name": "詹姆斯·奥尔蒂斯",
-        "character": "Rocky (voice)",
-        "profile_path": "/zYYDXniHb36mjG7xK59r9IoOKvt.jpg"
-      },
-      {
-        "name": "桑德拉·惠勒",
-        "character": "Eva Stratt",
-        "profile_path": "/t7wGqC2dRwTEnt9Fk5pxQ0uXTqs.jpg"
-      },
-      {
-        "name": "莱昂内尔·博伊斯",
-        "character": "Carl",
-        "profile_path": "/hpIxX5nkfA3pWCW8rYkEUCSBVyS.jpg"
-      },
-      {
-        "name": "米拉娜·薇恩翠",
-        "character": "Olesya Ilyukhina",
-        "profile_path": "/i5Cou9ExwTZvRRtl79V75CsI7oC.jpg"
-      },
-      {
-        "name": "肯·兰格",
-        "character": "Yao",
-        "profile_path": "/hpatUP6u74gkpDRmn9voNY9V43O.jpg"
-      },
-      {
-        "name": "普里亚·坎萨拉",
-        "character": "Mary (voice)",
-        "profile_path": "/zv9kpaQ8AVBfjI2LAAZV58NeVQg.jpg"
-      },
-      {
-        "name": "米娅·索特里乌",
-        "character": "Dr. Browne",
-        "profile_path": "/bU4Twfk4as290gPFouByj7Wjd2.jpg"
-      }
-    ],
-    "stills": [
-      "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
-      "/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
-      "/qL4dBGLkWOVP5vImN7EEoqJQYd8.jpg",
-      "/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
-      "/fFyLcR22R4ynrecqjMniKXm0UTp.jpg",
-      "/ckgitpsGKUFVO8yHinQdKSSyrFC.jpg",
-      "/afHAM9qOTmrVDeaLIU7zfssotUY.jpg",
-      "/6BI8cpbzCjwZRoLxiFILrzMIxtZ.jpg",
-      "/o8d54pvtPMYQdR5uPSYaMzKZJdB.jpg",
-      "/qjLiHYCzCfgqeyZlcKKNHk1eLHa.jpg"
-    ],
-    "similar": [
-      {
-        "tmdb_id": 782,
-        "title": "千钧一发",
-        "poster_path": "/pKtirbfjgx9myanD7ERNvsFYvJU.jpg",
-        "vote_average": 7.566
-      },
-      {
-        "tmdb_id": 808,
-        "title": "怪物史瑞克",
-        "poster_path": "/40bL9rf34UsinhmlyuiG7OjqPO6.jpg",
-        "vote_average": 7.759
-      },
-      {
-        "tmdb_id": 811,
-        "title": "宇宙静悄悄",
-        "poster_path": "/ahasZ5HILZHtlrl6cbXgpfk0y8H.jpg",
-        "vote_average": 6.4
-      },
-      {
-        "tmdb_id": 830,
-        "title": "禁忌星球",
-        "poster_path": "/aq0OQfRS7hDDI8vyD0ICbH9eguC.jpg",
-        "vote_average": 7.2
-      },
-      {
-        "tmdb_id": 831,
-        "title": "飞碟征空",
-        "poster_path": "/2viRDpHmhzQoreZok2auLjkVbSE.jpg",
-        "vote_average": 6.002
-      },
-      {
-        "tmdb_id": 840,
-        "title": "第三类接触",
-        "poster_path": "/gCWPB8cF82tqzrS9tvzcO6q6nyz.jpg",
-        "vote_average": 7.352
-      },
-      {
-        "tmdb_id": 841,
-        "title": "沙丘",
-        "poster_path": "/tiWTNR4f6oMYB09059YH8nDke5K.jpg",
-        "vote_average": 6.2
-      },
-      {
-        "tmdb_id": 844,
-        "title": "2046",
-        "poster_path": "/jKD7aeiMLrgj8njSE5hpdDM0y3I.jpg",
-        "vote_average": 7.2
-      }
-    ]
-  },
-  "37332784": {
-    "tmdb_id": 1546855,
-    "tmdb_type": "movie",
-    "original_title": "我，许可",
-    "overview": "00后“母单”女孩儿许可（文淇 饰）面临一场迫在眉睫的妇科手术，却因妈妈胡春蓉（秦海璐 饰）的突袭式造访打乱了所有计划。母女同居，冲突乍起。在新旧观念的摩擦中，没想到女儿对妈妈展开了一次又一次反向教育——跟妈谈心，不如带妈蹦迪；给妈上生理课，不如直接送妈小玩具……最终许可能否顺利手术，胡春蓉又能否鼓起勇气开始新生活？这场笑点和泪点齐飞的大戏，又将如何重塑两人之间的母女关系……",
-    "genres": [
-      "剧情",
-      "喜剧"
-    ],
-    "runtime": 118,
-    "release_date": "2026-03-21",
-    "backdrop_path": "/sc2Q8HwhUOb49IfbkHHvi8dB7yy.jpg",
-    "countries": [
-      "China"
-    ],
-    "director": "杨荔钠",
-    "cast": [
-      {
-        "name": "文淇",
-        "character": "Xu Ke",
-        "profile_path": "/5sV0c3iCnLhepzfR1OA2dqAtaEr.jpg"
-      },
-      {
-        "name": "秦海璐",
-        "character": "Hu Chunrong",
-        "profile_path": "/uhiUlT5c5RU3Qmo42Kjtm8gZRy.jpg"
-      },
-      {
-        "name": "白客",
-        "character": "Doctor",
-        "profile_path": "/t7Hi7qYnXPaeehR7K5rbf0hHX0B.jpg"
-      },
-      {
-        "name": "李雪琴",
-        "character": "Editor",
-        "profile_path": "/sr3mNlb7ute2hj8AOen8HR5Vm7e.jpg"
-      },
-      {
-        "name": "牛莉",
-        "character": "Landlady",
-        "profile_path": "/zsj8gHSsV2duAhObxZvGC3pyd9P.jpg"
-      },
-      {
-        "name": "刘佳",
-        "character": "Doctor",
-        "profile_path": "/wcFTjV0UpEyPh7bOtmMWdpBbKNr.jpg"
-      },
-      {
-        "name": "啜妮",
-        "character": "Ms. Sun",
-        "profile_path": "/3K0RFTpCKVYmyhltY7RND0vyFw5.jpg"
-      },
-      {
-        "name": "王和",
-        "character": "Teacher",
-        "profile_path": "/vMc2vJNc5UjYITlPzxGJrh2o5Sn.jpg"
-      }
-    ],
-    "stills": [
-      "/sc2Q8HwhUOb49IfbkHHvi8dB7yy.jpg",
-      "/3RKbP73oyvKtxiNNfrH5C868UEw.jpg",
-      "/5ItVFV9zuFMRSmSGZbWgAppuIE3.jpg",
-      "/sZVE0aUpb96HsmmagO3eeEfYzpl.jpg",
-      "/c0ZSr1L2ToYc0iCQsVjsSPqDS5I.jpg"
-    ],
-    "similar": [
-      {
-        "tmdb_id": 436459,
-        "title": "不只是朋友",
-        "poster_path": "/uJMknKxZagbhAYiiMjEaFnsZzRR.jpg",
-        "vote_average": 6.3
-      },
-      {
-        "tmdb_id": 1147596,
-        "title": "第二十条",
-        "poster_path": "/nTKeuNKbnUgiZZ4vEZWpUds3DYP.jpg",
-        "vote_average": 6.944
-      },
-      {
-        "tmdb_id": 833257,
-        "title": "酒鬼奶奶",
-        "poster_path": "/qkoN7oYsDeehYwOMu7oP15ZIUiZ.jpg",
-        "vote_average": 6.5
-      },
-      {
-        "tmdb_id": 77633,
-        "title": "大腕",
-        "poster_path": "/3BrFwSIug0CzgmR3LxbVkkzkMKQ.jpg",
-        "vote_average": 6.5
-      },
-      {
-        "tmdb_id": 1077661,
-        "title": "成年人们",
-        "poster_path": "/qFuBi5JDZdJLoNDBOA9U2PM9wpy.jpg",
-        "vote_average": 6.2
-      },
-      {
-        "tmdb_id": 45861,
-        "title": "幸福时光",
-        "poster_path": "/r7WBWvRdQbhu0ENDsrGrNyglqTK.jpg",
-        "vote_average": 7.053
-      },
-      {
-        "tmdb_id": 172631,
-        "title": "家庭周末",
-        "poster_path": "/RiUNV96HPP14OfB7ILEOe2Vj26.jpg",
-        "vote_average": 6.3
-      },
-      {
-        "tmdb_id": 419459,
-        "title": "固定电话",
-        "poster_path": "/p7RVsyi67S95RyNJjX99E1MaOsA.jpg",
-        "vote_average": 6.1
-      }
-    ]
-  },
-  "37168326": {
-    "tmdb_id": 93166,
-    "tmdb_type": "tv",
-    "original_title": "The Capture",
-    "overview": "当士兵肖恩埃默里在阿富汗谋杀的罪名被推翻，因为有缺陷的视频证据，他作为一个自由人和他的小女儿返回生活。但当伦敦一个夜晚的闭路电视镜头曝光时，肖恩的生活发生了令人震惊的转折，他必须很快再次为自由而战。随着新晋升的迪雷切尔凯里起草调查肖恩的案件，她很快了解到，真相有时可能是一个角度的问题。她应该信任肖恩·埃默里吗？",
-    "genres": [
-      "犯罪",
-      "剧情",
-      "悬疑"
-    ],
-    "runtime": null,
-    "release_date": "2019-09-03",
-    "backdrop_path": "/10D67q6rDL0jhWVxkz5zZwNJOmd.jpg",
-    "countries": [
-      "GB"
-    ],
-    "director": "本·查安南",
-    "cast": [
-      {
-        "name": "霍利迪·格兰杰",
-        "character": "DI Rachel Carey",
-        "profile_path": "/fHveeGXgEfTZ9slB5OvHDG4LAPw.jpg"
-      },
-      {
-        "name": "朗·普尔曼",
-        "character": "Frank Napier",
-        "profile_path": "/pOgMRdJhbBsvwGLRFXPRASTfcay.jpg"
-      },
-      {
-        "name": "本·迈尔斯",
-        "character": "Commander Danny Hart",
-        "profile_path": "/mT3BqoFUkyktXLvefQA6VxaGHJz.jpg"
-      },
-      {
-        "name": "莉娅·威廉姆斯",
-        "character": "DSU Gemma Garland",
-        "profile_path": "/d7BIswSeHeAdIobNjsWEFG2uj1H.jpg"
-      },
-      {
-        "name": "金妮·霍尔德",
-        "character": "DC / DI Nadia Latif",
-        "profile_path": "/gk6BypIs5txRIDe55e1I6xdyf04.jpg"
-      },
-      {
-        "name": "帕帕·埃西杜",
-        "character": "Isaac Turner MP",
-        "profile_path": "/rucljrM3pdyDLLH3mvZIjtxJ45L.jpg"
-      },
-      {
-        "name": "殷蒂拉·瓦玛",
-        "character": "Khadija Khan",
-        "profile_path": "/yaFCI907dcK2XkzO0HQgtK25kp2.jpg"
-      },
-      {
-        "name": "王国旌",
-        "character": "DC Chloe Tan",
-        "profile_path": "/8bgwte22fpOPlPtBtItxYBk5HjT.jpg"
-      }
-    ],
-    "stills": [
-      "/hoJzpWgnlaqyl26fEGCqOwyXv14.jpg",
-      "/3XTeeV0EB3lWXUGQYnxDW0v1h6j.jpg",
-      "/10D67q6rDL0jhWVxkz5zZwNJOmd.jpg",
-      "/nU5ZeZZ9iV5c9orHBOgkYiGM4DM.jpg",
-      "/m6xlBwvGlA90jvvbH2C3YLIap8c.jpg",
-      "/5bQ4eGwQy0jTeMzk7XE1ES0xSb6.jpg",
-      "/xBswLZOKye9X7F7dcj0nXMeZEWV.jpg",
-      "/btWghV6scZ1uTLYRFnJuk3bZ5bw.jpg",
-      "/wyLmylPqsJWM4EpNZg8sD3teB2k.jpg",
-      "/etZqJ0qY1x0Mfi1XQycZgIkDgls.jpg"
-    ],
-    "similar": [
-      {
-        "tmdb_id": 230656,
-        "title": "非模特经济公司",
-        "poster_path": "/zUw7SmnCOmOVsjVmZGJGunX3yUx.jpg",
-        "vote_average": 6.0
-      },
-      {
-        "tmdb_id": 198102,
-        "title": "历劫惊途",
-        "poster_path": "/h8Y9FDPIk1aHDpTbPoLLu7jnxid.jpg",
-        "vote_average": 7.553
-      },
-      {
-        "tmdb_id": 2473,
-        "title": "复仇者",
-        "poster_path": "/fQ4GHecDFEAmJcwc10zUrdIDLFd.jpg",
-        "vote_average": 7.7
-      },
-      {
-        "tmdb_id": 119958,
-        "title": "恨君不似江楼月",
-        "poster_path": "/9W22idYBjUN5xxOV5uqY7dCeOp5.jpg",
-        "vote_average": 8.5
-      },
-      {
-        "tmdb_id": 90571,
-        "title": "Bepanah Pyaarr",
-        "poster_path": "/auu8xGIFYTWceW9vO5edUa7Rg13.jpg",
-        "vote_average": 8.0
-      },
-      {
-        "tmdb_id": 90669,
-        "title": "1899",
-        "poster_path": "/qmpUDEgZawIlDU5HP3IJ9HjnpI3.jpg",
-        "vote_average": 7.474
-      },
-      {
-        "tmdb_id": 200709,
-        "title": "弱美男英雄",
-        "poster_path": "/bz5XuVcMYlc0btR96UCOnBCrCKN.jpg",
-        "vote_average": 8.65
-      },
-      {
-        "tmdb_id": 294025,
-        "title": "Honey Trap",
-        "poster_path": "/ryyJvnMc3YQb27s1kIgHBqigCqR.jpg",
-        "vote_average": 0
-      }
-    ]
-  },
-  "37239408": {
-    "tmdb_id": 250307,
-    "tmdb_type": "tv",
-    "original_title": "The Pitt",
-    "overview": "　　讲述匹兹堡一家医院的医护人员日常应对个人危机、职场政治和危重病人的情志护理等情况，检视当今美国医疗工作者所面临的挑战，揭示他们肩负崇高使命所需的韧性。",
-    "genres": [
-      "剧情"
-    ],
-    "runtime": null,
-    "release_date": "2025-01-09",
-    "backdrop_path": "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
-    "countries": [
-      "US"
-    ],
-    "director": "R.斯科特·格雷米尔",
-    "cast": [
-      {
-        "name": "诺亚·怀尔",
-        "character": "Dr. Michael 'Robby' Robinavitch",
-        "profile_path": "/nwyLCQepwg8FX7OXJ4AT4ej8c7i.jpg"
-      },
-      {
-        "name": "帕特里克·鲍尔",
-        "character": "Dr. Frank Langdon",
-        "profile_path": "/av5aBJtHb2l2A49Sln8cM7P81PX.jpg"
-      },
-      {
-        "name": "凱瑟琳·拉娜莎",
-        "character": "Charge Nurse Dana Evans",
-        "profile_path": "/7X3f4MG24XLG2fNPJt5H38d8YCV.jpg"
-      },
-      {
-        "name": "苏普丽亚·加内什",
-        "character": "Dr. Samira Mohan",
-        "profile_path": "/psUdosBoBVMfnSpCpe4UTAsegTP.jpg"
-      },
-      {
-        "name": "菲奥娜·道里夫",
-        "character": "Dr. Cassie McKay",
-        "profile_path": "/gKn9lBZLuNHACQhZJUkSIZzUQN5.jpg"
-      },
-      {
-        "name": "泰勒·德尔登",
-        "character": "Dr. Melissa King",
-        "profile_path": "/4oIL97ha0B4Gmp5tf4VUsqsWQUa.jpg"
-      },
-      {
-        "name": "伊莎·布里昂斯",
-        "character": "Dr. Trinity Santos",
-        "profile_path": "/hmopjqj1pmmoc6LNluC27fTeRpV.jpg"
-      },
-      {
-        "name": "格伦·霍威尔",
-        "character": "Student Doctor Dennis Whitaker",
-        "profile_path": "/ssyzz4yiGtbHOghoSYZIqQBEh4d.jpg"
-      }
-    ],
-    "stills": [
-      "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
-      "/7Sgo1XdCrIpJpiNsTPMi9vwKSuC.jpg",
-      "/q1z0W19F4T5Xs2qka3xJSmFjv9a.jpg",
-      "/6uPBHw488MUW6x51zZ2OCJo6Dgp.jpg",
-      "/aawwu2SzF2hrfTUy1L4k0exbe2W.jpg",
-      "/58uwPn7t9ZGZIRgzcBfxCv60GZ1.jpg",
-      "/vzxDaHIXb3fX3v5QoBqOElXu9yZ.jpg",
-      "/emYVQDiLjZA3N6R435h8l6qoIXs.jpg",
-      "/xtVhXKIIGQhEZTOLrIAXEfanUxX.jpg",
-      "/tPwu4l50aBHgb8NqF25cgaClsox.jpg"
-    ],
-    "similar": [
-      {
-        "tmdb_id": 230069,
-        "title": "呼吸之间",
-        "poster_path": "/tmkPs3XuT5eY2LfxYXSlaxkhzYx.jpg",
-        "vote_average": 7.6
-      },
-      {
-        "tmdb_id": 230105,
-        "title": "Hartklop",
-        "poster_path": "/edky4wxKHkDONLjIYSYAZGKYUKQ.jpg",
-        "vote_average": 9.0
-      },
-      {
-        "tmdb_id": 1714,
-        "title": "Common As Muck",
-        "poster_path": "/kmuL86GJOCr4ausJeUvU59oIYTs.jpg",
-        "vote_average": 6.7
-      },
-      {
-        "tmdb_id": 1791,
-        "title": "法外情真",
-        "poster_path": "/5USMJz2qw9QBd8yHpguYSz7RzKA.jpg",
-        "vote_average": 6.982
-      },
-      {
-        "tmdb_id": 2054,
-        "title": "The Royal",
-        "poster_path": "/x4YxZeQ7pGmaJVLzIQ784nzqDgX.jpg",
-        "vote_average": 7.6
-      },
-      {
-        "tmdb_id": 2167,
-        "title": "All Saints",
-        "poster_path": "/cuKUm2nweOCpb1pl2k8k0THTBvn.jpg",
-        "vote_average": 6.1
-      },
-      {
-        "tmdb_id": 2170,
-        "title": "Cutter to Houston",
-        "poster_path": "",
-        "vote_average": 5.0
-      },
-      {
-        "tmdb_id": 57647,
-        "title": "好医生",
-        "poster_path": "/by9YEcA85l2tJ3quF6AvcuOrWQK.jpg",
-        "vote_average": 8.0
-      }
-    ]
-  },
-  "36955778": {
-    "tmdb_id": 225780,
-    "tmdb_type": "tv",
-    "original_title": "Deadloch",
-    "overview": "　　本剧是一部澳大利亚黑色喜剧悬疑剧。宁静的澳洲小镇戴洛克突发离奇命案，一名男性教练赤身陈尸海滩，舌头被割。作风稳重的本地女警长杜尔茜，与性格火爆粗犷的外派警探艾迪被迫搭档。随着多名劣迹斑斑的男性接连以相同手法遇害，案件升级为连环凶杀。全镇男性陷入恐慌，小镇暗流涌动的性别矛盾、群体冲突与陈年旧怨接连浮出水面。两位风格迥异的警探在摩擦与合作中逐步追查，最终揭开一场针对“恶男”的有组织复仇真相，悬疑密集且讽刺辛辣。",
-    "genres": [
-      "喜剧",
-      "犯罪"
-    ],
-    "runtime": null,
-    "release_date": "2023-06-01",
-    "backdrop_path": "/n58Py8VN2Z677AslZyfc3Aj3uUI.jpg",
-    "countries": [
-      "AU"
-    ],
-    "director": "Kate McCartney",
-    "cast": [
-      {
-        "name": "凯特·博克斯",
-        "character": "Dulcie Collins",
-        "profile_path": "/zv4NckgNBn6Tc2xhCdNFFx9o9EZ.jpg"
-      },
-      {
-        "name": "Madeleine Sami",
-        "character": "Eddie Redcliffe",
-        "profile_path": "/tXBBz4WdTfFECUBEnheFxTUPV5N.jpg"
-      },
-      {
-        "name": "Nina Oyama",
-        "character": "Abbie Matsuda",
-        "profile_path": "/n962NDYS5WVZQbx8urApmrlkQhT.jpg"
-      },
-      {
-        "name": "Alicia Gardiner",
-        "character": "Cath York",
-        "profile_path": ""
-      },
-      {
-        "name": "Brian Coll",
-        "character": "",
-        "profile_path": ""
-      }
-    ],
-    "stills": [
-      "/zsnbjtdTSeeYISrPVCsWhQqxida.jpg",
-      "/2jI99p771Moj3XivHaVOK2lt68p.jpg",
-      "/n58Py8VN2Z677AslZyfc3Aj3uUI.jpg",
-      "/4rqniELFDAYVaHT3fQz5l7BU8Pd.jpg",
-      "/llIhZpxagZkooJq0KedHMIkIpWH.jpg",
-      "/hGCwSPBVTkatEb1YbxW986nvMcK.jpg",
-      "/nbTTLP4JWzQ1ZpHmAgf7UgUDZUv.jpg",
-      "/sSgwPQDhWKgkoYD1MLYPfh69G0a.jpg",
-      "/hfTIDueBUBHRg8ZqFYnopxVD7zg.jpg",
-      "/u7tW2pXHcyeVLxCsGUlr5JScCv9.jpg"
-    ],
-    "similar": [
-      {
-        "tmdb_id": 86375,
-        "title": "עיר מקלט",
-        "poster_path": "/xBKxh5LcUbnE0uiOmCSvpNu927Z.jpg",
-        "vote_average": 8.6
-      },
-      {
-        "tmdb_id": 86430,
-        "title": "法官大人",
-        "poster_path": "/5UZDZ15I9JB4Pc92XmUYU760fDs.jpg",
-        "vote_average": 8.064
-      },
-      {
-        "tmdb_id": 86473,
-        "title": "警察之家",
-        "poster_path": "/zdVbmGVLC7zx1bGiaWfk1CxjBE7.jpg",
-        "vote_average": 7.7
-      },
-      {
-        "tmdb_id": 136,
-        "title": "Thriller",
-        "poster_path": "/bRfxYga00zCB29fha9zWLsed0tn.jpg",
-        "vote_average": 6.7
-      },
-      {
-        "tmdb_id": 256729,
-        "title": "命运的使命",
-        "poster_path": "/5BqEQfzyHlvSX0Qp2VHDFsCDb5Y.jpg",
-        "vote_average": 0
-      },
-      {
-        "tmdb_id": 195670,
-        "title": "爱你的基蒂",
-        "poster_path": "/z8QwhurSNdnpntLSA0YtLSLj1ul.jpg",
-        "vote_average": 8.091
-      },
-      {
-        "tmdb_id": 291076,
-        "title": "The Game",
-        "poster_path": "/8C1lALIuIOIk8IxouWHV5FnQbxx.jpg",
-        "vote_average": 6.5
-      },
-      {
-        "tmdb_id": 256661,
-        "title": "A Certain Justice",
-        "poster_path": "/tUq2AlpgiujPFpMXnh688Jb7yFb.jpg",
-        "vote_average": 6.5
-      }
-    ]
-  },
-  "36559697": {
-    "tmdb_id": 316804,
-    "tmdb_type": "tv",
-    "original_title": "ONE PIECE BONUS CONTENT",
-    "overview": "",
-    "genres": [
-      "纪录"
-    ],
-    "runtime": null,
-    "release_date": "2026-03-17",
-    "backdrop_path": "",
-    "countries": [
-      "US"
-    ],
-    "director": "",
-    "cast": [],
-    "stills": [],
-    "similar": [
-      {
-        "tmdb_id": 86386,
-        "title": "Devonport: Inside the Royal Navy",
-        "poster_path": "/paWoYRterI3WElDsqRgK9vALwiq.jpg",
-        "vote_average": 0
-      },
-      {
-        "tmdb_id": 87155,
-        "title": "블랙핑크 다이어리",
-        "poster_path": "/nDkuvrq0eEmuPrfaE8k61Zp7KSz.jpg",
-        "vote_average": 9.3
-      },
-      {
-        "tmdb_id": 228550,
-        "title": "肌肉混战：美国角斗士传奇",
-        "poster_path": "/aOaufsMpt6oo4M04BaNuGVAY8CN.jpg",
-        "vote_average": 7.139
-      },
-      {
-        "tmdb_id": 454,
-        "title": "Totally Doctor Who",
-        "poster_path": "/l9QRZphKBrpEmL8HPg0Y946DMN8.jpg",
-        "vote_average": 6.5
-      },
-      {
-        "tmdb_id": 229734,
-        "title": "Keeping Up with Krystal Versace",
-        "poster_path": "/iFDF9m0qtItFaOX3NBLf6udWR.jpg",
-        "vote_average": 6.0
-      },
-      {
-        "tmdb_id": 118924,
-        "title": "Marvel Studios Assembled",
-        "poster_path": "/oifejV8UbNnU0TuMRD6aZdmo0is.jpg",
-        "vote_average": 7.2
-      },
-      {
-        "tmdb_id": 28902,
-        "title": "Backstory",
-        "poster_path": "/56lyJWiKO9blp1esmc9tLD7Y4Hn.jpg",
-        "vote_average": 6.5
-      },
-      {
-        "tmdb_id": 259547,
-        "title": "La nuit parisienne : en tournage avec Claude Lelouch",
-        "poster_path": "/fC351Y7yjtUVGMBJUipusjOMYGW.jpg",
-        "vote_average": 0
-      }
-    ]
-  },
-  "37657523": {
-    "tmdb_id": 303724,
-    "tmdb_type": "tv",
-    "original_title": "สืบลับจับใจ",
-    "overview": "一位权势显赫的警官之女，在躲过数次暗杀后悄然加入精英训练计划。在这里她邂逅了一位纪律严明、直觉敏锐的军官，两人被迫同住一室，暧昧情愫悄然滋长。然而政治阴谋、未解命案与错综往事即将撕裂这段关系。当一方发现对方的父亲竟与自己家族悲剧有所牵连时，在职责、危险与真相代价的层层考验下，两人不得不在正义和意外降临的爱情间做出抉择。",
-    "genres": [
-      "剧情",
-      "动作冒险"
-    ],
-    "runtime": null,
-    "release_date": "2026-02-12",
-    "backdrop_path": "/sPXZ3of4Lf1D1LXY0PUI1RpsYo6.jpg",
-    "countries": [
-      "TH"
-    ],
-    "director": "",
-    "cast": [
-      {
-        "name": "Nitchanart Pommart",
-        "character": "'Vicky' Phawika Ratchanon",
-        "profile_path": "/lyIfnnQUc6BQb2DcHqTItv4gSg2.jpg"
-      },
-      {
-        "name": "Pattarawadee Laosa",
-        "character": "'Than' Thara Krahan",
-        "profile_path": "/x83yL24XUC2qsDCcIjJH55monVN.jpg"
-      },
-      {
-        "name": "Boy Surat Rungputtikul",
-        "character": "Bawornthat",
-        "profile_path": "/8TTqzPYDWYfalVec7ZsFs6ySi2f.jpg"
-      },
-      {
-        "name": "Boom Thanut Jiraratchakit",
-        "character": "Pete",
-        "profile_path": "/2m1bIwSJk53rGnyTN23Yys4P5Yx.jpg"
-      },
-      {
-        "name": "ตฤณ เศรษฐโชค",
-        "character": "Phakphum",
-        "profile_path": "/x1uwpXmISKVbaEEpy0WFe3IFJg2.jpg"
-      },
-      {
-        "name": "Athiwad Sanidwong Na Ayoodthayaa",
-        "character": "Burin",
-        "profile_path": "/1J8dCA06JmcQ5QVTRXaLIFtmJ3u.jpg"
-      },
-      {
-        "name": "พัทระ เชื้อจำพร",
-        "character": "X",
-        "profile_path": "/cF61uHPgyFxpVakUJEIXkerAyCF.jpg"
-      },
-      {
-        "name": "派泰·普洛伊米卡",
-        "character": "Ken",
-        "profile_path": "/92kDcRQklQgeQAvHtmjbmEob8wo.jpg"
-      }
-    ],
-    "stills": [
-      "/sPXZ3of4Lf1D1LXY0PUI1RpsYo6.jpg",
-      "/93wOmiNaktCA5eXUGf2HP3cIh4A.jpg",
-      "/ejVXdJMAkqGRNCwuNpQsgPNX1b1.jpg",
-      "/EEao5yWI4vtnBMcUALS5SfK90J.jpg",
-      "/3sNXMzhXlmPMHBYYvLHTOQxFwGy.jpg",
-      "/dX9iRmIeGHvl2PDeJ3QE02ikCRH.jpg",
-      "/zmS0KgzcuJi4tkgXr28TcerZUu6.jpg",
-      "/1YX42jBpGkbNqgveRmh43V1XWkH.jpg",
-      "/eslMGp2XBfCYWVIjfWI6qunwKOZ.jpg",
-      "/2yZZ41uw1xe4wDtMwZ8EVWSeUgK.jpg"
-    ],
-    "similar": [
-      {
-        "tmdb_id": 57134,
-        "title": "孽子",
-        "poster_path": "/nxGFGqKwZ361WhbQgmLIi5ufbcA.jpg",
-        "vote_average": 5.5
-      },
-      {
-        "tmdb_id": 89302,
-        "title": "กุหลาบเกราะเพชร",
-        "poster_path": "/hjy0DuGq0ecPeowJkv1uMvVhetO.jpg",
-        "vote_average": 8.0
-      },
-      {
-        "tmdb_id": 1734,
-        "title": "但丁湾",
-        "poster_path": "/w0r2lEUZbAcxlPTyJnDxpwC60LP.jpg",
-        "vote_average": 5.4
-      },
-      {
-        "tmdb_id": 259288,
-        "title": "善意的竞争",
-        "poster_path": "/5pNE863SK1vU40ljFqUOq8v1FQ4.jpg",
-        "vote_average": 8.601
-      },
-      {
-        "tmdb_id": 119362,
-        "title": "山河令",
-        "poster_path": "/1pm9LhA2EhtkNbM6rhSUWxKY1Yo.jpg",
-        "vote_average": 7.927
-      },
-      {
-        "tmdb_id": 259669,
-        "title": "奥林匹奥：极限争锋",
-        "poster_path": "/3iGi71Mo21ut1uSavnwNOMlt4bx.jpg",
-        "vote_average": 7.7
-      },
-      {
-        "tmdb_id": 89672,
-        "title": "爱情理论",
-        "poster_path": "/TFFVpYTvLHH6n4mUTGBQVBLJzK.jpg",
-        "vote_average": 7.685
-      },
-      {
-        "tmdb_id": 119410,
-        "title": "En kunglig affär",
-        "poster_path": "/VKL9LtW0EAoEf230RYNIrMgd5w.jpg",
-        "vote_average": 4.1
-      }
-    ]
-  },
-  "38188936": {
-    "tmdb_id": 313670,
-    "tmdb_type": "tv",
-    "original_title": "네 가지 소원",
-    "overview": "韩国智斗综艺《四个愿望》（The Four Wishes/네ラ지소원）由大学生创作团队MINDZERO制作，2026年1月报道，全素人首发。节目聚焦高智商博弈，参赛者包括名校学生、密室设计师、魔方冠军等9位代表，代表人物有Lee Choongmyung（李忠明）、Kil Hojong、Bae Chaewoon等，因高规则完成度被称为“小《血之游戏》”",
-    "genres": [
-      "真人秀"
-    ],
-    "runtime": null,
-    "release_date": "2026-01-02",
-    "backdrop_path": "/pMoes5wotMDyaau0IIsYLy5flXF.jpg",
-    "countries": [
-      "KR"
-    ],
-    "director": "",
-    "cast": [
-      {
-        "name": "충명",
-        "character": "延世大学学生，香港数学竞赛冠军，魔鬼计划S2玩测者",
-        "profile_path": ""
-      },
-      {
-        "name": "길호종",
-        "character": "韩国科学技术院学生，计算机科学专业，韩国科学技术院啦啦队长",
-        "profile_path": ""
-      },
-      {
-        "name": "裴彩云",
-        "character": "韩国科学技术院博士生，魔方公式记录保持者，独立游戏开发者",
-        "profile_path": ""
-      },
-      {
-        "name": "权惠秀",
-        "character": "密室逃脱设计师，学院讲师",
-        "profile_path": ""
-      },
-      {
-        "name": "朴智惠",
-        "character": "推理俱乐部“Essence Of Reasoning”经理",
-        "profile_path": ""
-      },
-      {
-        "name": "裴俊成",
-        "character": "高丽大学学生，英语教育专业",
-        "profile_path": ""
-      }
-    ],
-    "stills": [
-      "/pMoes5wotMDyaau0IIsYLy5flXF.jpg",
-      "/djeCALoXNxiOlxWKqKTQj7FjKRH.jpg"
-    ],
-    "similar": [
-      {
-        "tmdb_id": 240114,
-        "title": "怪奇谜案限时破",
-        "poster_path": "/7YnB0nQxGUvaN8WpatCgfoGaoH1.jpg",
-        "vote_average": 7.635
-      },
-      {
-        "tmdb_id": 204082,
-        "title": "鱿鱼游戏：真人挑战赛",
-        "poster_path": "/iovQgLvsvYdH9J8JGqW0s69FnxN.jpg",
-        "vote_average": 6.5
-      },
-      {
-        "tmdb_id": 77696,
-        "title": "奔跑吧，防弹！",
-        "poster_path": "/guNo600nrTIIh88C9i6HFlCAhE.jpg",
-        "vote_average": 8.6
-      },
-      {
-        "tmdb_id": 85904,
-        "title": "诱惑岛",
-        "poster_path": "/7ABC84sjxDZ5qCmemulT7ItzXhi.jpg",
-        "vote_average": 6.8
-      },
-      {
-        "tmdb_id": 2778,
-        "title": "Wheel of Fortune",
-        "poster_path": "/a6XruJ8a8LFNhrB0L20QcjmDXi6.jpg",
-        "vote_average": 6.9
-      },
-      {
-        "tmdb_id": 62,
-        "title": "The Challenge",
-        "poster_path": "/aLwN4WTtkIQL1Waa86MDY41a1Xh.jpg",
-        "vote_average": 7.2
-      },
-      {
-        "tmdb_id": 76300,
-        "title": "爱在狱外",
-        "poster_path": "/e3OgnW4ov16XueR5FxVzaFy7d4U.jpg",
-        "vote_average": 7.9
-      },
-      {
-        "tmdb_id": 62481,
-        "title": "打败巴比富雷",
-        "poster_path": "/vY8Bep9K9oFSz0C9gnTVipfBciU.jpg",
-        "vote_average": 6.1
-      }
-    ]
-  },
   "37293378": {
     "tmdb_id": 1454209,
     "tmdb_type": "movie",
@@ -899,7 +23,7 @@
       {
         "name": "杰米·格洛弗",
         "character": "Michael Parks",
-        "profile_path": "/yvw1rJqo0c5BEIUOYWk63Te5xDx.jpg"
+        "profile_path": "/qWqcGj97ruoHCwWmupQPdnO7UcH.jpg"
       },
       {
         "name": "Jasper Talbot",
@@ -919,7 +43,7 @@
       {
         "name": "Louisa Clein",
         "character": "Ensemble",
-        "profile_path": ""
+        "profile_path": "/ok3bPBqSRmvL9gyjUTMGvYb7vIS.jpg"
       },
       {
         "name": "Liliana Argenio-Winch",
@@ -941,32 +65,39 @@
       "/fx8UNI1SuuAzq7zGE8qdExqziqI.jpg",
       "/8pi6oUIhtoawcr7qFg1dWcEDq4U.jpg",
       "/4oMpZ8iQsSi2jLcI9TD3LtNpwDj.jpg",
-      "/1dGHsEE6s15PgEHQmriolQkYe18.jpg"
+      "/1dGHsEE6s15PgEHQmriolQkYe18.jpg",
+      "/u6Kv32sXZeFs5kBR9Biwm3HROH2.jpg"
     ],
     "similar": [
       {
-        "tmdb_id": 251455,
-        "title": "Nach Mitternacht",
-        "poster_path": "/q8PtFYjZDxAkgWGV2KCECPebr3K.jpg",
-        "vote_average": 2.7
+        "tmdb_id": 605153,
+        "title": "少校",
+        "poster_path": "/sJOfJuyQVZPwNQ8g21Qv0lojQhC.jpg",
+        "vote_average": 6.895
       },
       {
-        "tmdb_id": 424313,
-        "title": "The Sandman",
-        "poster_path": "/mrGQpylyMtXX47pW0k7Jmp33EEa.jpg",
-        "vote_average": 6.0
+        "tmdb_id": 6401,
+        "title": "Das 100 Millionen Dollar Date",
+        "poster_path": "",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 6537,
+        "title": "孤堡惊情",
+        "poster_path": "/mHzhSmcMuDPINPAxqmQXTNG9ywA.jpg",
+        "vote_average": 7.226
+      },
+      {
+        "tmdb_id": 777701,
+        "title": "罗密欧与朱丽叶",
+        "poster_path": "/8pOZbnd6RemVKfQB3FJwop27DWw.jpg",
+        "vote_average": 6.1
       },
       {
         "tmdb_id": 153,
         "title": "迷失东京",
         "poster_path": "/uomqRqnDtYQoLt2n9yO5KI00zgL.jpg",
-        "vote_average": 7.383
-      },
-      {
-        "tmdb_id": 93,
-        "title": "桃色血案",
-        "poster_path": "/b2G1QSAwtBv9luhEwErIgSRaU92.jpg",
-        "vote_average": 7.8
+        "vote_average": 7.382
       },
       {
         "tmdb_id": 110,
@@ -981,16 +112,10 @@
         "vote_average": 6.948
       },
       {
-        "tmdb_id": 389,
-        "title": "十二怒汉",
-        "poster_path": "/ztYF7nf1SBJYMWPMzjWv52U6T41.jpg",
-        "vote_average": 8.559
-      },
-      {
-        "tmdb_id": 598192,
-        "title": "After the Ball Was Over",
-        "poster_path": "/3hNO5qZRditr0bViNhqriLR5J8Y.jpg",
-        "vote_average": 1.0
+        "tmdb_id": 964544,
+        "title": "WHITEOUT",
+        "poster_path": "/nkMTgSzrVCLuaaJbW3REs7GQQva.jpg",
+        "vote_average": 0
       }
     ]
   },
@@ -1073,7 +198,13 @@
         "tmdb_id": 1154312,
         "title": "慢慢说",
         "poster_path": "/AvFeqvY7tqOR6VuXFKPvz9efKPz.jpg",
-        "vote_average": 6.536
+        "vote_average": 6.555
+      },
+      {
+        "tmdb_id": 41273,
+        "title": "巡演",
+        "poster_path": "/75pDH2mQRduyq8RUI48Ni8QlguF.jpg",
+        "vote_average": 6.4
       },
       {
         "tmdb_id": 829774,
@@ -1082,34 +213,28 @@
         "vote_average": 6.2
       },
       {
-        "tmdb_id": 651881,
-        "title": "拜拜笨蛋",
-        "poster_path": "/zh1jvhxWVJC1FEhYPCw9Joz0xMk.jpg",
-        "vote_average": 7.179
+        "tmdb_id": 90214,
+        "title": "科丝姑娘",
+        "poster_path": "/g4b3tEgmPSq7mZ7db1r9i5jHEHV.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 37189,
+        "title": "双姝奇缘",
+        "poster_path": "/iXydrbtUGX7CUutomhtMtlUd3Cb.jpg",
+        "vote_average": 7.4
+      },
+      {
+        "tmdb_id": 1102938,
+        "title": "吉姆的故事",
+        "poster_path": "/tUqCflwDzyPwmv8J5rUrVLoQUY.jpg",
+        "vote_average": 6.864
       },
       {
         "tmdb_id": 419459,
         "title": "固定电话",
         "poster_path": "/p7RVsyi67S95RyNJjX99E1MaOsA.jpg",
         "vote_average": 6.1
-      },
-      {
-        "tmdb_id": 27834,
-        "title": "完美女人",
-        "poster_path": "/aFAPOT77Jh7lNWYtojC6nxi4CpJ.jpg",
-        "vote_average": 5.889
-      },
-      {
-        "tmdb_id": 1102938,
-        "title": "吉姆的故事",
-        "poster_path": "/tUqCflwDzyPwmv8J5rUrVLoQUY.jpg",
-        "vote_average": 6.863
-      },
-      {
-        "tmdb_id": 964877,
-        "title": "Meet the Leroys",
-        "poster_path": "/8s3Wkt7V96yLOqLMbYUsxG5H49w.jpg",
-        "vote_average": 6.22
       }
     ]
   },
@@ -1162,52 +287,52 @@
     ],
     "similar": [
       {
-        "tmdb_id": 251594,
-        "title": "脱光我",
-        "poster_path": "/9uonem5TUObM0i5rKeN8HNd3yh1.jpg",
-        "vote_average": 5.7
-      },
-      {
-        "tmdb_id": 26,
-        "title": "水中漫步",
-        "poster_path": "/yz1vQRrvOhF4yiypQ8Rx4rOdR9E.jpg",
-        "vote_average": 6.8
-      },
-      {
-        "tmdb_id": 140,
-        "title": "不良教育",
-        "poster_path": "/6NbE3mOyUA6tek6LXvshCVJB9lp.jpg",
-        "vote_average": 7.4
-      },
-      {
-        "tmdb_id": 776501,
-        "title": "我们都要去世界博览会",
-        "poster_path": "/fXn4Nz1WCTEmzAFvwgEZoPHvptR.jpg",
-        "vote_average": 5.47
-      },
-      {
-        "tmdb_id": 599513,
-        "title": "Haus",
-        "poster_path": "/40Ub8k9PjqMEDOKy0jDjHzvpATj.jpg",
-        "vote_average": 6.0
-      },
-      {
-        "tmdb_id": 1313219,
-        "title": "Les Ailes collées",
-        "poster_path": "/nBVcwihnLUIukd5rpYoDpnf98AA.jpg",
+        "tmdb_id": 970194,
+        "title": "Prisoner C33",
+        "poster_path": "/4EmHwsvNgdGKMOQVo7t5weZlN3u.jpg",
         "vote_average": 7.0
       },
       {
-        "tmdb_id": 1312855,
-        "title": "Por Você",
-        "poster_path": "/f9TFnqBGogNrLPbY2VGbWABseP6.jpg",
-        "vote_average": 10.0
+        "tmdb_id": 258034,
+        "title": "四个月亮",
+        "poster_path": "/j1zyHN8FggqDlwMjVbBwbVJZ7pe.jpg",
+        "vote_average": 7.1
       },
       {
-        "tmdb_id": 1312863,
-        "title": "全套服务",
-        "poster_path": "/2xhEBT1QtRWug9yKINZDJVG4db6.jpg",
-        "vote_average": 5.4
+        "tmdb_id": 431433,
+        "title": "The Blind Owl",
+        "poster_path": "/ypZcGg3geydmTKZ66gv9p6fyBlH.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 605235,
+        "title": "浮気なぼくら　ＮＡＵＧＨＴＹ　ＢＯＹＳ",
+        "poster_path": "/6BMFfjAkaZZVmcdU7a7JLvZXIjG.jpg",
+        "vote_average": 3.3
+      },
+      {
+        "tmdb_id": 6468,
+        "title": "Premières neiges",
+        "poster_path": "/1zrevzjgVrw45VbRDlWNVlVGxL3.jpg",
+        "vote_average": 3.0
+      },
+      {
+        "tmdb_id": 258109,
+        "title": "O Menino e o Vento",
+        "poster_path": "/3K0Fb544GewZYfEfGv9lB1JlA9I.jpg",
+        "vote_average": 7.9
+      },
+      {
+        "tmdb_id": 99,
+        "title": "关于我母亲的一切",
+        "poster_path": "/evvT3HUwoQYoPQXWFO10R6AvhxG.jpg",
+        "vote_average": 7.619
+      },
+      {
+        "tmdb_id": 67,
+        "title": "天堂此时",
+        "poster_path": "/qWZkYa8VdcDZk8uzRB2PfhpM9IL.jpg",
+        "vote_average": 6.9
       }
     ]
   },
@@ -1284,52 +409,52 @@
     ],
     "similar": [
       {
-        "tmdb_id": 1142518,
-        "title": "自由",
-        "poster_path": "/pCk9abAWbgVZWvjuxwSLgU338D.jpg",
-        "vote_average": 6.3
-      },
-      {
-        "tmdb_id": 961891,
-        "title": "The Ball Method",
-        "poster_path": "/4uGodf6t659N7nVlFXpKjUhn5nr.jpg",
+        "tmdb_id": 783590,
+        "title": "Outlier: the story of Katherine Johnson",
+        "poster_path": "/4T88ZGWRgrBklvSiozXsPOSMod1.jpg",
         "vote_average": 0
       },
       {
-        "tmdb_id": 670,
-        "title": "老男孩",
-        "poster_path": "/2Kj88PyDqG0DSGv0m3LeSweoVVY.jpg",
-        "vote_average": 8.239
+        "tmdb_id": 1504362,
+        "title": "52nd State",
+        "poster_path": "",
+        "vote_average": 0
       },
       {
-        "tmdb_id": 637,
-        "title": "美丽人生",
-        "poster_path": "/q5uZjTEq1CCDNJDkxzJkFtWGTAU.jpg",
-        "vote_average": 8.439
+        "tmdb_id": 605153,
+        "title": "少校",
+        "poster_path": "/sJOfJuyQVZPwNQ8g21Qv0lojQhC.jpg",
+        "vote_average": 6.895
       },
       {
-        "tmdb_id": 640,
-        "title": "猫鼠游戏",
-        "poster_path": "/8gVelCmO4TifM6rcBfTTOYyspak.jpg",
-        "vote_average": 7.977
+        "tmdb_id": 257999,
+        "title": "堪萨斯之鹰",
+        "poster_path": "/UX4DwEQjmGfLK7FJxRByObKidi.jpg",
+        "vote_average": 0
       },
       {
-        "tmdb_id": 659,
-        "title": "铁皮鼓",
-        "poster_path": "/fgeTqkO43chJJi2DbEt0GbrUWUo.jpg",
-        "vote_average": 7.0
+        "tmdb_id": 970284,
+        "title": "投篮之星",
+        "poster_path": "/zLQHNW0XVT7IWjUahBlpVSba3sC.jpg",
+        "vote_average": 7.722
       },
       {
-        "tmdb_id": 639,
-        "title": "当哈利遇到莎莉",
-        "poster_path": "/mb2b04MAjem65yy8CXe2O3jWNKp.jpg",
-        "vote_average": 7.405
+        "tmdb_id": 6538,
+        "title": "查理·威尔森的战争",
+        "poster_path": "/3caK23lKqRfuaPeUUFnzOqSP3IN.jpg",
+        "vote_average": 6.538
       },
       {
-        "tmdb_id": 651,
-        "title": "陆军野战医院",
-        "poster_path": "/on8Q9LhtHYNhmITjUMpgOUkIG8o.jpg",
-        "vote_average": 6.951
+        "tmdb_id": 6461,
+        "title": "樱花盛开",
+        "poster_path": "/1JSHIHPzUxy5zGLh6cARPkoWNE0.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 76,
+        "title": "爱在黎明破晓前",
+        "poster_path": "/5gisRHtmLULKXHthDvez9DxdlYm.jpg",
+        "vote_average": 8.0
       }
     ]
   },
@@ -1360,7 +485,7 @@
       {
         "name": "永濑安奈",
         "character": "Iroha Sakayori (voice)",
-        "profile_path": "/gFKRUlUlqTD7jGdysg5IWIvgoCH.jpg"
+        "profile_path": "/748FmLCklgnN8hrlBZ4bNsF4zpk.jpg"
       },
       {
         "name": "早见沙织",
@@ -1390,7 +515,7 @@
       {
         "name": "小原好美",
         "character": "Mami Isayama (voice)",
-        "profile_path": "/3SA4eE579Fqex1qpMPcF4bTRFyT.jpg"
+        "profile_path": "/3wjTzpJpBiTkLexdMmo9a3wfgRT.jpg"
       }
     ],
     "stills": [
@@ -1407,52 +532,52 @@
     ],
     "similar": [
       {
-        "tmdb_id": 673,
-        "title": "哈利·波特与阿兹卡班的囚徒",
-        "poster_path": "/iCwifbvs8pZNPo8o485143y3FdC.jpg",
-        "vote_average": 8.008
+        "tmdb_id": 970522,
+        "title": "纪念花园",
+        "poster_path": "/cLBT8izPOBqhIX338MhHfWRBhg2.jpg",
+        "vote_average": 6.8
       },
       {
-        "tmdb_id": 63,
-        "title": "十二猴子",
-        "poster_path": "/jysTIOwc3BSAsIF0GpiM4evLX8a.jpg",
-        "vote_average": 7.604
-      },
-      {
-        "tmdb_id": 128,
-        "title": "幽灵公主",
-        "poster_path": "/mgxuL4rDqAHdcZvO3fXRhrcifpv.jpg",
-        "vote_average": 8.325
+        "tmdb_id": 18,
+        "title": "第五元素",
+        "poster_path": "/9dw840VOr3YBkrYxtJ7wuKNAoK5.jpg",
+        "vote_average": 7.566
       },
       {
         "tmdb_id": 168,
         "title": "星际旅行4：抢救未来",
         "poster_path": "/mKK2L17XGHFbVp4SPoII9PLVCvd.jpg",
-        "vote_average": 7.171
+        "vote_average": 7.17
       },
       {
-        "tmdb_id": 251385,
-        "title": "Arve Rezzle -机器化的妖精们-",
-        "poster_path": "/1ukoNPb4P11yt1NGlY1iiv3NkZ4.jpg",
-        "vote_average": 5.5
+        "tmdb_id": 63,
+        "title": "十二猴子",
+        "poster_path": "/jysTIOwc3BSAsIF0GpiM4evLX8a.jpg",
+        "vote_average": 7.606
       },
       {
-        "tmdb_id": 251516,
-        "title": "功之怒",
-        "poster_path": "/rkkV1wcGQEgWyLdQkpB7BVTBL5M.jpg",
-        "vote_average": 7.468
+        "tmdb_id": 1145612,
+        "title": "命运／奇异赝品 黎明低语",
+        "poster_path": "/hjs1jCa4dldlDmwXHKf7UQ1ssfp.jpg",
+        "vote_average": 7.7
       },
       {
-        "tmdb_id": 598099,
-        "title": "天降火雨",
-        "poster_path": "/cBYiyHe4EVLLjPrdf0gBIvQEfmP.jpg",
-        "vote_average": 5.5
+        "tmdb_id": 165,
+        "title": "回到未来2",
+        "poster_path": "/gUuzd7UqJyhFW69T6GTDXrmnfJN.jpg",
+        "vote_average": 7.778
       },
       {
-        "tmdb_id": 129,
-        "title": "千与千寻",
-        "poster_path": "/9oZmkkNlI4Ktx6NTkdpeU525qSc.jpg",
-        "vote_average": 8.534
+        "tmdb_id": 196,
+        "title": "回到未来3",
+        "poster_path": "/x2g9y6MHwuslZmDuKgrX1tRAbci.jpg",
+        "vote_average": 7.491
+      },
+      {
+        "tmdb_id": 199,
+        "title": "星际旅行8：第一类接触",
+        "poster_path": "/xpeO5hsCnvWBiyTot9Ja7uwdmyu.jpg",
+        "vote_average": 7.3
       }
     ]
   },
@@ -1527,52 +652,52 @@
     ],
     "similar": [
       {
+        "tmdb_id": 783588,
+        "title": "An Intervention",
+        "poster_path": "/kxyDed45nkZLtbaf1GSNby7lEgl.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 1504358,
+        "title": "Don't Say Good Luck",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 425373,
+        "title": "奇迹赛季",
+        "poster_path": "/cIVYjwi8QcZ9AQk4WRYgW4iUmXb.jpg",
+        "vote_average": 7.191
+      },
+      {
+        "tmdb_id": 600344,
+        "title": "어제 일은 모두 괜찮아",
+        "poster_path": "/n8bkZ3Y2CjWCoLVwpLO6SeykVFI.jpg",
+        "vote_average": 6.0
+      },
+      {
         "tmdb_id": 141,
         "title": "死亡幻觉",
         "poster_path": "/zkFYMf4yvifziIVIBo55ux2hpSw.jpg",
         "vote_average": 7.764
       },
       {
-        "tmdb_id": 4951,
-        "title": "我恨你的十件事",
-        "poster_path": "/ujERk3aKABXU3NDXOAxEQYTHe9A.jpg",
-        "vote_average": 7.59
+        "tmdb_id": 711,
+        "title": "心灵访客",
+        "poster_path": "/y7CS21qnCcXICwt0qVsvb2U21Oq.jpg",
+        "vote_average": 7.1
       },
       {
-        "tmdb_id": 603131,
-        "title": "Elliott's To Do List",
-        "poster_path": "/eFNKwAbhbrPqGMjugnWuNV4yvxr.jpg",
-        "vote_average": 7.0
+        "tmdb_id": 778256,
+        "title": "流线型人生",
+        "poster_path": "/m5qDQ0NJKV0ILozt0bouT5RqFZR.jpg",
+        "vote_average": 6.7
       },
       {
-        "tmdb_id": 5248,
-        "title": "Virtual Sexuality",
-        "poster_path": "/lMx1firCTM9gs7kVxyRKjHx56Lm.jpg",
-        "vote_average": 5.3
-      },
-      {
-        "tmdb_id": 3176,
-        "title": "大逃杀",
-        "poster_path": "/iJzrwIZuiLEO8M4gRL0zwn7faOb.jpg",
-        "vote_average": 7.273
-      },
-      {
-        "tmdb_id": 1315691,
-        "title": "Hollow",
-        "poster_path": "/qRzWjRZWSOH8stQEAGll0Fp9Gme.jpg",
-        "vote_average": 0
-      },
-      {
-        "tmdb_id": 8966,
-        "title": "暮光之城",
-        "poster_path": "/cmxhdokJTv8L35vqhnwkMorfRXR.jpg",
-        "vote_average": 6.28
-      },
-      {
-        "tmdb_id": 783588,
-        "title": "An Intervention",
-        "poster_path": "/kxyDed45nkZLtbaf1GSNby7lEgl.jpg",
-        "vote_average": 10.0
+        "tmdb_id": 602797,
+        "title": "热情花招",
+        "poster_path": "/bg9qZx9GjOq5cxRzAVt3gUtg3jv.jpg",
+        "vote_average": 5.9
       }
     ]
   },
@@ -1580,7 +705,7 @@
     "tmdb_id": 1489187,
     "tmdb_type": "movie",
     "original_title": "Сводишь с ума",
-    "overview": "艾莉莎搬进了圣彼得堡一间宽敞的公寓，公寓里的镜子却开始出现故障。它向这位年轻的房客展现了同一个公寓的平行世界，只不过，在这个平行世界里生活的不是艾丽莎，而是和她抢这间公寓的派对狂人伊万。这两位年轻人能否认清真爱？他们又能否让两个世界相连，在现实中相遇，只为简单地触碰彼此？",
+    "overview": "　　艾莉莎和伊万在看房时相遇，为了租到房子假扮夫妻。在争夺租房合同时，艾莉莎泼了伊万咖啡，抢先签了合同。这个选择导致了平行世界的产生：在艾莉莎的世界里她租到了房子，在伊万的世界里他租到了房子。两人通过镜子互动，从最初的互相嫌弃到逐渐了解，发现只有镜子对面的那个人才是真正理解自己的灵魂伴侣。最终，艾莉莎砸碎镜子，意外打通了两个世界，两人得以在现实中相遇。",
     "genres": [
       "喜剧",
       "爱情",
@@ -1588,7 +713,7 @@
     ],
     "runtime": 99,
     "release_date": "2025-10-09",
-    "backdrop_path": "/kM2l7BoPrlP7hx6bSKrp6MHZ1Aa.jpg",
+    "backdrop_path": "/6QKDBQRFHe6aG7QflvG5NQV1zr3.jpg",
     "countries": [
       "Russia"
     ],
@@ -1636,19 +761,13 @@
       }
     ],
     "stills": [
+      "/6QKDBQRFHe6aG7QflvG5NQV1zr3.jpg",
       "/kM2l7BoPrlP7hx6bSKrp6MHZ1Aa.jpg",
       "/yCOvpPxpnh2x0Nc66sLEXoTJF0Z.jpg",
       "/3pM2kecLklDlJmuwUhJCdbmS3v9.jpg",
-      "/5SkOSJaIGt6hWecyIY1fBghmYiD.jpg",
-      "/6QKDBQRFHe6aG7QflvG5NQV1zr3.jpg"
+      "/5SkOSJaIGt6hWecyIY1fBghmYiD.jpg"
     ],
     "similar": [
-      {
-        "tmdb_id": 73576,
-        "title": "水仙女",
-        "poster_path": "/eG2zuCJ2Z02WU15EymSWGLbNEw9.jpg",
-        "vote_average": 6.5
-      },
       {
         "tmdb_id": 47320,
         "title": "爱上那个她",
@@ -1662,10 +781,16 @@
         "vote_average": 6.5
       },
       {
-        "tmdb_id": 38031,
-        "title": "遭遇陌生人",
-        "poster_path": "/oBhnI8UZQzTkAH1LMEtrBUmfpjS.jpg",
-        "vote_average": 5.923
+        "tmdb_id": 13650,
+        "title": "纽约迷幻",
+        "poster_path": "/gO1rApi3dfHYUjKnB5JXOMvXxUd.jpg",
+        "vote_average": 6.3
+      },
+      {
+        "tmdb_id": 28370,
+        "title": "天使在人间",
+        "poster_path": "/yMycyIhlWF8GimBNHJjTUyoiayt.jpg",
+        "vote_average": 6.7
       },
       {
         "tmdb_id": 22215,
@@ -1674,22 +799,22 @@
         "vote_average": 6.1
       },
       {
-        "tmdb_id": 13650,
-        "title": "纽约迷幻",
-        "poster_path": "/gO1rApi3dfHYUjKnB5JXOMvXxUd.jpg",
-        "vote_average": 6.3
+        "tmdb_id": 433941,
+        "title": "戴夫造了个迷宫",
+        "poster_path": "/nofV0FyYMr73HkoxcgN7CZ0SDLb.jpg",
+        "vote_average": 6.4
       },
       {
-        "tmdb_id": 64736,
-        "title": "彼得调频",
-        "poster_path": "/5OBg9S8JCH7AFNQ7LDb3pJbBX4f.jpg",
-        "vote_average": 6.7
+        "tmdb_id": 38031,
+        "title": "遭遇陌生人",
+        "poster_path": "/oBhnI8UZQzTkAH1LMEtrBUmfpjS.jpg",
+        "vote_average": 5.9
       },
       {
-        "tmdb_id": 28370,
-        "title": "天使在人间",
-        "poster_path": "/yMycyIhlWF8GimBNHJjTUyoiayt.jpg",
-        "vote_average": 6.7
+        "tmdb_id": 73576,
+        "title": "水仙女",
+        "poster_path": "/eG2zuCJ2Z02WU15EymSWGLbNEw9.jpg",
+        "vote_average": 6.5
       }
     ]
   },
@@ -1704,7 +829,7 @@
     ],
     "runtime": 75,
     "release_date": "2026-01-16",
-    "backdrop_path": "/zL3BlyLxr5rrbZYITeOBAW2K5xv.jpg",
+    "backdrop_path": "/60Hm8JC1Ps8DsrstAt4PTQuBdIB.jpg",
     "countries": [
       "KR"
     ],
@@ -1750,34 +875,40 @@
     ],
     "similar": [
       {
-        "tmdb_id": 195670,
-        "title": "爱你的基蒂",
-        "poster_path": "/z8QwhurSNdnpntLSA0YtLSLj1ul.jpg",
-        "vote_average": 8.091
-      },
-      {
-        "tmdb_id": 256649,
-        "title": "双生炽爱",
-        "poster_path": "/rFyPhcKTP5D78hHActbP0OMZZll.jpg",
-        "vote_average": 0
+        "tmdb_id": 228689,
+        "title": "许愿吧，精灵",
+        "poster_path": "/94cP8WFvq3ViPnEnojU5u1d5TiM.jpg",
+        "vote_average": 7.608
       },
       {
         "tmdb_id": 47,
         "title": "查沃德尔奥乔",
         "poster_path": "/1TdBpVOASafzfWlnecwW17UL6a5.jpg",
-        "vote_average": 8.029
+        "vote_average": 8.03
       },
       {
-        "tmdb_id": 27167,
-        "title": "恋爱★情结",
-        "poster_path": "/upz1NpOpWo4coEicGFKb2VwWhmV.jpg",
-        "vote_average": 8.3
+        "tmdb_id": 228663,
+        "title": "堀与宫村 -piece-",
+        "poster_path": "/g9UvwFdURGJInEjtoKNyg1QeGx2.jpg",
+        "vote_average": 7.6
+      },
+      {
+        "tmdb_id": 291869,
+        "title": "Dream Catchers",
+        "poster_path": "/AbhmmgeyG9LeGlF21PJGP2Dhy3j.jpg",
+        "vote_average": 9.0
       },
       {
         "tmdb_id": 346,
         "title": "美国龙：杰克龙",
         "poster_path": "/mzJNakRdg3UdiEngfkeLHDvCNza.jpg",
         "vote_average": 7.718
+      },
+      {
+        "tmdb_id": 55635,
+        "title": "Como Aproveitar o Fim do Mundo",
+        "poster_path": "/rEw6NdR8wyYl6hCnUmc4umqzLxT.jpg",
+        "vote_average": 7.5
       },
       {
         "tmdb_id": 86888,
@@ -1790,244 +921,6 @@
         "title": "怦然心碎",
         "poster_path": "/bvO996L6yjGLjPJ9zFPI4y2F2Wu.jpg",
         "vote_average": 8.0
-      },
-      {
-        "tmdb_id": 86997,
-        "title": "妄想彼女",
-        "poster_path": "/l34tkhuzFOnscFXKdkFwCSc2eCn.jpg",
-        "vote_average": 5.7
-      }
-    ]
-  },
-  "36343491": {
-    "tmdb_id": 76479,
-    "tmdb_type": "tv",
-    "original_title": "The Boys",
-    "overview": "这是一个超能力者和普通人共存的世界，祖国人、火车头、深海、梅芙女王、透明人和玄色隶属于全球最大的超级英雄公司沃特集团，在帮助政府惩奸除恶维护世界和平的同时，他们也以偶像的身份帮助公司赚取了难以计数的利润。休伊是一个平凡的男孩，她的女友死于一场意外，而这场意外的制造者正是火车头。休伊不愿意接受沃特公司潦草的致歉和赔偿，决定替女友报仇。",
-    "genres": [
-      "Sci-Fi & Fantasy",
-      "动作冒险"
-    ],
-    "runtime": null,
-    "release_date": "2019-07-25",
-    "backdrop_path": "/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
-    "countries": [
-      "US"
-    ],
-    "director": "埃里克·克里普克",
-    "cast": [
-      {
-        "name": "卡尔·厄本",
-        "character": "Billy Butcher",
-        "profile_path": "/6CkZLwEJxfqqcJHyeXegMAvOlPh.jpg"
-      },
-      {
-        "name": "杰克·奎德",
-        "character": "Hugh 'Hughie' Campbell",
-        "profile_path": "/320qW5yEbxpmyxQ3evmClJbtKag.jpg"
-      },
-      {
-        "name": "安东尼·斯塔尔",
-        "character": "Homelander",
-        "profile_path": "/b0T56GMrHM24hDDjJ4DNPJcEUp6.jpg"
-      },
-      {
-        "name": "艾琳·莫里亚蒂",
-        "character": "Annie January / Starlight",
-        "profile_path": "/dG7gLzlZCjZkjKMyoGIL8h5wjRj.jpg"
-      },
-      {
-        "name": "杰西·厄舍",
-        "character": "Reggie Franklin / A-Train",
-        "profile_path": "/bkFM2GHKU1rr6CRCgeaojY1TDCS.jpg"
-      },
-      {
-        "name": "赖斯·艾隆索",
-        "character": "Marvin T. 'Mother's Milk' Milk / M.M.",
-        "profile_path": "/nmgOd3X2Xn3jIp9OLCRJzLExRWN.jpg"
-      },
-      {
-        "name": "切斯·克劳福",
-        "character": "Kevin Moskowitz / The Deep",
-        "profile_path": "/yWZILsr2mBQBCG1LOcCYYshIbts.jpg"
-      },
-      {
-        "name": "托默·卡彭",
-        "character": "Serge / Frenchie",
-        "profile_path": "/3IhYEhV3Tmx2CawG5DvcWQyephv.jpg"
-      }
-    ],
-    "stills": [
-      "/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
-      "/n6vVs6z8obNbExdD3QHTr4Utu1Z.jpg",
-      "/mGVrXeIjyecj6TKmwPVpHlscEmw.jpg",
-      "/7cqKGQMnNabzOpi7qaIgZvQ7NGV.jpg",
-      "/czffzEgaBko4mXW84B1J1EnQBzo.jpg",
-      "/bI37vIHSH7o4IVkq37P8cfxQGMx.jpg",
-      "/ietgGEAYDluH65hlIjvgaMtjeEL.jpg",
-      "/thLAoL6VeZGmCyDpCOeoxLvA8yS.jpg",
-      "/dKSLSL6R21YntEa7HDWR8HOoSMO.jpg",
-      "/eub9xDaIfNwvg0oEv5tvkAlFqrO.jpg"
-    ],
-    "similar": [
-      {
-        "tmdb_id": 87491,
-        "title": "DC超级英雄美少女",
-        "poster_path": "/sjjyQ0OKUnUTzJpLi5CDOzZCE88.jpg",
-        "vote_average": 7.9
-      },
-      {
-        "tmdb_id": 888,
-        "title": "蜘蛛侠动画系列",
-        "poster_path": "/wXthtEN5kdWA1bHz03lkuCJS6hA.jpg",
-        "vote_average": 8.286
-      },
-      {
-        "tmdb_id": 87689,
-        "title": "修女战士",
-        "poster_path": "/wcowxjd1ur4mmbmJDwU7d5Zo5sS.jpg",
-        "vote_average": 7.943
-      },
-      {
-        "tmdb_id": 1029,
-        "title": "Birdman and the Galaxy Trio",
-        "poster_path": "/52DGvCSbyKfprQ9OwPcxpBMdpv6.jpg",
-        "vote_average": 7.377
-      },
-      {
-        "tmdb_id": 229518,
-        "title": "映画公開記念！１分間ストーリー",
-        "poster_path": "/gE98fRzTXWmSt5X3D13vZtTBnIE.jpg",
-        "vote_average": 10.0
-      },
-      {
-        "tmdb_id": 258228,
-        "title": "MOMENTARY LILY 刹那之花",
-        "poster_path": "/dk9ane7GBEAH7eiHjoUea4hqlBK.jpg",
-        "vote_average": 5.875
-      },
-      {
-        "tmdb_id": 56343,
-        "title": "笨蛋、测验、召唤兽",
-        "poster_path": "/beWcnNoRMDEERMdSxDWMkkpzw1z.jpg",
-        "vote_average": 7.3
-      },
-      {
-        "tmdb_id": 120398,
-        "title": "机界战队全开者",
-        "poster_path": "/xrrg5XAOz1A1fr08fVoH6hqgxXA.jpg",
-        "vote_average": 8.2
-      }
-    ]
-  },
-  "37147970": {
-    "tmdb_id": 278573,
-    "tmdb_type": "tv",
-    "original_title": "21세기 대군부인",
-    "overview": "欢迎来到21世纪的韩国，一个传统与现代交织的君主立宪制国家。在光鲜亮丽的外表下，隐藏着壁垒分明的社会阶级制度。成熙周，一位才华洋溢的财阀继承人兼首席执行官，似乎拥有一切，但出身平民的她却始终得不到应有的尊重。在诞日宴上与理安大君相遇后，她决心掌握自己的命运。她拥有一切，唯独缺少身份；而他空有尊贵的身份，实际上却一无所有。两人缔结了世纪婚约。他们能否打破社会壁垒，开创属于自己的命运？",
-    "genres": [
-      "喜剧",
-      "剧情"
-    ],
-    "runtime": null,
-    "release_date": "2026-04-10",
-    "backdrop_path": "/6ekykPwvAywJRjFEnUoCFWTO9O3.jpg",
-    "countries": [
-      "KR"
-    ],
-    "director": "刘智媛",
-    "cast": [
-      {
-        "name": "李知恩 (IU)",
-        "character": "Seong Hui-ju",
-        "profile_path": "/uNhKOO9lIAFXF11LM6gjCrX2CJz.jpg"
-      },
-      {
-        "name": "边佑锡",
-        "character": "Grand Prince I-an",
-        "profile_path": "/iACGQCFJZUMsy4ywEzNiPokXFB9.jpg"
-      },
-      {
-        "name": "鲁尚炫",
-        "character": "Min Jeong-u",
-        "profile_path": "/wdevvu2YLIvAPVEkScjO9JGbioq.jpg"
-      },
-      {
-        "name": "孔升妍",
-        "character": "Yun I-rang",
-        "profile_path": "/6WFV2xISsuhArOHBMwTou8KdgH9.jpg"
-      },
-      {
-        "name": "刘秀彬",
-        "character": "Choi Hyeon",
-        "profile_path": "/vulO1ngz0s3jUBXQbW2ADuyK3Fa.jpg"
-      },
-      {
-        "name": "李妍",
-        "character": "Do Hye-jeong",
-        "profile_path": "/uTZMewSjjx4MxDYAaZrhbl1fAGX.jpg"
-      }
-    ],
-    "stills": [
-      "/6ekykPwvAywJRjFEnUoCFWTO9O3.jpg",
-      "/l5F7zrjACILbCwYAozRs74q3W18.jpg",
-      "/9FSFceY7affPBlaooIiEvJPHL1A.jpg",
-      "/mSQMpy24u9Gx2Prl3IjtxBVauDw.jpg",
-      "/c5K6ZtCbOFjcfpuQA1DNWyU9ebF.jpg",
-      "/4vwbeygqnva1nWvMqyVv0irN4gi.jpg",
-      "/d8IFxohKbDx3vuA9zty251zdfse.jpg",
-      "/pT3ddhhhyMoZq2uYsJlUWT5UC9L.jpg",
-      "/p1k6sDGyCfkYRTlkYngRXsCclXc.jpg",
-      "/vLfypOElnhPbe0WN7AYwZzYTUH7.jpg"
-    ],
-    "similar": [
-      {
-        "tmdb_id": 473,
-        "title": "Kapmanerang Kuba",
-        "poster_path": "/iit8yrsK9arR652LBrJX4jhIaYs.jpg",
-        "vote_average": 0
-      },
-      {
-        "tmdb_id": 196454,
-        "title": "夏洛特王后：布里杰顿家族前传",
-        "poster_path": "/eR7btjpvOugivUYSoEsD2iAOYsJ.jpg",
-        "vote_average": 8.007
-      },
-      {
-        "tmdb_id": 196474,
-        "title": "走进你的时间",
-        "poster_path": "/F9lNsFr1VdNtT5vF8z6lCxGIZW.jpg",
-        "vote_average": 8.265
-      },
-      {
-        "tmdb_id": 292035,
-        "title": "逆爱",
-        "poster_path": "/qXB8wIuRQ4boWSZSoLFAu5g6K9l.jpg",
-        "vote_average": 8.336
-      },
-      {
-        "tmdb_id": 292043,
-        "title": "两个好宝贝",
-        "poster_path": "/tSnsJJpiTxanYlWxMcBx5WZAZXs.jpg",
-        "vote_average": 0
-      },
-      {
-        "tmdb_id": 196495,
-        "title": "吉祥寺Losers",
-        "poster_path": "/uzYauUOScNwbhxRwu0ptxwjONaZ.jpg",
-        "vote_average": 8.0
-      },
-      {
-        "tmdb_id": 292084,
-        "title": "我们存在的理由",
-        "poster_path": "/pJj2yILsnwEVXj5Fm4qBesCgMvG.jpg",
-        "vote_average": 0
-      },
-      {
-        "tmdb_id": 292122,
-        "title": "คุณแม่แก้ขัด",
-        "poster_path": "/tXMZt1ZSXcCKCrSOFezSuvVFxqg.jpg",
-        "vote_average": 0
       }
     ]
   }
