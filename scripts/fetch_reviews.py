@@ -21,6 +21,7 @@ from monitor import rexxar_get
 
 DATA_DIR = _ROOT / "data"
 RESULT_FILE = DATA_DIR / "douban-monitor-result.json"
+FAVORITES_FILE = DATA_DIR / "douban-monitor-favorites-result.json"
 REVIEWS_FILE = DATA_DIR / "douban-monitor-reviews.json"
 
 
@@ -55,25 +56,41 @@ def _fetch_reviews(douban_id: str) -> list[dict]:
 
 
 def main() -> None:
+    # Collect all items from both result.json and favorites-result.json
+    all_items: list[dict] = []
+    seen_ids: set[str] = set()
+
+    # From result.json (qualified)
     text = RESULT_FILE.read_text(encoding="utf-8").strip() if RESULT_FILE.exists() else ""
-    if not text:
-        print(f"{RESULT_FILE} 缺失或为空，跳过短评抓取")
-        return
-    try:
-        result = json.loads(text)
-    except json.JSONDecodeError as e:
-        print(f"{RESULT_FILE} 解析失败（{e}），跳过短评抓取")
-        return
-    items = result.get("qualified", [])
+    if text:
+        try:
+            result = json.loads(text)
+            for item in result.get("qualified", []):
+                did = item.get("douban_id")
+                if did and did not in seen_ids:
+                    seen_ids.add(did)
+                    all_items.append(item)
+        except json.JSONDecodeError:
+            pass
 
-    seen: set[str] = set()
-    unique = []
-    for item in items:
-        did = item.get("douban_id")
-        if did and did not in seen:
-            seen.add(did)
-            unique.append(item)
+    # From favorites-result.json
+    fav_text = FAVORITES_FILE.read_text(encoding="utf-8").strip() if FAVORITES_FILE.exists() else ""
+    if fav_text:
+        try:
+            fav_data = json.loads(fav_text)
+            for item in fav_data.get("qualified", []):
+                did = item.get("douban_id")
+                if did and did not in seen_ids:
+                    seen_ids.add(did)
+                    all_items.append(item)
+        except json.JSONDecodeError:
+            pass
 
+    if not all_items:
+        print("无作品需要抓取短评，跳过")
+        return
+
+    # Load existing reviews
     reviews: dict[str, list] = {}
     if REVIEWS_FILE.exists():
         text = REVIEWS_FILE.read_text(encoding="utf-8").strip()
@@ -83,8 +100,8 @@ def main() -> None:
             except (json.JSONDecodeError, ValueError):
                 reviews = {}
 
-    total = len(unique)
-    for i, item in enumerate(unique):
+    total = len(all_items)
+    for i, item in enumerate(all_items):
         did = item["douban_id"]
         title = item["title"]
         prefix = f"[{i+1}/{total}]"
