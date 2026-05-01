@@ -1,4 +1,4 @@
-"""Fetch hot short reviews from Douban Frodo API."""
+"""Fetch hot short reviews from Douban Rexxar API."""
 from __future__ import annotations
 
 import json
@@ -17,7 +17,7 @@ if _ENV_FILE.exists():
             os.environ.setdefault(_k.strip(), _v.strip())
 
 sys.path.insert(0, str(Path(__file__).parent))
-from monitor import frodo_get
+from monitor import rexxar_get
 
 DATA_DIR = _ROOT / "data"
 RESULT_FILE = DATA_DIR / "douban-monitor-result.json"
@@ -28,7 +28,7 @@ def _fetch_reviews(douban_id: str) -> list[dict]:
     """Fetch up to 6 hot short reviews for a subject."""
     for ep in (f"/movie/{douban_id}/interests", f"/tv/{douban_id}/interests"):
         try:
-            data = frodo_get(ep, params={
+            data = rexxar_get(ep, params={
                 "count": 6,
                 "order_by": "hot",
                 "status": "done",
@@ -89,9 +89,8 @@ def main() -> None:
         title = item["title"]
         prefix = f"[{i+1}/{total}]"
 
-        if did in reviews:
-            mark = "✓" if reviews[did] else "∅"
-            print(f"{prefix} skip {mark} {title}")
+        if did in reviews and reviews[did]:
+            print(f"{prefix} skip ✓ {title}")
             continue
 
         print(f"{prefix} {title}", end="  ", flush=True)
