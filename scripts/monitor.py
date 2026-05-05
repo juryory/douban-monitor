@@ -223,6 +223,7 @@ def fetch_douban_collection_via_frodo(collection_id: str, config: dict[str, Any]
 
     Returns list of raw item dicts from the API.
     """
+    max_items = _get_collection_max_items(collection_id, config)
     all_items: list[dict[str, Any]] = []
     start = 0
     count = 20
@@ -236,6 +237,9 @@ def fetch_douban_collection_via_frodo(collection_id: str, config: dict[str, Any]
         if not items:
             break
         all_items.extend(items)
+        if len(all_items) >= max_items:
+            all_items = all_items[:max_items]
+            break
         total = data.get("total", 0)
         start += count
         if start >= total:
@@ -287,8 +291,15 @@ def rexxar_get(path: str, params: dict[str, Any] | None = None, config: dict[str
         return json.loads(response.read().decode("utf-8"))
 
 
+
+def _get_collection_max_items(collection_id: str, config: dict[str, Any]) -> int:
+    """Get max items limit for a collection from config."""
+    max_items_map = config.get("douban_collection_max_items") or {}
+    return max_items_map.get(collection_id, 20)  # Default 20
+
 def fetch_douban_collection_via_rexxar(collection_id: str, config: dict[str, Any]) -> list[dict[str, Any]]:
     """Rexxar 版本的榜单抓取，接口结构和 Frodo 一致。"""
+    max_items = _get_collection_max_items(collection_id, config)
     all_items: list[dict[str, Any]] = []
     start = 0
     count = 20
@@ -302,6 +313,9 @@ def fetch_douban_collection_via_rexxar(collection_id: str, config: dict[str, Any
         if not items:
             break
         all_items.extend(items)
+        if len(all_items) >= max_items:
+            all_items = all_items[:max_items]
+            break
         total = data.get("total", 0)
         start += count
         if start >= total:
@@ -330,6 +344,10 @@ def _category_and_source_from_collection(url_text: str) -> tuple[str, str]:
     """Determine category and source tag from collection URL."""
     if "movie_hot_gaia" in url_text:
         return "movie", "douban_movie_hot_gaia"
+    if "tv_hot" in url_text:
+        return "tv", "douban_tv_hot"
+    if "tv_real_time_hotest" in url_text:
+        return "tv", "douban_tv_realtime_hot"
     if "real_time_hotest" in url_text:
         return "movie", "douban_movie_realtime_hot"
     if "movie_" in url_text:
