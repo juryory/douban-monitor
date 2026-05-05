@@ -33,9 +33,6 @@ douban_collection_urls = [
   "https://m.douban.com/subject_collection/show_global_best_weekly",
 ]
 
-# 各榜单最大抓取条数（默认 20，热门榜单可设更多）
-douban_collection_max_items = { movie_hot_gaia = 50, movie_real_time_hotest = 20, tv_hot = 50, tv_real_time_hotest = 20 }
-
 # TMDB 设置
 tmdb_language = "zh-CN"
 tmdb_region = "CN"
