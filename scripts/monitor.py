@@ -328,6 +328,8 @@ def _collection_id_from_url(url: str) -> str:
 
 def _category_and_source_from_collection(url_text: str) -> tuple[str, str]:
     """Determine category and source tag from collection URL."""
+    if "real_time_hotest" in url_text:
+        return "movie", "douban_movie_realtime_hot"
     if "movie_" in url_text:
         return "movie", "douban_movie_weekly"
     if "tv_chinese" in url_text:
