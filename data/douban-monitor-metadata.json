@@ -1906,5 +1906,228 @@
         "vote_average": 10.0
       }
     ]
+  },
+  "37116446": {
+    "tmdb_id": 1671548,
+    "tmdb_type": "movie",
+    "original_title": "给阿嬷的情书",
+    "overview": "潮汕阿嬷叶淑柔一直守着平淡的日子，安享晚年。孙子晓伟因债务缠身，瞒着家人远赴泰国，寻找传闻中已成亿万富豪的阿公郑木生。然而，一个令人意外的消息打破了整个家庭的平静：多年来一直通过跨国信件与阿嬷“谈情说爱”诉说思念的人，竟然并非阿嬷的丈夫郑木生。随着晓伟的调查，一个感人的真相被缓缓揭开。",
+    "genres": [
+      "剧情",
+      "家庭"
+    ],
+    "runtime": 118,
+    "release_date": "2026-04-30",
+    "backdrop_path": "/oZURKlzlwdRfZ40D61v1vLF5eVD.jpg",
+    "countries": [
+      "China"
+    ],
+    "director": "蓝鸿春",
+    "cast": [
+      {
+        "name": "李思潼",
+        "character": "",
+        "profile_path": "/sa2HJjJT7jBSWUlvz7dS9rrMOx1.jpg"
+      },
+      {
+        "name": "郑润奇",
+        "character": "",
+        "profile_path": "/2mRR7nbdvg1t7JEsB293p9cZOdC.jpg"
+      },
+      {
+        "name": "王晓晨",
+        "character": "",
+        "profile_path": "/4CcEIYCJGsnlonoaNWynM1Fgyvl.jpg"
+      },
+      {
+        "name": "赵曙光",
+        "character": "",
+        "profile_path": "/ypOq0Z7I9yI3Jxw626HvWEQ7zqA.jpg"
+      },
+      {
+        "name": "李树浩",
+        "character": "",
+        "profile_path": ""
+      },
+      {
+        "name": "乌莎·西姆库姆",
+        "character": "",
+        "profile_path": "/dJjJeB3lY3lHqtliLyXFwLvCOwR.jpg"
+      }
+    ],
+    "stills": [
+      "/oZURKlzlwdRfZ40D61v1vLF5eVD.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 30071,
+        "title": "红色羊齿草的故乡",
+        "poster_path": "/zUDxfnWLq73rQaa8YSHBDGx96ZS.jpg",
+        "vote_average": 6.159
+      },
+      {
+        "tmdb_id": 785522,
+        "title": "滑板女孩",
+        "poster_path": "/e8yxFPOvNmhlfUXBqiNvvpMI4t5.jpg",
+        "vote_average": 7.238
+      },
+      {
+        "tmdb_id": 64868,
+        "title": "绿野小英雄",
+        "poster_path": "/e2gBOHVK8OIiv7ZVchaZVR92kxu.jpg",
+        "vote_average": 6.891
+      },
+      {
+        "tmdb_id": 41281,
+        "title": "Moondance Alexander",
+        "poster_path": "/jd1TXn1IMz257h0rMSvnbmfTCmi.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 284593,
+        "title": "狗十三",
+        "poster_path": "/98QpwrAT544O4fQu6W0h5i7WiN0.jpg",
+        "vote_average": 7.2
+      },
+      {
+        "tmdb_id": 470205,
+        "title": "流浪狗",
+        "poster_path": "/bxw9tRRPZHIQ3vYOubS3DVfgnDo.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 499338,
+        "title": "I Believe",
+        "poster_path": "/7DVRR21ol8EojJxAlaNcLTzLBvI.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 26514,
+        "title": "Where the Red Fern Grows",
+        "poster_path": "/eipRC5W6XyPKThZ9Z1kQGov3Np0.jpg",
+        "vote_average": 6.904
+      }
+    ]
+  },
+  "37298384": {
+    "tmdb_id": 128995,
+    "tmdb_type": "tv",
+    "original_title": "유미의 세포들",
+    "overview": "柔美是一个住在首尔的普通女孩，在公司担任会计。她的生活十分单调，毫无波澜。然而，具雄却闯入了柔美平静的世界，将她的体内的“细胞小镇”彻底扰乱。身为游戏开发者的“书呆子”具雄，是个看似对任何事情都很冷淡、十分内向，实际上却意外纯情的美男子。柔美被具雄的单纯和幽默深深吸引，两人的“爱情细胞”向彼此敞开了心扉，一段甜蜜的爱情故事就此上演。",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "runtime": 64,
+    "release_date": "2021-09-17",
+    "backdrop_path": "/4TJG9k0u1WZfs9iwhLpHshnryaR.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "宋在贞",
+    "cast": [
+      {
+        "name": "金高银",
+        "character": "Kim Yu-mi",
+        "profile_path": "/p7wuD6eX0YcZ5LXWhx0XjvEYZKz.jpg"
+      },
+      {
+        "name": "金载源",
+        "character": "Shin Soon-rok",
+        "profile_path": "/diEPTDk0ngXGje4RGmoMaCd0TWe.jpg"
+      },
+      {
+        "name": "全锡浩",
+        "character": "Ahn Dae-yong",
+        "profile_path": "/xMUCuermXrjVNOWDV3gIfpP5yhF.jpg"
+      },
+      {
+        "name": "李侑菲",
+        "character": "Lee Ruby",
+        "profile_path": "/dWJhrhEf9IfT62Qo7bT4j3ab1IE.jpg"
+      },
+      {
+        "name": "美岚",
+        "character": "Kang Yi-da",
+        "profile_path": "/kzRIe35yukgawa7ILePn1mrFpOK.jpg"
+      },
+      {
+        "name": "崔丹尼尔",
+        "character": "Kim Ju-ho",
+        "profile_path": "/gv9qWPVRid5ij0Fkv3qYzEbZ9lh.jpg"
+      },
+      {
+        "name": "曹惠晶",
+        "character": "Baek Na-hee",
+        "profile_path": "/dYaUJATBY0AE8krisEuN6JtWsFd.jpg"
+      },
+      {
+        "name": "成志娄",
+        "character": "Kim Man-Sik",
+        "profile_path": "/26c9oSahXdbswUgB99l8A4wpxQM.jpg"
+      }
+    ],
+    "stills": [
+      "/4TJG9k0u1WZfs9iwhLpHshnryaR.jpg",
+      "/lawnuWQcpBVwlqXgtlCXV60oAYa.jpg",
+      "/icc2sttoaVPWScuEd2lyaCewXcK.jpg",
+      "/pjpn3nqkewMT0osfTFuZ0x6La1y.jpg",
+      "/4eOasjkshK0TFJpIFHHBqHc94nu.jpg",
+      "/yW4Nvmp0WJgxAgzhqOFUgLuygRJ.jpg",
+      "/fpM9I52MRbQp2R5wrGtHQER41Lt.jpg",
+      "/eU0MpSkvgFJQpE277GQ5ukhKit1.jpg",
+      "/w4VtH8B6ha4RYwT5EPhH0rttcHO.jpg",
+      "/qv6gfpznKAVjcyLeNWrf4IHtcRz.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 229701,
+        "title": "羽毛耳环",
+        "poster_path": "/mSKIpqZr8h7DeMBDdZhnQ3jqRQJ.jpg",
+        "vote_average": 1.0
+      },
+      {
+        "tmdb_id": 229743,
+        "title": "身为VTuber的我因为忘记关台而成了传说",
+        "poster_path": "/i6rMBDARfiZB1SIrTqeBxMTdkbK.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 229811,
+        "title": "天使的城",
+        "poster_path": "/3BzHbtnF53n0J5dT7bSExDwkgar.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 229776,
+        "title": "如果蜗牛有爱情",
+        "poster_path": "/ix3US5jAuLvQBPW656s82AM1704.jpg",
+        "vote_average": 7.2
+      },
+      {
+        "tmdb_id": 229781,
+        "title": "你是星期几出生的",
+        "poster_path": "/znCBjfKLG23wWn9o9cszTtYa46E.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 229849,
+        "title": "2.9亿：结婚战争",
+        "poster_path": "/sR2HzYamEJ5EnNQPOMlNCU7IrGW.jpg",
+        "vote_average": 4.0
+      },
+      {
+        "tmdb_id": 229900,
+        "title": "赘婿无双",
+        "poster_path": "/7TYUmKdszmrn3h5Hjp2tnXMNzIW.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 293266,
+        "title": "锁爱于心",
+        "poster_path": "/xJG5OkHqR7Wq7bqVaQzWcvNwa6u.jpg",
+        "vote_average": 7.8
+      }
+    ]
   }
 }
