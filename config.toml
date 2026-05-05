@@ -22,6 +22,7 @@ milestone_counts = [10000, 30000, 100000]
 
 # 豆瓣候选源
 douban_collection_urls = [
+  "https://m.douban.com/subject_collection/movie_hot_gaia",
   "https://m.douban.com/subject_collection/movie_real_time_hotest",
   "https://m.douban.com/subject_collection/movie_weekly_best",
   "https://m.douban.com/subject_collection/tv_chinese_best_weekly",
