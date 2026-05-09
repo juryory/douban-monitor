@@ -2373,5 +2373,125 @@
         "vote_average": 6.709
       }
     ]
+  },
+  "36744090": {
+    "tmdb_id": 261980,
+    "tmdb_type": "tv",
+    "original_title": "미지의 서울",
+    "overview": "本剧讲述一对除了脸以外什么都不一样的双胞胎姐妹，通过互换人生的谎言去寻找真正的爱情与人生。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 79,
+    "release_date": "2025-05-24",
+    "backdrop_path": "/m0VuPoWQhbgMjVIwAdZmmHgHQrl.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "朴宝英",
+        "character": "Yoo Mi-ji / Yoo Mi-rae",
+        "profile_path": "/x1LNh8i8XmO3oqNYzRslzYj1VoZ.jpg"
+      },
+      {
+        "name": "朴珍荣",
+        "character": "Lee Ho-su",
+        "profile_path": "/vK4mbpbbheVLOPMnJBRxJMhPqqQ.jpg"
+      },
+      {
+        "name": "刘庆秀",
+        "character": "Han Se-jin",
+        "profile_path": "/4tjiTN3osUTaXE8lFAyK2Sjl8Lw.jpg"
+      },
+      {
+        "name": "张荣男",
+        "character": "Kim Ok-hee",
+        "profile_path": "/u0hl8WSswFhKVaKwaMAERU0xUJk.jpg"
+      },
+      {
+        "name": "金善映",
+        "character": "Yeom Bun-hong",
+        "profile_path": "/e5dA924TS68xdYGKFBvBLPGAIRY.jpg"
+      },
+      {
+        "name": "元美京",
+        "character": "Kim Ro-sa",
+        "profile_path": "/wWwtM0g47D2sYsVKxBTX3IjH6su.jpg"
+      },
+      {
+        "name": "车美京",
+        "character": "Kang Wol-oon",
+        "profile_path": "/e1iTjY1FitE4vMu6s25Qmrf6qXc.jpg"
+      },
+      {
+        "name": "任哲秀",
+        "character": "Lee Choong-gu",
+        "profile_path": "/6KKNwe9iXNBFhiXcNdpFNEFYCUD.jpg"
+      }
+    ],
+    "stills": [
+      "/m0VuPoWQhbgMjVIwAdZmmHgHQrl.jpg",
+      "/o51Wr5ivvH0CXS2HsaakUxkJTEZ.jpg",
+      "/iCjWZKEdvi9TwUa9FVdVOtDHTqo.jpg",
+      "/oGhjj5VMz4a4socjv0ODP3cfLke.jpg",
+      "/7hgR1pcXVvQN0X7bN297VkFCY55.jpg",
+      "/zHQ5ydJ0pcGYawkP6jJcBABPXev.jpg",
+      "/3VhrG4GEv3mNhy0LiADOrTuFbX4.jpg",
+      "/i1osjU8Qm3FasUePTCmiwNIt3Gr.jpg",
+      "/2Xnti7B3b71muTcgndrFr0G2Atr.jpg",
+      "/sEQVinJgpjZaOrgdlSoK04nXCf2.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 87367,
+        "title": "单恋双城",
+        "poster_path": "/upoc8zpEcSSw5hmzYbfgkbjk8nC.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 87398,
+        "title": "你有念大学吗？",
+        "poster_path": "/5lketNr8Zq8q7CNEMvrQMcyPF9Z.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 87456,
+        "title": "MIX：明青故事",
+        "poster_path": "/kowCQlJZ7rwamUUtRcpmdbjgE9w.jpg",
+        "vote_average": 6.615
+      },
+      {
+        "tmdb_id": 87299,
+        "title": "最动听的事",
+        "poster_path": "/kvj9Sr9FvgHhL6JjyHFY0GH4Qk3.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 87329,
+        "title": "บ่วงสไบ",
+        "poster_path": "/mmDEW07pRwZj7GsNrMQI03DnMOA.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 87332,
+        "title": "มัจจุราชฮอลิเดย์",
+        "poster_path": "/8uHnzTDhhw2LePgXF0sTNgYWDVO.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 87335,
+        "title": "귀신데렐라",
+        "poster_path": "/pUW4rV6A1uQrvQUHyxNwToUDSrn.jpg",
+        "vote_average": 2.8
+      },
+      {
+        "tmdb_id": 87370,
+        "title": "只为遇见你",
+        "poster_path": "/6jZ1woo8EIoBeTacjhu4mRKUS22.jpg",
+        "vote_average": 6.0
+      }
+    ]
   }
 }
