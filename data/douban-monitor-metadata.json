@@ -2252,5 +2252,126 @@
       }
     ]
   },
-  "1295409": {}
+  "1295409": {
+    "tmdb_id": 47423,
+    "tmdb_type": "movie",
+    "original_title": "縱橫四海",
+    "overview": "　　钵仔糕/阿海（周润发 饰）、阿占（张国荣 饰）与红豆（锺楚红 饰）都是孤儿，从小被养父（曾江 饰）培养成国际艺术品大盗，专为他盗取名画赚钱。与此同时，他们亦认了一名警察（朱江 饰）作干爹。\r 　　法国巴黎博物馆内，名画《赫林之女仆》突然失窃。不久，阿海、阿占与红豆联手盗得另一幅名画，在与法国买家交易时，得知《赫林之女仆》正藏于一座神秘古堡中。三人受养父指示前往盗画，成功后却遭养父与法国买家联手设局，派出杀手追杀灭口。逃亡途中，阿海驾车与杀手快艇相撞，生死未卜；阿占则带着红豆侥幸逃脱。\r 　　几年后，三人在香港重逢。阿海因车祸“跛脚”，暂住干爹家中；阿占与红豆已结为夫妻。此时养父再次现身，逼迫阿占盗回《赫林之女仆》。阿海在红豆的恳求下决定重组团队，并暗中布局向养父复仇。两人取回画作后，在与养父交易时爆发枪战，阿海亦揭晓自己假扮跛脚以躲避追杀的计谋。最终干爹将养父逮捕归案，《赫林之女仆》物归原主，三人则一同前往美国开始了新的生活。",
+    "genres": [
+      "动作",
+      "喜剧",
+      "惊悚",
+      "犯罪"
+    ],
+    "runtime": 103,
+    "release_date": "1991-02-02",
+    "backdrop_path": "/ld6pkUVbFBdhtTwFNoRv4BRx0aM.jpg",
+    "countries": [
+      "Hong Kong"
+    ],
+    "director": "吴宇森",
+    "cast": [
+      {
+        "name": "周润发",
+        "character": "Red Bean Puddin / Joe",
+        "profile_path": "/uDPYSiZrW7OZ79qgcgkWefALlXY.jpg"
+      },
+      {
+        "name": "张国荣",
+        "character": "James / Jim",
+        "profile_path": "/xdSUevukGCrayOdLd4Kd6YSJnKR.jpg"
+      },
+      {
+        "name": "钟楚红",
+        "character": "Red Bean / Cherie",
+        "profile_path": "/8aYIxAhFKUzExYzsdYHy48tifNz.jpg"
+      },
+      {
+        "name": "朱江",
+        "character": "Chu / Godfather",
+        "profile_path": "/rRrrhOLvgYQiTXWsxl9qrvsT5Eg.jpg"
+      },
+      {
+        "name": "曾江",
+        "character": "Chow / Dad",
+        "profile_path": "/nqlO9OTaqPA38fEmWont8n6spms.jpg"
+      },
+      {
+        "name": "胡枫",
+        "character": "Mr. Cheung",
+        "profile_path": "/o5MHNXhT5GUATZoYxuXhw4ts3jK.jpg"
+      },
+      {
+        "name": "皮埃尔·伊夫·伯顿",
+        "character": "Mr. Burton",
+        "profile_path": ""
+      },
+      {
+        "name": "邓一君",
+        "character": "Young Red Bean Pudding / Young Joe",
+        "profile_path": "/uZ4ooPlrNambBs814msroI6Tl6H.jpg"
+      }
+    ],
+    "stills": [
+      "/ld6pkUVbFBdhtTwFNoRv4BRx0aM.jpg",
+      "/e2Hx6zzB7H3uCVT1GpXZoNwlLyy.jpg",
+      "/g3vyN5x5D2vGD2c7n6WPlzCD2c8.jpg",
+      "/p228yiyxwDGLWM6stMS3fr4krzS.jpg",
+      "/3FrNs2DQq28bTmpT7Az9ugdyaOH.jpg",
+      "/hhpwIdt2UFcnyYMcrDfOwFmdsuI.jpg",
+      "/lStBGgl8UF3Ufgvc8QjVqBlz7aE.jpg",
+      "/nZswOpEqwOb14HYDc2nCqRIbZkx.jpg",
+      "/jl2hhRcR5rEIs7IeOCxnsRRi4J7.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 18665,
+        "title": "鼠胆龙威",
+        "poster_path": "/i6IbFNe3h9ybGGXns5zLgl8u1Ks.jpg",
+        "vote_average": 6.657
+      },
+      {
+        "tmdb_id": 991197,
+        "title": "临时劫案",
+        "poster_path": "/tTYIFbYQUpjaLP5IvskYd4srpcu.jpg",
+        "vote_average": 5.927
+      },
+      {
+        "tmdb_id": 1217602,
+        "title": "伦敦呼叫",
+        "poster_path": "/9L7YtB6mVPqRYmMHpRrBvG8HtVq.jpg",
+        "vote_average": 6.6
+      },
+      {
+        "tmdb_id": 455236,
+        "title": "意外杀手",
+        "poster_path": "/u1h3WsUn2AvqNxYqOMFWEk7eld0.jpg",
+        "vote_average": 6.269
+      },
+      {
+        "tmdb_id": 628847,
+        "title": "青出于蓝",
+        "poster_path": "/wKNe1BonauSwiYzm3eQoHRm6OIv.jpg",
+        "vote_average": 6.561
+      },
+      {
+        "tmdb_id": 41158,
+        "title": "暗花",
+        "poster_path": "/ty7aRGwzRn2Nj7BQ8kp00PwL1Ll.jpg",
+        "vote_average": 6.917
+      },
+      {
+        "tmdb_id": 531368,
+        "title": "沉默的证人",
+        "poster_path": "/n4CZLd5gu3W7uOXMxi53HSvbAvZ.jpg",
+        "vote_average": 6.371
+      },
+      {
+        "tmdb_id": 441531,
+        "title": "拆弹专家",
+        "poster_path": "/qYh4dZQeZt8WT1H4cl0qLOyTwhm.jpg",
+        "vote_average": 6.709
+      }
+    ]
+  }
 }
