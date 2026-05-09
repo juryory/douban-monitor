@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-09T09:05:47.196652+08:00",
+  "run_at": "2026-05-09T09:08:47.142572+08:00",
   "total": 74,
   "qualified": [
     {
@@ -7,7 +7,7 @@
       "category": "movie",
       "douban_id": "37116612",
       "rating": 9.2,
-      "rating_count": 78816,
+      "rating_count": 78826,
       "year": "2025",
       "url": "https://movie.douban.com/subject/37116612/",
       "qualified_at": "2026-05-02T09:00:06.823481+08:00",
@@ -18,7 +18,7 @@
       "category": "movie",
       "douban_id": "37116446",
       "rating": 9.1,
-      "rating_count": 97520,
+      "rating_count": 97541,
       "year": "2026",
       "url": "https://movie.douban.com/subject/37116446/",
       "qualified_at": "2026-05-05T19:30:36.608256+08:00",
