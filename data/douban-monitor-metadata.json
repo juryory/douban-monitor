@@ -2493,5 +2493,127 @@
         "vote_average": 6.0
       }
     ]
+  },
+  "1291831": {
+    "tmdb_id": 11659,
+    "tmdb_type": "movie",
+    "original_title": "La meglio gioventù",
+    "overview": "这部跨越四十载（从动荡的1960年代直至当代）的澎湃史诗，跟随一对意大利兄弟穿越意大利近代史上最跌宕起伏的历史事件。[米拉麦克斯]",
+    "genres": [
+      "剧情",
+      "历史",
+      "爱情"
+    ],
+    "runtime": 367,
+    "release_date": "2003-06-22",
+    "backdrop_path": "/leF9AKe937UhQsfWGtXfG7tBRvU.jpg",
+    "countries": [
+      "Italy"
+    ],
+    "director": "马可·图利欧·吉欧达纳",
+    "cast": [
+      {
+        "name": "路易吉·洛·卡肖",
+        "character": "Nicola Carati",
+        "profile_path": "/yp7Kf2TVSwuDye5F8G9VthK1xyS.jpg"
+      },
+      {
+        "name": "阿莱西奥·博尼",
+        "character": "Matteo Carati",
+        "profile_path": "/wmvo4ZfGEnOMwlg1aQCPbhcsLAQ.jpg"
+      },
+      {
+        "name": "阿德里娅娜·阿斯蒂",
+        "character": "Adriana Carati",
+        "profile_path": "/7uRyFyBghtTpOJBxAnuUJrPiAWU.jpg"
+      },
+      {
+        "name": "索尼娅·贝加马斯科",
+        "character": "Giulia Monfalco",
+        "profile_path": "/2Z0YyXadH0smxEljbao6ei54XWY.jpg"
+      },
+      {
+        "name": "法布里西奥·纪福尼",
+        "character": "Carlo Tommasi",
+        "profile_path": "/ptAg3zT52oqeY2mKNjiVhVbMYuh.jpg"
+      },
+      {
+        "name": "玛雅·珊萨",
+        "character": "Mirella Utano",
+        "profile_path": "/aSCX5kskBVe5yCqKzeA9yFv1CWO.jpg"
+      },
+      {
+        "name": "瓦伦蒂娜·卡内卢蒂",
+        "character": "Francesca Carati",
+        "profile_path": "/xTL0Ys7R8yL2TA95N67Yp00uN2B.jpg"
+      },
+      {
+        "name": "杰丝敏·特丽卡",
+        "character": "Giorgia Esposti",
+        "profile_path": "/idxRGFkuTwxKZZNtDBTY84UzAPd.jpg"
+      }
+    ],
+    "stills": [
+      "/leF9AKe937UhQsfWGtXfG7tBRvU.jpg",
+      "/ojH9M6BIHnHyAXLPsm7cRi7OkLU.jpg",
+      "/ehd3Vkf7FZkDnsfM7c73JoZGrtN.jpg",
+      "/jBdlkXInIaWUAH8k0f30z2bMKT4.jpg",
+      "/ikZCAkaPo1wzGMv0SSr5bIpMcm2.jpg",
+      "/1tD2ihwjutLuzEMZ6Czz0T6enIx.jpg",
+      "/zhaOtJwH0P12MBIVNChoHFfrC6T.jpg",
+      "/1ZvDob2EKP0lU2sNRIXfhSBLPPv.jpg",
+      "/ahYcgt5WmOJXVmakERgBhDNOAuE.jpg",
+      "/zgTA9apb9hi8mVcwYUYbc3SxNIv.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 261,
+        "title": "朱门巧妇",
+        "poster_path": "/5djZZECgqDGuSI1INmrdAcGRBb0.jpg",
+        "vote_average": 7.637
+      },
+      {
+        "tmdb_id": 269,
+        "title": "精疲力尽",
+        "poster_path": "/iqnXXdyVKPuMngJDuHLYQGq60AN.jpg",
+        "vote_average": 7.495
+      },
+      {
+        "tmdb_id": 272,
+        "title": "蝙蝠侠：侠影之谜",
+        "poster_path": "/VwksWozHDudb7i1XBQBYeEfxiP.jpg",
+        "vote_average": 7.723
+      },
+      {
+        "tmdb_id": 309,
+        "title": "家宴",
+        "poster_path": "/ibWzFsS6Z7cTEKJIE738URYS4Mo.jpg",
+        "vote_average": 7.705
+      },
+      {
+        "tmdb_id": 312,
+        "title": "走出寂静",
+        "poster_path": "/c7pZYrEeI5OAnEDIzoQv3UhdwGY.jpg",
+        "vote_average": 6.944
+      },
+      {
+        "tmdb_id": 322,
+        "title": "神秘河",
+        "poster_path": "/fl7XPqN8498UBTR8OtUzgV6cupb.jpg",
+        "vote_average": 7.743
+      },
+      {
+        "tmdb_id": 380,
+        "title": "雨人",
+        "poster_path": "/n3s3ZP6p4bKsKhnXmfb5ArL1g1P.jpg",
+        "vote_average": 7.751
+      },
+      {
+        "tmdb_id": 470,
+        "title": "21克",
+        "poster_path": "/mJ90fpnVWiRWMsRctHUGrUlnSLF.jpg",
+        "vote_average": 7.32
+      }
+    ]
   }
 }
