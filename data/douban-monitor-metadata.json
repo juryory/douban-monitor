@@ -2615,5 +2615,120 @@
         "vote_average": 7.32
       }
     ]
+  },
+  "37134474": {
+    "tmdb_id": 300529,
+    "tmdb_type": "tv",
+    "original_title": "地獄に堕ちるわよ",
+    "overview": "细木数子是一位善于六星占术的占卜师，以直言不讳、充满警戒意味的预言，如“大杀界”和“你会下地狱”等语句席卷日本。她出身战后贫困家庭，二十多岁就一手创立多间知名夜店，成为东京夜生活名气响叮当的“银座女王”。后来，她以占卜师之姿在电视圈和出版界一枝独秀，笔下著作更创下吉尼斯世界纪录。然而，她的崛起也伴随着欺诈指控及黑帮流言的阴影。这个充满争议的大人物究竟真实面貌为何？",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 500,
+    "release_date": "2026-04-27",
+    "backdrop_path": "/xsJDVNFmOg9N9uKZmPZh9tzyynl.jpg",
+    "countries": [
+      "JP"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "户田惠梨香",
+        "character": "Kazuko Hosoki",
+        "profile_path": "/iCqhPoR55jp25EUO0WcTGqVS6qW.jpg"
+      },
+      {
+        "name": "伊藤沙莉",
+        "character": "Minori Uozumi",
+        "profile_path": "/y9aLVWxYGiqU9iT8gQqaQ1ZKX6B.jpg"
+      },
+      {
+        "name": "三浦透子",
+        "character": "Chiyoko Shimakura",
+        "profile_path": "/kaFqvlsnJ7dtW6mvCuvRsirSS4U.jpg"
+      },
+      {
+        "name": "生田斗真",
+        "character": "",
+        "profile_path": "/3tDQDEbG1XdPtp8N9oxw53rWw3o.jpg"
+      },
+      {
+        "name": "奥野瑛太",
+        "character": "",
+        "profile_path": "/fgtXphm3vU3MYulHbmTTObJQQON.jpg"
+      },
+      {
+        "name": "田村健太郎",
+        "character": "",
+        "profile_path": "/pNKVZIuFOpwHimkzSWOMdBDpjOo.jpg"
+      },
+      {
+        "name": "中岛步",
+        "character": "",
+        "profile_path": "/kK3N0wjhicPGKia5Cn4fRJTCT6y.jpg"
+      },
+      {
+        "name": "细川岳",
+        "character": "",
+        "profile_path": "/y2Q51oZBsCuyy1CUejCNBFR15xc.jpg"
+      }
+    ],
+    "stills": [
+      "/38LmBc9U8VhbOXgS14p8B01xrEJ.jpg",
+      "/xsJDVNFmOg9N9uKZmPZh9tzyynl.jpg",
+      "/hZvPXP2jtZ7oSu0pSeOB3bB8fhJ.jpg",
+      "/rPB0Ae1girZxk6NTjXj69sDfsFq.jpg",
+      "/qBeamvtrVwfifiV052CKW7APw6s.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 92584,
+        "title": "伊甸",
+        "poster_path": "/AkXC8EuJCjuonHZIkxkUmiCdSGe.jpg",
+        "vote_average": 6.697
+      },
+      {
+        "tmdb_id": 270789,
+        "title": "Les Armes",
+        "poster_path": "/hNPl5YyfgRcf1sslGh3MREtl4PP.jpg",
+        "vote_average": 8.5
+      },
+      {
+        "tmdb_id": 4788,
+        "title": "Cover Up",
+        "poster_path": "/g8WfEecQXm0sjJZKlvg5r7sBmiL.jpg",
+        "vote_average": 6.923
+      },
+      {
+        "tmdb_id": 270825,
+        "title": "脆弱",
+        "poster_path": "/ze5tPrl5CjDw9b1tCVijQu2SwAr.jpg",
+        "vote_average": 7.429
+      },
+      {
+        "tmdb_id": 61889,
+        "title": "夜魔侠",
+        "poster_path": "/tzxZEUPGydBODCflz0qvnLuBlAr.jpg",
+        "vote_average": 8.2
+      },
+      {
+        "tmdb_id": 270713,
+        "title": "探晴安",
+        "poster_path": "/f882d7j2rKEzteOtqNrQZ8otqmL.jpg",
+        "vote_average": 8.3
+      },
+      {
+        "tmdb_id": 32755,
+        "title": "芝加哥法则",
+        "poster_path": "/5yMn8xjqi3WKdDVAFKlt5YroX1m.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 4487,
+        "title": "Models Inc.",
+        "poster_path": "/6PEsHQiJ5xFdpyMrnoV7hqblrR2.jpg",
+        "vote_average": 6.273
+      }
+    ]
   }
 }
