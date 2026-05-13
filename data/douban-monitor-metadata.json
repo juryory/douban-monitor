@@ -2730,5 +2730,369 @@
         "vote_average": 6.273
       }
     ]
+  },
+  "36070920": {
+    "tmdb_id": 1111750,
+    "tmdb_type": "movie",
+    "original_title": "وداعًا جوليا",
+    "overview": "荣获第76届戛纳电影节 一种关注单元 自由奖，莫娜是一位来自苏丹北部的退休歌手，她的婚姻生活并不如意。她因为掩盖了一桩谋杀案而深感内疚，为了弥补这一过错，她决定收留被害者的寡妇朱莉娅及其儿子丹尼尔。然而，莫娜无法向朱莉娅坦白自己的罪行，于是她决定放下过去，努力适应这种新的生活状态。但她没有意识到，苏丹国内的动荡局势可能会波及到她的家庭，让她不得不直面自己曾经的罪行。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 120,
+    "release_date": "2023-11-08",
+    "backdrop_path": "/cfB7VJF9LXrZRkMZLaa6Yhxo1Fb.jpg",
+    "countries": [
+      "Egypt",
+      "France",
+      "Germany",
+      "Saudi Arabia",
+      "Sudan",
+      "Sweden"
+    ],
+    "director": "Mohamed Kordofani",
+    "cast": [
+      {
+        "name": "Eiman Yousif",
+        "character": "Mona",
+        "profile_path": "/vaaE4shZx7HkEzJpcj929yHLpdp.jpg"
+      },
+      {
+        "name": "Siran Riak",
+        "character": "Julia",
+        "profile_path": "/kKGw8fuO38Rcuj2xsYGYj7QK7iW.jpg"
+      },
+      {
+        "name": "Nazar Gomaa",
+        "character": "Akram",
+        "profile_path": "/gyQkzSj99YBbNrKOtqVXrRSzgsz.jpg"
+      },
+      {
+        "name": "Ger Duany",
+        "character": "Majier",
+        "profile_path": "/4mDAsZqzyWEywvmADeAZh4hGQ1F.jpg"
+      },
+      {
+        "name": "Mustafa Alkhalifa",
+        "character": "Mirghani",
+        "profile_path": ""
+      },
+      {
+        "name": "Mouawia Khalid",
+        "character": "Tariq",
+        "profile_path": ""
+      },
+      {
+        "name": "Stephanos James Peter",
+        "character": "Daniel, old",
+        "profile_path": ""
+      },
+      {
+        "name": "Louis Daniel Ding",
+        "character": "Daniel, young",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/cfB7VJF9LXrZRkMZLaa6Yhxo1Fb.jpg",
+      "/4TX1Ey9BwymUPUvkCTHVnAtEfOd.jpg",
+      "/t8zVggCYmBfAdGFBq5GtGrZGY0u.jpg",
+      "/q3atfkkgL1Tfg5evgox1spLCwN8.jpg",
+      "/qbtHD1kjedYZAoQtsuyBnL6c2eY.jpg",
+      "/nEmci2inj94J2JAXOOb3ykoGNyB.jpg",
+      "/bMOf8R8yEDzGOEwLcazAy3V9MPZ.jpg",
+      "/5wtIg3DJBMq5QurbcnVSGL7wU9r.jpg",
+      "/j7xsfjFnCgvZ2bXhPCPFrjomIln.jpg",
+      "/4WWduuWYzVwkkdw8lJukhYkkm8j.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 339145,
+        "title": "书写人生",
+        "poster_path": "/zVvOHOz5848dZ5x7mGqxBWzsPmS.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 159389,
+        "title": "TalhotBlond",
+        "poster_path": "/3FF9YFuVvh5t393NxfME47wxqrZ.jpg",
+        "vote_average": 6.306
+      },
+      {
+        "tmdb_id": 250538,
+        "title": "美丽谎言",
+        "poster_path": "/yAhoeIwwtPxJ7uf9HLIMHIqWFnL.jpg",
+        "vote_average": 7.448
+      },
+      {
+        "tmdb_id": 1096846,
+        "title": "在德黑兰读洛丽塔",
+        "poster_path": "/r4f3uSsiTpFFMH0PUiT0gNShqUh.jpg",
+        "vote_average": 7.242
+      },
+      {
+        "tmdb_id": 82631,
+        "title": "永不退缩",
+        "poster_path": "/7Repugxu8BQXMYSGpzqRrBjFRna.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 1212271,
+        "title": "了不起的埃莉诺",
+        "poster_path": "/nmbRP0idh3OvwBOJgjWz4RyZyHL.jpg",
+        "vote_average": 6.899
+      },
+      {
+        "tmdb_id": 75889,
+        "title": "卡罗尔街的房子",
+        "poster_path": "/kqYP8ZWYTObqzrGEDafUSfEQyFg.jpg",
+        "vote_average": 5.864
+      },
+      {
+        "tmdb_id": 829503,
+        "title": "吉吉和内特",
+        "poster_path": "/d1zkveeL2Z97KI5bATRE8hgw9wU.jpg",
+        "vote_average": 7.565
+      }
+    ]
+  },
+  "25986180": {
+    "tmdb_id": 396535,
+    "tmdb_type": "movie",
+    "original_title": "부산행",
+    "overview": "证券公司基金管理人石宇（孔刘 饰）光鲜精干，却也是个重利轻义之徒。妻子为此与之决裂，女儿秀安（金秀安 饰）则对如此自私的父亲越来越失望，决定前往釜山和母亲生活。在秀安生日这天，石宇抽出时间陪伴女儿登上开往釜山的特快列车。而与此同时，城市四处出现了极为可疑的暴动事件。政府极力洗白无法掩盖丧尸肆虐的事实，即便懵然无知的列车乘客也因为不速之客的到来而堕入恐慌绝望的地狱中。开车的刹那，一名感染者冲入车厢，而她很快尸变并对目光所及之处的健康人展开血腥屠杀。未过多久，丧尸便呈几何数爆发性地增长。石宇被迫和幸存者的乘客们在逼仄的空间中奋力求生。通往釜山的遥遥旅途布满杀机，危难时刻每个幸存者的人性也承受巨大的考验…",
+    "genres": [
+      "恐怖",
+      "惊悚",
+      "动作",
+      "冒险"
+    ],
+    "runtime": 118,
+    "release_date": "2016-07-20",
+    "backdrop_path": "/fVpFOcQyHJM2di9upgSIwWD5wac.jpg",
+    "countries": [
+      "South Korea"
+    ],
+    "director": "延尚昊",
+    "cast": [
+      {
+        "name": "孔刘",
+        "character": "Seok-woo",
+        "profile_path": "/ocGoFb6TrK3uWGXt4WnuibUG1vD.jpg"
+      },
+      {
+        "name": "金秀安",
+        "character": "Soo-ahn",
+        "profile_path": "/hmPZhhoeUY89Rys6LrsjpTMeoEN.jpg"
+      },
+      {
+        "name": "郑裕美",
+        "character": "Sung-gyeong",
+        "profile_path": "/qKhVFQ7mX3qJJjQNI4cUEK9fJHn.jpg"
+      },
+      {
+        "name": "马东锡",
+        "character": "Sang-hwa",
+        "profile_path": "/ckxoXz3l4mCcHEIRaqUc7oGoIFg.jpg"
+      },
+      {
+        "name": "崔宇植",
+        "character": "Yeong-gook",
+        "profile_path": "/hRDiuKWwe156zRjEu826eci7H3r.jpg"
+      },
+      {
+        "name": "安昭熙",
+        "character": "Jin-hee",
+        "profile_path": "/phQLXdKnWggfiqlvUKj86Kq0T1q.jpg"
+      },
+      {
+        "name": "金义城",
+        "character": "Yong-suk",
+        "profile_path": "/y7T2LJyorTK2NDk10yeTINWKrWR.jpg"
+      },
+      {
+        "name": "芮秀贞",
+        "character": "In-gil",
+        "profile_path": "/rwGPhu8Ge36eMkrOlzfdKKFargw.jpg"
+      }
+    ],
+    "stills": [
+      "/fVpFOcQyHJM2di9upgSIwWD5wac.jpg",
+      "/aKISIT8ir0UhHD4yRHDzpK4b6yS.jpg",
+      "/qFKb25O9ROiGYt3GwtuXG5Lb2J.jpg",
+      "/eT9fTSTjsCCmdQJ62EpxvePGANc.jpg",
+      "/brnfCYyz8EMbBrHgmh8sCwBi5i1.jpg",
+      "/6B9HaZYBG1ugyd5g6at6F3n4wOw.jpg",
+      "/ngDsPRp1iLQHvmBrOgMzGXepQ1k.jpg",
+      "/whgDER2XsAmVRywTH32VMbTjOtV.jpg",
+      "/dAqK9GL7npQq7G2BkAffoUaMMZI.jpg",
+      "/5H8ftwrh0OzQ7QxTOixNqoMcIZs.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 257054,
+        "title": "Dead Walkers: Rise of the 4th Reich",
+        "poster_path": "/zftjB6C3n5ilzHj3I4zt9BckmAr.jpg",
+        "vote_average": 1.7
+      },
+      {
+        "tmdb_id": 606882,
+        "title": "Ф.О.Т.О.Г.Р.А.Ф.",
+        "poster_path": "/e3btvrmuqsl382BHf9ADHzlkggO.jpg",
+        "vote_average": 6.6
+      },
+      {
+        "tmdb_id": 606906,
+        "title": "铁雨2：首脑峰会",
+        "poster_path": "/8hkN1lfWryt8HHFnoROShxshHEA.jpg",
+        "vote_average": 7.015
+      },
+      {
+        "tmdb_id": 1694,
+        "title": "活跳尸",
+        "poster_path": "/mGsnNBk1WkXpCuwnweeLiKAHcb4.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 431802,
+        "title": "甲铁城的卡巴内瑞 总集篇前篇 汇集的光芒",
+        "poster_path": "/r7NrE2L43pKl0sAUI72E3z9pp4f.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 431803,
+        "title": "甲铁城的卡巴内瑞 总集篇后篇 燃烧的生命",
+        "poster_path": "/yw2tySNHeCsM5eHwKNI5gSbskVV.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 1992,
+        "title": "恐怖星球",
+        "poster_path": "/bqGJCyrt5trCCg42jkKRDtcNBFZ.jpg",
+        "vote_average": 6.688
+      },
+      {
+        "tmdb_id": 2082,
+        "title": "索命万圣节",
+        "poster_path": "/yL70NCHhZbUeYSFFwU1by6HNhg2.jpg",
+        "vote_average": 6.23
+      }
+    ]
+  },
+  "37370438": {
+    "tmdb_id": 124101,
+    "tmdb_type": "tv",
+    "original_title": "Hacks",
+    "overview": "故事聚焦于拉斯维加斯的传奇喜剧演员黛博拉与自命不凡的叛逆25岁少女艾娃之间的黑暗师徒关系。",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2021-05-13",
+    "backdrop_path": "/bbAR4qKxjnjyKAt4YMrL725Mtfw.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "露西亚·阿尼洛",
+    "cast": [
+      {
+        "name": "珍·斯马特",
+        "character": "Deborah Vance",
+        "profile_path": "/gOvEAOtrtedfgS7oQvPgHuJV4F8.jpg"
+      },
+      {
+        "name": "Hannah Einbinder",
+        "character": "Ava",
+        "profile_path": "/iWMeyJAghUYP3zxmOxzcYLU5G8Z.jpg"
+      },
+      {
+        "name": "Carl Clemons-Hopkins",
+        "character": "Marcus",
+        "profile_path": "/lE1AP30VRMtDLQHHlQs2DYhx3cF.jpg"
+      },
+      {
+        "name": "保罗 W·唐斯",
+        "character": "Jimmy",
+        "profile_path": "/xM5ssVi6fZPAtBuQcPM1qRBQSI1.jpg"
+      },
+      {
+        "name": "Megan Stalter",
+        "character": "Kayla",
+        "profile_path": "/ohGvsy7IlJgKs33x3TTQIEL168v.jpg"
+      },
+      {
+        "name": "Mark Indelicato",
+        "character": "Damien",
+        "profile_path": "/18TxWMXDmFgQFbRSh12WfntUvub.jpg"
+      },
+      {
+        "name": "Rose Abdoo",
+        "character": "Josefina",
+        "profile_path": "/6gl2EerGV1p4LS2smamymwgU6jH.jpg"
+      }
+    ],
+    "stills": [
+      "/bbAR4qKxjnjyKAt4YMrL725Mtfw.jpg",
+      "/dDEj2qS9RGiY6P3Bkzc0EEMaKpR.jpg",
+      "/fbA2hjjtyt0Q840yfHuGMM8efU.jpg",
+      "/viwjmvXF1ZQTpZZ2r2AI3ygDqNd.jpg",
+      "/qeqJI8LRIdbV2kZT3rtOaHOnLuY.jpg",
+      "/mzJLyEwhrZFLi7ogq6hdjNWFbsC.jpg",
+      "/t30WmJhIUKEVPITWE5haFzW2YFD.jpg",
+      "/dOpFHv9TG9H2Y8tnCMvKhJRoEPU.jpg",
+      "/4WH0glTvpTDaVkQdTu3lCZ18PmO.jpg",
+      "/f1Z5f9XsnLH7jOTXokRth3szZhN.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 199001,
+        "title": "我与沃尔特家男孩的生活",
+        "poster_path": "/eHGcBB7hRr5IpvtgaHWqDd41ser.jpg",
+        "vote_average": 7.721
+      },
+      {
+        "tmdb_id": 119071,
+        "title": "恋爱无名氏",
+        "poster_path": "/kZWe0kvoHJgtJPdFwmAjKglojYJ.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 231100,
+        "title": "真爱无界",
+        "poster_path": "/1BQSLOIvjnBzrxkXjX9R0JfHTWI.jpg",
+        "vote_average": 8.3
+      },
+      {
+        "tmdb_id": 441,
+        "title": "Father of the Pride",
+        "poster_path": "/eJ8kqnWfgeYb1XyKmRXCBs599pa.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 56221,
+        "title": "นางกรี๊ด",
+        "poster_path": "/lKzP4IYanEstyZE90GRo44wcnyo.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 890,
+        "title": "新世纪福音战士",
+        "poster_path": "/cDxbgU4k5e9Pup9y5ydfTjQmv8y.jpg",
+        "vote_average": 8.6
+      },
+      {
+        "tmdb_id": 119988,
+        "title": "无罪之最",
+        "poster_path": "/ol5l1g1unbdCkNYkKHrvGf7vJD4.jpg",
+        "vote_average": 7.666
+      },
+      {
+        "tmdb_id": 296060,
+        "title": "你是特别的",
+        "poster_path": "/ojxCqxuBoWBOb97QXVtJFA8x8GT.jpg",
+        "vote_average": 6.0
+      }
+    ]
   }
 }
