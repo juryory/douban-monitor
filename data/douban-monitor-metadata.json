@@ -3094,5 +3094,122 @@
         "vote_average": 6.0
       }
     ]
+  },
+  "27608785": {
+    "tmdb_id": 454693,
+    "tmdb_type": "movie",
+    "original_title": "Das schweigende Klassenzimmer",
+    "overview": "1956年，两位高中生提奥和库特在看去西柏林看电影的路上见到了匈牙利十月起义的新闻报道。为了对起义的死者表示悼念，他们和同班同学们决定，一起在课堂上无视老师，突发沉默一分钟。然而这短短的一分钟彻底改变了班上同学的命运，许多人从此被东德安全局视为眼中钉，加以监视和迫害。在班级被强行解散后，他们却决心在西德重新结集，不过是以作为逃亡者的新身份。",
+    "genres": [
+      "剧情",
+      "历史"
+    ],
+    "runtime": 112,
+    "release_date": "2018-03-01",
+    "backdrop_path": "/fn6AY9xWw7PBbavA6b1F7mF64z0.jpg",
+    "countries": [
+      "Germany"
+    ],
+    "director": "Lars Kraume",
+    "cast": [
+      {
+        "name": "Leonard Scheicher",
+        "character": "Theo Lemke",
+        "profile_path": "/s4DqnzX8qPZCK81jMSR1s2Vz0Yu.jpg"
+      },
+      {
+        "name": "Tom Gramenz",
+        "character": "Kurt Wächter",
+        "profile_path": "/si7qjJhu56lg5p4c0SGBycCUUg9.jpg"
+      },
+      {
+        "name": "Lena Klenke",
+        "character": "Lena",
+        "profile_path": "/ssSvTEnbtG3bLixVrLbf4xWxoDc.jpg"
+      },
+      {
+        "name": "Isaiah Michalski",
+        "character": "Paul",
+        "profile_path": ""
+      },
+      {
+        "name": "乔纳斯·达斯勒",
+        "character": "Erik Babinsky",
+        "profile_path": "/tDjmGtSY3CPv7ktkifoKAWwZb90.jpg"
+      },
+      {
+        "name": "Nora Labisch",
+        "character": "Klara Winkler",
+        "profile_path": ""
+      },
+      {
+        "name": "Nele Labisch",
+        "character": "Regina Winkler",
+        "profile_path": ""
+      },
+      {
+        "name": "Ronald Zehrfeld",
+        "character": "Hermann Lemke",
+        "profile_path": "/cl76qf5nskBoD1q7WWajH3LdPV0.jpg"
+      }
+    ],
+    "stills": [
+      "/fn6AY9xWw7PBbavA6b1F7mF64z0.jpg",
+      "/sqAG6LjI9CL0GJbTcHtVPObN5Pz.jpg",
+      "/kt3UuEaGYTIMRbH543SOv27TNEg.jpg",
+      "/zb8up7N21LKd5BHoMQjgtg8xO7X.jpg",
+      "/2Qljbib3oRI5CqALRFBBatWiDj3.jpg",
+      "/8uu9F6YxZrpRG8Dhz69h6eEEHRq.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1338472,
+        "title": "向世界挥拳",
+        "poster_path": "/vTVO3fu5veTvhLJ6UZbLtKSKBVf.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 6072,
+        "title": "187美国社会档案",
+        "poster_path": "/rPmmyspi1MZBItSvfx40qwep8ow.jpg",
+        "vote_average": 6.7
+      },
+      {
+        "tmdb_id": 434973,
+        "title": "Sokkotanssi",
+        "poster_path": "/v7IYrtjyFEWTETWRUpXobzUexJi.jpg",
+        "vote_average": 6.333
+      },
+      {
+        "tmdb_id": 435033,
+        "title": "Say You Will",
+        "poster_path": "/nVdd58VCbXD6qMnXaek3vUnw0wC.jpg",
+        "vote_average": 6.159
+      },
+      {
+        "tmdb_id": 5967,
+        "title": "瑟堡的雨伞",
+        "poster_path": "/6E1ra5C4rUZWAOtyUZtIa9qUG7y.jpg",
+        "vote_average": 7.4
+      },
+      {
+        "tmdb_id": 5693,
+        "title": "篮坛怪杰",
+        "poster_path": "/dHpjZQXEdoi1xNLubM1rPmTHJYz.jpg",
+        "vote_average": 7.051
+      },
+      {
+        "tmdb_id": 435104,
+        "title": "1992",
+        "poster_path": "/ywvnzsTMSygo1l90y86XJydUVKo.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 1524424,
+        "title": "彼が奏でるふたりの調べ",
+        "poster_path": "",
+        "vote_average": 0
+      }
+    ]
   }
 }
