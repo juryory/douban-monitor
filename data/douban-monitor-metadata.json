@@ -3211,5 +3211,118 @@
         "vote_average": 0
       }
     ]
+  },
+  "1296235": {
+    "tmdb_id": 53113,
+    "tmdb_type": "movie",
+    "original_title": "One True Thing",
+    "overview": "本片根据《纽约时报》专栏作家安娜·昆德兰（Anna Quindlen）1994年的同名小说改编。艾伦·戈尔登（芮妮·齐薇格 Renée Zellweger 饰）从哈佛大学毕业后供职于纽约某杂志，事业正在上升期，却因母亲凯特（梅丽尔·斯特里普 Meryl Streep 饰）身患癌症不得不放下工作返回宾夕法尼亚州的朗赫恩小镇照顾家庭。艾伦一直很崇拜教授美国文学的学者父亲乔治（威廉·赫特 William Hurt 饰），但不太看得起身为家庭妇女的母亲。在照顾母亲的过程中，艾伦发现了母亲生活的不易，也发现了父亲的很多黑暗秘密。就在家庭关系的摇摆震荡中，艾伦终于第一次了解了自己的父母，也终于找到了生命中最真实的感动。  　　本片被提名奥斯卡、金球奖和金卫星奖最佳女主角奖（梅丽尔·斯特里普），并获美国电影音效剪辑工会金胶卷奖最佳声音剪辑提名。 ©豆瓣",
+    "genres": [
+      "剧情",
+      "爱情"
+    ],
+    "runtime": 127,
+    "release_date": "1998-09-18",
+    "backdrop_path": "/4IrOhjmbvDcl4czUTB15CLfKtL0.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "卡尔·富兰克林",
+    "cast": [
+      {
+        "name": "梅丽尔·斯特里普",
+        "character": "Kate Gulden",
+        "profile_path": "/g5cVxQBAQ3AXt3LhdBXtbbN47Uc.jpg"
+      },
+      {
+        "name": "蕾妮·齐薇格",
+        "character": "Ellen Gulden",
+        "profile_path": "/iNnPqkEF0hPWhmWpjyuLuUdbKN8.jpg"
+      },
+      {
+        "name": "威廉·赫特",
+        "character": "George Gulden",
+        "profile_path": "/j3mjmuHLBW4XQSw53C8Sh0Lh3ZQ.jpg"
+      },
+      {
+        "name": "托马斯·埃弗雷特·斯科特",
+        "character": "Brian Gulden",
+        "profile_path": "/nVDihOvsSm7kmeyHLtAcEzrrSYC.jpg"
+      },
+      {
+        "name": "劳伦·格雷厄姆",
+        "character": "Jules",
+        "profile_path": "/3leQVZnthAZwngH7HAD6T7qfsVu.jpg"
+      },
+      {
+        "name": "尼基·凯特",
+        "character": "Jordan Belzer",
+        "profile_path": "/9OY1D1WXJsqC7OnrKErc3mFfly5.jpg"
+      },
+      {
+        "name": "James Eckhouse",
+        "character": "District Attorney",
+        "profile_path": "/iGG7iSZ5sBrmgkT9IHg1ipZCzgq.jpg"
+      },
+      {
+        "name": "帕特里克·布林",
+        "character": "G.A. Tweedy",
+        "profile_path": "/oGK78qN4cezMlG7VBvZ0QYh1Ui0.jpg"
+      }
+    ],
+    "stills": [
+      "/4IrOhjmbvDcl4czUTB15CLfKtL0.jpg",
+      "/lN2eCm3A6BtOPuKgLUJ7QSxZcMw.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1156383,
+        "title": "La piel más temida",
+        "poster_path": "/g1lnnkr5xH7QRb4tyktn9m4aAMt.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 666,
+        "title": "中央车站",
+        "poster_path": "/sn98rIme6rHAkIB7RWmLX2uAPVK.jpg",
+        "vote_average": 8.132
+      },
+      {
+        "tmdb_id": 773,
+        "title": "阳光小美女",
+        "poster_path": "/uwPB4hhaKNlRiZQEfoNlCUr9vTb.jpg",
+        "vote_average": 7.692
+      },
+      {
+        "tmdb_id": 973935,
+        "title": "最末大丈夫",
+        "poster_path": "/m8DQMk5PvYdq1clEt43oUSUCdUR.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 254647,
+        "title": "Leave 'Em Laughing",
+        "poster_path": "/6pgRtbnmvkl1PwH408YYtddtxaz.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 587,
+        "title": "大鱼",
+        "poster_path": "/8gLc3LKww5j2wxhWcrzhdKGvcGU.jpg",
+        "vote_average": 7.758
+      },
+      {
+        "tmdb_id": 254875,
+        "title": "100次哭泣",
+        "poster_path": "/z2FPJBR2YsQJrNypReTjGaecAnV.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 421,
+        "title": "水中生活",
+        "poster_path": "/BXhBZoPBsIfWYbl0LXSH4GMvXy.jpg",
+        "vote_average": 7.074
+      }
+    ]
   }
 }
