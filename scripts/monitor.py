@@ -1,8 +1,5 @@
 from __future__ import annotations
 
-import base64
-import hashlib
-import hmac
 import json
 import os
 import re
@@ -174,94 +171,8 @@ def get_env(name: str, default: str | None = None) -> str | None:
 
 
 # ---------------------------------------------------------------------------
-# Douban Frodo API (mobile/mini-program internal API)
-# ---------------------------------------------------------------------------
-
-_FRODO_BASE = "https://frodo.douban.com/api/v2"
-_FRODO_API_KEY = "0dad551ec0f84ed02907ff5c42e8ec70"
-_FRODO_SECRET = "bf7dddc7c9cfe6f7"
-_FRODO_UA = (
-    "api-client/1 com.douban.frodo/7.22.0.beta9(231) Android/33 "
-    "product/lark model/sdk_gphone64_arm64 brand/google  "
-    "rom/android  network/wifi  platform/AndroidPad"
-)
-
-
-def _frodo_sign(method: str, url_path: str, ts: str) -> str:
-    raw = "&".join([method.upper(), urllib.parse.quote(url_path, safe=""), ts])
-    sig = hmac.new(_FRODO_SECRET.encode(), raw.encode(), hashlib.sha1).digest()
-    return base64.b64encode(sig).decode()
-
-
-def frodo_get(path: str, params: dict[str, Any] | None = None, config: dict[str, Any] | None = None) -> dict[str, Any]:
-    """Call Douban Frodo API with proper signing."""
-    timeout = (config or {}).get("request_timeout_seconds", 20)
-    ts = str(int(time.time()))
-    query: dict[str, Any] = {
-        "apiKey": _FRODO_API_KEY,
-        "os_rom": "android",
-        "_ts": ts,
-    }
-    if params:
-        query.update(params)
-    query["_sig"] = _frodo_sign("GET", path, ts)
-
-    url = f"{_FRODO_BASE}{path}?{urllib.parse.urlencode(query)}"
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": _FRODO_UA,
-            "Accept": "application/json",
-        },
-    )
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        return json.loads(response.read().decode("utf-8"))
-
-
-def fetch_douban_collection_via_frodo(collection_id: str, config: dict[str, Any]) -> list[dict[str, Any]]:
-    """Fetch items from a Douban subject_collection using Frodo API.
-
-    Returns list of raw item dicts from the API.
-    """
-    max_items = _get_collection_max_items(collection_id, config)
-    all_items: list[dict[str, Any]] = []
-    start = 0
-    count = 20
-    while True:
-        data = frodo_get(
-            f"/subject_collection/{collection_id}/items",
-            params={"start": start, "count": count},
-            config=config,
-        )
-        items = data.get("subject_collection_items") or []
-        if not items:
-            break
-        all_items.extend(items)
-        if len(all_items) >= max_items:
-            all_items = all_items[:max_items]
-            break
-        total = data.get("total", 0)
-        start += count
-        if start >= total:
-            break
-        time.sleep(0.5)
-    return all_items
-
-
-def fetch_douban_subject_detail_via_frodo(douban_id: str, config: dict[str, Any]) -> dict[str, Any]:
-    """Fetch subject detail (rating, rating_count, title, year) via Frodo API."""
-    try:
-        return frodo_get(f"/movie/{douban_id}", config=config)
-    except Exception:
-        try:
-            return frodo_get(f"/tv/{douban_id}", config=config)
-        except Exception:
-            return {}
-
-
-# ---------------------------------------------------------------------------
 # Rexxar API（m.douban.com 移动网页版内部接口）
-# 作为 Frodo 不可用时的降级通道。不需要签名和 apiKey。
+# 不需要签名和 apiKey，是当前豆瓣抓取的唯一通道。
 # ---------------------------------------------------------------------------
 
 _REXXAR_BASE = "https://m.douban.com/rexxar/api/v2"
@@ -298,7 +209,7 @@ def _get_collection_max_items(collection_id: str, config: dict[str, Any]) -> int
     return max_items_map.get(collection_id, 20)  # Default 20
 
 def fetch_douban_collection_via_rexxar(collection_id: str, config: dict[str, Any]) -> list[dict[str, Any]]:
-    """Rexxar 版本的榜单抓取，接口结构和 Frodo 一致。"""
+    """通过 Rexxar API 抓取榜单分页。"""
     max_items = _get_collection_max_items(collection_id, config)
     all_items: list[dict[str, Any]] = []
     start = 0
@@ -364,7 +275,7 @@ def _category_and_source_from_collection(url_text: str) -> tuple[str, str]:
 
 
 def fetch_douban_weekly_candidates_lite(config: dict[str, Any]) -> list[Candidate]:
-    """Fetch weekly candidates via Frodo API，失败时自动降级到 Rexxar。"""
+    """Fetch weekly candidates via Rexxar API。"""
     candidates: list[Candidate] = []
     collection_urls = config.get("douban_collection_urls") or []
     for collection_url in collection_urls:
@@ -373,15 +284,11 @@ def fetch_douban_weekly_candidates_lite(config: dict[str, Any]) -> list[Candidat
         category, source = _category_and_source_from_collection(url_text)
         items: list[dict[str, Any]] = []
         try:
-            items = fetch_douban_collection_via_frodo(collection_id, config)
+            items = fetch_douban_collection_via_rexxar(collection_id, config)
+            log_kv(f"Rexxar 榜单 {collection_id} 成功", f"{len(items)} 条")
         except Exception as exc:
-            log_kv(f"Frodo 榜单 {collection_id} 失败，降级 Rexxar", str(exc))
-            try:
-                items = fetch_douban_collection_via_rexxar(collection_id, config)
-                log_kv(f"Rexxar 榜单 {collection_id} 成功", f"{len(items)} 条")
-            except Exception as exc2:
-                log_kv(f"Rexxar 榜单 {collection_id} 也失败", str(exc2))
-                continue
+            log_kv(f"Rexxar 榜单 {collection_id} 失败", str(exc))
+            continue
         if not items:
             continue
         for item in items:
@@ -411,14 +318,12 @@ def fetch_douban_weekly_candidates_lite(config: dict[str, Any]) -> list[Candidat
 
 
 def fetch_douban_subject_detail_lite(candidate: Candidate, config: dict[str, Any]) -> Candidate:
-    """Fetch subject detail via Frodo API，失败时自动降级到 Rexxar。"""
+    """Fetch subject detail via Rexxar API。"""
     if not candidate.douban_id:
         return candidate
     if not candidate.url:
         candidate.url = f"https://movie.douban.com/subject/{candidate.douban_id}/"
-    data = fetch_douban_subject_detail_via_frodo(candidate.douban_id, config)
-    if not data:
-        data = fetch_douban_subject_detail_via_rexxar(candidate.douban_id, config)
+    data = fetch_douban_subject_detail_via_rexxar(candidate.douban_id, config)
     if not data:
         return candidate
     title = data.get("title")
@@ -863,7 +768,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     config = {**DEFAULT_CONFIG, **file_config, **(config or {})}
     now = now_cst()
 
-    log_step("运行模式: 豆瓣 Frodo → Rexxar 自动降级")
+    log_step("运行模式: 豆瓣 Rexxar API")
 
     state_path = project_root / "data" / "douban-monitor-state.json"
     library_path = project_root / "data" / "douban-monitor-library.json"

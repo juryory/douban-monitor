@@ -1,7 +1,7 @@
 """Fetch poster URLs for qualified items.
 
 Strategy (per item):
-  1. Frodo API → IMDB ID → TMDB /find/{imdb_id}   (movies & TV, most accurate)
+  1. Rexxar API → IMDB ID → TMDB /find/{imdb_id}   (movies & TV, most accurate)
   2. TMDB fuzzy search → best-match by title similarity  (all categories incl. shows)
 """
 from __future__ import annotations
@@ -25,7 +25,7 @@ if _ENV_FILE.exists():
             os.environ.setdefault(_k.strip(), _v.strip())
 
 sys.path.insert(0, str(Path(__file__).parent))
-from monitor import frodo_get, tmdb_get, DEFAULT_CONFIG
+from monitor import rexxar_get, tmdb_get, DEFAULT_CONFIG
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 RESULT_FILE = DATA_DIR / "douban-monitor-result.json"
@@ -94,13 +94,13 @@ def _best_poster(results: list[dict], ref_title: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Step 1: Frodo → IMDB ID → TMDB /find
+# Step 1: Rexxar → IMDB ID → TMDB /find
 # ---------------------------------------------------------------------------
 
-def get_imdb_id_from_frodo(douban_id: str) -> str | None:
+def get_imdb_id_from_rexxar(douban_id: str) -> str | None:
     for endpoint in (f"/movie/{douban_id}", f"/tv/{douban_id}"):
         try:
-            data = frodo_get(endpoint)
+            data = rexxar_get(endpoint)
             imdb = str(data.get("imdb") or data.get("imdb_id") or "").strip()
             if imdb.startswith("tt"):
                 return imdb
@@ -201,7 +201,7 @@ def main() -> None:
         prefix = f"[{i+1}/{total}]"
 
         if did in posters:
-            status = "✓" if posters[did] else "✗"
+            status = "[OK]" if posters[did] else "[NO]"
             print(f"{prefix} skip {status} {title}")
             continue
 
@@ -210,7 +210,7 @@ def main() -> None:
 
         # Step 1: IMDB → TMDB /find  (not for shows)
         if category != "show":
-            imdb_id = get_imdb_id_from_frodo(did)
+            imdb_id = get_imdb_id_from_rexxar(did)
             time.sleep(0.3)
             if imdb_id:
                 print(f"imdb={imdb_id}", end=" ", flush=True)

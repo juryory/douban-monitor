@@ -19,7 +19,7 @@ if _ENV_FILE.exists():
             os.environ.setdefault(_k.strip(), _v.strip())
 
 sys.path.insert(0, str(Path(__file__).parent))
-from monitor import frodo_get, tmdb_get, DEFAULT_CONFIG
+from monitor import rexxar_get, tmdb_get, DEFAULT_CONFIG
 
 DATA_DIR = _ROOT / "data"
 RESULT_FILE = DATA_DIR / "douban-monitor-result.json"
@@ -61,7 +61,7 @@ def _variants(title: str) -> list[str]:
 def _get_imdb(douban_id: str) -> str | None:
     for ep in (f"/movie/{douban_id}", f"/tv/{douban_id}"):
         try:
-            data = frodo_get(ep)
+            data = rexxar_get(ep)
             v = str(data.get("imdb") or data.get("imdb_id") or "").strip()
             if v.startswith("tt"):
                 return v
@@ -225,7 +225,7 @@ def main() -> None:
         prefix   = f"[{i+1}/{total}]"
 
         if did in meta and "backdrop_path" in meta[did]:
-            mark = "✓" if meta[did].get("overview") else "∅"
+            mark = "[OK]" if meta[did].get("overview") else "[--]"
             print(f"{prefix} skip {mark} {title}")
             continue
 

@@ -3,7 +3,7 @@
 Usage: add douban IDs to data/douban-monitor-favorites.json as a JSON array,
 e.g. ["36190514", "35626404"]. This script will:
   1. Remove IDs already present in result.json (auto-cleanup)
-  2. Fetch details (title, category, rating, etc.) from Douban Frodo API
+  2. Fetch details (title, category, rating, etc.) from Douban Rexxar API
   3. Write enriched items to data/douban-monitor-favorites-result.json
   4. Fetch posters and metadata for these items (shared with main pipeline)
 """
@@ -26,7 +26,7 @@ if _ENV_FILE.exists():
             os.environ.setdefault(_k.strip(), _v.strip())
 
 sys.path.insert(0, str(Path(__file__).parent))
-from monitor import frodo_get, tmdb_get, DEFAULT_CONFIG
+from monitor import tmdb_get, DEFAULT_CONFIG
 
 DATA_DIR = _ROOT / "data"
 FAVORITES_FILE = DATA_DIR / "douban-monitor-favorites.json"

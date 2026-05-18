@@ -136,7 +136,7 @@ def main() -> None:
         output_path = DETAIL_DIR / f"{douban_id}.html"
         output_path.write_text(html, encoding="utf-8")
         generated += 1
-        print(f"  ✓ {title} ({douban_id})")
+        print(f"  [OK] {title} ({douban_id})")
 
     print(f"\n完成：生成 {generated} 个详情页至 {DETAIL_DIR}")
 

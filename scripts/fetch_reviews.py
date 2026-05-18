@@ -107,7 +107,7 @@ def main() -> None:
         prefix = f"[{i+1}/{total}]"
 
         if did in reviews and reviews[did]:
-            print(f"{prefix} skip ✓ {title}")
+            print(f"{prefix} skip [OK] {title}")
             continue
 
         print(f"{prefix} {title}", end="  ", flush=True)
