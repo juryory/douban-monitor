@@ -94,8 +94,12 @@ def generate_detail_html(item: dict, metadata: dict, posters: dict) -> str:
     if poster_url:
         html += f'  <meta itemprop="image" content="{esc(poster_url)}" />\n'
     
+    # Use JS redirect (not meta refresh) so crawlers like WeChat stop at this
+    # static page and read its OG/title tags instead of following the redirect
+    # to index.html and picking up its generic "豆瓣高分监控" title.
     html += f'''
-  <meta http-equiv="refresh" content="0;url=../#detail/douban:{douban_id}" />
+  <script>window.location.replace("../#detail/douban:{douban_id}");</script>
+  <noscript><meta http-equiv="refresh" content="0;url=../#detail/douban:{douban_id}" /></noscript>
 </head>
 <body style="text-align:center;padding:40px;font-family:sans-serif;">
   <p>正在跳转到 <a href="../#detail/douban:{douban_id}">{esc(title)}</a>...</p>
