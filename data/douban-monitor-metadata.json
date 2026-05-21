@@ -3445,5 +3445,236 @@
         "vote_average": 8.0
       }
     ]
+  },
+  "1293942": {
+    "tmdb_id": 10368,
+    "tmdb_type": "movie",
+    "original_title": "Tea with Mussolini",
+    "overview": "根据导演Franco Zeffirelli本人的早年个人经历改编，讲述二战期间，一群热爱意大利文化艺术的女性在佛罗伦萨和圣吉米尼亚诺的经历，其中包括和墨索里尼喝茶的前英国大使夫人(Maggie Smith饰)、帮雇主照顾私生子卢卡的玛丽(Joan Plowright饰)、艺术热爱者阿拉贝拉(Judi Dench饰)、年轻英国记者康妮(Tessa Pritchard饰)、干练的美国女性乔琪(Lily Tomlin饰)、放浪但好心的美国女性埃尔莎(Cher饰)。战争爆发前，她们常常聚在前大使夫人处，或是在乌菲齐美术馆里喝茶聊天，二战爆发后，她们都被软禁在了古城圣吉米尼亚诺，被她们照顾过的卢卡已经长大，时常前来帮助她们。",
+    "genres": [
+      "喜剧",
+      "剧情",
+      "战争"
+    ],
+    "runtime": 118,
+    "release_date": "1999-03-25",
+    "backdrop_path": "/w5AkUNcQP5FtEhEBeU3yioZOczN.jpg",
+    "countries": [
+      "United Kingdom",
+      "Italy"
+    ],
+    "director": "佛朗哥·泽菲雷里",
+    "cast": [
+      {
+        "name": "玛吉·史密斯",
+        "character": "Lady Hester Random",
+        "profile_path": "/Ae7DnC7mLIiHVtQZE6YPs8MInx7.jpg"
+      },
+      {
+        "name": "朱迪·丹奇",
+        "character": "Arabella",
+        "profile_path": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg"
+      },
+      {
+        "name": "琼·普莱怀特",
+        "character": "Mary Wallace",
+        "profile_path": "/un5wsOnz22Rvl82niE0LGAVxggQ.jpg"
+      },
+      {
+        "name": "雪儿",
+        "character": "Elsa Strauss-Almerson",
+        "profile_path": "/yDglV70XMu2cBWZigp5Jxd4etfv.jpg"
+      },
+      {
+        "name": "莉莉·汤姆林",
+        "character": "Georgina \"Georgie\" Rockwell",
+        "profile_path": "/eoFMSqRykiaXMGCiz7Kxehfqy1W.jpg"
+      },
+      {
+        "name": "Baird Wallace",
+        "character": "Luca",
+        "profile_path": ""
+      },
+      {
+        "name": "Charlie Lucas",
+        "character": "Luca (Child)",
+        "profile_path": ""
+      },
+      {
+        "name": "Michael Williams",
+        "character": "British Consul",
+        "profile_path": "/dZezU1uEK42Am5Ij7xnRc8cAzlo.jpg"
+      }
+    ],
+    "stills": [
+      "/w5AkUNcQP5FtEhEBeU3yioZOczN.jpg",
+      "/d6ypTXW4WlJjCrrFFuIh7bDTBEa.jpg",
+      "/coOKl8cvyl38NjdmC6ygQRNF6e9.jpg",
+      "/7daBeE4Ut7VmCK3dnMzWJ70mi1M.jpg",
+      "/jfml2W4sOqLxYqR7OeLyhqwfciX.jpg",
+      "/5HajsfkVuPxGqEdUj2ldKexBTAN.jpg",
+      "/pD5ZG10xpHzHSenzr4frM64uvX4.jpg",
+      "/woDTKvBznx7lcOqy9JtkGlUljbq.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 26600,
+        "title": "阴阳之间",
+        "poster_path": "/t1NeBrt65qUJCcOBOqf8MlTcnOy.jpg",
+        "vote_average": 7.192
+      },
+      {
+        "tmdb_id": 26618,
+        "title": "靶鸽",
+        "poster_path": "/6cxoftMuiwcQ9xzXfvGWAQfWUmK.jpg",
+        "vote_average": 6.21
+      },
+      {
+        "tmdb_id": 26659,
+        "title": "汉诺瓦街",
+        "poster_path": "/8esk5JZ2ARFF7YFGVgyFalJL86M.jpg",
+        "vote_average": 5.627
+      },
+      {
+        "tmdb_id": 26686,
+        "title": "加州套房",
+        "poster_path": "/2IlgL7m1ByY3RIghbXNGGNvYfEE.jpg",
+        "vote_average": 5.837
+      },
+      {
+        "tmdb_id": 26718,
+        "title": "执法铁汉",
+        "poster_path": "/6jY4xH5SDNrRIxlYoXskXniO2Zl.jpg",
+        "vote_average": 6.614
+      },
+      {
+        "tmdb_id": 441728,
+        "title": "汉普斯特德公园",
+        "poster_path": "/svyFdV8QrOyheU2lEDuBnrcCQT5.jpg",
+        "vote_average": 6.01
+      },
+      {
+        "tmdb_id": 617373,
+        "title": "A Ship of Human Skin",
+        "poster_path": "/cxfowGY581uouAlC9pxG5Y3goYZ.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 1367989,
+        "title": "L'Inverno",
+        "poster_path": "",
+        "vote_average": 0
+      }
+    ]
+  },
+  "37061179": {
+    "tmdb_id": 273240,
+    "tmdb_type": "tv",
+    "original_title": "Off Campus",
+    "overview": "为了赢得心上人的心，汉娜·威尔斯主动为冰球队队长加雷特·格雷厄姆辅导功课。随着两人面对各自的过往，这场最初各取所需的交易，渐渐萌生了真情。他们的朋友洛根、迪恩、塔克和艾莉也都在大学生活与爱情中摸索前行。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-05-13",
+    "backdrop_path": "/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "Gina Fattore",
+    "cast": [
+      {
+        "name": "Ella Bright",
+        "character": "Hannah Wells",
+        "profile_path": "/frdjTC8xrHJAbSUCNcrUvnU0SVx.jpg"
+      },
+      {
+        "name": "贝尔蒙特·卡梅利",
+        "character": "Garrett Graham",
+        "profile_path": "/pn7PMVIFbufXh7eCljg1tJHlpX0.jpg"
+      },
+      {
+        "name": "Mika Abdalla",
+        "character": "Allie Hayes",
+        "profile_path": "/aVLefZdW2lw1oLkO4fnAzwTzmFl.jpg"
+      },
+      {
+        "name": "Stephen Kalyn",
+        "character": "Dean Di Laurentis",
+        "profile_path": "/nsjW4Hj1dJFpAPGKsrfm1XdX5Bu.jpg"
+      },
+      {
+        "name": "Antonio Cipriano",
+        "character": "John Logan",
+        "profile_path": "/sYYRDGRYQPesvmQFfgMxlskYGVb.jpg"
+      },
+      {
+        "name": "杰伦·托马斯·布鲁克斯",
+        "character": "John Tucker",
+        "profile_path": "/987XKn86U2OED1ooCjxuHmx6Eut.jpg"
+      }
+    ],
+    "stills": [
+      "/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
+      "/cdD0InWMH4e6AxceQs93fQRYsfO.jpg",
+      "/3ANXZWhhcqPAh0q6nRZ979TIwxC.jpg",
+      "/iACpkNugZAVnuOa2R7Hu8t1LGsy.jpg",
+      "/gJOBhpc86vA4BU5b9gNR2MPFj7x.jpg",
+      "/kfIIdwFJVZLlxn3pjuNBrAGPvuJ.jpg",
+      "/zZZldZCo4TvLabprufXdLtn6HE1.jpg",
+      "/1YXON7U68IHX7uwda9jtbNPZlf1.jpg",
+      "/fRqAKbvEXHsCdf71EyySAgAEooY.jpg",
+      "/cxtfuZMC5FafQ5qjm6lY10M2wCM.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 87663,
+        "title": "魂囚西门",
+        "poster_path": "/p0fbDbinWFcf2vzr8LBcVmGkfbd.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 87713,
+        "title": "推手",
+        "poster_path": "/nRihps3V5tqfvrIM7WLXFRfzzdZ.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 87730,
+        "title": "花谢花飞花满天",
+        "poster_path": "/v48VSwwVIcDZRm7eQzg0EYS7r8K.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 87731,
+        "title": "城市故事",
+        "poster_path": "/wAvniCqQPlgX4wEgfGimZs5rzVn.jpg",
+        "vote_average": 6.81
+      },
+      {
+        "tmdb_id": 87739,
+        "title": "后翼弃兵",
+        "poster_path": "/n6KHGilNYdb90eDPAE1IAzr2Vt1.jpg",
+        "vote_average": 8.435
+      },
+      {
+        "tmdb_id": 87815,
+        "title": "老公的那个进不来",
+        "poster_path": "/wgMEs5rvE2lopE9SOe3R2yYJJiy.jpg",
+        "vote_average": 6.182
+      },
+      {
+        "tmdb_id": 27291,
+        "title": "East of Eden",
+        "poster_path": "/Aub233qyj3HoAmdZ4iIOiDdHePG.jpg",
+        "vote_average": 7.375
+      },
+      {
+        "tmdb_id": 1,
+        "title": "冰上恋人",
+        "poster_path": "/9Ub2BwnLYKoiSaQF93ItyXriCon.jpg",
+        "vote_average": 7.806
+      }
+    ]
   }
 }
