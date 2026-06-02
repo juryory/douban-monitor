@@ -4011,5 +4011,118 @@
         "vote_average": 6.3
       }
     ]
+  },
+  "35295564": {
+    "tmdb_id": 284110,
+    "tmdb_type": "tv",
+    "original_title": "主角",
+    "overview": "多年前，县剧团招学员，在团里任司鼓的胡三元替外甥女报名，将年少的她改名易秦娥从家乡带出来学唱秦腔。因胡三元造成的事故，易秦娥受到影响，学习秦腔之路屡遭波折。但她凭借刻苦的劲头和自身的条件获得了老艺人的赏识和热情帮扶。她的“破蒙戏”在乡村舞台上音惊四座，后改名忆秦娥被调入省秦腔团。 她勤学苦练，在台上的演出屡获成功。历经波折，她终于明白对秦腔艺术的传承才是她作为“主角”的真正意义，她将继续培养新一代秦腔舞台上亮丽的主角。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-05-10",
+    "backdrop_path": "/i5pSbVLpRKUPfFckfsX0kpHLdWC.jpg",
+    "countries": [
+      "CN"
+    ],
+    "director": "张艺谋",
+    "cast": [
+      {
+        "name": "张嘉益",
+        "character": "胡三元 Hu Sanyuan",
+        "profile_path": "/sWyVhE0CQgx4BLlabEFH8bplD9i.jpg"
+      },
+      {
+        "name": "刘浩存",
+        "character": "忆秦娥 Yi Qin’e",
+        "profile_path": "/8fU6kUBKPVUfu9mGZngMFUOfVcM.jpg"
+      },
+      {
+        "name": "秦海璐",
+        "character": "花彩香 Hua Caixiang",
+        "profile_path": "/uhiUlT5c5RU3Qmo42Kjtm8gZRy.jpg"
+      },
+      {
+        "name": "窦骁",
+        "character": "刘红兵 Liu Hongbing",
+        "profile_path": "/3SN0FoX3rqFez0A5WrBZhXKsFQm.jpg"
+      },
+      {
+        "name": "翟子路",
+        "character": "封潇潇 Feng Xiaoxiao",
+        "profile_path": "/yv18GqjdBKid5geIzH7gA2HNbYQ.jpg"
+      },
+      {
+        "name": "王晓晨",
+        "character": "米兰 Mi Lan",
+        "profile_path": "/4CcEIYCJGsnlonoaNWynM1Fgyvl.jpg"
+      },
+      {
+        "name": "王丽坤",
+        "character": "小白鞋",
+        "profile_path": "/mAPYXNk7L8SHoEy7azrVku6Oe8g.jpg"
+      },
+      {
+        "name": "韩沛颖",
+        "character": "楚嘉禾",
+        "profile_path": "/8h7voJFirHejGIH6mL3f96YiFDs.jpg"
+      }
+    ],
+    "stills": [
+      "/i5pSbVLpRKUPfFckfsX0kpHLdWC.jpg",
+      "/9dYtSX3Dd1t52q8DNOWuEZgUisd.jpg",
+      "/eumEgh3ovgVEON4HqsEBono1lTt.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 119582,
+        "title": "Вход в лабиринт",
+        "poster_path": "/uhtPLrWzzlyDauOoM3NA2GEeVlh.jpg",
+        "vote_average": 6.3
+      },
+      {
+        "tmdb_id": 56159,
+        "title": "ดาวหลงฟ้า",
+        "poster_path": "/pM2GdVjxrf6QxPe1JHmKeDbV7hJ.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 56170,
+        "title": "焦糖",
+        "poster_path": "/uI8G18jaHiiWHI48PDtzccO6PDu.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 295798,
+        "title": "Δακρυσμένα φεγγάρια",
+        "poster_path": "/6WbTX8qcodqlYDgItLcvNWuNUQK.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 27291,
+        "title": "East of Eden",
+        "poster_path": "/Aub233qyj3HoAmdZ4iIOiDdHePG.jpg",
+        "vote_average": 7.375
+      },
+      {
+        "tmdb_id": 27493,
+        "title": "明天的喜多善男",
+        "poster_path": "/A4CQKt8OWjcyXFtmh4DjlI3eUm.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 260545,
+        "title": "云月奇缘",
+        "poster_path": "/jPiSPYaWJyPPQKTkyhRuOEmoTa0.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 260592,
+        "title": "Every Year After",
+        "poster_path": "/vpnJq0b1jaFxkxJzwiHsZUiIpcK.jpg",
+        "vote_average": 0
+      }
+    ]
   }
 }
