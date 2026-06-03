@@ -4124,5 +4124,126 @@
         "vote_average": 0
       }
     ]
+  },
+  "1292932": {
+    "tmdb_id": 20283,
+    "tmdb_type": "movie",
+    "original_title": "Breaking Away",
+    "overview": "一位痴迷意大利自行车队的小镇男孩，竭力追求一位大学女生的青睐。",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ],
+    "runtime": 101,
+    "release_date": "1979-05-24",
+    "backdrop_path": "/yNjrT8bsr5WR9bmRjLsIwIoZtFR.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "Peter Yates",
+    "cast": [
+      {
+        "name": "丹尼斯·克里斯托弗",
+        "character": "Dave Stoller",
+        "profile_path": "/bZMnSpQ6KEBuwUfnngNEpmqhEK.jpg"
+      },
+      {
+        "name": "丹尼斯·奎德",
+        "character": "Mike",
+        "profile_path": "/lMaDAJHzsKH7U3dln2B3kY3rOhE.jpg"
+      },
+      {
+        "name": "丹尼尔·斯特恩",
+        "character": "Cyril",
+        "profile_path": "/939oerf8bJPrqT2a0N0oGuM1bjn.jpg"
+      },
+      {
+        "name": "杰基·厄尔·哈利",
+        "character": "Moocher",
+        "profile_path": "/xDPeiyklN8f9Ilowsti4lGVbioj.jpg"
+      },
+      {
+        "name": "芭芭拉·巴里",
+        "character": "Evelyn Stoller",
+        "profile_path": "/eUVrPjqoAKGFuF6ORUOEzfXgAhb.jpg"
+      },
+      {
+        "name": "保罗·杜利",
+        "character": "Ray Stoller",
+        "profile_path": "/7nTdbpU4wIsSDZ8WCPXNJOG9KPI.jpg"
+      },
+      {
+        "name": "罗宾·道格拉斯",
+        "character": "Katherine",
+        "profile_path": "/y6jTPbPBfqDK9X8ckbC02rQgnSq.jpg"
+      },
+      {
+        "name": "哈特·博赫纳",
+        "character": "Rod",
+        "profile_path": "/nfC2ByTNS3xoygwYVbUYsx2Zae6.jpg"
+      }
+    ],
+    "stills": [
+      "/yNjrT8bsr5WR9bmRjLsIwIoZtFR.jpg",
+      "/fOfLYvd2BTKsOzbC3cz8ZpjDdFa.jpg",
+      "/t1Grxk1h11H2yuDMSFief7J5ZFd.jpg",
+      "/lThzQZTcKKruwb4NkulZEfriHcl.jpg",
+      "/6F15p6mK181wp8jsIPTzofwb1HJ.jpg",
+      "/nuy2dNjWdSfaKufWb45u1wRTxSx.jpg",
+      "/6mXK6AI0nWeBlX7a8RtDL3YmN1g.jpg",
+      "/ioMVr1LUOzfh9FUBAYKC2gP7gzy.jpg",
+      "/tm2CT3VQP9ADWgKpQ2yqbxD6tDO.jpg",
+      "/iNSm1olehH0MHzsMQcuK4rqhF24.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 14,
+        "title": "美国丽人",
+        "poster_path": "/lzQSq5TDstu0J9KVkXmqbrVDs1k.jpg",
+        "vote_average": 8.001
+      },
+      {
+        "tmdb_id": 1342070,
+        "title": "The Most Dangerous City in America",
+        "poster_path": "/aNMGjSvK94etrBMu4mpspApb8e7.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 1342111,
+        "title": "Jakob",
+        "poster_path": "/i2sZqjTTT3ZOqp3xWqsuem0qRW9.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 147,
+        "title": "四百击",
+        "poster_path": "/hEiTvA3E4rkYxZmyuImdWVkIsS6.jpg",
+        "vote_average": 8.009
+      },
+      {
+        "tmdb_id": 71,
+        "title": "跳出我天地",
+        "poster_path": "/5zeIOLQ73QE1H88K6XI0e0z0jRj.jpg",
+        "vote_average": 7.6
+      },
+      {
+        "tmdb_id": 207,
+        "title": "死亡诗社",
+        "poster_path": "/nnkoqpoziQTVNQRIHF8Ai6j9vTt.jpg",
+        "vote_average": 8.3
+      },
+      {
+        "tmdb_id": 70,
+        "title": "百万美元宝贝",
+        "poster_path": "/2XThNbOmO5iMbpLwgsJ3nVVWuWJ.jpg",
+        "vote_average": 7.954
+      },
+      {
+        "tmdb_id": 175,
+        "title": "碧海蓝天",
+        "poster_path": "/ikD0ORv6IXkupSEwXlgMDm5fPeX.jpg",
+        "vote_average": 7.451
+      }
+    ]
   }
 }
