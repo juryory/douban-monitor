@@ -4245,5 +4245,125 @@
         "vote_average": 7.451
       }
     ]
+  },
+  "36916000": {
+    "tmdb_id": 1318413,
+    "tmdb_type": "movie",
+    "original_title": "Pressure",
+    "overview": "　　聚焦诺曼底登陆前夕的紧张局势，围绕盟军远征军最高司令部首席气象学家詹姆斯·斯塔格上尉展开，他的职责是向盟军最高指挥官德怀特·戴维·艾森豪威尔通报决定成败的天气状况。",
+    "genres": [
+      "惊悚",
+      "历史",
+      "战争"
+    ],
+    "runtime": 100,
+    "release_date": "2026-05-25",
+    "backdrop_path": "/q7ZgPZIqSYm3UlrdCldkYzjGOCI.jpg",
+    "countries": [
+      "United Kingdom",
+      "France"
+    ],
+    "director": "安东尼·马拉斯",
+    "cast": [
+      {
+        "name": "安德鲁·斯科特",
+        "character": "Captain James Stagg",
+        "profile_path": "/4F8XpjyQCvtuu21WFm5d8RF5Rl.jpg"
+      },
+      {
+        "name": "布兰登·费舍",
+        "character": "General Dwight D. Eisenhower",
+        "profile_path": "/tFj5PaWWQbb8rHBBhu1EHklznph.jpg"
+      },
+      {
+        "name": "凯瑞·康顿",
+        "character": "Captain Kay Summersby",
+        "profile_path": "/8RO25vJxQSoNdhsVbiAHOsiGfvl.jpg"
+      },
+      {
+        "name": "克里斯·梅西纳",
+        "character": "Irving P. Krick",
+        "profile_path": "/qbT7jHfk3SFtfvVvJI3mbAEkVYy.jpg"
+      },
+      {
+        "name": "戴米恩·路易斯",
+        "character": "Marshall Bernard Montgomery",
+        "profile_path": "/puOXtVatFnAxoOmsFO8z7KTfyJW.jpg"
+      },
+      {
+        "name": "罗伯特·奥尼尔",
+        "character": "Marshall Leigh-Mallory",
+        "profile_path": "/7Fnj1dB9kStTuy29eEVK4IuOxWO.jpg"
+      },
+      {
+        "name": "塔姆馨·托波尔斯基",
+        "character": "Liz Stagg",
+        "profile_path": "/fsOY0Fe3KX8zseeaYjzOy5htLUl.jpg"
+      },
+      {
+        "name": "Henry Ashton",
+        "character": "John Eisenhower",
+        "profile_path": "/uxlD2iHIo24uKXCwh4sjFEvrAij.jpg"
+      }
+    ],
+    "stills": [
+      "/q7ZgPZIqSYm3UlrdCldkYzjGOCI.jpg",
+      "/agJ13N1uQHwdgRwvMKSFBvbcDKH.jpg",
+      "/20yg5FS1ztmcFykVEgulnc6E4Kc.jpg",
+      "/zhS6Kz6JqrkrxUwHdwxS96pvgD3.jpg",
+      "/zaSvShAWSoGhx6Ef2PAefMUd0Xc.jpg",
+      "/nrcOGq5cmRNFGZ6JbPvfGr0G6wR.jpg",
+      "/gyKzb9ocHoqd6adUfPzOs4OiuN4.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1353018,
+        "title": "In Tenebras: Into the Darkness",
+        "poster_path": "/9HAIBrps63m2NpTSZpjaPJQu8RE.jpg",
+        "vote_average": 4.7
+      },
+      {
+        "tmdb_id": 307,
+        "title": "罗马，不设防的城市",
+        "poster_path": "/r8Xg0Tcfsc9iouuXXJASgrJ0qUp.jpg",
+        "vote_average": 8.013
+      },
+      {
+        "tmdb_id": 256369,
+        "title": "Práče",
+        "poster_path": "/lk54xTwQ4zawpBSdJRs5k1yEdZd.jpg",
+        "vote_average": 4.929
+      },
+      {
+        "tmdb_id": 409,
+        "title": "英国病人",
+        "poster_path": "/8eHHqMg8qEYtVw8LQLygsHXSR2q.jpg",
+        "vote_average": 7.144
+      },
+      {
+        "tmdb_id": 982656,
+        "title": "Belgique nazie",
+        "poster_path": "/9h9Fhb77JAnufh43YD70rIFEScI.jpg",
+        "vote_average": 8.5
+      },
+      {
+        "tmdb_id": 432881,
+        "title": "丁一山",
+        "poster_path": "/1CiLlTtQWDQwns3YfanaOfoVtmI.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 256547,
+        "title": "Nasvidenje v naslednji vojni",
+        "poster_path": "/4Ouj32K4HjY4YntoqSxoAz55N8L.jpg",
+        "vote_average": 5.111
+      },
+      {
+        "tmdb_id": 387,
+        "title": "从海底出击",
+        "poster_path": "/veTHiBK1MEPueflQKfwgOglaIQn.jpg",
+        "vote_average": 8.078
+      }
+    ]
   }
 }
