@@ -432,6 +432,17 @@
       .detail-content { padding: 24px 16px 56px; }
     }
 
+    /* ── Toast ── */
+    .toast {
+      position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%);
+      z-index: 9999; background: rgba(30,30,30,0.95); color: var(--ink);
+      padding: 10px 20px; border-radius: 999px; font-size: 0.84rem;
+      white-space: nowrap; pointer-events: none;
+      animation: toast-in 0.2s ease, toast-out 0.3s ease 1.7s forwards;
+    }
+    @keyframes toast-in  { from { opacity:0; transform: translateX(-50%) translateY(8px); } to { opacity:1; transform: translateX(-50%) translateY(0); } }
+    @keyframes toast-out { to   { opacity:0; transform: translateX(-50%) translateY(8px); } }
+
     /* ── Share button ── */
     .detail-share-btn {
       display: inline-flex; align-items: center; gap: 6px;
@@ -908,7 +919,8 @@
         </div>
       </div>` : '';
 
-    // Action buttons (Douban link + share image)
+    // Action buttons (Douban link + copy share link + share image)
+    const detailPageUrl = `https://douban.juryory.com/detail/${esc(it.douban_id)}.html`;
     const doubanBtn = it.url ? `
       <a class="detail-douban-link" href="${esc(it.url)}" target="_blank" rel="noopener">
         在豆瓣查看 <span class="material-symbols-rounded" style="font-size:1rem">open_in_new</span>
@@ -916,6 +928,10 @@
     const doubanLink = `
       <div class="detail-section" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
         ${doubanBtn}
+        <button class="detail-share-btn" onclick="copyShareLink('${detailPageUrl}', this)">
+          <span class="material-symbols-rounded" style="font-size:1rem">link</span>
+          复制分享链接
+        </button>
         <button class="detail-share-btn" onclick="generateShareImage('${esc(it.douban_id)}')">
           <span class="material-symbols-rounded" style="font-size:1rem">image</span>
           生成长图
@@ -1006,6 +1022,28 @@
         <div style="font-size:1.3rem">加载失败</div>
         <pre>错误：${esc(err.message)}\n\n请用本地服务器打开：\npython -m http.server 8080</pre>`;
     }
+  }
+
+  // ── Copy Share Link ──────────────────────────────────────────────────────
+  function showToast(msg) {
+    const t = document.createElement('div');
+    t.className = 'toast'; t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), 2100);
+  }
+
+  function copyShareLink(url, btn) {
+    navigator.clipboard.writeText(url).then(() => {
+      showToast('链接已复制，粘贴到微信即可分享 🎉');
+    }).catch(() => {
+      // Fallback for browsers without clipboard API
+      const ta = document.createElement('textarea');
+      ta.value = url; ta.style.cssText = 'position:fixed;opacity:0';
+      document.body.appendChild(ta); ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      showToast('链接已复制，粘贴到微信即可分享');
+    });
   }
 
   // ── Share Long Image ─────────────────────────────────────────────────────
@@ -1107,7 +1145,7 @@
     const enriched = enrichItem(item);
     const meta   = metadata[doubanId] || {};
     const revs   = reviews[doubanId]  || [];
-    const shareUrl = `https://juryory.github.io/douban-monitor/detail/${doubanId}.html`;
+    const shareUrl = `https://douban.juryory.com/detail/${doubanId}.html`;
 
     const overlay = document.createElement('div');
     overlay.className = 'share-generating';

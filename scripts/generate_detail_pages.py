@@ -81,7 +81,7 @@ def generate_detail_html(item: dict, metadata: dict, posters: dict) -> str:
   <meta property="og:title" content="{esc(og_title)}" />
   <meta property="og:description" content="{esc(og_desc)}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://juryory.github.io/douban-monitor/detail/{douban_id}.html" />
+  <meta property="og:url" content="https://douban.juryory.com/detail/{douban_id}.html" />
 '''
     if poster_url:
         html += f'  <meta property="og:image" content="{esc(poster_url)}" />\n'
@@ -99,11 +99,11 @@ def generate_detail_html(item: dict, metadata: dict, posters: dict) -> str:
     # static page and read its OG/title tags instead of following the redirect
     # to index.html and picking up its generic "豆瓣高分监控" title.
     html += f'''
-  <script>window.location.replace("../#detail/douban:{douban_id}");</script>
-  <noscript><meta http-equiv="refresh" content="0;url=../#detail/douban:{douban_id}" /></noscript>
+  <script>window.location.replace("../#detail/{douban_id}");</script>
+  <noscript><meta http-equiv="refresh" content="0;url=../#detail/{douban_id}" /></noscript>
 </head>
 <body style="text-align:center;padding:40px;font-family:sans-serif;">
-  <p>正在跳转到 <a href="../#detail/douban:{douban_id}">{esc(title)}</a>...</p>
+  <p>正在跳转到 <a href="../#detail/{douban_id}">{esc(title)}</a>...</p>
 </body>
 </html>'''
     return html
