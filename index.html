@@ -1019,12 +1019,6 @@
     });
   }
 
-  async function loadScriptFallback(urls) {
-    for (const url of urls) {
-      try { await loadScript(url); return; } catch(e) { console.warn('CDN unavailable:', url); }
-    }
-    throw new Error('依赖库加载失败，请检查网络连接');
-  }
 
   function buildShareCardHTML(it, meta, revs, shareUrl) {
     const label    = CAT_LABEL[it.category] || it.category;
@@ -1122,14 +1116,8 @@
 
     let cardEl = null;
     try {
-      await loadScriptFallback([
-        'https://cdn.bootcdn.net/ajax/libs/html2canvas/1.4.1/html2canvas.min.js',
-        'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js',
-      ]);
-      await loadScriptFallback([
-        'https://cdn.bootcdn.net/ajax/libs/qrcodejs/1.0.0/qrcode.min.js',
-        'https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js',
-      ]);
+      await loadScript('vendor/html2canvas.min.js');
+      await loadScript('vendor/qrcode.min.js');
 
       cardEl = document.getElementById('shareCardEl');
       if (!cardEl) {
