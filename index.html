@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>豆瓣高分监控</title>
+  <meta property="og:title"       content="豆瓣高分监控" />
+  <meta property="og:description" content="持续追踪豆瓣高分影视" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://douban.juryory.com/" />
+  <meta property="og:image"       content="" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -761,12 +766,22 @@
   }
 
   // ── Detail Page ──────────────────────────────────────────────────────────
+  function setMeta(prop, val) {
+    const el = document.querySelector(`meta[property="${prop}"]`);
+    if (el) el.setAttribute('content', val);
+  }
+
   function showGrid() {
     document.getElementById('detailView').classList.remove('active');
     document.getElementById('detailView').innerHTML = '';
     document.querySelector('header').style.display = '';
     document.querySelector('main').style.display = '';
     document.getElementById('backTop').style.removeProperty('display');
+    document.title = '豆瓣高分监控';
+    setMeta('og:title',       '豆瓣高分监控');
+    setMeta('og:description', '持续追踪豆瓣高分影视');
+    setMeta('og:url',         'https://douban.juryory.com/');
+    setMeta('og:image',       '');
   }
 
   function showDetail(doubanId) {
@@ -776,6 +791,17 @@
     const enriched = enrichItem(item);
     const meta = metadata[doubanId] || {};
     const revs = reviews[doubanId] || [];
+
+    // Update page title + OG meta so WeChat browser share reads correct info
+    const shareYear = (enriched.release_date || '').slice(0, 4) || String(item.year || '');
+    const shareDesc = shareYear
+      ? `${shareYear}·${fmt(item.rating_count)}人打出${item.rating}分`
+      : `${fmt(item.rating_count)}人打出${item.rating}分`;
+    document.title = item.title;
+    setMeta('og:title',       item.title);
+    setMeta('og:description', shareDesc);
+    setMeta('og:url',         `https://douban.juryory.com/detail/${doubanId}.html`);
+    if (enriched.poster) setMeta('og:image', enriched.poster);
 
     document.querySelector('header').style.display = 'none';
     document.querySelector('main').style.display = 'none';
