@@ -702,12 +702,26 @@
     const revs = reviews[doubanId] || [];
 
     // Update page title + OG meta so WeChat browser share reads correct info
-    const shareYear = (enriched.release_date || '').slice(0, 4) || String(item.year || '');
-    const shareDesc = shareYear
-      ? `${shareYear}·${fmt(item.rating_count)}人打出${item.rating}分`
-      : `${fmt(item.rating_count)}人打出${item.rating}分`;
+    const shareYear  = (enriched.release_date || '').slice(0, 4) || String(item.year || '');
+    const catLabel   = CAT_LABEL[item.category] || '';
+    const COUNTRY_NAMES = {
+      CN:'中国',HK:'香港',TW:'台湾',JP:'日本',KR:'韩国',
+      US:'美国',GB:'英国',FR:'法国',DE:'德国',IT:'意大利',
+      ES:'西班牙',TH:'泰国',IN:'印度',AU:'澳大利亚',CA:'加拿大',RU:'俄罗斯',
+    };
+    const rawCountry = (meta.countries || [])[0] || '';
+    const country    = COUNTRY_NAMES[rawCountry] || rawCountry;
+    const genreStr   = (enriched.genres || []).slice(0, 2).join('、');
+    const shareParts = [];
+    if (shareYear) shareParts.push(shareYear + '年');
+    if (country)   shareParts.push(country);
+    if (catLabel && genreStr) shareParts.push(`${catLabel}（${genreStr}）`);
+    else if (catLabel)        shareParts.push(catLabel);
+    else if (genreStr)        shareParts.push(genreStr);
+    const shareDesc = (shareParts.length ? shareParts.join('·') + '\n' : '')
+      + `在豆瓣有${fmt(item.rating_count)}人打出${item.rating}分`;
     document.title = item.title;
-    setMeta('og:title',       item.title);
+    setMeta('og:title',       `高分影视《${item.title}》`);
     setMeta('og:description', shareDesc);
     setMeta('og:url',         `https://douban.juryory.com/detail/${doubanId}.html`);
     if (enriched.poster) setMeta('og:image', enriched.poster);

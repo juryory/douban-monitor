@@ -38,6 +38,7 @@ def generate_detail_html(item: dict, metadata: dict, posters: dict) -> str:
     rating = item.get("rating", "N/A")
     rating_count = item.get("rating_count", 0)
     year = item.get("year", "")
+    category = item.get("category", "")
 
     # Get extended metadata
     meta = metadata.get(douban_id, {})
@@ -45,6 +46,7 @@ def generate_detail_html(item: dict, metadata: dict, posters: dict) -> str:
     genres = meta.get("genres", [])
     release_date = meta.get("release_date", "")
     overview = (meta.get("overview") or "")[:150]
+    countries = meta.get("countries", [])
 
     # posters.json already stores full TMDB URLs; only metadata.poster_path is a bare path.
     tmdb_base = "https://image.tmdb.org/t/p/w500"
@@ -62,12 +64,35 @@ def generate_detail_html(item: dict, metadata: dict, posters: dict) -> str:
         count_str = str(rating_count)
 
     # Build title and description for WeChat share card
-    og_title = title
+    og_title = f"高分影视《{title}》"
+
+    cat_label = {"movie": "电影", "tv": "剧集", "variety": "综艺"}.get(category, "")
     release_year = (release_date[:4] if release_date else None) or (str(year) if year else "")
+    _country_names = {
+        "CN": "中国", "HK": "香港", "TW": "台湾", "JP": "日本",
+        "KR": "韩国", "US": "美国", "GB": "英国", "FR": "法国",
+        "DE": "德国", "IT": "意大利", "ES": "西班牙", "TH": "泰国",
+        "IN": "印度", "AU": "澳大利亚", "CA": "加拿大", "RU": "俄罗斯",
+    }
+    raw_country = countries[0] if countries else ""
+    country = _country_names.get(raw_country, raw_country)
+    genre_str = "、".join(genres[:2]) if genres else ""
+
+    parts = []
     if release_year:
-        og_desc = f"{release_year}·{count_str}人打出{rating}分"
-    else:
-        og_desc = f"{count_str}人打出{rating}分"
+        parts.append(f"{release_year}年")
+    if country:
+        parts.append(country)
+    if cat_label and genre_str:
+        parts.append(f"{cat_label}（{genre_str}）")
+    elif cat_label:
+        parts.append(cat_label)
+    elif genre_str:
+        parts.append(genre_str)
+
+    line1 = "·".join(parts)
+    line2 = f"在豆瓣有{count_str}人打出{rating}分"
+    og_desc = f"{line1}\n{line2}" if line1 else line2
 
     # Generate minimal HTML with OG tags
     html = f'''<!DOCTYPE html>
@@ -117,6 +142,7 @@ def _library_item_to_share_item(lib_item: dict) -> dict:
         "rating": lib_item.get("last_rating", "N/A"),
         "rating_count": lib_item.get("last_rating_count", 0) or 0,
         "year": lib_item.get("year", ""),
+        "category": lib_item.get("category", ""),
     }
 
 
