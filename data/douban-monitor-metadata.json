@@ -4365,5 +4365,107 @@
         "vote_average": 8.078
       }
     ]
+  },
+  "37071123": {
+    "tmdb_id": 276161,
+    "tmdb_type": "tv",
+    "original_title": "참교육",
+    "overview": "在校园暴力猖獗、教师权威瓦解且恐龙家长无理解干涉的崩坏世界中，政府为了重整教育体制，依法创立了特殊机构“教权保护局”。当学校陷入常规手段无法解决的混乱失序时，特勤小组便会奉命出动。他们获准在必要时不惜逾越法律规范，使出课本上绝对不会教的强硬暴力与非常规手段，展开拳拳到肉的黑色幽默反击。这群特勤队员无所不用其极，誓言要对越界的失控学生、失格教师及傲慢家长实施痛快的“铁拳教育”，以恶制恶地夺回崩塌的教育正义与崩溃的校园秩序。",
+    "genres": [
+      "动作冒险",
+      "剧情",
+      "喜剧"
+    ],
+    "runtime": null,
+    "release_date": "2026-06-05",
+    "backdrop_path": "/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "洪钟灿",
+    "cast": [
+      {
+        "name": "金武烈",
+        "character": "Na Hwa-jin",
+        "profile_path": "/wLuVca9icDLjUkOG84IlEmfP52b.jpg"
+      },
+      {
+        "name": "李星民",
+        "character": "Choi Kang-seok",
+        "profile_path": "/p71yyyIQmHbrOZHU2lphMvjlVIk.jpg"
+      },
+      {
+        "name": "秦基周",
+        "character": "Im Han-rim",
+        "profile_path": "/xwhR8nrFKxalOjmADxJPTouxE0g.jpg"
+      },
+      {
+        "name": "表志勋",
+        "character": "Bong  Geun-dae",
+        "profile_path": "/rg2fuaF8yRmKBgyGWdpvEmtCBmU.jpg"
+      }
+    ],
+    "stills": [
+      "/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
+      "/ueCAMPHlTcEkuSSxGBHX85zfvV9.jpg",
+      "/wsfF3ASiJODTZ9hSlHkEYqJH6oN.jpg",
+      "/vAlyMWbVUWImy0SFsDdROjy23mK.jpg",
+      "/sGitHICLzIQQBiwE67lZLy6W67u.jpg",
+      "/1wWMunRZNNy8YIs0pUE9lO3TJv2.jpg",
+      "/dsFGPx3wBty7aIjqSbO3uAE0m6f.jpg",
+      "/rQRVOn65fWzSMBlxB4eyoAYbYNb.jpg",
+      "/pHvDihUypRTEKnV61rzyztBdpjM.jpg",
+      "/8jUfpHfzJXfrnDJ6yztj8jRWfYB.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 902,
+        "title": "游戏王：怪兽之决斗",
+        "poster_path": "/ix9ujb6r96bumLESLBmqipXLMYw.jpg",
+        "vote_average": 8.257
+      },
+      {
+        "tmdb_id": 904,
+        "title": "林肯岗",
+        "poster_path": "/sNhsM92gYftNFagus4aUIfj1iJU.jpg",
+        "vote_average": 8.635
+      },
+      {
+        "tmdb_id": 120981,
+        "title": "Год собаки",
+        "poster_path": "/wOERPB4wrivjkzpyrs3jikd25pZ.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 233196,
+        "title": "프레쉬맨",
+        "poster_path": "/rMlb0lOnX3CPoXceLHftPYmLF3V.jpg",
+        "vote_average": 1.0
+      },
+      {
+        "tmdb_id": 233219,
+        "title": "ONE：高中英雄们",
+        "poster_path": "/7jIZaNtpZlEwNLWGaj0dXl4sDSq.jpg",
+        "vote_average": 7.925
+      },
+      {
+        "tmdb_id": 233347,
+        "title": "流氓读书会",
+        "poster_path": "/mGtWei3QYrwNKAAepUD85ISuUsT.jpg",
+        "vote_average": 8.4
+      },
+      {
+        "tmdb_id": 233408,
+        "title": "放学后少年花子君",
+        "poster_path": "/z2HTuCdpRObzpR1oLRqodKrsEXh.jpg",
+        "vote_average": 8.1
+      },
+      {
+        "tmdb_id": 57760,
+        "title": "哈哈大校",
+        "poster_path": "/m4DFP74V5pQMZdXlCTQ8nmsMbIK.jpg",
+        "vote_average": 6.8
+      }
+    ]
   }
 }
