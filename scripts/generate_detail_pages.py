@@ -61,12 +61,13 @@ def generate_detail_html(item: dict, metadata: dict, posters: dict) -> str:
     else:
         count_str = str(rating_count)
 
-    # Build title and description
-    year_str = f" ({year})" if year else ""
-    og_title = f"{title}{year_str} {rating}分 {count_str}人评"
-    og_desc = f"{title}{year_str} · 豆瓣评分 {rating} ({count_str}人) · {' / '.join(genres) if genres else ''}"
-    if overview:
-        og_desc += f"\n{overview}..."
+    # Build title and description for WeChat share card
+    og_title = title
+    release_year = (release_date[:4] if release_date else None) or (str(year) if year else "")
+    if release_year:
+        og_desc = f"{release_year}·{count_str}人打出{rating}分"
+    else:
+        og_desc = f"{count_str}人打出{rating}分"
 
     # Generate minimal HTML with OG tags
     html = f'''<!DOCTYPE html>

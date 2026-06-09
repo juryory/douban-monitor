@@ -431,6 +431,87 @@
       .detail-overview { text-align: left; }
       .detail-content { padding: 24px 16px 56px; }
     }
+
+    /* ── Share button ── */
+    .detail-share-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 22px; border-radius: 999px;
+      background: rgba(255,255,255,0.06); border: 1px solid var(--line);
+      color: var(--ink); font-size: 0.86rem; cursor: pointer;
+      font: inherit;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .detail-share-btn:hover { border-color: rgba(240,191,98,0.35); background: rgba(255,255,255,0.1); }
+    .detail-share-btn:disabled { opacity: 0.5; cursor: default; }
+
+    /* ── Share generating overlay ── */
+    .share-generating {
+      position: fixed; inset: 0; z-index: 9000;
+      background: rgba(0,0,0,0.72); backdrop-filter: blur(8px);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 14px; color: var(--ink); font-size: 0.96rem;
+    }
+
+    /* ── Share card (off-screen for screenshot) ── */
+    #shareCardEl {
+      position: fixed; left: -9999px; top: 0;
+      width: 480px; z-index: -9999;
+      font-family: "PingFang SC", "Noto Sans SC", "Helvetica Neue", sans-serif;
+    }
+    .sc-card { background: #0a0a0c; color: #f5efdf; width: 480px; }
+    .sc-header { padding: 14px 20px 10px; border-bottom: 1px solid rgba(255,241,205,0.08); }
+    .sc-brand { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.18em; color: #f0bf62; text-transform: uppercase; }
+    .sc-hero { display: flex; gap: 16px; padding: 20px; }
+    .sc-poster {
+      flex-shrink: 0; width: 120px; height: 180px;
+      border-radius: 10px; overflow: hidden; background: rgba(80,50,20,0.5);
+    }
+    .sc-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .sc-meta { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+    .sc-title { font-size: 1.1rem; font-weight: 700; line-height: 1.25; }
+    .sc-orig-title { font-size: 0.72rem; color: rgba(245,239,223,0.5); }
+    .sc-meta-row { font-size: 0.72rem; color: rgba(245,239,223,0.55); }
+    .sc-rating-row { display: flex; align-items: center; gap: 10px; margin-top: 2px; }
+    .sc-rating-num { font-size: 1.9rem; font-weight: 700; color: #f0bf62; line-height: 1; }
+    .sc-stars { color: #f0bf62; font-size: 0.72rem; }
+    .sc-rating-label { font-size: 0.66rem; color: rgba(245,239,223,0.55); margin-top: 2px; }
+    .sc-director { font-size: 0.72rem; color: rgba(245,239,223,0.55); }
+    .sc-genres { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }
+    .sc-genre {
+      padding: 1px 7px; border-radius: 999px;
+      border: 1px solid rgba(255,241,205,0.12);
+      font-size: 0.62rem; color: rgba(245,239,223,0.5);
+    }
+    .sc-body { padding: 0 20px 14px; }
+    .sc-section-title {
+      font-size: 0.78rem; font-weight: 600; color: rgba(245,239,223,0.6);
+      margin-bottom: 8px; padding-left: 8px; border-left: 2px solid #f0bf62;
+    }
+    .sc-overview { font-size: 0.78rem; line-height: 1.72; color: rgba(245,239,223,0.72); }
+    .sc-reviews { display: flex; flex-direction: column; gap: 8px; }
+    .sc-review {
+      background: rgba(18,18,20,1);
+      border: 1px solid rgba(255,241,205,0.07);
+      border-radius: 8px; padding: 10px 12px;
+    }
+    .sc-review-header { display: flex; justify-content: space-between; margin-bottom: 3px; font-size: 0.72rem; }
+    .sc-review-user { font-weight: 600; }
+    .sc-review-date { color: rgba(245,239,223,0.42); }
+    .sc-review-stars { color: #f0bf62; font-size: 0.68rem; margin-bottom: 3px; }
+    .sc-review-text { font-size: 0.76rem; line-height: 1.6; color: rgba(245,239,223,0.78); }
+    .sc-footer {
+      padding: 14px 20px; border-top: 1px solid rgba(255,241,205,0.08);
+      display: flex; align-items: center; gap: 14px;
+    }
+    .sc-qr {
+      width: 72px; height: 72px; flex-shrink: 0;
+      background: #f5efdf; border-radius: 6px; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .sc-qr img, .sc-qr canvas { width: 72px !important; height: 72px !important; display: block !important; }
+    .sc-footer-text { flex: 1; }
+    .sc-footer-title { font-size: 0.8rem; font-weight: 600; margin-bottom: 3px; }
+    .sc-footer-url { font-size: 0.6rem; color: rgba(245,239,223,0.38); word-break: break-all; }
   </style>
 </head>
 <body>
@@ -827,13 +908,19 @@
         </div>
       </div>` : '';
 
-    // Douban link
-    const doubanLink = it.url ? `
-      <div class="detail-section">
-        <a class="detail-douban-link" href="${esc(it.url)}" target="_blank" rel="noopener">
-          在豆瓣查看 <span class="material-symbols-rounded" style="font-size:1rem">open_in_new</span>
-        </a>
-      </div>` : '';
+    // Action buttons (Douban link + share image)
+    const doubanBtn = it.url ? `
+      <a class="detail-douban-link" href="${esc(it.url)}" target="_blank" rel="noopener">
+        在豆瓣查看 <span class="material-symbols-rounded" style="font-size:1rem">open_in_new</span>
+      </a>` : '';
+    const doubanLink = `
+      <div class="detail-section" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        ${doubanBtn}
+        <button class="detail-share-btn" onclick="generateShareImage('${esc(it.douban_id)}')">
+          <span class="material-symbols-rounded" style="font-size:1rem">image</span>
+          生成长图
+        </button>
+      </div>`;
 
     return `
       <button class="detail-back-btn" onclick="history.back()">
@@ -918,6 +1005,158 @@
       el.innerHTML = `
         <div style="font-size:1.3rem">加载失败</div>
         <pre>错误：${esc(err.message)}\n\n请用本地服务器打开：\npython -m http.server 8080</pre>`;
+    }
+  }
+
+  // ── Share Long Image ─────────────────────────────────────────────────────
+  function loadScript(src) {
+    return new Promise((resolve, reject) => {
+      if (document.querySelector(`script[src="${CSS.escape ? src : src}"]`)) { resolve(); return; }
+      const s = document.createElement('script');
+      s.src = src; s.onload = resolve;
+      s.onerror = () => reject(new Error('脚本加载失败：' + src));
+      document.head.appendChild(s);
+    });
+  }
+
+  function buildShareCardHTML(it, meta, revs, shareUrl) {
+    const label    = CAT_LABEL[it.category] || it.category;
+    const runtime  = meta.runtime ? `${meta.runtime}分钟` : '';
+    const countries = (meta.countries || []).join(' / ');
+    const year     = it.year || '';
+    const metaParts = [year, label, runtime, countries].filter(Boolean);
+    const genres   = (it.genres || []).slice(0, 3);
+    const director = meta.director || '';
+    const rawOv    = it.overview || '';
+    const overview = rawOv.slice(0, 220) + (rawOv.length > 220 ? '…' : '');
+
+    const origTitle = (it.original_title && it.original_title !== it.title)
+      ? `<div class="sc-orig-title">${esc(it.original_title)}</div>` : '';
+
+    const posterImg = it.poster
+      ? `<img src="${esc(it.poster)}" crossorigin="anonymous" onerror="this.style.display='none'">` : '';
+
+    const starsCount = it.rating ? Math.round(it.rating / 2) : 0;
+    const starsHtml  = starsCount ? '★'.repeat(starsCount) + '☆'.repeat(5 - starsCount) : '';
+    const genresHtml = genres.map(g => `<span class="sc-genre">${esc(g)}</span>`).join('');
+
+    const overviewBlock = overview ? `
+      <div class="sc-body">
+        <div class="sc-section-title">简介</div>
+        <div class="sc-overview">${esc(overview)}</div>
+      </div>` : '';
+
+    const topRevs = revs.slice(0, 2);
+    const reviewsBlock = topRevs.length ? `
+      <div class="sc-body">
+        <div class="sc-section-title">豆瓣短评</div>
+        <div class="sc-reviews">
+          ${topRevs.map(r => {
+            const rs = r.rating ? '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating) : '';
+            return `
+              <div class="sc-review">
+                <div class="sc-review-header">
+                  <span class="sc-review-user">${esc(r.user)}</span>
+                  <span class="sc-review-date">${esc(r.date)}</span>
+                </div>
+                ${rs ? `<div class="sc-review-stars">${rs}</div>` : ''}
+                <div class="sc-review-text">${esc(r.comment)}</div>
+              </div>`;
+          }).join('')}
+        </div>
+      </div>` : '';
+
+    return `
+      <div class="sc-card">
+        <div class="sc-header">
+          <span class="sc-brand">DOUBAN · 高分监控</span>
+        </div>
+        <div class="sc-hero">
+          <div class="sc-poster">${posterImg}</div>
+          <div class="sc-meta">
+            <div class="sc-title">${esc(it.title)}</div>
+            ${origTitle}
+            <div class="sc-meta-row">${metaParts.join(' · ')}</div>
+            <div class="sc-rating-row">
+              <span class="sc-rating-num">${it.rating || ''}</span>
+              <div>
+                ${starsHtml ? `<div class="sc-stars">${starsHtml}</div>` : ''}
+                <div class="sc-rating-label">${fmt(it.rating_count)}人评价</div>
+              </div>
+            </div>
+            ${director ? `<div class="sc-director">导演：${esc(director)}</div>` : ''}
+            ${genresHtml ? `<div class="sc-genres">${genresHtml}</div>` : ''}
+          </div>
+        </div>
+        ${overviewBlock}
+        ${reviewsBlock}
+        <div class="sc-footer">
+          <div class="sc-qr" id="shareQrCode"></div>
+          <div class="sc-footer-text">
+            <div class="sc-footer-title">扫码查看详情</div>
+            <div class="sc-footer-url">${esc(shareUrl)}</div>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  async function generateShareImage(doubanId) {
+    const item = allItems.find(it => it.douban_id === doubanId);
+    if (!item) return;
+    const enriched = enrichItem(item);
+    const meta   = metadata[doubanId] || {};
+    const revs   = reviews[doubanId]  || [];
+    const shareUrl = `https://juryory.github.io/douban-monitor/detail/${doubanId}.html`;
+
+    const overlay = document.createElement('div');
+    overlay.className = 'share-generating';
+    overlay.innerHTML = '<div class="spinner"></div><span>正在生成长图…</span>';
+    document.body.appendChild(overlay);
+
+    let cardEl = null;
+    try {
+      await loadScript('https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js');
+      await loadScript('https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js');
+
+      cardEl = document.getElementById('shareCardEl');
+      if (!cardEl) {
+        cardEl = document.createElement('div');
+        cardEl.id = 'shareCardEl';
+        document.body.appendChild(cardEl);
+      }
+      cardEl.innerHTML = buildShareCardHTML(enriched, meta, revs, shareUrl);
+
+      try {
+        const qrDataUrl = await QRCode.toDataURL(shareUrl, {
+          width: 72, margin: 1,
+          color: { dark: '#0a0a0c', light: '#f5efdf' }
+        });
+        const qrContainer = cardEl.querySelector('#shareQrCode');
+        if (qrContainer) {
+          const img = document.createElement('img');
+          img.src = qrDataUrl;
+          img.style.cssText = 'width:72px;height:72px;display:block;';
+          qrContainer.appendChild(img);
+        }
+      } catch(e) { console.warn('QR code generation failed:', e); }
+
+      await new Promise(r => setTimeout(r, 300));
+
+      const scCard = cardEl.querySelector('.sc-card');
+      const canvas = await html2canvas(scCard, {
+        useCORS: true, allowTaint: false, scale: 2,
+        backgroundColor: '#0a0a0c', logging: false,
+      });
+
+      const a = document.createElement('a');
+      a.download = `${item.title || 'share'}.png`;
+      a.href = canvas.toDataURL('image/png');
+      a.click();
+    } catch(e) {
+      alert('生成长图失败：' + e.message);
+    } finally {
+      if (document.body.contains(overlay)) document.body.removeChild(overlay);
+      if (cardEl) cardEl.innerHTML = '';
     }
   }
 
