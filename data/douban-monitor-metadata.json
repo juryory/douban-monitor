@@ -4467,5 +4467,127 @@
         "vote_average": 6.8
       }
     ]
+  },
+  "36934908": {
+    "tmdb_id": 1118224,
+    "tmdb_type": "movie",
+    "original_title": "மகாராஜா",
+    "overview": "理发师玛哈拉贾大闹警局，悬赏70万要为一个价值300的垃圾桶立案。众人疑惑之际，才发觉玛哈拉贾来警局另有目的……当女儿被恶人残忍迫害，真相与正义似乎无处可寻，憨厚老实的底层父亲只能以身设局，用剃须刀杀出一条复仇血路。永远不要低估一个父亲为女儿复仇的决心！",
+    "genres": [
+      "动作",
+      "惊悚",
+      "悬疑"
+    ],
+    "runtime": 141,
+    "release_date": "2024-06-14",
+    "backdrop_path": "/if61bpqSXngkGoGNjMdHZt02wZS.jpg",
+    "countries": [
+      "India"
+    ],
+    "director": "尼蒂兰·萨米纳坦",
+    "cast": [
+      {
+        "name": "维杰·西图帕提",
+        "character": "Maharaja",
+        "profile_path": "/6qaMCgZ4MMBMYvTYEKCjLIdq0B5.jpg"
+      },
+      {
+        "name": "阿努拉格·卡施亚普",
+        "character": "Selvam",
+        "profile_path": "/wS1aF7dFDnKC44ZbFkbDcIpmFq5.jpg"
+      },
+      {
+        "name": "萨沙纳·纳米达斯",
+        "character": "Jothi",
+        "profile_path": "/vKAZo6Vs04qO9cUacLJa0FiliuY.jpg"
+      },
+      {
+        "name": "纳塔拉詹·苏布拉马尼亚姆",
+        "character": "Inspector S. Varadharajan",
+        "profile_path": "/1sKmgVKSw8qJUzBTJGvL45wlDss.jpg"
+      },
+      {
+        "name": "纳蒂",
+        "character": "Kokila",
+        "profile_path": "/1TVXmU20s1mrIHEM5f8WpxWDEsd.jpg"
+      },
+      {
+        "name": "玛玛塔·莫汉达斯",
+        "character": "Aasifa",
+        "profile_path": "/ce9B8AG0IN77F9GR3b8gj13CP1q.jpg"
+      },
+      {
+        "name": "阿鲁多斯",
+        "character": "SI R. K. Perumalsamy",
+        "profile_path": "/gDMVbi6reJPolJm9qtqYwTWyh4p.jpg"
+      },
+      {
+        "name": "阿比拉米",
+        "character": "Constable Kuzhandhaivelu",
+        "profile_path": "/n2SjFPNv3EN1ziqfdpyjiEvoqt7.jpg"
+      }
+    ],
+    "stills": [
+      "/if61bpqSXngkGoGNjMdHZt02wZS.jpg",
+      "/o6G8llbhWHnhKzNPSSvIbic5NWe.jpg",
+      "/bZtiJPlWQN1Byk9BU5X5DQywSrt.jpg",
+      "/oNEsrICfgE7GDKwuhW1omZ7sRft.jpg",
+      "/G172jeRHvYAcFpSG1MfxEJyutk.jpg",
+      "/ktTylzLI6i1cohJs8g9FnNxjlOy.jpg",
+      "/ot1UteJ1TL3xWuhkLRNzBULw4KJ.jpg",
+      "/5UhPaOmDc504zi67JVhkjbqnmR2.jpg",
+      "/lchmHbMc61ECigkrmNNXZXGt2Ud.jpg",
+      "/ncNkgQ12Rhzb4RoXOJpd9zsqNYE.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 564,
+        "title": "木乃伊",
+        "poster_path": "/4GzdzEZJTVFwIUf6q6B73gqEP1b.jpg",
+        "vote_average": 6.979
+      },
+      {
+        "tmdb_id": 591,
+        "title": "达·芬奇密码",
+        "poster_path": "/yi4a1ZU2c79FDXbEcBPa2770d1c.jpg",
+        "vote_average": 6.728
+      },
+      {
+        "tmdb_id": 652,
+        "title": "特洛伊",
+        "poster_path": "/cTjAj9L4YGIwXZi54uMwVGK2Eaf.jpg",
+        "vote_average": 7.2
+      },
+      {
+        "tmdb_id": 10253,
+        "title": "龙之战",
+        "poster_path": "/s7mQ0irlakRrSVXw6vemRzTsBvE.jpg",
+        "vote_average": 4.576
+      },
+      {
+        "tmdb_id": 9946,
+        "title": "魔鬼末日",
+        "poster_path": "/wGaP6zaSBKV0JIC9IPVmaj5nzJT.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 2654,
+        "title": "战栗黑洞",
+        "poster_path": "/msh4tEUzbnEqlHcFOUH4O0Zti8r.jpg",
+        "vote_average": 7.2
+      },
+      {
+        "tmdb_id": 11568,
+        "title": "福禄双霸天2000",
+        "poster_path": "/nCoY8UK2x4DWpICipL40Hg4cDmO.jpg",
+        "vote_average": 5.3
+      },
+      {
+        "tmdb_id": 11046,
+        "title": "血染雪山堡",
+        "poster_path": "/dnyiVS4Ad4w4rfS4Bm1YalEdonx.jpg",
+        "vote_average": 7.506
+      }
+    ]
   }
 }
