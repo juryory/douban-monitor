@@ -121,7 +121,8 @@
       "year": "2026",
       "url": "https://movie.douban.com/subject/37441858/",
       "qualified_at": "2026-06-11T09:00:12.394342+08:00",
-      "first_discovered_at": "2026-06-08T09:13:51.735013+08:00"
+      "first_discovered_at": "2026-06-08T09:13:51.735013+08:00",
+      "cover_url": "https://image.tmdb.org/t/p/w500/2Sohh8zGUJRbH3E5kLavpAUBn0S.jpg"
     },
     {
       "title": "地狱占星师",
@@ -165,7 +166,8 @@
       "year": "",
       "url": "https://movie.douban.com/subject/37200350/",
       "qualified_at": "2026-06-11T09:00:12.394342+08:00",
-      "first_discovered_at": "2026-06-11T09:00:12.394342+08:00"
+      "first_discovered_at": "2026-06-11T09:00:12.394342+08:00",
+      "cover_url": "https://image.tmdb.org/t/p/w500/pmcEi3ySb5k2d7TqCnEhlDFGy6m.jpg"
     }
   ],
   "status": "has_qualified"
