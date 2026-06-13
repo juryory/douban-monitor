@@ -715,13 +715,13 @@
     const shareParts = [];
     if (shareYear) shareParts.push(shareYear + '年');
     if (country)   shareParts.push(country);
-    if (catLabel && genreStr) shareParts.push(`${catLabel}（${genreStr}）`);
-    else if (catLabel)        shareParts.push(catLabel);
-    else if (genreStr)        shareParts.push(genreStr);
-    const shareDesc = (shareParts.length ? shareParts.join('·') + '\n' : '')
-      + `在豆瓣有${fmt(item.rating_count)}人打出${item.rating}分`;
+    if (catLabel)  shareParts.push(catLabel);
+    const shareLines = [shareParts.join('·')];
+    if (genreStr) shareLines.push(genreStr);
+    shareLines.push(`${fmt(item.rating_count)}人打出${item.rating}分`);
+    const shareDesc = shareLines.filter(Boolean).join('\n');
     document.title = item.title;
-    setMeta('og:title',       `高分影视《${item.title}》`);
+    setMeta('og:title',       `《${item.title}》`);
     setMeta('og:description', shareDesc);
     setMeta('og:url',         `https://douban.juryory.com/detail/${doubanId}.html`);
     if (enriched.poster) setMeta('og:image', enriched.poster);

@@ -64,7 +64,7 @@ def generate_detail_html(item: dict, metadata: dict, posters: dict) -> str:
         count_str = str(rating_count)
 
     # Build title and description for WeChat share card
-    og_title = f"高分影视《{title}》"
+    og_title = f"《{title}》"
 
     cat_label = {"movie": "电影", "tv": "剧集", "variety": "综艺"}.get(category, "")
     release_year = (release_date[:4] if release_date else None) or (str(year) if year else "")
@@ -83,16 +83,14 @@ def generate_detail_html(item: dict, metadata: dict, posters: dict) -> str:
         parts.append(f"{release_year}年")
     if country:
         parts.append(country)
-    if cat_label and genre_str:
-        parts.append(f"{cat_label}（{genre_str}）")
-    elif cat_label:
+    if cat_label:
         parts.append(cat_label)
-    elif genre_str:
-        parts.append(genre_str)
 
-    line1 = "·".join(parts)
-    line2 = f"在豆瓣有{count_str}人打出{rating}分"
-    og_desc = f"{line1}\n{line2}" if line1 else line2
+    lines = ["·".join(parts)]
+    if genre_str:
+        lines.append(genre_str)
+    lines.append(f"{count_str}人打出{rating}分")
+    og_desc = "\n".join(line for line in lines if line)
 
     # Generate minimal HTML with OG tags
     html = f'''<!DOCTYPE html>
