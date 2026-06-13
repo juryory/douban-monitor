@@ -4590,6 +4590,359 @@
       }
     ]
   },
-  "37441858": {},
-  "37200350": {}
+  "37441858": {
+    "tmdb_id": 296286,
+    "tmdb_type": "tv",
+    "original_title": "スーパーの裏でヤニ吸うふたり",
+    "overview": "每天过着社畜生活的上班族佐佐木，唯一的慰藉就是常去超市的收银员山田。某天疲惫不堪的他再次前往超市寻求治愈，却发现山田刚好不在。郁闷的他试图通过抽烟缓解压力，却怎么也找不到吸烟区，还被路人投以嫌弃的目光。就在这时，一位穿着奇特的田山女士把他带到了超市后面一起抽烟。从此，他便经常跑来和田山一起吞云吐雾、谈天说地。然而这位田山女士的真实身份竟然是……",
+    "genres": [
+      "动画",
+      "剧情",
+      "喜剧"
+    ],
+    "runtime": null,
+    "release_date": "2026-07-09",
+    "backdrop_path": "/gkmE41A5ev5M299hLgX3JrWAM16.jpg",
+    "countries": [
+      "JP"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "星希成奏",
+        "character": "Yamada (voice)",
+        "profile_path": "/Ajo0KjBdtYPH6FLjxeexHEStk3T.jpg"
+      },
+      {
+        "name": "佐藤拓也",
+        "character": "Sasaki (voice)",
+        "profile_path": "/xZgoTs6DOSneHkoOWL751pQzLru.jpg"
+      },
+      {
+        "name": "高桥伸也",
+        "character": "Suzuki (voice)",
+        "profile_path": "/19DN4yrD9c3E7BWthVEqvwhQNdb.jpg"
+      },
+      {
+        "name": "行成飞亚",
+        "character": "Gotō (voice)",
+        "profile_path": "/aR11JLaHVeTM1RgGULsU9zIiaZs.jpg"
+      },
+      {
+        "name": "丰口惠美",
+        "character": "Ōno (voice)",
+        "profile_path": "/qrnzkvoaODEplqhtkcyDgUa3Qtp.jpg"
+      },
+      {
+        "name": "安田陆矢",
+        "character": "Obata (voice)",
+        "profile_path": "/eZCxGqkEibJkUEhLO9Xp4zNDlY3.jpg"
+      },
+      {
+        "name": "日笠阳子",
+        "character": "Maezawa (voice)",
+        "profile_path": "/mP3bj0s1gqJ6tCKFLhu4b1CkJj7.jpg"
+      }
+    ],
+    "stills": [
+      "/gkmE41A5ev5M299hLgX3JrWAM16.jpg",
+      "/2LOlHqPTfY1SbQOjxHpM5VgavxM.jpg",
+      "/t19vHBHvOVulT4qFfIGjRdINldm.jpg",
+      "/9HYL1EAUK9j5AIpiUk2leB3ur8W.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 120199,
+        "title": "司藤",
+        "poster_path": "/7iG3NZfZkyaxJSsJMerOkcZFgI8.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 120204,
+        "title": "Petit Vampire",
+        "poster_path": "/mHSGYRTWw3VphcqGkGrBkN3VBJO.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 120089,
+        "title": "间谍过家家",
+        "poster_path": "/xkEGd9GF3oty89xDiXMGJm6pGQL.jpg",
+        "vote_average": 8.506
+      },
+      {
+        "tmdb_id": 120155,
+        "title": "史上最强大魔王转生为村民甲",
+        "poster_path": "/xj0QUqsOKyvE5HgQpVtoy3owPOM.jpg",
+        "vote_average": 7.121
+      },
+      {
+        "tmdb_id": 201346,
+        "title": "反转人生",
+        "poster_path": "/sPYKYEW0b7EDmhF3nppZC3f6TlX.jpg",
+        "vote_average": 4.0
+      },
+      {
+        "tmdb_id": 201347,
+        "title": "Never Kiss Your Best Friend Lockdown Special",
+        "poster_path": "/i8WuqW7dap1a5gCvZ0pLwVk2Yk0.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 201424,
+        "title": "甜心救星",
+        "poster_path": "/8mXv6fzzsVaSLtTRwDPS1vWOwhW.jpg",
+        "vote_average": 8.25
+      },
+      {
+        "tmdb_id": 1,
+        "title": "冰上恋人",
+        "poster_path": "/9Ub2BwnLYKoiSaQF93ItyXriCon.jpg",
+        "vote_average": 7.963
+      }
+    ]
+  },
+  "37200350": {
+    "tmdb_id": 241609,
+    "tmdb_type": "tv",
+    "original_title": "Your Friends & Neighbors",
+    "overview": "一名金融巨擘突然痛失婚姻与事业，他开始抢劫富有的邻居来维生。在自己的社交圈中行窃，让他感到莫名的兴奋，但他也逐渐陷入一张错综复杂的致命之网中。",
+    "genres": [
+      "剧情",
+      "犯罪"
+    ],
+    "runtime": null,
+    "release_date": "2025-04-10",
+    "backdrop_path": "/d8LvQj79fgowZkX4NTZaEG3NwsH.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "乔纳森·崔普尔",
+    "cast": [
+      {
+        "name": "乔恩·哈姆",
+        "character": "Andrew 'Coop' Cooper",
+        "profile_path": "/mrXE5fZbEDPc7BEE5G21J6qrwzi.jpg"
+      },
+      {
+        "name": "阿曼达·皮特",
+        "character": "Mel Cooper",
+        "profile_path": "/5TfyCj0X9ftKO11FN057P05s78C.jpg"
+      },
+      {
+        "name": "奥利维亚·穆恩",
+        "character": "Samantha 'Sam' Levitt",
+        "profile_path": "/ha4W3WfxBopQK2FZmVochNrN1GT.jpg"
+      },
+      {
+        "name": "李勋",
+        "character": "Barney Choi",
+        "profile_path": "/3Ux4nTEfPySyZg6yBlu1uXR1TyT.jpg"
+      },
+      {
+        "name": "Mark Tallman",
+        "character": "Nick Brandes",
+        "profile_path": "/vJN40G3AE6S94VH32m7f7XDueo7.jpg"
+      },
+      {
+        "name": "莉娜·霍尔",
+        "character": "Allison 'Ali' Cooper",
+        "profile_path": "/iVH6raaj451XmMZ99uaIQFLTDCf.jpg"
+      },
+      {
+        "name": "艾米·卡雷罗",
+        "character": "Elena Benitez",
+        "profile_path": "/jp9L7d3cGMYvPEaFnqfot7Et4Ga.jpg"
+      },
+      {
+        "name": "Eunice Bae",
+        "character": "Grace Choi",
+        "profile_path": "/I2jzHU5VyD3LHB46wgShDwA0l4.jpg"
+      }
+    ],
+    "stills": [
+      "/d8LvQj79fgowZkX4NTZaEG3NwsH.jpg",
+      "/uSo6Ov0yhzPKyoZ3kPj01dPbA70.jpg",
+      "/e0mloha4ZQfLVZj0nsUtU7AoRs4.jpg",
+      "/zpfJ1qatbf0YUsMBCpTc7wECcsh.jpg",
+      "/uCod1EBvUUAU0chVl8If2OcrDQI.jpg",
+      "/uUnpmiLCdlwubCC8AXOBtTYH7Mm.jpg",
+      "/d00ZyhvaFFIo45ini4HGkDhtw2V.jpg",
+      "/b4Trm5hwKjEdjvCi0Eb5TlUD6BL.jpg",
+      "/bCm3DAm60YLSfV4EKI2KV7tKDOn.jpg",
+      "/zFaoBZM0yc5nC65Fzbb64o3ivVd.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 123127,
+        "title": "单翼天使",
+        "poster_path": "/bTAG8HJkOw3DWzkxEFZJxEfNVZA.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1803,
+        "title": "生活的真相",
+        "poster_path": "/45i9VujUbQITmHl3QE3eNs9ZUv3.jpg",
+        "vote_average": 7.1
+      },
+      {
+        "tmdb_id": 2410,
+        "title": "细路仔",
+        "poster_path": "/y3JYCzXPWqqPf8GI5f1pIeMAi9h.jpg",
+        "vote_average": 7.09
+      },
+      {
+        "tmdb_id": 300935,
+        "title": "The Off Weeks",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 232608,
+        "title": "渴望生活",
+        "poster_path": "/fA687X4rFfuI5hhP9nBZJ7aqJno.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 89499,
+        "title": "富贵逼人",
+        "poster_path": "/df999yXdxdX5IOeUoEORoLwJrqY.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 202308,
+        "title": "警戒",
+        "poster_path": "/lLRC3GSYiFVHsxgc9tvmR6WjcOu.jpg",
+        "vote_average": 7.413
+      },
+      {
+        "tmdb_id": 121852,
+        "title": "大豆田永久子与三名前夫",
+        "poster_path": "/ophs3cQBSIm8ryWZdQNYeneNRyp.jpg",
+        "vote_average": 8.0
+      }
+    ]
+  },
+  "36877245": {
+    "tmdb_id": 1280738,
+    "tmdb_type": "movie",
+    "original_title": "火遮眼",
+    "overview": "女儿在街头被拐走，店主（谢苗 饰）探寻一个复杂的犯罪网络，不择手段将女儿救回来。他唯一的盟友是一名记者（乔•塔斯利姆 饰）。这两个来自不同背景的人物必须学会相互信任、合作，运用自己不为人知的过去所赋予的格斗技能。",
+    "genres": [
+      "动作",
+      "犯罪"
+    ],
+    "runtime": 113,
+    "release_date": "2026-06-10",
+    "backdrop_path": "/ew3EqF9VLTxmK64OsHT7p7lr4wT.jpg",
+    "countries": [
+      "Hong Kong",
+      "United States of America",
+      "China"
+    ],
+    "director": "谷垣健治",
+    "cast": [
+      {
+        "name": "谢苗",
+        "character": "Wang Wei",
+        "profile_path": "/o6uRkrY9vxxzZkZGnnQtKLPcZH1.jpg"
+      },
+      {
+        "name": "乔·塔斯利姆",
+        "character": "Navin",
+        "profile_path": "/6S60RmKqa4p1HN0n4uaohNqjaU8.jpg"
+      },
+      {
+        "name": "杨恩又",
+        "character": "Rainy",
+        "profile_path": "/dlQ4aZ418hBtDkEP58qMKBjRf0a.jpg"
+      },
+      {
+        "name": "雅彦·鲁伊安",
+        "character": "Tak",
+        "profile_path": "/y8ZLh6FZMuLFw8PhqDxcEsyozjJ.jpg"
+      },
+      {
+        "name": "杰佳·亚宁",
+        "character": "Matia",
+        "profile_path": "/73xhAKFbeNSlJTwUCsQCAtryLYS.jpg"
+      },
+      {
+        "name": "黎唯",
+        "character": "HD",
+        "profile_path": "/cdtKmPpmBrnVAiqFQVE4urxu0ko.jpg"
+      },
+      {
+        "name": "岩永丞威",
+        "character": "Pak Lung",
+        "profile_path": "/7y8sdjxKel3nxEnKiTYl9ujIjsw.jpg"
+      },
+      {
+        "name": "萨哈贾克·波斯安吉特",
+        "character": "Mr. Song",
+        "profile_path": "/a36MI02S0f11bJZjBoxkZTsUDAK.jpg"
+      }
+    ],
+    "stills": [
+      "/ew3EqF9VLTxmK64OsHT7p7lr4wT.jpg",
+      "/79GYNlnCK7kfQPAyQI13NLatK07.jpg",
+      "/9sxuscNWhJmoA6JaUfgDde2deVu.jpg",
+      "/b94Br0pFWR0gKIBgP5I6fGneUAl.jpg",
+      "/AlMCQ0z8FmqyLytAV4Czfr3lrs3.jpg",
+      "/w8sDv9iRL1EqOkOEK58WglMo8bg.jpg",
+      "/ifHTmYX1cBbPYcKxlGNcF0DplcA.jpg",
+      "/vkT3wQmTQxCc5PZU6JXOmytm9Ro.jpg",
+      "/muQdBNSRZOryW6FEnivJrIUiL7y.jpg",
+      "/9XwQphZxNJgGASfjL58mhIkJJpf.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 984846,
+        "title": "兽拳战队激气连者 特别DVD gyungyun！拳圣大运动会",
+        "poster_path": "/gk2BIcUHPHf14K7nzNHdSMpOzL7.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 611395,
+        "title": "征途",
+        "poster_path": "/A11Ez4UkOE4Ysmtmur5Bho8qrGM.jpg",
+        "vote_average": 6.7
+      },
+      {
+        "tmdb_id": 629,
+        "title": "非常嫌疑犯",
+        "poster_path": "/7HDY0yZxiM1uMTM1wLm6R0AuW4Z.jpg",
+        "vote_average": 8.168
+      },
+      {
+        "tmdb_id": 682,
+        "title": "007：金枪人",
+        "poster_path": "/kemWPGSdPm3HrvAckwFd9xJSsSu.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 257683,
+        "title": "A Fighting Chance",
+        "poster_path": "",
+        "vote_average": 0.5
+      },
+      {
+        "tmdb_id": 257501,
+        "title": "激突！キョンシー小僧VS史上最強のカンフー悪魔軍団",
+        "poster_path": "/np85NDDHCjDZNl0FwZEnBvXOa3e.jpg",
+        "vote_average": 4.2
+      },
+      {
+        "tmdb_id": 5175,
+        "title": "尖峰时刻2",
+        "poster_path": "/uHeeDMKrOlEAsgOwSR22kMDMfNe.jpg",
+        "vote_average": 6.769
+      },
+      {
+        "tmdb_id": 4485,
+        "title": "歌剧红伶",
+        "poster_path": "/toprlge6vv88sueBUm9m6TnccBD.jpg",
+        "vote_average": 6.7
+      }
+    ]
+  }
 }
