@@ -44,7 +44,7 @@
 5. 写入状态文件、监控库和 Markdown 报告
 6. 生成前端结果数据 `douban-monitor-result.json`，为每条达标条目附带入库时间（`qualified_at` / `first_discovered_at`）
 7. 生成网页附加数据：`fetch_favorites.py` 手动收藏、`fetch_posters.py` 封面、`fetch_metadata.py` 元数据、`fetch_reviews.py` 短评
-8. 拉取远端最新代码，提交数据变更并推送到 GitHub
+8. 拉取远端最新代码，提交数据变更并推送到 GitHub（务必 `git add data/ detail/ reports/ posters/`，不要遗漏 detail 目录下的 HTML 页面）
 
 **抓取失败保护**：若第 1、2 步豆瓣和 TMDB 全部失败、当日候选数为 0，第 5 步跳过 Markdown 报告写入、第 6 步跳过 `result.json` 写入，保留上一份好数据，避免网页刷新成空。
 
