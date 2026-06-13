@@ -384,25 +384,29 @@ def tmdb_results_to_candidates(media_type: str, payload: dict[str, Any]) -> list
 
 
 def fetch_tmdb_hot_candidates_with_config(config: dict[str, Any]) -> list[Candidate]:
-    sources = [
-        ("movie", "/trending/movie/week", "trending_movie", config["tmdb_movie_pages"]),
-        ("movie", "/movie/popular", "popular_movie", config["tmdb_movie_pages"]),
-        ("tv", "/trending/tv/week", "trending_tv", config["tmdb_tv_pages"]),
-        ("tv", "/tv/popular", "popular_tv", config["tmdb_tv_pages"]),
-    ]
-    candidates: list[Candidate] = []
-    for media_type, path, source_name, pages in sources:
-        for page in range(1, int(pages) + 1):
-            payload = tmdb_get(
-                path,
-                config,
-                {"language": config["tmdb_language"], "region": config["tmdb_region"], "page": page},
-            )
-            if not payload:
-                continue
-            payload["_source_name"] = source_name
-            candidates.extend(tmdb_results_to_candidates(media_type, payload))
-    return candidates
+    try:
+        sources = [
+            ("movie", "/trending/movie/week", "trending_movie", config["tmdb_movie_pages"]),
+            ("movie", "/movie/popular", "popular_movie", config["tmdb_movie_pages"]),
+            ("tv", "/trending/tv/week", "trending_tv", config["tmdb_tv_pages"]),
+            ("tv", "/tv/popular", "popular_tv", config["tmdb_tv_pages"]),
+        ]
+        candidates: list[Candidate] = []
+        for media_type, path, source_name, pages in sources:
+            for page in range(1, int(pages) + 1):
+                payload = tmdb_get(
+                    path,
+                    config,
+                    {"language": config["tmdb_language"], "region": config["tmdb_region"], "page": page},
+                )
+                if not payload:
+                    continue
+                payload["_source_name"] = source_name
+                candidates.extend(tmdb_results_to_candidates(media_type, payload))
+        return candidates
+    except Exception as e:
+        log_kv("TMDB 异常（将仅使用豆瓣数据）", str(e))
+        return []
 
 
 def enrich_with_tmdb(candidate: Candidate) -> Candidate:
