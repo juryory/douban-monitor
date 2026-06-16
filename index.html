@@ -91,6 +91,21 @@
     .sort-select:hover { border-color: rgba(240,191,98,0.35); }
     .sort-select option { background: #1c1c1c; color: #f5efdf; }
 
+    .site-intro {
+      padding: 28px 28px 0;
+      max-width: 680px;
+    }
+    .site-intro-label {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--accent);
+      margin: 0 0 8px;
+    }
+    .site-intro-body {
+      font-size: 0.92rem; line-height: 1.75;
+      color: var(--muted);
+      margin: 0;
+    }
+
     /* ── Main ── */
     main {
       max-width: 1440px;
@@ -457,6 +472,11 @@
     <option value="title_asc">标题排序</option>
   </select>
 </header>
+
+<section class="site-intro">
+  <p class="site-intro-label">什么是豆瓣高分监控？</p>
+  <p class="site-intro-body">每天自动抓取豆瓣热门榜单，筛选出评分 ≥ 8.0 分、且有 3000 人以上打分的电影和剧集，集中展示在这里。你不需要每天刷豆瓣，只需要来这里看看——值得一看的好片都在了。</p>
+</section>
 
 <main>
   <div class="tabs" id="tabs"></div>
