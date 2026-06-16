@@ -5052,5 +5052,127 @@
         "vote_average": 8.8
       }
     ]
+  },
+  "1307031": {
+    "tmdb_id": 11299,
+    "tmdb_type": "movie",
+    "original_title": "カウボーイビバップ 天国の扉",
+    "overview": "2071年的万圣节前夕，火星上的大城市突然发生了令人惊叹的犯罪。高速公路上一辆油罐车爆炸了。事故发生现场的人们因不明原因病倒，死伤人数超过400人。这样大规模的杀人事件，似乎是不明来源的生物武器所为。为此，火星政府发布了3亿圆的赏金悬赏恐怖分子。目击事件的faye单独行动妄图独占赏金，艾德使用黑客技术找到线索，与Bebop号上的大家一起行动。四人一狗组合再次出动，但他们不知道，这3亿元的代价，是对抗前所未有的强大犯罪者。",
+    "genres": [
+      "动作",
+      "动画",
+      "科幻"
+    ],
+    "runtime": 115,
+    "release_date": "2001-09-01",
+    "backdrop_path": "/19EKawKy1Z7nUJMhQE28XBL6Guc.jpg",
+    "countries": [
+      "Japan"
+    ],
+    "director": "渡边信一郎",
+    "cast": [
+      {
+        "name": "山寺宏一",
+        "character": "Spike Spiegel (voice)",
+        "profile_path": "/biov5jENp2XYfehkcdnRvi796Wi.jpg"
+      },
+      {
+        "name": "石冢运升",
+        "character": "Jet Black (voice)",
+        "profile_path": "/nmj1vTrJc0zvuUYqxSyWXmIGBlP.jpg"
+      },
+      {
+        "name": "多田葵",
+        "character": "Edward Wong Hau Pepelu Tivruski IV (voice)",
+        "profile_path": "/41TErIWmyAjeiuyCRTBG7UhSzBh.jpg"
+      },
+      {
+        "name": "小林爱",
+        "character": "Electra (voice)",
+        "profile_path": "/2Vjve1Dh6wynhJP5bPfXvL2WV6s.jpg"
+      },
+      {
+        "name": "林原惠美",
+        "character": "Faye Valentine (voice)",
+        "profile_path": "/3Alm4pmBIxpeeh0Sdippxdbkpne.jpg"
+      },
+      {
+        "name": "五十岚信次郎",
+        "character": "Rasheed (voice)",
+        "profile_path": "/lR9ABXJMAoJwAfTaORTXc3vxTn.jpg"
+      },
+      {
+        "name": "矶部勉",
+        "character": "Vincent (voice)",
+        "profile_path": "/qP5vQMIbLNvSsSFkEMLZRVt4ZW5.jpg"
+      },
+      {
+        "name": "平尾仁",
+        "character": "Antonio (voice)",
+        "profile_path": "/5b39ahRAM3RqEQZy7LQTQOQoqCR.jpg"
+      }
+    ],
+    "stills": [
+      "/fgjcLCRAohQQKC8WEXfVC0CKnoL.jpg",
+      "/19EKawKy1Z7nUJMhQE28XBL6Guc.jpg",
+      "/xNutNK5HUSZO8jzOK5Vksaz44sq.jpg",
+      "/gu9VOyEmCLQZ0yPweOY0zIOgV3.jpg",
+      "/cAkcMnrtXsrJkl2cHOQHhiVP8oP.jpg",
+      "/wlDCrT1ibIJTV5j5sd5cFmDDYgF.jpg",
+      "/tU6yP0FOpOfwF5849Hkom5WMpY0.jpg",
+      "/sEt2EN9uFkSswoz9i1MJliYY0rL.jpg",
+      "/1uAO4Tve9a5l9QNhOscLyrOeGyE.jpg",
+      "/5JufFeNq3eclHutIqiQijWqv9vZ.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 290981,
+        "title": "阿拉蕾剧场版03 环游世界大赛车",
+        "poster_path": "/oX7vApN6H8gvdjPimNfik2ccgyP.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 1021630,
+        "title": "チビハム・ジューシー・アンド・ミー",
+        "poster_path": "/AmWH2pSXy6QuKy8kHhoBsbPfTh3.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1021679,
+        "title": "凡尔赛玫瑰",
+        "poster_path": "/pqm9f5zfIkCrmIP0wYNGyNRDpyc.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 40728,
+        "title": "青空 剧场版",
+        "poster_path": "/zDFuUwdIX72psazXzDfYR2g6FWJ.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 40741,
+        "title": "無宿人御子神の丈吉 牙は引き裂いた",
+        "poster_path": "/vLv46DWRYFeAFYHNfFbIW3HSEBB.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 40576,
+        "title": "吉卜力工作室特别短片合辑2",
+        "poster_path": "/xe1j87sZVl2zKek9AXRGbU7G4OP.jpg",
+        "vote_average": 7.1
+      },
+      {
+        "tmdb_id": 645439,
+        "title": "少女☆歌剧 Revue Starlight RONDO·RONDO·RONDO",
+        "poster_path": "/hvJlGju85jdkYTPM6XvT3kgsLZC.jpg",
+        "vote_average": 8.1
+      },
+      {
+        "tmdb_id": 645440,
+        "title": "少女☆歌剧 Revue Starlight 剧场版",
+        "poster_path": "/AgQVEyzQKuuBvsW6pvc6Jjp0Gjl.jpg",
+        "vote_average": 8.3
+      }
+    ]
   }
 }
