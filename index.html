@@ -592,9 +592,11 @@
 
   function enrichItem(it) {
     const m = metadata[it.douban_id] || {};
+    const backdrop = m.backdrop_path ? `${TMDB_IMG}w1280${m.backdrop_path}` : '';
     return {
       ...it,
       poster:         posters[it.douban_id]  || '',
+      backdrop,
       original_title: m.original_title || '',
       overview:       m.overview       || '',
       genres:         m.genres         || [],
@@ -705,6 +707,7 @@
     document.getElementById('detailView').innerHTML = '';
     document.querySelector('header').style.display = '';
     document.querySelector('main').style.display = '';
+    document.querySelector('.site-intro').style.display = '';
     document.getElementById('backTop').style.removeProperty('display');
     document.title = '豆瓣高分监控';
     setMeta('og:title',       '豆瓣高分监控');
@@ -748,6 +751,7 @@
 
     document.querySelector('header').style.display = 'none';
     document.querySelector('main').style.display = 'none';
+    document.querySelector('.site-intro').style.display = 'none';
     document.getElementById('backTop').style.display = 'none';
 
     const dv = document.getElementById('detailView');
@@ -790,9 +794,12 @@
       ? `<div class="detail-backdrop"><img src="${esc(backdropUrl)}" alt="" onerror="this.style.display='none'"></div>`
       : `<div class="detail-backdrop"></div>`;
 
-    // Poster
+    // Poster — falls back to backdrop when poster URL returns 404
+    const posterFallback = it.backdrop
+      ? `this.onerror=null;this.src='${esc(it.backdrop)}';this.style.objectPosition='top'`
+      : `this.style.display='none'`;
     const poster = posterUrl
-      ? `<div class="detail-poster-wrap"><img src="${esc(posterUrl)}" alt="${esc(it.title)}" onerror="this.style.display='none'"></div>`
+      ? `<div class="detail-poster-wrap"><img src="${esc(posterUrl)}" alt="${esc(it.title)}" onerror="${posterFallback}"></div>`
       : `<div class="detail-poster-wrap"></div>`;
 
     // Original title
