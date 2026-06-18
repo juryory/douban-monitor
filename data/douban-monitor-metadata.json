@@ -5174,5 +5174,122 @@
         "vote_average": 8.3
       }
     ]
+  },
+  "37125171": {
+    "tmdb_id": 276188,
+    "tmdb_type": "tv",
+    "original_title": "เด็ก เรียบ ร้าย",
+    "overview": "剧情以泰国一所顶尖女子学校为背景，讲述了六名学生和一名老师引发了一场涉及丑闻、欲望和数字革命的风暴。当隐藏的爱情与秘密碰撞时，故事探讨了在病毒视频和取消文化盛行的时代中成长的意义。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-04-18",
+    "backdrop_path": "/lfICQwnICnGojvlMmrkcnLNt5iF.jpg",
+    "countries": [
+      "TH"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "Kulwipa Ngamsukkasemsri",
+        "character": "Amy",
+        "profile_path": "/57vKlTMiQUJtRRfaMNX7v4F2Wc4.jpg"
+      },
+      {
+        "name": "เบญจณี วัชรวสุนธรา",
+        "character": "Sophie",
+        "profile_path": "/zEkgMSSJbVjuA0JZXb0GbmE7Zn8.jpg"
+      },
+      {
+        "name": "อเล็กซิส ณัฐรินทร์",
+        "character": "Khaopan",
+        "profile_path": "/cQrEPFce3FWbA42nVWNGKxFKR9K.jpg"
+      },
+      {
+        "name": "พลอย จุฑามาศ",
+        "character": "Nano",
+        "profile_path": "/6S4oBgRKxkyQxwnYFanvAH7r9Xf.jpg"
+      },
+      {
+        "name": "ปุยฝ้าย ธาราทิพย์",
+        "character": "Jane",
+        "profile_path": "/yJcWCn8Txi4vDr1AWDHvVKhoTxr.jpg"
+      },
+      {
+        "name": "อิ๊งแลนด์ ลดามณี",
+        "character": "Earn",
+        "profile_path": "/vkNTiIBpedCvRtgCuRYDUG4N9Y2.jpg"
+      },
+      {
+        "name": "Pearadar Lerpittayanukul",
+        "character": "Baipor",
+        "profile_path": "/rbVLdaVwSJdOxKUg0cAaR2WKElT.jpg"
+      },
+      {
+        "name": "วรินท์รัตน์ ยลประสงค์",
+        "character": "Belle",
+        "profile_path": "/srwh25inWm8AWIRJx7oJ3At73OB.jpg"
+      }
+    ],
+    "stills": [
+      "/lfICQwnICnGojvlMmrkcnLNt5iF.jpg",
+      "/inUdYNCCUXnsqei4KFWp1YvA2gd.jpg",
+      "/2RhG7IJXYgor7DrrDSk6a6IpjDh.jpg",
+      "/sGSPAqRirfNvKQyPZovA1cHAD29.jpg",
+      "/385U11ubA27NVjUu8kr3e6FnIwQ.jpg",
+      "/d250Vky6PeZPoqhLAQPfcBL78y.jpg",
+      "/4IExBbC0ClzHennmy2Iu9K96jlp.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1041,
+        "title": "黑街二人组",
+        "poster_path": "/bPSNMNUDxH8rR89pStTAEgSkAXn.jpg",
+        "vote_average": 6.568
+      },
+      {
+        "tmdb_id": 1042,
+        "title": "少女革命",
+        "poster_path": "/pOjDuclpsWGV13Nj7XtZukuZj6f.jpg",
+        "vote_average": 8.1
+      },
+      {
+        "tmdb_id": 89949,
+        "title": "我的故事系列短片",
+        "poster_path": "/hZBDrrnwqgSURJoWyJgOjsYhTIb.jpg",
+        "vote_average": 3.3
+      },
+      {
+        "tmdb_id": 89901,
+        "title": "Dickinson",
+        "poster_path": "/vGL9PdX6DPy4LyvEMIrRgEumkOR.jpg",
+        "vote_average": 8.511
+      },
+      {
+        "tmdb_id": 233756,
+        "title": "恶魔之吻",
+        "poster_path": "/abrYuDkjVct508o1xcwGtLh8w0O.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 297680,
+        "title": "เลือดห้ามรัก",
+        "poster_path": "/pgfUBXuTD86s2tGXs2I4Wt8kOGl.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1102,
+        "title": "西蒙",
+        "poster_path": "/kEuDeWvrIdQpBHH96vFgul5QiRE.jpg",
+        "vote_average": 5.2
+      },
+      {
+        "tmdb_id": 1424,
+        "title": "女子监狱",
+        "poster_path": "/xb7I3S4jZJr5lbgZcdvSaMun3UR.jpg",
+        "vote_average": 7.643
+      }
+    ]
   }
 }
