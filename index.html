@@ -609,9 +609,12 @@
     const icon   = CAT_ICON[it.category]  || '📽';
     const year   = it.year || '—';
 
+    const posterFallbackCard = it.backdrop
+      ? `this.onerror=null;this.src='${esc(it.backdrop)}'`
+      : `this.style.display='none'`;
     const posterImg = it.poster
       ? `<img src="${esc(it.poster)}" alt="${esc(it.title)}" loading="lazy"
-             onerror="this.style.display='none'">`
+             onerror="${posterFallbackCard}">`
       : '';
 
     const fallback = it.poster ? '' : `
