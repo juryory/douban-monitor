@@ -593,9 +593,10 @@
   function enrichItem(it) {
     const m = metadata[it.douban_id] || {};
     const backdrop = m.backdrop_path ? `${TMDB_IMG}w1280${m.backdrop_path}` : '';
+    const metaPoster = m.poster_path ? `${TMDB_IMG}w500${m.poster_path}` : '';
     return {
       ...it,
-      poster:         posters[it.douban_id]  || '',
+      poster:         posters[it.douban_id] || metaPoster || '',
       backdrop,
       original_title: m.original_title || '',
       overview:       m.overview       || '',
@@ -609,15 +610,16 @@
     const icon   = CAT_ICON[it.category]  || '📽';
     const year   = it.year || '—';
 
+    const effectivePosterCard = it.poster || it.backdrop || '';
     const posterFallbackCard = it.backdrop
       ? `this.onerror=null;this.src='${esc(it.backdrop)}'`
       : `this.style.display='none'`;
-    const posterImg = it.poster
-      ? `<img src="${esc(it.poster)}" alt="${esc(it.title)}" loading="lazy"
+    const posterImg = effectivePosterCard
+      ? `<img src="${esc(effectivePosterCard)}" alt="${esc(it.title)}" loading="lazy"
              onerror="${posterFallbackCard}">`
       : '';
 
-    const fallback = it.poster ? '' : `
+    const fallback = effectivePosterCard ? '' : `
       <div class="card-poster-fallback">
         <span class="card-poster-icon">${icon}</span>
         <span class="card-poster-name">${esc(it.title)}</span>
@@ -797,12 +799,13 @@
       ? `<div class="detail-backdrop"><img src="${esc(backdropUrl)}" alt="" onerror="this.style.display='none'"></div>`
       : `<div class="detail-backdrop"></div>`;
 
-    // Poster — falls back to backdrop when poster URL returns 404
+    // Poster — if no poster URL, try backdrop; if poster URL fails (404), also fall back to backdrop
+    const effectivePosterUrl = posterUrl || it.backdrop || '';
     const posterFallback = it.backdrop
       ? `this.onerror=null;this.src='${esc(it.backdrop)}';this.style.objectPosition='top'`
       : `this.style.display='none'`;
-    const poster = posterUrl
-      ? `<div class="detail-poster-wrap"><img src="${esc(posterUrl)}" alt="${esc(it.title)}" onerror="${posterFallback}"></div>`
+    const poster = effectivePosterUrl
+      ? `<div class="detail-poster-wrap"><img src="${esc(effectivePosterUrl)}" alt="${esc(it.title)}" onerror="${posterFallback}"></div>`
       : `<div class="detail-poster-wrap"></div>`;
 
     // Original title

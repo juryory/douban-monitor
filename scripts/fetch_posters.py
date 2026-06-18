@@ -190,6 +190,14 @@ def main() -> None:
         if text:
             posters = json.loads(text)
 
+    metadata: dict = {}
+    _meta_file = Path(__file__).parent.parent / "data" / "douban-monitor-metadata.json"
+    if _meta_file.exists():
+        try:
+            metadata = json.loads(_meta_file.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+
     config = {**DEFAULT_CONFIG, "tmdb_language": "zh-CN", "tmdb_region": "CN"}
 
     total = len(unique)
@@ -200,16 +208,22 @@ def main() -> None:
         year = str(item.get("year") or "")
         prefix = f"[{i+1}/{total}]"
 
-        if did in posters:
-            status = "[OK]" if posters[did] else "[NO]"
-            print(f"{prefix} skip {status} {title}")
+        # Skip only when a non-empty poster URL is already cached
+        if posters.get(did):
+            print(f"{prefix} skip [OK] {title}")
             continue
 
         print(f"{prefix} {title} ({category})", end="  ", flush=True)
         url = ""
 
-        # Step 1: IMDB → TMDB /find  (not for shows)
-        if category != "show":
+        # Step 0: use poster_path already stored in metadata (most reliable)
+        meta = metadata.get(did, {})
+        if meta.get("poster_path"):
+            url = f"{TMDB_IMAGE_BASE}{meta['poster_path']}"
+            print(f"meta={meta['poster_path']}", end=" ", flush=True)
+
+        # Step 1: IMDB → TMDB /find
+        if not url:
             imdb_id = get_imdb_id_from_rexxar(did)
             time.sleep(0.3)
             if imdb_id:
@@ -217,7 +231,21 @@ def main() -> None:
                 url = find_poster_by_imdb(imdb_id, config)
                 time.sleep(0.2)
 
-        # Step 2: TMDB fuzzy search
+        # Step 2: direct TMDB id lookup (tmdb_id stored in metadata)
+        if not url and meta.get("tmdb_id") and meta.get("tmdb_type"):
+            tmdb_type = meta["tmdb_type"]
+            tmdb_id = meta["tmdb_id"]
+            try:
+                d = tmdb_get(f"/{tmdb_type}/{tmdb_id}", config, {"language": "zh-CN"})
+                path = d.get("poster_path") or ""
+                if path:
+                    url = f"{TMDB_IMAGE_BASE}{path}"
+                    print(f"tmdb_id={tmdb_id}", end=" ", flush=True)
+            except Exception:
+                pass
+            time.sleep(0.2)
+
+        # Step 3: TMDB fuzzy search
         if not url:
             url = search_poster_fuzzy(title, category, year, config)
             time.sleep(0.2)

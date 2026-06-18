@@ -178,6 +178,7 @@ def _fetch_detail(tmdb_id: int, tmdb_type: str, config: dict) -> dict:
             "runtime":        runtime,
             "release_date":   release_date,
             "backdrop_path":  backdrop_path,
+            "poster_path":    d.get("poster_path") or "",
             "countries":      countries,
             "director":       director,
             "cast":           cast,
