@@ -5292,6 +5292,251 @@
       }
     ]
   },
-  "37381022": {},
-  "2238727": {}
+  "37381022": {
+    "tmdb_id": 1489456,
+    "tmdb_type": "movie",
+    "original_title": "La Vie de château : Mon enfance à Versailles",
+    "overview": "一个害羞的8岁女孩维奥莱特失去父母，和她的舅舅雷吉斯住在一起，雷吉斯在凡尔赛城堡当清洁工，维奥莱特很少跟他说话。维奥莱特几乎没有意识到，在这个令人生畏的地方，她会找到意想不到的避难所和一个新的家庭。",
+    "genres": [
+      "动画",
+      "家庭"
+    ],
+    "runtime": 81,
+    "release_date": "2025-10-15",
+    "backdrop_path": "/gp1SMXFgQFsimTFk4RlXent3rDY.jpg",
+    "poster_path": "/hhbdKdtaeSOWHSAYEATJXqSSK4z.jpg",
+    "countries": [
+      "France"
+    ],
+    "director": "Clémence Madeleine-Perdrillat",
+    "cast": [
+      {
+        "name": "Ema Lucas-Viguier",
+        "character": "Violette",
+        "profile_path": ""
+      },
+      {
+        "name": "Frédéric Pierrot",
+        "character": "Régis",
+        "profile_path": "/rMC51zZ11vrpP4Hu0R23tvcSrOk.jpg"
+      },
+      {
+        "name": "Anne Alvaro",
+        "character": "Geneviève",
+        "profile_path": "/qVGJMYoNm0wLLCVa8xSmDaHWBxe.jpg"
+      },
+      {
+        "name": "Céline Ronté",
+        "character": "Olga",
+        "profile_path": "/eXJzZFEA6uywzcmDGH4OpLtPd19.jpg"
+      },
+      {
+        "name": "Malcolm Vallet-Armellino",
+        "character": "Malcolm",
+        "profile_path": ""
+      },
+      {
+        "name": "Nina Perez-Malartre",
+        "character": "Violette",
+        "profile_path": ""
+      },
+      {
+        "name": "Ariane Ascaride",
+        "character": "Evelyne",
+        "profile_path": "/fSiJ0k87UrIYymLD7G82OXjSfTk.jpg"
+      },
+      {
+        "name": "Thierry Lhermitte",
+        "character": "Louis XIV",
+        "profile_path": "/50kQVqmD1XnGRlgTPsVRhECaRae.jpg"
+      }
+    ],
+    "stills": [
+      "/gp1SMXFgQFsimTFk4RlXent3rDY.jpg",
+      "/eRY2XyhP5mCa7UXWIDbIFT5kqCy.jpg",
+      "/eLKDFHutOXkVpIXnHdu5xKlhyvk.jpg",
+      "/qE7axqjOwNWO0tg5wwDcOhVC3Gq.jpg",
+      "/dOhfvCoMNvX7oXsFkXeyFCsGUz2.jpg",
+      "/iQZZOwHT9SREx9ZIDEJ6yEuY9uv.jpg",
+      "/dG02aeSu9SU4QhQPIBZ8ld1aRTW.jpg",
+      "/aYugLOFzUqgFLLdSPenEEbAmmDP.jpg",
+      "/lCMw1pm6FA1zsix9DmFVj7B1bey.jpg",
+      "/nvWmhXgwnYQuQ28ugjk4yYzU5U2.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 743439,
+        "title": "汪汪队立大功：喷气机救援",
+        "poster_path": "/xYozrmwvld0NyqfZkJfBOyi9FSo.jpg",
+        "vote_average": 7.074
+      },
+      {
+        "tmdb_id": 506596,
+        "title": "天堂谷大冒险",
+        "poster_path": "/pQIKecVvsEEexALNuyPj9q4JmSN.jpg",
+        "vote_average": 6.106
+      },
+      {
+        "tmdb_id": 47353,
+        "title": "克里蒂，童话的小屋",
+        "poster_path": "/5qk7goYlLVuioVcDf9lhasjItIz.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 26700,
+        "title": "夜曲",
+        "poster_path": "/ulAjLGPTbPtiJS9QsFosNSUhIgY.jpg",
+        "vote_average": 7.112
+      },
+      {
+        "tmdb_id": 752455,
+        "title": "安琪拉的圣诞心愿2",
+        "poster_path": "/A6dqQZQPpQeSAha62ycg9JWIBFs.jpg",
+        "vote_average": 6.392
+      },
+      {
+        "tmdb_id": 893366,
+        "title": "小淘气尼古拉 ：我们还在等什么才能快乐？",
+        "poster_path": "/yTsaoXtBndypAQJj5C16d3Zmfxf.jpg",
+        "vote_average": 6.9
+      },
+      {
+        "tmdb_id": 991833,
+        "title": "Cat Pack: A PAW Patrol Exclusive Event",
+        "poster_path": "/dISGpQk5AdAbijIFoU9W90teMkU.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 166747,
+        "title": "精灵高中：惊心周五",
+        "poster_path": "/mbgyy6NXnFdlWyGohaOFM4xVVu5.jpg",
+        "vote_average": 7.779
+      }
+    ]
+  },
+  "2238727": {},
+  "6850547": {
+    "tmdb_id": 301528,
+    "tmdb_type": "movie",
+    "original_title": "Toy Story 4",
+    "overview": "伍迪一直坚信自己在世界上的位置，并始终将照顾孩子——无论是安迪还是邦妮——视为首要任务。因此当邦妮心爱的新手工玩具“叉叉”宣称自己是“垃圾”而非玩具时，伍迪毅然承担起引导叉叉认识玩具价值的责任。然而当邦妮带着全体玩具踏上家庭公路旅行时，伍迪意外遭遇转折，与失散多年的老朋友牧羊女宝贝重逢。多年来独立生活的宝贝，其冒险精神与漂泊生活的历练，与她精致的瓷娃娃外表形成了鲜明对比。当伍迪和宝贝发现彼此对玩具生活的理念天差地别时，他们很快意识到这竟是所有麻烦中最微不足道的一个。",
+    "genres": [
+      "家庭",
+      "喜剧",
+      "动画",
+      "冒险"
+    ],
+    "runtime": 100,
+    "release_date": "2019-06-19",
+    "backdrop_path": "/q62bpQ67qaXY0u6b2wFEnQYIbPd.jpg",
+    "poster_path": "/1zkIes8U6Xqe9AUy0xNRbM8nfid.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "乔什·库利",
+    "cast": [
+      {
+        "name": "汤姆·汉克斯",
+        "character": "Woody (voice)",
+        "profile_path": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+      },
+      {
+        "name": "蒂姆·艾伦",
+        "character": "Buzz Lightyear (voice)",
+        "profile_path": "/woWhZzFILVhYMAvsPL171HjMY0y.jpg"
+      },
+      {
+        "name": "安妮·波茨",
+        "character": "Bo Peep (voice)",
+        "profile_path": "/hWIzkAH7jkSkxBfwdudxbSPxeno.jpg"
+      },
+      {
+        "name": "托尼·海尔",
+        "character": "Forky (voice)",
+        "profile_path": "/ar4uapp4w5wMkThZcqWUNMSTO8z.jpg"
+      },
+      {
+        "name": "科甘-迈克尔·凯",
+        "character": "Ducky (voice)",
+        "profile_path": "/vAR5gVXRG2Cl6WskXT99wgkAoH8.jpg"
+      },
+      {
+        "name": "玛德琳·麦格劳",
+        "character": "Bonnie (voice)",
+        "profile_path": "/6pCrbeTe4evCfn08sOeukWs6xg9.jpg"
+      },
+      {
+        "name": "克里斯蒂娜·亨德里克斯",
+        "character": "Gabby Gabby (voice)",
+        "profile_path": "/nwSh3NXQtUT3joHbCVwLvOoBxJG.jpg"
+      },
+      {
+        "name": "乔丹·皮尔",
+        "character": "Bunny (voice)",
+        "profile_path": "/kFUKn5g3ebpyZ3CSZZZo2HFWRNQ.jpg"
+      }
+    ],
+    "stills": [
+      "/q62bpQ67qaXY0u6b2wFEnQYIbPd.jpg",
+      "/m67smI1IIMmYzCl9axvKNULVKLr.jpg",
+      "/jLITglCQD9pwquxYdJjg0VzaVAF.jpg",
+      "/mAkPFEWkwKz9nmKyCiuETfTdpgX.jpg",
+      "/4KhVv7OAHn6vULgHymnnYWULQDz.jpg",
+      "/iG3Gu0T0AkL4D8T8ci2PcufuLyX.jpg",
+      "/AtcQK4fzS8rlbKXuTP06GQPp1Q7.jpg",
+      "/n4mPVvMWbMMp6LSkPNG1fCYfW0S.jpg",
+      "/dmLabFvEIRrkKLDuWO8NN2DtSex.jpg",
+      "/ioFHvSrDisOi3R7pl4PiMdR779X.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 794684,
+        "title": "Czarny młyn",
+        "poster_path": "/o2Y31tB8r8Pn1omDQg0vtjG8bdI.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 794685,
+        "title": "烈阳天道Ⅱ",
+        "poster_path": "/d5QvXiXbY8DZYMAHsQtr2KeJnA8.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 1357956,
+        "title": "什么鬼",
+        "poster_path": "/3ggLYHuxNJnQdBEHsnh5S1kqdYG.jpg",
+        "vote_average": 5.5
+      },
+      {
+        "tmdb_id": 35,
+        "title": "辛普森一家",
+        "poster_path": "/eMiC65Lwtvqr1v1VVwNQv6IZKrG.jpg",
+        "vote_average": 7.023
+      },
+      {
+        "tmdb_id": 71,
+        "title": "跳出我天地",
+        "poster_path": "/5zeIOLQ73QE1H88K6XI0e0z0jRj.jpg",
+        "vote_average": 7.596
+      },
+      {
+        "tmdb_id": 245,
+        "title": "关于一个男孩",
+        "poster_path": "/83IBYLmquAQOx2kN0vrXSbRkaaH.jpg",
+        "vote_average": 6.698
+      },
+      {
+        "tmdb_id": 175,
+        "title": "碧海蓝天",
+        "poster_path": "/ikD0ORv6IXkupSEwXlgMDm5fPeX.jpg",
+        "vote_average": 7.447
+      },
+      {
+        "tmdb_id": 611818,
+        "title": "Nacho no conduce",
+        "poster_path": "/wTggPN5yf9zJqwY783B51PLqJAP.jpg",
+        "vote_average": 6.0
+      }
+    ]
+  }
 }
