@@ -5538,5 +5538,129 @@
         "vote_average": 6.0
       }
     ]
+  },
+  "36238849": {
+    "tmdb_id": 1084244,
+    "tmdb_type": "movie",
+    "original_title": "Toy Story 5",
+    "overview": "胡迪、巴斯光年、翠斯等“元老级”玩具将跟随小主人邦妮的成长脚步，共同迎接数字时代下的全新挑战。随着无所不能的科技产品逐渐走进童年世界，一批充满科技感的崭新角色也随之重磅亮相：青蛙造型的智能平板小荷、憨态可掬的导航玩具小不丢、活力十足的抓拍好手小拍侠，以及自带笑点的臭屁小机灵。当身边的同龄朋友们开始沉浸在科技玩具带来的“电子陪伴”中，而玩具伙伴们也迎来了前所未有的生存难题：在屏幕占据注意力的时代，玩具的时代真的结束了吗？在“被取代”危机的当下，这群玩具伙伴还能否携手，帮助邦妮找回属于自己的真实友谊与快乐？",
+    "genres": [
+      "动画",
+      "家庭",
+      "喜剧",
+      "冒险"
+    ],
+    "runtime": 102,
+    "release_date": "2026-06-17",
+    "backdrop_path": "/kwq3lxPrBfyyVRRSDSlojwCPzwH.jpg",
+    "poster_path": "/l9ui7Irttuekt4CMTOmyAMIDsQI.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "安德鲁·斯坦顿",
+    "cast": [
+      {
+        "name": "汤姆·汉克斯",
+        "character": "Woody (voice)",
+        "profile_path": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+      },
+      {
+        "name": "蒂姆·艾伦",
+        "character": "Buzz Lightyear (voice)",
+        "profile_path": "/woWhZzFILVhYMAvsPL171HjMY0y.jpg"
+      },
+      {
+        "name": "琼·库萨克",
+        "character": "Jessie (voice)",
+        "profile_path": "/59UIeHZFYrKyP20lXqijtfTXglO.jpg"
+      },
+      {
+        "name": "格蕾塔·李",
+        "character": "Lilypad (voice)",
+        "profile_path": "/6SydTis4XUcovlwIGskT59JowLX.jpg"
+      },
+      {
+        "name": "柯南·奥布莱恩",
+        "character": "Smarty Pants (voice)",
+        "profile_path": "/deRbViPut0t80miscBpP2DhBJU5.jpg"
+      },
+      {
+        "name": "克雷格·罗宾逊",
+        "character": "Atlas (voice)",
+        "profile_path": "/mTyTrOWUSOBJMOlDpnd4OYx7FlJ.jpg"
+      },
+      {
+        "name": "Shelby Rabara",
+        "character": "Snappy (voice)",
+        "profile_path": "/ouMiEKlhCj2LFKEQtI6fGRMDemF.jpg"
+      },
+      {
+        "name": "托尼·海尔",
+        "character": "Forky (voice)",
+        "profile_path": "/ar4uapp4w5wMkThZcqWUNMSTO8z.jpg"
+      }
+    ],
+    "stills": [
+      "/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
+      "/6CxbXYt9PQyCaAGn7L5efFaEkdY.jpg",
+      "/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
+      "/kwq3lxPrBfyyVRRSDSlojwCPzwH.jpg",
+      "/coyHrYHD2xHhDoYD6o4uwoJ2o7b.jpg",
+      "/gnAwcLTZ0ooeIc6DdIrwOZ383OR.jpg",
+      "/wENlYOyR10DZzkICmrGUQQX4Ih5.jpg",
+      "/vpUFcQPDHJvQXDWWgd9sB7rwEOE.jpg",
+      "/mwwRvwmLtaFewmqm6XxlnHGsqo6.jpg",
+      "/oqBHzvbRoALzjtVl2ky06DKMKzF.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 435069,
+        "title": "刺猬先生的小屋",
+        "poster_path": "/dNr0IvChE5Vss8hN7DlqqvDUKOx.jpg",
+        "vote_average": 5.6
+      },
+      {
+        "tmdb_id": 795981,
+        "title": "Tea for Two",
+        "poster_path": "/d3AZXJg8NprnODRxZhWZI9CLofo.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 796039,
+        "title": "熊出没·狂野大陆",
+        "poster_path": "/m8NHDPjSdWfgugm638C8HlMt5Po.jpg",
+        "vote_average": 6.6
+      },
+      {
+        "tmdb_id": 796126,
+        "title": "壞壞邱比特",
+        "poster_path": "/qn4BmXwtXIdtdt03Dr0x5fmdhxF.jpg",
+        "vote_average": 4.3
+      },
+      {
+        "tmdb_id": 257445,
+        "title": "鸡皮疙瘩",
+        "poster_path": "/pv4I99Cf3N3Nymb8zwTE6AjKOjY.jpg",
+        "vote_average": 6.3
+      },
+      {
+        "tmdb_id": 300,
+        "title": "科学睡眠",
+        "poster_path": "/9nTVw6m1gV1MzXxo0gqfYRPGkkF.jpg",
+        "vote_average": 6.988
+      },
+      {
+        "tmdb_id": 262,
+        "title": "喜剧之王",
+        "poster_path": "/m24EbHxT9NGYEkOlu29YcLOgjgK.jpg",
+        "vote_average": 7.784
+      },
+      {
+        "tmdb_id": 276,
+        "title": "替天行道三人行",
+        "poster_path": "/3Z0R46cuFWB6gxZwEBf8ekVxgZ0.jpg",
+        "vote_average": 7.162
+      }
+    ]
   }
 }
