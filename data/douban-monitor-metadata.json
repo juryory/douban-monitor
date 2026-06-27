@@ -5905,5 +5905,121 @@
         "vote_average": 6.234
       }
     ]
+  },
+  "35424715": {
+    "tmdb_id": 282558,
+    "tmdb_type": "tv",
+    "original_title": "生命树",
+    "overview": "上世纪九十年代，青海高原上的拉曲县高度依赖农牧业，其周边的无人区博拉木拉富含矿产和野生动物资源，大量的盗猎盗采分子为牟取暴利滥采滥杀。拉曲县副县长多杰在县长林培生的支持下成立了巡山队，起初是为脱贫在无人区探矿，眼见藏羚羊被屠杀的惨状后，多杰将一切都倾注在环保上。而巡山队里的青年女警白菊成了多杰命定的变数，她是援藏医生张勤勤收养的遗孤，是白家敢闯敢拼的小女儿。枪法过人的白菊与巡山队队员们成了莫逆之交，与报社记者邵云飞相爱，众志成城以建立自然保护区，却在功成前夕经历了领袖多杰的失踪和巡山队的解散。十多年过去，博拉木拉重获宁静，煤矿盗采问题却让开发和环保的天平再次失衡，白菊与昔日爱人、旧友和手足家人重聚首，在新时代的环保路上一并追查着多杰失踪的真相，最终还英雄以清名，继续守护着青藏高原的绿水蓝天。",
+    "genres": [
+      "剧情",
+      "犯罪"
+    ],
+    "runtime": null,
+    "release_date": "2026-01-30",
+    "backdrop_path": "/A0GTs2ESXdVFba0fcw4syEuNjJy.jpg",
+    "poster_path": "/wvIEIsBdn24eEuN8YfMI7QKIual.jpg",
+    "countries": [
+      "CN"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "杨紫",
+        "character": "Bai Ju",
+        "profile_path": "/20Nc1xnRFC5XGsb896ZxVNUOzFU.jpg"
+      },
+      {
+        "name": "胡歌",
+        "character": "Duo Jie",
+        "profile_path": "/vmNDYhGMFReeHGqbTwFcFgAq9Ep.jpg"
+      },
+      {
+        "name": "李光洁",
+        "character": "Lin Peisheng",
+        "profile_path": "/snTfuCkX8Q1GHJJwB3UHQJt7KZs.jpg"
+      },
+      {
+        "name": "张哲华",
+        "character": "Shao Yunfei",
+        "profile_path": "/9Ne5Qnt15suWasx2H1ZJLXBgeBo.jpg"
+      },
+      {
+        "name": "金巴",
+        "character": "Taso",
+        "profile_path": "/7tZdkvU4kpmkU9u7seVZFOq2897.jpg"
+      },
+      {
+        "name": "冯兵",
+        "character": "Han Xuechao",
+        "profile_path": "/bJD6iFzBxR5o23umSFxAniXBP7B.jpg"
+      },
+      {
+        "name": "更旦",
+        "character": "Xampa",
+        "profile_path": "/4PPWhMC8fqW5QuTZwAyUiupDzKU.jpg"
+      },
+      {
+        "name": "苏鑫",
+        "character": "He Qingyuan",
+        "profile_path": "/lqCsXTe3B9PnL6NtrWBd1xhPgE7.jpg"
+      }
+    ],
+    "stills": [
+      "/A0GTs2ESXdVFba0fcw4syEuNjJy.jpg",
+      "/4GNUqF6M6FPP36Dqw5Mdpuup8kh.jpg",
+      "/1CaqPoYLlGREnTaoDpTYIFF8hCT.jpg",
+      "/ddgXqCBhU3opPoKoWAuHzNfOU8o.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 130578,
+        "title": "热带情绪",
+        "poster_path": "/oH4JPLdxSdz0xGKEQSuDHHUWFEq.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 138108,
+        "title": "神秘资产",
+        "poster_path": "/p3NIjKPD8sJiy3Q7zQJchobrpYX.jpg",
+        "vote_average": 6.639
+      },
+      {
+        "tmdb_id": 86588,
+        "title": "鳕鱼角",
+        "poster_path": "/69hornrvpKWIzBMCNzsVTZOggOw.jpg",
+        "vote_average": 6.732
+      },
+      {
+        "tmdb_id": 126167,
+        "title": "不眠",
+        "poster_path": "/k2UU9HUHmlaDhlE8RX6NE2m9q44.jpg",
+        "vote_average": 7.191
+      },
+      {
+        "tmdb_id": 84007,
+        "title": "Carl Weber's The Family Business",
+        "poster_path": "/A1WwpjcFynFe52KyD4sUb29KUrZ.jpg",
+        "vote_average": 8.5
+      },
+      {
+        "tmdb_id": 3828,
+        "title": "山街蓝调",
+        "poster_path": "/elvCmYxmwVzv2va3rLKponOJOfm.jpg",
+        "vote_average": 7.625
+      },
+      {
+        "tmdb_id": 1059,
+        "title": "胡克警探",
+        "poster_path": "/zcHUwD20mqMD4g8LKdpKD12QRhE.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 988,
+        "title": "The Rookies",
+        "poster_path": "/Aprq6E5NO2GiBwKwjFop7kOGiO1.jpg",
+        "vote_average": 6.857
+      }
+    ]
   }
 }
