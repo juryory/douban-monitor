@@ -6021,5 +6021,197 @@
         "vote_average": 6.857
       }
     ]
+  },
+  "36680492": {
+    "tmdb_id": 1174334,
+    "tmdb_type": "movie",
+    "original_title": "大濛",
+    "overview": "1954年，一个15岁女孩阿月（方郁婷 饰），听闻哥哥在台北被枪毙的消息，独自搭火车从嘉义到台北，不顾一切后果，只为带哥哥回家。她懵懂无知初到台北，意外下被来自广东、思乡而归不得的三轮车夫赵公道（柯炜林 饰）所救。两个没有血缘关系的人，因为缘分变成患难之交，展开一段为筹措赎尸费，而赌上性命的旅程。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 134,
+    "release_date": "2025-11-27",
+    "backdrop_path": "/gMDGov7yzowLP92yf8AzMkOrcfD.jpg",
+    "poster_path": "/5nXkeQHSHPccTMllRZMURs790fR.jpg",
+    "countries": [
+      "Taiwan"
+    ],
+    "director": "陈玉勋",
+    "cast": [
+      {
+        "name": "方郁婷",
+        "character": "Huang Chiu-Yue / Yue",
+        "profile_path": "/b4YZrjMbRfr4JAySid8ck7dl1tG.jpg"
+      },
+      {
+        "name": "柯炜林",
+        "character": "Chao Kung-Tao",
+        "profile_path": "/6Uv70pPhBZ2C4xVH3WK9HH41LiE.jpg"
+      },
+      {
+        "name": "汤毓绮",
+        "character": "Chiu Hsiu-Hsia / Hsia",
+        "profile_path": "/pcI1z0RDAaDiZe2X0JA9H2I8tD9.jpg"
+      },
+      {
+        "name": "曾敬骅",
+        "character": "Huang Yu-Yun",
+        "profile_path": "/n0EZvptjlTlI7sCtaW27jMthkeA.jpg"
+      },
+      {
+        "name": "潘丽丽",
+        "character": "Old Yue",
+        "profile_path": "/drY7CZOOgpc2NhnQrkZdZnVIqkd.jpg"
+      },
+      {
+        "name": "宋芸桦",
+        "character": "Nian-Yun",
+        "profile_path": "/xHBne0spwBf5xHyHulLOaOB9Fa3.jpg"
+      },
+      {
+        "name": "陈以文",
+        "character": "Fan Chun",
+        "profile_path": "/svFlxUu5ItDWYvDRR1JNrRZFHAU.jpg"
+      },
+      {
+        "name": "蔡昌宪",
+        "character": "Lee Erh-Hsiung",
+        "profile_path": "/hLKscapHezzzTLo7l2dSWw6XoXH.jpg"
+      }
+    ],
+    "stills": [
+      "/gMDGov7yzowLP92yf8AzMkOrcfD.jpg",
+      "/gKMJ2u5jzLQIDD9uhHk7tgtOrmP.jpg",
+      "/AoTJQNBawVlyRUwOKkdKn10co0Y.jpg",
+      "/4QcXpO0bteSBQNU3Fg39GFXCSiE.jpg",
+      "/sxuhXyGLMMQyhMImXonTiWQm5uL.jpg",
+      "/d8yVKDLr1gHgE7xaK54SrM5KiUN.jpg",
+      "/7CMJC6BoIOZKOp9klRvn8Tgm6dK.jpg",
+      "/l3S2Mm2iiidH7MqXBNwFlW7rWZJ.jpg",
+      "/fbDYMIdO8dEdcqrlJ09EHoOsArE.jpg",
+      "/pqn9VICwDwJiNNCFpniuJoK6zDw.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1136837,
+        "title": "风流一代",
+        "poster_path": "/AiQNIF1siRv8cHGAPMfr7zey1Px.jpg",
+        "vote_average": 6.816
+      },
+      {
+        "tmdb_id": 63064,
+        "title": "观音山",
+        "poster_path": "/7KtisPY2DOnjlLyJcjtA3dgJaIk.jpg",
+        "vote_average": 6.78
+      },
+      {
+        "tmdb_id": 945675,
+        "title": "一周的朋友",
+        "poster_path": "/9Adt7lE79voOqRzYhe4mNnHqUoo.jpg",
+        "vote_average": 6.012
+      },
+      {
+        "tmdb_id": 52103,
+        "title": "小武",
+        "poster_path": "/pN92regSqfx7h2K7bXgQpmoneMX.jpg",
+        "vote_average": 7.242
+      },
+      {
+        "tmdb_id": 591629,
+        "title": "赛车女孩",
+        "poster_path": "/co6rMdGpL8q549uf6GAqzOFQA94.jpg",
+        "vote_average": 6.385
+      },
+      {
+        "tmdb_id": 1274925,
+        "title": "逆行人生",
+        "poster_path": "/lEYQtKfNDyxr1ozwu2YYUTU8ZOD.jpg",
+        "vote_average": 6.806
+      },
+      {
+        "tmdb_id": 575089,
+        "title": "一秒钟",
+        "poster_path": "/nLcha9n4qwFE5bFQ4VzFMySBu9D.jpg",
+        "vote_average": 7.292
+      },
+      {
+        "tmdb_id": 829503,
+        "title": "吉吉和内特",
+        "poster_path": "/d1zkveeL2Z97KI5bATRE8hgw9wU.jpg",
+        "vote_average": 7.639
+      }
+    ]
+  },
+  "37822829": {
+    "tmdb_id": 309663,
+    "tmdb_type": "tv",
+    "original_title": "COURT!",
+    "overview": "基于不同观点角度、难以致信的巧合或为了维护更公平的法律原则，都影响着所有案件在法庭上的细节，令最终「真相」的呈现，面临着不同挑战和考验。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-05-18",
+    "backdrop_path": "/fGOfVu7YjBEBxPZH7fwkufZ47Lu.jpg",
+    "poster_path": "/1mEuvUMkr8xpQoP8uekuxcE65A6.jpg",
+    "countries": [
+      "HK"
+    ],
+    "director": "",
+    "cast": [],
+    "stills": [
+      "/fGOfVu7YjBEBxPZH7fwkufZ47Lu.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 298852,
+        "title": "WAR",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 810,
+        "title": "Armchair Theatre",
+        "poster_path": "/A8gQs8YEquEQxcmoiNB3R6gcj4a.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 89811,
+        "title": "成年女性的动画时间",
+        "poster_path": "/ocliC72vdFMP8m84K08AC3Z5rVb.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 1026,
+        "title": "惊异传奇",
+        "poster_path": "/66Utyft9WHPQJSU7f7MbEB72dkc.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 28007,
+        "title": "阿加莎·克里斯蒂悬疑剧场",
+        "poster_path": "/wKL621qo5aKct3Wu0NEEgClydXG.jpg",
+        "vote_average": 6.778
+      },
+      {
+        "tmdb_id": 299052,
+        "title": "Shockers",
+        "poster_path": "/mjVL0eCMiHAlKMmWy6Wy8kHSUmi.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 233647,
+        "title": "حدث بالفعل",
+        "poster_path": "/yo8MoXQAJqTuDUXbp4i1zFcnTz4.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 122130,
+        "title": "爱你命中注定",
+        "poster_path": "/sooYs0Mt7r0zk8pknlJ1sW7zpGT.jpg",
+        "vote_average": 6.8
+      }
+    ]
   }
 }
