@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-28T21:08:35.699002+08:00",
+  "run_at": "2026-06-28T21:08:59.245176+08:00",
   "total": 69,
   "qualified": [
     {
@@ -139,7 +139,7 @@
       "category": "tv",
       "douban_id": "37822829",
       "rating": 8.6,
-      "rating_count": 3213,
+      "rating_count": 3215,
       "year": "",
       "url": "https://movie.douban.com/subject/37822829/",
       "qualified_at": "2026-06-28T09:16:06.585405+08:00",
