@@ -6213,5 +6213,128 @@
         "vote_average": 6.8
       }
     ]
+  },
+  "36666949": {
+    "tmdb_id": 94997,
+    "tmdb_type": "tv",
+    "original_title": "House of the Dragon",
+    "overview": "在维斯特洛大陆，坦格利安家族的衰落被公之于众。一场内战即将爆发，这场战争将被称为“血龙狂舞”。",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "剧情",
+      "动作冒险"
+    ],
+    "runtime": null,
+    "release_date": "2022-08-21",
+    "backdrop_path": "/h37hqVLmCW00ImewLAHT1DadOky.jpg",
+    "poster_path": "/w5iFwPk6h9fv3zxLN2QkxVEVyBw.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "乔治·R·R·马丁",
+    "cast": [
+      {
+        "name": "马特·史密斯",
+        "character": "Prince Daemon Targaryen",
+        "profile_path": "/wxMdHj4UA6LgIU5MiA7CKySZeVU.jpg"
+      },
+      {
+        "name": "艾玛·达西",
+        "character": "Princess Rhaenyra Targaryen",
+        "profile_path": "/9Zlmb7VmtVCxkLq5yqFFRRxCaED.jpg"
+      },
+      {
+        "name": "奥利维亚·库克",
+        "character": "Queen Alicent Hightower",
+        "profile_path": "/eIpUKrBoddAM0PoNv8n2Mq99VO1.jpg"
+      },
+      {
+        "name": "史蒂夫·图森特",
+        "character": "Lord Corlys 'The Sea Snake' Velaryon",
+        "profile_path": "/sNjMpDYLVu6l79iP0olrYDaNlrD.jpg"
+      },
+      {
+        "name": "瑞斯·伊凡斯",
+        "character": "Ser Otto Hightower",
+        "profile_path": "/5X8XcIqCDxsQYyHdx7mBwPVkSTs.jpg"
+      },
+      {
+        "name": "法比安·弗兰克尔",
+        "character": "Ser Criston Cole",
+        "profile_path": "/nXh1h7KbdeZc41ucwGhzp1cOMnd.jpg"
+      },
+      {
+        "name": "伊万·米切尔",
+        "character": "Prince Aemond Targaryen",
+        "profile_path": "/v1PqysDnx5umfA2DqGyjwuAxc9C.jpg"
+      },
+      {
+        "name": "汤姆·格林-卡尼",
+        "character": "King Aegon II Targaryen",
+        "profile_path": "/jJ3KqUW8ySGBwHXOCN3x2Wxjm5W.jpg"
+      }
+    ],
+    "stills": [
+      "/h37hqVLmCW00ImewLAHT1DadOky.jpg",
+      "/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "/etj8E2o0Bud0HkONVQPjyCkIvpv.jpg",
+      "/Aa9TLpNpBMyRkD8sPJ7ACKLjt0l.jpg",
+      "/cAZOtLjBmDv614zgqv3g9opr2JG.jpg",
+      "/cR3EoEBdMTh7qUeYWULLXYW40by.jpg",
+      "/2xGcSLyTAzConiHAByWqhfLiatT.jpg",
+      "/vXpeJJs1z8OKC88CNJX9O9QOhtr.jpg",
+      "/xtAQ7j9Yd0j4Rjbvx1hW0ENpXjf.jpg",
+      "/8jjTPo8j2dG6eDBYZOxgEpzSGAB.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 202132,
+        "title": "Malá Dorritka",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 120871,
+        "title": "Bronzová spirála",
+        "poster_path": "",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 120879,
+        "title": "Jahody na stéble trávy",
+        "poster_path": "",
+        "vote_average": 1.0
+      },
+      {
+        "tmdb_id": 120911,
+        "title": "The Terminal List",
+        "poster_path": "/6rNbeGjrlGe4PupLCui6PfBEioN.jpg",
+        "vote_average": 7.955
+      },
+      {
+        "tmdb_id": 202159,
+        "title": "二十四味暖浮生",
+        "poster_path": "/s89m0O2xVWVXZ2mOGYR1KPzjPqy.jpg",
+        "vote_average": 2.0
+      },
+      {
+        "tmdb_id": 89,
+        "title": "Titus",
+        "poster_path": "/Ab7WWSBFSYbZVXORydeEaPltG9K.jpg",
+        "vote_average": 6.878
+      },
+      {
+        "tmdb_id": 40,
+        "title": "Dallas",
+        "poster_path": "/A1dupjBm7rXqBw2Dbz9WUsHoyxo.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 121,
+        "title": "神秘博士",
+        "poster_path": "/xinqAmYrZ1TEwowcQhgTkZVtVE0.jpg",
+        "vote_average": 7.907
+      }
+    ]
   }
 }
