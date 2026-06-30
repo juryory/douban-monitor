@@ -6336,5 +6336,127 @@
         "vote_average": 7.907
       }
     ]
+  },
+  "1482072": {
+    "tmdb_id": 350,
+    "tmdb_type": "movie",
+    "original_title": "The Devil Wears Prada",
+    "overview": "初涉社会的安德丽娅•桑切丝 来到了著名时尚杂志《RUNWAY》面试，以聪明得到了主编米兰达•普雷斯丽 的特许，让她担任自己的第二助理。开始的时候安德丽娅感到十分委屈，就算自己多努力工作也无法得到赞赏，经一位老前辈的指点便重新改造自己。工作越来越顺，甚至取代了第一助理在米兰达心中的地位，决定带着这个聪明的女孩前往法国。可安德丽的改变让她失去了男友及朋友的爱，令她非常矛盾。到达法国后，她得知了米兰达的地位不保了，没想到米兰达竟然牺牲自己多年的好搭档保住了自己的地位，此事令安德丽娅深感失望，有了抽身离去的想法，到底安德丽娅会何去何从？",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ],
+    "runtime": 109,
+    "release_date": "2006-06-29",
+    "backdrop_path": "/gkh6Nt8DtY1XT4gQsyFq9XAVJlJ.jpg",
+    "poster_path": "/76C6tTFrjibiLhTHgvPhVAQQ9nk.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "大卫·弗兰克尔",
+    "cast": [
+      {
+        "name": "梅丽尔·斯特里普",
+        "character": "Miranda Priestly",
+        "profile_path": "/g5cVxQBAQ3AXt3LhdBXtbbN47Uc.jpg"
+      },
+      {
+        "name": "安妮·海瑟薇",
+        "character": "Andy Sachs",
+        "profile_path": "/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+      },
+      {
+        "name": "艾米莉·布朗特",
+        "character": "Emily",
+        "profile_path": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg"
+      },
+      {
+        "name": "斯坦利·图齐",
+        "character": "Nigel",
+        "profile_path": "/q4TanMDI5Rgsvw4SfyNbPBh4URr.jpg"
+      },
+      {
+        "name": "西蒙·贝克",
+        "character": "Christian Thompson",
+        "profile_path": "/oay0Lo2zl0lJdguptxgx1BK9Xq7.jpg"
+      },
+      {
+        "name": "阿德里安·格雷尼尔",
+        "character": "Nate",
+        "profile_path": "/ghSzUkiw7OjRq0poNOlCjbXbdU6.jpg"
+      },
+      {
+        "name": "特蕾西·汤姆斯",
+        "character": "Lily",
+        "profile_path": "/9PKUJJtqFRbZDhme6uDzIu0mRIE.jpg"
+      },
+      {
+        "name": "里奇·索默",
+        "character": "Doug",
+        "profile_path": "/cfbJ3nyiyRpSq2mLrbbrbg1k3Dh.jpg"
+      }
+    ],
+    "stills": [
+      "/gkh6Nt8DtY1XT4gQsyFq9XAVJlJ.jpg",
+      "/CpLAfXgSNeNRRbRzPrTuzKmIHO.jpg",
+      "/3tWw50B1xXlCnJ9A7NX4nNzZF4j.jpg",
+      "/mpRU00GeyQixJ6OglFGlWiWV820.jpg",
+      "/s4zZkK7k6ZIFrvq6I9wgMpDtOdQ.jpg",
+      "/moyx8Q5HplbQWp6qAXu9fqnk3sK.jpg",
+      "/piIdisd6wydVa3qvmSSJIWaCi7I.jpg",
+      "/2q8sjQRG4HhS9DYG9NX7hi0TjUG.jpg",
+      "/vJUkmeOfMxeyobEtbhCRSJ30sv.jpg",
+      "/vXovMToX7W9WHs5KWJJxUwkflkQ.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1187311,
+        "title": "Tu madre o la mía: Guerra de suegras",
+        "poster_path": "/3Qib1rlVcT7zWSdmORPgMgw5qvn.jpg",
+        "vote_average": 4.6
+      },
+      {
+        "tmdb_id": 1550357,
+        "title": "Titip Bunda di Surga-Mu",
+        "poster_path": "/soMdX3xllLr4loNSIoS4uhlCxmE.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 15877,
+        "title": "空中杀手",
+        "poster_path": "/AfBuspF6MuzYKe2ESsELcowqUes.jpg",
+        "vote_average": 6.689
+      },
+      {
+        "tmdb_id": 1375441,
+        "title": "Primetime",
+        "poster_path": "/pKHeSpUfl4ff9wYIr0OMyZWBiQn.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 15915,
+        "title": "春宫电影人",
+        "poster_path": "/s2sRx3m33ZdhfbY4PIlKpbZv9e7.jpg",
+        "vote_average": 4.996
+      },
+      {
+        "tmdb_id": 15917,
+        "title": "宝莱坞生死恋",
+        "poster_path": "/dUBFi7bnLRfm4WaTh4ZoF2tbBJj.jpg",
+        "vote_average": 7.49
+      },
+      {
+        "tmdb_id": 15927,
+        "title": "印度之行",
+        "poster_path": "/rvBWlGRKte2U6qElHV13h6JvmSe.jpg",
+        "vote_average": 6.839
+      },
+      {
+        "tmdb_id": 15961,
+        "title": "Kongekabale",
+        "poster_path": "/h3hUu80dYIwusnnU9mYA7lrLIf.jpg",
+        "vote_average": 6.868
+      }
+    ]
   }
 }
