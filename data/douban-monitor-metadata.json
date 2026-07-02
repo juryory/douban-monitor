@@ -6458,5 +6458,127 @@
         "vote_average": 6.868
       }
     ]
+  },
+  "10756537": {
+    "tmdb_id": 414419,
+    "tmdb_type": "movie",
+    "original_title": "Kill Bill: The Whole Bloody Affair",
+    "overview": "昆汀·塔伦蒂诺的本片将第一卷与第二卷合二为一，呈现出一部未分级的完整史诗——完全以导演原本意图呈现，并包含一段前所未见的新动画片段。乌玛·瑟曼饰演“新娘”，她在婚礼排练时遭前老板兼情人比尔伏击，头部中枪，未出生的孩子被夺走，人被弃之不顾。为复仇，她必须先猎杀“致命毒蛇暗杀小队”剩余的四名成员，最后再与比尔本人对决。",
+    "genres": [
+      "动作",
+      "犯罪"
+    ],
+    "runtime": 254,
+    "release_date": "2011-03-27",
+    "backdrop_path": "/qe4Tp0hURXqiih5AV1kHimXIt3u.jpg",
+    "poster_path": "/lmmtfbvRPPnBJc9lXU1PgfRoElh.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "昆汀·塔伦蒂诺",
+    "cast": [
+      {
+        "name": "乌玛·瑟曼",
+        "character": "The Bride / Beatrix Kiddo (Black Mamba) / Mommy",
+        "profile_path": "/sBgAZWi3o4FsnaTvnTNtK6jpQcF.jpg"
+      },
+      {
+        "name": "刘玉玲",
+        "character": "O-Ren Ishii (Cottonmouth)",
+        "profile_path": "/9nbtjqsx3De7hO2XDtrBQ7M9VCH.jpg"
+      },
+      {
+        "name": "薇薇卡·福克斯",
+        "character": "Vernita Green (Copperhead)",
+        "profile_path": "/wj77CCErWt1H0GNqYwCFNYulH7g.jpg"
+      },
+      {
+        "name": "迈克尔·马德森",
+        "character": "Budd (Sidewinder)",
+        "profile_path": "/fvr2EXEPrVwsF2JlfRp0Olbj4g8.jpg"
+      },
+      {
+        "name": "达丽尔·汉纳",
+        "character": "Elle Driver (California Mountain Snake)",
+        "profile_path": "/5FllFmoiaru7tjXJ6Orc11OpQcw.jpg"
+      },
+      {
+        "name": "大卫·卡拉丁",
+        "character": "Bill (Snake Charmer)",
+        "profile_path": "/1X2GlkMKS9FIG1kGou7o6LRqAjz.jpg"
+      },
+      {
+        "name": "千叶真一",
+        "character": "Hattori Hanzo",
+        "profile_path": "/k3kHcYUBj8RskpAEDaJ0FR6ynSx.jpg"
+      },
+      {
+        "name": "栗山千明",
+        "character": "Gogo Yubari",
+        "profile_path": "/2lGs2rzx9VovrtBFsKM5Fy1Uja5.jpg"
+      }
+    ],
+    "stills": [
+      "/qe4Tp0hURXqiih5AV1kHimXIt3u.jpg",
+      "/4BOwSKPwtPDCkTKqlJHAZDS6X9g.jpg",
+      "/4BmQ1ZjWsovCAMIPUevXBvkIatN.jpg",
+      "/hd17MIjz5Ha8VClViCvnqKnheMS.jpg",
+      "/gpwhernsAexQAbhsQw4wqMD5bjt.jpg",
+      "/jGYpPUb6iZ09o83H6f57159XBUA.jpg",
+      "/sxdpfvvrpp9KIEsQkF80UP8PtAh.jpg",
+      "/iAEAubAvxscJ1P4pmVn8vi6Xb5v.jpg",
+      "/qcY845gYdHalcmmsfHbfdjdPMjp.jpg",
+      "/gxSWwZyYPA50f5T2IJzFX4NzxAG.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 275,
+        "title": "冰血暴",
+        "poster_path": "/pGyqusTiXbad7DPtWVjavEwfW3b.jpg",
+        "vote_average": 7.851
+      },
+      {
+        "tmdb_id": 436219,
+        "title": "擎天无影脚黄麒英",
+        "poster_path": "/q4CheCsBVmzk5oMKHaioESJtd3V.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 379,
+        "title": "米勒的十字路口",
+        "poster_path": "/i83gYdglRCjCRLSsmCk5nRWRmDM.jpg",
+        "vote_average": 7.447
+      },
+      {
+        "tmdb_id": 393,
+        "title": "杀死比尔2",
+        "poster_path": "/hZnd71LcQXCMmL2Gf5jkKDWFisJ.jpg",
+        "vote_average": 7.879
+      },
+      {
+        "tmdb_id": 400,
+        "title": "五个杀手的传说",
+        "poster_path": "/n6UTVN4Ff8b8VYlAtZ7hgW9Xzp0.jpg",
+        "vote_average": 6.45
+      },
+      {
+        "tmdb_id": 435598,
+        "title": "抢孤",
+        "poster_path": "/fr6cOOnAq56CrBQUIWpGPMno1cL.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 435601,
+        "title": "杀人优越权",
+        "poster_path": "/qUZmOE5udwiyBHo2PwnYDyeiSxS.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 180,
+        "title": "少数派报告",
+        "poster_path": "/jbqftAHMdtCLhCLGFiOKQwN8zlN.jpg",
+        "vote_average": 7.355
+      }
+    ]
   }
 }
