@@ -6580,5 +6580,251 @@
         "vote_average": 7.355
       }
     ]
+  },
+  "35633650": {
+    "tmdb_id": 915935,
+    "tmdb_type": "movie",
+    "original_title": "Anatomie d'une chute",
+    "overview": "在贾斯汀·特里耶这部荣获奥斯卡奖的杰作中，我们看得越近，却知得越少。这部诡谲迷人的法庭惊悚片，审视着真实与虚构彼此侵蚀的边界。作家桑德拉·沃伊特（桑德拉·惠勒，摄人心魄的演绎）擅长将自身经历转化为自虚构文学，当她因丈夫坠楼身亡的疑案受审时——这究竟是谋杀还是自杀？——一场审判逐渐揭开一个破碎家庭的层层内幕。特里耶以室内心理剧的极简张力为核心，通过复杂而灵动的剪辑，构筑出一桩悬案；其终极指向并非死亡本身，而是我们每个人隐匿的生存真相。[标准收藏]",
+    "genres": [
+      "惊悚",
+      "悬疑",
+      "犯罪"
+    ],
+    "runtime": 151,
+    "release_date": "2023-08-23",
+    "backdrop_path": "/lDVl2jf6VB8ODl1olZ6FLvOV1gX.jpg",
+    "poster_path": "/64sltz8tKvDxpIT7GHhFCyOVBKH.jpg",
+    "countries": [
+      "France"
+    ],
+    "director": "朱斯蒂娜·特里耶",
+    "cast": [
+      {
+        "name": "桑德拉·惠勒",
+        "character": "Sandra Voyter",
+        "profile_path": "/t7wGqC2dRwTEnt9Fk5pxQ0uXTqs.jpg"
+      },
+      {
+        "name": "斯万·阿劳德",
+        "character": "Maître Vincent Renzi",
+        "profile_path": "/38iX2NHO7pMdQH1ygoGEJ8E82WV.jpg"
+      },
+      {
+        "name": "米洛·马查多·格拉纳",
+        "character": "Daniel",
+        "profile_path": "/wdpeIXaFvSSAJq88dv6Ofzgscd7.jpg"
+      },
+      {
+        "name": "安托万·赖纳茨",
+        "character": "Advocate General",
+        "profile_path": "/OHGtRqIim2cEHOYKPlbgNOV6Cb.jpg"
+      },
+      {
+        "name": "塞缪尔·泰斯",
+        "character": "Samuel Maleski",
+        "profile_path": "/5sPD9wpbh4h4iwzlg4XzYrmYxTN.jpg"
+      },
+      {
+        "name": "珍妮·贝丝",
+        "character": "Marge Berger",
+        "profile_path": "/lMSMHufDKEtTsKYuxDKcMZDtDb7.jpg"
+      },
+      {
+        "name": "萨迪亚·本塔伊布",
+        "character": "Maître Nour Boudaoud",
+        "profile_path": "/tQXSCqgjJdAC9eXrnjZ4BFJWSr7.jpg"
+      },
+      {
+        "name": "卡米莉·拉瑟福德",
+        "character": "Zoé Solidor",
+        "profile_path": "/8Iq8Gi1YsGNQ3gnxaVptXj68zVY.jpg"
+      }
+    ],
+    "stills": [
+      "/lDVl2jf6VB8ODl1olZ6FLvOV1gX.jpg",
+      "/kszooR7v1TLFM4pzx6IkKq2jDAN.jpg",
+      "/zYTQ0Vb5pOsBtBCOLW8MoT2R4yc.jpg",
+      "/3Feq4UV4p2gU6dShAYfveqwWAEf.jpg",
+      "/zauak6TTi3wpehSkwM2NsTJgKhh.jpg",
+      "/8VjYcf8JCokm7mLn4wLKPLXNnNR.jpg",
+      "/heXiJvMkA3pnaZihgnfeWT2aqhW.jpg",
+      "/5fOu0c3lcjNYdZF2UlJVScuiaML.jpg",
+      "/sxOGymHkRUfAhj63yLISFfyKARN.jpg",
+      "/xyR7MdyqWZRYkiraHPFHHi5KDmu.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 11443,
+        "title": "绝命战场",
+        "poster_path": "/eGfsSXizR11tTHVo0kuOOFPAxZt.jpg",
+        "vote_average": 6.677
+      },
+      {
+        "tmdb_id": 11460,
+        "title": "红眼航班",
+        "poster_path": "/1fBnAYk0JDBqPRtRsOkoIEgXL1n.jpg",
+        "vote_average": 6.392
+      },
+      {
+        "tmdb_id": 623521,
+        "title": "挑战",
+        "poster_path": "/hzaxdCvxG5D9KisIFfisdMF6nuu.jpg",
+        "vote_average": 5.864
+      },
+      {
+        "tmdb_id": 11474,
+        "title": "战士帮",
+        "poster_path": "/9ZA9agifkApLhJB6D8Av4ez5cre.jpg",
+        "vote_average": 7.674
+      },
+      {
+        "tmdb_id": 11690,
+        "title": "拳霸天下",
+        "poster_path": "/jq5oQHs7sfNrkyAzTXyGlC8jW89.jpg",
+        "vote_average": 7.059
+      },
+      {
+        "tmdb_id": 11705,
+        "title": "红色之路",
+        "poster_path": "/o2SWtcm9bR7lqoCp3wsVp35fvmV.jpg",
+        "vote_average": 6.507
+      },
+      {
+        "tmdb_id": 11761,
+        "title": "孔雀镇",
+        "poster_path": "/lQU4yl20b82gSS2xp7rWvF0YoWq.jpg",
+        "vote_average": 6.124
+      },
+      {
+        "tmdb_id": 11524,
+        "title": "大盗独行",
+        "poster_path": "/bpjRGwfYJ71bU0hNhLIz7g3t6Oy.jpg",
+        "vote_average": 7.224
+      }
+    ]
+  },
+  "37435796": {
+    "tmdb_id": 322055,
+    "tmdb_type": "tv",
+    "original_title": "검사실의 제안",
+    "overview": "曾因“杀人犯之子”的标签饱受欺凌的李彩河，在洗清冤屈后成为一名八级检察院调查员。他被分配到檀岘分局，努力开启新生活，却意外与曾帮助过他的检察官朱泰善重逢。朱泰善性格完美主义且敏感古怪，在一次共同值夜班后，他对李彩河产生了浓厚兴趣。为了调查一桩悬而未决的谋杀案，朱泰善提议李彩河担任自己的专属调查员。两人在压抑又充满张力的办公环境下，展开了一场徘徊于职场正义与禁忌情感之间的危险博弈。",
+    "genres": [
+      "悬疑",
+      "犯罪",
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-06-25",
+    "backdrop_path": "/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
+    "poster_path": "/4A5Sl89zZ0WRKj5QrhMxgBFiQYc.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "헤복",
+    "cast": [
+      {
+        "name": "朴时宇",
+        "character": "Lee Chae-ha",
+        "profile_path": "/iNM5bCfVa5d5SxQhLoOLzju6JUb.jpg"
+      },
+      {
+        "name": "尹道健",
+        "character": "Ju Tae-seon",
+        "profile_path": "/u6VgTrxxtr193r8odNPcJYWuNVU.jpg"
+      },
+      {
+        "name": "金正泰",
+        "character": "Tak Seong-woong",
+        "profile_path": "/y9RajVMc6njAdDi6hhASgbdFUaX.jpg"
+      },
+      {
+        "name": "赵旻奎",
+        "character": "Song Ha-neul",
+        "profile_path": "/6NDQMPvdlezPtR2mihX3kPjrfEO.jpg"
+      },
+      {
+        "name": "徐涵洁",
+        "character": "Oh Ja-hyun",
+        "profile_path": "/bDQ8JOa9fDt2OfXmstKsA8jprKv.jpg"
+      },
+      {
+        "name": "金洛均",
+        "character": "Hong Seong-ho",
+        "profile_path": "/hjJHC4azb3ji9nbEJyfQLkC0JkU.jpg"
+      },
+      {
+        "name": "李佳玹",
+        "character": "Han Su-jin",
+        "profile_path": "/gIVjKUM88FhrDSKLMJ5QdxJ6xUm.jpg"
+      },
+      {
+        "name": "薛俊秀",
+        "character": "Yoon Gyu-ho",
+        "profile_path": "/rvNqLk6U8coOdQoLeBmgSz9Fi3B.jpg"
+      }
+    ],
+    "stills": [
+      "/qMPwbcGIgWhMzFlilFvMRa9OQPt.jpg",
+      "/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
+      "/frOMYTw9ZlM8mq3F4n8A14nE2XF.jpg",
+      "/sgC1S2yKz4vx3EzHk49TnYNSZuG.jpg",
+      "/7hVtwgEyaQLrR9oMxE109SjsmRg.jpg",
+      "/nNufnKyPyqANq7wUgE0hZRdpE53.jpg",
+      "/rME3vLHc3DKYRWV1qON9ccLeWrz.jpg",
+      "/ugENMvP0TLrKgk3VNtgToBcHpEG.jpg",
+      "/ldn29Yw9neSEDTJl5LtCsfA4rTf.jpg",
+      "/wZRQn1EcivtI4crBxe20yMQFzZG.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 302598,
+        "title": "星轨",
+        "poster_path": "/vz019586FKV8MEhinGnkAOGumIL.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 238249,
+        "title": "亲爱的契约男友",
+        "poster_path": "/ovMp5NiFr2Bi1CBoLiAREDr9OHv.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 238250,
+        "title": "我亲爱的白月光",
+        "poster_path": "/1ekL1jAIlB44TNhdQC4gs9E1jI7.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 238273,
+        "title": "爱上你之三生有幸",
+        "poster_path": "/z0BbneFoMrAczpbREfrp8nXGpfL.jpg",
+        "vote_average": 6.625
+      },
+      {
+        "tmdb_id": 129417,
+        "title": "我在他乡挺好的",
+        "poster_path": "/s3n3f1FGqsuztzanZm2PFi9ZZvI.jpg",
+        "vote_average": 7.8
+      },
+      {
+        "tmdb_id": 93781,
+        "title": "战败之都",
+        "poster_path": "/vKWqlJ61exCULoGanpKLtevURwN.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 93888,
+        "title": "审讯室：法国",
+        "poster_path": "/oDGjtikKYnpSblEbGIxpXMrxMck.jpg",
+        "vote_average": 6.743
+      },
+      {
+        "tmdb_id": 93972,
+        "title": "偏偏爱上你",
+        "poster_path": "/sKS1XwEaareXoH6kuuKC1p0op2A.jpg",
+        "vote_average": 7.031
+      }
+    ]
   }
 }
