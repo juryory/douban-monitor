@@ -6948,5 +6948,128 @@
         "vote_average": 6.7
       }
     ]
+  },
+  "26611804": {
+    "tmdb_id": 359940,
+    "tmdb_type": "movie",
+    "original_title": "Three Billboards Outside Ebbing, Missouri",
+    "overview": "本片是奥斯卡奖提名者马丁·麦克唐纳执导的一部黑色喜剧犯罪剧情片。在女儿遇害案悬置数月仍未破获后，米尔德丽德·海斯采取了一项大胆之举：她租下通往小镇路上的三块广告牌，牌上直指当地德高望重的警察局长比尔·威洛比的尖锐标语掀起轩然大波。而当威洛比麾下警员杰森·迪克森——一个沉迷酒精与暴力的不成熟妈宝男——卷入冲突后，米尔德丽德与埃宾镇执法部门之间的对抗愈演愈烈。[福克斯探照灯影业]",
+    "genres": [
+      "犯罪",
+      "剧情"
+    ],
+    "runtime": 115,
+    "release_date": "2017-12-01",
+    "backdrop_path": "/oQHF0Y4gCw6VdPmapjsbZoxY2ht.jpg",
+    "poster_path": "/fQzCvF2R4P9YkPQK7gO9LNLcnlD.jpg",
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "director": "马丁·麦克唐纳",
+    "cast": [
+      {
+        "name": "弗兰西斯·麦克多蒙德",
+        "character": "Mildred",
+        "profile_path": "/gBkoteKZshmQXEyEoyT6WE7N0tF.jpg"
+      },
+      {
+        "name": "伍迪·哈里森",
+        "character": "Willoughby",
+        "profile_path": "/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg"
+      },
+      {
+        "name": "山姆·洛克威尔",
+        "character": "Dixon",
+        "profile_path": "/afYhNpLwpa65Yy0Q0g00FNFhzx5.jpg"
+      },
+      {
+        "name": "艾比·考尼什",
+        "character": "Anne",
+        "profile_path": "/AgIA8uPnwySIbqaPjr5jEXwZbS.jpg"
+      },
+      {
+        "name": "卢卡斯·赫奇斯",
+        "character": "Robbie",
+        "profile_path": "/8WP1uXUwm6Z1vzrMaIiKj89M6kX.jpg"
+      },
+      {
+        "name": "热利科·伊万内克",
+        "character": "Desk Sergeant",
+        "profile_path": "/xLv19n8UvGJLxI7Z6RIv9eNXGmf.jpg"
+      },
+      {
+        "name": "卡莱伯·兰德里·琼斯",
+        "character": "Red Welby",
+        "profile_path": "/8M5lPHrERwAIfWK56RkH30FOjhV.jpg"
+      },
+      {
+        "name": "克拉克·彼得斯",
+        "character": "Abercrombie",
+        "profile_path": "/ouDHDpocxXgXrosF3vShAEkOjHL.jpg"
+      }
+    ],
+    "stills": [
+      "/oQHF0Y4gCw6VdPmapjsbZoxY2ht.jpg",
+      "/bioYaOXZS2nXLiLVf5mDOgXpCd8.jpg",
+      "/4CSg1R8vABzAXqmKYlse1vN17Yc.jpg",
+      "/huz4SOpcd2XjJiLVX6xmQZYiiDA.jpg",
+      "/bJLJAtGjBj836UjJZNOwgrfe5Ps.jpg",
+      "/9oRdMkQ6ysUuF7Ufb1oMH5NMDY2.jpg",
+      "/53z7hUGbewyb69cWAii0jfMQLgE.jpg",
+      "/piTsz9WjitZN1jlYeeUNUyJgBxP.jpg",
+      "/6SLnpGHZCuxcrjiXHoMplUjrswL.jpg",
+      "/lrSqT9jmXjA0KvN668hPtn1UQFD.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 567,
+        "title": "后窗",
+        "poster_path": "/tahvf0JgCJH8UbBwqIUrCpOhvrv.jpg",
+        "vote_average": 8.3
+      },
+      {
+        "tmdb_id": 573,
+        "title": "狂凶记",
+        "poster_path": "/4SFvqrlSigAt9tnhXFSMyKeJWQk.jpg",
+        "vote_average": 7.1
+      },
+      {
+        "tmdb_id": 575,
+        "title": "死亡实验",
+        "poster_path": "/nIAJnivbh5N8gpbyVmtPFC9psON.jpg",
+        "vote_average": 7.427
+      },
+      {
+        "tmdb_id": 599,
+        "title": "日落大道",
+        "poster_path": "/ru6hOriRKizpNbzUFI1AVp6tYrK.jpg",
+        "vote_average": 8.273
+      },
+      {
+        "tmdb_id": 600,
+        "title": "全金属外壳",
+        "poster_path": "/whs25KgiaatynM2IxRTJ5geTwuT.jpg",
+        "vote_average": 8.1
+      },
+      {
+        "tmdb_id": 769,
+        "title": "好家伙",
+        "poster_path": "/4W6gXVoNJKBCx2X1Jh5BQ17SAGN.jpg",
+        "vote_average": 8.454
+      },
+      {
+        "tmdb_id": 773,
+        "title": "阳光小美女",
+        "poster_path": "/uwPB4hhaKNlRiZQEfoNlCUr9vTb.jpg",
+        "vote_average": 7.692
+      },
+      {
+        "tmdb_id": 437035,
+        "title": "设局",
+        "poster_path": "/5NKtHc40ZsMbMexa9m94Qp7RGKq.jpg",
+        "vote_average": 5.6
+      }
+    ]
   }
 }
