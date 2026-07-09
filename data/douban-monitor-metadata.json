@@ -7071,5 +7071,127 @@
         "vote_average": 5.6
       }
     ]
+  },
+  "3011051": {
+    "tmdb_id": 26466,
+    "tmdb_type": "movie",
+    "original_title": "Triangle",
+    "overview": "单亲母亲杰西和一帮朋友乘游艇出海游玩，但她总有一种有不好的事情发生的感觉。不久，他们便在海上遭遇一场强烈的风暴。游艇翻船，众人落海，几经挣扎他们好不容易爬到游艇残骸上来。正当他们无计可施之时，一艘巨大的游轮向众人缓缓驶来。众人欣喜过望，未加思索便登上这艘名为“艾俄洛斯”的游轮，结果发现这竟是一艘1930年便告失踪的神秘之船，而船上更是空无一人。随处可见的鲜血、神秘的指示以及突如其来的凶杀事件，将这群男女带入万劫不复的恐怖轮回之中……",
+    "genres": [
+      "恐怖"
+    ],
+    "runtime": 99,
+    "release_date": "2009-10-16",
+    "backdrop_path": "/rlVpm5r7vZYyU9JHWf9UGOVDo5M.jpg",
+    "poster_path": "/JPF79YnhjuVP545OLYli4w6gq1.jpg",
+    "countries": [
+      "Australia",
+      "United Kingdom"
+    ],
+    "director": "克里斯托弗·史密斯",
+    "cast": [
+      {
+        "name": "梅利莎·乔治",
+        "character": "Jess",
+        "profile_path": "/pqikObF4yi5PBbMGX806QNGUVW0.jpg"
+      },
+      {
+        "name": "利亚姆·海姆斯沃斯",
+        "character": "Victor",
+        "profile_path": "/7UIm9RoBnlqS1uLlbElAY8urdWD.jpg"
+      },
+      {
+        "name": "艾玛·朗",
+        "character": "Heather",
+        "profile_path": "/8XdaJyUu7AYxH1UVU4qY6cN5V6c.jpg"
+      },
+      {
+        "name": "瑞秋·卡帕尼",
+        "character": "Sally",
+        "profile_path": "/l0hVQiZgVuRq4yEQN1Dyr1TMmnR.jpg"
+      },
+      {
+        "name": "迈克尔·多曼",
+        "character": "Greg",
+        "profile_path": "/7Ut9ofZ7fJAvLZ95LVLO1Lepbuc.jpg"
+      },
+      {
+        "name": "Joshua McIvor",
+        "character": "Tommy",
+        "profile_path": "/70EFKXOx00PwTnBa9PQH26E43Gc.jpg"
+      },
+      {
+        "name": "亨利·尼克松",
+        "character": "Downey",
+        "profile_path": "/fQL3rtJbKL3ZTOEcoFK8Z6qYpHV.jpg"
+      },
+      {
+        "name": "杰克·泰勒",
+        "character": "Jack",
+        "profile_path": "/4dNtGwrvgbnuVYv1vi7A0zNg0LN.jpg"
+      }
+    ],
+    "stills": [
+      "/rlVpm5r7vZYyU9JHWf9UGOVDo5M.jpg",
+      "/2F3R4LNKkD1thDxE2SyjGXwWmtR.jpg",
+      "/9wNgQTtCuzVoKEX3SeCgGzHZ9vU.jpg",
+      "/yv6F7Y2s3OCSphSEf40fVS0uqe7.jpg",
+      "/tWMtQa5E3jpDRxJnVbkODpgHD6I.jpg",
+      "/sSo8XJf5DXesdatmaJDgmKfItAl.jpg",
+      "/6KDSdu28FfVEnXPDgCltWYhYgdP.jpg",
+      "/gftkx64bowzS3ZroNU09Uff6v6m.jpg",
+      "/jDupRWdzzNdNTh4DacBMgztSJCo.jpg",
+      "/ekyodBmXvbdPA2W6ZpoP4xN80AX.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 991814,
+        "title": "寻找身体",
+        "poster_path": "/b1ocR7F1aIx4UhdXbmG1akSZ9Bj.jpg",
+        "vote_average": 6.687
+      },
+      {
+        "tmdb_id": 136,
+        "title": "畸形人",
+        "poster_path": "/fX2Wxd0W9E7eVClUd8kJTfennoV.jpg",
+        "vote_average": 7.767
+      },
+      {
+        "tmdb_id": 257444,
+        "title": "男孩",
+        "poster_path": "/vqHJ7mV2EmVSO7cxb4SN49vRWgu.jpg",
+        "vote_average": 5.741
+      },
+      {
+        "tmdb_id": 436274,
+        "title": "死亡半径",
+        "poster_path": "/ynaNtadCtx0jksFlZ2dFJNPmiam.jpg",
+        "vote_average": 6.507
+      },
+      {
+        "tmdb_id": 467,
+        "title": "洞",
+        "poster_path": "/n5aMoI6AZLJzUoNbjMj0P60EYMJ.jpg",
+        "vote_average": 6.207
+      },
+      {
+        "tmdb_id": 244,
+        "title": "金刚",
+        "poster_path": "/lHlnxKL5GbgRibyRFI7n1Ey850i.jpg",
+        "vote_average": 7.6
+      },
+      {
+        "tmdb_id": 800497,
+        "title": "狼人游戏",
+        "poster_path": "/5CGgbgyvmE39Yoqa80GKsgClbQm.jpg",
+        "vote_average": 6.03
+      },
+      {
+        "tmdb_id": 377,
+        "title": "猛鬼街",
+        "poster_path": "/xtSprDnYlB0oOFxtl1amUQREIBC.jpg",
+        "vote_average": 7.347
+      }
+    ]
   }
 }
