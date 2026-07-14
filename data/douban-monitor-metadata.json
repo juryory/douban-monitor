@@ -7193,5 +7193,123 @@
         "vote_average": 7.347
       }
     ]
+  },
+  "36752981": {
+    "tmdb_id": 1671541,
+    "tmdb_type": "movie",
+    "original_title": "三国第一部：争洛阳",
+    "overview": "东汉末年，危机四伏，宦官掌权，百姓困苦。黄巾军起，曹操、袁绍、袁术、吕布、孙坚、刘备等乱世英雄初露头角。各方势力争斗洛阳，惊涛骇浪中，曹操、袁绍如何应对？",
+    "genres": [
+      "动画",
+      "历史"
+    ],
+    "runtime": 137,
+    "release_date": "2026-06-27",
+    "backdrop_path": "/ysftTAaYr3Hu1Vy8b4AFoIUis6C.jpg",
+    "poster_path": "/vsDiLRTjXmK75PXG2jPn575yCnj.jpg",
+    "countries": [
+      "China"
+    ],
+    "director": "谢君伟",
+    "cast": [
+      {
+        "name": "王凯",
+        "character": "曹操(voice)",
+        "profile_path": "/gjhmjROKqAxIwAbUdxaItr3AyMf.jpg"
+      },
+      {
+        "name": "魏超",
+        "character": "袁绍(voice)",
+        "profile_path": "/aPYAEWrS1lb1UYwCFejIcJOOGSU.jpg"
+      },
+      {
+        "name": "万昊",
+        "character": "何进(voice)",
+        "profile_path": ""
+      },
+      {
+        "name": "李楠",
+        "character": "董卓(voice)",
+        "profile_path": "/nnyFddBJJm0s5UTwzFSBX3VLTes.jpg"
+      },
+      {
+        "name": "常文涛",
+        "character": "吕布(voice)",
+        "profile_path": "/s9jQXrUzbtMXA6d5iZkgQ6nGJ5N.jpg"
+      },
+      {
+        "name": "唐明冬",
+        "character": "袁术(voice)",
+        "profile_path": ""
+      },
+      {
+        "name": "严燕生",
+        "character": "王允(voice)",
+        "profile_path": "/9gArKt4F8IxPToVrFRqZEviToXb.jpg"
+      },
+      {
+        "name": "陈喆",
+        "character": "张让(voice)",
+        "profile_path": "/dXhqfDYNGThM4qPdjb1W2gbL77H.jpg"
+      }
+    ],
+    "stills": [
+      "/ysftTAaYr3Hu1Vy8b4AFoIUis6C.jpg",
+      "/8qhiIL1HAq7ts1hybqGzodycQro.jpg",
+      "/ir3kyNd6qbIDN5sKthM4AQ5wPQJ.jpg",
+      "/nr0mYlC0Kt52Gxy9BE76ZQCn8Ty.jpg",
+      "/noi4Rk2nT5wwmHr5B3ua2y18N0n.jpg",
+      "/gK9tanfmOUbX7ECr4raB2R8WBFW.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1089654,
+        "title": "长安三万里",
+        "poster_path": "/7wxk8Ka5AGUIjCpEPg4vBOwSSul.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 811634,
+        "title": "西游记之再世妖王",
+        "poster_path": "/bckim9NibblHIXkKN11tWnUo2Pt.jpg",
+        "vote_average": 7.23
+      },
+      {
+        "tmdb_id": 416153,
+        "title": "北极狗",
+        "poster_path": "/ypAyusKfmUlc953Ixd3CcmwztpL.jpg",
+        "vote_average": 6.038
+      },
+      {
+        "tmdb_id": 844075,
+        "title": "新神榜：杨戬",
+        "poster_path": "/gIxieIOq0Mnd7LoNlXGxuhyoBdh.jpg",
+        "vote_average": 7.495
+      },
+      {
+        "tmdb_id": 554594,
+        "title": "科提",
+        "poster_path": "/b22cNsuP7Qk0V0KZzcNM5NYvTnl.jpg",
+        "vote_average": 7.029
+      },
+      {
+        "tmdb_id": 134575,
+        "title": "天书奇谭",
+        "poster_path": "/u4zkRCguNF9N0WdfBEZ9aQwlhsv.jpg",
+        "vote_average": 7.721
+      },
+      {
+        "tmdb_id": 47759,
+        "title": "大闹天宫",
+        "poster_path": "/3Aifv9rXv1QW3r2fOIevofecatC.jpg",
+        "vote_average": 7.739
+      },
+      {
+        "tmdb_id": 1203329,
+        "title": "猎魔人：深渊海妖",
+        "poster_path": "/e2K40kQ47AJx6D3pdcbraQBCw0P.jpg",
+        "vote_average": 6.822
+      }
+    ]
   }
 }
