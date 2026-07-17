@@ -7311,5 +7311,128 @@
         "vote_average": 6.822
       }
     ]
+  },
+  "1945330": {
+    "tmdb_id": 5876,
+    "tmdb_type": "movie",
+    "original_title": "The Mist",
+    "overview": "一座风景秀美的小镇被一场突如其来的浓雾瞬间淹没。雾中传来阵阵惨叫，人们惊慌失措地四处逃散。戴维和他的儿子与众多镇上的人被困在小镇超市里，等待雾的消散。浓雾并没有如期望的散开，而走进浓雾的人一去不返。浓雾逐渐露出了它狰狞的面目。恐惧、惊慌、挣扎、悲伤、绝望……人们的精神濒临崩溃。如何才能活着走出迷雾？面对超市里几近癫狂的人们和超市外吞噬一切、不可知的迷雾，戴维紧紧搂着儿子，开始了艰难的求生之路……",
+    "genres": [
+      "恐怖",
+      "科幻",
+      "惊悚"
+    ],
+    "runtime": 126,
+    "release_date": "2007-11-21",
+    "backdrop_path": "/76J14zgwVWyOciri7X7F3DGP3TA.jpg",
+    "poster_path": "/h7bb3HpX45o1Cre9XLmRArEPXMb.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "弗兰克·德拉邦特",
+    "cast": [
+      {
+        "name": "托马斯·简",
+        "character": "David Drayton",
+        "profile_path": "/9frnlc2zoDcoeqZALB6aeYSQddl.jpg"
+      },
+      {
+        "name": "劳瑞·侯登",
+        "character": "Amanda Dunfrey",
+        "profile_path": "/rRhtmJsZ5IiE0lYrLDmYOCiPK1P.jpg"
+      },
+      {
+        "name": "托比·琼斯",
+        "character": "Ollie Weeks",
+        "profile_path": "/y6kLmjLgZ1sceaE4Zi1fwF0YsvZ.jpg"
+      },
+      {
+        "name": "马西娅·盖伊·哈登",
+        "character": "Mrs. Carmody",
+        "profile_path": "/5vxcHIHABJxqhweAsTiXVOhT4SE.jpg"
+      },
+      {
+        "name": "安德鲁·布劳尔",
+        "character": "Brent Norton",
+        "profile_path": "/zdemT9c1U4Muxf7hi0iFq2zHNLd.jpg"
+      },
+      {
+        "name": "威廉姆·赛德勒",
+        "character": "Jim",
+        "profile_path": "/rWeb2kjYCA7V9MC9kRwRpm57YoY.jpg"
+      },
+      {
+        "name": "杰弗里·德蒙",
+        "character": "Dan Miller",
+        "profile_path": "/70bkLdlkBB7x2NztuJAh4pjdyxy.jpg"
+      },
+      {
+        "name": "弗朗西斯·斯特恩哈根",
+        "character": "Irene Reppler",
+        "profile_path": "/95zg4ses3DIBGBEBtVJnsedDgHE.jpg"
+      }
+    ],
+    "stills": [
+      "/76J14zgwVWyOciri7X7F3DGP3TA.jpg",
+      "/5R39UpkV4mhPMNlp9H0bYccSvsI.jpg",
+      "/kDXeHjKxiOfJAY3hvmc3sZijhr6.jpg",
+      "/3WrR2rYX7nHWnBhWHLZptsJ2bEj.jpg",
+      "/ubvavrekrbUxpbqrO3vbFB51Cx3.jpg",
+      "/sDuNn7U0UQpEdwjiYnslzkzLW8G.jpg",
+      "/rD8AV9KjYZQfxO7SkpEJzfJSK18.jpg",
+      "/indt50A4edwQtdDZzo0lmodMX7o.jpg",
+      "/aDeNQAz19hYPscwEUovvVjSvKOF.jpg",
+      "/6Go6NJC7UTEMLFKPYKydbtPhxBv.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 635910,
+        "title": "得墨忒耳号的最后航程",
+        "poster_path": "/1qxHiAFtAKEc3M0IjmbQVpLXfnR.jpg",
+        "vote_average": 6.739
+      },
+      {
+        "tmdb_id": 23761,
+        "title": "甜美爱丽丝",
+        "poster_path": "/e7VNACEVUEb281mMzLfCBRPXVGu.jpg",
+        "vote_average": 6.4
+      },
+      {
+        "tmdb_id": 824119,
+        "title": "耿耿于怀",
+        "poster_path": "/sEMjT8vdqcITeDt2nRtA1D6hgtR.jpg",
+        "vote_average": 4.875
+      },
+      {
+        "tmdb_id": 23963,
+        "title": "澎堤池",
+        "poster_path": "/uh4n9FSYYaeOWchP8gBPNtg7kD7.jpg",
+        "vote_average": 6.459
+      },
+      {
+        "tmdb_id": 24005,
+        "title": "无需敲门",
+        "poster_path": "/btbTidQlmg8brVHC7tN0HnAy8Dm.jpg",
+        "vote_average": 6.636
+      },
+      {
+        "tmdb_id": 1565990,
+        "title": "山中之王",
+        "poster_path": "/d3A6aks2lfK14L5EANHo47TeM8M.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 1566088,
+        "title": "地平說",
+        "poster_path": "/9fa3tj9cZdFv25ehb3rmStEavCj.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 24090,
+        "title": "It Waits",
+        "poster_path": "/dAJd3tW4EEeP6RTzLirDgTefSYs.jpg",
+        "vote_average": 5.07
+      }
+    ]
   }
 }
