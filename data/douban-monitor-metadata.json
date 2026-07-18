@@ -7547,5 +7547,110 @@
         "vote_average": 4.6
       }
     ]
+  },
+  "36882191": {
+    "tmdb_id": 1633056,
+    "tmdb_type": "movie",
+    "original_title": "八仙！",
+    "overview": "《八仙！》是一部神仙喜剧动画电影，以中国传统神话“八仙过海”为灵感原点进行创作。故事围绕八个出身草根的凡人展开，他们面对强大的反派神仙，凭借机智与民间智慧巧妙周旋，最终战胜强敌，被世人赞颂为“八仙”。影片由编剧、导演牟正洋打造，着眼于让经典角色与当代观众产生共鸣，在冒险故事中流露东方哲学中关于友谊、成长、理想与坚守的主题。",
+    "genres": [
+      "喜剧",
+      "动画",
+      "奇幻",
+      "冒险"
+    ],
+    "runtime": 144,
+    "release_date": "2026-07-10",
+    "backdrop_path": "/2Gg8Lq8v5taBBR1JrDuhviNUjSB.jpg",
+    "poster_path": "/w7NfZCUnLFmM8n4r2ndi0WJ5oBF.jpg",
+    "countries": [
+      "China"
+    ],
+    "director": "牟正洋",
+    "cast": [
+      {
+        "name": "陈浩",
+        "character": "钟离权(voice)",
+        "profile_path": "/eBZJW1NCBFDh3U3xImf0vCCnDpy.jpg"
+      },
+      {
+        "name": "张运气",
+        "character": "曹国舅(voice)",
+        "profile_path": "/12BKdubMrQrrHlDPCc2DnPpkwRs.jpg"
+      },
+      {
+        "name": "零柒",
+        "character": "禄星(voice)",
+        "profile_path": "/3G6kVzgzio83HXpgwoEoynsCYIo.jpg"
+      },
+      {
+        "name": "韩雨泽",
+        "character": "福星(voice)",
+        "profile_path": "/aqiJdoNXynr72i9548Hrb1QdBRb.jpg"
+      },
+      {
+        "name": "李绍哲",
+        "character": "吕洞宾(voice)",
+        "profile_path": ""
+      },
+      {
+        "name": "立冬",
+        "character": "何仙姑(voice)",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/2Gg8Lq8v5taBBR1JrDuhviNUjSB.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 10907,
+        "title": "罗宾历险记",
+        "poster_path": "/c7LX3GMf9uXQTgVm3uxpm7E6Woc.jpg",
+        "vote_average": 7.471
+      },
+      {
+        "tmdb_id": 447281,
+        "title": "Слон и муравей",
+        "poster_path": "/iR1PVPpD9tSrszYYI3qcC4lzwCg.jpg",
+        "vote_average": 3.0
+      },
+      {
+        "tmdb_id": 20529,
+        "title": "蓝调之歌",
+        "poster_path": "/hrtW78FNfwFSiIetgey0cR8AT0g.jpg",
+        "vote_average": 7.012
+      },
+      {
+        "tmdb_id": 1563857,
+        "title": "O kováři Básimovi",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 446979,
+        "title": "Волшебный клад",
+        "poster_path": "/36FyiH1KNlzhPwIF8OUVua92dO5.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 460609,
+        "title": "Tales of Robin Hood",
+        "poster_path": "/bZEZz0gi4W0wusWaCjALhc84hl9.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 826398,
+        "title": "Kdo je nejmocnější",
+        "poster_path": "/7XVxnocicpCvVAER38trLuQYPOT.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 26538,
+        "title": "Jack Frost",
+        "poster_path": "/rky3WOB9AZ4fELooSKWwmO9qRQq.jpg",
+        "vote_average": 6.476
+      }
+    ]
   }
 }
