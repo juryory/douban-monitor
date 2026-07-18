@@ -7434,5 +7434,118 @@
         "vote_average": 5.07
       }
     ]
+  },
+  "26588017": {
+    "tmdb_id": 346923,
+    "tmdb_type": "movie",
+    "original_title": "Hamlet",
+    "overview": "改编自英国著名剧作家莎士比亚的同名悲剧。由女演员玛克辛·皮克翻船出演的“女版哈姆雷特”，2015年英国国家剧院在“永恒的莎士比亚”纪念活动中推出的“莎士比亚现场”系列电影中的一部。备受好评",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 184,
+    "release_date": "2015-03-23",
+    "backdrop_path": "/pwS4GzIEXzMVWUlq9q3DVNVxz5t.jpg",
+    "poster_path": "/1TQhhHoEg45Zx6QyNjKp5zXundU.jpg",
+    "countries": [
+      "United Kingdom"
+    ],
+    "director": "Sarah Frankcom",
+    "cast": [
+      {
+        "name": "玛克辛·皮克",
+        "character": "Hamlet",
+        "profile_path": "/uChlrL5WyeXhvGFaNvbzw1KqMgP.jpg"
+      },
+      {
+        "name": "约翰·斯拉普内尔",
+        "character": "Claudius/Ghost",
+        "profile_path": "/A4Wmltbkz3sz79GcBkLeTqwfkvE.jpg"
+      },
+      {
+        "name": "Barbara Marten",
+        "character": "Gertrude",
+        "profile_path": "/sZiDuphaHkKzcmSCdpG5lsp0N6t.jpg"
+      },
+      {
+        "name": "Gillian Bevan",
+        "character": "Polonia",
+        "profile_path": "/dEsbdPQDL3tuCpWS5EpZ7vxUOe.jpg"
+      },
+      {
+        "name": "托马斯·阿诺德",
+        "character": "Horatio",
+        "profile_path": "/5sRg7Cl4keWD8ol08i0jOrT4k8w.jpg"
+      },
+      {
+        "name": "Ashley Zhangazha",
+        "character": "Laertes",
+        "profile_path": ""
+      },
+      {
+        "name": "Katie West",
+        "character": "Ophelia",
+        "profile_path": "/ah3bro7zjctpYpYNBu3ZG0GJHYp.jpg"
+      },
+      {
+        "name": "Claire Benedict",
+        "character": "Marcella / Player King",
+        "profile_path": "/rA6s8NHuxZ4vKWHFUaXHQkOCouE.jpg"
+      }
+    ],
+    "stills": [
+      "/pwS4GzIEXzMVWUlq9q3DVNVxz5t.jpg",
+      "/zvefK4QgyWauParkhWCdEJN97Qz.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1088,
+        "title": "鲸骑士",
+        "poster_path": "/cVBZQZq091KtwBm2qObOv0JTFcH.jpg",
+        "vote_average": 7.048
+      },
+      {
+        "tmdb_id": 259903,
+        "title": "福斯汀与美丽的夏天",
+        "poster_path": "/UG0jWaHlR11R6Hg9lRSSN4PoxR.jpg",
+        "vote_average": 5.9
+      },
+      {
+        "tmdb_id": 259932,
+        "title": "The Stalking of Laurie Show",
+        "poster_path": "/7QS9xLZ55CHWu9U0o02c0QeUE9T.jpg",
+        "vote_average": 5.559
+      },
+      {
+        "tmdb_id": 1163,
+        "title": "奇迹的缔造者",
+        "poster_path": "/A0PfwIMM7Mkit0ZoLzspgOWrmsQ.jpg",
+        "vote_average": 7.154
+      },
+      {
+        "tmdb_id": 1418,
+        "title": "盯着你的眼睛",
+        "poster_path": "/adFulnuC7AyhHK3qAOrvTiW0JpZ.jpg",
+        "vote_average": 7.203
+      },
+      {
+        "tmdb_id": 1443,
+        "title": "处女之死",
+        "poster_path": "/iBLu2Zw8RAPwqMy5YnM5R9XNn2w.jpg",
+        "vote_average": 7.13
+      },
+      {
+        "tmdb_id": 259918,
+        "title": "Fiksi.",
+        "poster_path": "/sYB3q2WQVhslPVl3R4q5arQhq14.jpg",
+        "vote_average": 6.7
+      },
+      {
+        "tmdb_id": 259944,
+        "title": "De vlinder tilt de kat op",
+        "poster_path": "/luET5x1BKcYigGmNKy35sMxetMv.jpg",
+        "vote_average": 4.6
+      }
+    ]
   }
 }
