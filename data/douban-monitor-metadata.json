@@ -7652,5 +7652,242 @@
         "vote_average": 6.476
       }
     ]
+  },
+  "1291849": {
+    "tmdb_id": 14287,
+    "tmdb_type": "movie",
+    "original_title": "The Year of the Yao",
+    "overview": "《姚明之年》是一部纪录片，详细记录了姚明首个NBA赛季的经历。从成为NBA状元秀，到最初表现糟糕，再到适应NBA后突然爆发，影片没有放过姚明成长的任何一个阶段，其间还穿插有巴克利预言落空亲吻驴屁股、“姚鲨对决”的台前幕后等花絮。与此同时，影片还反映了姚明在翻译科林·潘的帮助下努力学习跨越语言和文化障碍，适应比赛和生活环境等。",
+    "genres": [
+      "纪录"
+    ],
+    "runtime": 88,
+    "release_date": "2004-09-16",
+    "backdrop_path": "/3viEAitCCSiEt8Z17cf3AHOYEbB.jpg",
+    "poster_path": "/bdIvOEhBFoEUcRNqfqAJJeztMEC.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "Adam Del Deo",
+    "cast": [
+      {
+        "name": "Charles Barkley",
+        "character": "Self",
+        "profile_path": "/Ok7Fed0BRFFxMRKzNzROGAmRKp.jpg"
+      },
+      {
+        "name": "Frank Deford",
+        "character": "Self",
+        "profile_path": "/3qhgeCsNqQO9flTHpnUv6GpTTL8.jpg"
+      },
+      {
+        "name": "Steve Francis",
+        "character": "Self",
+        "profile_path": "/hri2wh0yE10YBkwUa5RoaNNRoY1.jpg"
+      },
+      {
+        "name": "Michael Irvin",
+        "character": "Self",
+        "profile_path": "/sdQELYTjcXRVHf5yaNeevTpwQhO.jpg"
+      },
+      {
+        "name": "Ernie Johnson",
+        "character": "Self",
+        "profile_path": "/jFSjiWmMYMiR9nvsPcRIuVlAd2n.jpg"
+      },
+      {
+        "name": "姚明",
+        "character": "Self",
+        "profile_path": "/xCITs4vDdwX9pe2QUAVODJQf7fO.jpg"
+      },
+      {
+        "name": "Cuttino Mobley",
+        "character": "Self",
+        "profile_path": ""
+      },
+      {
+        "name": "沙奎尔·奥尼尔",
+        "character": "Self",
+        "profile_path": "/53bAT3rF9IsiZQY1eDnNd5jY0Ul.jpg"
+      }
+    ],
+    "stills": [
+      "/3viEAitCCSiEt8Z17cf3AHOYEbB.jpg",
+      "/nbbldknNMAeLWkRDKxGxWY06ZbX.jpg",
+      "/4oCgHb6nt6JVyaDJBTkI8DAg7s0.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 261540,
+        "title": "2008-2009 NBA Champions - Los Angeles Lakers",
+        "poster_path": "/iWXcTSXXxnM3GN9tkQJztR1ILrD.jpg",
+        "vote_average": 9.0
+      },
+      {
+        "tmdb_id": 997638,
+        "title": "NYC Point Gods",
+        "poster_path": "/4SkLj1AvarKnt7WXTnh2ibNwkEG.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 265330,
+        "title": "活塞坏小子军团",
+        "poster_path": "/l7QWCym7Zb9wDpefryk8OqUyJD1.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 1553976,
+        "title": "Go Big: The Story of the Canberra Capitals",
+        "poster_path": "/4lVJK52A5bujH4Tl00xZRFCC4HL.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1002307,
+        "title": "体坛秘史：黑哨行动",
+        "poster_path": "/pArr12pr825SWb06ihiWesJsuR0.jpg",
+        "vote_average": 7.047
+      },
+      {
+        "tmdb_id": 639971,
+        "title": "Clutch City",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1024362,
+        "title": "The Grizzlie Truth",
+        "poster_path": "/e33ZSxslhOgxSkC1lAF1cDImh97.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 462872,
+        "title": "Kornél on Tour",
+        "poster_path": "/wJ5LOYWOw9JZ2W2nLQ45VKYe4ls.jpg",
+        "vote_average": 7.0
+      }
+    ]
+  },
+  "37246788": {
+    "tmdb_id": 316294,
+    "tmdb_type": "tv",
+    "original_title": "เพย์แบค เดอะซีรีส์",
+    "overview": "Sun曾为高利贷卖命，却因意外导致家人丧生。心怀愧疚的他，在发现家人死因竟与前室友有关后，决定踏入娱乐圈展开复仇。此时，神秘金主Jay现身相助，两人在权欲横流的演艺圈中，开启了一场危险又火热的情感博弈。",
+    "genres": [
+      "剧情",
+      "犯罪",
+      "动作冒险"
+    ],
+    "runtime": 44,
+    "release_date": "2026-05-30",
+    "backdrop_path": "/4L9sftGH7oQ1bpB0aQHERwyfDVd.jpg",
+    "poster_path": "/fGarAr85Mc6gxO5OUmzlM6lvd0C.jpg",
+    "countries": [
+      "TH"
+    ],
+    "director": "samK",
+    "cast": [
+      {
+        "name": "陈晓珉",
+        "character": "Sun",
+        "profile_path": "/zFuaOHaZg0aO1PgCDBx19g85ej8.jpg"
+      },
+      {
+        "name": "陈拓安",
+        "character": "Jay",
+        "profile_path": "/Ac36AQYxetVne8cyohJ22RL4DQI.jpg"
+      },
+      {
+        "name": "陈奕峻",
+        "character": "Sky",
+        "profile_path": "/yUDF5VMYzYOcHPSNQbPw03hzYCx.jpg"
+      },
+      {
+        "name": "塔那瓦·西那瓦",
+        "character": "Bank",
+        "profile_path": "/5fpjGQvmO0RyHKklOxyCvm2tH1H.jpg"
+      },
+      {
+        "name": "吉拉帕特·乌塔马南",
+        "character": "Kajorn",
+        "profile_path": "/q2pClc6VVrrdE0klvCf1Gql3kBb.jpg"
+      },
+      {
+        "name": "科尔斯·阿塔塞里",
+        "character": "Songphon",
+        "profile_path": "/og9xltPhiMmr9PuIB3XKk7e9gc8.jpg"
+      },
+      {
+        "name": "素提达·盖姆桑·纳·阿育他亚",
+        "character": "Pavinee",
+        "profile_path": "/sxH6lFxW3hgtLvPf0klDftnuIbz.jpg"
+      },
+      {
+        "name": "甘地·瓦苏维查基",
+        "character": "Jo",
+        "profile_path": "/nX62BVjjHy1X3VvBcpfDpLpGcWp.jpg"
+      }
+    ],
+    "stills": [
+      "/4L9sftGH7oQ1bpB0aQHERwyfDVd.jpg",
+      "/bLusqv5XhBTUYZbWTA432XalOgc.jpg",
+      "/dsyoX7D8w3UUpNBzYXLDBvOcpT8.jpg",
+      "/hyGgZNieAvCQ6ITq1kBwiSMPmBZ.jpg",
+      "/dUijLe7ik8giydCfSUDsF98ioFD.jpg",
+      "/qlxSVQmBVSvuiO2LLa0BO2jUhlt.jpg",
+      "/myeMGgDzH53umxscK1G00AQIfbt.jpg",
+      "/xsUEFTrB6vESvbpvuQfljbDQrTz.jpg",
+      "/eqKahx1YI9gwVa7Hdhrc7n6IjOW.jpg",
+      "/v4YOVvSb7CfYMMnrXnq6KftzfF4.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 203990,
+        "title": "经典杯子蛋糕",
+        "poster_path": "/qiukQ1XyAYuEQYb1ZP3xY6hXuaq.jpg",
+        "vote_average": 7.456
+      },
+      {
+        "tmdb_id": 484,
+        "title": "女作家与谋杀案",
+        "poster_path": "/3UxBFG4fiuZ0P9n2sCrjXh64Avy.jpg",
+        "vote_average": 7.523
+      },
+      {
+        "tmdb_id": 57754,
+        "title": "奇境传说",
+        "poster_path": "/p0Tq3A9CzvzjGWR3L7xBuqIAoJT.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 271255,
+        "title": "当我的指尖触碰到你的温度时",
+        "poster_path": "/ddVY1em3u1qaFyOeHcEw9zownin.jpg",
+        "vote_average": 9.0
+      },
+      {
+        "tmdb_id": 271309,
+        "title": "宝物岛",
+        "poster_path": "/i0xVturVfrMVaJor0y072KY5uvi.jpg",
+        "vote_average": 8.1
+      },
+      {
+        "tmdb_id": 271325,
+        "title": "也有从认错人开始的恋爱",
+        "poster_path": "/bI2gj2dVaa6BJSYVeZU3etUVOxv.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 271338,
+        "title": "La Comtesse de Monte-Cristo",
+        "poster_path": "/p7tg5VEKKEnXnIGVUC8jHsh1Iki.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 344,
+        "title": "Honeys",
+        "poster_path": "",
+        "vote_average": 8.5
+      }
+    ]
   }
 }
