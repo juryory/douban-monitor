@@ -158,9 +158,9 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 
 ## 自动运行
 
-项目配置了 GitHub Actions（`.github/workflows/monitor.yml`），当前**仅支持在 Actions 页面手动触发**（workflow_dispatch），定时抓取的 cron 暂时停用。
+项目配置了 GitHub Actions（`.github/workflows/monitor.yml`），支持每天北京时间 21:00 定时运行（`schedule`），也可在 Actions 页面手动触发（workflow_dispatch）。
 
-> 关于境外 IP：早期认为豆瓣完全拒绝境外 IP，实测发现 GitHub 托管 runner **有时能成功抓到豆瓣**（曾单次跑出 132 条候选、16 条达标），但豆瓣对机房 IP 的限流**时好时坏**，单次成功不代表能稳定定时运行。因此 cron 先保持停用、以手动触发观察为主，稳定的定时抓取仍建议放在国内网络环境（如国内 Docker）。
+> 关于境外 IP：早期认为豆瓣完全拒绝境外 IP，实测发现 GitHub 托管 runner **有时能成功抓到豆瓣**（曾单次跑出 132 条候选、16 条达标），但豆瓣对机房 IP 的限流**时好时坏**，单次成功不代表每次都通。因此把 GitHub 定时作为国内本地运行的**兜底**（模式 B），稳定抓取仍以国内网络环境为主。
 
 启用前需要在仓库里做三步配置：
 
@@ -168,8 +168,8 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
    Settings → Secrets and variables → Actions，添加 `TMDB_API_KEY`（若改用 Bearer，则添加 `TMDB_BEARER_TOKEN`，二者对应 workflow 中读取的两个环境变量）。
 2. **开启写权限**
    Settings → Actions → General → Workflow permissions 选择 **Read and write permissions**，否则 workflow 里的 `git push` 会因为没有写权限而报 403。
-3. **（模式 B 兜底）启用定时**
-   `monitor.yml` 里已备好每天北京时间 21:00 的 cron（`0 13 * * *`，UTC），默认注释掉。取消注释即可让 Action 晚上自动跑，和本地早上的运行错峰兜底。
+3. **（模式 B 兜底）定时已启用**
+   `monitor.yml` 已开启每天北京时间 21:00 的 cron（`0 13 * * *`，UTC），Action 晚上自动跑，和本地早上的运行错峰兜底。如需关闭，注释掉 `schedule` 即可。
 
 > 提示：workflow 自带的提交步骤只 `git add data/ reports/`，不含 `detail/`、`posters/`；如需 Action 也提交详情页，需自行对齐（脚本 step 8 已包含这几个目录）。
 

@@ -2,10 +2,10 @@ name: 豆瓣高分监控
 
 on:
   # 模式 B（本地 + GitHub 双跑兜底）：本地早上跑，GitHub 晚上跑。
-  # 取消下面注释即可启用「每天北京时间 21:00」定时（GitHub cron 用 UTC，21:00 CST = 13:00 UTC）。
-  # 注意：境外 runner 抓豆瓣受机房 IP 限流影响，成功率不稳定，作为国内本地跑的兜底。
-  # schedule:
-  #   - cron: '0 13 * * *'   # 北京时间 21:00
+  # 每天北京时间 21:00 定时（GitHub cron 用 UTC，21:00 CST = 13:00 UTC），作为国内本地早间运行的兜底。
+  # 注意：境外 runner 抓豆瓣受机房 IP 限流影响，成功率不稳定。
+  schedule:
+    - cron: '0 13 * * *'   # 北京时间 21:00
   workflow_dispatch: # 手动触发（境外 runner 实测有时能抓豆瓣，但机房 IP 限流不稳定，稳定定时抓取由国内 Docker 负责）
 
 jobs:
