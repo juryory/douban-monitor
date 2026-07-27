@@ -128,6 +128,9 @@ DEFAULT_CONFIG = {
         "https://m.douban.com/subject_collection/show_global_best_weekly",
     ],
     "request_timeout_seconds": 20,
+    # 模式 A（纯本地）设为 false，跳过第 8 步 git 同步；模式 B（托管 GitHub）保持 true。
+    # 也可用环境变量 DOUBAN_MONITOR_NO_PUSH=1 临时关闭，优先级高于配置。
+    "auto_git_push": True,
     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/123.0 Safari/537.36",
 }
@@ -868,6 +871,13 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
                 print(result.stderr, end="", flush=True)
 
     log_step("[8/8] 同步并推送到 GitHub...")
+
+    # 纯本地模式：跳过 git 同步，数据只写在本地，由 skill 在对话中汇报结果。
+    no_push_env = (get_env("DOUBAN_MONITOR_NO_PUSH") or "").lower() in ("1", "true", "yes")
+    if no_push_env or not config.get("auto_git_push", True):
+        log_kv("本地模式", "跳过 git 同步（auto_git_push=false 或 DOUBAN_MONITOR_NO_PUSH）")
+        return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
+
     git_kw = {"cwd": str(project_root), "capture_output": True, "text": True, "encoding": "utf-8", "errors": "replace"}
 
     # 先拉取远端最新，避免 push 被拒绝

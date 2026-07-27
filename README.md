@@ -32,6 +32,26 @@
 
 > 想用 GitHub Actions 自动跑，见文末「自动运行」一节。
 
+## 运行模式
+
+按是否托管到 GitHub，分两种用法，靠 `config.toml` 的 `auto_git_push` 切换：
+
+### 模式 A：纯本地
+
+不托管 GitHub，数据只留在本地，跑完看结果就行。
+
+- 配置 `auto_git_push = false`（或运行时加环境变量 `DOUBAN_MONITOR_NO_PUSH=1`），第 8 步会跳过 git 同步。
+- 运行 `python scripts/monitor.py`，结果写入 `data/`、`reports/`，直接打开 `index.html` 查看，或让 skill 在对话里汇报当天「新增命中」。
+
+### 模式 B：本地 + GitHub 双跑兜底
+
+托管到 GitHub，本地和 Action 各跑一次、错开时段，互相兜底。
+
+- 配置 `auto_git_push = true`（默认），两边都推送到同一仓库。
+- 推荐排班：**本地北京时间 09:00**（国内网络，稳）+ **GitHub Action 21:00**（境外兜底）。
+- 兜底机制：某次抓取失败（当日候选为 0）会保留上一份好数据不覆盖；第 8 步先 `git pull --rebase --autostash` 再推送，错峰运行不会冲突。任意一边挂了，另一边的结果仍在仓库里。
+- GitHub 侧的 Secret、写权限和 cron 配置见下文「自动运行」。
+
 ## 工作方式
 
 纯 HTTP 抓取，不需要浏览器环境：
@@ -142,12 +162,14 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 
 > 关于境外 IP：早期认为豆瓣完全拒绝境外 IP，实测发现 GitHub 托管 runner **有时能成功抓到豆瓣**（曾单次跑出 132 条候选、16 条达标），但豆瓣对机房 IP 的限流**时好时坏**，单次成功不代表能稳定定时运行。因此 cron 先保持停用、以手动触发观察为主，稳定的定时抓取仍建议放在国内网络环境（如国内 Docker）。
 
-启用前需要在仓库里做两步配置：
+启用前需要在仓库里做三步配置：
 
 1. **配置 Secret**
    Settings → Secrets and variables → Actions，添加 `TMDB_API_KEY`（若改用 Bearer，则添加 `TMDB_BEARER_TOKEN`，二者对应 workflow 中读取的两个环境变量）。
 2. **开启写权限**
    Settings → Actions → General → Workflow permissions 选择 **Read and write permissions**，否则 workflow 里的 `git push` 会因为没有写权限而报 403。
+3. **（模式 B 兜底）启用定时**
+   `monitor.yml` 里已备好每天北京时间 21:00 的 cron（`0 13 * * *`，UTC），默认注释掉。取消注释即可让 Action 晚上自动跑，和本地早上的运行错峰兜底。
 
 > 提示：workflow 自带的提交步骤只 `git add data/ reports/`，不含 `detail/`、`posters/`；如需 Action 也提交详情页，需自行对齐（脚本 step 8 已包含这几个目录）。
 

@@ -39,3 +39,9 @@ tmdb_tv_pages = 1
 
 # 请求设置
 request_timeout_seconds = 20
+
+# 运行模式
+# 模式 A（纯本地）：设为 false，跑完只写本地文件，跳过 git 推送
+# 模式 B（托管 GitHub）：设为 true，跑完自动提交并推送数据
+# 也可用环境变量 DOUBAN_MONITOR_NO_PUSH=1 临时强制关闭
+auto_git_push = true
