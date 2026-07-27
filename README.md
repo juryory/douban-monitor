@@ -25,7 +25,7 @@
    ```bash
    python scripts/monitor.py
    ```
-   ⚠️ **必须在国内网络环境运行**：豆瓣 Rexxar API 拒绝境外 IP，境外运行时第 1 步豆瓣抓取会全部失败（当日候选为 0），脚本只会保留上一份旧数据。
+   ⚠️ **建议在国内网络环境运行**：豆瓣对机房 / 境外 IP 有不稳定的限流，境外环境（含 GitHub runner）实测有时能正常抓取、有时会被拦。若某次豆瓣全部失败（当日候选为 0），脚本会保留上一份旧数据，不会覆盖成空列表。
 
 4. **查看结果**
    浏览器直接打开根目录 `index.html`，或查看 `reports/douban-monitor-YYYYMMDD.md`。
@@ -138,7 +138,9 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 
 ## 自动运行
 
-项目配置了 GitHub Actions（`.github/workflows/monitor.yml`），当前**仅支持在 Actions 页面手动触发**（workflow_dispatch）。定时抓取的 cron 已停用：豆瓣 API 拒绝境外 IP，GitHub 托管的 runner 无法直接抓取，定时运行改由国内 Docker 负责。
+项目配置了 GitHub Actions（`.github/workflows/monitor.yml`），当前**仅支持在 Actions 页面手动触发**（workflow_dispatch），定时抓取的 cron 暂时停用。
+
+> 关于境外 IP：早期认为豆瓣完全拒绝境外 IP，实测发现 GitHub 托管 runner **有时能成功抓到豆瓣**（曾单次跑出 132 条候选、16 条达标），但豆瓣对机房 IP 的限流**时好时坏**，单次成功不代表能稳定定时运行。因此 cron 先保持停用、以手动触发观察为主，稳定的定时抓取仍建议放在国内网络环境（如国内 Docker）。
 
 启用前需要在仓库里做两步配置：
 
@@ -147,7 +149,7 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 2. **开启写权限**
    Settings → Actions → General → Workflow permissions 选择 **Read and write permissions**，否则 workflow 里的 `git push` 会因为没有写权限而报 403。
 
-> 注意：GitHub 托管 runner 在境外，即使手动触发，豆瓣抓取这一步也会失败，仅 TMDB 部分有效。真正的定时抓取仍需在国内网络环境（如国内 Docker）执行。
+> 提示：workflow 自带的提交步骤只 `git add data/ reports/`，不含 `detail/`、`posters/`；如需 Action 也提交详情页，需自行对齐（脚本 step 8 已包含这几个目录）。
 
 ## 当前状态
 
@@ -169,7 +171,7 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 ## 已知限制
 
 - 豆瓣抓取全部依赖 Rexxar API（`m.douban.com` 移动网页版接口，无需签名）。若 Rexxar 整体宕机，本次运行会跳过日报和前端结果写入，保留上一份好数据
-- 豆瓣 API 拒绝境外 IP，GitHub 托管的 runner 无法直接抓取，定时运行需由国内网络环境（如国内 Docker）执行
+- 豆瓣对机房 / 境外 IP 有不稳定的限流：GitHub runner 实测有时能抓、有时被拦，单次成功不代表能稳定定时运行，稳定抓取建议放在国内网络环境（如国内 Docker）
 - 未配置 `TMDB_API_KEY` 时，TMDB 候选源和网页封面/元数据不会生效
 
 ## 后续方向
