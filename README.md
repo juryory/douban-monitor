@@ -7,6 +7,31 @@
 - 豆瓣评分大于 `8.0`
 - 豆瓣评分人数大于 `3000`
 
+## 快速开始（新手）
+
+第一次拉取仓库后，按下面几步就能跑通：
+
+1. **准备环境**
+   需要 Python **3.11+**（脚本用到标准库 `tomllib`，3.11 起才内置）。无第三方依赖，不用 `pip install`。
+
+2. **配置 TMDB Key（可选但推荐）**
+   ```bash
+   cp .env.example .env
+   # 编辑 .env，填入 TMDB_API_KEY（或 TMDB_BEARER_TOKEN，二选一）
+   ```
+   不填也能运行，但不会有封面、简介和 TMDB 候选源。`config.toml` 里的阈值和榜单开箱即用，一般不用改。
+
+3. **在仓库根目录运行**
+   ```bash
+   python scripts/monitor.py
+   ```
+   ⚠️ **必须在国内网络环境运行**：豆瓣 Rexxar API 拒绝境外 IP，境外运行时第 1 步豆瓣抓取会全部失败（当日候选为 0），脚本只会保留上一份旧数据。
+
+4. **查看结果**
+   浏览器直接打开根目录 `index.html`，或查看 `reports/douban-monitor-YYYYMMDD.md`。
+
+> 想用 GitHub Actions 自动跑，见文末「自动运行」一节。
+
 ## 工作方式
 
 纯 HTTP 抓取，不需要浏览器环境：
@@ -82,7 +107,13 @@ cp .env.example .env
 
 ## 运行方式
 
-建议使用绝对路径运行：
+本地在仓库根目录运行即可：
+
+```bash
+python scripts/monitor.py
+```
+
+在 OpenClaw 环境中，可使用绝对路径运行：
 
 ```bash
 python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
@@ -109,7 +140,14 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 
 项目配置了 GitHub Actions（`.github/workflows/monitor.yml`），当前**仅支持在 Actions 页面手动触发**（workflow_dispatch）。定时抓取的 cron 已停用：豆瓣 API 拒绝境外 IP，GitHub 托管的 runner 无法直接抓取，定时运行改由国内 Docker 负责。
 
-在 Actions 页面手动触发前，需要在仓库 Settings → Secrets and variables → Actions 中配置 `TMDB_API_KEY`。
+启用前需要在仓库里做两步配置：
+
+1. **配置 Secret**
+   Settings → Secrets and variables → Actions，添加 `TMDB_API_KEY`（若改用 Bearer，则添加 `TMDB_BEARER_TOKEN`，二者对应 workflow 中读取的两个环境变量）。
+2. **开启写权限**
+   Settings → Actions → General → Workflow permissions 选择 **Read and write permissions**，否则 workflow 里的 `git push` 会因为没有写权限而报 403。
+
+> 注意：GitHub 托管 runner 在境外，即使手动触发，豆瓣抓取这一步也会失败，仅 TMDB 部分有效。真正的定时抓取仍需在国内网络环境（如国内 Docker）执行。
 
 ## 当前状态
 
