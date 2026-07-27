@@ -19,11 +19,10 @@
 - TMDB 热门接口
   提供额外候选和展示元数据
 
-默认配置的豆瓣榜单包括：
+默认配置的豆瓣榜单（见 `config.toml` 的 `douban_collection_urls`）：
 
-- 电影
-- 华语剧集
-- 全球剧集
+- 电影：热门、实时热门、一周口碑
+- 剧集：热门、实时热门、华语一周口碑、全球一周口碑
 
 综艺类目（国内 / 国外）已停用：TMDB 几乎没有对应封面，命中率太低，跑了也是浪费。
 
@@ -43,7 +42,7 @@
 4. 更新状态与监控库，判定新增命中、继续观察和二次提醒
 5. 写入状态文件、监控库和 Markdown 报告
 6. 生成前端结果数据 `douban-monitor-result.json`，为每条达标条目附带入库时间（`qualified_at` / `first_discovered_at`）
-7. 生成网页附加数据：`fetch_favorites.py` 手动收藏、`fetch_posters.py` 封面、`fetch_metadata.py` 元数据、`fetch_reviews.py` 短评
+7. 生成网页附加数据：`fetch_favorites.py` 手动收藏、`fetch_posters.py` 封面、`fetch_metadata.py` 元数据、`fetch_reviews.py` 短评、`generate_detail_pages.py` 静态详情页
 8. 拉取远端最新代码，提交数据变更并推送到 GitHub（务必 `git add data/ detail/ reports/ posters/`，不要遗漏 detail 目录下的 HTML 页面）
 
 **抓取失败保护**：若第 1、2 步豆瓣和 TMDB 全部失败、当日候选数为 0，第 5 步跳过 Markdown 报告写入、第 6 步跳过 `result.json` 写入，保留上一份好数据，避免网页刷新成空。
@@ -96,14 +95,14 @@
 - 手动收藏：`data/douban-monitor-favorites.json` 填豆瓣 ID 即可在网页展示
 - 最近入库排序：达标条目携带入库时间戳，网页按真实入库时间排序
 - TMDB 封面和元数据自动获取
-- GitHub Actions 定时自动运行（每天 09:00 / 21:00）
+- 静态详情页生成（`detail/<douban_id>.html`）
+- GitHub Actions 手动触发运行（cron 已停用，定时抓取由国内 Docker 负责）
 - 抓取失败和推送冲突有兜底保护，不会覆盖或污染历史数据
 
 当前已打通的榜单类型：
 
-- 电影
-- 华语剧集
-- 全球剧集
+- 电影（热门 / 实时热门 / 一周口碑）
+- 剧集（热门 / 实时热门 / 华语 / 全球）
 
 ## 已知限制
 

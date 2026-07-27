@@ -12,17 +12,16 @@
 纯 HTTP 抓取，不需要浏览器环境：
 
 - **豆瓣**
-  优先使用 Frodo API（带 HMAC 签名）；Frodo 被风控或签名失败时自动降级到 Rexxar API（`m.douban.com` 移动网页版接口，无需签名）
+  统一通过 Rexxar API（`m.douban.com` 移动网页版接口，无需签名和 apiKey）抓取，是当前豆瓣抓取的唯一通道
 - **TMDB**
   提供额外候选和展示元数据来源（封面、简介、类型等）
 
-默认抓取的豆瓣榜单（全部已验证可用）：
+默认抓取的豆瓣榜单（见 `config.toml` 的 `douban_collection_urls`）：
 
-- 电影
-- 华语剧集
-- 全球剧集
-- 国内综艺
-- 国外综艺
+- 电影：热门、实时热门、一周口碑
+- 剧集：热门、实时热门、华语一周口碑、全球一周口碑
+
+综艺（国内 / 国外）已停用：TMDB 几乎没有对应封面，命中率太低。
 
 ## 目录结构
 
@@ -44,14 +43,20 @@
   从 TMDB 获取简介、类型、时长等元数据
 - `scripts/fetch_reviews.py`
   从豆瓣获取短评
+- `scripts/generate_detail_pages.py`
+  为每个达标条目生成 `detail/<douban_id>.html` 详情页
 - `data/`
   运行产生的 JSON 数据文件（state、library、result、favorites、posters、metadata、reviews）
+- `detail/`
+  各条目静态详情页 HTML
 - `reports/`
   每日 Markdown 报告
 - `.github/workflows/monitor.yml`
-  GitHub Actions 定时执行配置
+  GitHub Actions 执行配置（当前仅手动触发 workflow_dispatch）
 - `references/`
   示例配置、状态文件和实现说明
+- `tools/`
+  辅助调试页面
 
 ## 运行依赖
 
@@ -73,7 +78,7 @@ cp .env.example .env
 - `.env`
   只放密钥或敏感环境变量，例如 `TMDB_API_KEY`
 - `config.toml`
-  放非敏感运行参数，例如阈值、观察期、多榜单候选源地址和浏览器参数
+  放非敏感运行参数，例如阈值、观察期、冷却窗口、多榜单候选源地址和 TMDB 设置
 
 ## 运行方式
 
@@ -95,22 +100,22 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 - `reports/douban-monitor-YYYYMMDD.md`（Markdown 报告）
 
 步骤 6 生成前端结果数据 `douban-monitor-result.json`。
-步骤 7 会自动调用 `fetch_favorites.py`、`fetch_posters.py`、`fetch_metadata.py`、`fetch_reviews.py` 生成网页所需数据。
-步骤 8 会自动将 `data/` 和 `reports/` 的变更提交并推送到 GitHub。
+步骤 7 会自动调用 `fetch_favorites.py`、`fetch_posters.py`、`fetch_metadata.py`、`fetch_reviews.py`、`generate_detail_pages.py` 生成网页所需数据和详情页。
+步骤 8 会自动将 `data/`、`detail/`、`reports/`、`posters/` 的变更提交并推送到 GitHub。
 
 **容错**：若第 1、2 步抓取全部失败，当日候选为 0 时，脚本跳过第 5、6 步对报告和 `result.json` 的写入，保留上一份好数据；若第 8 步 `git pull --rebase` 失败，或待提交文件里出现合并冲突标记，脚本立即中止，不提交或推送。
 
 ## 自动运行
 
-项目配置了 GitHub Actions（`.github/workflows/monitor.yml`），每天北京时间 09:00 和 21:00 自动执行。也支持在 Actions 页面手动触发（workflow_dispatch）。
+项目配置了 GitHub Actions（`.github/workflows/monitor.yml`），当前**仅支持在 Actions 页面手动触发**（workflow_dispatch）。定时抓取的 cron 已停用：豆瓣 API 拒绝境外 IP，GitHub 托管的 runner 无法直接抓取，定时运行改由国内 Docker 负责。
 
-需要在仓库 Settings → Secrets and variables → Actions 中配置 `TMDB_API_KEY`。
+在 Actions 页面手动触发前，需要在仓库 Settings → Secrets and variables → Actions 中配置 `TMDB_API_KEY`。
 
 ## 当前状态
 
 当前版本已经具备这些能力：
 
-- 多榜单候选抓取（5 个榜单全部打通）
+- 多榜单候选抓取（电影 / 剧集 榜单，综艺已停用）
 - 豆瓣详情页评分和评分人数核验
 - 状态文件与监控库维护（含入库时间戳）
 - Markdown 报告生成
@@ -119,12 +124,14 @@ python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
 - 手动收藏：在 `data/douban-monitor-favorites.json` 填豆瓣 ID 即可
 - 最近入库排序：按真实入库时间倒序
 - TMDB 封面和元数据自动获取
-- GitHub Actions 定时自动运行
+- 静态详情页生成（`detail/<douban_id>.html`）
+- GitHub Actions 手动触发运行
 - 抓取失败与推送冲突兜底：自动保留历史数据，不覆盖、不提交坏文件
 
 ## 已知限制
 
-- 豆瓣优先走 Frodo API（带签名），失败时自动降级到 Rexxar API（`m.douban.com` 移动网页版接口，无需签名）。Frodo 常因 IP 风控或签名方案变化返回 400，Rexxar 作为兜底通常仍然可用
+- 豆瓣抓取全部依赖 Rexxar API（`m.douban.com` 移动网页版接口，无需签名）。若 Rexxar 整体宕机，本次运行会跳过日报和前端结果写入，保留上一份好数据
+- 豆瓣 API 拒绝境外 IP，GitHub 托管的 runner 无法直接抓取，定时运行需由国内网络环境（如国内 Docker）执行
 - 未配置 `TMDB_API_KEY` 时，TMDB 候选源和网页封面/元数据不会生效
 
 ## 后续方向
