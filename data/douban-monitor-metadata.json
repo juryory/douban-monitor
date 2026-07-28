@@ -7890,8 +7890,374 @@
       }
     ]
   },
-  "37415674": {},
+  "37415674": {
+    "tmdb_id": 136315,
+    "tmdb_type": "tv",
+    "original_title": "The Bear",
+    "overview": "年轻的厨师卡米与一群毛手毛脚的帮厨一起努力改造“芝加哥原味牛肉三明治店”。在此过程中，他的内心也经历了变化，最后所有人变得亲如家人。",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ],
+    "runtime": null,
+    "release_date": "2022-06-23",
+    "backdrop_path": "/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+    "poster_path": "/7y1ibpkTwlKYrxFbq3lh2RgIB1k.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "Christopher Storer",
+    "cast": [
+      {
+        "name": "杰瑞米·艾伦·怀特",
+        "character": "Carmen 'Carmy' Berzatto",
+        "profile_path": "/pXRADDRhprgaQ4Bri44NH3bYeu6.jpg"
+      },
+      {
+        "name": "爱波·莫斯-巴克拉赫",
+        "character": "Richard 'Richie' Jerimovich",
+        "profile_path": "/xD8GVNayMpiTZxLfahy2DseYcQq.jpg"
+      },
+      {
+        "name": "阿尤·艾德维利",
+        "character": "Sydney Adamu",
+        "profile_path": "/wrqYWaAmVPM2yueEEQUtMo6kCp2.jpg"
+      },
+      {
+        "name": "莱昂内尔·博伊斯",
+        "character": "Marcus Brooks",
+        "profile_path": "/hpIxX5nkfA3pWCW8rYkEUCSBVyS.jpg"
+      },
+      {
+        "name": "艾比·艾略特",
+        "character": "Natalie 'Sugar' Berzatto",
+        "profile_path": "/v7h08EsTce2pLHkZiaFe1QRuYbU.jpg"
+      },
+      {
+        "name": "马蒂·马得胜",
+        "character": "Neil Fak",
+        "profile_path": "/p1H19bBP5ePOxNpfOXIYpMgRfS7.jpg"
+      },
+      {
+        "name": "丽莎·科伦-萨亚斯",
+        "character": "Bettina 'Tina' Marrero",
+        "profile_path": "/q2gHcef0wckji0AS8ZEO6cYx065.jpg"
+      },
+      {
+        "name": "埃德温·李·吉布森",
+        "character": "Ebraheim",
+        "profile_path": "/wyDPu35soTnBi4VClpS8fv2atkE.jpg"
+      }
+    ],
+    "stills": [
+      "/eh7hIGLq7IhddgOPYyprCbz8JtH.jpg",
+      "/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+      "/aZz0AOpYcDyYwfET9k6j3QQXPuS.jpg",
+      "/wHNwlE6ftEpgjVbdhLXOtv1hLs0.jpg",
+      "/ety3PHo2W8yZZgEFp7QUBFZOYke.jpg",
+      "/hXDdn9FYgUwVPzNXYIXD8snjLdH.jpg",
+      "/AjdEGHt5GGhe6VWdcYkWdLyfY9D.jpg",
+      "/rSPI0pQ9iHjv0hQMbv0UYeDlfCI.jpg",
+      "/kcQEuiBhbPc8Ql8XhDNHRtLIaAf.jpg",
+      "/csnJf7QslLWl2oekdm3mO3INFiq.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 90061,
+        "title": "失眠社群系列之惧暗之症",
+        "poster_path": "/3v3gw58v3XoBipH3gNGpRqz6FL8.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 150,
+        "title": "This Life",
+        "poster_path": "/wC8V4g0AsyWO6ZFCRqg7bkNsmVC.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 154,
+        "title": "Good Times",
+        "poster_path": "/nwQ6QXKjpR74Sxlbs9iat4eOVxb.jpg",
+        "vote_average": 7.982
+      },
+      {
+        "tmdb_id": 204,
+        "title": "Freddie",
+        "poster_path": "/u9bQCwHHQ58TCK24voky5ZUMZAf.jpg",
+        "vote_average": 4.708
+      },
+      {
+        "tmdb_id": 57584,
+        "title": "想被送达的我们",
+        "poster_path": "/4VGuSq8HNPWrTuSPSkS77FzZ39A.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 57551,
+        "title": "面包和汤和猫咪好天气",
+        "poster_path": "/1f0F6yrhIke9NoWRt2cuAo7GN6Z.jpg",
+        "vote_average": 6.4
+      },
+      {
+        "tmdb_id": 90259,
+        "title": "第三天",
+        "poster_path": "/cW3xE7FKgkXRE1RdZyvUJIoDBFg.jpg",
+        "vote_average": 6.469
+      },
+      {
+        "tmdb_id": 75,
+        "title": "Two Guys and a Girl",
+        "poster_path": "/ulm7wLxyxDNO8kEe12oTM5efWfb.jpg",
+        "vote_average": 7.159
+      }
+    ]
+  },
   "27172891": {},
-  "36808876": {},
-  "36858672": {}
+  "36808876": {
+    "tmdb_id": 1368337,
+    "tmdb_type": "movie",
+    "original_title": "The Odyssey",
+    "overview": "特洛伊战争结束后，伊萨卡国王奥德修斯踏上了返回家乡的艰险旅程。",
+    "genres": [
+      "冒险",
+      "动作",
+      "奇幻"
+    ],
+    "runtime": 173,
+    "release_date": "2026-07-15",
+    "backdrop_path": "/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+    "poster_path": "/Aj0Uykxj0vhwVsyrRJka0aM3SP1.jpg",
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "director": "克里斯托弗·诺兰",
+    "cast": [
+      {
+        "name": "马特·达蒙",
+        "character": "Odysseus",
+        "profile_path": "/aCvBXTAR9B1qRjIRzMBYhhbm1fR.jpg"
+      },
+      {
+        "name": "汤姆·赫兰德",
+        "character": "Telemachus",
+        "profile_path": "/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+      },
+      {
+        "name": "安妮·海瑟薇",
+        "character": "Penelope",
+        "profile_path": "/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+      },
+      {
+        "name": "罗伯特·帕丁森",
+        "character": "Antinous",
+        "profile_path": "/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg"
+      },
+      {
+        "name": "希米什·帕特尔",
+        "character": "Eurylochus",
+        "profile_path": "/4mfOQgnwmewNURfQApyyHxt1qUF.jpg"
+      },
+      {
+        "name": "约翰·雷吉扎莫",
+        "character": "Eumaeus",
+        "profile_path": "/kwYCdxTlDh9zauUCg4mp2XTCQTw.jpg"
+      },
+      {
+        "name": "查理兹·塞隆",
+        "character": "Calypso",
+        "profile_path": "/gd7ShD0yt4bsR2STeQ19KQ6hvXL.jpg"
+      },
+      {
+        "name": "Travis Scott",
+        "character": "Bard",
+        "profile_path": "/eBdm7HQS6lLGg4BocgfoJ5qB9yp.jpg"
+      }
+    ],
+    "stills": [
+      "/twiVn9oFXOVR0uoYgawyEBlnFu8.jpg",
+      "/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
+      "/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
+      "/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
+      "/n3D2Lmwomtbc4SZFO8hLtLL0b5q.jpg",
+      "/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+      "/kGCOfQpITTI0rKzrVMRGOFteszf.jpg",
+      "/wkEZ7YmWdn7GeFBoNz2RAiLlwDB.jpg",
+      "/aoQKU6jioGgUr81R8GqWXA7BDt3.jpg",
+      "/pSVGdNdkgD847GQ0MCoU3EUYsfF.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 2310,
+        "title": "贝奥武夫",
+        "poster_path": "/1BrQPYg6FsFImFeLtWbIx6WTUpA.jpg",
+        "vote_average": 5.919
+      },
+      {
+        "tmdb_id": 441423,
+        "title": "阿修罗城之瞳",
+        "poster_path": "/xjM6FzrVEihQ7Z5u3de8ajJ4toy.jpg",
+        "vote_average": 4.0
+      },
+      {
+        "tmdb_id": 2454,
+        "title": "纳尼亚传奇2：凯斯宾王子",
+        "poster_path": "/7Y76smJTpGVIOEFgoyJ88rm5bsq.jpg",
+        "vote_average": 6.635
+      },
+      {
+        "tmdb_id": 22,
+        "title": "加勒比海盗1：黑珍珠号的诅咒",
+        "poster_path": "/wjtVlVdF7KQ9pnnTDHbZaFayzcf.jpg",
+        "vote_average": 7.831
+      },
+      {
+        "tmdb_id": 58,
+        "title": "加勒比海盗2：聚魂棺",
+        "poster_path": "/72vRdR3iT2vv1ZpYmveOvnFJgJk.jpg",
+        "vote_average": 7.388
+      },
+      {
+        "tmdb_id": 98,
+        "title": "角斗士",
+        "poster_path": "/7vOUGVXVmqBf23GaUMjiLyZ8iXM.jpg",
+        "vote_average": 8.23
+      },
+      {
+        "tmdb_id": 438561,
+        "title": "东映蜘蛛侠剧场版",
+        "poster_path": "/38AVLCBEoQKJWMyzt9jkxqeefGb.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 173,
+        "title": "海底两万里",
+        "poster_path": "/vIDuo8Y4Aabglofhd2ONsWADLUg.jpg",
+        "vote_average": 7.064
+      }
+    ]
+  },
+  "36858672": {
+    "tmdb_id": 252107,
+    "tmdb_type": "tv",
+    "original_title": "Star City",
+    "overview": "踏进受《为全人类》启发的惊险新篇章，同一个架空历史，却从苏联的角度出发，讲述铁幕背后一众宇航员、工程师和情报人员铤而走险，在登月竞赛中取胜求存。",
+    "genres": [
+      "剧情",
+      "Sci-Fi & Fantasy",
+      "War & Politics"
+    ],
+    "runtime": null,
+    "release_date": "2026-05-28",
+    "backdrop_path": "/rhJAGhOvkR8270bdXSSCzQSPY1a.jpg",
+    "poster_path": "/1tbUKieOUaqiafxDnEwchd9KfDo.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "Ben Nedivi",
+    "cast": [
+      {
+        "name": "瑞斯·伊凡斯",
+        "character": "Chief Designer",
+        "profile_path": "/5X8XcIqCDxsQYyHdx7mBwPVkSTs.jpg"
+      },
+      {
+        "name": "安娜·麦克西维尔·马丁",
+        "character": "Lyudmilla Raskova",
+        "profile_path": "/vBAsZPe1tHPvVLViiDWYkb5k1Cu.jpg"
+      },
+      {
+        "name": "Agnes O'Casey",
+        "character": "Irina Morozova",
+        "profile_path": "/1o8L2LNsnfJMxFR400RKXGBof3c.jpg"
+      },
+      {
+        "name": "Alice Englert",
+        "character": "Anastasia Belikova",
+        "profile_path": "/lEXLJpH29u2fTTqOIEsxEtSQP8C.jpg"
+      },
+      {
+        "name": "索利·麦克劳德",
+        "character": "Sasha Polivanov",
+        "profile_path": "/6aMA4kUV1ji4uu3zzBzQ9fwgUDO.jpg"
+      },
+      {
+        "name": "亚当·纳盖蒂斯",
+        "character": "Valya Mironov",
+        "profile_path": "/e05YxtScfLCI723ZFU6WOzLiJ6u.jpg"
+      },
+      {
+        "name": "鲁比·阿什伯恩·瑟金斯",
+        "character": "Tanya Mironova",
+        "profile_path": "/aG162fp8hnudEieqKZl7yUuqEaX.jpg"
+      },
+      {
+        "name": "Josef Davies",
+        "character": "Sergei Nikilov",
+        "profile_path": "/geljWJJDVuthFmwqiFundYwqwPR.jpg"
+      }
+    ],
+    "stills": [
+      "/d6cIxsVpHHiAvJwZgUXENmTw56i.jpg",
+      "/g9kREkHW2fWDlJhlE1g8DqDBinS.jpg",
+      "/4ZPXWBxmq1iVpTKiOQYSTgv6ikZ.jpg",
+      "/rhJAGhOvkR8270bdXSSCzQSPY1a.jpg",
+      "/fRyyCKzp0HTEzthtASul7eRjayb.jpg",
+      "/1FKMjElFJxgG3vPN7Sp5k8oMmo2.jpg",
+      "/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
+      "/hZY6IQayYlIfaqIMh9Cn4dm6CJd.jpg",
+      "/cPHEXjZFUaeoPTE2GSH0TC2Otqn.jpg",
+      "/vHnOHre1KrEsu3zjXIohIJOIgSN.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 134,
+        "title": "太空传奇：1999",
+        "poster_path": "/77Jn71Aw4mct3phi7wpjLdvO9U5.jpg",
+        "vote_average": 7.13
+      },
+      {
+        "tmdb_id": 136,
+        "title": "Thriller",
+        "poster_path": "/bRfxYga00zCB29fha9zWLsed0tn.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 203,
+        "title": "莎拉·简大冒险",
+        "poster_path": "/hq0S1VtUabnORdp3l3m11OA67BP.jpg",
+        "vote_average": 7.1
+      },
+      {
+        "tmdb_id": 164,
+        "title": "Dark Skies",
+        "poster_path": "/dtWcxTw4VGRyR7qNDlYFCdl5Q9.jpg",
+        "vote_average": 7.173
+      },
+      {
+        "tmdb_id": 424,
+        "title": "火炬木小组",
+        "poster_path": "/bv7C5r7QyXGsaMxvU40FVY7SvrD.jpg",
+        "vote_average": 7.301
+      },
+      {
+        "tmdb_id": 204043,
+        "title": "忍者结婚难",
+        "poster_path": "/AltC2KXyK9msukvKam0XqpVQJmc.jpg",
+        "vote_average": 8.769
+      },
+      {
+        "tmdb_id": 623,
+        "title": "Profit",
+        "poster_path": "/1bdVeDCo92oe09pbZ0e7IROhvil.jpg",
+        "vote_average": 7.96
+      },
+      {
+        "tmdb_id": 90546,
+        "title": "某科学的一方通行",
+        "poster_path": "/2KwP4nP6xMeEp7LIwkQM28OoKQ7.jpg",
+        "vote_average": 7.5
+      }
+    ]
+  }
 }
