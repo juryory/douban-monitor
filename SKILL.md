@@ -1,5 +1,10 @@
 # OpenClaw 豆瓣高分监控
 
+> ⚠️ **运行前须知（副作用）**
+> - 本 skill 会向豆瓣（`m.douban.com`）和 TMDB 发起 HTTP 请求，并在本地写入 `data/`、`reports/`、`detail/` 等文件。
+> - **模式 B（`auto_git_push = true`）下会自动 `git pull / commit / push`**，把生成的数据推送到远端仓库。仅在你接受"自动提交并公开这些监控数据"的仓库里启用。
+> - 不想联网之外产生任何推送时，用**模式 A**：设 `auto_git_push = false` 或运行时加 `DOUBAN_MONITOR_NO_PUSH=1`（注意：本地模式只是不推送，仍会联网抓豆瓣/TMDB）。
+
 ## 目标
 这个 skill 用来监控豆瓣里“近期新出现并达到门槛”的影视内容，默认关注以下条件：
 

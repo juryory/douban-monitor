@@ -97,11 +97,9 @@
 - `reports/`
   每日 Markdown 报告
 - `.github/workflows/monitor.yml`
-  GitHub Actions 执行配置（当前仅手动触发 workflow_dispatch）
+  GitHub Actions 执行配置（每天 21:00 定时 + 手动触发）
 - `references/`
   示例配置、状态文件和实现说明
-- `tools/`
-  辅助调试页面
 
 ## 运行依赖
 
