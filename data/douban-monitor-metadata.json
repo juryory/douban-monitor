@@ -8259,5 +8259,109 @@
         "vote_average": 7.5
       }
     ]
+  },
+  "38462800": {
+    "tmdb_id": 322570,
+    "tmdb_type": "tv",
+    "original_title": "Tシャツが乾くまで",
+    "overview": "40岁的杂志编辑咲子（苍井优 饰）原本深信自己拥有美满的婚姻，但在卷入一场事故后，她意外发现丈夫在每个月“第3个星期五”都有一段完全对不上号的神秘行踪。于是，在看似美满的婚姻背后，她将面对人性中真实而扭曲的“不伦”。",
+    "genres": [
+      "剧情",
+      "悬疑"
+    ],
+    "runtime": null,
+    "release_date": "2026-07-10",
+    "backdrop_path": "/j9rHrq3mz0hHchk3EJksCco9LJW.jpg",
+    "poster_path": "/maFkcu5ptwFzMhsKzJBltuJDRVy.jpg",
+    "countries": [
+      "JP"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "苍井优",
+        "character": "Sakiko",
+        "profile_path": "/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
+      },
+      {
+        "name": "中岛步",
+        "character": "Itsuki",
+        "profile_path": "/kK3N0wjhicPGKia5Cn4fRJTCT6y.jpg"
+      },
+      {
+        "name": "高桥文哉",
+        "character": "Naoto",
+        "profile_path": "/aNdoFv1zPypM3nxR5T7LfpfKLZR.jpg"
+      },
+      {
+        "name": "夏帆",
+        "character": "Azusa",
+        "profile_path": "/s0ykmnef8yU6rf0ZLOaf6GMBbpb.jpg"
+      },
+      {
+        "name": "松山研一",
+        "character": "Mitsuru",
+        "profile_path": "/sMrWJWLM5xJVtHfSqxArh5k61PS.jpg"
+      }
+    ],
+    "stills": [
+      "/j9rHrq3mz0hHchk3EJksCco9LJW.jpg",
+      "/cXgn9e0dCCji8NhcBvCwcuaepit.jpg",
+      "/9XrKzqOCBdZa2MVoXtdZxDcN0zk.jpg",
+      "/hnKBaEXHvCz8TLW4FVFeauv08T2.jpg",
+      "/p8vjpID4cupDLeEecZAsz4cOB36.jpg",
+      "/zGjeJPEI5TjcGsRfs56hwacY3r8.jpg",
+      "/rUmVyLMBDqp4IKrVnA3OUE7qDJP.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 112945,
+        "title": "哈迪兄弟",
+        "poster_path": "/dQGYx0bNTzwEGfPv77zdeSLf4lq.jpg",
+        "vote_average": 7.263
+      },
+      {
+        "tmdb_id": 254071,
+        "title": "强制窃贼",
+        "poster_path": "/8LkXOk0HclEnsquBPaBDILr652f.jpg",
+        "vote_average": 7.437
+      },
+      {
+        "tmdb_id": 6127,
+        "title": "马普尔小姐探案",
+        "poster_path": "/nVswrZQpqQND9TgwgbWgz18KgAo.jpg",
+        "vote_average": 7.817
+      },
+      {
+        "tmdb_id": 95004,
+        "title": "总统办公室",
+        "poster_path": "/b5PTXErp18fzi8e2MQv2HlEiE23.jpg",
+        "vote_average": 8.2
+      },
+      {
+        "tmdb_id": 59134,
+        "title": "布莱克医生之谜",
+        "poster_path": "/nQ9uCfDu12jLxMU3ea618LMvMyX.jpg",
+        "vote_average": 7.8
+      },
+      {
+        "tmdb_id": 130766,
+        "title": "喜鹊谋杀案",
+        "poster_path": "/4EwJWGsmcyj3Ka0N2bskaxtzBTG.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 5273,
+        "title": "希区柯克剧场",
+        "poster_path": "/lmbBSG3jRVjxdovpdhOf2LF1voZ.jpg",
+        "vote_average": 7.769
+      },
+      {
+        "tmdb_id": 85586,
+        "title": "验尸官",
+        "poster_path": "/7zEVxcNEDxVtRf29zvjjy6cazm4.jpg",
+        "vote_average": 6.953
+      }
+    ]
   }
 }
