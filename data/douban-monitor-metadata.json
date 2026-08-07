@@ -8363,5 +8363,128 @@
         "vote_average": 6.953
       }
     ]
+  },
+  "2131459": {
+    "tmdb_id": 10681,
+    "tmdb_type": "movie",
+    "original_title": "WALL·E",
+    "overview": "公元 2700 年，人类文明高度发展，却因污染和生活垃圾大量增加使得地球不再适于人类居住。地球人被迫乘坐飞船离开故乡，进行一次漫长无边的宇宙之旅。临行前他们委托 Buynlarge 的公司对地球垃圾进行清理，该公司开发了名为 WALL·E（地球废品分装员的缩写）的机器人担当此重任。 这些机器人按照程序日复一日、年复一年辛勤工作，但随着时间的流逝和恶劣环境的侵蚀，WALL·E 们接连损坏、停止运动。最后只有一个仍在进行这项似乎永无止境的工作。经历了漫长的岁月，它开始拥有了自己的意识。它喜欢将收集来的宝贝小心翼翼藏起，喜欢收工后看看几百年前的歌舞片，此外还有一只蟑螂朋友作伴。直到有一天，一艘来自宇宙的飞船打破了它一成不变的生活…",
+    "genres": [
+      "动画",
+      "家庭",
+      "科幻"
+    ],
+    "runtime": 98,
+    "release_date": "2008-06-26",
+    "backdrop_path": "/nYs4ZwnJBK4AgljhvzwNz7fpr3E.jpg",
+    "poster_path": "/eVcHArmmMXajXaqVBH4dhUWfwmS.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "安德鲁·斯坦顿",
+    "cast": [
+      {
+        "name": "本·贝尔特",
+        "character": "WALL·E / M-O (voice)",
+        "profile_path": "/7asFDWjls2bYQSfXJf5StjXmlhI.jpg"
+      },
+      {
+        "name": "艾丽莎·奈特",
+        "character": "EVE (voice)",
+        "profile_path": "/exRLyaNaHcgawQA0DoBxo5IvdoI.jpg"
+      },
+      {
+        "name": "杰夫·格尔林",
+        "character": "Captain (voice)",
+        "profile_path": "/8shJOwynglerVVxhOKbvDYTThBd.jpg"
+      },
+      {
+        "name": "佛莱德·威拉特",
+        "character": "Shelby Forthright, BnL CEO",
+        "profile_path": "/AaHxpkee9nQfBpQeDyJLoPNtYR6.jpg"
+      },
+      {
+        "name": "约翰·拉岑伯格",
+        "character": "John (voice)",
+        "profile_path": "/oRtDEOuIO1yDhTz5dORBdxXuLMO.jpg"
+      },
+      {
+        "name": "凯茜·纳基麦",
+        "character": "Mary (voice)",
+        "profile_path": "/nqbZF7Igr0SC8Xq8y0jwmx0mLDN.jpg"
+      },
+      {
+        "name": "西格妮·韦弗",
+        "character": "Ship's Computer (voice)",
+        "profile_path": "/wTSnfktNBLd6kwQxgvkqYw6vEon.jpg"
+      },
+      {
+        "name": "洛瑞·艾伦",
+        "character": "Additional Voices (voice)",
+        "profile_path": "/cavATg4fX0zAl2MHwlt1IZei7EI.jpg"
+      }
+    ],
+    "stills": [
+      "/nYs4ZwnJBK4AgljhvzwNz7fpr3E.jpg",
+      "/pjLdH5VIKirwVUIZ0iDisXoRGo4.jpg",
+      "/ai2FicMUxLCurVkjtYdSvVDWRmS.jpg",
+      "/fK5ssgvtI43z19FoWigdlqgpLRE.jpg",
+      "/3CvNc04vTwTir5q3LBDuvUb8Ng6.jpg",
+      "/qxSArjpoHUOIzP5ha3EHvWbPCdY.jpg",
+      "/eete5ZAaagldSXxDetN62V3WXcg.jpg",
+      "/3rHG40KsESjW6HcnQQTy2lYvBPD.jpg",
+      "/yDg88BMu8DKqasUwCB6vUJDjsRq.jpg",
+      "/7Q3sZgkSgpBDMJvevQNnMar83Af.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 12,
+        "title": "海底总动员",
+        "poster_path": "/7nXuxfAyDwPrqSlqogLuNqGJJZ.jpg",
+        "vote_average": 7.821
+      },
+      {
+        "tmdb_id": 18,
+        "title": "第五元素",
+        "poster_path": "/3OCo3KSH0KcQtfRcKhNXpHDYRYV.jpg",
+        "vote_average": 7.587
+      },
+      {
+        "tmdb_id": 19,
+        "title": "大都会",
+        "poster_path": "/vODOVn29fr0nLF9MVfpfKDcxuXF.jpg",
+        "vote_average": 8.084
+      },
+      {
+        "tmdb_id": 35,
+        "title": "辛普森一家",
+        "poster_path": "/eMiC65Lwtvqr1v1VVwNQv6IZKrG.jpg",
+        "vote_average": 7.023
+      },
+      {
+        "tmdb_id": 38,
+        "title": "暖暖内含光",
+        "poster_path": "/tHBEc6RvzUFtkQy8MHcmy5tJlI0.jpg",
+        "vote_average": 8.089
+      },
+      {
+        "tmdb_id": 62,
+        "title": "2001太空漫游",
+        "poster_path": "/bO7J2LmtDYLyyBoOBeioYjp0VPl.jpg",
+        "vote_average": 8.048
+      },
+      {
+        "tmdb_id": 63,
+        "title": "十二猴子",
+        "poster_path": "/jysTIOwc3BSAsIF0GpiM4evLX8a.jpg",
+        "vote_average": 7.611
+      },
+      {
+        "tmdb_id": 68,
+        "title": "妙想天开",
+        "poster_path": "/p63JPAgFTzZnfPfwJWWGctLfYR6.jpg",
+        "vote_average": 7.655
+      }
+    ]
   }
 }
