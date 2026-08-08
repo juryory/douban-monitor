@@ -32,11 +32,11 @@ def parse_dt(value: str | None) -> datetime | None:
 
 
 def log_step(title: str) -> None:
-    print(title, flush=True)
+    print(title, file=sys.stderr, flush=True)
 
 
 def log_kv(label: str, value: Any) -> None:
-    print(f"  - {label}: {value}", flush=True)
+    print(f"  - {label}: {value}", file=sys.stderr, flush=True)
 
 
 @dataclass
@@ -621,46 +621,44 @@ def update_state(state_data: dict[str, Any], candidates: list[Candidate], config
 
 def render_report(new_qualified: list[Candidate], second_look: list[tuple[Candidate, str]], observed: list[Candidate], config: dict[str, Any], now: datetime) -> str:
     lines = [
-        "# 豆瓣高分监控",
+        "🎬 豆瓣高分监控",
         "",
-        f"运行时间: {now.strftime('%Y-%m-%d %H:%M:%S %Z')}",
+        f"运行时间: {now.strftime('%Y-%m-%d %H:%M')}",
         f"阈值: 评分 > {config['min_rating']}，评分人数 > {config['min_rating_count']}",
         "",
         "## 新增命中",
     ]
     if not new_qualified:
         lines.append("- 无")
-    for item in new_qualified:
-        lines.extend([
-            f"- 标题: {item.title}",
-            f"- 类型: {item.category}",
-            f"- 评分: {item.rating}",
-            f"- 评分人数: {item.rating_count}",
-            f"- 链接: {item.url or 'N/A'}",
-            "- 触发原因: 首次达标",
-        ])
+    else:
+        for item in new_qualified:
+            count_str = f"{item.rating_count:,}" if item.rating_count else "未知"
+            cat_name = "电影" if item.category == "movie" else ("剧集" if item.category == "tv" else item.category)
+            lines.extend([
+                f"- **{item.title}** ({cat_name})",
+                f"  - 评分: ★ {item.rating} ({count_str} 人评价)",
+                f"  - 链接: {item.url or 'N/A'}",
+            ])
+
     lines.extend(["", "## 值得二次关注"])
     if not second_look:
         lines.append("- 无")
-    for item, trigger in second_look:
-        lines.extend([
-            f"- 标题: {item.title}",
-            f"- 类型: {item.category}",
-            f"- 评分: {item.rating}",
-            f"- 评分人数: {item.rating_count}",
-            f"- 链接: {item.url or 'N/A'}",
-            f"- 触发原因: {trigger}",
-        ])
-    lines.extend(["", "## 继续观察"])
-    pending = [item for item in observed if not should_qualify(item, config)]
-    if not pending:
-        lines.append("- 无")
-    for item in pending:
-        lines.extend([
-            f"- 标题: {item.title}",
-            f"- 评分: {item.rating}",
-            f"- 评分人数: {item.rating_count}",
-        ])
+    else:
+        for item, trigger in second_look:
+            count_str = f"{item.rating_count:,}" if item.rating_count else "未知"
+            cat_name = "电影" if item.category == "movie" else ("剧集" if item.category == "tv" else item.category)
+            lines.extend([
+                f"- **{item.title}** ({cat_name})",
+                f"  - 评分: ★ {item.rating} ({count_str} 人评价)",
+                f"  - 触发原因: {trigger}",
+                f"  - 链接: {item.url or 'N/A'}",
+            ])
+
+    pending_count = sum(1 for item in observed if not should_qualify(item, config))
+    lines.extend([
+        "",
+        f"📊 **汇总**: 扫描候选 {len(observed)} 部 | 新增命中 {len(new_qualified)} 部 | 观察中 {pending_count} 部",
+    ])
     return "\n".join(lines) + "\n"
 
 
@@ -864,11 +862,11 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
             capture_output=True, text=True,
         )
         if result.stdout:
-            print(result.stdout, end="", flush=True)
+            print(result.stdout, file=sys.stderr, end="", flush=True)
         if result.returncode != 0:
             log_kv(f"{script_name} 失败 (exit {result.returncode})", "")
             if result.stderr:
-                print(result.stderr, end="", flush=True)
+                print(result.stderr, file=sys.stderr, end="", flush=True)
 
     log_step("[8/8] 同步并推送到 GitHub...")
 
@@ -909,6 +907,9 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
         log_kv("推送", "成功")
     else:
         log_kv("推送失败", (push.stderr or "").strip())
+
+    # 将简洁报告输出到 stdout（供 openclaw cron 自动推送给微信）
+    print(report, file=sys.stdout, flush=True)
 
     return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
 
