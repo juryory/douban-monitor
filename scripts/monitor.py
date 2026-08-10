@@ -601,14 +601,14 @@ def update_state(state_data: dict[str, Any], candidates: list[Candidate], config
 
         trigger: str | None = None
         if (candidate.rating or 0.0) - previous_rating >= config["rating_delta_for_realert"]:
-            trigger = f"评分较上次提醒提升 {(candidate.rating or 0.0) - previous_rating:.1f}"
+            trigger = f"评分+{(candidate.rating or 0.0) - previous_rating:.1f}"
         elif (candidate.rating_count or 0) - previous_count >= config["rating_count_delta_for_realert"]:
-            trigger = f"评分人数较上次提醒增加 {(candidate.rating_count or 0) - previous_count}"
+            trigger = f"人数+{_fmt_count((candidate.rating_count or 0) - previous_count)}"
         else:
             for milestone in config["milestone_counts"]:
                 if previous_count < milestone <= (candidate.rating_count or 0) and milestone not in entry["milestones_notified"]:
                     entry["milestones_notified"].append(milestone)
-                    trigger = f"评分人数跨过 {milestone}"
+                    trigger = f"人数跨过{_fmt_count(milestone)}"
                     break
         if trigger:
             entry["last_notified_at"] = iso(now)
@@ -619,46 +619,39 @@ def update_state(state_data: dict[str, Any], candidates: list[Candidate], config
     return state_data, new_qualified, second_look
 
 
+def _fmt_count(n) -> str:
+    """3_312_981 -> '331万', 83_158 -> '8.3万', 2_600 -> '2600'."""
+    if not n:
+        return "未知"
+    if n >= 1_000_000:
+        return f"{int(round(n / 10_000))}万"
+    if n >= 10_000:
+        return f"{n / 10_000:.1f}万".replace(".0万", "万")
+    return str(n)
+
+
 def render_report(new_qualified: list[Candidate], second_look: list[tuple[Candidate, str]], observed: list[Candidate], config: dict[str, Any], now: datetime) -> str:
     lines = [
-        "🎬 豆瓣高分监控",
+        f"🎬 豆瓣监控 {now.strftime('%m-%d')}",
         "",
-        f"运行时间: {now.strftime('%Y-%m-%d %H:%M')}",
-        f"阈值: 评分 > {config['min_rating']}，评分人数 > {config['min_rating_count']}",
-        "",
-        "## 新增命中",
+        f"✅ 新增命中 {len(new_qualified)} 部",
     ]
     if not new_qualified:
-        lines.append("- 无")
+        lines.append("• 无")
     else:
         for item in new_qualified:
-            count_str = f"{item.rating_count:,}" if item.rating_count else "未知"
-            cat_name = "电影" if item.category == "movie" else ("剧集" if item.category == "tv" else item.category)
-            lines.extend([
-                f"- **{item.title}** ({cat_name})",
-                f"  - 评分: ★ {item.rating} ({count_str} 人评价)",
-                f"  - 链接: {item.url or 'N/A'}",
-            ])
+            lines.append(f"• {item.title} ★{item.rating} ({_fmt_count(item.rating_count)})")
 
-    lines.extend(["", "## 值得二次关注"])
+    lines.extend(["", f"👀 二次关注 {len(second_look)} 部"])
     if not second_look:
-        lines.append("- 无")
+        lines.append("• 无")
     else:
         for item, trigger in second_look:
-            count_str = f"{item.rating_count:,}" if item.rating_count else "未知"
-            cat_name = "电影" if item.category == "movie" else ("剧集" if item.category == "tv" else item.category)
-            lines.extend([
-                f"- **{item.title}** ({cat_name})",
-                f"  - 评分: ★ {item.rating} ({count_str} 人评价)",
-                f"  - 触发原因: {trigger}",
-                f"  - 链接: {item.url or 'N/A'}",
-            ])
+            lines.append(f"• {item.title} ★{item.rating} ({_fmt_count(item.rating_count)}, {trigger})")
 
-    pending_count = sum(1 for item in observed if not should_qualify(item, config))
-    lines.extend([
-        "",
-        f"📊 **汇总**: 扫描候选 {len(observed)} 部 | 新增命中 {len(new_qualified)} 部 | 观察中 {pending_count} 部",
-    ])
+    total = len(observed)
+    qualified = sum(1 for item in observed if should_qualify(item, config))
+    lines.extend(["", f"📊 扫描{total}部 | 达标{qualified}部 | 观察{total - qualified}部"])
     return "\n".join(lines) + "\n"
 
 
