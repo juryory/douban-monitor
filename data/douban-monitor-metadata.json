@@ -8366,6 +8366,243 @@
   },
   "1292052": {},
   "26752088": {},
-  "36712987": {},
-  "37235098": {}
+  "36712987": {
+    "tmdb_id": 1226141,
+    "tmdb_type": "movie",
+    "original_title": "破·地獄",
+    "overview": "影片讲述了在疫情肆虐生意萧条的背景下，婚礼策划师道生被迫改行成为一名葬礼经纪人。起初因理念不合与喃呒师傅文哥产生许多冲突，二人关系岌岌可危。而面对一位特殊的逝者，文哥的出手相助使得道生重新审视生死的意义。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 140,
+    "release_date": "2024-11-09",
+    "backdrop_path": "/lhm95L2v3KmDFqIpWSC0daVPW7r.jpg",
+    "poster_path": "/5LLcTRVm8LP7Bbyddnxibcyeuvy.jpg",
+    "countries": [
+      "Hong Kong",
+      "China"
+    ],
+    "director": "陈茂贤",
+    "cast": [
+      {
+        "name": "许冠文",
+        "character": "Man Kwok",
+        "profile_path": "/51JMZ8MR3MNs9Nt7lS0mvroElGP.jpg"
+      },
+      {
+        "name": "黄子华",
+        "character": "Dominic Ngai",
+        "profile_path": "/p3vNUTB35GexppsWMBxqpDpeihS.jpg"
+      },
+      {
+        "name": "卫诗雅",
+        "character": "Man-Yuet Kwok",
+        "profile_path": "/48ebSYmzHkt9AfUZv5EHuoGnzI4.jpg"
+      },
+      {
+        "name": "朱栢康",
+        "character": "Ben Kwok",
+        "profile_path": "/hGpToKjLUDXbz69NjCriRcBHYv8.jpg"
+      },
+      {
+        "name": "周家怡",
+        "character": "Jane",
+        "profile_path": "/wVVrYTB47m9mcIHIRtC5BydoaiS.jpg"
+      },
+      {
+        "name": "秦沛",
+        "character": "Ming",
+        "profile_path": "/lsxGuBaBPmKu1yj9qcHzvLq5SGH.jpg"
+      },
+      {
+        "name": "方志驹",
+        "character": "Mr. Chu",
+        "profile_path": "/rJ2ZqWMy9VVlMJCA0B3Ysdtmpmr.jpg"
+      },
+      {
+        "name": "刘若宝",
+        "character": "Mrs. Chu",
+        "profile_path": "/wfc5H8urWaN3OmR1zV0yIFpg85q.jpg"
+      }
+    ],
+    "stills": [
+      "/lhm95L2v3KmDFqIpWSC0daVPW7r.jpg",
+      "/N3pqL3tOaG3cVGv1DMEwKulzdC.jpg",
+      "/3gWzonuhwq7GUEdAywM3ykP1ekA.jpg",
+      "/1quGu75Km7hUv4Pj11QeRJUjcj4.jpg",
+      "/fbnv6VRHSE7MQ6gDmiNIMqWXtFn.jpg",
+      "/ypj8VA5Bb5TIdp7oJLPa4mwUHjs.jpg",
+      "/8sW61WgHbQB4dzCZlMNcbSIq592.jpg",
+      "/jo7RXhBiRHs3yHpejrk7yd9pdkU.jpg",
+      "/3uLzBsacweHRmNavyiUO8IxXhiN.jpg",
+      "/m5KPHfAL8XGt1c1GmA2aAkmTITX.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 273059,
+        "title": "我的瘦身日记",
+        "poster_path": "/kSTqlLJ0gNEIQVNwVe9YhvAcdZo.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 159389,
+        "title": "TalhotBlond",
+        "poster_path": "/3FF9YFuVvh5t393NxfME47wxqrZ.jpg",
+        "vote_average": 6.3
+      },
+      {
+        "tmdb_id": 430446,
+        "title": "福音再临",
+        "poster_path": "/oucoXiLsc07YryywgjddmU3YoDV.jpg",
+        "vote_average": 5.835
+      },
+      {
+        "tmdb_id": 113294,
+        "title": "女飞人",
+        "poster_path": "/wrsIUs4esWv3oncNpRI4ERon4bF.jpg",
+        "vote_average": 6.049
+      },
+      {
+        "tmdb_id": 829503,
+        "title": "吉吉和内特",
+        "poster_path": "/d1zkveeL2Z97KI5bATRE8hgw9wU.jpg",
+        "vote_average": 7.639
+      },
+      {
+        "tmdb_id": 40751,
+        "title": "东邪西毒",
+        "poster_path": "/jGbc7RFWqeKt9WMm0EE87jaILKb.jpg",
+        "vote_average": 7.069
+      },
+      {
+        "tmdb_id": 127373,
+        "title": "梅奇知道什么",
+        "poster_path": "/8s711b6YndCTdCGhQtNbuaiVzZI.jpg",
+        "vote_average": 7.117
+      },
+      {
+        "tmdb_id": 900409,
+        "title": "火海逃生",
+        "poster_path": "/1ms0zRAMtbVq5XoIfrlcSj84g6G.jpg",
+        "vote_average": 6.176
+      }
+    ]
+  },
+  "37235098": {
+    "tmdb_id": 286617,
+    "tmdb_type": "tv",
+    "original_title": "Tip Toe",
+    "overview": "讲述住在曼彻斯特的利奥和克莱夫的故事。利奥在运河街经营一家酒吧，克莱夫是一名电工，有两个十几岁的儿子。 但正当生活应该安定下来时，他们周围的世界却变得越来越紧张。言语变成武器，观点变得激进，两个邻居逐渐成为致命的敌人。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-05-31",
+    "backdrop_path": "/mX5njTGmCl8QGgdoBWiSKmHEy23.jpg",
+    "poster_path": "/Amo8TyKaRBk5iMJVFOcwfLTEMsX.jpg",
+    "countries": [
+      "GB"
+    ],
+    "director": "拉塞尔·T·戴维斯",
+    "cast": [
+      {
+        "name": "艾伦·卡明",
+        "character": "Leo Struthers",
+        "profile_path": "/axil8ufunARfqyU4ceZNh36fkVQ.jpg"
+      },
+      {
+        "name": "大卫·莫里西",
+        "character": "Clive Goss",
+        "profile_path": "/gj7ENB9pBobXA3wMfw6uKcWr2GM.jpg"
+      },
+      {
+        "name": "伊丽莎白·贝林顿",
+        "character": "Stephanie Dale",
+        "profile_path": "/wFz71bIKTlQoa8v1s243TIh5wUm.jpg"
+      },
+      {
+        "name": "Pooky Quesnel",
+        "character": "Marie Goss",
+        "profile_path": "/gULckuxXu4dvOviDGQqySAKfjWL.jpg"
+      },
+      {
+        "name": "Iz Hesketh",
+        "character": "Zee Malone",
+        "profile_path": "/rHXi10bmh880f2huJzgu7sb1q7h.jpg"
+      },
+      {
+        "name": "保罗·里斯",
+        "character": "Melba",
+        "profile_path": "/l7uc38oZGMQbbq7WqE8rKn9xZJr.jpg"
+      },
+      {
+        "name": "Jackson Connor",
+        "character": "George Goss",
+        "profile_path": "/dvFuaXxBip665Ru11NOevuMGnqV.jpg"
+      },
+      {
+        "name": "Joseph William Evans",
+        "character": "Saul Goss",
+        "profile_path": "/uiItvtOoD5WQm3YZmnogQQNHqxn.jpg"
+      }
+    ],
+    "stills": [
+      "/mX5njTGmCl8QGgdoBWiSKmHEy23.jpg",
+      "/dhj0rYeB81LGCBuERlHK51XPiod.jpg",
+      "/2XZq6iD6i7sYVKmMc5dUSHxCclt.jpg",
+      "/1wWJ5JeAona6GPsrHqRwt5YcseZ.jpg",
+      "/oNs9O9Mxd26VJqlvRSEc8pFtpsx.jpg",
+      "/pbBFUHzQm7TQ7cO908pWs06Vhqb.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 2661,
+        "title": "假面骑士",
+        "poster_path": "/fIJNVBa6MJStPiOvhLV69nAdu0e.jpg",
+        "vote_average": 6.413
+      },
+      {
+        "tmdb_id": 305332,
+        "title": "Yiya",
+        "poster_path": "/8E8FlEdVZzS1tuItZKGgvv8kpQc.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 60907,
+        "title": "They Met in a City",
+        "poster_path": "",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 93972,
+        "title": "偏偏爱上你",
+        "poster_path": "/sKS1XwEaareXoH6kuuKC1p0op2A.jpg",
+        "vote_average": 7.014
+      },
+      {
+        "tmdb_id": 93975,
+        "title": "与爱同居",
+        "poster_path": "/ss2eWO7iOtSyLnNoG5kz1RePMf5.jpg",
+        "vote_average": 7.668
+      },
+      {
+        "tmdb_id": 125910,
+        "title": "青春王室",
+        "poster_path": "/lZ46PJkMLNDP9JQ3nRfIIRyiK77.jpg",
+        "vote_average": 8.505
+      },
+      {
+        "tmdb_id": 60875,
+        "title": "Résistance",
+        "poster_path": "/k3R90ujL8czXSRwg35WlEVrKf1z.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 208397,
+        "title": "校园怪灵",
+        "poster_path": "/bcIsJ06LptDahicANKK5XTqobd3.jpg",
+        "vote_average": 7.769
+      }
+    ]
+  }
 }
