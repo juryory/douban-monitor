@@ -863,10 +863,15 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
 
     log_step("[8/8] 同步并推送到 GitHub...")
 
+    # 将简洁报告输出到 stdout（供 openclaw cron 自动推送给微信；
+    # 详细日志在 stderr，由 cron 命令重定向到 logs/ 文件，不推送给用户）
+    print(report, file=sys.stdout, flush=True)
+
     # 纯本地模式：跳过 git 同步，数据只写在本地，由 skill 在对话中汇报结果。
     no_push_env = (get_env("DOUBAN_MONITOR_NO_PUSH") or "").lower() in ("1", "true", "yes")
     if no_push_env or not config.get("auto_git_push", True):
         log_kv("本地模式", "跳过 git 同步（auto_git_push=false 或 DOUBAN_MONITOR_NO_PUSH）")
+        print("（本地模式：未推送 GitHub）", file=sys.stdout, flush=True)
         return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
 
     git_kw = {"cwd": str(project_root), "capture_output": True, "text": True, "encoding": "utf-8", "errors": "replace"}
@@ -875,6 +880,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     pull = subprocess.run(["git", "pull", "--rebase", "--autostash"], **git_kw)
     if pull.returncode != 0:
         log_kv("拉取失败（中止提交，避免推送坏数据）", (pull.stderr or pull.stdout or "").strip())
+        print("⚠️ GitHub 同步失败：拉取冲突，详见 logs/ 日志", file=sys.stdout, flush=True)
         return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
     log_kv("拉取", "成功")
 
@@ -882,6 +888,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     diff = subprocess.run(["git", "diff", "--cached", "--quiet"], **git_kw)
     if diff.returncode == 0:
         log_kv("跳过", "数据无变化，无需提交")
+        print("（数据无变化，未提交）", file=sys.stdout, flush=True)
         return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
 
     # 提交前扫一遍待提交文件，防止冲突标记混进去
@@ -891,6 +898,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     if suspicious:
         log_kv("检测到冲突标记，中止提交", " ".join(suspicious))
         subprocess.run(["git", "reset", "HEAD", "--", "data/", "reports/"], **git_kw)
+        print("⚠️ GitHub 同步失败：检测到冲突标记，已中止提交", file=sys.stdout, flush=True)
         return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
 
     msg = f"data: 更新监控数据 {now.strftime('%Y-%m-%d %H:%M')}"
@@ -898,11 +906,10 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     push = subprocess.run(["git", "push"], **git_kw)
     if push.returncode == 0:
         log_kv("推送", "成功")
+        print("✅ GitHub 已同步", file=sys.stdout, flush=True)
     else:
         log_kv("推送失败", (push.stderr or "").strip())
-
-    # 将简洁报告输出到 stdout（供 openclaw cron 自动推送给微信）
-    print(report, file=sys.stdout, flush=True)
+        print("⚠️ GitHub 推送失败，详见 logs/ 日志", file=sys.stdout, flush=True)
 
     return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
 
