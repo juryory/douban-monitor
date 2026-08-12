@@ -1,26 +1,13 @@
 {
-  "run_at": "2026-08-12T09:09:56.113803+08:00",
-  "total": 69,
-
+  "run_at": "2026-08-12T21:02:44.267347+08:00",
+  "total": 72,
   "qualified": [
-    {
-      "title": "欢迎来龙餐馆",
-      "category": "movie",
-      "douban_id": "35811064",
-      "rating": 8.4,
-      "rating_count": 116565,
-      "year": "2026",
-      "url": "https://movie.douban.com/subject/35811064/",
-      "qualified_at": "2026-08-12T09:09:56.113803+08:00",
-      "first_discovered_at": "2026-08-05T23:21:10.799735+08:00"
-    },
     {
       "title": "大濛",
       "category": "movie",
       "douban_id": "36680492",
       "rating": 8.2,
-      "rating_count": 26479,
-
+      "rating_count": 26541,
       "year": "2025",
       "url": "https://movie.douban.com/subject/36680492/",
       "qualified_at": "2026-06-28T09:16:06.585405+08:00",
@@ -31,22 +18,32 @@
       "category": "movie",
       "douban_id": "36916000",
       "rating": 8.2,
-      "rating_count": 62489,
-
+      "rating_count": 62608,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36916000/",
       "qualified_at": "2026-06-08T09:13:51.735013+08:00",
       "first_discovered_at": "2026-06-06T09:00:04.155167+08:00"
     },
     {
+      "title": "我住在凡尔赛的日子",
+      "category": "movie",
+      "douban_id": "37381022",
+      "rating": 8.4,
+      "rating_count": 9299,
+      "year": "2025",
+      "url": "https://movie.douban.com/subject/37381022/",
+      "qualified_at": "2026-06-20T09:15:27.975996+08:00",
+      "first_discovered_at": "2026-06-01T09:00:05.746394+08:00"
+    },
+    {
       "title": "欢迎来龙餐馆",
       "category": "movie",
       "douban_id": "35811064",
       "rating": 8.4,
-      "rating_count": 95536,
+      "rating_count": 137300,
       "year": "2026",
       "url": "https://movie.douban.com/subject/35811064/",
-      "qualified_at": "2026-08-11T22:10:35.468794+08:00",
+      "qualified_at": "2026-08-12T09:09:56.113803+08:00",
       "first_discovered_at": "2026-08-05T23:21:10.799735+08:00"
     },
     {
@@ -54,8 +51,7 @@
       "category": "movie",
       "douban_id": "36808876",
       "rating": 8.3,
-      "rating_count": 86788,
-
+      "rating_count": 87773,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36808876/",
       "qualified_at": "2026-07-24T21:05:22.983598+08:00",
@@ -66,8 +62,7 @@
       "category": "movie",
       "douban_id": "36882191",
       "rating": 8.2,
-      "rating_count": 345976,
-
+      "rating_count": 348659,
       "year": "2026",
       "url": "https://movie.douban.com/subject/36882191/",
       "qualified_at": "2026-07-18T21:02:26.939307+08:00",
@@ -78,8 +73,7 @@
       "category": "movie",
       "douban_id": "36712987",
       "rating": 8.4,
-      "rating_count": 417864,
-
+      "rating_count": 419014,
       "year": "2024",
       "url": "https://movie.douban.com/subject/36712987/",
       "qualified_at": "2026-08-11T09:00:00.201220+08:00",
@@ -90,20 +84,18 @@
       "category": "movie",
       "douban_id": "26752088",
       "rating": 9.0,
-      "rating_count": 2370035,
+      "rating_count": 2370506,
       "year": "2018",
       "url": "https://movie.douban.com/subject/26752088/",
       "qualified_at": "2026-08-10T19:32:43.201624+08:00",
       "first_discovered_at": "2026-08-10T19:32:43.201624+08:00"
-
     },
     {
       "title": "铁拳教育",
       "category": "tv",
       "douban_id": "37071123",
       "rating": 8.7,
-      "rating_count": 178765,
-
+      "rating_count": 179109,
       "year": "2026",
       "url": "https://movie.douban.com/subject/37071123/",
       "qualified_at": "2026-06-09T09:15:32.594480+08:00",
@@ -114,8 +106,7 @@
       "category": "tv",
       "douban_id": "35517044",
       "rating": 8.2,
-      "rating_count": 228609,
-
+      "rating_count": 228931,
       "year": "2026",
       "url": "https://movie.douban.com/subject/35517044/",
       "qualified_at": "2026-05-30T19:55:13.194055+08:00",
@@ -126,8 +117,7 @@
       "category": "tv",
       "douban_id": "35295564",
       "rating": 8.1,
-      "rating_count": 144724,
-
+      "rating_count": 144879,
       "year": "2026",
       "url": "https://movie.douban.com/subject/35295564/",
       "qualified_at": "2026-06-02T09:00:04.219403+08:00",
@@ -138,20 +128,29 @@
       "category": "tv",
       "douban_id": "37061179",
       "rating": 8.3,
-      "rating_count": 97537,
-
+      "rating_count": 97663,
       "year": "2026",
       "url": "https://movie.douban.com/subject/37061179/",
       "qualified_at": "2026-05-21T09:04:37.286485+08:00",
       "first_discovered_at": "2026-05-17T09:05:54.069106+08:00"
     },
     {
+      "title": "杀人者的购物中心2",
+      "category": "tv",
+      "douban_id": "37181749",
+      "rating": 8.2,
+      "rating_count": 3385,
+      "year": "2026",
+      "url": "https://movie.douban.com/subject/37181749/",
+      "qualified_at": "2026-08-12T09:09:56.113803+08:00",
+      "first_discovered_at": "2026-08-05T23:21:10.799735+08:00"
+    },
+    {
       "title": "开庭",
       "category": "tv",
       "douban_id": "37822829",
       "rating": 8.6,
-      "rating_count": 12326,
-
+      "rating_count": 12466,
       "year": "",
       "url": "https://movie.douban.com/subject/37822829/",
       "qualified_at": "2026-06-28T09:16:06.585405+08:00",
@@ -162,8 +161,7 @@
       "category": "tv",
       "douban_id": "36508123",
       "rating": 9.3,
-      "rating_count": 14239,
-
+      "rating_count": 14344,
       "year": "",
       "url": "https://movie.douban.com/subject/36508123/",
       "qualified_at": "2026-06-15T21:10:25.230156+08:00",
@@ -174,32 +172,18 @@
       "category": "tv",
       "douban_id": "37246788",
       "rating": 8.7,
-      "rating_count": 8680,
-
+      "rating_count": 8760,
       "year": "",
       "url": "https://movie.douban.com/subject/37246788/",
       "qualified_at": "2026-07-20T09:16:25.965631+08:00",
       "first_discovered_at": "2026-05-31T09:02:15.291924+08:00"
     },
     {
-      "title": "杀人者的购物中心2",
-      "category": "tv",
-      "douban_id": "37181749",
-      "rating": 8.2,
-      "rating_count": 3075,
-      "year": "",
-      "url": "https://movie.douban.com/subject/37181749/",
-      "qualified_at": "2026-08-12T09:09:56.113803+08:00",
-
-      "first_discovered_at": "2026-08-05T23:21:10.799735+08:00"
-    },
-    {
       "title": "踮起脚尖",
       "category": "tv",
       "douban_id": "37235098",
       "rating": 8.6,
-      "rating_count": 3166,
-
+      "rating_count": 3243,
       "year": "",
       "url": "https://movie.douban.com/subject/37235098/",
       "qualified_at": "2026-08-11T09:00:00.201220+08:00",
@@ -210,36 +194,11 @@
       "category": "tv",
       "douban_id": "38462800",
       "rating": 8.1,
-      "rating_count": 4116,
-
+      "rating_count": 4170,
       "year": "",
       "url": "https://movie.douban.com/subject/38462800/",
       "qualified_at": "2026-08-04T23:30:06.432674+08:00",
       "first_discovered_at": "2026-07-29T23:13:25.914226+08:00"
-    },
-    {
-      "title": "星城",
-      "category": "tv",
-      "douban_id": "36858672",
-      "rating": 8.5,
-      "rating_count": 4222,
-
-      "year": "",
-      "url": "https://movie.douban.com/subject/36858672/",
-      "qualified_at": "2026-07-27T09:20:33.451099+08:00",
-      "first_discovered_at": "2026-07-15T21:04:02.463686+08:00"
-    },
-    {
-      "title": "熊家餐馆 第五季",
-      "category": "tv",
-      "douban_id": "37415674",
-      "rating": 8.6,
-      "rating_count": 4040,
-
-      "year": "",
-      "url": "https://movie.douban.com/subject/37415674/",
-      "qualified_at": "2026-07-23T21:03:57.829763+08:00",
-      "first_discovered_at": "2026-07-08T21:03:16.438571+08:00"
     }
   ],
   "status": "has_qualified"
