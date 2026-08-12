@@ -8365,7 +8365,125 @@
     ]
   },
   "1292052": {},
-  "26752088": {},
+  "26752088": {
+    "tmdb_id": 532753,
+    "tmdb_type": "movie",
+    "original_title": "我不是药神",
+    "overview": "一位不速之客的意外到访，打破了神油店老板程勇的平凡人生，他从一个交不起房租的男性保健品商贩，一跃成为印度仿制药“格列宁”的独家代理商。收获巨额利润的他，生活剧烈变化，被病患们冠以“药神”的称号。但是，一场关于救赎的拉锯战也在波涛暗涌中慢慢展开......",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ],
+    "runtime": 117,
+    "release_date": "2018-07-06",
+    "backdrop_path": "/xNPeL9cvTCCAwlAwq7Vdq9HNJd.jpg",
+    "poster_path": "/qrhEWQjR3AyMbyy5l3vFuwA576W.jpg",
+    "countries": [
+      "China"
+    ],
+    "director": "文牧野",
+    "cast": [
+      {
+        "name": "徐峥",
+        "character": "Cheng Yong",
+        "profile_path": "/yclQtqxPnlp7H4seiKltNfJjlrc.jpg"
+      },
+      {
+        "name": "周一围",
+        "character": "Cao Bin",
+        "profile_path": "/vvHVmjIhMIS7baQsmj5z0cy7hz1.jpg"
+      },
+      {
+        "name": "王传君",
+        "character": "Lü Shouyi",
+        "profile_path": "/ilFW1ONI5UILya7nC1SuqZtkGRG.jpg"
+      },
+      {
+        "name": "谭卓",
+        "character": "Liu Sihui",
+        "profile_path": "/ojPyZhpVvxc0QmG8ABgb4HePAa.jpg"
+      },
+      {
+        "name": "章宇",
+        "character": "Peng Hao",
+        "profile_path": "/u8sPe0IqyPoMzy6Qzmtpy3RZeHq.jpg"
+      },
+      {
+        "name": "杨新鸣",
+        "character": "Pastor Liu",
+        "profile_path": "/aiEyYq1s9ah42Gedzw1ac1oGcGK.jpg"
+      },
+      {
+        "name": "王砚辉",
+        "character": "Zhang Changlin",
+        "profile_path": "/umBp3VwmHy8bCcvgkLUtixq6bpD.jpg"
+      },
+      {
+        "name": "贾弘逍",
+        "character": "Xiao Sun",
+        "profile_path": "/lfoLqIS2kMrYm8bP41ouwvg914C.jpg"
+      }
+    ],
+    "stills": [
+      "/flvtIzJ2QrUhKnIZ4buXkdlUIQH.jpg",
+      "/xNPeL9cvTCCAwlAwq7Vdq9HNJd.jpg",
+      "/5sCKCwAPbBUhjOZQ5esybPR0kFc.jpg",
+      "/weaJGYZMEIMjRCt3JOyibGQOkjS.jpg",
+      "/dDQho10aLlZNJ2Gq6fcCx2t8aQQ.jpg",
+      "/rvlb2BpBiBNv30WS9TEcgMQBf2A.jpg",
+      "/xKiqWFtF14yEr1Udgsu1Quj2Alr.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1198736,
+        "title": "Palette of Tears",
+        "poster_path": "/lhKQLo7zWIQM1TtmOndFdWiaIpy.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 260867,
+        "title": "彼世的地狱之旅",
+        "poster_path": "/nTD8rnhbT8AoY6YrEYFOKWNCsdf.jpg",
+        "vote_average": 4.2
+      },
+      {
+        "tmdb_id": 622372,
+        "title": "سوارنگی‎",
+        "poster_path": "/iVU6LSISpnKfT6hEZBbLb4xmpxw.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 27,
+        "title": "九歌",
+        "poster_path": "/3npCKb1PahfFZDreWSMWHu1qvPv.jpg",
+        "vote_average": 5.541
+      },
+      {
+        "tmdb_id": 1383392,
+        "title": "Visions of Violence",
+        "poster_path": "/KYvj2zqQZ1s4xZFJALjLg7axSW.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 1389148,
+        "title": "12 Steps to Recovery",
+        "poster_path": "/8Na6LDuD43rDDmpAWzvcIOhjGVr.jpg",
+        "vote_average": 5.2
+      },
+      {
+        "tmdb_id": 1206093,
+        "title": "Pink Ladies",
+        "poster_path": "/FXqqsjV8JKe2Ow5nUPN4tgGM1a.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 1614443,
+        "title": "Gimme One Last",
+        "poster_path": "/g55QqcOGUIrpmIISWjaU5d6adtz.jpg",
+        "vote_average": 10.0
+      }
+    ]
+  },
   "36712987": {
     "tmdb_id": 1226141,
     "tmdb_type": "movie",
@@ -8722,129 +8840,7 @@
       }
     ]
   },
-  "36809864": {
-    "tmdb_id": 1500536,
-    "tmdb_type": "movie",
-    "original_title": "南京照相馆",
-    "overview": "影片故事取材于南京大屠杀期间日军真实罪证影像。一群生活在南京的百姓躲在吉祥照相馆中避难，为了尽可能的多活一日，他们被迫帮助日军摄影师冲洗底片，却意外冲印出了能证明日军屠城的罪证照片。他们原本只想在大屠杀中保命活下去，面对日军在南京城内的暴行，他们决定让这些底片留存下去……",
-    "genres": [
-      "剧情",
-      "战争",
-      "历史"
-    ],
-    "runtime": 137,
-    "release_date": "2025-07-19",
-    "backdrop_path": "/iyIYSfyMTRlaLQWzKWxNRPVkt8Z.jpg",
-    "poster_path": "/lwrANgpPEBmYZ59oExpCiuv34Ou.jpg",
-    "countries": [
-      "China"
-    ],
-    "director": "申奥",
-    "cast": [
-      {
-        "name": "刘昊然",
-        "character": "Su Liuchang",
-        "profile_path": "/3m6zJtGo0oQSxvmUOn0urhEY7fg.jpg"
-      },
-      {
-        "name": "王传君",
-        "character": "Wang Guanghai",
-        "profile_path": "/ilFW1ONI5UILya7nC1SuqZtkGRG.jpg"
-      },
-      {
-        "name": "高叶",
-        "character": "Lin Yuxiu",
-        "profile_path": "/iowwWeVy1IlA2h42c08FpmzLCvq.jpg"
-      },
-      {
-        "name": "王骁",
-        "character": "Jin Chengzong",
-        "profile_path": "/sLnMwjp8kX423aCXScG1IOacS1r.jpg"
-      },
-      {
-        "name": "周游",
-        "character": "Song Cunyi",
-        "profile_path": "/rKMgNYEXxQQ0Qp2g40YSATJ4fuv.jpg"
-      },
-      {
-        "name": "杨恩又",
-        "character": "Jin Wanyi",
-        "profile_path": "/dlQ4aZ418hBtDkEP58qMKBjRf0a.jpg"
-      },
-      {
-        "name": "原岛大地",
-        "character": "Hideo Ito",
-        "profile_path": "/v2t7UaEVHnDseceqXugob9Pvr1g.jpg"
-      },
-      {
-        "name": "王真儿",
-        "character": "Zhao Yifang",
-        "profile_path": "/83e4Dk51l1U2dxz7viU2VVvJIzm.jpg"
-      }
-    ],
-    "stills": [
-      "/iyIYSfyMTRlaLQWzKWxNRPVkt8Z.jpg",
-      "/faoZLhs1QqIxZZ6LViRf6x6byWz.jpg",
-      "/8GyOBWEfZTCqyW9pgvSPKi3KvsT.jpg",
-      "/ngLgoY3MTfLANqv9cpXr96saaFV.jpg",
-      "/qiu0u5fa5OnHtGTOmzOffw5FpkW.jpg",
-      "/kqTC9Te1PdsmkMIdT1TaitHfIOE.jpg",
-      "/fHosNUswz8uPcr3YyxslAKx07BR.jpg",
-      "/lCRLLe8kiwb99JOlkTPAfchhqwk.jpg",
-      "/cY91L52nr8ujtxyxAcM9vMLd8iR.jpg",
-      "/lPaaYRaayQ7VBQef05kgtbPRf0m.jpg"
-    ],
-    "similar": [
-      {
-        "tmdb_id": 1003083,
-        "title": "奥黛丽的患儿",
-        "poster_path": "/1FM8j3csa7HCWPJWv16whsaEUWX.jpg",
-        "vote_average": 7.667
-      },
-      {
-        "tmdb_id": 1189383,
-        "title": "Suzanne",
-        "poster_path": "/nZZB1Xdm8SpdklKIRocx8OxIKRU.jpg",
-        "vote_average": 0
-      },
-      {
-        "tmdb_id": 1024,
-        "title": "罪孽天使",
-        "poster_path": "/uvb86wVCIqD3Rlbr0GTNgWDF7Zo.jpg",
-        "vote_average": 6.968
-      },
-      {
-        "tmdb_id": 1049,
-        "title": "似是故人来",
-        "poster_path": "/tAgQKLv0GK97Tr0bvdI66oXlEVb.jpg",
-        "vote_average": 6.364
-      },
-      {
-        "tmdb_id": 1165,
-        "title": "女王",
-        "poster_path": "/olwdewYzs4FSXTy5x1zUdiKddys.jpg",
-        "vote_average": 6.947
-      },
-      {
-        "tmdb_id": 1213,
-        "title": "天才瑞普利",
-        "poster_path": "/kiKO4XSKI8yWSY8lbfTJtIr6UnL.jpg",
-        "vote_average": 7.195
-      },
-      {
-        "tmdb_id": 1245,
-        "title": "告别有情天",
-        "poster_path": "/hlW4MAnKE2onlwoc1iC6niX1Sf8.jpg",
-        "vote_average": 7.366
-      },
-      {
-        "tmdb_id": 1271,
-        "title": "斯巴达300勇士",
-        "poster_path": "/2YRNOdQMcWT9FhM7HijY9bIvJSl.jpg",
-        "vote_average": 7.207
-      }
-    ]
-  },
+
   "37181749": {
     "tmdb_id": 215072,
     "tmdb_type": "tv",
@@ -8880,12 +8876,14 @@
         "profile_path": "/lqV410EQPkWAxM23oUCjCBXQKF.jpg"
       },
       {
-        "name": "金旻",
+        "name": "金敏",
+
         "character": "Pasin Kradek",
         "profile_path": "/pvNgh5koYxNG9NQcSa60XNzoFgE.jpg"
       },
       {
-        "name": "李兑荣",
+        "name": "李泰英",
+
         "character": "Brother",
         "profile_path": "/gmqS7W15bbnpU495NbR9whqhIio.jpg"
       },
