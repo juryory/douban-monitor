@@ -884,7 +884,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
         return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
     log_kv("拉取", "成功")
 
-    subprocess.run(["git", "add", "data/", "detail/", "reports/", "posters/"], **git_kw)
+    subprocess.run(["git", "add", "data/", "detail/", "reports/"], **git_kw)
     diff = subprocess.run(["git", "diff", "--cached", "--quiet"], **git_kw)
     if diff.returncode == 0:
         log_kv("跳过", "数据无变化，无需提交")
