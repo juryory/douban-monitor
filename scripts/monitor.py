@@ -877,9 +877,13 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     git_kw = {"cwd": str(project_root), "capture_output": True, "text": True, "encoding": "utf-8", "errors": "replace"}
 
     # 先拉取远端最新，避免 push 被拒绝
-    pull = subprocess.run(["git", "pull", "--rebase", "--autostash"], **git_kw)
-    if pull.returncode != 0:
-        log_kv("拉取失败（中止提交，避免推送坏数据）", (pull.stderr or pull.stdout or "").strip())
+    # 注意：用 --include-untracked 而不是 --autostash，因为新生成的日报文件是 untracked 状态
+    subprocess.run(["git", "stash", "--include-untracked"], **git_kw)
+    pull = subprocess.run(["git", "pull", "--rebase"], **git_kw)
+    pop = subprocess.run(["git", "stash", "pop"], **git_kw, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if pull.returncode != 0 or pop.returncode != 0:
+        err_msg = (pull.stderr or pull.stdout or "").strip() if pull.returncode != 0 else (pop.stderr or pop.stdout or "").strip()
+        log_kv("拉取失败（中止提交，避免推送坏数据）", err_msg)
         print("⚠️ GitHub 同步失败：拉取冲突，详见 logs/ 日志", file=sys.stdout, flush=True)
         return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
     log_kv("拉取", "成功")
