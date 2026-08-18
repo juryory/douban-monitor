@@ -880,7 +880,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     # 注意：用 --include-untracked 而不是 --autostash，因为新生成的日报文件是 untracked 状态
     subprocess.run(["git", "stash", "--include-untracked"], **git_kw)
     pull = subprocess.run(["git", "pull", "--rebase"], **git_kw)
-    pop = subprocess.run(["git", "stash", "pop"], **git_kw, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    pop = subprocess.run(["git", "stash", "pop"], **git_kw)
     if pull.returncode != 0 or pop.returncode != 0:
         err_msg = (pull.stderr or pull.stdout or "").strip() if pull.returncode != 0 else (pop.stderr or pop.stdout or "").strip()
         log_kv("拉取失败（中止提交，避免推送坏数据）", err_msg)
