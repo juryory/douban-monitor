@@ -9080,7 +9080,457 @@
       }
     ]
   },
-  "2131459": {},
-  "6129693": {},
-  "37363204": {}
+  "2131459": {
+    "tmdb_id": 10681,
+    "tmdb_type": "movie",
+    "original_title": "WALL·E",
+    "overview": "公元 2700 年，人类文明高度发展，却因污染和生活垃圾大量增加使得地球不再适于人类居住。地球人被迫乘坐飞船离开故乡，进行一次漫长无边的宇宙之旅。临行前他们委托 Buynlarge 的公司对地球垃圾进行清理，该公司开发了名为 WALL·E（地球废品分装员的缩写）的机器人担当此重任。 这些机器人按照程序日复一日、年复一年辛勤工作，但随着时间的流逝和恶劣环境的侵蚀，WALL·E 们接连损坏、停止运动。最后只有一个仍在进行这项似乎永无止境的工作。经历了漫长的岁月，它开始拥有了自己的意识。它喜欢将收集来的宝贝小心翼翼藏起，喜欢收工后看看几百年前的歌舞片，此外还有一只蟑螂朋友作伴。直到有一天，一艘来自宇宙的飞船打破了它一成不变的生活…",
+    "genres": [
+      "动画",
+      "家庭",
+      "科幻"
+    ],
+    "runtime": 98,
+    "release_date": "2008-06-26",
+    "backdrop_path": "/nYs4ZwnJBK4AgljhvzwNz7fpr3E.jpg",
+    "poster_path": "/eVcHArmmMXajXaqVBH4dhUWfwmS.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "安德鲁·斯坦顿",
+    "cast": [
+      {
+        "name": "本·贝尔特",
+        "character": "WALL·E / M-O (voice)",
+        "profile_path": "/7asFDWjls2bYQSfXJf5StjXmlhI.jpg"
+      },
+      {
+        "name": "艾丽莎·奈特",
+        "character": "EVE (voice)",
+        "profile_path": "/exRLyaNaHcgawQA0DoBxo5IvdoI.jpg"
+      },
+      {
+        "name": "杰夫·格尔林",
+        "character": "Captain (voice)",
+        "profile_path": "/8shJOwynglerVVxhOKbvDYTThBd.jpg"
+      },
+      {
+        "name": "佛莱德·威拉特",
+        "character": "Shelby Forthright, BnL CEO",
+        "profile_path": "/AaHxpkee9nQfBpQeDyJLoPNtYR6.jpg"
+      },
+      {
+        "name": "约翰·拉岑伯格",
+        "character": "John (voice)",
+        "profile_path": "/oRtDEOuIO1yDhTz5dORBdxXuLMO.jpg"
+      },
+      {
+        "name": "凯茜·纳基麦",
+        "character": "Mary (voice)",
+        "profile_path": "/nqbZF7Igr0SC8Xq8y0jwmx0mLDN.jpg"
+      },
+      {
+        "name": "西格妮·韦弗",
+        "character": "Ship's Computer (voice)",
+        "profile_path": "/wTSnfktNBLd6kwQxgvkqYw6vEon.jpg"
+      },
+      {
+        "name": "洛瑞·艾伦",
+        "character": "Additional Voices (voice)",
+        "profile_path": "/cavATg4fX0zAl2MHwlt1IZei7EI.jpg"
+      }
+    ],
+    "stills": [
+      "/nYs4ZwnJBK4AgljhvzwNz7fpr3E.jpg",
+      "/pjLdH5VIKirwVUIZ0iDisXoRGo4.jpg",
+      "/ai2FicMUxLCurVkjtYdSvVDWRmS.jpg",
+      "/fK5ssgvtI43z19FoWigdlqgpLRE.jpg",
+      "/3CvNc04vTwTir5q3LBDuvUb8Ng6.jpg",
+      "/qxSArjpoHUOIzP5ha3EHvWbPCdY.jpg",
+      "/eete5ZAaagldSXxDetN62V3WXcg.jpg",
+      "/3rHG40KsESjW6HcnQQTy2lYvBPD.jpg",
+      "/yDg88BMu8DKqasUwCB6vUJDjsRq.jpg",
+      "/7Q3sZgkSgpBDMJvevQNnMar83Af.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 7443,
+        "title": "小鸡快跑",
+        "poster_path": "/iXY5JTEhC69BqX02bdm3BShjoMS.jpg",
+        "vote_average": 6.852
+      },
+      {
+        "tmdb_id": 7450,
+        "title": "冰冻星球",
+        "poster_path": "/el2iHk3LTJWfEnwrvcRkvWY501G.jpg",
+        "vote_average": 6.627
+      },
+      {
+        "tmdb_id": 7737,
+        "title": "生化危机3：灭绝",
+        "poster_path": "/aY3N12d6Ga4VsZnxZeSjntai9VL.jpg",
+        "vote_average": 6.304
+      },
+      {
+        "tmdb_id": 7459,
+        "title": "极速赛车手",
+        "poster_path": "/gVAzNbt5WnS7b8h4I1GSzETCgJO.jpg",
+        "vote_average": 6.384
+      },
+      {
+        "tmdb_id": 8077,
+        "title": "异形3",
+        "poster_path": "/16ExxTjS35LYktkxp8EzqrmhtvO.jpg",
+        "vote_average": 6.39
+      },
+      {
+        "tmdb_id": 7453,
+        "title": "银河系漫游指南",
+        "poster_path": "/jX3KRd37ig3H1IcyD1bbcG7YLP5.jpg",
+        "vote_average": 6.689
+      },
+      {
+        "tmdb_id": 7512,
+        "title": "蠢蛋进化论",
+        "poster_path": "/iHpv98lZFRz1iaCLpHRXYuZ4sPl.jpg",
+        "vote_average": 6.381
+      },
+      {
+        "tmdb_id": 7518,
+        "title": "篱笆墙外",
+        "poster_path": "/fGeNUyDXZrALReYPNSO6ezLrB9v.jpg",
+        "vote_average": 6.602
+      }
+    ]
+  },
+  "6129693": {
+    "tmdb_id": 40444,
+    "tmdb_type": "tv",
+    "original_title": "我可能不會愛你",
+    "overview": "程又青和李大仁由高中到大学都是同班同学，因高中时班上男女同学对立，互相斗气，又青与大仁从认识以来一直以欢喜冤家方式相处，表面上锋锋相对，实则却认定对方为重要的朋友！\n\n又青任职鞋业公司区长，谈过多次恋爱，换来的是一次又一次的伤心。大仁在航空公司担任地勤主管，年轻有为，身边不乏漂亮的空姐、地勤对他展开追求，但每次的恋情却十分短暂。在又青30岁生日那天，被大仁提醒即将进入「盛女」的行列，「初老」的世界，令单身的又青心感不忿，激发二人展开一场35岁前谁先结婚的十万元红包赌注！\n\n又青和大仁熟悉对方每一位家人，见尽对方每一次出糗，却一直谈不成恋爱！在同学、同事，甚至家人眼中，二人早应该在一起，可是大仁曾在高中时对又青说过一句「我可能不会爱你」，那到底是爱，还是不爱？自打赌开始，又青积极寻找结婚对象，却发现身边的男人全都问题多多，更意识到能受得住她的，只有那个相识了十多年的男人－ 李大仁。同时，大仁亦渐渐发觉，站在又青身边的该是他，而不是其他男人……",
+    "genres": [
+      "喜剧"
+    ],
+    "runtime": 81,
+    "release_date": "2011-09-18",
+    "backdrop_path": "/dsxADIhtBDmFqsWMHqarKUmYMYR.jpg",
+    "poster_path": "/gOop75Ywn4gy6nPy5qUs1FLhL7l.jpg",
+    "countries": [
+      "TW"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "林依晨",
+        "character": "Cheng You-qing",
+        "profile_path": "/hFzUAwsQcz2nLw6BIjwSjDNPFtb.jpg"
+      },
+      {
+        "name": "陈柏霖",
+        "character": "Li Da-ren",
+        "profile_path": "/w89BYi3LaMFROA9gTw2vWPVcbda.jpg"
+      },
+      {
+        "name": "王阳明",
+        "character": "Ding Li-wei",
+        "profile_path": "/nQOR7SgqYD4JcdEcTWEERsQcgnm.jpg"
+      },
+      {
+        "name": "陈匡怡",
+        "character": "Maggie",
+        "profile_path": "/hDx9GpVWITogdOLrPvsLDKTmYyw.jpg"
+      },
+      {
+        "name": "林美秀",
+        "character": "You-qing's Mother",
+        "profile_path": "/yljrAwm334bN1bBD1dAY1O69EBs.jpg"
+      },
+      {
+        "name": "罗北安",
+        "character": "You-qing's Father",
+        "profile_path": "/AnJ3fV84bepsdk8jGlYICjtoSZ9.jpg"
+      },
+      {
+        "name": "应蔚民",
+        "character": "Cheng Guan-qing",
+        "profile_path": "/zmQFIlT4bUTh8EfiQ0WFE0qmOL4.jpg"
+      },
+      {
+        "name": "马芸菲",
+        "character": "Guan-qing's Wife",
+        "profile_path": "/9CNNsFDX5Du4p8maggMtOIqXQkI.jpg"
+      }
+    ],
+    "stills": [
+      "/iAiHTTpzm5BSsp5xdSGL358g7qP.jpg",
+      "/dsxADIhtBDmFqsWMHqarKUmYMYR.jpg",
+      "/kwpVtYcX0G572eNRX11bZq14RjC.jpg",
+      "/8v1yU0sBLdXKDgC4Vgp4IqgDz3C.jpg",
+      "/fbWlKuw7brCHns3WBsllMXodONi.jpg",
+      "/mKmY6l0Sq5YVSvbyCiIkIrjy3J5.jpg",
+      "/9cA4WW4XVOiVYKLx6quZItewMku.jpg",
+      "/plk5Z7ziZlRMLDz2ocrCrGvSDmo.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 236812,
+        "title": "Hex Boyfriend",
+        "poster_path": "",
+        "vote_average": 4.0
+      },
+      {
+        "tmdb_id": 236897,
+        "title": "Seetha Raman",
+        "poster_path": "/13cLJSODLCp97aTURhjTmsKWz9V.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 28136,
+        "title": "浪客剑心",
+        "poster_path": "/qft385RNPuxSylHUIm8tv5zkVyT.jpg",
+        "vote_average": 8.522
+      },
+      {
+        "tmdb_id": 28223,
+        "title": "我家也有外星人",
+        "poster_path": "/5XFmPjeaZNghJHrY5ddXgjxovDd.jpg",
+        "vote_average": 7.136
+      },
+      {
+        "tmdb_id": 90826,
+        "title": "ผู้บ่าวอินดี้ ยาหยีอินเตอร์",
+        "poster_path": "/pO8HbxO9gIShmEvekIWH6JRmvsC.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 90869,
+        "title": "CMFU学院-王子碰碰球",
+        "poster_path": "/tKj5q1vJoPM1UDBwgES3db3GBuw.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 90999,
+        "title": "理科生坠入情网，故尝试证明。",
+        "poster_path": "/axsYYgV9NgmJYvr18ngI35qGEas.jpg",
+        "vote_average": 7.552
+      },
+      {
+        "tmdb_id": 125,
+        "title": "To the Manor Born",
+        "poster_path": "/dkC1esu05b8aHPUwTO7857MHbd0.jpg",
+        "vote_average": 7.0
+      }
+    ]
+  },
+  "37363204": {
+    "tmdb_id": 292108,
+    "tmdb_type": "tv",
+    "original_title": "Ann Droid",
+    "overview": "在一个AI无处不在的世界里，苏的丈夫大卫18个月前去世了，她唯一的儿子迈克尔搬走了，二手老年护理机器人琳达来到她身边。苏很快意识到机器人可以为她搞定一切，做她儿子永远没时间做的事情。",
+    "genres": [
+      "喜剧"
+    ],
+    "runtime": 29,
+    "release_date": "2026-07-17",
+    "backdrop_path": "/deUtNgB5zf7uyAzH7BbkRHF2S80.jpg",
+    "poster_path": "/rIuA73tNABKewuMMtpIt1Cq6fHh.jpg",
+    "countries": [
+      "GB"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "黛安·摩根",
+        "character": "Linda",
+        "profile_path": "/46Mdcr9ycOaLCKApoj101Cx1c1S.jpg"
+      },
+      {
+        "name": "Sue Johnston",
+        "character": "Sue",
+        "profile_path": "/aXMjpy2SyhkRI27SUgDqd3MppgD.jpg"
+      },
+      {
+        "name": "保罗·雷迪",
+        "character": "Michael",
+        "profile_path": "/puDAhioW6SPvnosoSaIPVnNPnxK.jpg"
+      }
+    ],
+    "stills": [
+      "/deUtNgB5zf7uyAzH7BbkRHF2S80.jpg",
+      "/cJBLZUD3Dw1tuMydpC8bEDT69G2.jpg",
+      "/mO1Dbisx8NvraRxAbJzl8PrMMt2.jpg",
+      "/bMHLNQFoRFuPVzvbvbVdRmDXGCs.jpg",
+      "/6NwmY5BHtlc3WDsnF7ol890FJih.jpg",
+      "/mPheSLmejcCouVSbgP769QszS8G.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 28091,
+        "title": "Ball Four",
+        "poster_path": "",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 28151,
+        "title": "Joe's World",
+        "poster_path": "",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 28216,
+        "title": "Washingtoon",
+        "poster_path": "",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 28218,
+        "title": "The House of Windsor",
+        "poster_path": "",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 90956,
+        "title": "The Aam Aadmi Family",
+        "poster_path": "/mg1lYG6NcJFB74vgOMHBE35fmyg.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 198,
+        "title": "Bless This House",
+        "poster_path": "/tJCHhmbswZ8KaBfwqELtH7thHHN.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 202,
+        "title": "做个好梦！",
+        "poster_path": "/bER1xXd5099k77CJNuGFhvmCNRl.jpg",
+        "vote_average": 7.674
+      },
+      {
+        "tmdb_id": 204,
+        "title": "Freddie",
+        "poster_path": "/u9bQCwHHQ58TCK24voky5ZUMZAf.jpg",
+        "vote_average": 4.708
+      }
+    ]
+  },
+  "37185797": {
+    "tmdb_id": 207333,
+    "tmdb_type": "tv",
+    "original_title": "Cien años de soledad",
+    "overview": "在神秘的小镇马孔多，布恩迪亚家族的七代人应对爱、遗忘以及无法逃避的过去和命运。",
+    "genres": [
+      "剧情",
+      "Sci-Fi & Fantasy"
+    ],
+    "runtime": null,
+    "release_date": "2024-12-11",
+    "backdrop_path": "/5mcc7J07f680Q88xeLClf5SIZtt.jpg",
+    "poster_path": "/w8p5MkntL1bTI94INGLya1pHmTP.jpg",
+    "countries": [
+      "CO"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "克劳迪奥·卡塔诺",
+        "character": "Colonel Aureliano Buendía",
+        "profile_path": "/k5L4EDlJVhqvzQojcwvbrohKeJm.jpg"
+      },
+      {
+        "name": "苏珊娜·莫拉莱斯",
+        "character": "Úrsula Iguarán",
+        "profile_path": "/eQiul9fAjoR36j2zm4YIzKeQwgK.jpg"
+      },
+      {
+        "name": "Ángela Cano",
+        "character": "Amaranta Úrsula Buendía",
+        "profile_path": "/9BaQO2i5kTluUkwsnK3bUB8SvlL.jpg"
+      },
+      {
+        "name": "Emmanuel Restrepo",
+        "character": "Aureliano Babilonia",
+        "profile_path": "/hcyTajG2qdIabNbfdQP4h4gXcL5.jpg"
+      },
+      {
+        "name": "Estefania Piñeres",
+        "character": "Fernanda del Carpio",
+        "profile_path": "/sglSsX9DlO1PcWwmNdgZNUFAFOX.jpg"
+      },
+      {
+        "name": "Maria Adelaida Puerta",
+        "character": "Renata Remedios “Meme” Buendía",
+        "profile_path": "/noYeO2kPdmRIfv6xnDNSQoOQQzU.jpg"
+      },
+      {
+        "name": "埃米利亚诺·佩尼亚",
+        "character": "José Arcadio Segundo",
+        "profile_path": "/dCvaYyf4lgvXOLcBYVKSe1s9kLa.jpg"
+      },
+      {
+        "name": "Juanita Molina",
+        "character": "Remedios “la Bella”",
+        "profile_path": "/y2x5rr85VVtlcbqum8vTypolDak.jpg"
+      }
+    ],
+    "stills": [
+      "/5mcc7J07f680Q88xeLClf5SIZtt.jpg",
+      "/kTz1SMehYwydblnASFZLjbIOt5T.jpg",
+      "/yI5tsqyHgMwZhI7bWde52ZKTjhY.jpg",
+      "/wdq21siXo8CSKVhXqAu5BEZY6Wa.jpg",
+      "/TYxMBzzjy7xFYGU6HZBtNbQwLg.jpg",
+      "/9fT3wamWrAftzfEevfcpfprK89M.jpg",
+      "/2u6gjd0lhNiFDtVB1k0y4kUD7uy.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 236787,
+        "title": "勒伦斯科格失踪案",
+        "poster_path": "/32Wmz8Db7Q2NlO2z1Xt0PEPbuCR.jpg",
+        "vote_average": 5.278
+      },
+      {
+        "tmdb_id": 236791,
+        "title": "爱通过直播",
+        "poster_path": "/z97TZYYWoDPVWJxwBuMUOV4dYPu.jpg",
+        "vote_average": 7.6
+      },
+      {
+        "tmdb_id": 236815,
+        "title": "上瘾 (泰国版)",
+        "poster_path": "/j8b5J3mQjPtDQnELFM1uLiKDL4d.jpg",
+        "vote_average": 6.917
+      },
+      {
+        "tmdb_id": 236731,
+        "title": "传说中的千岁大人",
+        "poster_path": "/16D9brBhwH7pSnBrOI4xCnBXBwH.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 236887,
+        "title": "偶像升级计划",
+        "poster_path": "/7GznVBciuRCmb8VhbrbKadsrCtR.jpg",
+        "vote_average": 5.938
+      },
+      {
+        "tmdb_id": 236839,
+        "title": "Tajný agent",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 236771,
+        "title": "Kronika",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 28140,
+        "title": "The Rhinemann Exchange",
+        "poster_path": "/bH6Lv80xzVmjnqKL0lKzB6CWagO.jpg",
+        "vote_average": 6.5
+      }
+    ]
+  }
 }
