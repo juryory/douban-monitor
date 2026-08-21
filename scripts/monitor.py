@@ -771,6 +771,21 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     state_path = project_root / "data" / "douban-monitor-state.json"
     library_path = project_root / "data" / "douban-monitor-library.json"
     report_path = project_root / "reports" / f"douban-monitor-{now.strftime('%Y%m%d')}.md"
+    result_path = project_root / "data" / "douban-monitor-result.json"
+
+    # 第 0 步：先拉取远端最新代码，确保本地工作树基于最新基线
+    # 这样后续生成的数据不会和远端撞车，省去后面的 stash→pull→pop 冲突风险
+    no_push_env = (get_env("DOUBAN_MONITOR_NO_PUSH") or "").lower() in ("1", "true", "yes")
+    if not no_push_env and config.get("auto_git_push", True):
+        log_step("[0/8] 先拉取远端最新代码...")
+        git_kw = {"cwd": str(project_root), "capture_output": True, "text": True, "encoding": "utf-8", "errors": "replace"}
+        pull_result = subprocess.run(["git", "pull", "--rebase"], **git_kw)
+        if pull_result.returncode != 0:
+            err_msg = (pull_result.stderr or pull_result.stdout or "").strip()
+            log_kv("拉取失败（中止运行）", err_msg)
+            print("⚠️ GitHub 拉取失败，请检查网络或仓库状态", file=sys.stdout, flush=True)
+            return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
+        log_kv("拉取", "成功")
 
     state_data = load_json(state_path, {"version": 1, "updated_at": None, "items": {}})
     library_data = load_json(library_path, {"version": 1, "updated_at": None, "items": {}})
@@ -833,7 +848,6 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
         log_kv("报告文件", report_path)
 
     log_step("[6/8] 生成前端数据...")
-    result_path = project_root / "data" / "douban-monitor-result.json"
     if fetch_empty:
         log_kv("跳过前端结果写入", "候选为 0，保留上一份")
     else:
@@ -876,18 +890,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
 
     git_kw = {"cwd": str(project_root), "capture_output": True, "text": True, "encoding": "utf-8", "errors": "replace"}
 
-    # 先拉取远端最新，避免 push 被拒绝
-    # 注意：用 --include-untracked 而不是 --autostash，因为新生成的日报文件是 untracked 状态
-    subprocess.run(["git", "stash", "--include-untracked"], **git_kw)
-    pull = subprocess.run(["git", "pull", "--rebase"], **git_kw)
-    pop = subprocess.run(["git", "stash", "pop"], **git_kw)
-    if pull.returncode != 0 or pop.returncode != 0:
-        err_msg = (pull.stderr or pull.stdout or "").strip() if pull.returncode != 0 else (pop.stderr or pop.stdout or "").strip()
-        log_kv("拉取失败（中止提交，避免推送坏数据）", err_msg)
-        print("⚠️ GitHub 同步失败：拉取冲突，详见 logs/ 日志", file=sys.stdout, flush=True)
-        return {"state_path": state_path, "library_path": library_path, "report_path": report_path, "result_path": result_path}
-    log_kv("拉取", "成功")
-
+    # 数据已在第 0 步基于最新基线生成，直接 add
     subprocess.run(["git", "add", "data/", "detail/", "reports/"], **git_kw)
     diff = subprocess.run(["git", "diff", "--cached", "--quiet"], **git_kw)
     if diff.returncode == 0:
