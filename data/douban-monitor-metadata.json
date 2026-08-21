@@ -9532,5 +9532,232 @@
         "vote_average": 6.5
       }
     ]
+  },
+  "1298043": {
+    "tmdb_id": 290,
+    "tmdb_type": "movie",
+    "original_title": "Barton Fink",
+    "overview": "一名具有社会意识的编剧新秀刚从百老汇崛起，便被好莱坞约请写一部关于摔角的B级片剧本。他住在破败的旅馆房间中搜索刮肠，却硬是挤不出只言片语。此刻，他隔壁的房间里却发生了种种怪事，使他犹如置身于人间炼狱，脑海中发生了种种荒诞可笑的幻象。编导用了相当隐晦的方式，来刻划创作者面感灵感枯揭时的心理压力，将重心放在了环境气氛的营造上……  《巴顿芬克》是科恩兄弟正式走上国际影坛的代表作品，影片带有强烈的魔幻色彩和超现实主义风格。一举拿下当年戛纳三项大奖。",
+    "genres": [
+      "喜剧",
+      "剧情",
+      "惊悚"
+    ],
+    "runtime": 116,
+    "release_date": "1991-08-01",
+    "backdrop_path": "/cW1XlxgvxZIFkakYc9yrLpDoYhK.jpg",
+    "poster_path": "/oDkp5iClJ9WKJGtKHz8BydodHC3.jpg",
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "director": "乔尔·科恩",
+    "cast": [
+      {
+        "name": "约翰·特托罗",
+        "character": "Barton Fink",
+        "profile_path": "/6O9W9cJW0kCqMzYeLupV9oH0ftn.jpg"
+      },
+      {
+        "name": "约翰·古德曼",
+        "character": "Charlie Meadows",
+        "profile_path": "/yyYqoyKHO7hE1zpgEV2XlqYWcNV.jpg"
+      },
+      {
+        "name": "朱迪·戴维斯",
+        "character": "Audrey Taylor",
+        "profile_path": "/yAwsKkca91QJdsf1suUm637mwUx.jpg"
+      },
+      {
+        "name": "迈克尔·勒纳",
+        "character": "Jack Lipnick",
+        "profile_path": "/1jRm6TRS5atQrA1VQSef7GoL13g.jpg"
+      },
+      {
+        "name": "约翰·马奥尼",
+        "character": "W.P. Mayhew",
+        "profile_path": "/paVSw7Brdp6MKa2j4UPukA0KHs3.jpg"
+      },
+      {
+        "name": "托尼·夏尔赫布",
+        "character": "Ben Geisler",
+        "profile_path": "/1zfBSuAmOr1xXjNg4WzFWPm5B0Z.jpg"
+      },
+      {
+        "name": "乔恩·波利托",
+        "character": "Lou Breeze",
+        "profile_path": "/4HjxMy4Ir2dWz7ycX5l3sgxOY4g.jpg"
+      },
+      {
+        "name": "史蒂夫·布西密",
+        "character": "Chet",
+        "profile_path": "/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
+      }
+    ],
+    "stills": [
+      "/cW1XlxgvxZIFkakYc9yrLpDoYhK.jpg",
+      "/hjGLcwWg2F0BJB1zUFMzwrm7uqg.jpg",
+      "/5IbE8joIeUUowIVC2TNsyAd0nFv.jpg",
+      "/nsRmLImj4VLscewpwyWJs4iYhZh.jpg",
+      "/dSDpW5soaGsBHdwKQg9HvoFYxJd.jpg",
+      "/eOn6EtViFLxXAmPPjJR861Dx4PX.jpg",
+      "/65DTUTmcduU6zdVlEEKmyuAEsuK.jpg",
+      "/ub7TV5IIKEYfLFJTTCTy9zPDPFf.jpg",
+      "/3VTY3ZaP5UDLgfI1z2HJHEgesnA.jpg",
+      "/olFmSixYrne3CmXCEZk0wK1oFYg.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 4952,
+        "title": "枕边细语",
+        "poster_path": "/ugvyj5nl9QmTYuaGUTefVYBDePE.jpg",
+        "vote_average": 7.1
+      },
+      {
+        "tmdb_id": 4995,
+        "title": "不羁夜",
+        "poster_path": "/tbUipowcqHBKd7nCuWJBS3R4ow1.jpg",
+        "vote_average": 7.6
+      },
+      {
+        "tmdb_id": 4997,
+        "title": "仙境大道谋杀案",
+        "poster_path": "/mfG8S7D4rYeVqvTzjc3D36PAK3R.jpg",
+        "vote_average": 6.068
+      },
+      {
+        "tmdb_id": 5002,
+        "title": "救生员",
+        "poster_path": "/u8vhmXoJhUfc7iVXO3VEskXDKgK.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 5003,
+        "title": "Meine schöne Bescherung",
+        "poster_path": "/jekoGxf47hcyTrweI1ZZPs4Yc4p.jpg",
+        "vote_average": 5.028
+      },
+      {
+        "tmdb_id": 1196129,
+        "title": "Johnny by Night",
+        "poster_path": "/vfP4btSF2iiAEMCIAncudTo2vTe.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 446120,
+        "title": "Capturar (Las 1001 novias)",
+        "poster_path": "/5YUAFJlwqJNW7RjeK9UZ2D0IqsV.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 3526,
+        "title": "弗兰西斯",
+        "poster_path": "/eyUq8VBgoHncr0cXFTKgg3VPyfi.jpg",
+        "vote_average": 6.9
+      }
+    ]
+  },
+  "37501131": {
+    "tmdb_id": 301418,
+    "tmdb_type": "tv",
+    "original_title": "지금 불륜이 문제가 아닙니다",
+    "overview": "这是一部黑色喜剧，讲述了一对因出卖家庭而走红的网红夫妇，以及一对正在经历混乱离婚诉讼的邻居医生夫妇，随着他们卷入一个无法控制的秘密，一系列冲突不断升级，甚至连婚外情都显得微不足道。",
+    "genres": [
+      "犯罪",
+      "喜剧",
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-07-31",
+    "backdrop_path": "/463KX5md13Db6pIMCCnIZqtPWFK.jpg",
+    "poster_path": "/jQ9mNZfvnGzXIedlT5IpBVhAzUi.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "정은경",
+    "cast": [
+      {
+        "name": "金惠秀",
+        "character": "Kyung-hee",
+        "profile_path": "/26YGO2DXu5p8eNL8WFHhyaH1h9a.jpg"
+      },
+      {
+        "name": "曹汝贞",
+        "character": "Su-jeong",
+        "profile_path": "/5MgWM8pkUiYkj9MEaEpO0Ir1FD9.jpg"
+      },
+      {
+        "name": "金志勋",
+        "character": "Jae-hong",
+        "profile_path": "/k9Uq26mNkRzoPMu5jGfVoxS3M2V.jpg"
+      },
+      {
+        "name": "金宰澈",
+        "character": "Bo-seong",
+        "profile_path": "/bunf6tnEybIylhvrKBf0tcYXgrc.jpg"
+      }
+    ],
+    "stills": [
+      "/463KX5md13Db6pIMCCnIZqtPWFK.jpg",
+      "/2iHEaJL6erpx5pFfXf7a754DcJH.jpg",
+      "/bftAVJ4PKXitpNk6bwoz25SW2CX.jpg",
+      "/oBjvgmpZOnwgkzEaSPZeHGbfmw7.jpg",
+      "/hurP7nUwXDWfYauBFffxqOV3TUq.jpg",
+      "/cKw1CR68MsZIDU2keb1uALPK4WL.jpg",
+      "/11YmdgT6ZFHdLwXvTeeDgcgh5aq.jpg",
+      "/skaBoioFFr9uhqEtFEOmOA7bRq8.jpg",
+      "/2NYCzK2XYu3x8pVEh0OeyZFFXY8.jpg",
+      "/rxJ0aBpEtjfLDHQ5FqtQg9SjaS4.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 136044,
+        "title": "罪犯联盟",
+        "poster_path": "/s8vp0S0iz2nPb7TpOpV0rHbm1er.jpg",
+        "vote_average": 7.393
+      },
+      {
+        "tmdb_id": 259710,
+        "title": "行骗天下KR",
+        "poster_path": "/b4KjSbvQfdFxeWydvOxhsMrM59Z.jpg",
+        "vote_average": 7.6
+      },
+      {
+        "tmdb_id": 87428,
+        "title": "致命女人",
+        "poster_path": "/3KO94CDaC7JBezLx1BtzSPyaUNk.jpg",
+        "vote_average": 7.876
+      },
+      {
+        "tmdb_id": 158083,
+        "title": "无痛杀手",
+        "poster_path": "/7zYtVymTxVEhgAOuMl4l2NoFCrO.jpg",
+        "vote_average": 7.213
+      },
+      {
+        "tmdb_id": 100414,
+        "title": "怀疑",
+        "poster_path": "/vY02Rbk8ZUgiQgziGMuYKNT9IBO.jpg",
+        "vote_average": 6.711
+      },
+      {
+        "tmdb_id": 85385,
+        "title": "洛城战警",
+        "poster_path": "/pecfFki7ADklKNuqMrcBD7U9lWc.jpg",
+        "vote_average": 6.902
+      },
+      {
+        "tmdb_id": 64199,
+        "title": "诈欺担保人",
+        "poster_path": "/nNpcea9lLHI4iv8QpOIvHveVnT9.jpg",
+        "vote_average": 7.495
+      },
+      {
+        "tmdb_id": 106454,
+        "title": "The Afterparty",
+        "poster_path": "/7mghtlwACryB9fK7nVcaCUBK7Qt.jpg",
+        "vote_average": 7.121
+      }
+    ]
   }
 }
