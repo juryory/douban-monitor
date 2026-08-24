@@ -9759,5 +9759,250 @@
         "vote_average": 7.121
       }
     ]
+  },
+  "36117593": {
+    "tmdb_id": 910850,
+    "tmdb_type": "movie",
+    "original_title": "機動戦士ガンダム  閃光のハサウェイ キルケーの魔女",
+    "overview": "U.C.0105，夏亚之乱12年后——。 面对实行高压政策的地球联邦政府，“马夫蒂”以暗杀政府阁僚的方式展开了抵抗。其领袖的真实身份，正是曾与阿姆罗·雷在一年战争中并肩作战的布莱德之子，哈萨维·诺亚。哈萨韦因神秘少女琪琪·安达露西亚展现出的奇异力量而回忆起过去的创伤。在她的言语影响下，他一边动摇，一边准备马夫提的行动——袭击阿德莱德会议。 联邦军的凯奈斯·斯雷格在准备自己策划的阿德莱德会议防御作战及消灭马夫蒂的行动时，受到刑事警察机构的洪德利‧翼赞提出的秘密协议。 在哈萨维与凯奈斯各自为目标行动的同时，琪琪也为了自己的使命前往香港。",
+    "genres": [
+      "动画",
+      "科幻",
+      "战争",
+      "剧情"
+    ],
+    "runtime": 108,
+    "release_date": "2026-01-30",
+    "backdrop_path": "/dp9FPgUwPc2XIXYct2cQ1PgFv7f.jpg",
+    "poster_path": "/du8DVr2MoeuxNNCa99gxRW38Ppf.jpg",
+    "countries": [
+      "Japan"
+    ],
+    "director": "村濑修功",
+    "cast": [
+      {
+        "name": "小野贤章",
+        "character": "Hathaway Noa (voice)",
+        "profile_path": "/wUYJ3HIeygHfh4rAqupE4RPoG3W.jpg"
+      },
+      {
+        "name": "上田丽奈",
+        "character": "Gigi Andalucia (voice)",
+        "profile_path": "/2WV61uVU7y6XGYqNHLMpP0sApdu.jpg"
+      },
+      {
+        "name": "诹访部顺一",
+        "character": "Kenneth Sleg (voice)",
+        "profile_path": "/4S7c3n3r07A83HvkLrnWZGVhiHg.jpg"
+      },
+      {
+        "name": "齐藤壮马",
+        "character": "Lane Aim (voice)",
+        "profile_path": "/8W8Y02Jmjivw0kk5PDih9dqiyd9.jpg"
+      },
+      {
+        "name": "津田健次郎",
+        "character": "Gawman Nobile (voice)",
+        "profile_path": "/yBlT8FzQqZYbDcJlnCEayNQHrzS.jpg"
+      },
+      {
+        "name": "石川由依",
+        "character": "Emeralda Zubin (voice)",
+        "profile_path": "/2y1y1W4q8UIR0Vbs4NNvc7722XT.jpg"
+      },
+      {
+        "name": "落合福嗣",
+        "character": "Raymond Cain (voice)",
+        "profile_path": "/xE2FoiUjb9N51J7jg0U8eGmfK19.jpg"
+      },
+      {
+        "name": "武内骏辅",
+        "character": "Iram Masam (voice)",
+        "profile_path": "/p1bD76bPptJ41mKRtv0mIr8ZcvO.jpg"
+      }
+    ],
+    "stills": [
+      "/dp9FPgUwPc2XIXYct2cQ1PgFv7f.jpg",
+      "/4ZTD67RhUOcI8WVP1Kmd1LFFc7d.jpg",
+      "/sEuG29UN64q1X8srWK5WS6MpRM4.jpg",
+      "/14T5fKjeHaF8M7unB9Dt5vWsSlk.jpg",
+      "/sYOhcKnz6pIIAADlv7qMRTjAPHJ.jpg",
+      "/8JHwp0UyU702UC4mICBFXIdraST.jpg",
+      "/sMT7Qa2Yi4zYDdro8dXB0INP16O.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 990,
+        "title": "江湖浪子",
+        "poster_path": "/snItsSViawjaadW9mlWUmGwR41R.jpg",
+        "vote_average": 7.665
+      },
+      {
+        "tmdb_id": 991,
+        "title": "天外来客",
+        "poster_path": "/gwmPVphE5DMFFGXGMhfEFyxOOYj.jpg",
+        "vote_average": 6.466
+      },
+      {
+        "tmdb_id": 994,
+        "title": "稻草狗",
+        "poster_path": "/yigkfHE1OhkxPPrjrV78Y9ibGEk.jpg",
+        "vote_average": 7.151
+      },
+      {
+        "tmdb_id": 1124,
+        "title": "致命魔术",
+        "poster_path": "/5DMDkeRfgISRqwxgrX9McAYwu6A.jpg",
+        "vote_average": 8.211
+      },
+      {
+        "tmdb_id": 1213,
+        "title": "天才瑞普利",
+        "poster_path": "/kiKO4XSKI8yWSY8lbfTJtIr6UnL.jpg",
+        "vote_average": 7.197
+      },
+      {
+        "tmdb_id": 1246,
+        "title": "洛奇6：永远的拳王",
+        "poster_path": "/LADHlYVffBhCb5oEm3LZIjlsjt.jpg",
+        "vote_average": 6.887
+      },
+      {
+        "tmdb_id": 1090,
+        "title": "异次元骇客",
+        "poster_path": "/5SInN5iJ4uTggNqgNKtp8heDtkQ.jpg",
+        "vote_average": 7.081
+      },
+      {
+        "tmdb_id": 624812,
+        "title": "恋途未卜",
+        "poster_path": "/fMWA0m0Uv17P4djJxbcvpHLpQsq.jpg",
+        "vote_average": 6.972
+      }
+    ]
+  },
+  "36247731": {
+    "tmdb_id": 1087192,
+    "tmdb_type": "movie",
+    "original_title": "How to Train Your Dragon",
+    "overview": "小嗝嗝（梅森·泰晤士 Mason Thames 饰 ）偶然间遭遇传说中的夜煞没牙仔，并由此与之建立深厚友谊，进而打破两大族群间的隔阂，携手寻求和平。",
+    "genres": [
+      "奇幻",
+      "家庭",
+      "动作",
+      "冒险"
+    ],
+    "runtime": 126,
+    "release_date": "2025-06-06",
+    "backdrop_path": "/8J6UlIFcU7eZfq9iCLbgc8Auklg.jpg",
+    "poster_path": "/s8BEZ7TsipeKhWM5UiDJrlC8Drf.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "迪恩·德布洛斯",
+    "cast": [
+      {
+        "name": "梅森·泰晤士",
+        "character": "Hiccup",
+        "profile_path": "/kgEYHw8bblVtwRTkR9TLMOpx5WO.jpg"
+      },
+      {
+        "name": "妮可·帕克",
+        "character": "Astrid",
+        "profile_path": "/hdM1Xv5XAPSHKMfdFBP20b9RolN.jpg"
+      },
+      {
+        "name": "杰拉德·巴特勒",
+        "character": "Stoick",
+        "profile_path": "/i54XoxYieuff2w6MwyfwVUBvmR0.jpg"
+      },
+      {
+        "name": "尼克·弗罗斯特",
+        "character": "Gobber",
+        "profile_path": "/2CHS4t6miNGLgMQAjhFqb4fFuKS.jpg"
+      },
+      {
+        "name": "加布里埃尔·豪尔",
+        "character": "Snotlout",
+        "profile_path": "/u3PTI9FlrpGFZVMoHXZZBiYWMCl.jpg"
+      },
+      {
+        "name": "朱利安·丹尼森",
+        "character": "Fishlegs",
+        "profile_path": "/zSFwaT2osi7D2G0vFetub4yCDwi.jpg"
+      },
+      {
+        "name": "布朗温·詹姆斯",
+        "character": "Ruffnut",
+        "profile_path": "/mSaZaVNsAVU70VH5go2D2oS8OIL.jpg"
+      },
+      {
+        "name": "哈里·特雷瓦尔温",
+        "character": "Tuffnut",
+        "profile_path": "/uYHekOiCHZoob1tW11vTceplA2e.jpg"
+      }
+    ],
+    "stills": [
+      "/8J6UlIFcU7eZfq9iCLbgc8Auklg.jpg",
+      "/79PNOxNXSe5e0bhEj11QJPlsdCN.jpg",
+      "/AeDzjt00Hfh9CuW7TIUdYBJmWYM.jpg",
+      "/ovZasZ9EeZcp6UsrElkQ63hFCd.jpg",
+      "/7HqLLVjdjhXS0Qoz1SgZofhkIpE.jpg",
+      "/etT14XfDEqhQZdD47ywpyihXPyW.jpg",
+      "/vHTFrcqJoCi1is3XN0PZe2LSnI2.jpg",
+      "/hNGcCnGwMwtyxoykY2PEG0nsMrm.jpg",
+      "/zLCrsat2Hja32EbEwacEJEwvJW4.jpg",
+      "/2OXTiRASuGH2MEzrdmjqfQNOmnk.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 8868,
+        "title": "高卢勇士斗凯撒",
+        "poster_path": "/8kY2WmF9PgkzfmtcPyW1AmQJswu.jpg",
+        "vote_average": 6.542
+      },
+      {
+        "tmdb_id": 8960,
+        "title": "全民超人汉考克",
+        "poster_path": "/iBNFx0L70OIgOQHzsql1wOtg287.jpg",
+        "vote_average": 6.356
+      },
+      {
+        "tmdb_id": 8965,
+        "title": "亚特兰蒂斯2：神秘的水晶",
+        "poster_path": "/2Nc3xx4kB9wy50fLGJKfEMAbU5m.jpg",
+        "vote_average": 6.33
+      },
+      {
+        "tmdb_id": 8970,
+        "title": "新老公出差",
+        "poster_path": "/wOmLJYh7oOfATE236XpoDfcXhOh.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 8978,
+        "title": "血溅13号警署",
+        "poster_path": "/dzARBERfzx7BmjeFuVrQpXOKHAm.jpg",
+        "vote_average": 6.19
+      },
+      {
+        "tmdb_id": 9093,
+        "title": "四片羽毛",
+        "poster_path": "/bfmpeRr9LTXzBC2dpC89FE5uavK.jpg",
+        "vote_average": 6.642
+      },
+      {
+        "tmdb_id": 9288,
+        "title": "龙与地下城2：龙王的愤怒",
+        "poster_path": "/n5PV0sV4Nd0eCZMcRfipeNhTpmz.jpg",
+        "vote_average": 4.7
+      },
+      {
+        "tmdb_id": 8840,
+        "title": "龙之心",
+        "poster_path": "/rjatcYSCqr9LdNbgg4XFKzWNjzV.jpg",
+        "vote_average": 6.564
+      }
+    ]
   }
 }
