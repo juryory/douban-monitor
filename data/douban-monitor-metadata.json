@@ -8364,7 +8364,128 @@
       }
     ]
   },
-  "1292052": {},
+  "1292052": {
+    "tmdb_id": 278,
+    "tmdb_type": "movie",
+    "original_title": "The Shawshank Redemption",
+    "overview": "安迪·杜佛兰因被错判谋杀妻子及其情人，被判处两项无期徒刑，送入缅因州的肖申克监狱服刑。在残酷而压抑的监狱生活中，安迪凭借冷静、智慧和始终未曾熄灭的希望逐渐赢得狱友们的尊重，并与瑞德建立起深厚的友谊。漫长的岁月里，他也开始用自己的方式改变身边的人，以及这座看似牢不可破的监狱。",
+    "genres": [
+      "剧情",
+      "犯罪"
+    ],
+    "runtime": 142,
+    "release_date": "1994-09-23",
+    "backdrop_path": "/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+    "poster_path": "/iKZev9OgfklidO8AvdrYlwung2o.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "弗兰克·德拉邦特",
+    "cast": [
+      {
+        "name": "蒂姆·罗宾斯",
+        "character": "Andy Dufresne",
+        "profile_path": "/3FfJMIVwXgsIXbAT8ECBSZJAncR.jpg"
+      },
+      {
+        "name": "摩根·弗里曼",
+        "character": "Ellis Boyd 'Red' Redding",
+        "profile_path": "/905k0RFzH0Kd6gx8oSxRdnr6FL.jpg"
+      },
+      {
+        "name": "鲍勃·冈顿",
+        "character": "Warden Norton",
+        "profile_path": "/ulbVvuBToBN3aCGcV028hwO0MOP.jpg"
+      },
+      {
+        "name": "威廉姆·赛德勒",
+        "character": "Heywood",
+        "profile_path": "/rWeb2kjYCA7V9MC9kRwRpm57YoY.jpg"
+      },
+      {
+        "name": "克兰西·布朗",
+        "character": "Captain Byron T. Hadley",
+        "profile_path": "/1JeBRNG7VS7r64V9lOvej9bZXW5.jpg"
+      },
+      {
+        "name": "吉尔·贝罗斯",
+        "character": "Tommy",
+        "profile_path": "/eCOIv2nSGnWTHdn88NoMyNOKWyR.jpg"
+      },
+      {
+        "name": "小詹姆斯·艾伦·惠特莫尔",
+        "character": "Brooks Hatlen",
+        "profile_path": "/nYMAbkfwFIgKK84vnLoQctI6vHg.jpg"
+      },
+      {
+        "name": "马克·罗斯顿",
+        "character": "Bogs Diamond",
+        "profile_path": "/hcrNRIptYMRXgkJ9k76BlQu6DQp.jpg"
+      }
+    ],
+    "stills": [
+      "/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+      "/v8xVDqt8uCul3c3mgx4VpGCwxJC.jpg",
+      "/pNjh59JSxChQktamG3LMp9ZoQzp.jpg",
+      "/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+      "/avedvodAZUcwqevBfm8p4G2NziQ.jpg",
+      "/9Xw0I5RV2ZqNLpul6lXKoviYg55.jpg",
+      "/72rRSPAZ82p3KXoGLz2ddTioMQl.jpg",
+      "/irlfhYtHfhZuYpsq2LAoh308NFe.jpg",
+      "/wPU78OPN4BYEgWYdXyg0phMee64.jpg",
+      "/gZMgEUYbh0DIBNaRJT0ofxLDJ5T.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 273578,
+        "title": "VeggieTales: The Ballad of Little Joe",
+        "poster_path": "/aBypDLCtqCuKOcg9EZ7cigDQobu.jpg",
+        "vote_average": 5.192
+      },
+      {
+        "tmdb_id": 13188,
+        "title": "圣诞颂",
+        "poster_path": "/sxLRt2u5xgUgkrIAPyE0KiiSVnX.jpg",
+        "vote_average": 7.442
+      },
+      {
+        "tmdb_id": 13189,
+        "title": "圣诞颂歌",
+        "poster_path": "/m3T3iLdE6J5PrqvvP0XNHBvM2bm.jpg",
+        "vote_average": 7.461
+      },
+      {
+        "tmdb_id": 13199,
+        "title": "黑帮大时代",
+        "poster_path": "/mrcdh66L6K1Nb5xPORuZufvE9aE.jpg",
+        "vote_average": 7.404
+      },
+      {
+        "tmdb_id": 13202,
+        "title": "Animal 2",
+        "poster_path": "/18qUe5ONoyIVtO3eShRRqVouvoP.jpg",
+        "vote_average": 5.4
+      },
+      {
+        "tmdb_id": 13205,
+        "title": "小鹿斑比2",
+        "poster_path": "/8O2shBc0CDvSKufCQGjmHh85wNx.jpg",
+        "vote_average": 6.536
+      },
+      {
+        "tmdb_id": 273649,
+        "title": "Zlatá reneta",
+        "poster_path": "/arfozbia7eZk2upOc5C7VTuW9bc.jpg",
+        "vote_average": 7.333
+      },
+      {
+        "tmdb_id": 13310,
+        "title": "生人勿进",
+        "poster_path": "/xISX2ltvPY3BGJjv0jfMjpfkAFw.jpg",
+        "vote_average": 7.545
+      }
+    ]
+  },
   "26752088": {
     "tmdb_id": 532753,
     "tmdb_type": "movie",
