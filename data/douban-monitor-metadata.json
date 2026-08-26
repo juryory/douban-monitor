@@ -10125,5 +10125,127 @@
         "vote_average": 6.564
       }
     ]
+  },
+  "1298248": {
+    "tmdb_id": 895,
+    "tmdb_type": "movie",
+    "original_title": "Андрей Рублёв",
+    "overview": "15世纪初，鞑靼人的铁蹄践踏着大公割据的俄罗斯大地，黎民百姓在大公的暴政下水深火热，圣像画家安德烈·鲁勃廖夫就生活在这样的年代。在大公的邀请下，鲁勃廖夫前往莫斯科为教堂作画。但在创作的过程中，鲁勃廖夫却对圣像内容产生了巨大的质疑，这种矛盾的心态使他联想到现今俄罗斯民众经 受的磨难与自己为贵族服务的事实，最终，他毅然离开教堂回到了原先的修道院。 不久，鲁勃廖夫被迫再度回到莫斯科进行圣像创作，但这次他却亲临了所有俄罗斯人的苦难。大公的弟弟勾结鞑靼人篡位谋反，弗拉基米尔城的居民被无辜残杀，教堂在战火中摧毁，画家的眼中全是地狱的景象……鲁勃廖夫再次陷入艺术与现实反差的困境，他又回到安德洛尼科夫修道院，将自己完全封闭，拒绝继续作画。 经过多年的反抗征战，鞑靼人的军队终于被赶出俄罗斯的大地。1423年，大公第三次邀请鲁勃廖夫到莫斯科作画，在一个铸钟少年的感染下，鲁勃廖夫最终完成了《三位一体》的传世名作。",
+    "genres": [
+      "剧情",
+      "历史"
+    ],
+    "runtime": 183,
+    "release_date": "1966-12-16",
+    "backdrop_path": "/jqha8JCXm0aJ5SJ03Jd0JmGgWRs.jpg",
+    "poster_path": "/3aodTV8q8iIRtaw9dxeU8DuKlta.jpg",
+    "countries": [
+      "Soviet Union"
+    ],
+    "director": "安德烈·塔可夫斯基",
+    "cast": [
+      {
+        "name": "阿纳托利·索洛尼琴",
+        "character": "Andrei Rublev",
+        "profile_path": "/37Vb7vNMHAz1s2WI5kW4BHt0X0N.jpg"
+      },
+      {
+        "name": "Иван Лапиков",
+        "character": "Kirill",
+        "profile_path": "/4Bd5CsAvOtPfSoNi7dfCMWAs1A9.jpg"
+      },
+      {
+        "name": "尼古拉·格林科",
+        "character": "Daniil Chornyy",
+        "profile_path": "/n8lxXQbLYOed7AeowxA49yB2jyS.jpg"
+      },
+      {
+        "name": "Николай Сергеев",
+        "character": "Theophanus the Greek",
+        "profile_path": "/6GB7fEtDEQLShIyEhWIaGZTKDYE.jpg"
+      },
+      {
+        "name": "Ирма Рауш",
+        "character": "God's Fool",
+        "profile_path": "/y4OrVv64rB5ffIZKuiSgCbkGDWd.jpg"
+      },
+      {
+        "name": "尼古拉·彼得洛维奇·布尔利亚耶夫",
+        "character": "Boriska",
+        "profile_path": "/lVpc5KNypdHVNdJJQZk7p4eijip.jpg"
+      },
+      {
+        "name": "尤里·肖",
+        "character": "Grand Duke / Minor Duke",
+        "profile_path": "/5kSJ2Q9fcUYD5yeGvQiw2z4tFxC.jpg"
+      },
+      {
+        "name": "Юрий Никулин",
+        "character": "Patrikey",
+        "profile_path": "/sxiwVxrO5VHtdIieeQH8m14JE2k.jpg"
+      }
+    ],
+    "stills": [
+      "/jqha8JCXm0aJ5SJ03Jd0JmGgWRs.jpg",
+      "/shxmwcFn0LwIGgomqb28mAa94pz.jpg",
+      "/alzI27dPgb0n6RWb87MbFq98DFx.jpg",
+      "/2hAZcll6U82EL1HPfBa2JxVpwHF.jpg",
+      "/1wxkSIVXvjdsLsvZbN8oz5FOwRO.jpg",
+      "/grjCFhk7pRxMwqyylduIOnl94je.jpg",
+      "/fKa8Jy2ge1O0IU6zZXnJ2sxUzdU.jpg",
+      "/YZxvoXswDvecvTs6FCo5UZp8MW.jpg",
+      "/h9wolPFFGHqYnC8y3KniKkq4ht6.jpg",
+      "/3ecnyl5vamqoV6STDSN4kBqfIW8.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 263874,
+        "title": "Прометей",
+        "poster_path": "/1YobgVrz7ldh9c7r124Ydk3xdVd.jpg",
+        "vote_average": 4.7
+      },
+      {
+        "tmdb_id": 263839,
+        "title": "Francisco Brennand",
+        "poster_path": "/ydObLDDRwCC1r4zlseKfQp31fia.jpg",
+        "vote_average": 5.5
+      },
+      {
+        "tmdb_id": 1008316,
+        "title": "میلے",
+        "poster_path": "/sBHgutj2Zh1ieLCNCU8vVRn2gP8.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1008346,
+        "title": "Profesor na bielom koni",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1955,
+        "title": "象人",
+        "poster_path": "/psGZ8bnXATWcPmVWVuZsszqT4xL.jpg",
+        "vote_average": 8.051
+      },
+      {
+        "tmdb_id": 1965,
+        "title": "超完美谋杀案",
+        "poster_path": "/uoZgz3Sy41682lHtTUmfSt5HpnE.jpg",
+        "vote_average": 6.55
+      },
+      {
+        "tmdb_id": 1984,
+        "title": "1984",
+        "poster_path": "/2EOfGaRluwJe6OlR21JtbLhWDvt.jpg",
+        "vote_average": 6.493
+      },
+      {
+        "tmdb_id": 1986,
+        "title": "生命国界",
+        "poster_path": "/9epxWjiU1epDK3dg8DKnBhHP1bn.jpg",
+        "vote_average": 7.392
+      }
+    ]
   }
 }
