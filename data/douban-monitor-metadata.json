@@ -10247,5 +10247,127 @@
         "vote_average": 7.392
       }
     ]
+  },
+  "36318331": {
+    "tmdb_id": 226529,
+    "tmdb_type": "tv",
+    "original_title": "조명가게",
+    "overview": "照亮黑暗巷弄尽头的照明商店今天也在深夜营业中。照明商店的老板遵守着即使只有一位客人来也要做生意的原则，每天晚上迎接上门的客人。然而，在深夜来访的不只有平凡的客人，还有各种带着不同原因上门的客人，而这也将引发一连串神秘的故事。",
+    "genres": [
+      "悬疑",
+      "剧情"
+    ],
+    "runtime": 45,
+    "release_date": "2024-12-04",
+    "backdrop_path": "/bGcMuFVzW0LitMJWSzp4EjmzQ0b.jpg",
+    "poster_path": "/ie998cr7GOgDiI5h0HKUoVY3QkR.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "姜草",
+    "cast": [
+      {
+        "name": "朱智勋",
+        "character": "Jung Won-young",
+        "profile_path": "/7PYfUrBBXhYv5PIsTalJhjbRteg.jpg"
+      },
+      {
+        "name": "朴宝英",
+        "character": "Kwon Young-ji",
+        "profile_path": "/x1LNh8i8XmO3oqNYzRslzYj1VoZ.jpg"
+      },
+      {
+        "name": "严泰九",
+        "character": "Kim Hyun-min",
+        "profile_path": "/gUhi5YnUGQQ9k4RKWaVZmw7skgX.jpg"
+      },
+      {
+        "name": "金雪炫",
+        "character": "Lee Ji-young",
+        "profile_path": "/femMcHRxmj8wRTPP65pSdH0MxfW.jpg"
+      },
+      {
+        "name": "李姃垠",
+        "character": "Jung Yu-hee",
+        "profile_path": "/4r3K47UpSmzZ5t9cyTRRqRl9rdz.jpg"
+      },
+      {
+        "name": "裴晟佑",
+        "character": "Yang Sung-sik",
+        "profile_path": "/qocgfpxNoLWtrbh4JDfZxhn4zSg.jpg"
+      },
+      {
+        "name": "金敏荷",
+        "character": "Yoon Sun-hae",
+        "profile_path": "/zPNNamrJLWoXADXALQmuTdo6zBS.jpg"
+      },
+      {
+        "name": "朴赫权",
+        "character": "Oh Seung-won",
+        "profile_path": "/d4p9iRGNkZUZrFenD0gj0nQN3gR.jpg"
+      }
+    ],
+    "stills": [
+      "/bGcMuFVzW0LitMJWSzp4EjmzQ0b.jpg",
+      "/zshRNC5qboempxS8B35RKufBKD9.jpg",
+      "/8nilKMEpxcznyiCY5MTLFaKYlSr.jpg",
+      "/jUDVjVN2gzQdkwJnDe5s5pPGpbx.jpg",
+      "/ue67wVsh3jd2LVCv0QqA9w1oV5j.jpg",
+      "/6XtUt0t7jBNB4GkSN4VRBjrvvTG.jpg",
+      "/tSf5MeKdWcPmuUlHVAixgmTDb8b.jpg",
+      "/j0iUcyfQxTJMBeK98WZzemuzbCV.jpg",
+      "/bqVbuNSjIKvmrn7OFMa55jbYeEz.jpg",
+      "/5ymiuGuYnEOuREwg83lsAUqKeP5.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 237335,
+        "title": "夏夜秘密",
+        "poster_path": "/dR53d6ZUmksaHKBtHqIccXuUjT1.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 238458,
+        "title": "现金英雄",
+        "poster_path": "/hIQwZleQDWyhwGlnW1O6wUTnIiY.jpg",
+        "vote_average": 7.35
+      },
+      {
+        "tmdb_id": 238566,
+        "title": "天气预报式恋爱",
+        "poster_path": "/8q1d0WVxMAXVMrtlFbeN2xeUO6u.jpg",
+        "vote_average": 8.1
+      },
+      {
+        "tmdb_id": 238673,
+        "title": "退货儿童",
+        "poster_path": "/9TAaFOfQMRbULrlGfSVvqtsgtDN.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 206715,
+        "title": "朝鲜律师",
+        "poster_path": "/mCaC6X4Tc80ui4QDfOMVcvkoaRi.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 206620,
+        "title": "유쾌한 왕따",
+        "poster_path": "/cLS2dGWIqv4h3A3iQtJgDk78xfz.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 206686,
+        "title": "炸鸡奇遇记",
+        "poster_path": "/tDdpM5RX8j3EpXIWYTiRz78p9rw.jpg",
+        "vote_average": 6.4
+      },
+      {
+        "tmdb_id": 92707,
+        "title": "很便宜，千里马超市",
+        "poster_path": "/bsprC2vBWxp9H8Eg7g78e30yZ94.jpg",
+        "vote_average": 8.214
+      }
+    ]
   }
 }
