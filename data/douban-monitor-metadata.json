@@ -10369,5 +10369,117 @@
         "vote_average": 8.214
       }
     ]
+  },
+  "3264305": {
+    "tmdb_id": 85915,
+    "tmdb_type": "tv",
+    "original_title": "江山风雨情",
+    "overview": "明朝天启末年，朝廷暗藏着一场宫变，天启皇帝病危待亡，却无子嗣继位，唯一的骨肉便是皇弟朱由检。大内总管魏忠贤阴谋用宫女的婴儿冒充太子承继大统，以保住阉党的荣华富贵。不料，那宫女却生下一个女婴。这时，已被驱逐出京的朱由检被锦衣卫捕回宫中，以为自己将被殉葬，万没料到竟继位成为崇祯皇帝。而宫女带着女婴逃至扬州，起名陈圆圆。  陈圆圆一日当中被卖了三次，落入妓院学艺。长成后，成了名满天下的歌妓。  崇祯即位后，立志中兴大明。然而朝廷始终内忧与外患。内忧是由于天灾全国饥民过半，中原一带以高迎祥、李自成为首的农民军蜂起；外患是关外的后金叛军压境，皇太极登基开国虎视关内。崇祯始终处于巨大的危机中，苦心竭虑地试图挽救大明。",
+    "genres": [
+      "War & Politics"
+    ],
+    "runtime": 40,
+    "release_date": "2003-06-03",
+    "backdrop_path": "/kOvLHiUrNcEUpUlsyRZVywFDkSD.jpg",
+    "poster_path": "/axQeIyEWQD5t59p01MKO888R6mS.jpg",
+    "countries": [
+      "CN"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "张澜澜",
+        "character": "陈圆圆",
+        "profile_path": "/dUloUKZKA7G2cqTmbAg0x1FR5W7.jpg"
+      },
+      {
+        "name": "李强",
+        "character": "朱由检",
+        "profile_path": "/6pOx4SnAFDn9mKRyWGAPlX7KFFP.jpg"
+      },
+      {
+        "name": "王刚",
+        "character": "王承恩",
+        "profile_path": "/3qVH5faXcLtK6nWHF6KBCWp22Cd.jpg"
+      },
+      {
+        "name": "唐国强",
+        "character": "皇太极",
+        "profile_path": "/k7TUG4bL1MhecuF3UPWXyCu8PZr.jpg"
+      },
+      {
+        "name": "牛莉",
+        "character": "孝庄",
+        "profile_path": "/zsj8gHSsV2duAhObxZvGC3pyd9P.jpg"
+      },
+      {
+        "name": "丁海峰",
+        "character": "吴三桂",
+        "profile_path": "/jEWAJOEPJBZxKmN26KtO5843oGv.jpg"
+      },
+      {
+        "name": "鲍国安",
+        "character": "洪承畴",
+        "profile_path": "/2IvO6UqnhyzPgZec8fopkks2BKq.jpg"
+      },
+      {
+        "name": "刘威",
+        "character": "李自成",
+        "profile_path": "/zeq1oSsOiVJR0FM5eQIG3w0vtw4.jpg"
+      }
+    ],
+    "stills": [
+      "/kOvLHiUrNcEUpUlsyRZVywFDkSD.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 71496,
+        "title": "亮剑",
+        "poster_path": "/kJLn4BFfii9UlXXsFsbZ0uPXcOG.jpg",
+        "vote_average": 8.7
+      },
+      {
+        "tmdb_id": 32231,
+        "title": "大秦帝国",
+        "poster_path": "/zfuObpAXqGEI3FCSTsBw3GKRyOE.jpg",
+        "vote_average": 8.3
+      },
+      {
+        "tmdb_id": 13908,
+        "title": "The Rat Patrol",
+        "poster_path": "/wHJQ7QpmcqY0x6kGdlAwoJToUmo.jpg",
+        "vote_average": 7.227
+      },
+      {
+        "tmdb_id": 48552,
+        "title": "VICE",
+        "poster_path": "/iyUbcAWYcCt6qoKNiqNQkrnUrwF.jpg",
+        "vote_average": 7.044
+      },
+      {
+        "tmdb_id": 85950,
+        "title": "皮尔森",
+        "poster_path": "/aI0KQTi3YgXZfI5gxfK6A8lP39U.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 111573,
+        "title": "弃之不理",
+        "poster_path": "/g4y8qq4acg2Q41hCKKwYO69VIr9.jpg",
+        "vote_average": 6.413
+      },
+      {
+        "tmdb_id": 254482,
+        "title": "长安二十四计",
+        "poster_path": "/9DKEd80jWJjiME27nJmTzdVtOLr.jpg",
+        "vote_average": 7.8
+      },
+      {
+        "tmdb_id": 11095,
+        "title": "Tour of Duty",
+        "poster_path": "/uVH3fzDl5vqYolREnppV4Os45gd.jpg",
+        "vote_average": 8.114
+      }
+    ]
   }
 }
