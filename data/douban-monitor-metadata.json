@@ -10604,5 +10604,107 @@
         "vote_average": 7.004
       }
     ]
+  },
+  "37291935": {
+    "tmdb_id": 287238,
+    "tmdb_type": "tv",
+    "original_title": "Furious",
+    "overview": "一名是誓言缉凶的联邦调查局探员艾莉丝，一名是神秘狡猾的女性连环杀手凯萨琳。两人皆以自己的方式伸张正义，当她们的命运开始交织，是非对错的界线也随之模糊。",
+    "genres": [
+      "剧情",
+      "犯罪"
+    ],
+    "runtime": null,
+    "release_date": "2026-07-27",
+    "backdrop_path": "/iAOPgUlh7inOebFrUFHAjnFRCGS.jpg",
+    "poster_path": "/pS1NXKwQcj7JvOYMkSt38vNJZzz.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "伊丽莎白·梅里威瑟",
+    "cast": [
+      {
+        "name": "埃米·罗森",
+        "character": "Alice Black",
+        "profile_path": "/wq9ALe33ZGg38Yf1JsKnEcbhZQo.jpg"
+      },
+      {
+        "name": "Lola Petticrew",
+        "character": "Catherine",
+        "profile_path": "/wc7o4vu3amWNiXkR88JxniYroAI.jpg"
+      },
+      {
+        "name": "斯科特·麦克纳里",
+        "character": "Danny Kelly",
+        "profile_path": "/oP2LJEqupxVZ2XdEW1lN5Q5LF3M.jpg"
+      },
+      {
+        "name": "Quincy Tyler Bernstine",
+        "character": "Nora Washington",
+        "profile_path": "/yaLaEHdxnhDqIMxyvzzx1pMKBVP.jpg"
+      }
+    ],
+    "stills": [
+      "/iAOPgUlh7inOebFrUFHAjnFRCGS.jpg",
+      "/bzKhoFoHPmIc9UbjUlm6hIZBGna.jpg",
+      "/wtTZI7CwJDPAqTrq7pZq3sfTWv4.jpg",
+      "/iWpugIkrxEty2DqECBzj17O3Jao.jpg",
+      "/p2BRmtZvk2WtRln5avS9W6vgwDf.jpg",
+      "/a8DG4Xq9JDsiKJ59Dm1hjDt9zl1.jpg",
+      "/3zYQJ4R034PX7Pa3ONoEh6iz20Q.jpg",
+      "/geIIZtdDATKBMmi0cTIGZzG65tX.jpg",
+      "/omHzW2EfGZKIKguv40arU03QkwH.jpg",
+      "/x1a1nwspnu4S8HTDhgOcDnVIT0B.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 28599,
+        "title": "The Capture of the Green River Killer",
+        "poster_path": "/1YNZ9UxbfP6sXiKzbQLAsb3Ce8L.jpg",
+        "vote_average": 6.194
+      },
+      {
+        "tmdb_id": 318,
+        "title": "American Gothic",
+        "poster_path": "/qajOMTtQ958JEpmokPXTruwA9qp.jpg",
+        "vote_average": 7.4
+      },
+      {
+        "tmdb_id": 494,
+        "title": "爱丽丝",
+        "poster_path": "/iEEtQs1mPz3kvvaEFR7HVnME9Or.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 274427,
+        "title": "赎爱",
+        "poster_path": "/FrVkCLQhGflmT9U6n9JtPHjNk.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 433,
+        "title": "终结者外传",
+        "poster_path": "/vkMRWrVrNeX42ruRV5Q15mlBACG.jpg",
+        "vote_average": 7.476
+      },
+      {
+        "tmdb_id": 238084,
+        "title": "枪口彼端",
+        "poster_path": "/nmdPj7yRptBwDdBlDXUlcDBvWpm.jpg",
+        "vote_average": 8.077
+      },
+      {
+        "tmdb_id": 91601,
+        "title": "Cazadores de hombres",
+        "poster_path": "/kgcvGmrqq5d3PgKSzBgAVepna1v.jpg",
+        "vote_average": 3.833
+      },
+      {
+        "tmdb_id": 238251,
+        "title": "Segunda muerte",
+        "poster_path": "/ppj95ijirOWDZVa3fYPv4xr7Ak1.jpg",
+        "vote_average": 6.5
+      }
+    ]
   }
 }
