@@ -10481,5 +10481,128 @@
         "vote_average": 8.114
       }
     ]
+  },
+  "30372377": {
+    "tmdb_id": 559969,
+    "tmdb_type": "movie",
+    "original_title": "El Camino: A Breaking Bad Movie",
+    "overview": "在沃尔特·怀特（布莱恩·科兰斯顿饰）死后，杰西·平克曼（亚伦·保尔饰）正在被新墨西哥当地警方追捕，为了躲避追捕并重新开始生活，他先去找挚友并得到了他们的帮助，而后完成了之前的未结之事，最终在阿拉斯加以新的身份重新开始了生活。",
+    "genres": [
+      "犯罪",
+      "剧情",
+      "惊悚"
+    ],
+    "runtime": 122,
+    "release_date": "2019-10-11",
+    "backdrop_path": "/uLXK1LQM28XovWHPao3ViTeggXA.jpg",
+    "poster_path": "/xTozsIhV01a5w8n4bprFNAX8NE0.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "文斯·吉利根",
+    "cast": [
+      {
+        "name": "亚伦·保尔",
+        "character": "Jesse",
+        "profile_path": "/8Ac9uuoYwZoYVAIJfRLzzLsGGJn.jpg"
+      },
+      {
+        "name": "杰西·普莱蒙",
+        "character": "Todd",
+        "profile_path": "/og4I51GsuwohdPgoELOHVMMqMre.jpg"
+      },
+      {
+        "name": "查尔斯·贝克",
+        "character": "Skinny Pete",
+        "profile_path": "/l2plWtvYRcLX4CXf8azXIyANq.jpg"
+      },
+      {
+        "name": "马特·琼斯",
+        "character": "Badger",
+        "profile_path": "/x13vFDaJHY1CxNvSPWujYe12bMc.jpg"
+      },
+      {
+        "name": "斯科特·麦克阿瑟",
+        "character": "Neil",
+        "profile_path": "/rGTPhDMQYR7mmtcOwPMK7R4SDgV.jpg"
+      },
+      {
+        "name": "拉里·汉金",
+        "character": "Old Joe",
+        "profile_path": "/2uR8SZ9geiSQOpBhKrerh9qY7CX.jpg"
+      },
+      {
+        "name": "斯科特·谢泼德",
+        "character": "Casey",
+        "profile_path": "/leLuJUpF6uySDWPS7FwHpObAMs4.jpg"
+      },
+      {
+        "name": "汤姆·鲍尔",
+        "character": "Lou",
+        "profile_path": "/q26z6T3QZfpirZV3Ex885zUgUR4.jpg"
+      }
+    ],
+    "stills": [
+      "/uLXK1LQM28XovWHPao3ViTeggXA.jpg",
+      "/9igMXvlUR1zrahnQdiXAg3dtaTb.jpg",
+      "/bzJNKVRLOR4cxuirVZTCrb3EQwH.jpg",
+      "/2Y8nK5SSNzcWOfbOlmnmdt28xTW.jpg",
+      "/wo7lQd0QD7TZrdMIXqrrUM8YNmC.jpg",
+      "/tGa9DztapCJXPmEJeu3mfnCH4DI.jpg",
+      "/eV77pJ4WQ40lBP7Kbw8ko11f49c.jpg",
+      "/yzpZVgaTZzDrAP1yVeCbKZH9jmA.jpg",
+      "/2GUcUDSGqQSyIxe7xDxnVTfWQgq.jpg",
+      "/lzF7LEpkrNB28S28wpswYcj0ldR.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1731816,
+        "title": "Kudrat 1968: High Council",
+        "poster_path": "/xwxCouklbrWi1RXEOkwDABTFeId.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 170696,
+        "title": "Cocaine Cowboys",
+        "poster_path": "/2b6I3c4MYJnIhwDDhPn3rIBCgYq.jpg",
+        "vote_average": 3.958
+      },
+      {
+        "tmdb_id": 407,
+        "title": "小小犯罪刺激",
+        "poster_path": "/2NqG0XFbVed3vUTXppdgCY9aEaW.jpg",
+        "vote_average": 6.701
+      },
+      {
+        "tmdb_id": 470,
+        "title": "21克",
+        "poster_path": "/mJ90fpnVWiRWMsRctHUGrUlnSLF.jpg",
+        "vote_average": 7.319
+      },
+      {
+        "tmdb_id": 476,
+        "title": "迷幻牛郎",
+        "poster_path": "/nxITSEh80jvMEGGsU8RgCzLL340.jpg",
+        "vote_average": 7.1
+      },
+      {
+        "tmdb_id": 479,
+        "title": "杀戮战警",
+        "poster_path": "/5ncvnNPaN73cOqD4muE413sSOyY.jpg",
+        "vote_average": 6.021
+      },
+      {
+        "tmdb_id": 481,
+        "title": "七处子",
+        "poster_path": "/g3o2jxOM3IpYuT7RPACFNeChYHR.jpg",
+        "vote_average": 6.096
+      },
+      {
+        "tmdb_id": 546,
+        "title": "穿越美国",
+        "poster_path": "/3MmLpqRlrYSP0uFIDr9BHA4o2LP.jpg",
+        "vote_average": 7.004
+      }
+    ]
   }
 }
