@@ -10829,5 +10829,98 @@
         "vote_average": 8.0
       }
     ]
+  },
+  "36675987": {
+    "tmdb_id": 1214499,
+    "tmdb_type": "movie",
+    "original_title": "Black Box Diaries",
+    "overview": "记者伊藤诗织勇敢地对自身遭遇的性侵犯展开调查，试图以几乎不可能的方式起诉知名施害者。她的抗争成为日本一起里程碑式的案件，暴露了该国陈旧的司法与社会体系。",
+    "genres": [
+      "纪录"
+    ],
+    "runtime": 103,
+    "release_date": "2024-10-24",
+    "backdrop_path": "/sC5FzA4DfQr6ML3rSKL3E3v5as8.jpg",
+    "poster_path": "/cCmfzbjlOfarXdNXcqyTF48WhFr.jpg",
+    "countries": [
+      "Japan",
+      "United States of America",
+      "United Kingdom"
+    ],
+    "director": "伊藤诗织",
+    "cast": [
+      {
+        "name": "伊藤诗织",
+        "character": "Self",
+        "profile_path": "/rdKu2gXpucMU3Ujvf0D9UMap1qm.jpg"
+      },
+      {
+        "name": "安倍晋三",
+        "character": "Self (archive footage)",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/sC5FzA4DfQr6ML3rSKL3E3v5as8.jpg",
+      "/l1w6eVvz2MVwzMxIw76YcChDEI3.jpg",
+      "/3Cw1mZsyHzSDFjB90na3q6fpzUA.jpg",
+      "/tOViurqX7iOQfPcDHR3vhtKmuyX.jpg",
+      "/AgfJ1zFTnAFsMq7T2cr2MdvhWJ6.jpg",
+      "/jEXHpqO8CSyE4pNwD1sBrQRqAjJ.jpg",
+      "/rI9OxQOtyGMASB02eKE64FaFKhv.jpg",
+      "/lWWnOWMzFAAHUJ3JtuzF870WvdL.jpg",
+      "/mFXT5Ous4W20mszFC8YkPcqebur.jpg",
+      "/2qlV59GDdn9NRcUIAStkKvHNGww.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1228192,
+        "title": "Bis zum ersten Alleingang: Kinderunfälle und ihre Ursachen",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 295099,
+        "title": "淘金男孩：加农电影公司的内幕",
+        "poster_path": "/o8jvcs3XryykNaymmL2cMQtVvCd.jpg",
+        "vote_average": 6.36
+      },
+      {
+        "tmdb_id": 662344,
+        "title": "24 Days in Brooks",
+        "poster_path": "/pobkhEQMw8f53VWqEyqnh5nMhPT.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 295290,
+        "title": "Denok & Gareng",
+        "poster_path": "/ucuzHRcxeFyAEuipcQjvSRFXeI3.jpg",
+        "vote_average": 9.0
+      },
+      {
+        "tmdb_id": 41973,
+        "title": "蒙克：一路绝尘",
+        "poster_path": "/8My1tlPk7Bz5Q6hzIpNZShDj37T.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 1603750,
+        "title": "掠地者",
+        "poster_path": "/w2EXW6CCz54yBW3qdAupsZCe177.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 295434,
+        "title": "Life After Death from Above 1979",
+        "poster_path": "/cLYSoETHFiMvnHNGHgfmH5r6DeG.jpg",
+        "vote_average": 8.7
+      },
+      {
+        "tmdb_id": 481079,
+        "title": "Rabot",
+        "poster_path": "/fJqGfEqbyujpoxiWwSyHhQGyxOJ.jpg",
+        "vote_average": 7.667
+      }
+    ]
   }
 }
