@@ -10922,5 +10922,113 @@
         "vote_average": 7.667
       }
     ]
+  },
+  "36225837": {
+    "tmdb_id": 95350,
+    "tmdb_type": "tv",
+    "original_title": "Lanterns",
+    "overview": "跟随约翰·斯图尔特与绿灯军团传奇哈尔·乔丹的脚步，看这两位星际警察如何深入美国腹地，调查一起谋杀命案。",
+    "genres": [
+      "剧情",
+      "悬疑",
+      "Sci-Fi & Fantasy"
+    ],
+    "runtime": null,
+    "release_date": "2026-08-16",
+    "backdrop_path": "/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
+    "poster_path": "/5ZmOP60VIEfM2cnt7CpAK1j9mEv.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "达蒙·林德洛夫",
+    "cast": [
+      {
+        "name": "凯尔·钱德勒",
+        "character": "Hal Jordan",
+        "profile_path": "/66n7XNj1dyYkzCBWR3Lq8Vz4PJ1.jpg"
+      },
+      {
+        "name": "亚伦·皮埃尔",
+        "character": "John Stewart",
+        "profile_path": "/z2cMMZyWzv5ztT6pFdAAjB3u7CQ.jpg"
+      },
+      {
+        "name": "凯莉·麦克唐纳",
+        "character": "Sheriff Kerry Kane",
+        "profile_path": "/k0yVocTnTMWlNdaeOO7YRViCdhO.jpg"
+      },
+      {
+        "name": "加瑞特·迪拉胡特",
+        "character": "William 'Will' Macon",
+        "profile_path": "/4L9bdqQIdfrtqR7JQdsIhlF3Fjk.jpg"
+      },
+      {
+        "name": "普娜·贾甘纳坦",
+        "character": "Zoe Macon",
+        "profile_path": "/o2BQX1tAgo47GGvpBy1k4LQLRs6.jpg"
+      }
+    ],
+    "stills": [
+      "/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
+      "/wJjnJbVUwPz0GADAgpFt9nWtzUu.jpg",
+      "/yr1n2RzZHn1UYozrzvPzjcE60cP.jpg",
+      "/jMCAu91V7fsnHNUvabOPMBLaLaj.jpg",
+      "/d2PAuA5kqVVy3tIHejBNykucr9l.jpg",
+      "/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg",
+      "/62P9tZ8Gyq64EIRMs4ZW9a9L3AV.jpg",
+      "/ruwzidqanSyhhMEk6kCVd9BLui1.jpg",
+      "/sTACyx6TDwMGIBJa9p5ijU58vfL.jpg",
+      "/moA5NNpOsSeQ2gNkOBgbMeNOl3d.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 123737,
+        "title": "亲朋密友",
+        "poster_path": "/A2EnLdLBMtxjBZxMHTIWBYts0HF.jpg",
+        "vote_average": 4.833
+      },
+      {
+        "tmdb_id": 91275,
+        "title": "难以置信",
+        "poster_path": "/sf7kr0TlFvy2cZIY6W2dCG2Urkc.jpg",
+        "vote_average": 7.897
+      },
+      {
+        "tmdb_id": 91278,
+        "title": "漫威未来复仇者",
+        "poster_path": "/1ORuqsLRE9b3rzuWLvsfa6VEVZE.jpg",
+        "vote_average": 6.304
+      },
+      {
+        "tmdb_id": 52,
+        "title": "70年代秀",
+        "poster_path": "/laEZvTqM80UaplUaDSCCbWhlyEV.jpg",
+        "vote_average": 7.929
+      },
+      {
+        "tmdb_id": 28361,
+        "title": "Jigsaw John",
+        "poster_path": "/22TmGJIw598RwYt3CGX4EqcPZyk.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 51,
+        "title": "Houston Knights",
+        "poster_path": "/pzfECkrZHkS3UXRsMcxvCB1O3Al.jpg",
+        "vote_average": 5.5
+      },
+      {
+        "tmdb_id": 131,
+        "title": "Space Sentinels",
+        "poster_path": "/pc4W8UW3hCbvSHrrbBFuCaGXhRu.jpg",
+        "vote_average": 8.5
+      },
+      {
+        "tmdb_id": 196,
+        "title": "Captain Star",
+        "poster_path": "/w4Q0cfVPFHyvR5tEaoNwvppGGDK.jpg",
+        "vote_average": 6.625
+      }
+    ]
   }
 }
