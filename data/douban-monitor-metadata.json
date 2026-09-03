@@ -11030,5 +11030,123 @@
         "vote_average": 6.625
       }
     ]
+  },
+  "36323224": {
+    "tmdb_id": 222766,
+    "tmdb_type": "tv",
+    "original_title": "The Day of the Jackal",
+    "overview": "“豺狼”（埃迪·雷德梅恩饰）是一名独来独往，行踪难以捉摸的顶尖杀手，以酬金最高的暗杀行动为生。然而，在他最近一次执行刺杀任务之后，他遇到了自己的对手—一位锲而不舍的英国情报官员碧安卡·普尔曼（拉什纳·林奇饰），这位情报官员开始追踪“豺狼”，在欧洲展开了一场惊心动魄的猫鼠追逐战，并留下了一连串破坏的痕迹。",
+    "genres": [
+      "剧情",
+      "动作冒险",
+      "悬疑"
+    ],
+    "runtime": null,
+    "release_date": "2024-11-07",
+    "backdrop_path": "/enVrO8TRkdT8dmYXTfI4sEjR5Kp.jpg",
+    "poster_path": "/wSiVDqXSsC8diRgw1IgmVkWng8j.jpg",
+    "countries": [
+      "GB"
+    ],
+    "director": "罗南·贝内特",
+    "cast": [
+      {
+        "name": "埃迪·雷德梅恩",
+        "character": "The Jackal",
+        "profile_path": "/fSvG7qzoBBnJUmgtIuMgrK3EQPN.jpg"
+      },
+      {
+        "name": "拉什纳·林奇",
+        "character": "Bianca Pullman",
+        "profile_path": "/ypNxRag9uJ5nzPAN2um3amQK340.jpg"
+      },
+      {
+        "name": "埃莉诺·松浦",
+        "character": "Zina Jansone",
+        "profile_path": "/8PTKH2LHXVxoxPm4kULlQ0OdwTg.jpg"
+      },
+      {
+        "name": "楚克武迪·武吉",
+        "character": "Osita Halcrow",
+        "profile_path": "/5JILtFNmAmA8T4gRQrO5sn8krDv.jpg"
+      },
+      {
+        "name": "乌苏拉·科尔维罗",
+        "character": "Nuria",
+        "profile_path": "/cmH8Z459tw9YkR61QfxlCSlZw9P.jpg"
+      },
+      {
+        "name": "Adoney Díaz Barajas",
+        "character": "Carlitos",
+        "profile_path": ""
+      },
+      {
+        "name": "Rajko Radovic",
+        "character": "Bodyguard",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/enVrO8TRkdT8dmYXTfI4sEjR5Kp.jpg",
+      "/v0z2jRhWWSiPmUEs0dfg7P04m6T.jpg",
+      "/edblLdbHWXr4o9ezUbvlT4FkHwp.jpg",
+      "/vbui8CfX7UkfW4pNTJ4UBVAYxxB.jpg",
+      "/jkyQBtr0dU0uIaovQs3xoXHP9kV.jpg",
+      "/yKHKjgev6kUN1y0PNDJrw7BzIL2.jpg",
+      "/bSIojJyxK270kad8W0hihQNN8eq.jpg",
+      "/ii9aKYfdym73uQSXXqB6dA6PswO.jpg",
+      "/wV6fHiVKY88GOsWkhOcXdvVUr9G.jpg",
+      "/byy1ENEXXeUSN8F38MOzMkRkkss.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 28293,
+        "title": "Seventh Avenue",
+        "poster_path": "/19MUcjhJeYjUx2YLEe1jtxfy4zN.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 28208,
+        "title": "Jude the Obscure",
+        "poster_path": "/11JNWch8l5vhYyYsClQLoxpKTSk.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 58276,
+        "title": "终极假日",
+        "poster_path": "/pOhlvWjrWsjXYeAuJr1Xb3rTcJH.jpg",
+        "vote_average": 5.5
+      },
+      {
+        "tmdb_id": 19,
+        "title": "Planet of the Apes",
+        "poster_path": "/zxo5Vrd0oXgm9ZCz4r7Q3L8veWg.jpg",
+        "vote_average": 6.944
+      },
+      {
+        "tmdb_id": 206118,
+        "title": "唯爱百分之十二",
+        "poster_path": "/xJeTnyJZvUUHK7wrWkoU3B1qnsi.jpg",
+        "vote_average": 8.096
+      },
+      {
+        "tmdb_id": 206227,
+        "title": "Alexandr Dumas starší",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 91586,
+        "title": "被讨厌的松子一生",
+        "poster_path": "/2DaIwRcNYx7gZb2W8W1tYxmSZeY.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 304190,
+        "title": "天都异闻录",
+        "poster_path": "",
+        "vote_average": 0
+      }
+    ]
   }
 }
