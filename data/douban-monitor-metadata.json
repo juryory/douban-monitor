@@ -11148,5 +11148,127 @@
         "vote_average": 0
       }
     ]
+  },
+  "1291580": {
+    "tmdb_id": 24,
+    "tmdb_type": "movie",
+    "original_title": "Kill Bill: Vol. 1",
+    "overview": "这是一部令人眼花缭乱，绝对能带给您感官刺激的动作电影。一个新娘（乌玛•瑟曼Uma Thurman饰）在自己的婚礼上遭到了暗杀，婚礼瞬间变成了一片狼籍的红色。幸运的是，新娘并没有就此消失，而是在四年后苏醒过来，并且接受了高强度的各种各样的武术训练，开始踏上了自己的复仇之路，在世界各地寻找给自己带来灾难的人。当然，她也遇到了许多阻碍。日本杀手（刘玉玲饰）就是其中之一。这场红色的复仇之路究竟伸向何处，又有多曲折呢？",
+    "genres": [
+      "动作",
+      "犯罪"
+    ],
+    "runtime": 111,
+    "release_date": "2003-10-10",
+    "backdrop_path": "/iffzIhuLAO38Po6sh1s6ZEVwlNL.jpg",
+    "poster_path": "/2xpk1P7xqDI1tZeK8bkSJbOwPpP.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "昆汀·塔伦蒂诺",
+    "cast": [
+      {
+        "name": "乌玛·瑟曼",
+        "character": "The Bride",
+        "profile_path": "/hlYG0MC6im0MHNq1xixxVilfwyR.jpg"
+      },
+      {
+        "name": "刘玉玲",
+        "character": "O-Ren Ishii",
+        "profile_path": "/9nbtjqsx3De7hO2XDtrBQ7M9VCH.jpg"
+      },
+      {
+        "name": "薇薇卡·福克斯",
+        "character": "Vernita Green",
+        "profile_path": "/oIzevp0dqjIxqRQ2VoSzjiDCBt.jpg"
+      },
+      {
+        "name": "达丽尔·汉纳",
+        "character": "Elle Driver",
+        "profile_path": "/5FllFmoiaru7tjXJ6Orc11OpQcw.jpg"
+      },
+      {
+        "name": "大卫·卡拉丁",
+        "character": "Bill",
+        "profile_path": "/1X2GlkMKS9FIG1kGou7o6LRqAjz.jpg"
+      },
+      {
+        "name": "迈克尔·马德森",
+        "character": "Budd",
+        "profile_path": "/fvr2EXEPrVwsF2JlfRp0Olbj4g8.jpg"
+      },
+      {
+        "name": "朱莉·德雷福斯",
+        "character": "Sofie Fatale",
+        "profile_path": "/4dOHTPwEdCsRkMQZtUMFqpTzX9g.jpg"
+      },
+      {
+        "name": "栗山千明",
+        "character": "Gogo Yubari",
+        "profile_path": "/2lGs2rzx9VovrtBFsKM5Fy1Uja5.jpg"
+      }
+    ],
+    "stills": [
+      "/iffzIhuLAO38Po6sh1s6ZEVwlNL.jpg",
+      "/p3WiF8qYS7Qp17YRYgrFh7gf9P9.jpg",
+      "/gPA8Th4CyuL5IeTzHE2THkxihkU.jpg",
+      "/ibS07SKBUAUiJE4FxL65K3hpwHa.jpg",
+      "/lVy5Zqcty2NfemqKYbVJfdg44rK.jpg",
+      "/pcXvjjMOacxXJDqAaZQH26UKn1C.jpg",
+      "/4nV8HonU5h8NyvF6sJX4q1PYtt9.jpg",
+      "/fQ1IUeZCCLq7vI5xtylj6bHIuZF.jpg",
+      "/jF7Mj31eOEM1jtDftm8A3ngmUsJ.jpg",
+      "/HqsGhAqwoGIFcO85t7rNWm7PA8.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 11468,
+        "title": "苦海惊魂",
+        "poster_path": "/i3InMSlLUNBEdQTKazMdyVP1ryX.jpg",
+        "vote_average": 6.608
+      },
+      {
+        "tmdb_id": 11471,
+        "title": "英雄本色",
+        "poster_path": "/qvdvGB9d58zjberXoCX5RihD5PY.jpg",
+        "vote_average": 7.356
+      },
+      {
+        "tmdb_id": 11494,
+        "title": "荒蛮孤岛",
+        "poster_path": "/sLtUVG7ORbTJueTmIWpO4YeHayS.jpg",
+        "vote_average": 6.122
+      },
+      {
+        "tmdb_id": 454294,
+        "title": "王者少年",
+        "poster_path": "/x8YwE4aHadYzV0ZVoAK6FKU3OvK.jpg",
+        "vote_average": 6.201
+      },
+      {
+        "tmdb_id": 1022632,
+        "title": "孤高",
+        "poster_path": "/eDA0Inb5skrXDKzXwA3xI7zuztR.jpg",
+        "vote_average": 6.278
+      },
+      {
+        "tmdb_id": 272234,
+        "title": "Darna and the Giants",
+        "poster_path": "/klPBgQdC7GYvXvQvto4s07MTbWs.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 11134,
+        "title": "警察故事3：超级警察",
+        "poster_path": "/tEhfQ0pCVCAn9VVCC6bpwJ9CvIx.jpg",
+        "vote_average": 6.933
+      },
+      {
+        "tmdb_id": 11142,
+        "title": "Der Clown",
+        "poster_path": "/ekPpYfjmlY0h5wfMHvpXcANdTzR.jpg",
+        "vote_average": 4.361
+      }
+    ]
   }
 }
