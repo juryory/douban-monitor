@@ -11270,5 +11270,127 @@
         "vote_average": 4.361
       }
     ]
+  },
+  "1298880": {
+    "tmdb_id": 2054,
+    "tmdb_type": "movie",
+    "original_title": "Mr. Holland's Opus",
+    "overview": "1964年的秋天，美国俄勒冈州。心怀远大理想的作曲家格兰·霍兰为了挣钱完成他的事业，在一所中学谋到了一份音乐教师的工作。他这么做完全是退而求其次的无奈之举，家庭生活的重担使得他不得不面对现实。他到学校上课的第一天，音乐基础级差的学生们便给了他一个难堪的下马威。他们在弹奏乐器时不但走调，甚至连大名鼎鼎的古典作曲家巴赫都没有听说过。霍兰的信心遭到了打击，女校长杰克布也多次向他提出善意的批评。在丈夫的工作遇到挫折时，从事摄影工作的妻子在一旁耐心地劝解和宽慰他；好友体育教师比尔·梅斯特也用自己从教以来的亲身经历，向霍兰证明教导学生需要无私的爱心和充分的时间。在霍兰的悉心培育下，原本对音乐一窍不通的白人学生格楚特·兰和黑人学生路易斯·鲁斯，分别学会了单簧管和大鼓这两样乐器。就在霍兰醉心于教学生活的时候，他的儿子降生了，谁知却是个先天性的失聪患儿。这一重创使霍兰对家庭的重心有所转移，消极彷徨中和漂亮的女学生露韦娜·摩根有了一段朦胧的恋情。妻子察觉到了丈夫的细微变化，但并没有点破。摩根去纽约深造后，霍兰便将全部的身心转移到了儿子和教学上，和妻子的关系也冰释前嫌。之后的30年间，霍兰不但提高了学生们的音乐素养，而且还用爱心、信任和理解赢得了大伙的尊敬和爱戴。在他退休前，深怀感激之情的历届学生们欢聚一堂，为老师开了一场盛大的欢送会，管弦乐队奏响了一支激昂雄壮的“美国交响曲”向霍兰表示了最崇高的敬意。",
+    "genres": [
+      "剧情",
+      "音乐"
+    ],
+    "runtime": 143,
+    "release_date": "1995-12-29",
+    "backdrop_path": "/oUptKQLatCgywVDx0ETVhq7knHt.jpg",
+    "poster_path": "/4LTaht15daApA5iAwZuOpoYC5eT.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "Stephen Herek",
+    "cast": [
+      {
+        "name": "理查德·德莱福斯",
+        "character": "Glenn Holland",
+        "profile_path": "/q2BPu6zWwFtnzQfpl4fgbKqURXM.jpg"
+      },
+      {
+        "name": "格伦·海德利",
+        "character": "Iris Holland",
+        "profile_path": "/ucndAdXmTfF6PfZx3tIMOOOOGcL.jpg"
+      },
+      {
+        "name": "杰伊·托马斯",
+        "character": "Bill Meister",
+        "profile_path": "/daWSrAYJtCi2qiwq6BYZfiUWVIY.jpg"
+      },
+      {
+        "name": "奥林匹亚·杜卡基斯",
+        "character": "Principal Jacobs",
+        "profile_path": "/pwoIzB9QSjKkWORQ7SpetnxFizf.jpg"
+      },
+      {
+        "name": "威廉·H·梅西",
+        "character": "Vice Principal Gene Wolters",
+        "profile_path": "/hdVEGSrP8qWlJnt0v5vSVcGOjy7.jpg"
+      },
+      {
+        "name": "艾丽西亚·维特",
+        "character": "Gertrude Lang",
+        "profile_path": "/vQ2McAjHjY3A7oDrPMx6aLSsvkW.jpg"
+      },
+      {
+        "name": "泰伦斯·霍华德",
+        "character": "Louis Russ",
+        "profile_path": "/wXWt2NSY23v7DHe2yZQ1C8TikBp.jpg"
+      },
+      {
+        "name": "达蒙·惠特克",
+        "character": "Bobby Tidd",
+        "profile_path": "/qHT717nGhcwAa3PoMzX6jm8BYme.jpg"
+      }
+    ],
+    "stills": [
+      "/oUptKQLatCgywVDx0ETVhq7knHt.jpg",
+      "/98iOv7qbDZDoAkJIwffBia0H5S5.jpg",
+      "/67a2KpDHbhIZYsibfjLEfLvgBB8.jpg",
+      "/lW2P5old7vuahTTx04i9lwQMpgs.jpg",
+      "/A64QuuHYAL1tN1GqDQhjbEwoQAb.jpg",
+      "/8TTSThY4qHicWQkAN4MwSmVAx7S.jpg",
+      "/lIkzhoILFTUUBwZJ5jNwVgMaq4a.jpg",
+      "/nQTXowl4VZ5UdQbIwJDIQJtl1cT.jpg",
+      "/VkWk5remWvd9kj3dbiL2aRfxzf.jpg",
+      "/ulGk3Qxb84LXMrEcrD89ufR6aEp.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 8456,
+        "title": "永不退缩",
+        "poster_path": "/8oRUTyP1QAtGDMvRpKZyuyFPG0U.jpg",
+        "vote_average": 6.781
+      },
+      {
+        "tmdb_id": 449065,
+        "title": "Ojos sin luz",
+        "poster_path": "/vdbxBYUfBrD3FcaZfHvk0dWef80.jpg",
+        "vote_average": 4.188
+      },
+      {
+        "tmdb_id": 8665,
+        "title": "K-19：寡妇制造者",
+        "poster_path": "/qDNT7c8lJpsgoKT8MWi5MuJ5aja.jpg",
+        "vote_average": 6.58
+      },
+      {
+        "tmdb_id": 8587,
+        "title": "狮子王",
+        "poster_path": "/6f3r34trWZrZzRyTDdMzQp5XRrQ.jpg",
+        "vote_average": 8.251
+      },
+      {
+        "tmdb_id": 8618,
+        "title": "历史系男生",
+        "poster_path": "/a8JNAt4SAmY1c36Ux5zvsmOKh4h.jpg",
+        "vote_average": 6.62
+      },
+      {
+        "tmdb_id": 449176,
+        "title": "爱你，西蒙",
+        "poster_path": "/qvxVh9LAchd9a3Lg4LMlteiV8Ca.jpg",
+        "vote_average": 7.961
+      },
+      {
+        "tmdb_id": 8832,
+        "title": "大牌明星",
+        "poster_path": "/6Rb4Uel3gziuDEgJ71xfZelayVP.jpg",
+        "vote_average": 7.612
+      },
+      {
+        "tmdb_id": 8841,
+        "title": "墙壁之间",
+        "poster_path": "/douDslyUiFSfs9e3ep2ngUo2tsH.jpg",
+        "vote_average": 6.986
+      }
+    ]
   }
 }
