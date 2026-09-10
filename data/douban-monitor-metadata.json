@@ -11392,5 +11392,127 @@
         "vote_average": 6.986
       }
     ]
+  },
+  "36857449": {
+    "tmdb_id": 125988,
+    "tmdb_type": "tv",
+    "original_title": "Silo",
+    "overview": "该剧基于休·豪伊所著同名畅销科幻系列小说改编，在一个满目疮痍、有毒物质遍布的未来世界中，成千上万的人居住在深埋在地下的巨大筒仓里。在警长违反了一项基本规则以及有些居民神秘死亡后，工程师朱丽叶开始揭开惊人的秘密和筒仓的真相。",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2023-05-04",
+    "backdrop_path": "/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+    "poster_path": "/gSvAV1uyOisUNnzND9XQbDTNMg4.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "格雷厄姆·约斯特",
+    "cast": [
+      {
+        "name": "丽贝卡·弗格森",
+        "character": "Juliette Nichols",
+        "profile_path": "/ra53cM1aNmdH0aFhj8yBqPOj2fb.jpg"
+      },
+      {
+        "name": "科曼",
+        "character": "Robert Sims",
+        "profile_path": "/7Gk5L3rg6uZAGp7SWWTJRP32IJ3.jpg"
+      },
+      {
+        "name": "才那扎·乌奇",
+        "character": "Paul Billings",
+        "profile_path": "/5fbbLI9BPiByyIIRYu9pbRQwyUN.jpg"
+      },
+      {
+        "name": "Ashley Zukerman",
+        "character": "Daniel Keene",
+        "profile_path": "/tKT5ybCjMOV4whEQ6jy8ZQnrP7C.jpg"
+      },
+      {
+        "name": "肖恩·麦克雷",
+        "character": "Knox",
+        "profile_path": "/ixNSdZDJ6fZzZc2Pdx4Dwr8wHir.jpg"
+      },
+      {
+        "name": "Remmie Milner",
+        "character": "Shirley Campbell",
+        "profile_path": "/4LDy6vhBZ11kOevBdAGBRM34d3L.jpg"
+      },
+      {
+        "name": "亚历山大·莱利",
+        "character": "Camille Sims",
+        "profile_path": "/7rEJ2m0ur4uFPG0YzBQpYQB8Crt.jpg"
+      },
+      {
+        "name": "里德·伯尼",
+        "character": "Henry",
+        "profile_path": "/dfLgNLUt6Xs2MJJTi6B1iWdXjU6.jpg"
+      }
+    ],
+    "stills": [
+      "/wgkzj7qsPr3s5zYj31tTn45BTPq.jpg",
+      "/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "/fQGrzO0Iwo7CO4b2zVdJLkcnhwK.jpg",
+      "/cAYMSOqsKmi9vdzWh6yv7FCVHzQ.jpg",
+      "/4XccmjsOmQZw8S2iW1wvlvmb5v1.jpg",
+      "/n5FPNMJ0eRoiQrKGfUQQRAZeaxg.jpg",
+      "/lxtUxUazOvQxRquYLGvRdiQbWXb.jpg",
+      "/l0U6SoFpMvJXWz4SByxKkhcIJES.jpg",
+      "/a0rb21UfFTiEoYR1Ct8a4O7M1Id.jpg",
+      "/elWdoNhtQJY0YafTAEdVdzGw1FY.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 398,
+        "title": "The Last Train",
+        "poster_path": "/mUoU7HaG7fjyOcwJvLJIPuh1jk.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 275291,
+        "title": "风之福岛",
+        "poster_path": "/bWbbtXDJgOk42Ffrt938Qjua7Gm.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 305250,
+        "title": "สารวัตรแม่ลูกอ่อน",
+        "poster_path": "/bhhGpoDUxM5HaviAdjiHZpIQwMo.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 305253,
+        "title": "天生乌鸦",
+        "poster_path": "/fasGnHHn5p5IAcYuIWdorh6cE3T.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 28913,
+        "title": "The Three Musketeers",
+        "poster_path": "/xSDjZplYNZGvl7bXTj1PNHe4a0S.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 275451,
+        "title": "好想你知道",
+        "poster_path": "/z24CdrQsGuoOMiaDUYrkAthgs9M.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 305276,
+        "title": "我叫墨斗儿",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 305315,
+        "title": "隐锋",
+        "poster_path": "/nQeMLoisiGmdIhXQ0iKnPbQ7bf7.jpg",
+        "vote_average": 8.0
+      }
+    ]
   }
 }
