@@ -11514,5 +11514,129 @@
         "vote_average": 8.0
       }
     ]
+  },
+  "1294417": {
+    "tmdb_id": 18672,
+    "tmdb_type": "movie",
+    "original_title": "笑傲江湖II東方不敗",
+    "overview": "华山派大弟子令狐冲（李连杰 饰）在经历江湖纷争后，本欲与师妹岳灵珊（李嘉欣 饰）及众师弟一同归隐，退出江湖。然而，此时的武林正被一场巨大阴谋笼罩。日月神教教主东方不败（林青霞 饰）凭借绝世武功《葵花宝典》篡权，囚禁了原教主任我行（任世官 饰），并勾结东瀛浪人，意图颠覆朝廷。\r 令狐冲在途中偶遇一位超凡脱俗的神秘女子，两人月下对饮，引为知己，令狐冲更对这位女子暗生情愫。他全然不知，眼前这位佳人，正是他受朋友任盈盈（关之琳 饰）和蓝凤凰（袁洁莹 饰）所托、计划要铲除的魔教枭雄东方不败。\r 与此同时，东方不败为巩固权势，开始铲除教内异己。当令狐冲得知自己的同门师兄弟惨遭东方不败毒手时，他义愤填膺，决心联手任盈盈、向问天（刘洵 饰）以及被救出的任我行，攻上黑木崖，为同门报仇。\r 在最终的决战中，令狐冲震惊地发现，那个与自己有过一段情缘、刻骨铭心的神秘女子，竟然就是他要手刃的仇敌东方不败。爱恨交织与江湖大义在前，两人展开了一场惊天动地的生死对决。东方不败虽武功盖世，但因对令狐冲手下留情，最终坠下悬崖。\r 风波平息后，重掌大权的任我行变得与昔日的东方不败一样专横，开始大肆清除异己。令狐冲看透江湖权力斗争的循环与虚妄，心灰意冷之下，选择携师妹岳灵珊浪迹天涯，真正远离这个纷扰的江湖。",
+    "genres": [
+      "动作",
+      "奇幻",
+      "冒险"
+    ],
+    "runtime": 107,
+    "release_date": "1992-06-26",
+    "backdrop_path": "/4hCNxfO3mFYxsrjXKeUgoSOMRtv.jpg",
+    "poster_path": "/5e9ae6AyhQSd2c2yaL9zJkWE0Zu.jpg",
+    "countries": [
+      "Hong Kong",
+      "Taiwan"
+    ],
+    "director": "程小东",
+    "cast": [
+      {
+        "name": "林青霞",
+        "character": "Dung Fong Bat Bai",
+        "profile_path": "/8Nq6F8bPy1HUHl4HkNIF0YGW1xD.jpg"
+      },
+      {
+        "name": "李连杰",
+        "character": "Ling Wu Chung",
+        "profile_path": "/c4s8INzU0ZAujCQ1YmphCmcsNzl.jpg"
+      },
+      {
+        "name": "关之琳",
+        "character": "Yam Ying Ying",
+        "profile_path": "/pbHKTJaOzFVTD1HNOnPD0RyLMlK.jpg"
+      },
+      {
+        "name": "李嘉欣",
+        "character": "Kiddo",
+        "profile_path": "/ex1uxa2LjAoTZbJPzvzyljZuR2M.jpg"
+      },
+      {
+        "name": "李子雄",
+        "character": "Hattori Sengun",
+        "profile_path": "/1uXEpSETghMt7TuLEUOdQ9VBomQ.jpg"
+      },
+      {
+        "name": "余安安",
+        "character": "Yang Shishi",
+        "profile_path": "/3k3q31QUY7uvvY28end5Pl1jBF5.jpg"
+      },
+      {
+        "name": "袁洁莹",
+        "character": "Blue Phoenix",
+        "profile_path": "/lrCW4BLzej3C3boJRlNQSfD19Ul.jpg"
+      },
+      {
+        "name": "刘洵",
+        "character": "Zen",
+        "profile_path": "/sNnEnje7gqpOQZR3NWIodvh0ti5.jpg"
+      }
+    ],
+    "stills": [
+      "/4hCNxfO3mFYxsrjXKeUgoSOMRtv.jpg",
+      "/AkFK1k9rwvJrZeGRxHap2regoet.jpg",
+      "/dDSo2VeSW1CmMakIfdAitiFT0Bh.jpg",
+      "/naMfOpxXAL1Q5iERUPhBgNQXDVi.jpg",
+      "/x37wSjk1Gw7nPOV1dSn8oB5njUQ.jpg",
+      "/oAg6b4Hb3A1cgluEfCheCztJk8h.jpg",
+      "/qMA0k0VA97wCBfMCFPfaLEMJ9c7.jpg",
+      "/dYm2NrXVel9CqN80mVF49i0fNwi.jpg",
+      "/gFJmOcL4n6jcP88m6rlv1xnuZS9.jpg",
+      "/3gNkZ2M5vNgwLs2CmBqaq7PwT58.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 171400,
+        "title": "金印仇",
+        "poster_path": "/jpkuqhC9hrpWKtGuqQbvKU3GtHR.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 1436,
+        "title": "武士",
+        "poster_path": "/hnWtgd9wwxVo0zN1qmvv1iVM5cR.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 2008,
+        "title": "无极",
+        "poster_path": "/egqGhmcb1TzW5rv3g29F1LS98Mk.jpg",
+        "vote_average": 5.6
+      },
+      {
+        "tmdb_id": 825034,
+        "title": "鐵劍朱痕(上集)",
+        "poster_path": "/8YKqz7QCaN8G5xwqA71c2w48r8l.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 825038,
+        "title": "鐵劍朱痕(下集)",
+        "poster_path": "/8YKqz7QCaN8G5xwqA71c2w48r8l.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 9550,
+        "title": "十面埋伏",
+        "poster_path": "/unOXxCipNht3h7RPhGy6OZKe5Gv.jpg",
+        "vote_average": 7.27
+      },
+      {
+        "tmdb_id": 1582905,
+        "title": "离恨谷",
+        "poster_path": "/k3E00aqcquRlgvsgevNjJeCQA1P.jpg",
+        "vote_average": 3.0
+      },
+      {
+        "tmdb_id": 824424,
+        "title": "封神榜：决战万仙阵",
+        "poster_path": "/1wr3htk5l6nQZJfM06MiqzAwSJt.jpg",
+        "vote_average": 4.7
+      }
+    ]
   }
 }
