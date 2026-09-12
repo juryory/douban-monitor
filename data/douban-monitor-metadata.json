@@ -11638,5 +11638,123 @@
         "vote_average": 4.7
       }
     ]
+  },
+  "35322132": {
+    "tmdb_id": 1176962,
+    "tmdb_type": "movie",
+    "original_title": "Rose",
+    "overview": "17世纪初，德国某地，一名神秘士兵来到偏僻的新教村庄。他身材瘦小，性格内敛，面部留有一道疤痕，这个陌生人自称是废弃农庄的继承人，并向心存疑虑的村民出示了一份文件以证明他的说法。随着时间推移，他逐渐打消了村民的疑虑，并凭借勤劳和虔诚，融入社区。然而，他所获得的接纳却建立在一个弥天大谎之上。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 94,
+    "release_date": "2026-04-17",
+    "backdrop_path": "/1KUzZMCBOtInUFoGUEJJsQyQKVi.jpg",
+    "poster_path": "/c4p2lQ5JdubYmPiY1gyizOhSJ71.jpg",
+    "countries": [
+      "Austria",
+      "Germany"
+    ],
+    "director": "Markus Schleinzer",
+    "cast": [
+      {
+        "name": "桑德拉·惠勒",
+        "character": "Rose",
+        "profile_path": "/t7wGqC2dRwTEnt9Fk5pxQ0uXTqs.jpg"
+      },
+      {
+        "name": "Caro Braun",
+        "character": "Suzanna",
+        "profile_path": "/xOR90b4fBT5HYpMQLMs2Q8umXl1.jpg"
+      },
+      {
+        "name": "Marisa Growaldt",
+        "character": "Narrator",
+        "profile_path": "/lbDsn2cj6ATAL4Su10Usp0R5b4t.jpg"
+      },
+      {
+        "name": "戈德哈尔德·吉瑟",
+        "character": "",
+        "profile_path": "/2vz3pSqdPUEtJ5xcNTWh7eZVdkj.jpg"
+      },
+      {
+        "name": "Robert Gwisdek",
+        "character": "",
+        "profile_path": "/doCAnt1rXCLmbLlMA9wQx215LSF.jpg"
+      },
+      {
+        "name": "Maria Dragus",
+        "character": "",
+        "profile_path": "/4AiU1EdwWlNuxBbYV1qLxc09mv1.jpg"
+      },
+      {
+        "name": "Annalisa Hohl",
+        "character": "",
+        "profile_path": "/9gKVYZN0cO3zNUcIrGGPzkN188I.jpg"
+      },
+      {
+        "name": "Augustino Renken",
+        "character": "",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/1KUzZMCBOtInUFoGUEJJsQyQKVi.jpg",
+      "/ewitRaiKieUQOxDkjfie4iy3ulK.jpg",
+      "/1YEhGFepA1M4zZ3btZVqhoA8470.jpg",
+      "/h4eZafYbje8wxQU9VJmr0eoAv96.jpg",
+      "/pXQaRv6dLjZXgMyteXusu2F1eet.jpg",
+      "/tttoVqTx45de6f8TujQMYhyEyy1.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1542257,
+        "title": "Bude-li mi jíti přes údolí stínu smrti...",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 797642,
+        "title": "Svědek umírajícího času",
+        "poster_path": "",
+        "vote_average": 5.75
+      },
+      {
+        "tmdb_id": 5051,
+        "title": "魔法圣婴",
+        "poster_path": "/lYB5uF36JE61GMLInD3Gp7yCCyL.jpg",
+        "vote_average": 6.825
+      },
+      {
+        "tmdb_id": 3635,
+        "title": "戴珍珠耳环的少女",
+        "poster_path": "/41DkOi1MvTgTQXt5BevVSzo94kk.jpg",
+        "vote_average": 6.643
+      },
+      {
+        "tmdb_id": 10703,
+        "title": "七剑",
+        "poster_path": "/8x9PKE18Cuel9EnnXnDqmYBucMt.jpg",
+        "vote_average": 6.243
+      },
+      {
+        "tmdb_id": 454527,
+        "title": "圣母",
+        "poster_path": "/aOKunE5JzpqFdKOMOl8ZvZdMUhe.jpg",
+        "vote_average": 6.601
+      },
+      {
+        "tmdb_id": 455586,
+        "title": "Krotoa",
+        "poster_path": "/eoCH4jXsyiaBTCA7PkIqgMlaS0l.jpg",
+        "vote_average": 5.9
+      },
+      {
+        "tmdb_id": 9313,
+        "title": "铁面人",
+        "poster_path": "/b0fZdpyh3TOJ9ygl6qq3WYnqGYp.jpg",
+        "vote_average": 6.655
+      }
+    ]
   }
 }
