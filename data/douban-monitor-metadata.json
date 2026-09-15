@@ -11999,5 +11999,245 @@
         "vote_average": 0
       }
     ]
+  },
+  "37315819": {
+    "tmdb_id": 288971,
+    "tmdb_type": "tv",
+    "original_title": "天幕のジャードゥーガル",
+    "overview": "十三世纪，幼小的奴隶希塔拉在伊朗东部城市图斯被奴隶商委托给一个学者辈出的家族进行教育。希塔拉起初试图逃跑，但她被教导了知识的重要性，希塔拉在这里被女主人法蒂玛视为女儿般的宠爱，并学习了欧几里得的《几何原本》等诸多知识。家族的继承人穆罕默德为了研究学问而前往内沙布尔后8年，图斯遭到蒙古人的袭击。希塔拉被拖雷的军队俘虏，法蒂玛为了保护希塔拉而被杀害。此外，《几何原本》也被抢走了。被带到蒙古的希塔拉开始思考对蒙古的复仇。",
+    "genres": [
+      "动画",
+      "剧情",
+      "War & Politics"
+    ],
+    "runtime": 24,
+    "release_date": "2026-07-04",
+    "backdrop_path": "/6AoGMlKo2DUsYWiF5zzjdRERCVi.jpg",
+    "poster_path": "/o8Jo2wBncO3wqr2sDk30ktgejcm.jpg",
+    "countries": [
+      "JP"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "关根明良",
+        "character": "Sitara (voice)",
+        "profile_path": "/czYoPzAEK1gI7RxRiPyDSFYRm5x.jpg"
+      },
+      {
+        "name": "小清水亚美",
+        "character": "Töregene (voice)",
+        "profile_path": "/e5sU0stGjTMtFoj0jjHH7OFUqYC.jpg"
+      },
+      {
+        "name": "桑岛法子",
+        "character": "Fatima (voice)",
+        "profile_path": "/uZSmoh5jSdLwmkLaCnC3Xju6TTN.jpg"
+      },
+      {
+        "name": "斋藤润",
+        "character": "Muhammad (voice)",
+        "profile_path": "/tYbBtEvzm3dqwdxS0h61TVwqAfN.jpg"
+      },
+      {
+        "name": "下野纮",
+        "character": "Ögedei (voice)",
+        "profile_path": "/yrSDcgFefHtWkFmLnTrcw2t0MV.jpg"
+      },
+      {
+        "name": "铃木崚汰",
+        "character": "Tolui (voice)",
+        "profile_path": "/4Xq18mQttuW2yfRCflnWoU7UqQ5.jpg"
+      },
+      {
+        "name": "入野自由",
+        "character": "Shira (voice)",
+        "profile_path": "/8qEEhHUObNvGQr4e6eqLu5z4qTz.jpg"
+      },
+      {
+        "name": "浪川大辅",
+        "character": "Chagatai (voice)",
+        "profile_path": "/iw0X8oDutxaBAri3Ifga8nhdUJK.jpg"
+      }
+    ],
+    "stills": [
+      "/6AoGMlKo2DUsYWiF5zzjdRERCVi.jpg",
+      "/y4QV6ivcpiFj1hEssoH9XIlekO.jpg",
+      "/8ozwDjWLdeDyQnHRnPkHM44aSBL.jpg",
+      "/2csw1pKRv4Gx6hSXwH74gzT7E1i.jpg",
+      "/zwboDmkA5VADmDp0Mya9lvMizc6.jpg",
+      "/tUVdV6muAEfxefMGo03bqtF8q9E.jpg",
+      "/9AtxKgA5j6ImqTqvqKgDCDjRFiM.jpg",
+      "/vCRc4rK4smpTEIYe3PLKkwUWEdl.jpg",
+      "/6w6L5bkYbsDduiaIbNEcIwn3p33.jpg",
+      "/prjnxj6SUaVVZQdIs9VsALpiaV7.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 28326,
+        "title": "酷伊忍者传",
+        "poster_path": "/9cYziUSyImP1C6oYuNF3yrFQSMM.jpg",
+        "vote_average": 7.625
+      },
+      {
+        "tmdb_id": 124396,
+        "title": "漂流少年",
+        "poster_path": "/vvAWc8J3ksGij41lU6wH2Lrk9Kx.jpg",
+        "vote_average": 7.4
+      },
+      {
+        "tmdb_id": 206767,
+        "title": "梦幻足球手Stella",
+        "poster_path": "/p2q6gYfBbMc9m9ubKximdcM84fK.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 206798,
+        "title": "德坦巴的礼仪",
+        "poster_path": "/k30ikG9SngeUllDBJFBFzmbZawm.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 206799,
+        "title": "黑暗集会",
+        "poster_path": "/uLGaMgPsrrAG1Tahwwd3jv3uodN.jpg",
+        "vote_average": 7.355
+      },
+      {
+        "tmdb_id": 305163,
+        "title": "打工仔的拷问日常",
+        "poster_path": "/ocKgg1nEyEvsN9YmwXukJ9lphLx.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 31910,
+        "title": "火影忍者：疾风传",
+        "poster_path": "/7jGvTx2rvXbXAY6dOmLDMUnBqne.jpg",
+        "vote_average": 8.529
+      },
+      {
+        "tmdb_id": 31911,
+        "title": "钢之炼金术师 FA",
+        "poster_path": "/w1tRC9Xu5R4OP4eGkIXP1DGJi4S.jpg",
+        "vote_average": 8.708
+      }
+    ]
+  },
+  "35445834": {
+    "tmdb_id": 124101,
+    "tmdb_type": "tv",
+    "original_title": "Hacks",
+    "overview": "故事聚焦于拉斯维加斯的传奇喜剧演员黛博拉与自命不凡的叛逆25岁少女艾娃之间的黑暗师徒关系。",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2021-05-13",
+    "backdrop_path": "/bbAR4qKxjnjyKAt4YMrL725Mtfw.jpg",
+    "poster_path": "/lREDe8HTA81Urfj6moo3NyLge2e.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "露西亚·阿尼洛",
+    "cast": [
+      {
+        "name": "珍·斯马特",
+        "character": "Deborah Vance",
+        "profile_path": "/gOvEAOtrtedfgS7oQvPgHuJV4F8.jpg"
+      },
+      {
+        "name": "Hannah Einbinder",
+        "character": "Ava",
+        "profile_path": "/iWMeyJAghUYP3zxmOxzcYLU5G8Z.jpg"
+      },
+      {
+        "name": "Carl Clemons-Hopkins",
+        "character": "Marcus",
+        "profile_path": "/lE1AP30VRMtDLQHHlQs2DYhx3cF.jpg"
+      },
+      {
+        "name": "保罗 W·唐斯",
+        "character": "Jimmy",
+        "profile_path": "/xM5ssVi6fZPAtBuQcPM1qRBQSI1.jpg"
+      },
+      {
+        "name": "Megan Stalter",
+        "character": "Kayla",
+        "profile_path": "/ohGvsy7IlJgKs33x3TTQIEL168v.jpg"
+      },
+      {
+        "name": "Mark Indelicato",
+        "character": "Damien",
+        "profile_path": "/18TxWMXDmFgQFbRSh12WfntUvub.jpg"
+      },
+      {
+        "name": "Rose Abdoo",
+        "character": "Josefina",
+        "profile_path": "/6gl2EerGV1p4LS2smamymwgU6jH.jpg"
+      }
+    ],
+    "stills": [
+      "/bbAR4qKxjnjyKAt4YMrL725Mtfw.jpg",
+      "/dDEj2qS9RGiY6P3Bkzc0EEMaKpR.jpg",
+      "/fbA2hjjtyt0Q840yfHuGMM8efU.jpg",
+      "/viwjmvXF1ZQTpZZ2r2AI3ygDqNd.jpg",
+      "/qeqJI8LRIdbV2kZT3rtOaHOnLuY.jpg",
+      "/mzJLyEwhrZFLi7ogq6hdjNWFbsC.jpg",
+      "/t30WmJhIUKEVPITWE5haFzW2YFD.jpg",
+      "/dOpFHv9TG9H2Y8tnCMvKhJRoEPU.jpg",
+      "/4WH0glTvpTDaVkQdTu3lCZ18PmO.jpg",
+      "/f1Z5f9XsnLH7jOTXokRth3szZhN.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 72,
+        "title": "只有傻瓜和马",
+        "poster_path": "/8QznQBwr4aqPIQTiymL7obM3qOK.jpg",
+        "vote_average": 8.079
+      },
+      {
+        "tmdb_id": 91750,
+        "title": "加油，你是最棒的",
+        "poster_path": "/fCqeRFBAAEMdmkbmm7lsjvTG5RI.jpg",
+        "vote_average": 7.2
+      },
+      {
+        "tmdb_id": 44,
+        "title": "刺猬索尼克历险记",
+        "poster_path": "/z24YFviGeEGUgOw4TytKuC4izVM.jpg",
+        "vote_average": 6.617
+      },
+      {
+        "tmdb_id": 47,
+        "title": "查沃德尔奥乔",
+        "poster_path": "/1TdBpVOASafzfWlnecwW17UL6a5.jpg",
+        "vote_average": 8.065
+      },
+      {
+        "tmdb_id": 305213,
+        "title": "Safe Space",
+        "poster_path": "/yDyb8n5QFj4MeOnsRjyl0V5qsPE.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 115,
+        "title": "不同的世界",
+        "poster_path": "/v7fuifcJjcqQxAsOjPviupcmFIZ.jpg",
+        "vote_average": 7.156
+      },
+      {
+        "tmdb_id": 171,
+        "title": "马丁·劳伦斯秀",
+        "poster_path": "/inQQEpHiaSy8BEd9XEFF2W39vO0.jpg",
+        "vote_average": 7.543
+      },
+      {
+        "tmdb_id": 305295,
+        "title": "Coluna Vertebral",
+        "poster_path": "/fUit4bDH1PPbUhEneWpkFVVHj7c.jpg",
+        "vote_average": 10.0
+      }
+    ]
   }
 }
