@@ -12239,5 +12239,128 @@
         "vote_average": 10.0
       }
     ]
+  },
+  "1309220": {
+    "tmdb_id": 18747,
+    "tmdb_type": "movie",
+    "original_title": "黑社會",
+    "overview": "　　香港最大黑社会帮会“和联胜”举行两年一度的办事人选举，阿乐（任达华饰）与大D（梁家辉饰）作为两大地区领导，暗地里展开争夺宝座的努力，一众有投票权的元老亦为自身利益而明争暗斗，选举因此相当不顺利。　　结果，阿乐再次获选成为办事人，满心不服的大D决定挑战帮规，他要抢夺到象征最高权力的信物龙头棍，组织新帮会。五名小头目（古天乐、张兆辉、张家辉、林雪、林家栋饰）牵连其中，为争夺龙头棍展开连番内斗。最终鹿死谁手，一切不得而知。",
+    "genres": [
+      "犯罪",
+      "剧情",
+      "惊悚"
+    ],
+    "runtime": 101,
+    "release_date": "2005-10-20",
+    "backdrop_path": "/uVnHskokSRJ8cRItMA0L9NQ9dXa.jpg",
+    "poster_path": "/kEiylGG220CLiRUss1vaFKsm15Z.jpg",
+    "countries": [
+      "Hong Kong"
+    ],
+    "director": "杜琪峰",
+    "cast": [
+      {
+        "name": "任达华",
+        "character": "Lok",
+        "profile_path": "/eilxjMhfobctnzZ0kBcFmnqtFyd.jpg"
+      },
+      {
+        "name": "梁家辉",
+        "character": "Big D",
+        "profile_path": "/sPDShFDtDx1pMNwHEx14o4WHrEH.jpg"
+      },
+      {
+        "name": "古天乐",
+        "character": "Jimmy",
+        "profile_path": "/yQuDBTzm7xWlJICNvl20OmcJP80.jpg"
+      },
+      {
+        "name": "张家辉",
+        "character": "Jet",
+        "profile_path": "/yjjSMT1bCX7vlJMVt2BiPVwOATo.jpg"
+      },
+      {
+        "name": "林家栋",
+        "character": "Kun",
+        "profile_path": "/1IbIMJ4vfUgzlkiJcufNCyMWqSh.jpg"
+      },
+      {
+        "name": "张兆辉",
+        "character": "Mr. So",
+        "profile_path": "/jTrBt3y43LsO8XYsQnWg8bdwsP2.jpg"
+      },
+      {
+        "name": "林雪",
+        "character": "Big Head",
+        "profile_path": "/oX3TgMGXBR1dCcOGs9llrL6E8O6.jpg"
+      },
+      {
+        "name": "王天林",
+        "character": "Uncle Teng",
+        "profile_path": "/nNw8LwY3rcrIQKUPbSnBHBhiiUi.jpg"
+      }
+    ],
+    "stills": [
+      "/uVnHskokSRJ8cRItMA0L9NQ9dXa.jpg",
+      "/mhAD1EwsiUrbbauN8UPMJPXUvnu.jpg",
+      "/2Ef7sNPZjLCPrCcNsBAfa0UeBOb.jpg",
+      "/7Lgq3TVcwGN5UneDCWzohGeb3F9.jpg",
+      "/yrl9kDOBv0PYcvjglQBXd6rUhFS.jpg",
+      "/flETfK4t7o10Ywjn3ZeYNhXkYnv.jpg",
+      "/ebbfM6qRFlgHFHvHdBTJ6RfcxfG.jpg",
+      "/tDrfYPKni24MoIlaigWXVlgAVLL.jpg",
+      "/qykzVdGl01ujhWTAJE7Qvh9prSS.jpg",
+      "/gccRRaAv4FMjjuS43eAmoDYKcYB.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1645,
+        "title": "杀戮时刻",
+        "poster_path": "/1jj7mmPfcI3eSC4XAPAhqBPiPC1.jpg",
+        "vote_average": 7.394
+      },
+      {
+        "tmdb_id": 1711,
+        "title": "霹雳轰天雷",
+        "poster_path": "/9Ml1UUzLvoB5BjDvwFyMVvdstiH.jpg",
+        "vote_average": 5.417
+      },
+      {
+        "tmdb_id": 263776,
+        "title": "梅格雷在皮嘉尔",
+        "poster_path": "/cbAjSk6ZqVWm72rOoFZejqPA3j8.jpg",
+        "vote_average": 6.875
+      },
+      {
+        "tmdb_id": 1480,
+        "title": "历劫佳人",
+        "poster_path": "/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg",
+        "vote_average": 7.74
+      },
+      {
+        "tmdb_id": 1485,
+        "title": "找到卡特",
+        "poster_path": "/3AytAYzJuPmS4Wo8X3jcsaN4oM3.jpg",
+        "vote_average": 6.963
+      },
+      {
+        "tmdb_id": 1537,
+        "title": "变线人生",
+        "poster_path": "/xaLRlNj740OOnKgArQqiHUaFJa2.jpg",
+        "vote_average": 6.286
+      },
+      {
+        "tmdb_id": 1607,
+        "title": "布朗克斯的故事",
+        "poster_path": "/x4sQLLjQataVD1pGCUfDWVfwYP6.jpg",
+        "vote_average": 7.9
+      },
+      {
+        "tmdb_id": 1613,
+        "title": "51号公式",
+        "poster_path": "/aYlrGirWrRCTU1PF6Svghn1EMAc.jpg",
+        "vote_average": 6.085
+      }
+    ]
   }
 }
