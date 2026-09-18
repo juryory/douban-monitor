@@ -12362,5 +12362,122 @@
         "vote_average": 6.085
       }
     ]
+  },
+  "35725869": {
+    "tmdb_id": 1173076,
+    "tmdb_type": "movie",
+    "original_title": "年会不能停！",
+    "overview": "集团裁员风波之下，底层钳工胡建林却阴差阳错被调入总部，从一名普通工人摇身一变成为“大厂”白领。发现这场调动其实是一场乌龙后，人事经理马杰为了保住饭碗，只能想方设法替他隐瞒真相。没想到与总部职场规则格格不入的胡建林，不仅闹出一连串笑话，反而凭着朴实直接的处事方式一路升职。随着集团裁员不断推进，这场荒唐的“错调”背后也逐渐浮现出更大的问题，胡建林和马杰的职场命运由此发生意想不到的变化……",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ],
+    "runtime": 117,
+    "release_date": "2023-12-29",
+    "backdrop_path": "/f4OCzvS3HvisHEkxq5596jg21UJ.jpg",
+    "poster_path": "/nhsi6kfqwlfAdzaeZOocnUqMlH2.jpg",
+    "countries": [
+      "China"
+    ],
+    "director": "董润年",
+    "cast": [
+      {
+        "name": "董成鹏",
+        "character": "Hu Jianlin",
+        "profile_path": "/w2d1MkMXUvtdCFwCeCT7Lxdo6NA.jpg"
+      },
+      {
+        "name": "白客",
+        "character": "Ma Jie",
+        "profile_path": "/jzR0XXpzWDoOCA7gVuuX6GjkEeD.jpg"
+      },
+      {
+        "name": "庄达菲",
+        "character": "Pan Yiran",
+        "profile_path": "/fDAPC5xUqxMhEowcsObB8z5YsBX.jpg"
+      },
+      {
+        "name": "王迅",
+        "character": "Zhuang Zhengzheng",
+        "profile_path": "/gYT2J4xayWd8yaAqG5oGPDfu8ut.jpg"
+      },
+      {
+        "name": "孙艺洲",
+        "character": "Peter",
+        "profile_path": "/7LrjgcfjklPW6AyC4sxaNx6z089.jpg"
+      },
+      {
+        "name": "李乃文",
+        "character": "Xu Yunfeng",
+        "profile_path": "/wiLgtAy6XOoSz79BxFX9vX4GRiJ.jpg"
+      },
+      {
+        "name": "欧阳奋强",
+        "character": "Chairman Hu",
+        "profile_path": "/yaQgd1L5KeYN01V18hMYaLaJqqZ.jpg"
+      },
+      {
+        "name": "李飞",
+        "character": "Department Head",
+        "profile_path": "/rG3QJSnFhZ4QK2362waXPhOhadp.jpg"
+      }
+    ],
+    "stills": [
+      "/7ttADfhS0zpmcEG38peQm3csBse.jpg",
+      "/f4OCzvS3HvisHEkxq5596jg21UJ.jpg",
+      "/7FACQxA21D8gaxEbJbNrcjgJeQY.jpg",
+      "/igYkVRrhBBJVbkM7GsNsJLug8Kp.jpg",
+      "/gvwt436GG1IB2LBrEu1wuN7jTRv.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1585179,
+        "title": "Este Does Not Make A Movie",
+        "poster_path": "/clnnB5elQFlSWvZmm3gPLsxejzf.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 9582,
+        "title": "新郎上错床",
+        "poster_path": "/wWiPuP1wMW32pjX8Q9TEj69TxWI.jpg",
+        "vote_average": 5.929
+      },
+      {
+        "tmdb_id": 1578017,
+        "title": "A Festa Surpresa",
+        "poster_path": "/dFyq8yha4TOWppNYdN4SYSaBPEY.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 9101,
+        "title": "潜水艇老爷子",
+        "poster_path": "/brleKcHsirTw7lFqcgUMOfgL2nl.jpg",
+        "vote_average": 6.405
+      },
+      {
+        "tmdb_id": 9043,
+        "title": "斯通家族",
+        "poster_path": "/nlqw53HmTP7o3b2NDttYNOtsK4V.jpg",
+        "vote_average": 6.3
+      },
+      {
+        "tmdb_id": 1204080,
+        "title": "大四喜",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1819,
+        "title": "同居三人行",
+        "poster_path": "/2VvjXd5g4T0tAl8UQvsyWmLzZb1.jpg",
+        "vote_average": 5.619
+      },
+      {
+        "tmdb_id": 1225456,
+        "title": "得運一條龍",
+        "poster_path": "",
+        "vote_average": 0
+      }
+    ]
   }
 }
