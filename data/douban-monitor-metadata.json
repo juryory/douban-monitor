@@ -12479,5 +12479,120 @@
         "vote_average": 0
       }
     ]
+  },
+  "37322586": {
+    "tmdb_id": 1303034,
+    "tmdb_type": "movie",
+    "original_title": "عيد ميلاد سعيد",
+    "overview": "八岁的小女孩托哈在开罗一个富裕家庭当童工女仆，并与雇主的女儿内莉建立了特殊的联系。从未庆祝过自己生日的托哈下定决心要为内莉举办一场完美的生日派对，她暗自希望借此体验到自己从未感受过的快乐。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 91,
+    "release_date": "2025-09-17",
+    "backdrop_path": "/A0qsoBy3S4SzmPOVv6AwpIMLxdq.jpg",
+    "poster_path": "/t4g9u7Fbx5ttPJmXmrqDQ7bSidr.jpg",
+    "countries": [
+      "Egypt"
+    ],
+    "director": "Sarah Goher",
+    "cast": [
+      {
+        "name": "نيللى كريم",
+        "character": "Laila",
+        "profile_path": "/6URqCTsDW1bPTCRGfyIKUtavDJY.jpg"
+      },
+      {
+        "name": "Doha Ramadan",
+        "character": "Toha",
+        "profile_path": ""
+      },
+      {
+        "name": "شريف سلامة",
+        "character": "Asser",
+        "profile_path": "/1KK2HlLD8m7B0qhOb7OJmvUzGCl.jpg"
+      },
+      {
+        "name": "حنان مطاوع",
+        "character": "Nadia",
+        "profile_path": "/3Nl6UYi2fgswbZDL4B5NZEXRPyM.jpg"
+      },
+      {
+        "name": "حنان يوسف",
+        "character": "Grandmother",
+        "profile_path": "/3VwLYLFNDDLI26lWrxWEt5FXZfD.jpg"
+      },
+      {
+        "name": "Aly Sobhy",
+        "character": "Toktok Kidnapper",
+        "profile_path": "/rdfCcZOwbfA1tgOilGfzfelBtHv.jpg"
+      },
+      {
+        "name": "جهاد حسام الدين",
+        "character": "Clothing Store Seller",
+        "profile_path": "/rZiDUJHugPQBIlB6QL0YdW1vztD.jpg"
+      },
+      {
+        "name": "Hazem Ehab",
+        "character": "Cake Shop Cashier",
+        "profile_path": "/pQerOJHnJeaDklPJgerpWiSAnl1.jpg"
+      }
+    ],
+    "stills": [
+      "/A0qsoBy3S4SzmPOVv6AwpIMLxdq.jpg",
+      "/zy1hR8YhkJhNzUuQJTYkibSjFKu.jpg",
+      "/scz4nPjpH3hhg8zcifoDo319Dab.jpg",
+      "/fy9IKWqeQ6BLnjs9ABt04WqQyRV.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 127373,
+        "title": "梅奇知道什么",
+        "poster_path": "/8s711b6YndCTdCGhQtNbuaiVzZI.jpg",
+        "vote_average": 7.118
+      },
+      {
+        "tmdb_id": 29989,
+        "title": "困肤",
+        "poster_path": "/lRKQ0CXJF1cIO1kc2XqdWptbaAX.jpg",
+        "vote_average": 6.4
+      },
+      {
+        "tmdb_id": 339145,
+        "title": "书写人生",
+        "poster_path": "/zVvOHOz5848dZ5x7mGqxBWzsPmS.jpg",
+        "vote_average": 5.827
+      },
+      {
+        "tmdb_id": 1212271,
+        "title": "了不起的埃莉诺",
+        "poster_path": "/nmbRP0idh3OvwBOJgjWz4RyZyHL.jpg",
+        "vote_average": 6.876
+      },
+      {
+        "tmdb_id": 75889,
+        "title": "卡罗尔街的房子",
+        "poster_path": "/kqYP8ZWYTObqzrGEDafUSfEQyFg.jpg",
+        "vote_average": 5.892
+      },
+      {
+        "tmdb_id": 113294,
+        "title": "女飞人",
+        "poster_path": "/wrsIUs4esWv3oncNpRI4ERon4bF.jpg",
+        "vote_average": 6.039
+      },
+      {
+        "tmdb_id": 24747,
+        "title": "鲍比・琼斯：天才一击",
+        "poster_path": "/wzbV4jsCWZqOEAmyjjGemLNZbK7.jpg",
+        "vote_average": 5.888
+      },
+      {
+        "tmdb_id": 565341,
+        "title": "心琴调音师",
+        "poster_path": "/dXkv8lkX9gdJyUxxrulJ2PWzidI.jpg",
+        "vote_average": 5.8
+      }
+    ]
   }
 }
