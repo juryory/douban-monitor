@@ -12717,5 +12717,128 @@
         "vote_average": 7.93
       }
     ]
+  },
+  "26100958": {
+    "tmdb_id": 299534,
+    "tmdb_type": "movie",
+    "original_title": "Avengers: Endgame",
+    "overview": "灭霸集齐六颗无限宝石后的一声响指，让宇宙中半数生命灰飞烟灭。幸存的复仇者们几近绝望，即使找到灭霸，也发现无限宝石已经被毁，希望似乎彻底破灭。五年后，迷失在量子领域的蚁人意外回到现实世界，并带来了一个可能逆转一切的办法。托尼·斯塔克、美国队长等幸存的英雄再度集结，尝试穿越不同的时间节点寻找过去的无限宝石。然而在行动过程中，过去的灭霸也逐渐察觉了他们的计划。为了挽回失去的一切，复仇者们不得不再次面对一场决定整个宇宙命运的终极挑战……",
+    "genres": [
+      "冒险",
+      "科幻",
+      "动作"
+    ],
+    "runtime": 181,
+    "release_date": "2019-04-24",
+    "backdrop_path": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+    "poster_path": "/wXyZYO6BKDh8Evf80DF80VzKcz3.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "乔·罗素",
+    "cast": [
+      {
+        "name": "小罗伯特·唐尼",
+        "character": "Tony Stark / Iron Man",
+        "profile_path": "/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+      },
+      {
+        "name": "克里斯·埃文斯",
+        "character": "Steve Rogers / Captain America",
+        "profile_path": "/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+      },
+      {
+        "name": "马克·鲁法洛",
+        "character": "Bruce Banner / Hulk",
+        "profile_path": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+      },
+      {
+        "name": "克里斯·海姆斯沃斯",
+        "character": "Thor",
+        "profile_path": "/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+      },
+      {
+        "name": "斯嘉丽·约翰逊",
+        "character": "Natasha Romanoff / Black Widow",
+        "profile_path": "/tgxYh3jMs5bY2Ub4d2dcp9iaz1R.jpg"
+      },
+      {
+        "name": "杰瑞米·雷纳",
+        "character": "Clint Barton / Hawkeye",
+        "profile_path": "/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg"
+      },
+      {
+        "name": "乔什·布洛林",
+        "character": "Thanos",
+        "profile_path": "/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+      },
+      {
+        "name": "唐·钱德尔",
+        "character": "James Rhodes / War Machine",
+        "profile_path": "/umhTmcVF26qZKEpSfG1ZNpcbs9D.jpg"
+      }
+    ],
+    "stills": [
+      "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+      "/9wXPKruA6bWYk2co5ix6fH59Qr8.jpg",
+      "/orjiB3oUIsyz60hoEqkiGpy5CeO.jpg",
+      "/91iy9F1JOG1dvM6M6JNYgvScZpK.jpg",
+      "/5NtF6XT0NGqzFCc3hSZ7x0Q5EoT.jpg",
+      "/dVSMKPEaiwujXE7kQkvixPLieHR.jpg",
+      "/2xfV5Zdq4kCsFVReRXJKnJaUFCD.jpg",
+      "/eGCKggBoaadtSJ807iZzurLpNq9.jpg",
+      "/eFzIlCERjyrp2z2YpZo8yaETGWx.jpg",
+      "/bYU6qq8pXGAodkfTa2SjmrjlZDy.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 12129,
+        "title": "金龟车大闹南美洲",
+        "poster_path": "/7cBOYLDhHMA351ndLthSxBCwO5N.jpg",
+        "vote_average": 5.387
+      },
+      {
+        "tmdb_id": 12140,
+        "title": "攻壳机动队2：无罪",
+        "poster_path": "/jtWgvH1SqvaHtwRwOWnmIvpYOsV.jpg",
+        "vote_average": 7.353
+      },
+      {
+        "tmdb_id": 1216567,
+        "title": "Rafadan Tayfa: Hayrimatör",
+        "poster_path": "/s8hRMxD82h5ZV5WGprU6ZcK3JFB.jpg",
+        "vote_average": 3.0
+      },
+      {
+        "tmdb_id": 11795,
+        "title": "强殖装甲凯普：暗黑英雄",
+        "poster_path": "/2vbtLS0rdMty6SA1MOCUIqhfWbm.jpg",
+        "vote_average": 5.7
+      },
+      {
+        "tmdb_id": 11814,
+        "title": "摩登保姆",
+        "poster_path": "/xUCDqBGj5j6qlhmbQj9XiFM3Etp.jpg",
+        "vote_average": 6.535
+      },
+      {
+        "tmdb_id": 11817,
+        "title": "防弹武僧",
+        "poster_path": "/lkuo599Ec4Ul0hPnM0UwRQYICKY.jpg",
+        "vote_average": 5.517
+      },
+      {
+        "tmdb_id": 11827,
+        "title": "宇宙奇趣录",
+        "poster_path": "/atUtWrDlLzT1yeVK2EoYtvbS963.jpg",
+        "vote_average": 6.536
+      },
+      {
+        "tmdb_id": 11850,
+        "title": "人体异形",
+        "poster_path": "/skS02wdeH2C0nrbCQP3qKwJdZtZ.jpg",
+        "vote_average": 7.222
+      }
+    ]
   }
 }
