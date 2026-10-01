@@ -12840,5 +12840,90 @@
         "vote_average": 7.222
       }
     ]
+  },
+  "37218278": {
+    "tmdb_id": 283319,
+    "tmdb_type": "tv",
+    "original_title": "Marble Hall Murders",
+    "overview": "改编自安东尼·霍洛维茨的同名小说，也是苏珊·莱兰系列的第三部、最终篇。编辑苏珊·莱兰受邀参与阿提克斯·潘德系列续作的创作，却意外卷入另一宗真实谋杀案，并成为嫌疑人。与此同时，小说中的侦探阿提克斯·潘德前往科孚岛，调查玛格丽特·查尔方特夫人的谋杀案。",
+    "genres": [
+      "悬疑",
+      "犯罪"
+    ],
+    "runtime": null,
+    "release_date": "2026-09-06",
+    "backdrop_path": "/woa9xtYfw1dib4JLnvQdLSZK0D2.jpg",
+    "poster_path": "/7BcPfx9b4MhBFxGxZ4WJWnL0oBc.jpg",
+    "countries": [
+      "GB"
+    ],
+    "director": "Rebecca Gatward",
+    "cast": [
+      {
+        "name": "莱丝利·曼维尔",
+        "character": "Susan Ryeland",
+        "profile_path": "/tioPlSoypjdME3oMu3g7XmgIIKS.jpg"
+      },
+      {
+        "name": "蒂姆·麦克穆伦",
+        "character": "Atticus Pünd",
+        "profile_path": "/7RaL5N5riQlgdjEvgK4hWJie4mc.jpg"
+      }
+    ],
+    "stills": [
+      "/nAsDtAzE9KvOqEo6Kb9M9DsyeDN.jpg",
+      "/woa9xtYfw1dib4JLnvQdLSZK0D2.jpg",
+      "/xGE87xOizlVi8Ux4nChDBswaiBi.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 240445,
+        "title": "朝雪录",
+        "poster_path": "/u2eP0EswokvB2qZnU6Oy1Jz1Uva.jpg",
+        "vote_average": 8.9
+      },
+      {
+        "tmdb_id": 92749,
+        "title": "月光骑士",
+        "poster_path": "/j1zZuylv2XYBSSROWOMiyIclCJl.jpg",
+        "vote_average": 7.636
+      },
+      {
+        "tmdb_id": 125816,
+        "title": "爱丽丝的失语花",
+        "poster_path": "/sNeGAamuke1a2I4ndcaE0bnukh4.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 240702,
+        "title": "Wild Crime: Blood Mountain",
+        "poster_path": "/f4tSKk0bslRaaE2dhbLRW8cQ96A.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 29246,
+        "title": "Resort to Murder",
+        "poster_path": "",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 240740,
+        "title": "首席女法医",
+        "poster_path": "/ihbtGf1CEIJkUc5oJHsmVQBc1sB.jpg",
+        "vote_average": 6.47
+      },
+      {
+        "tmdb_id": 29055,
+        "title": "The View from Daniel Pike",
+        "poster_path": "/x9Isox73386j4LuL83wMwQq8jPl.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 125949,
+        "title": "城市的主宰",
+        "poster_path": "/qNOYmU6JYMeu2I0xOX9pgCBOBXi.jpg",
+        "vote_average": 7.2
+      }
+    ]
   }
 }
