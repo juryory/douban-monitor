@@ -12925,5 +12925,120 @@
         "vote_average": 7.2
       }
     ]
+  },
+  "36689816": {
+    "tmdb_id": 313346,
+    "tmdb_type": "tv",
+    "original_title": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。 ～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～",
+    "overview": "强化赋予魔术师雷恩，某天突然被公会流放。\n\n　　但他非但没有绝望，反而觉得“现在我什么都能做了！”，于是收回了之前赋予在公会成员装备上的大量强化点数，作为冒险者踏上了新的人生道路。\n\n　　聚集在他身边的，有同伴被杀尽而封闭内心的天才冒险者、被夺走家人的战士、被作为杀人机器培养长大的暗杀者——全都是些背负着无法轻易抹去创伤的人。\n\n　　即便如此，雷恩也毫不否定她们的过去和伤痛，坦率而开朗地接纳了她们。\n\n　　故事的舞台，是一个连乌兹冲锋枪、弹珠机甚至黑道都存在的另类奇幻世界。\n\n　　然而在这个世界里，越是依赖便利的科学技术，魔力就会越低，冒险者也会变得越弱。\n\n　　拥有智慧的凶恶怪物横行霸道，在地下社会，法外狂徒们赤裸裸地展现出欲望与野心，各种阴谋与策略交织。\n\n　　在这个理想与正义被轻易践踏的世界中，冒险者们仅以自己的魔力和信念为武器奋战到底。\n\n　　这是一个失去归宿的人们，自己去抓住生存方式的故事。\n\n　　雷恩和同伴们破天荒且随心所欲的第二人生，现在开始了——！！",
+    "genres": [
+      "动画",
+      "喜剧",
+      "动作冒险",
+      "Sci-Fi & Fantasy"
+    ],
+    "runtime": null,
+    "release_date": "2026-10-07",
+    "backdrop_path": "/l1ypuYOFqNMNRm802JBP3hxozhc.jpg",
+    "poster_path": "/d2twigOlajyMBmqjZY0z0XCBwGC.jpg",
+    "countries": [
+      "JP"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "山下大辉",
+        "character": "Rein Garland (voice)",
+        "profile_path": "/rQNdJdZewk7VGP16ZNbpfJ9ZeMd.jpg"
+      },
+      {
+        "name": "琳恩",
+        "character": "Lily Flambert (voice)",
+        "profile_path": "/eJ2NqgzpnzNbT6Nt9EpDfzqNeZM.jpg"
+      },
+      {
+        "name": "青山吉能",
+        "character": "Margaret Ells (voice)",
+        "profile_path": "/yPOprcT7tPKR3p79RMYtogTEXGr.jpg"
+      },
+      {
+        "name": "富田美忧",
+        "character": "Mirabelle (voice)",
+        "profile_path": "/rSR17l4HdchLkhpRuAZbGbXNmUS.jpg"
+      },
+      {
+        "name": "潘惠美",
+        "character": "Elsie Zra (voice)",
+        "profile_path": "/cwnwrPg1YvB19TbfouC4ShGPmbQ.jpg"
+      },
+      {
+        "name": "小原好美",
+        "character": "Nina (voice)",
+        "profile_path": "/3wjTzpJpBiTkLexdMmo9a3wfgRT.jpg"
+      },
+      {
+        "name": "冈本信彦",
+        "character": "Half (voice)",
+        "profile_path": "/7s1K2yQVF5iIWILaOfG7QrMZkXA.jpg"
+      },
+      {
+        "name": "古川慎",
+        "character": "Cornelius (voice)",
+        "profile_path": "/inLmBZhrqXeE9wlViyK28ocKJSw.jpg"
+      }
+    ],
+    "stills": [
+      "/l1ypuYOFqNMNRm802JBP3hxozhc.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 207840,
+        "title": "后宫露营！",
+        "poster_path": "/pPqoSd6IQFRC1PssHLlK9500iCR.jpg",
+        "vote_average": 7.1
+      },
+      {
+        "tmdb_id": 125245,
+        "title": "宫西达也剧场 你看起来很好吃",
+        "poster_path": "/LReUradYeE50U23fRaHwYrk61E.jpg",
+        "vote_average": 2.5
+      },
+      {
+        "tmdb_id": 306721,
+        "title": "名侦探光之美少女！",
+        "poster_path": "/zuPQ9R5x17EM6xEA37TLRkL2BGD.jpg",
+        "vote_average": 7.286
+      },
+      {
+        "tmdb_id": 306733,
+        "title": "キューティーハニー BELOVED ENEMY",
+        "poster_path": "/rFwTJ9gSxLI4Nxorcq5Ie8ymp3n.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 125338,
+        "title": "战斗之魂Brave",
+        "poster_path": "/xcWDPiOSa6XiSC159HJauQUiDci.jpg",
+        "vote_average": 8.8
+      },
+      {
+        "tmdb_id": 28511,
+        "title": "魔侦探洛基 RAGNAROK",
+        "poster_path": "/2GeZ9QrjySwQYG6StjCuC6bTjGl.jpg",
+        "vote_average": 6.6
+      },
+      {
+        "tmdb_id": 207937,
+        "title": "奥特B",
+        "poster_path": "/d99Tmt3YuJHWv95akuNQfkBhPKG.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 207784,
+        "title": "迷宫饭",
+        "poster_path": "/xBQK95axIdaOmfsJE7PM5bnioym.jpg",
+        "vote_average": 8.377
+      }
+    ]
   }
 }
