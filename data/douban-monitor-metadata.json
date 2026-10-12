@@ -13040,5 +13040,126 @@
         "vote_average": 8.377
       }
     ]
+  },
+  "36328210": {
+    "tmdb_id": 1103621,
+    "tmdb_type": "movie",
+    "original_title": "หลานม่า",
+    "overview": "出身泰国华人家庭的阿安大学辍学后一直没有稳定工作，平日做着游戏直播。一次，他看到堂妹阿梅因悉心照顾病重的爷爷而继承房产，便动起了效仿她的念头。恰逢姥姥被确诊为晚期癌症，阿安索性搬去陪伴照料，希望借此成为最受宠爱的外孙，最终获得姥姥留下的遗产。然而，精明的姥姥并没有那么容易被讨好，两个舅舅也各自有着自己的盘算。原本把照顾姥姥当成一条“致富捷径”的阿安，在陪她买菜、卖粥、看病和共同生活的日子里，逐渐开始真正走进这个老人以及整个家庭的生活……",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 127,
+    "release_date": "2024-04-04",
+    "backdrop_path": "/6Ypt0zspYChnZM6JWVOirbUaBx3.jpg",
+    "poster_path": "/leZ8uhkASvEoXv0KOw5XbhbVQhV.jpg",
+    "countries": [
+      "Thailand"
+    ],
+    "director": "帕特·波尼蒂帕特",
+    "cast": [
+      {
+        "name": "普提蓬·阿萨拉塔纳功",
+        "character": "M",
+        "profile_path": "/nZfBA7yWpRZk5PUDxa5QGA6lxvF.jpg"
+      },
+      {
+        "name": "乌莎·西姆库姆",
+        "character": "Amah",
+        "profile_path": "/dJjJeB3lY3lHqtliLyXFwLvCOwR.jpg"
+      },
+      {
+        "name": "三亚·库纳康",
+        "character": "Kiang",
+        "profile_path": "/3DQGTDFdAvWMf8XTp8GsOG2VNR1.jpg"
+      },
+      {
+        "name": "莎琳雷特·托马斯",
+        "character": "Sew",
+        "profile_path": "/jLASvduuxm0sFhaagMv6NCGYH8Q.jpg"
+      },
+      {
+        "name": "邦沙敦·宗威拉克",
+        "character": "Soei",
+        "profile_path": "/yNatemxogO9JJ8pFXLLMMbBZxGE.jpg"
+      },
+      {
+        "name": "彤达婉·奔提维此弓",
+        "character": "Mui",
+        "profile_path": "/6ZFM8xIjtSCGoqGL6bme1GNQwzv.jpg"
+      },
+      {
+        "name": "当蓬·欧阿披叻",
+        "character": "Pinn",
+        "profile_path": "/qEuqrWMgDOOr7ePtbMfzIB1HnaJ.jpg"
+      },
+      {
+        "name": "西玛瓦理·塔利吉",
+        "character": "Rainbow",
+        "profile_path": "/3iMx1UZ8U8ChbT8HUhapa3eISdL.jpg"
+      }
+    ],
+    "stills": [
+      "/6Ypt0zspYChnZM6JWVOirbUaBx3.jpg",
+      "/3kvS6Ws5usxSk1wIbKZ7YPug2V2.jpg",
+      "/jtSCugyOC4gtKqVXK3WaaxRNzqZ.jpg",
+      "/7kVdeSbPWaMmLOusn7uYTSNMmLH.jpg",
+      "/anhm4mgPsHwpXTJ5DOVMyEMSpW3.jpg",
+      "/k6tpQCQfBHRhzfUhp9Sb51SUikK.jpg",
+      "/5h1HnMwLcqa444F318R0C467yUv.jpg",
+      "/wGcDruW2jruhA2BoS6JUPOuUgBK.jpg",
+      "/5u4coPItsX7mRuPpNFqmxemCN6S.jpg",
+      "/qNWDm3riORq6WAGLJw3gJ8PJzn9.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 656968,
+        "title": "圣诞颂歌",
+        "poster_path": "/Aml2ZwT2Om8o0uLEx8w7jQF5Jzu.jpg",
+        "vote_average": 7.2
+      },
+      {
+        "tmdb_id": 1434327,
+        "title": "Gisteren is Verdwenen",
+        "poster_path": "/3ImzrLqhFj2bDQm1jUryc5LgJfL.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 26899,
+        "title": "马奇男孩",
+        "poster_path": "/daxDdN3vBBqx8KuOXNHBtu9QcbQ.jpg",
+        "vote_average": 6.6
+      },
+      {
+        "tmdb_id": 285346,
+        "title": "Mother's Day",
+        "poster_path": "/vR3Q5vSIjZdmk6IU2utKT77wdVn.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 1621470,
+        "title": "A Mão Direita",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1434534,
+        "title": "Sugar Dumplin",
+        "poster_path": "/esf2y4ycOEK2c6vhtKmTnlBPawr.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 27052,
+        "title": "军官与男孩",
+        "poster_path": "/nn74q6puxUJmU2jdUWc7n9cL6Xr.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 285709,
+        "title": "Dorsvloer vol confetti",
+        "poster_path": "/fnbjWm7DBPgFcWyJZyLvPAXeh0G.jpg",
+        "vote_average": 6.3
+      }
+    ]
   }
 }
