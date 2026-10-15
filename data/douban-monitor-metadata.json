@@ -13161,5 +13161,223 @@
         "vote_average": 6.3
       }
     ]
+  },
+  "30330264": {
+    "tmdb_id": 543084,
+    "tmdb_type": "movie",
+    "original_title": "The Biggest Little Farm",
+    "overview": "只为了坚持对爱狗的承诺，约翰与茉莉这对疯狂夫妻索性来去乡下开农场！本片历时十年追踪，跟着这两位疯狂的梦想家和他们的爱狗，远赴乡间打造出与自然和谐共存，物种多样的开心农场。他们种植了上万棵果树，两百种作物，并畜养各种动物好朋友，包括一只令人难忘的猪妈妈艾玛，和她的公鸡男友油头。当农场的生态系统被重新唤醒时，他们心目中的完美世界，开始出现一连串令人难以预料的疯狂转变！",
+    "genres": [
+      "纪录"
+    ],
+    "runtime": 91,
+    "release_date": "2019-06-05",
+    "backdrop_path": "/dvWrNGm9c4cPOg43jEF4blAZX3V.jpg",
+    "poster_path": "/gxlzDKL5z2Jkwl7V7AE2MRTLpg7.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "John Chester",
+    "cast": [
+      {
+        "name": "John Chester",
+        "character": "Self - Narrator",
+        "profile_path": "/dtMa1nJicIom7dhVnSoDB7O1LSp.jpg"
+      },
+      {
+        "name": "Molly Chester",
+        "character": "Self",
+        "profile_path": ""
+      },
+      {
+        "name": "Beaudie Chester",
+        "character": "Self",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/dvWrNGm9c4cPOg43jEF4blAZX3V.jpg",
+      "/nwJfPmJGLEzTkMm67hjU2haDDVL.jpg",
+      "/7KBnKmESTfuCNmTlsy5e1KraFdX.jpg",
+      "/atX9zcyl65DkseInaOGEMHOoIHt.jpg",
+      "/wmczw2iUBlxWAODAKdr4x63klPL.jpg",
+      "/6mkfiXKIwKMG2fcNd9NoJWh4iru.jpg",
+      "/ytNluQHt7usm3wg07tGNSdx5iNr.jpg",
+      "/pNaj0vAINoVc7dP6Q6kX05HG1Ku.jpg",
+      "/y2PCBFrLh60HLQY9WKWnNk4xNOK.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1031236,
+        "title": "为了爱",
+        "poster_path": "/uGNS4DeuyHQcr4ltztDkj7Fsu0L.jpg",
+        "vote_average": 7.8
+      },
+      {
+        "tmdb_id": 1419324,
+        "title": "Hammer and Cycle",
+        "poster_path": "/fAtTGS6opqt10B0JSR0jVQvs2rX.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 1221890,
+        "title": "Neuschwanstein - Ludwigs Traum, Ludwigs Tragödie",
+        "poster_path": "/jyYbtBRqn011bWN9gMeaCW0iuaT.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 833753,
+        "title": "Child of Nature",
+        "poster_path": "/fQNUtjT7XHcJuH13ajuPvkVXUtn.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 269308,
+        "title": "Bringing Godzilla Down to Size: The Art of Japanese Special Effects",
+        "poster_path": "/qDaQh0cVlgBEB18g4E8D2kJmvis.jpg",
+        "vote_average": 8.5
+      },
+      {
+        "tmdb_id": 1603922,
+        "title": "Die Reise der Schneeeulen",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1419209,
+        "title": "O Que Nos Separa",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1419268,
+        "title": "Don't Call It \"Ghost Town\"",
+        "poster_path": "/Aw1fOGKiHs2cffAR8iCfQcVJsON.jpg",
+        "vote_average": 0
+      }
+    ]
+  },
+  "37235560": {
+    "tmdb_id": 293610,
+    "tmdb_type": "tv",
+    "original_title": "닥터X: 하얀 마피아의 시대",
+    "overview": "一名神秘且出色的外科医生来到一家人人自大、腐败横行的医院，面对强烈的反对，接手看似无法医治的病例。",
+    "genres": [
+      "悬疑",
+      "剧情",
+      "犯罪"
+    ],
+    "runtime": null,
+    "release_date": "2026-10-09",
+    "backdrop_path": "/mDYIV71RL3mkaW8IfSGNthuVB7l.jpg",
+    "poster_path": "/3vdziRiueKXLnyxFjKCQH5mEQ6B.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "片星根",
+    "cast": [
+      {
+        "name": "金智媛",
+        "character": "Gye Su-jeong",
+        "profile_path": "/lX7W1j9kg4jV6XNn5XEE3rKsd3x.jpg"
+      },
+      {
+        "name": "李姃垠",
+        "character": "Jeong Hee-sook",
+        "profile_path": "/4r3K47UpSmzZ5t9cyTRRqRl9rdz.jpg"
+      },
+      {
+        "name": "孙贤周",
+        "character": "Bu Seung-gwon",
+        "profile_path": "/pOpqydpiDrXvd9ynZEt8GQl6yJD.jpg"
+      },
+      {
+        "name": "김우석",
+        "character": "Park Tae-Kyeong",
+        "profile_path": "/pjuqZJRCw5BgAZf5CtjXNAmOAmd.jpg"
+      },
+      {
+        "name": "李珍熙",
+        "character": "Jo Won-jin",
+        "profile_path": "/ejdN4VmStDyyhi7sN5Nox5VVh5x.jpg"
+      },
+      {
+        "name": "金永敏",
+        "character": "Do Yoon-sik",
+        "profile_path": "/xXbY65ATWU0VGd59Ry16o3mnxps.jpg"
+      },
+      {
+        "name": "李成旭",
+        "character": "Bae Heung-gon",
+        "profile_path": "/erpOUfjadjH2duXd6XWDsa2kNfw.jpg"
+      },
+      {
+        "name": "权胜宇",
+        "character": "Ma Seong-gyoo",
+        "profile_path": "/9XwjdLbetDegQdolJA91Wykkqdy.jpg"
+      }
+    ],
+    "stills": [
+      "/mDYIV71RL3mkaW8IfSGNthuVB7l.jpg",
+      "/f0JkNBCO5WuCI63F0iM0Xs32k9C.jpg",
+      "/k2CSBevTIqKSgBSZ087cLNawunn.jpg",
+      "/gEIYUsH0V2tDUTwnA2NNCw1cD0f.jpg",
+      "/rrnLgjeEhULsQANRveibkLLLUPp.jpg",
+      "/hMEulOCbZtnS7gFFBDuQCpYQs5a.jpg",
+      "/rCFZ9cQQVSa9sAvco2Czcct6aKB.jpg",
+      "/bg0Xo5Afr0nkcZ3JtIjVb2xHwPd.jpg",
+      "/6Jjr2hxM66VpPd06e8zQkX5f5ZE.jpg",
+      "/nsGy3qNQEMUJBG5ybFbhCtql1FX.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 241194,
+        "title": "伟大的礼物",
+        "poster_path": "/58aCpTbKaiTPYD9TVZs4vyxSion.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 308621,
+        "title": "Beat the Reaper",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 333,
+        "title": "大长今",
+        "poster_path": "/bBNBoOQoQe8vJSv2sXq1d2hJgLp.jpg",
+        "vote_average": 8.458
+      },
+      {
+        "tmdb_id": 241315,
+        "title": "泰版窥探",
+        "poster_path": "/9hssm1mSNBKrzk4qLn9NiSa7KWE.jpg",
+        "vote_average": 8.5
+      },
+      {
+        "tmdb_id": 547,
+        "title": "Medical Investigation",
+        "poster_path": "/3bTy80VccV3suS9ywXryGakdG5y.jpg",
+        "vote_average": 6.6
+      },
+      {
+        "tmdb_id": 93464,
+        "title": "爱的警报器",
+        "poster_path": "/ivWj0ZDMdy2Uq4vVVG1lSGpmqXL.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 278145,
+        "title": "那年夏天",
+        "poster_path": "/mJr1diNhJVtUZa5vunoVDmpWwxt.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 278162,
+        "title": "亲爱的占卜师",
+        "poster_path": "/htspB4mxXE7qhe4pZp886Yw2U6E.jpg",
+        "vote_average": 8.4
+      }
+    ]
   }
 }
