@@ -13503,5 +13503,122 @@
         "vote_average": 8.251
       }
     ]
+  },
+  "38375675": {
+    "tmdb_id": 316241,
+    "tmdb_type": "tv",
+    "original_title": "Pls Love รักได้ไหม",
+    "overview": "一个是背负家族期待的豪门继承人，一个是在夜色中努力生活的普通女孩。身份的差距，让她们的靠近从一开始就注定不容易。可当感情悄然发生，现实的目光、家庭的压力与内心的不安，也一步步考验着两人的选择。她们是否能相信彼此，也相信这份爱，值得跨越一切？",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-09-11",
+    "backdrop_path": "/51eUZbANuBk9KBA4V3PALGEGs2k.jpg",
+    "poster_path": "/dKKsFPJlM9BnmT4jFJV6GpZrp7K.jpg",
+    "countries": [
+      "TH"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "Lorena Schuett",
+        "character": "'Peem' Phakinee Traisuvetthiwat",
+        "profile_path": "/s8beLxatnCieCuy8jgDizhfH1OL.jpg"
+      },
+      {
+        "name": "หมิว ณัชชา เตชะมวคลาภิวัฒน์",
+        "character": "'Pan' Parnupsorn Kiatphaisan",
+        "profile_path": "/f5XbXeqIJ8vrpvTkgPZvBzypzhp.jpg"
+      },
+      {
+        "name": "พาทิศ พิสิฐกุล",
+        "character": "Songsak",
+        "profile_path": "/euGvH1vl3h20R7s9konOxd2C9Qf.jpg"
+      },
+      {
+        "name": "ภาสวิชญ์ บูรณนัติ",
+        "character": "Techin",
+        "profile_path": "/wRPtIb1cK0Hli1yWJPkb1g4Vzhr.jpg"
+      },
+      {
+        "name": "เพ็ญเพ็ชร เพ็ญกุล",
+        "character": "'Phak' Phakpoom Traisuvetthiwat",
+        "profile_path": "/fi7QnCFnt7SS2MiqT1QB7QPlYxH.jpg"
+      },
+      {
+        "name": "查塔瑞卡·西缇普容",
+        "character": "Mol",
+        "profile_path": "/6e1Vvn6eRmrAtCoZzsN9DuNJzd8.jpg"
+      },
+      {
+        "name": "Sureeyares Yakares",
+        "character": "Patcha",
+        "profile_path": "/iKnwXJajAMSDbeM45LREYu73UUn.jpg"
+      },
+      {
+        "name": "Singto Sakolrat Puntace",
+        "character": "Pokpong Kiatphaisan",
+        "profile_path": "/6IqfNANWS0SwYjems9xHsXwPQbF.jpg"
+      }
+    ],
+    "stills": [
+      "/51eUZbANuBk9KBA4V3PALGEGs2k.jpg",
+      "/6MKr5HBuCgNQf0wABBpoQVpphQH.jpg",
+      "/j8Yt8qL5qw60Gp3kq26OuUWMWSj.jpg",
+      "/niUk8voDoePA5GAi2ovRIPb593A.jpg",
+      "/n0CpkAG2IqoYh4ZziJKpCoH11xD.jpg",
+      "/fg4G4XfINf075gJOAQPagANaPJg.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 209238,
+        "title": "覆流年",
+        "poster_path": "/332reQCJHAnCqJdMWLO8piSTaRh.jpg",
+        "vote_average": 8.2
+      },
+      {
+        "tmdb_id": 209247,
+        "title": "حيرة",
+        "poster_path": "/wx2aXqqVxOucOD8lcYO7KiuDn9I.jpg",
+        "vote_average": 8.3
+      },
+      {
+        "tmdb_id": 209295,
+        "title": "我才不要和人类恋爱呢",
+        "poster_path": "/eowbCgER7Q0BQUk65oYVu3rPWff.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 209306,
+        "title": "跨过400亿光年来看你",
+        "poster_path": "/iK5v6XrtCmhThz4gi414rCjc0wo.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 126328,
+        "title": "Cabocla",
+        "poster_path": "/bfqmLvopEQ7LpfZbo5qInCVGjqQ.jpg",
+        "vote_average": 9.0
+      },
+      {
+        "tmdb_id": 209325,
+        "title": "Na Umra Ki Seema Ho",
+        "poster_path": "/xxhPMSYOAXUpzhzHbAIjB38GneL.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 209341,
+        "title": "彩虹",
+        "poster_path": "/5qaQ8ZrFTLuDnuJ2J1xyHtTUYjZ.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 126409,
+        "title": "Given 真人版",
+        "poster_path": "/rJpRJvr2U4mhvN6uuHfZI6aXWxn.jpg",
+        "vote_average": 6.5
+      }
+    ]
   }
 }
