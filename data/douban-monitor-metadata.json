@@ -13379,5 +13379,129 @@
         "vote_average": 8.4
       }
     ]
+  },
+  "1780330": {
+    "tmdb_id": 1124,
+    "tmdb_type": "movie",
+    "original_title": "The Prestige",
+    "overview": "改编自克里斯托弗·普瑞斯特的同名小说。19世纪末的伦敦，两位魔术师罗伯特·安吉尔与阿尔弗雷德·伯登因一场意外反目成仇，为争夺魔术界的至高荣誉，他们不断较量，逐渐陷入充满欺骗与危险的对决。",
+    "genres": [
+      "剧情",
+      "悬疑",
+      "科幻"
+    ],
+    "runtime": 130,
+    "release_date": "2006-10-19",
+    "backdrop_path": "/yaExZh6qE2cfyK3o4kAMEq0mkgy.jpg",
+    "poster_path": "/5DMDkeRfgISRqwxgrX9McAYwu6A.jpg",
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "director": "克里斯托弗·诺兰",
+    "cast": [
+      {
+        "name": "休·杰克曼",
+        "character": "Robert Angier",
+        "profile_path": "/4Xujtewxqt6aU0Y81tsS9gkjizk.jpg"
+      },
+      {
+        "name": "克里斯蒂安·贝尔",
+        "character": "Alfred Borden",
+        "profile_path": "/7Pxez9J8fuPd2Mn9kex13YALrCQ.jpg"
+      },
+      {
+        "name": "迈克尔·凯恩",
+        "character": "Cutter",
+        "profile_path": "/bVZRMlpjTAO2pJK6v90buFgVbSW.jpg"
+      },
+      {
+        "name": "派珀·佩拉博",
+        "character": "Julia McCullough",
+        "profile_path": "/5XrzISDEox0KubRDzJU668Oxmxy.jpg"
+      },
+      {
+        "name": "丽贝卡·豪尔",
+        "character": "Sarah",
+        "profile_path": "/coC58ANiDbqRIyle5zEl9QDektf.jpg"
+      },
+      {
+        "name": "斯嘉丽·约翰逊",
+        "character": "Olivia Wenscombe",
+        "profile_path": "/tgxYh3jMs5bY2Ub4d2dcp9iaz1R.jpg"
+      },
+      {
+        "name": "Samantha Mahurin",
+        "character": "Jess",
+        "profile_path": "/sjC2WFVNnDlh5n4O1UCxKALYK42.jpg"
+      },
+      {
+        "name": "大卫·鲍伊",
+        "character": "Tesla",
+        "profile_path": "/8NHhlyuj9CJq7Q5gSCo9rQ6pbf3.jpg"
+      }
+    ],
+    "stills": [
+      "/qc9zR02j2apoEwMdptMYBoAFYUC.jpg",
+      "/yaExZh6qE2cfyK3o4kAMEq0mkgy.jpg",
+      "/z3br1ub7spqGMkxgjgJSdM4DC21.jpg",
+      "/yCnJT53HMXAK87xzPAdjdYhZ3JE.jpg",
+      "/eevtnX3syxLZj4pIber8KsJMDl8.jpg",
+      "/xBDE2d6HM1aBKQRu4IT7SfPD9fs.jpg",
+      "/mfJepkInUbiZ0mFXFhDNz8ko6Zr.jpg",
+      "/imwFaRRUr0XhMCsirB38txGUkes.jpg",
+      "/gUjRFBXoXtMBpxOQNi5CTeg9nat.jpg",
+      "/b6OtwcZbMSdDWRXslGo6iRtRdXz.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 877,
+        "title": "疤面人",
+        "poster_path": "/y4E5oRiHMTFkEB12IIcpbKbKzDW.jpg",
+        "vote_average": 7.391
+      },
+      {
+        "tmdb_id": 880,
+        "title": "安东尼娅家族",
+        "poster_path": "/774YCGVNZUJ5TTAmk80u37SHqUN.jpg",
+        "vote_average": 6.9
+      },
+      {
+        "tmdb_id": 884,
+        "title": "欲望号快车",
+        "poster_path": "/zJNALOccMZ2q2iwB1KXyq7qs80h.jpg",
+        "vote_average": 6.489
+      },
+      {
+        "tmdb_id": 890,
+        "title": "Schlafes Bruder",
+        "poster_path": "/xMnI1UauGsAQxoraCiTGEab6jHZ.jpg",
+        "vote_average": 6.7
+      },
+      {
+        "tmdb_id": 896,
+        "title": "大树之歌",
+        "poster_path": "/nl0jE2e1yGzO1CdbPUjDUCkCDd8.jpg",
+        "vote_average": 8.1
+      },
+      {
+        "tmdb_id": 897,
+        "title": "大河之歌",
+        "poster_path": "/2ZJq2AecJ9TnPaO0gr5yfD2xHWD.jpg",
+        "vote_average": 7.85
+      },
+      {
+        "tmdb_id": 899,
+        "title": "残花泪",
+        "poster_path": "/njwFIUL76zaRmPemnrZVmmTSCjz.jpg",
+        "vote_average": 6.909
+      },
+      {
+        "tmdb_id": 975,
+        "title": "光荣之路",
+        "poster_path": "/5gjopTt4QDUPL6yfzDHKJTdjSRF.jpg",
+        "vote_average": 8.251
+      }
+    ]
   }
 }
