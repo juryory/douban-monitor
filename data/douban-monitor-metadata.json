@@ -13620,5 +13620,116 @@
         "vote_average": 6.5
       }
     ]
+  },
+  "1294438": {
+    "tmdb_id": 797,
+    "tmdb_type": "movie",
+    "original_title": "Persona",
+    "overview": "步入六十年代中期，英格玛·伯格曼早已在银幕上凝结了诸多影史难忘的画面。但凭借这部突破之作，他将视觉诗意推向了全新境界。丽芙·乌曼献出其为伯格曼演绎的首个传奇角色，饰演一位莫名失语的舞台演员；同样令人着迷的比比·安德松则是聒噪的年轻护士，在偏远海岛小屋中照料她。两人在孤寂相处中，经历了一场神秘的精神与情感置换。凭借惊人的表演层次感，以及斯文·尼克维斯特用强烈对比与柔光打造的摄影，这部极具影响力的影片成为一部洞察深刻、如梦似幻的心理学深度之作。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 85,
+    "release_date": "1966-10-18",
+    "backdrop_path": "/amr72SENYz7AM4Hq5WBXxFBJEY6.jpg",
+    "poster_path": "/c3hKeWxUvs2rcvFuXpuW5APi0CC.jpg",
+    "countries": [
+      "Sweden"
+    ],
+    "director": "英格玛·伯格曼",
+    "cast": [
+      {
+        "name": "比比·安德森",
+        "character": "Alma",
+        "profile_path": "/6EGqmWOR3R3jv3IgrEZmCjTAVGv.jpg"
+      },
+      {
+        "name": "丽芙·乌曼",
+        "character": "Elisabet Vogler",
+        "profile_path": "/7IJimLbXIOYpLAS4UaHcNYWRsJe.jpg"
+      },
+      {
+        "name": "玛格丽塔·克罗克",
+        "character": "The Doctor",
+        "profile_path": "/eIfMDQG8oaU2Vt5xbYt4vS6ftja.jpg"
+      },
+      {
+        "name": "甘纳尔·布耶恩施特兰德",
+        "character": "Herr Vogler",
+        "profile_path": "/vy5Y0c1ACGCI6d4rVjmTM6HOqNN.jpg"
+      },
+      {
+        "name": "约根·林德斯特伦",
+        "character": "Elisabet's Son (uncredited)",
+        "profile_path": "/yXsYjc6FvmcHgSJ5Uv4GJBnRBqX.jpg"
+      },
+      {
+        "name": "Thích Quảng Đức",
+        "character": "Self - burning monk (archive footage)",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/amr72SENYz7AM4Hq5WBXxFBJEY6.jpg",
+      "/wnjyGVmSI7idoRsFbSqFh8FdtaQ.jpg",
+      "/boTVQse1JbNt1UBIugQUFmjojyv.jpg",
+      "/t3qilCLgADBaVMTD7VxLlpxzgw7.jpg",
+      "/aRTs5DJW0nGjfHYXCkHdC3WRYIh.jpg",
+      "/sj2aZDetPE8RoOCAm5QJitCNfLr.jpg",
+      "/32gSSQeykkCvmQ3rJ6mt6pht8cz.jpg",
+      "/32YB3OXR036XBi1Dm5i9D0hDM2o.jpg",
+      "/m7U3G8TyUIUsIXVvXrqd2VmVGjC.jpg",
+      "/tL2I6fFO8E1iC8zDDobmQxUH82M.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 11634,
+        "title": "同窗的爱",
+        "poster_path": "/z6FZFPpIqXVdrHUK3T0M7BFYp2J.jpg",
+        "vote_average": 7.072
+      },
+      {
+        "tmdb_id": 11656,
+        "title": "处女泉",
+        "poster_path": "/1vXBXd9bivbwa7lFtSVi9Otjgpd.jpg",
+        "vote_average": 7.8
+      },
+      {
+        "tmdb_id": 11657,
+        "title": "红圈",
+        "poster_path": "/xYlTZABhlGXzNmAxaKtBQLLYD32.jpg",
+        "vote_average": 7.613
+      },
+      {
+        "tmdb_id": 11660,
+        "title": "追随",
+        "poster_path": "/oDhJF7IG9PJ7ZCdCGhY7eLtdqZG.jpg",
+        "vote_average": 7.113
+      },
+      {
+        "tmdb_id": 1615616,
+        "title": "INSANIAM",
+        "poster_path": "/7UyAbC8PmQIYAViwCt2nvOnavT6.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1615664,
+        "title": "A F--in Sunny Day",
+        "poster_path": "/nG8B8iJdBeiVRV7VqWKIIMeYheH.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 463760,
+        "title": "In Sickness and in Health",
+        "poster_path": "/c2ZtQP2gKXNC6dNKh9rMDkfg0og.jpg",
+        "vote_average": 4.0
+      },
+      {
+        "tmdb_id": 11602,
+        "title": "犹在镜中",
+        "poster_path": "/wL9pUhTVNEaZqZinieu6oH9gdY.jpg",
+        "vote_average": 7.8
+      }
+    ]
   }
 }
