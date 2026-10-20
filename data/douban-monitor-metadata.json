@@ -13827,5 +13827,128 @@
         "vote_average": 6.1
       }
     ]
+  },
+  "1292278": {
+    "tmdb_id": 11832,
+    "tmdb_type": "movie",
+    "original_title": "Babettes gæstebud",
+    "overview": "　　本片根据伊萨克·迪纳森的小说改编拍摄而成。19世纪的丹麦，两位已经成年的姊妹伴随着牧师父亲居住在丹麦偏远的村庄。即使在父亲去世以后，她们仍一如既往地继续留在父亲所创建的教会奉献自己。后来，她们收容了一位来自法国的女难民芭贝特，她们及村民的生活就此改变。芭贝特幸运地获得了法国巨额彩金，她为了回报这对好心的姊妹，特别为她们及村民准备了一场丰富的晚餐，并且唤醒了大家心中尘封已久的对美好事物的渴望……\r 　　影片评价\r 　　《芭贝特的盛宴》(Babette's Feast)是一部宛若小人书般精致的电影。画外音始终在讲故事，讲一对姐妹为宗教信仰放弃世俗情感的故事。这场盛宴像一场仅仅历时一夜的爱情，曲终人散后如水月镜花，春梦无痕。不过观众可以了解到两个秘密：其一，芭贝特就是那个大革命前在法国红极一时的，堪称伟大的厨子；其二，为了这场宴会，她花掉了彩票赢来的每一个法郎——换句话说，一场真正的法式盛宴价值一万法郎。\r 　　宗教要达到的目的，那人与人的和谐共处、心灵的满足与安宁，靠着履行苛刻的近乎残酷的宗法条约并未实现，而一顿看起来极其奢侈的饭食却让人们体验到了天堂般的极乐。这样的饭食就不仅仅是饭食了，它更是一种天启，告诉我们无须拒绝享受，只是不要为享受所支配；物质的过度匮乏、生活的极度简陋未必不是一种耻辱，因为它和长久的穷奢极侈一样会蒙蔽人们的心智，孳生抱怨、不睦。这样的饭食当然就不仅仅是饭食了，它就是宗教的灵性和人间的爱幻化成的艺术，生活的艺术。\r 　　享受《芭贝特的盛宴》吧，这部电影本身就是宗教与艺术的完美结合：既冷静克制，又流光溢彩。影片获得1988年奥斯卡最佳外语片奖。　　",
+    "genres": [
+      "剧情",
+      "历史",
+      "喜剧"
+    ],
+    "runtime": 102,
+    "release_date": "1987-08-11",
+    "backdrop_path": "/iFl8eN4vWcMNNozmJk8E7cLgeT9.jpg",
+    "poster_path": "/lHYu6Rxc0zAU3FiKsqCy5SZPRAj.jpg",
+    "countries": [
+      "Denmark"
+    ],
+    "director": "加布里埃尔·阿克塞尔",
+    "cast": [
+      {
+        "name": "斯特凡·奥德朗",
+        "character": "Babette",
+        "profile_path": "/wRuDncFfkDKYWctwJGiqkvXBz3i.jpg"
+      },
+      {
+        "name": "Bodil Kjer",
+        "character": "Filippa",
+        "profile_path": "/pcsl3aVTOvkLMKp8HeeHfzOJik6.jpg"
+      },
+      {
+        "name": "Birgitte Federspiel",
+        "character": "Martine",
+        "profile_path": "/kloY23KHUdqDt83uXTaqDRJUwwH.jpg"
+      },
+      {
+        "name": "Jarl Kulle",
+        "character": "General Lorens Löwenhielm",
+        "profile_path": "/9UJ3Msw0k0fkV5vQiRqG3j4Pfq9.jpg"
+      },
+      {
+        "name": "Jean-Philippe Lafont",
+        "character": "Achille Papin",
+        "profile_path": "/cD2ZEPdR7IwqOFqhaHGFmppRb6k.jpg"
+      },
+      {
+        "name": "比比·安德森",
+        "character": "Svensk hofdame",
+        "profile_path": "/6EGqmWOR3R3jv3IgrEZmCjTAVGv.jpg"
+      },
+      {
+        "name": "Ghita Nørby",
+        "character": "Fortæller (stemme)",
+        "profile_path": "/5tjiG18hPmUOzy2PFnxcq5fkbxh.jpg"
+      },
+      {
+        "name": "Asta Esper Hagen Andersen",
+        "character": "Anna",
+        "profile_path": "/7lC6g1Fd3G3f91PX0isgE9ucM2R.jpg"
+      }
+    ],
+    "stills": [
+      "/iFl8eN4vWcMNNozmJk8E7cLgeT9.jpg",
+      "/sVIDBouynh8ivutO91g96PNQTs4.jpg",
+      "/gGUxCPseBmBnuC8DoptbShEAMbD.jpg",
+      "/syZohexK5RjpQYvDopx4SbBeaou.jpg",
+      "/3DlhBoT0ALVyMDA6OFXDTVEP8zL.jpg",
+      "/7blI3lGcokrp1hqtdCuK9nrdS5w.jpg",
+      "/2OAILALs7EW3eQgZF8AOvxwQ5jL.jpg",
+      "/3VHoVqWQhe8P6j3Fb01KQGykYU1.jpg",
+      "/7GRUXQFshupXavuWcRe6i5L1G5F.jpg",
+      "/hXmVjbxJ3r88ojTOFrpDosUMcsv.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 895,
+        "title": "安德烈·卢布廖夫",
+        "poster_path": "/3aodTV8q8iIRtaw9dxeU8DuKlta.jpg",
+        "vote_average": 7.9
+      },
+      {
+        "tmdb_id": 962,
+        "title": "淘金记",
+        "poster_path": "/goMzQWlEtSmxETuWY3GMTujGD45.jpg",
+        "vote_average": 7.964
+      },
+      {
+        "tmdb_id": 967,
+        "title": "斯巴达克斯",
+        "poster_path": "/lLTkOw0UFRUnsVyF8TAEYKYdCpj.jpg",
+        "vote_average": 7.535
+      },
+      {
+        "tmdb_id": 975,
+        "title": "光荣之路",
+        "poster_path": "/5gjopTt4QDUPL6yfzDHKJTdjSRF.jpg",
+        "vote_average": 8.25
+      },
+      {
+        "tmdb_id": 976,
+        "title": "成功的滋味",
+        "poster_path": "/akzvV8JasNrgEl5iAP9K6zPHGJe.jpg",
+        "vote_average": 7.614
+      },
+      {
+        "tmdb_id": 951,
+        "title": "幼儿园警探",
+        "poster_path": "/bAxsac2udNcLSaEdqjRLrLMc64n.jpg",
+        "vote_average": 6.145
+      },
+      {
+        "tmdb_id": 648,
+        "title": "美女与野兽",
+        "poster_path": "/eDVFP076HkfD2LL29aja6zGh6As.jpg",
+        "vote_average": 7.499
+      },
+      {
+        "tmdb_id": 654,
+        "title": "码头风云",
+        "poster_path": "/d4S8LpbCyFJsh1tGgwGQSJdGzKm.jpg",
+        "vote_average": 7.85
+      }
+    ]
   }
 }
