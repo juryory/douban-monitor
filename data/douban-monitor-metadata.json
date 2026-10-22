@@ -13950,5 +13950,127 @@
         "vote_average": 7.85
       }
     ]
+  },
+  "36137784": {
+    "tmdb_id": 213375,
+    "tmdb_type": "tv",
+    "original_title": "VisionQuest",
+    "overview": "幻视在重启后隐姓埋名，逃避企图把他变成武器的人。为了寻找生命的新意义，他开始与植入体内的AI对话，包括星期五、伊迪丝、贾维斯…甚至恶名昭彰的奥创。他低调的生活被一笔悬赏令终结，迫使他与神秘少年托马斯·谢泼德踏上逃亡之路，而这少年可能是他儿子的化身。在逃避追捕的同时，幻视必须面对自己，抵抗奥创的影响，并揭开年轻同伴的谜团。",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-10-13",
+    "backdrop_path": "/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
+    "poster_path": "/9rWX1tRNd1wIf0XnTjd8GOUoTlH.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "Terry Matalas",
+    "cast": [
+      {
+        "name": "保罗·贝坦尼",
+        "character": "Vision",
+        "profile_path": "/oNrDowF5cRtK5lJJuCAh0KeFizy.jpg"
+      },
+      {
+        "name": "詹姆斯·斯派德",
+        "character": "Ultron",
+        "profile_path": "/3gurW3OgDOD4hcqDfgcqUnoNg34.jpg"
+      },
+      {
+        "name": "Ruaridh Mollica",
+        "character": "Thomas",
+        "profile_path": "/wiSim6nG9TSY4AO8KOwsaaPJ0EH.jpg"
+      },
+      {
+        "name": "Todd Stashwick",
+        "character": "Paladin",
+        "profile_path": "/seKRXV2HMS36ip4SfQq6PLRiLL2.jpg"
+      },
+      {
+        "name": "Lauren Morais",
+        "character": "Lisa Molinari",
+        "profile_path": "/7Eur3EddzlvXTYzKAGkRmo87xcS.jpg"
+      },
+      {
+        "name": "奥拉·布雷迪",
+        "character": "F.R.I.D.A.Y.",
+        "profile_path": "/wjo8xposTE0HenFopy6KELCWoD0.jpg"
+      },
+      {
+        "name": "黛安·摩根",
+        "character": "Handler",
+        "profile_path": "/46Mdcr9ycOaLCKApoj101Cx1c1S.jpg"
+      },
+      {
+        "name": "Polly Frame",
+        "character": "Fiona Guthrie",
+        "profile_path": "/m1u1jCvYeaqbzJijlavj2wKXIK2.jpg"
+      }
+    ],
+    "stills": [
+      "/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
+      "/9Icyh6iwzlXrnhuun4GSVpvmkiz.jpg",
+      "/hzuvw1ypblYg2uJxVgz1dkeIvKd.jpg",
+      "/hWhB2V6HdOAX4UWrI3gwNWYc9WM.jpg",
+      "/hJieOlQ4sFW8FkO0bc3hqy8SCPb.jpg",
+      "/eCIJIJ4ccHGYEQ3NqkwjWDOHZ9p.jpg",
+      "/58v1KFe3rxvHrYM1hLH5ScpwqNR.jpg",
+      "/v50p9hearMiu6BlYfp4O7FACmXl.jpg",
+      "/pirfaMg7IrpyO8z1tt6VPLqvFOH.jpg",
+      "/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 242269,
+        "title": "坡道上的红屋顶",
+        "poster_path": "/pkWtQxB6zbHnncBmitEUi6Rxf66.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 210315,
+        "title": "这里不是好莱坞",
+        "poster_path": "/qnsprYVHgyRxoqFGCo0K4YSVWlA.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 279116,
+        "title": "巴尼·蒙罗之死",
+        "poster_path": "/2ucY5MO4lSpcHzry93aFzSoJ2S6.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 94559,
+        "title": "My Brother Jonathan",
+        "poster_path": "/x90VGDFGlZAIsbUY2HWZVAjBnnK.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 242706,
+        "title": "温良之心",
+        "poster_path": "/iOcNkn7VyEDfhJmB0MZvXv3ZiY6.jpg",
+        "vote_average": 6.872
+      },
+      {
+        "tmdb_id": 279389,
+        "title": "Paris",
+        "poster_path": "/kWI7shqbjZjgSzse4hQz466HX8P.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 29954,
+        "title": "The Man Who Made Husbands Jealous",
+        "poster_path": "/8KuBjqyz7arCdLIl4T4Chw1iDbn.jpg",
+        "vote_average": 3.7
+      },
+      {
+        "tmdb_id": 210674,
+        "title": "风德住宅304号的事因",
+        "poster_path": "/vqxRmmnN9y2zWI5HoSfpLnWfzS.jpg",
+        "vote_average": 6.9
+      }
+    ]
   }
 }
