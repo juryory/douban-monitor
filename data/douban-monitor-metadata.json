@@ -14072,5 +14072,129 @@
         "vote_average": 6.9
       }
     ]
+  },
+  "2973079": {
+    "tmdb_id": 122917,
+    "tmdb_type": "movie",
+    "original_title": "The Hobbit: The Battle of the Five Armies",
+    "overview": "在上一部结尾处，比尔博一行人对巨龙史矛革声称将要重新收复自己的家园，但却不知不觉地被一股强大致命的力量推向世界黑暗的更深处，而巨龙史矛革的重现将自身无尽的愤怒对准了长湖镇的男女老少。索林迷恋自己收回的财富，他牺牲了队友的友谊，却把霍比特人推向了绝望与危险的境地，殊不知有更大的危险在前方等待。劲敌索伦派出了第四军团的半兽人在孤山秘密埋伏袭击，但只有灰袍巫师甘道夫洞悉了这一危险。面对不断高涨的黑暗势力的冲突，矮人、精灵以及人类必须决定是否联合，否则均将会被毁灭。比尔博在五军联合的史诗战中为自己的生命而决斗，而迷失的索林也将面对财富的欲望完成自我救赎。",
+    "genres": [
+      "动作",
+      "冒险",
+      "奇幻"
+    ],
+    "runtime": 164,
+    "release_date": "2014-12-10",
+    "backdrop_path": "/3UbaCMmqOd7mca4Y5DOzY2ZVTyX.jpg",
+    "poster_path": "/9PqcsSn9lI82aRB4vwmTLLFcC5J.jpg",
+    "countries": [
+      "New Zealand",
+      "United States of America"
+    ],
+    "director": "彼得·杰克逊",
+    "cast": [
+      {
+        "name": "伊恩·麦克莱恩",
+        "character": "Gandalf the Grey",
+        "profile_path": "/5cnnnpnJG6TiYUSS7qgJheUZgnv.jpg"
+      },
+      {
+        "name": "马丁·弗瑞曼",
+        "character": "Bilbo Baggins",
+        "profile_path": "/nrO54AzrxiNgCjBUOSz6ebyxDZY.jpg"
+      },
+      {
+        "name": "理查德·阿米蒂奇",
+        "character": "Thorin Oakenshield",
+        "profile_path": "/oNoKjTOUNUiJ01UNQSCQDkt5EHi.jpg"
+      },
+      {
+        "name": "奥兰多·布鲁姆",
+        "character": "Legolas",
+        "profile_path": "/lwQoA0qJTCZ6l2FH6PjmhRQjiaB.jpg"
+      },
+      {
+        "name": "伊万杰琳·莉莉",
+        "character": "Tauriel",
+        "profile_path": "/pJHX2jd7ytre3NQbF9nlyWUqxH3.jpg"
+      },
+      {
+        "name": "卢克·伊万斯",
+        "character": "Bard",
+        "profile_path": "/qUkYJcrDc4M0LHNYASs30luFvw0.jpg"
+      },
+      {
+        "name": "李·佩斯",
+        "character": "King Thranduil",
+        "profile_path": "/eeTc0d2AX1vFYVxZ6Qw7qZpg4Tz.jpg"
+      },
+      {
+        "name": "本尼迪克特·康伯巴奇",
+        "character": "Smaug / Sauron (voice)",
+        "profile_path": "/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg"
+      }
+    ],
+    "stills": [
+      "/3UbaCMmqOd7mca4Y5DOzY2ZVTyX.jpg",
+      "/be7sEuB6XXsClN7JlclB39CH1rv.jpg",
+      "/dOQjJkNr81SQTaxk7grtKcl97XK.jpg",
+      "/zn13a7U9eMTJq8sHthe3bCgsVm4.jpg",
+      "/bVmSXNgH1gpHYTDyF9Q826YwJT5.jpg",
+      "/3SrhyOyqRyrCHcN7GEJiQ4kyIZe.jpg",
+      "/yRFp0dImrDvH3ElZFZzvuLxnHzo.jpg",
+      "/5BbsZOad90TGOSwPOsjuWsX0gTO.jpg",
+      "/m3MGNehBdcM3Ml1PNxX3nRk5j2n.jpg",
+      "/1zVbONJRnBGS7CCq6KstEfnfaKS.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 665,
+        "title": "宾虚",
+        "poster_path": "/7Ofa9ebfNEJyx0mKR5zO201UVSN.jpg",
+        "vote_average": 7.89
+      },
+      {
+        "tmdb_id": 667,
+        "title": "007：雷霆谷",
+        "poster_path": "/ebutL2sxSJbP47TFaYYPjhdEFh4.jpg",
+        "vote_average": 6.588
+      },
+      {
+        "tmdb_id": 668,
+        "title": "007：女王密使",
+        "poster_path": "/kSpdYukU28GXzD4uG51tzUEdYjA.jpg",
+        "vote_average": 6.56
+      },
+      {
+        "tmdb_id": 671,
+        "title": "哈利·波特与魔法石",
+        "poster_path": "/rUcN8fnvb6R8GY1NttAoLyjsRw0.jpg",
+        "vote_average": 7.905
+      },
+      {
+        "tmdb_id": 672,
+        "title": "哈利·波特与密室",
+        "poster_path": "/314kPYq0WQNj7ts7ifSdpgXboTU.jpg",
+        "vote_average": 7.709
+      },
+      {
+        "tmdb_id": 673,
+        "title": "哈利·波特与阿兹卡班的囚徒",
+        "poster_path": "/7FoBy0rAzvbogFy1YYWHXAU7vol.jpg",
+        "vote_average": 8.013
+      },
+      {
+        "tmdb_id": 674,
+        "title": "哈利·波特与火焰杯",
+        "poster_path": "/wJVfG0J3mavCcDar2Jwnba96ohN.jpg",
+        "vote_average": 7.803
+      },
+      {
+        "tmdb_id": 675,
+        "title": "哈利·波特与凤凰社",
+        "poster_path": "/coAHtusuTDE7v1oUgMFS3elRQ4d.jpg",
+        "vote_average": 7.673
+      }
+    ]
   }
 }
