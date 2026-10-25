@@ -14319,5 +14319,126 @@
         "vote_average": 4.6
       }
     ]
+  },
+  "38643086": {
+    "tmdb_id": 1765072,
+    "tmdb_type": "movie",
+    "original_title": "You Can See Everything",
+    "overview": "在被判入狱前的34天，臭名昭著的硅谷创始人伊丽莎白·霍姆斯邀请了一支持怀疑态度的摄制组记录她的一举一动。起初这是一部关于神秘罪犯的私密肖像，却演变成一场持续3年、坠入深渊的迷幻之旅。",
+    "genres": [
+      "纪录"
+    ],
+    "runtime": 174,
+    "release_date": "2026-10-16",
+    "backdrop_path": "/nhIL3O4W9h5V5JbNQm7yjoDk3So.jpg",
+    "poster_path": "/5zaoousDbGy7uM1s2OH4GqR0aQy.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "Nathan Fielder",
+    "cast": [
+      {
+        "name": "Elizabeth Holmes",
+        "character": "Self",
+        "profile_path": "/s7ej8dZ7zncd4nPBrkBUbArnTJl.jpg"
+      },
+      {
+        "name": "Nathan Fielder",
+        "character": "Self",
+        "profile_path": "/x0UOcjml8WnBfnb89QOh0iXM0w0.jpg"
+      },
+      {
+        "name": "Billy Evans",
+        "character": "Self",
+        "profile_path": "/tLOCcMkylvIES7ZKFv6Dks6XmD.jpg"
+      },
+      {
+        "name": "阿曼达·塞弗里德",
+        "character": "Self / Elizabeth Holmes",
+        "profile_path": "/qvfwAfUfKfX4DraCgfn0YriiLO0.jpg"
+      },
+      {
+        "name": "克里斯托弗·阿波特",
+        "character": "Billy Evans",
+        "profile_path": "/bE7zzh60RXydH3p632ZZSmsTlcn.jpg"
+      },
+      {
+        "name": "Lance Oppenheim",
+        "character": "Self",
+        "profile_path": "/h12zgCaZ24imkZlw0nry9T9mjGD.jpg"
+      },
+      {
+        "name": "Christian Rasmus Holmes IV",
+        "character": "Self",
+        "profile_path": ""
+      },
+      {
+        "name": "Noel Anne",
+        "character": "Self",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/nhIL3O4W9h5V5JbNQm7yjoDk3So.jpg",
+      "/fnIcdPVaO4JAzfLhv8OVEqFK6a7.jpg",
+      "/uDONA0SCc1Tanl1lizf6lYNoMmr.jpg",
+      "/sgRg9h6fqCPUVzTKjAap57azga0.jpg",
+      "/flr1irwRWJJuB79u4T2t4bAS6OK.jpg",
+      "/gCfol52f4veLiaSvGYLHw4mIiSG.jpg",
+      "/bO9IW7FLKA3OBstINZVca2yPxKj.jpg",
+      "/hJahNruyGNVD4nyFJpeEodFnpgT.jpg",
+      "/bYW2CSHSc5vpv8V2vKpFZS7BqnB.jpg",
+      "/gsSAPAcHDSQOSIDZVm1alSZpDCv.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 450568,
+        "title": "Chasing Evel: The Robbie Knievel Story",
+        "poster_path": "/cfyLFAIXmIX8m8FYRGnjF1UWfPU.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 454555,
+        "title": "Antonio Gades, la ética de la danza",
+        "poster_path": "/id2pkbdt65TtEHQQsGhA62OCEE9.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 834611,
+        "title": "梅西：最伟大的球员",
+        "poster_path": "/aDQuvKEkithMjWLwmgToTPLFKNA.jpg",
+        "vote_average": 4.5
+      },
+      {
+        "tmdb_id": 1032870,
+        "title": "Теодор Ушев: Невидими Връзки",
+        "poster_path": "/9uXOx39fVZVcn0fOd18qyJyo3uq.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1033007,
+        "title": "Michael Kocáb – rocker versus politik",
+        "poster_path": "/6U5ufrrKBlskEUJEyT7MWKaJrfI.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 834568,
+        "title": "Geraldo José - O Som Sem Barreira",
+        "poster_path": "/7oaEp8gjDeFCryiRdcOTXoDt062.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 454571,
+        "title": "Leonardo da Vinci",
+        "poster_path": "",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 454540,
+        "title": "Dust Radio: A Film About Chris Whitley",
+        "poster_path": "/2BuinUooUTufM4k5jNy5H3KCVlR.jpg",
+        "vote_average": 0
+      }
+    ]
   }
 }
