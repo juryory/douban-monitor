@@ -14196,5 +14196,128 @@
         "vote_average": 7.673
       }
     ]
+  },
+  "37215318": {
+    "tmdb_id": 1422041,
+    "tmdb_type": "movie",
+    "original_title": "La bola negra",
+    "overview": "三个同性恋男子在西班牙历史上1932 年、1937 年和 2017 年三个不同时期的故事。",
+    "genres": [
+      "剧情",
+      "战争"
+    ],
+    "runtime": 155,
+    "release_date": "2026-09-25",
+    "backdrop_path": "/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
+    "poster_path": "/iog65w1sTbRNtv3K2nuUjlRpuAR.jpg",
+    "countries": [
+      "Spain",
+      "France"
+    ],
+    "director": "Javier Ambrossi",
+    "cast": [
+      {
+        "name": "Guitarricadelafuente",
+        "character": "Sebastián",
+        "profile_path": "/A2Jfhf7lRBmMlQPGFZwEddT8MdS.jpg"
+      },
+      {
+        "name": "米格尔·贝尔纳尔德阿尤",
+        "character": "Rafael",
+        "profile_path": "/aPyvMBnGaTeWkMStdHvdiiWxpBQ.jpg"
+      },
+      {
+        "name": "Carlos González",
+        "character": "Alberto",
+        "profile_path": "/bPag2U3ei3Wb2KfSXEQGDY5a8pi.jpg"
+      },
+      {
+        "name": "Milo Quifes",
+        "character": "Carlos",
+        "profile_path": "/vniYP6wozDkntBQImES2kJrBSOW.jpg"
+      },
+      {
+        "name": "洛拉·杜埃尼亚斯",
+        "character": "Teresa",
+        "profile_path": "/bZgXKlGkLgjvL3qU2Iq2l2zsKo7.jpg"
+      },
+      {
+        "name": "佩内洛普·克鲁兹",
+        "character": "Nené Romero",
+        "profile_path": "/n5SFgmvJSENQt8poE4qYacUnKOi.jpg"
+      },
+      {
+        "name": "格伦·克洛斯",
+        "character": "Isabelle Durand",
+        "profile_path": "/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg"
+      },
+      {
+        "name": "安东尼奥·德拉·托雷",
+        "character": "Vicente (El padre de Carlos)",
+        "profile_path": "/d43JMOaio4mTZlov23gM2q8a6Uo.jpg"
+      }
+    ],
+    "stills": [
+      "/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
+      "/wM4LLukeBIfhjn7LcVP6VIced4p.jpg",
+      "/nA0bMFS66n4Eac76dF7DiapH3eL.jpg",
+      "/hVn6r7Fvm43v2QRnLbuqD8mIPML.jpg",
+      "/toaF7weZaKRmdpQyUY7xxN3X9ic.jpg",
+      "/3pU1CGpgpiez1S1xVFEoxUBW52T.jpg",
+      "/8TzXngI47d60TFnM5i91PAlXdKo.jpg",
+      "/g7NjHHMtNfuhRKBbo8fSFhsJepl.jpg",
+      "/9bHsc89CJk4ngA1yatr1gQydTdJ.jpg",
+      "/lhjjaFaPuACmqyIIM6uEKZFisXG.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 644444,
+        "title": "Valentina",
+        "poster_path": "/3gMZIwZSjOY56koM2ly0d8wfAKq.jpg",
+        "vote_average": 6.4
+      },
+      {
+        "tmdb_id": 644498,
+        "title": "基佬儿",
+        "poster_path": "/scZgYygA6N3DlRtP7IdlUXoTMZ6.jpg",
+        "vote_average": 2.3
+      },
+      {
+        "tmdb_id": 644459,
+        "title": "霓虹男孩",
+        "poster_path": "/3ak61AmPWY0cCmkbYQS9OEqxbWc.jpg",
+        "vote_average": 4.8
+      },
+      {
+        "tmdb_id": 1037602,
+        "title": "O Silêncio Que Você Faz",
+        "poster_path": "/lu24oRXVw5Dr8IjrShLAXfsDb3l.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 644205,
+        "title": "Miles",
+        "poster_path": "/muV3drCFCxFjjZ0VDRibHEcnEPq.jpg",
+        "vote_average": 1.7
+      },
+      {
+        "tmdb_id": 458131,
+        "title": "最佳敌人",
+        "poster_path": "/rDKnYoyfBK9iyWYZQHJfAB7RAXp.jpg",
+        "vote_average": 7.416
+      },
+      {
+        "tmdb_id": 273649,
+        "title": "Zlatá reneta",
+        "poster_path": "/arfozbia7eZk2upOc5C7VTuW9bc.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 273583,
+        "title": "Las apariencias engañan",
+        "poster_path": "/SI0MSAFnBQDgX5OMbVXWfkMv5O.jpg",
+        "vote_average": 4.6
+      }
+    ]
   }
 }
