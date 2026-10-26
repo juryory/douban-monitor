@@ -14440,5 +14440,96 @@
         "vote_average": 0
       }
     ]
+  },
+  "37746098": {
+    "tmdb_id": 307106,
+    "tmdb_type": "tv",
+    "original_title": "연애박사",
+    "overview": "高中时曾是游泳选手、后因病失去一条腿的博士生民宰，与一度迷失方向、如今重新出发的硕士生宥真。在冰冷的机器人实验室里，两名年轻人开启了一段酸甜苦辣交织的浪漫恋曲。",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ],
+    "runtime": null,
+    "release_date": "2026-10-05",
+    "backdrop_path": "/wwSoLQrLyiXXUbRnZq1eWBbHaRR.jpg",
+    "poster_path": "/mi6MY0MHWSGulv9mjn5kTn0Kocf.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "秋泳愚",
+        "character": "Park Min-jae",
+        "profile_path": "/nGICKq8yq7G6nDUNVjrUoMe4iQ0.jpg"
+      },
+      {
+        "name": "金所泫",
+        "character": "Lim You-jin",
+        "profile_path": "/jrRXistOzBtfRkvf3WrxSmyDKBY.jpg"
+      }
+    ],
+    "stills": [
+      "/wwSoLQrLyiXXUbRnZq1eWBbHaRR.jpg",
+      "/hnkmuCppffzQMA6dKdhKu0dp5hG.jpg",
+      "/mA4ClzkBvBCiTHQ8zHFsuWRaLW2.jpg",
+      "/mhvuZrLwlaOSccPYLeWixbWbiDC.jpg",
+      "/zgDBRiUxGIVHLDodILUiWYgwPKv.jpg",
+      "/9wRAiiIiDrLWNwTc47Rm2OA7HF2.jpg",
+      "/fyBCir5oh2TCrF0uWD1gUEfg6Pz.jpg",
+      "/2H07f8VFTleCwPfwTPzVy5YCcvl.jpg",
+      "/m84YeYrQmUegLvGOWhgecCXftiW.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 34949,
+        "title": "战神",
+        "poster_path": "/x0QIbBT01ssMDhbWMQSnUILYaK9.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 133343,
+        "title": "72초",
+        "poster_path": "/AnSFHPChinMLUhnTJPGWdH3xHmk.jpg",
+        "vote_average": 4.0
+      },
+      {
+        "tmdb_id": 284452,
+        "title": "คลับฟรายเดย์เดอะซีรีส์ Theory of Love ไม่มีทฤษฎีไหนใช้ได้กับทุกความรัก ตอน ทฤษฎี 21 วัน",
+        "poster_path": "/hnwH3LccGuz4RRAIGxSW3BwQP7O.jpg",
+        "vote_average": 9.0
+      },
+      {
+        "tmdb_id": 66211,
+        "title": "我们成为星星",
+        "poster_path": "/mVeiZaw8bd7om7rSh6NP2xydHN6.jpg",
+        "vote_average": 5.5
+      },
+      {
+        "tmdb_id": 66218,
+        "title": "欧巴，我入戏了",
+        "poster_path": "/cuy0vl2HK9XmUxXtqEjSjSXWv85.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 66255,
+        "title": "Mann Mayal",
+        "poster_path": "/1QaL8UxucJbUtR6ikLtG7UIFdta.jpg",
+        "vote_average": 8.8
+      },
+      {
+        "tmdb_id": 66256,
+        "title": "云画的月光",
+        "poster_path": "/gWm2N81W7SfC1Wts9MPp6clis75.jpg",
+        "vote_average": 7.014
+      },
+      {
+        "tmdb_id": 133370,
+        "title": "The Baker and the Beauty",
+        "poster_path": "/2UPbV4LElDdPIDso6VK4bzE06G.jpg",
+        "vote_average": 0
+      }
+    ]
   }
 }
