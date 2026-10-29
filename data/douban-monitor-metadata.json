@@ -14636,5 +14636,113 @@
         "vote_average": 8.0
       }
     ]
+  },
+  "36189165": {
+    "tmdb_id": 30984,
+    "tmdb_type": "tv",
+    "original_title": "BLEACH",
+    "overview": "高中生黑崎一护意外获得死神之力，从此卷入现世、尸魂界与虚圈之间的纷争。在守护同伴的战斗中，他逐渐揭开自己的身世，并迎来决定三界命运的最终决战。",
+    "genres": [
+      "动作冒险",
+      "动画",
+      "Sci-Fi & Fantasy"
+    ],
+    "runtime": 24,
+    "release_date": "2004-10-05",
+    "backdrop_path": "/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+    "poster_path": "/uZM8PIaimoRxQ3vYqzpZOifGE6Y.jpg",
+    "countries": [
+      "JP"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "森田成一",
+        "character": "Ichigo Kurosaki (voice)",
+        "profile_path": "/2INsHYbx9gEhhzXPHdqBDdvHjFt.jpg"
+      },
+      {
+        "name": "折笠富美子",
+        "character": "Rukia Kuchiki (voice)",
+        "profile_path": "/f5d1J13fksa1hK8u7AS95aO8b9.jpg"
+      },
+      {
+        "name": "安元洋贵",
+        "character": "Yasutora Sado (voice)",
+        "profile_path": "/vNIGLl0wFmdhdnulMssQ1qyNeBs.jpg"
+      },
+      {
+        "name": "松冈由贵",
+        "character": "Orihime Inoue (voice)",
+        "profile_path": "/e8rNkMM9O7ULA1RJtLbvkN9789v.jpg"
+      },
+      {
+        "name": "杉山纪彰",
+        "character": "Uryu Ishida (voice)",
+        "profile_path": "/szqqQ8T0gzuSxjU2rnWcthsaSJT.jpg"
+      }
+    ],
+    "stills": [
+      "/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "/qtfMr08KQsWXnCHY0a96N8NpQ2l.jpg",
+      "/mFKys64gbDQrFqwUheGwXQwo2JK.jpg",
+      "/jg0QQvSPC7m0yBefRgTrBJBKSKp.jpg",
+      "/aXO5vBpGEl2xUfhJtZyLWeLY5ZJ.jpg",
+      "/sCKZGHWhjThVz3tKPADKcf1uONX.jpg",
+      "/ndtziuJPbDgKNjHEk1CTB9VCV6J.jpg",
+      "/d8pipPG6EEvqFu1KnHvCk0xMALV.jpg",
+      "/niYwetkvxRU0wfPcYVFjqYLdlOM.jpg",
+      "/Ng6JBor5Mmt0GzDyWWuDvqa7pj.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 370,
+        "title": "Stickin' Around",
+        "poster_path": "/tQoQ6vxzXDxR5vHmMiP2qqnpHia.jpg",
+        "vote_average": 8.1
+      },
+      {
+        "tmdb_id": 307,
+        "title": "Teen Angel",
+        "poster_path": "/ykV75Jv6vsM7SGwmuP7QUGG8ox5.jpg",
+        "vote_average": 5.4
+      },
+      {
+        "tmdb_id": 314,
+        "title": "星际迷航：进取号",
+        "poster_path": "/tsbBTABtNgu0ycsFpnIhiQ5woOM.jpg",
+        "vote_average": 7.491
+      },
+      {
+        "tmdb_id": 318,
+        "title": "American Gothic",
+        "poster_path": "/qajOMTtQ958JEpmokPXTruwA9qp.jpg",
+        "vote_average": 7.4
+      },
+      {
+        "tmdb_id": 93544,
+        "title": "上层男孩",
+        "poster_path": "/iQ9vE3swuwrAE7Bvun2lF1C1oe3.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 209829,
+        "title": "凹凸魔女的母女故事",
+        "poster_path": "/d62i8YatAHu3BNvpCPBVsSCGHNV.jpg",
+        "vote_average": 5.7
+      },
+      {
+        "tmdb_id": 309381,
+        "title": "ルリドラゴン",
+        "poster_path": "/h6h6tbCQumDhJCw7VXgp82EN537.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 209867,
+        "title": "葬送的芙莉莲",
+        "poster_path": "/1TtrtRIwXz5BB0gXEl8zgBypl9c.jpg",
+        "vote_average": 8.826
+      }
+    ]
   }
 }
