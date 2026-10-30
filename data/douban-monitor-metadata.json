@@ -14744,5 +14744,123 @@
         "vote_average": 8.826
       }
     ]
+  },
+  "38530785": {
+    "tmdb_id": 317326,
+    "tmdb_type": "tv",
+    "original_title": "คนโง่รักเข(ล)า",
+    "overview": "故事发生在迅速崛起的商业之都曼谷——金钱、权力、名声与资源高度交织的精英舞台。商界骄子简隋英，简家长子，自信狂放、美丽绝伦。其耀眼成就引发弟弟简隋林近乎病态的嫉恨。李玉是被李家寄予厚望的次子，外表温润、智商出众，实则背负沉重家族压力，曾是职业拳击手的预备役。李玉遇到简隋英后，压抑的自我在体内悄然觉醒。两人一次次上演极致的爱恨纠缠。该剧是Tailai联合iQIYI共同打造的剧集，改编自超人气IP《你却爱着一个他》，是携手中国网络文学黄金时代最核心作者水千丞 ，开启全球化的188宇宙“188group × 爱奇艺 × 泰莱娱乐” 打造Y Serise的首个篇章。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-10-08",
+    "backdrop_path": "/hlspaGaavZx1iIwhWbrKU8gH2XU.jpg",
+    "poster_path": "/iax99qTaKGhmU8cQ8aLqGspMmCv.jpg",
+    "countries": [
+      "TH"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "亚提·唐威邦帕尼特",
+        "character": "Ing",
+        "profile_path": "/huY0PhYj0h2N49G6aR8NIhtkCGE.jpg"
+      },
+      {
+        "name": "นันทพงศ์ วงศ์สกุลยง",
+        "character": "Yok",
+        "profile_path": "/gago2byqrvPYAO48ROOnJQ9JOJf.jpg"
+      },
+      {
+        "name": "วสุ ศรีมุกข์",
+        "character": "Itt",
+        "profile_path": "/dRj12NSssZE3YGMJZO8I73MPBpc.jpg"
+      },
+      {
+        "name": "Natthapoom Chaisurasintawee",
+        "character": "Force",
+        "profile_path": "/gMy73Jn8vlfCw5hBkTILytZgqc2.jpg"
+      },
+      {
+        "name": "乔苏阿·萨林·素拉巴瑟",
+        "character": "Singha",
+        "profile_path": "/4yz0482m9af6YaNJjoG1sPe4SRZ.jpg"
+      },
+      {
+        "name": "蒙拓普·赫姆坦",
+        "character": "Leo",
+        "profile_path": "/yBdtb2Lt50ImAnXKSWgPADHdfoD.jpg"
+      },
+      {
+        "name": "บุรันช์รัตน์ หอมบุตร",
+        "character": "Phet",
+        "profile_path": "/AvdJA17NK8A7LiuY6mbtAK6G9b5.jpg"
+      },
+      {
+        "name": "วัชรพล มหาบัน",
+        "character": "Junior",
+        "profile_path": "/4O1mMNneU5G9WXRNVdovicTCFzO.jpg"
+      }
+    ],
+    "stills": [
+      "/hlspaGaavZx1iIwhWbrKU8gH2XU.jpg",
+      "/vEZwyEVbIGd1CgXBnJc5xlbe2HQ.jpg",
+      "/og09XyCKi1XKPgcD9OfSrObIbxW.jpg",
+      "/jxsiHQXIab1fh3zdNPF6kPwemIg.jpg",
+      "/9Qq6IFTBFwnVHB9BoFgI8tLtylu.jpg",
+      "/cVV8DXzgUlWkCZ75qJOQLmJYlqn.jpg",
+      "/8Uda4snUnUjuQ8c4RfDRcuFJGWg.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 279512,
+        "title": "秘密幽灵",
+        "poster_path": "/y1R2NY9Ad7Uz60nQ2rNYtMlBQ2H.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 279654,
+        "title": "หักลิ้นช้าง",
+        "poster_path": "/5v7Cpdk4OH8jsWR0Umb6qdLyUcJ.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 279580,
+        "title": "秘密关系",
+        "poster_path": "/4aC2pWwLg4qZTLaQ4dhoIjfKaFe.jpg",
+        "vote_average": 7.6
+      },
+      {
+        "tmdb_id": 279605,
+        "title": "一眼万年",
+        "poster_path": "/1KFt1ADa7EHjmZPn9tnGte5DGec.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 60987,
+        "title": "เวียงร้อยดาว",
+        "poster_path": "/35ajQt11NXof3amNPDO2ErDM5am.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 60990,
+        "title": "Jao Sao Salatan",
+        "poster_path": "/rpgJD2hRp53biPdpj0xMo47x6WY.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 242986,
+        "title": "ขยับหัวใจมาใส่จังหวะ",
+        "poster_path": "/hnT7Lc4YF3SxgS8CgWP9dVt1IGv.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 61017,
+        "title": "บอดี้การ์ดสาว",
+        "poster_path": "/vAuQDVwtxXD3aqOPtzGlOxQPKSw.jpg",
+        "vote_average": 6.0
+      }
+    ]
   }
 }
