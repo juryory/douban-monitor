@@ -14986,5 +14986,126 @@
         "vote_average": 6.315
       }
     ]
+  },
+  "1293071": {
+    "tmdb_id": 614,
+    "tmdb_type": "movie",
+    "original_title": "Smultronstället",
+    "overview": "伊萨克（维克多·斯约斯特洛姆 饰）从医50年，现年已是将近八十岁的高龄，正准备在儿媳的陪伴下返回母校接受荣誉学位颁发。路上伊萨克顺道重游旧地，追忆往事。伊萨克曾经和堂妹萨拉（毕比·安德森 饰）有过美好的初恋，却因性格冷酷孤僻，以致他的兄弟乘虚而入。如今伊萨克坐在草坪上，忆起往昔，眼前浮现萨拉白衣飘飘的美丽模样。 他与生俱来的冷漠理智的性格，注定了婚姻的失败。伊萨克的妻子无法忍受冰冷的婚姻，寻求外遇。这样的家庭气氛，加上遗传下来的冷漠秉性，使得伊萨克的儿子不愿生小孩，和儿媳关系决裂。伊萨克获得了光荣的学位荣誉，然而他仍然沉浸在对过往沉重的自省中，对于生命将尽的老人，这仿佛是一次心灵救赎之旅。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 91,
+    "release_date": "1957-08-28",
+    "backdrop_path": "/BBVAUchYvkmPThVIqipgAfabfl.jpg",
+    "poster_path": "/yk4NTRL0kCQMnqy2nYJDJN7Uc6K.jpg",
+    "countries": [
+      "Sweden"
+    ],
+    "director": "英格玛·伯格曼",
+    "cast": [
+      {
+        "name": "维克多·斯约斯特洛姆",
+        "character": "Professor Isak Borg",
+        "profile_path": "/iGtT2mbmLt80YPk9lXJRSyxaEKW.jpg"
+      },
+      {
+        "name": "比比·安德森",
+        "character": "Sara",
+        "profile_path": "/6EGqmWOR3R3jv3IgrEZmCjTAVGv.jpg"
+      },
+      {
+        "name": "英格丽德·图林",
+        "character": "Marianne",
+        "profile_path": "/jrjkvvWb6Y4lPDPz5xPAzLFTlsh.jpg"
+      },
+      {
+        "name": "甘纳尔·布耶恩施特兰德",
+        "character": "Evald",
+        "profile_path": "/vy5Y0c1ACGCI6d4rVjmTM6HOqNN.jpg"
+      },
+      {
+        "name": "朱兰·金达尔",
+        "character": "Agda",
+        "profile_path": "/jhJ3houaMKIfvJq1T89ncAuMR7X.jpg"
+      },
+      {
+        "name": "福克·桑德奎斯特",
+        "character": "Anders",
+        "profile_path": "/hoOvohoGja16H87hreULXUuAYOv.jpg"
+      },
+      {
+        "name": "比约恩·比耶尔夫文斯坦",
+        "character": "Viktor",
+        "profile_path": "/awMErWQ5bmP5s5fJYWbRHsLIfnT.jpg"
+      },
+      {
+        "name": "奈玛·维夫斯特兰德",
+        "character": "Isak's Mother",
+        "profile_path": "/jRRGUHarwQaT1o95n9GsiXXgIh7.jpg"
+      }
+    ],
+    "stills": [
+      "/BBVAUchYvkmPThVIqipgAfabfl.jpg",
+      "/rUQPuvL6O1uqAsCUBGOwDwFdkhm.jpg",
+      "/nM2j18YFScHX5zDFHTqov8vURY9.jpg",
+      "/u0ZO0h6VKLJtOMCZDLP8rZtnAPM.jpg",
+      "/sfq5BW4AeTSRc5FxU0xRPCgwqfk.jpg",
+      "/6GX2O4YB7lJGGWhTsPeLcd6qaCC.jpg",
+      "/jjGXZDOTn1vJUkAXmf9ip8CWhS8.jpg",
+      "/akxfLHjryfjiM0FtzmhPsUOfri9.jpg",
+      "/a4uCuqCmq51egjGeEvXseW5jMhc.jpg",
+      "/s9mxEJclSD1c67Q0zYm2Lpc1Od2.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 688,
+        "title": "廊桥遗梦",
+        "poster_path": "/lsi3wfSvWxyqDk5pi2788lVSgli.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 695,
+        "title": "银色·性·男女",
+        "poster_path": "/mbNTvbtWfV4soyErimDTdX67OAr.jpg",
+        "vote_average": 7.232
+      },
+      {
+        "tmdb_id": 696,
+        "title": "曼哈顿",
+        "poster_path": "/plXXhVloMF4BZCNLDmqHNMuQlw4.jpg",
+        "vote_average": 7.698
+      },
+      {
+        "tmdb_id": 843,
+        "title": "花样年华",
+        "poster_path": "/1Z32pKrmWW2nkLFYGoc79MzJin6.jpg",
+        "vote_average": 8.087
+      },
+      {
+        "tmdb_id": 844,
+        "title": "2046",
+        "poster_path": "/jKD7aeiMLrgj8njSE5hpdDM0y3I.jpg",
+        "vote_average": 7.323
+      },
+      {
+        "tmdb_id": 1018,
+        "title": "穆赫兰道",
+        "poster_path": "/lqNrliG6d98z9AbJywxdeWo3ngg.jpg",
+        "vote_average": 7.802
+      },
+      {
+        "tmdb_id": 1023,
+        "title": "亚当的苹果",
+        "poster_path": "/6RNmgq0UKvPuzLI6iY81ugLhjw2.jpg",
+        "vote_average": 7.475
+      },
+      {
+        "tmdb_id": 1262,
+        "title": "奇幻人生",
+        "poster_path": "/nLFQtd4G5xjMg7Owvf1kuths1y8.jpg",
+        "vote_average": 7.293
+      }
+    ]
   }
 }
