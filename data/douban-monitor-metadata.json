@@ -15346,5 +15346,236 @@
         "vote_average": 7.445
       }
     ]
+  },
+  "36155236": {
+    "tmdb_id": 297253,
+    "tmdb_type": "tv",
+    "original_title": "伟大的长征",
+    "overview": "以1934年至1937年为时代背景，以中央红军长征为主线，从第五次反“围剿”失败、红军开始战略转移讲起，全景展现红一、红二、红四方面军和红二十五军等多路红军的长征历程。",
+    "genres": [
+      "War & Politics"
+    ],
+    "runtime": null,
+    "release_date": "2026-10-09",
+    "backdrop_path": "/8G0SQhC1zwKIRbgaxx4HTRakVpO.jpg",
+    "poster_path": "/ogDcW0DmkXaRpIMDSrA8JbuvRa5.jpg",
+    "countries": [
+      "CN"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "于和伟",
+        "character": "Mao Zedong",
+        "profile_path": "/rtHbXVr0NUWYkV1vqCCdhgyyNXG.jpg"
+      },
+      {
+        "name": "曹磊",
+        "character": "Zhou Enlai",
+        "profile_path": "/b7SUk4LErfTZuRAqdd7g8DOU1gw.jpg"
+      },
+      {
+        "name": "王劲松",
+        "character": "Chiang Kaishek",
+        "profile_path": "/mYJPE6Xqo3dyRzBL4jkQuCSOHdo.jpg"
+      },
+      {
+        "name": "郭广平",
+        "character": "Zhang Wentian",
+        "profile_path": "/aOUGR1bMEwZEfuKe6RCkthmMLoU.jpg"
+      },
+      {
+        "name": "朱刚日尧",
+        "character": "Bo Gu",
+        "profile_path": "/iNTED9WDtMU35dtnmWwrP62kqgj.jpg"
+      },
+      {
+        "name": "何政军",
+        "character": "Zhu De",
+        "profile_path": "/25mXqwHj5Rp69t1JdBTLKDFes6P.jpg"
+      },
+      {
+        "name": "吴健",
+        "character": "Liu Bocheng",
+        "profile_path": "/woru4y2zYuRwN20SbHXyiTNJBNq.jpg"
+      },
+      {
+        "name": "李泓良",
+        "character": "Wang Jiaxiang",
+        "profile_path": "/1w2VtExDie0o23zcEmEG6WwcvM0.jpg"
+      }
+    ],
+    "stills": [
+      "/oMqnBjgT0VlDpP3pHJdtnOvwwKA.jpg",
+      "/8G0SQhC1zwKIRbgaxx4HTRakVpO.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 128096,
+        "title": "满清十三皇朝之危城争霸",
+        "poster_path": "/jbIe2U1zeaCHaxgLuPWhqvtEhgr.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 211494,
+        "title": "Quisling",
+        "poster_path": "/45AOiuCIYUuIcdpXlGGxZHV46vx.jpg",
+        "vote_average": 5.7
+      },
+      {
+        "tmdb_id": 314368,
+        "title": "Real History with Matt Walsh",
+        "poster_path": "/a7lir5jTm4qbhNjOqkdO3bVsOBC.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 214849,
+        "title": "启示录：希特勒的黄昏",
+        "poster_path": "/cymyBxWKIE4mnccJYLtm1op0B6u.jpg",
+        "vote_average": 7.8
+      },
+      {
+        "tmdb_id": 132057,
+        "title": "Kings and Generals",
+        "poster_path": "/xvJJFZ73kPL2FS2DGJEuiQYKf1Y.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 131663,
+        "title": "Världens historia",
+        "poster_path": "/rllmEYZb4vhPHl4w6522372r6J6.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 283883,
+        "title": "Parking Histórico 2: La Decepción del Canal Francés",
+        "poster_path": "/clpRFL5KFMUfYrKKr5RrJ4DIsm5.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 284483,
+        "title": "معاوية",
+        "poster_path": "/jhhMqIvRAJ30CnTMVwyfzUktJ3m.jpg",
+        "vote_average": 7.0
+      }
+    ]
+  },
+  "36961929": {
+    "tmdb_id": 300527,
+    "tmdb_type": "tv",
+    "original_title": "俺のこと、なんか言ってた？",
+    "overview": "故事的主角是高濑川玄，他是首位在伦敦莎士比亚环球剧院担纲主演的日本演员。一直未能返回日本的他，两年后终于踏上归途，却遭遇了渴望成名之人最大的悲剧：全世界突然彻底忘记了他的存在！\n\n失去名声、家庭和财富后，他还能重返聚光灯下吗？这部喜剧讲述了一个执着于获得认可的男人，在人生被迫“归零”后，如何努力东山再起、重新赢回属于自己的舞台。",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "runtime": 54,
+    "release_date": "2026-10-22",
+    "backdrop_path": "/7ctEWkqGMkvo5GMtOejZndTL5Ta.jpg",
+    "poster_path": "/l0YkFVmSt1LgsiraDXBgp3OFJ2k.jpg",
+    "countries": [
+      "JP"
+    ],
+    "director": "宫藤官九郎",
+    "cast": [
+      {
+        "name": "役所广司",
+        "character": "Gen Takasegawa / Yorozu Mantaro",
+        "profile_path": "/r2WyVRyl6EJgyPKUJCB7D9cKYPE.jpg"
+      },
+      {
+        "name": "贺来贤人",
+        "character": "Tetsu Okamoto",
+        "profile_path": "/1c7WZIRaQTUoKlD0LSDWB5n15X6.jpg"
+      },
+      {
+        "name": "松山研一",
+        "character": "Kazuki Kawashima",
+        "profile_path": "/j7zwtoLF6A7d8xSU9kjgz664nQw.jpg"
+      },
+      {
+        "name": "江口德子",
+        "character": "Machiko Takasegawa",
+        "profile_path": "/6lsnjQk0QvlJGg7rZqK1nROFU31.jpg"
+      },
+      {
+        "name": "河合优实",
+        "character": "Ema Nonomura",
+        "profile_path": "/pcYp2J96Kt0M2MuLE6BRb6b6nGG.jpg"
+      },
+      {
+        "name": "矶村勇斗",
+        "character": "Takeru Murai",
+        "profile_path": "/iK0x2LJDgz07ebDf2fwFaw4D7qz.jpg"
+      },
+      {
+        "name": "滨田雅功",
+        "character": "Daichi Mibu",
+        "profile_path": "/mOlpsOu4ZgYXAC5AQAyHgGtqiD3.jpg"
+      },
+      {
+        "name": "上川周作",
+        "character": "Oomori",
+        "profile_path": "/nnXWcfLqdkAupAgoRMkrzF3l2fB.jpg"
+      }
+    ],
+    "stills": [
+      "/7ctEWkqGMkvo5GMtOejZndTL5Ta.jpg",
+      "/osn5oJ5c6ahsHNg631ep2DNbU2L.jpg",
+      "/tmmVnCnNzT1yMuFFUfJwHvVqx5D.jpg",
+      "/4Et97fMODushiTHNE6eC9woNd5L.jpg",
+      "/9aSk8lLn2dYtWJjNZ2NzxMjvY50.jpg",
+      "/uyd7MMXZBTtpeD9JMQCMCK30hDJ.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 59941,
+        "title": "肥伦今夜秀",
+        "poster_path": "/1N4o5PmmqhlVDrcdJ2RlCFWbLGX.jpg",
+        "vote_average": 5.795
+      },
+      {
+        "tmdb_id": 323,
+        "title": "The Knights of Prosperity",
+        "poster_path": "/dHC6RqL1BtZ2O0ChbfwrfxmGnp2.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 20,
+        "title": "Wildboyz",
+        "poster_path": "/sM3SK4hx4eI6mdw1piUyVdV9WaW.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 242378,
+        "title": "根源 / 奇巧计程车的路线",
+        "poster_path": "/7V01x8uALUbRwgFMO12rY0qyuib.jpg",
+        "vote_average": 7.8
+      },
+      {
+        "tmdb_id": 242327,
+        "title": "Mexa-se",
+        "poster_path": "/ek41ktsSkDyKq23XsIXsJOjoadF.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 60130,
+        "title": "东京风潮～下町大家族物语",
+        "poster_path": "/eoGyL9gn4cjNod4RmFOocJtTacY.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 999,
+        "title": "Best Week Ever",
+        "poster_path": "/jSdiH87vkxM0aXTvkaOOvtIHYCg.jpg",
+        "vote_average": 5.9
+      },
+      {
+        "tmdb_id": 94659,
+        "title": "义理/耻",
+        "poster_path": "/mOeqBvuGOcq0eN1ssGCcRtWA7XW.jpg",
+        "vote_average": 7.375
+      }
+    ]
   }
 }
