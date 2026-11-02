@@ -15107,5 +15107,244 @@
         "vote_average": 7.293
       }
     ]
+  },
+  "36587974": {
+    "tmdb_id": 1324509,
+    "tmdb_type": "movie",
+    "original_title": "出走的决心",
+    "overview": "李红一直过着不断为别人“让位”的人生。年轻时，她曾憧憬考上大学、看看更广阔的世界，却因父亲要求她尽早工作照顾家庭而放弃梦想。此后的几十年里，她操劳于家庭与生活的琐碎之中，习惯把自己的需要放在最后。人到中年，当她再次想为自己寻找另一种生活方式时，却依然得不到丈夫孙大勇的理解与支持。长期的压抑与失望让李红终于决定不再等待，她独自驾车出发，试着摆脱困住自己半生的生活，去寻找真正属于自己的人生……",
+    "genres": [
+      "剧情",
+      "家庭"
+    ],
+    "runtime": 106,
+    "release_date": "2024-09-06",
+    "backdrop_path": "/6IyQ7PPYUGWyG4mAFMcTHHii85C.jpg",
+    "poster_path": "/f0VQbTrg1cQ6zgF7EnbqNvapPRJ.jpg",
+    "countries": [
+      "China"
+    ],
+    "director": "尹丽川",
+    "cast": [
+      {
+        "name": "咏梅",
+        "character": "Li Hong",
+        "profile_path": "/eV9HqX66KpY3badNQT03df2wOiS.jpg"
+      },
+      {
+        "name": "姜武",
+        "character": "Sun Dayong",
+        "profile_path": "/f8BXK5pb9yoREZq3ROM9hSBgvlk.jpg"
+      },
+      {
+        "name": "吴倩",
+        "character": "Sun Xiaoxue",
+        "profile_path": "/zNw2OQbHC343epJkSgR3FUHGWmA.jpg"
+      },
+      {
+        "name": "张本煜",
+        "character": "Xu Xiaoyang",
+        "profile_path": "/6PI1v4TYN7lDFRzjL1iz8V45P2t.jpg"
+      },
+      {
+        "name": "马苏",
+        "character": "Ma Jie",
+        "profile_path": "/ppgh2Rt5v1suNUOap2ofsGmFyWL.jpg"
+      },
+      {
+        "name": "艾丽娅",
+        "character": "Li Hong's Mother",
+        "profile_path": "/qehdgUXOT4HEN0mL56dp1Zyqtw1.jpg"
+      },
+      {
+        "name": "李易祥",
+        "character": "Li Hong's Father",
+        "profile_path": "/zBf1OqKC4e7PjP3xCKzBgfsDQsV.jpg"
+      },
+      {
+        "name": "李嘉鑫",
+        "character": "Young Li Hong",
+        "profile_path": "/bpafw2iqrow8sMu1QVePOJd3Hs8.jpg"
+      }
+    ],
+    "stills": [
+      "/6IyQ7PPYUGWyG4mAFMcTHHii85C.jpg",
+      "/jwd6OELE02g47rzl2lC6SVyDj5S.jpg",
+      "/3zLjifsNpRuWxeMoNI8LcrWpNmE.jpg",
+      "/nyfHuLrlORos5hVMOiIazCVWchU.jpg",
+      "/t7uvRw6gOlWmXwrliO1va3l6jxo.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 696,
+        "title": "曼哈顿",
+        "poster_path": "/plXXhVloMF4BZCNLDmqHNMuQlw4.jpg",
+        "vote_average": 7.698
+      },
+      {
+        "tmdb_id": 453201,
+        "title": "巴黎列车剿恐记",
+        "poster_path": "/9KaLJsITSbQ7I0QF0qhJT1dVddW.jpg",
+        "vote_average": 5.411
+      },
+      {
+        "tmdb_id": 1024,
+        "title": "罪孽天使",
+        "poster_path": "/uvb86wVCIqD3Rlbr0GTNgWDF7Zo.jpg",
+        "vote_average": 6.9
+      },
+      {
+        "tmdb_id": 1224902,
+        "title": "Le plus bel homme du monde: La vie du Roger Pereira",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1224911,
+        "title": "Road of Love",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1423683,
+        "title": "The Lunatic Farmer",
+        "poster_path": "/PeDtMfqJo8ni9bwZG9fwgYh50.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 1439,
+        "title": "安娜与国王",
+        "poster_path": "/b9LtQ0OMr8efAUTt9T7TzCRzfUK.jpg",
+        "vote_average": 6.795
+      },
+      {
+        "tmdb_id": 1646,
+        "title": "自由作家",
+        "poster_path": "/221iE3mK1lRc4QzREXtj2dKjpw9.jpg",
+        "vote_average": 7.933
+      }
+    ]
+  },
+  "36847425": {
+    "tmdb_id": 1483525,
+    "tmdb_type": "movie",
+    "original_title": "가능한 사랑",
+    "overview": "一对失业夫妻遇上一对纪录片导演夫妇，并直面他们内心深处的渴望。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 165,
+    "release_date": "2026-09-23",
+    "backdrop_path": "/kPbyLj2OyjojqvR1jfK1VvXzabg.jpg",
+    "poster_path": "/neDA1g9ZLuHMNQwbK5PytBLj9N5.jpg",
+    "countries": [
+      "South Korea",
+      "United States of America"
+    ],
+    "director": "李沧东",
+    "cast": [
+      {
+        "name": "全度妍",
+        "character": "Mi-ok",
+        "profile_path": "/ev2tT7ZbReE06rZy7SX0Mv8evZ7.jpg"
+      },
+      {
+        "name": "薛景求",
+        "character": "Ho-seok",
+        "profile_path": "/teD7AMzfNl4qhQO2b6MAWwLtPVn.jpg"
+      },
+      {
+        "name": "赵寅成",
+        "character": "Sang-woo",
+        "profile_path": "/69gbyFI0ET0l0dyjKChlx1Zx269.jpg"
+      },
+      {
+        "name": "曹汝贞",
+        "character": "Ye-ji",
+        "profile_path": "/5MgWM8pkUiYkj9MEaEpO0Ir1FD9.jpg"
+      },
+      {
+        "name": "曺柔理",
+        "character": "Young Mi-ok",
+        "profile_path": "/4GwoDQFPwpaKldOTpGrIJUzBa9h.jpg"
+      },
+      {
+        "name": "최민",
+        "character": "Young Ho-seok",
+        "profile_path": ""
+      },
+      {
+        "name": "정섶",
+        "character": "Cheol",
+        "profile_path": "/vMbZObKiMc2am3OOFWAlxlPHnpn.jpg"
+      },
+      {
+        "name": "강창권",
+        "character": "Min-sik",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/vJkTGJn9BM4dSStR8XBApTF8e5J.jpg",
+      "/kPbyLj2OyjojqvR1jfK1VvXzabg.jpg",
+      "/hiBSDi33bmwGlpEAW4Fi6PP9poB.jpg",
+      "/uuQ36iMfWcNJfCHF8DB5ubN1NgC.jpg",
+      "/rigXt5pfA2vNPEktmoCTPOvfH7E.jpg",
+      "/VSY6yZpkBOnFpKqNBdzQ1QEztY.jpg",
+      "/a7AE1LtJLR1X2PPeZadyjBc62Qk.jpg",
+      "/g0TkIF7lqvTIv1Om7T0sZ5aGSYv.jpg",
+      "/75TGQVndtwpZRoMRtUC4s0BhnAu.jpg",
+      "/qdfrQmyGMLpe5bdilNqin0fumKy.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 452038,
+        "title": "The Guys",
+        "poster_path": "/7NdSCYiV92Qv62Dzid0HuEiP4HD.jpg",
+        "vote_average": 6.7
+      },
+      {
+        "tmdb_id": 265747,
+        "title": "Leona Helmsley: The Queen of Mean",
+        "poster_path": "/efkZnRavKUlbCdnVRVrvb0X4nBD.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 309,
+        "title": "家宴",
+        "poster_path": "/ibWzFsS6Z7cTEKJIE738URYS4Mo.jpg",
+        "vote_average": 7.693
+      },
+      {
+        "tmdb_id": 312,
+        "title": "走出寂静",
+        "poster_path": "/c7pZYrEeI5OAnEDIzoQv3UhdwGY.jpg",
+        "vote_average": 6.932
+      },
+      {
+        "tmdb_id": 313,
+        "title": "雪季过客",
+        "poster_path": "/dzKNKUqaDu9JCUmjhuoDd8KQBBs.jpg",
+        "vote_average": 7.1
+      },
+      {
+        "tmdb_id": 351,
+        "title": "渴望",
+        "poster_path": "/sRihbZIwNLXDyv5OC6wDWPSGhEM.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 363,
+        "title": "勇往直前",
+        "poster_path": "/qasMf5ZXmEbGkBNBeqRhal5C6x9.jpg",
+        "vote_average": 7.489
+      },
+      {
+        "tmdb_id": 379,
+        "title": "米勒的十字路口",
+        "poster_path": "/mbFUr8hTOzrBCgAekAVRiXYgj2H.jpg",
+        "vote_average": 7.445
+      }
+    ]
   }
 }
