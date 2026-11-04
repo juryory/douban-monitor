@@ -15577,5 +15577,127 @@
         "vote_average": 7.375
       }
     ]
+  },
+  "37069670": {
+    "tmdb_id": 293607,
+    "tmdb_type": "tv",
+    "original_title": "100일의 거짓말",
+    "overview": "天才扒手佳景在朝鲜总督府伪装就业100天，作为假密探活跃在朝鲜，最后成为真正的密探的过程以及与朝鲜翻译官泰雄展开浪漫爱情故事的谍报罗曼史电视剧。",
+    "genres": [
+      "动作冒险",
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-10-10",
+    "backdrop_path": "/3SvKCITqMtjgPIhFBjRc4yTAc4H.jpg",
+    "poster_path": "/xNE0eyVaBy4vfj2K8EjjmHR6Xbb.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "류보리",
+    "cast": [
+      {
+        "name": "金裕贞",
+        "character": "Lee Ga-kyung / Keum Seo-Hee",
+        "profile_path": "/eFcMTDIgzSGLHZYXcsf1M42cvFt.jpg"
+      },
+      {
+        "name": "朴珍荣",
+        "character": "Kim Tae-ung / Hideo Sato",
+        "profile_path": "/e2U4M1vkwvFjwj834ttERQva61E.jpg"
+      },
+      {
+        "name": "金贤珠",
+        "character": "Yoo So-ran",
+        "profile_path": "/AeYZSlVauG1BMJdzfyaw3u5jcyA.jpg"
+      },
+      {
+        "name": "李茂生",
+        "character": "Yoo Philip",
+        "profile_path": "/xokzuuLDfVzassk0bmje2fvdMcM.jpg"
+      },
+      {
+        "name": "陈善圭",
+        "character": "Shinichi Sato",
+        "profile_path": "/toFCyPac5rSpN58p0fsZ7lbogYc.jpg"
+      },
+      {
+        "name": "徐正妍",
+        "character": "Ryu Gwan-sil / Yanagi",
+        "profile_path": "/za1tTtSULKsZPN0u1oTs2Iival0.jpg"
+      },
+      {
+        "name": "Kiko Oi",
+        "character": "Hanako Sato",
+        "profile_path": "/pphIEXHZ0U0KagY0o69BzQ0rTsk.jpg"
+      },
+      {
+        "name": "朴正妍",
+        "character": "Kim Myeong-nam",
+        "profile_path": "/oOhehakBlkUMCP5xBpFWf5yIVxf.jpg"
+      }
+    ],
+    "stills": [
+      "/3SvKCITqMtjgPIhFBjRc4yTAc4H.jpg",
+      "/ciBcUG1WJCehWdjKeGr8gU4rlGe.jpg",
+      "/yaW2QbX6gyYvXb9xwbYX4SjD1Qz.jpg",
+      "/xZL3NrG0MDphrmpZNsRDRWicslw.jpg",
+      "/lOU84jasfgXWKwFMLJnHMLI64Hh.jpg",
+      "/i1LWjO8PpVUfcVAML8AwMM5WRuI.jpg",
+      "/3eprGh6r58pOBVWinM2uRgGYAyZ.jpg",
+      "/eu2RdCAWruJdgGrrlzGYLUeNVXA.jpg",
+      "/p1EbBDGYJcvb0zYIEwDydPSzUH2.jpg",
+      "/npQE8votfC8DyoE2JzHF8h4o138.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 127366,
+        "title": "细胞分裂：死亡监视",
+        "poster_path": "/mYQDyR5CyS8BfJpWqsdCX0mffyl.jpg",
+        "vote_average": 6.75
+      },
+      {
+        "tmdb_id": 61859,
+        "title": "夜班经理",
+        "poster_path": "/y6gHsDU2RFu4M11R4Wu9DkCpwRh.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 2115,
+        "title": "The Secret Service",
+        "poster_path": "/b6K7eeyEykf7Wko0IvPkv1XRaJZ.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 212963,
+        "title": "杀手奶爸",
+        "poster_path": "/qjRWZ1Ak9Ag6EvcA5LNhphqX8oV.jpg",
+        "vote_average": 7.9
+      },
+      {
+        "tmdb_id": 62476,
+        "title": "传奇办公室",
+        "poster_path": "/bWBQtzZDuAxYfQuDRi3MRcNDuLv.jpg",
+        "vote_average": 8.217
+      },
+      {
+        "tmdb_id": 313278,
+        "title": "韩国谍梦",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 281567,
+        "title": "惊变",
+        "poster_path": "/ubIQvUsWApFbVKE7jhuD4jcJb4P.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 281538,
+        "title": "沉默的荣耀",
+        "poster_path": "/f9qtCpNe2pkahpHCQ4GlFrgFI2w.jpg",
+        "vote_average": 7.6
+      }
+    ]
   }
 }
