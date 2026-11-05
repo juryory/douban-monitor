@@ -15699,5 +15699,129 @@
         "vote_average": 7.6
       }
     ]
+  },
+  "37806882": {
+    "tmdb_id": 303745,
+    "tmdb_type": "tv",
+    "original_title": "나의 유죄인간",
+    "overview": "杀人案头号嫌疑人、泰江集团三代继承人尹伊俊，引来特种部队出身的刑警姜在熙。她女扮男装，伪装成贴身秘书潜入调查。在熙一边查案，一边与刻薄敏感的伊俊不断交锋，二人渐生情愫。",
+    "genres": [
+      "喜剧",
+      "剧情",
+      "犯罪",
+      "动作冒险"
+    ],
+    "runtime": null,
+    "release_date": "2026-10-19",
+    "backdrop_path": "/32g5MD6eHPAZ5NAgkNAURb4eupm.jpg",
+    "poster_path": "/mYHOyGFCQXOZClvDiMfxVJQJzyi.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "문수정",
+    "cast": [
+      {
+        "name": "任时完",
+        "character": "Yoon Yi-jun",
+        "profile_path": "/xhItkYqo5DnFunTLBe65npwi0Me.jpg"
+      },
+      {
+        "name": "薛仁雅",
+        "character": "Kang Jae-hee",
+        "profile_path": "/nfHLot4nBfqWQKwcXykeol4Owjb.jpg"
+      },
+      {
+        "name": "金正贤",
+        "character": "Kim Si-hyeon",
+        "profile_path": "/hSv3ihM8sK6aGPirXq6j758m05P.jpg"
+      },
+      {
+        "name": "妍雨",
+        "character": "Lee Hye-jung",
+        "profile_path": "/tn2g5D33zqea9eKTpwVFFneyr2s.jpg"
+      },
+      {
+        "name": "柳承秀",
+        "character": "Kang Seok-goo",
+        "profile_path": "/x9XcfwqcXNpk2hIrP6qeR0DDkOs.jpg"
+      },
+      {
+        "name": "朴俊勉",
+        "character": "Jo Sook-ja",
+        "profile_path": "/gz5080pQXOKm9TKJEWXRrR1JTui.jpg"
+      },
+      {
+        "name": "郑韩雪",
+        "character": "Assistant Jeong Da-woon",
+        "profile_path": "/7KDxMPlyzT8Ck9RYIoOpHmMc5wy.jpg"
+      },
+      {
+        "name": "金度允",
+        "character": "Park Min-hwan",
+        "profile_path": "/aj6K7PfdgmZN6SyQBFFvMeewGyf.jpg"
+      }
+    ],
+    "stills": [
+      "/32g5MD6eHPAZ5NAgkNAURb4eupm.jpg",
+      "/oxCSOS3rvi4pbcHMRDQEpOpaz6E.jpg",
+      "/ob7m6JqZ7jSOocR3VL73VxRC6Is.jpg",
+      "/ovPYR9NSUeKopGk2cPioIxsgITf.jpg",
+      "/3Ko1QladI1ocEiX6TlQ7EcBMvpR.jpg",
+      "/yZX0dng0XBorZYoa57nJegBSuW.jpg",
+      "/xgxgemndoDspENB8HbrmXDq0fvn.jpg",
+      "/uguWp4LtDCBnjPq7wA1bbfbezTy.jpg",
+      "/i5Lf26ZX5NvUaDszkg0wsa589Ny.jpg",
+      "/hOAYdY9474n6zsOF5F2YurO7oEa.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 280268,
+        "title": "别惹她她后台超硬",
+        "poster_path": "/gzyASIYQgP3GeMtkC4Z4O4ytihd.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 60807,
+        "title": "M3～黑色之钢～",
+        "poster_path": "/14GDH4WEXa6tmwxea10pxZl4eoH.jpg",
+        "vote_average": 7.2
+      },
+      {
+        "tmdb_id": 243224,
+        "title": "凡人修仙传",
+        "poster_path": "/m8qf6zMaxcUtGT9taj94hWR9jHk.jpg",
+        "vote_average": 7.6
+      },
+      {
+        "tmdb_id": 890,
+        "title": "新世纪福音战士",
+        "poster_path": "/63ln23NAtdXdAh41HwpibxgJElM.jpg",
+        "vote_average": 8.6
+      },
+      {
+        "tmdb_id": 311070,
+        "title": "私心爆发罗曼史",
+        "poster_path": "/w7ai44fDLR7uywN89VW6kUr6dAB.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 243435,
+        "title": "偏偏动了心",
+        "poster_path": "/dEt8LNy74hJVGvaZvhGyFWZO8Tq.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 243447,
+        "title": "รักท่วมทุ่ง",
+        "poster_path": "/rP2EE1bJdSbnu0oKbIPxUZ0TXGT.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 243452,
+        "title": "冻牌～地下麻将斗牌录～",
+        "poster_path": "/mX0d6GbWYTwZiBUGkZ7E8HRMgIe.jpg",
+        "vote_average": 6.4
+      }
+    ]
   }
 }
