@@ -15823,5 +15823,119 @@
         "vote_average": 6.4
       }
     ]
+  },
+  "37100984": {
+    "tmdb_id": 338938,
+    "tmdb_type": "tv",
+    "original_title": "后会友期",
+    "overview": "《后会友期》延续真实生活的叙事，针对当代人际疏离的普遍现象，拟邀请四组许久未见的朋友，进行集体旅行。在旅途中共同经历极致的美景，极限的体验，在不同的人生境遇中，重新面对友情的课题，找寻与朋友，与自我，与时间的相处，领悟友谊的价值和意义。",
+    "genres": [
+      "真人秀"
+    ],
+    "runtime": null,
+    "release_date": "2026-10-22",
+    "backdrop_path": "/vOu2RYpWGGScdYpNw8WVmDbjdUs.jpg",
+    "poster_path": "/pH1zpLMuagE8wji4kg3SEJ1RB3.jpg",
+    "countries": [
+      "CN"
+    ],
+    "director": "赵文海",
+    "cast": [
+      {
+        "name": "许飞",
+        "character": "Observee",
+        "profile_path": "/gI8aOrU9oFho2IvP1lE87lzoTJG.jpg"
+      },
+      {
+        "name": "厉娜",
+        "character": "Observee",
+        "profile_path": "/dYVA8bvAcOC2RMCtpFUhSd9x49K.jpg"
+      },
+      {
+        "name": "马天宇",
+        "character": "Observee",
+        "profile_path": "/hjPOmOXOkNWzD4cet3oquwU5QGS.jpg"
+      },
+      {
+        "name": "张萌",
+        "character": "Observee",
+        "profile_path": "/1YVFLHCxI6QpGDlxx4OH4pWmbFH.jpg"
+      },
+      {
+        "name": "王子璇",
+        "character": "Observee",
+        "profile_path": "/6yQGSuQh8hK3seJ2En63GE99CBh.jpg"
+      },
+      {
+        "name": "文吉儿",
+        "character": "Observee",
+        "profile_path": ""
+      },
+      {
+        "name": "白小纯",
+        "character": "Observee",
+        "profile_path": ""
+      },
+      {
+        "name": "青稚",
+        "character": "Observee",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/vOu2RYpWGGScdYpNw8WVmDbjdUs.jpg",
+      "/kCuJVlfssd53g2OoNjB4HzqVWir.jpg",
+      "/bfqlHvinPVEnioUfeQjvv767E3V.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 85904,
+        "title": "诱惑岛",
+        "poster_path": "/7ABC84sjxDZ5qCmemulT7ItzXhi.jpg",
+        "vote_average": 6.9
+      },
+      {
+        "tmdb_id": 58832,
+        "title": "原始生活21天",
+        "poster_path": "/nDXJn6wEIQ6AfaWbt1APNQmyswU.jpg",
+        "vote_average": 6.659
+      },
+      {
+        "tmdb_id": 29173,
+        "title": "House Hunters International",
+        "poster_path": "/uzPQ3FvOtmMrvGsNnKPoIJuMJON.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 62,
+        "title": "The Challenge",
+        "poster_path": "/A8pSOaknOrNCPRssEyRYsHCRLZ3.jpg",
+        "vote_average": 7.198
+      },
+      {
+        "tmdb_id": 63726,
+        "title": "荒野独居",
+        "poster_path": "/a1r1KLEYFP1u0q5kH4mHDQaOOvF.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 4940,
+        "title": "Bad Girls Club",
+        "poster_path": "/cEMlNl2madv94cfsNHbPiFBCaFg.jpg",
+        "vote_average": 6.3
+      },
+      {
+        "tmdb_id": 62705,
+        "title": "Married at First Sight",
+        "poster_path": "/2F0ADv2beVB4tRG0qx7YlWMvnDN.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 62481,
+        "title": "打败巴比富雷",
+        "poster_path": "/wA9c9cGTPcgsUnN4KPoERB9hSGO.jpg",
+        "vote_average": 6.5
+      }
+    ]
   }
 }
