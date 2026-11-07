@@ -5414,7 +5414,123 @@
       }
     ]
   },
-  "2238727": {},
+  "2238727": {
+    "tmdb_id": 52461,
+    "tmdb_type": "tv",
+    "original_title": "无悔追踪",
+    "overview": "一九四九年，天安门广场上开国大典的礼炮声中，老北京的百姓生活翻开了新的一页。土刀唐胡同也换了新颜，刚刚接管了旧警察局的派出所所长肖大力偶遇一个熟知兵器的教书匠冯静波，这引起了他的怀疑。为了查清冯静波的身份，肖大力也搬进了土刀唐胡同，和冯静波做了街坊。冯静波的真实身份确实是国民党的潜伏特务，但面对改天换地的新中国，面对肖大力的不懈监视，冯静波不得不小心谨慎，好事做在前头，工作中更是一个好老师。这一切竟招来了曾在妓院使唤丫头的大眉子的爱慕，冯静波为了掩护自己的身份，娶了大眉子。几年过去了，满腹经纶的冯静波在遇到徐小妤之后终于有勇气说出他并不爱没有文化、举止粗俗的大眉子，当他提出离婚时受到肖大力等人的指责与阻挠，冯静波只得与徐小妤黯然分手。特务身份的重压使冯静波夹着尾巴做人，这使他在历次运动中躲过了劫难，并且由于他的和善、踏实工作，还被评为区劳模。而肖大力却被冠以“特务“的罪名送进劳改农场，他的妻子亚琴自杀身亡。大眉子意外发现冯静波的委任状，偷偷的烧掉了。几十年后，肖大力重新穿上警服，他依旧执着的监视着冯静波的一举一动。此时的冯静波已由一位好老师变成了好校长，他领略了坦荡做人的快乐，同时也感到心头的沉重。肖大力的儿子新栀与冯静波的女儿抗美青梅竹马，却因父辈们的恩怨无法走到一起。昔日给冯静波发委任状的四阎王已成了海外合作项目的投资者，这令冯静波惊讶与深思。他终于给肖大力写了自首信，在女儿的搀扶下走进了安全局的大门。",
+    "genres": [
+      "剧情",
+      "悬疑",
+      "家庭"
+    ],
+    "runtime": 45,
+    "release_date": "1995-01-01",
+    "backdrop_path": "/zFr0RX1fAmz2IpHUzhw73NnRnG7.jpg",
+    "poster_path": "/dGTN5m2uF83LzI5w7tehljIEeSE.jpg",
+    "countries": [
+      "CN"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "刘佩琦",
+        "character": "肖大力",
+        "profile_path": "/5AVVGJjyJixP6qKRic0pfDPvITr.jpg"
+      },
+      {
+        "name": "王志文",
+        "character": "冯静波",
+        "profile_path": "/tjb6puOdCya3c1lVsVQ6AA6itHE.jpg"
+      },
+      {
+        "name": "岳秀清",
+        "character": "大眉子",
+        "profile_path": "/ofmHABa22HXsywXfMvgPW2YsdFn.jpg"
+      },
+      {
+        "name": "何冰",
+        "character": "孙焕章",
+        "profile_path": "/xO4Qh5L4V7mHuceSK3E3GPlY1hz.jpg"
+      },
+      {
+        "name": "孔琳",
+        "character": "刘亚琴",
+        "profile_path": "/vBjrGcpRIrOLh51SAwteTp7hLfl.jpg"
+      },
+      {
+        "name": "李冰冰",
+        "character": "冯抗美",
+        "profile_path": "/gBDRToPG0smAFSUpWT5pmJv2fJr.jpg"
+      },
+      {
+        "name": "李丁",
+        "character": "剃头包",
+        "profile_path": "/dWtinWXk9m8MQOAlOAinJgaddHZ.jpg"
+      },
+      {
+        "name": "吴军",
+        "character": "小安子",
+        "profile_path": "/hlRUK2e9jf64eTKxbrY4pFUgupf.jpg"
+      }
+    ],
+    "stills": [
+      "/zFr0RX1fAmz2IpHUzhw73NnRnG7.jpg",
+      "/x2ZV25BmIwCi70iZDTEhMSbyWXr.jpg",
+      "/80k5jD9izVbZZ4Ntzvp3fQozm2e.jpg",
+      "/cCqLq3TDcoTGOMLQINwbjY527yO.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 153606,
+        "title": "对手",
+        "poster_path": "/bPktbDtupTZDCdxJjYRNCAxYhNg.jpg",
+        "vote_average": 8.3
+      },
+      {
+        "tmdb_id": 60066,
+        "title": "谍海浮沉",
+        "poster_path": "/pvyuIr5m3TLfVpi0HnLFyYm2mYr.jpg",
+        "vote_average": 6.9
+      },
+      {
+        "tmdb_id": 93972,
+        "title": "偏偏爱上你",
+        "poster_path": "/sKS1XwEaareXoH6kuuKC1p0op2A.jpg",
+        "vote_average": 7.043
+      },
+      {
+        "tmdb_id": 93975,
+        "title": "与爱同居",
+        "poster_path": "/ss2eWO7iOtSyLnNoG5kz1RePMf5.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 93976,
+        "title": "Kollege Jeans",
+        "poster_path": "/fQYwHDQqSAYFs1Yvo8DfdlwQczM.jpg",
+        "vote_average": 10.0
+      },
+      {
+        "tmdb_id": 32,
+        "title": "Rounin",
+        "poster_path": "/9P2UrFxoQBZ2pib7sF1AJfBpRRm.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 35,
+        "title": "解密高手",
+        "poster_path": "/SjgpJrNXSmus9dXWO1ZCSase0k.jpg",
+        "vote_average": 6.615
+      },
+      {
+        "tmdb_id": 36,
+        "title": "灵媒缉凶",
+        "poster_path": "/6tOxspW2MbbAQ0s3jtfs8QATcx.jpg",
+        "vote_average": 7.462
+      }
+    ]
+  },
   "6850547": {
     "tmdb_id": 301528,
     "tmdb_type": "movie",
@@ -8012,7 +8128,127 @@
       }
     ]
   },
-  "27172891": {},
+  "27172891": {
+    "tmdb_id": 499556,
+    "tmdb_type": "movie",
+    "original_title": "大象席地而坐",
+    "overview": "河北一座灰暗的小城里，几个人在同一天被各自的生活逼入困境。高中生韦布为了替朋友出头，失手将同学于帅推下楼梯，开始躲避其哥哥于城的追寻；于城因与朋友的妻子偷情，亲眼目睹朋友跳楼身亡，也想暂时逃离眼前的一切；韦布的同学黄玲与母亲关系紧张，又因与学校教导处副主任的关系曝光而无处容身；邻居王金则面临被家人送进养老院的处境。传说遥远的满洲里有一头大象，整日席地而坐，对周围的一切无动于衷。这个荒诞的传闻渐渐成为他们逃离现实的共同念想，在漫长而寒冷的一天里，几个人的命运也开始彼此交织……",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 230,
+    "release_date": "2018-12-14",
+    "backdrop_path": "/5b1r0b77BovGp4ejUsYsx3arQoe.jpg",
+    "poster_path": "/9WMqts663W2yxJ6B16uKX47k7vl.jpg",
+    "countries": [
+      "China"
+    ],
+    "director": "胡波",
+    "cast": [
+      {
+        "name": "彭昱畅",
+        "character": "Wei Bu",
+        "profile_path": "/eeU2VRMJQIeX6Z4dvbVndmDlCVt.jpg"
+      },
+      {
+        "name": "王玉雯",
+        "character": "Huang Ling",
+        "profile_path": "/96xTNUakyNPWoSeOFksIg9YBIf9.jpg"
+      },
+      {
+        "name": "章宇",
+        "character": "Yu Cheng",
+        "profile_path": "/how4YIyUbDF0rQAI8e0CM7t632I.jpg"
+      },
+      {
+        "name": "李从喜",
+        "character": "Wang Jin",
+        "profile_path": "/zEWD9wUUsGwZxFjXEYHkrUYTTrB.jpg"
+      },
+      {
+        "name": "Zhenghui Ling",
+        "character": "Li Kai",
+        "profile_path": ""
+      },
+      {
+        "name": "Xiaolong Zhang",
+        "character": "Yu Shuai",
+        "profile_path": ""
+      },
+      {
+        "name": "Li Danyi",
+        "character": "Wang Jin's Daughter",
+        "profile_path": ""
+      },
+      {
+        "name": "孔威",
+        "character": "Wang Jin's Son-in-Law",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/5b1r0b77BovGp4ejUsYsx3arQoe.jpg",
+      "/tFCaVKM43XvcVPmzhJVoDSkhXLW.jpg",
+      "/vIfnoukMtXEntnb3HTIdVGtxr8Q.jpg",
+      "/AmF4ZoHaYtX7fSKuaTNffEo8riw.jpg",
+      "/vAp1u1TVufGRzmNsqtVuZhdHUFY.jpg",
+      "/zvMyYdIhbLnZfAI0qce6IEvsCUX.jpg",
+      "/6PF01RcssvkMpPBu0DMCL4u9j6l.jpg",
+      "/fWq91TjXOQft6m7vWjnKi1xUigS.jpg",
+      "/thKzBtZ5DktiEenXSsmqUb4f1th.jpg",
+      "/zQKxuuK7NaMcUj2SOlZIArdvtI6.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1615971,
+        "title": "The Dream of a Ridiculous Man",
+        "poster_path": "/15UU8ZlbQq43CBG9baQpFSW8wC1.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1426455,
+        "title": "Styx and Stones",
+        "poster_path": "/cRxvoTrZ34l0Ztv2I9nAyzKwmr4.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 320,
+        "title": "失眠症",
+        "poster_path": "/xqaVk5O71cJ7a395mpL3FGkQi4W.jpg",
+        "vote_average": 6.958
+      },
+      {
+        "tmdb_id": 811,
+        "title": "宇宙静悄悄",
+        "poster_path": "/ahasZ5HILZHtlrl6cbXgpfk0y8H.jpg",
+        "vote_average": 6.4
+      },
+      {
+        "tmdb_id": 422,
+        "title": "八部半",
+        "poster_path": "/bPGR9CnJVnLmES2o8zBeTcNrjMO.jpg",
+        "vote_average": 8.074
+      },
+      {
+        "tmdb_id": 423,
+        "title": "钢琴家",
+        "poster_path": "/1J3yRdmlBF3a5l3GLqBScRBdhJr.jpg",
+        "vote_average": 8.37
+      },
+      {
+        "tmdb_id": 1213,
+        "title": "天才瑞普利",
+        "poster_path": "/kiKO4XSKI8yWSY8lbfTJtIr6UnL.jpg",
+        "vote_average": 7.202
+      },
+      {
+        "tmdb_id": 1228232,
+        "title": "Tomorrow is a Long Time",
+        "poster_path": "/r4N8OvDvamzjqyMFGBmFfSC53I8.jpg",
+        "vote_average": 8.0
+      }
+    ]
+  },
   "36808876": {
     "tmdb_id": 1368337,
     "tmdb_type": "movie",
@@ -16055,6 +16291,861 @@
         "title": "雌狐",
         "poster_path": "/9KMZWDA3xTrlgrScqdMisINQmsh.jpg",
         "vote_average": 5.5
+      }
+    ]
+  },
+  "35603727": {
+    "tmdb_id": 823219,
+    "tmdb_type": "movie",
+    "original_title": "Straume",
+    "overview": "这是一段关于友谊与生存的动人篇章，将独立动画的创作雄心与想象力推至令人惊叹的高度。这部荣获奥斯卡奖、风靡全球的作品，讲述了一只勇敢的猫在家园被大洪水摧毁后的故事。它与一只水豚、一只狐猴、一只小鸟和一只小狗结伴，共同驾驶小船寻找陆地。在这颗已然化为水世界的星球上，它们必须凭借信任、勇气与智慧渡过重重险境。凭借开源软件与小团队协作，富有远见的独立动画师金茨·齐尔巴洛迪斯营造了一场绝妙的感官之旅，深刻沉思了环境的脆弱与社群精神的真谛。",
+    "genres": [
+      "冒险",
+      "动画",
+      "家庭",
+      "奇幻"
+    ],
+    "runtime": 85,
+    "release_date": "2024-08-29",
+    "backdrop_path": "/pZfpUMEJzw9BZHtXuZzzOrRxtMa.jpg",
+    "poster_path": "/tn89woD33WgLgT7ZMUr1r47hnql.jpg",
+    "countries": [
+      "Latvia",
+      "Belgium",
+      "France"
+    ],
+    "director": "金兹·兹巴洛迪斯",
+    "cast": [],
+    "stills": [
+      "/pZfpUMEJzw9BZHtXuZzzOrRxtMa.jpg",
+      "/4XPNNt0zfZKBqxxVWaQALd57UHl.jpg",
+      "/b3mdmjYTEL70j7nuXATUAD9qgu4.jpg",
+      "/ku9p7ciLeuV1R8pqJGMgawaaVE8.jpg",
+      "/zdy3h2sMppVp1Q41HpLiyF5w7es.jpg",
+      "/vkq14A1J0tT1VjM4cEW7oG8kDxe.jpg",
+      "/2HFXAuFRn444kJ9MgloJ0COjcpO.jpg",
+      "/flShWk2HFy4FfjJEMRnIbDQFP7W.jpg",
+      "/hgB9dSvOmqimvf899kLdoomY1sr.jpg",
+      "/91P4Qj8AHa6FDPO7mAqfUjDcTRd.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 866322,
+        "title": "La historia de todos",
+        "poster_path": "/yaQtUZhAM0fpjPBmiqha5hcKe8F.jpg",
+        "vote_average": 8.5
+      },
+      {
+        "tmdb_id": 483510,
+        "title": "The Extinct Suite",
+        "poster_path": "/ufYn7zxNsEZqGWyzRJUeJeBlN8i.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 866672,
+        "title": "Princesse",
+        "poster_path": "/ad8ymFqTab0QA4Ep5ws4G80UhFV.jpg",
+        "vote_average": 4.0
+      },
+      {
+        "tmdb_id": 296232,
+        "title": "As Melhores Músicas Infantis vol. 1",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 296233,
+        "title": "As Melhores Músicas Infantis vol. 2",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 296293,
+        "title": "As They Continue to Fall",
+        "poster_path": "/61DYKMRYUhplwxozUClrGOG6YdH.jpg",
+        "vote_average": 4.5
+      },
+      {
+        "tmdb_id": 1255369,
+        "title": "Финник 2",
+        "poster_path": "/2CJ01g3An35uUwDwvfKQcEIg7T0.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 483207,
+        "title": "Son of Jaguar",
+        "poster_path": "/frVbOYDDZGKoogJvu21MNkrLAWg.jpg",
+        "vote_average": 7.1
+      }
+    ]
+  },
+  "36227197": {
+    "tmdb_id": 219760,
+    "tmdb_type": "tv",
+    "original_title": "The Terminal List: Dark Wolf",
+    "overview": "在《终极名单》故事发生之前，海豹突击队员本·爱德华兹（泰勒·克奇饰）踏入了中情局的黑暗战线。当他一步步走入灰色地带，就越发难以抵挡内心日益觉醒的黑暗冲动。每个人体内都住着两头狼——一光一暗，相互争斗。最终胜出的会是哪一头？",
+    "genres": [
+      "动作冒险",
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2025-08-27",
+    "backdrop_path": "/m3m2wPu9Irw397jagBKFJrcobpx.jpg",
+    "poster_path": "/uAuQx0LoHGBAZLiIO4xJnP2J0XD.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "Jack Carr",
+    "cast": [
+      {
+        "name": "泰勒·克奇",
+        "character": "Ben Edwards",
+        "profile_path": "/pTFkwvE2URbbftiaofexfolhkH9.jpg"
+      },
+      {
+        "name": "汤姆·霍珀",
+        "character": "Raife Hastings",
+        "profile_path": "/4Bx09xFBXIWIhptQ10yJEPbB1HI.jpg"
+      }
+    ],
+    "stills": [
+      "/zkjRqFzJhhaPK8qNFavYKeAdRcs.jpg",
+      "/dV1TZIR5UgZZy62taBlMVRbNRYY.jpg",
+      "/h5nKXN4nU98ZscaIGjhLXKHpXTw.jpg",
+      "/m3m2wPu9Irw397jagBKFJrcobpx.jpg",
+      "/yQw23xxmVBFVHPCF6V68TAIIfno.jpg",
+      "/aoy6D31dAWyi5D8JQwFMtNAVf8F.jpg",
+      "/xmTytdSQIUI2VZXbIYeYftqJDY5.jpg",
+      "/NLQOUPhevpErgTdXjMnXH0yqni.jpg",
+      "/9W9dbMFwjvfiN5LGgmKm0znklwW.jpg",
+      "/vRwDfJ1tLUQfAtwi4TTRkmXVDPf.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 19,
+        "title": "Planet of the Apes",
+        "poster_path": "/zxo5Vrd0oXgm9ZCz4r7Q3L8veWg.jpg",
+        "vote_average": 6.9
+      },
+      {
+        "tmdb_id": 59983,
+        "title": "ฟ้าเพียงดิน",
+        "poster_path": "/bqQzXZBsSNLZPLKzXAPBbFQBjRp.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 93891,
+        "title": "Nyrkki",
+        "poster_path": "/sqMVBUMxxLEN4IY3JKhOZThdQr4.jpg",
+        "vote_average": 7.2
+      },
+      {
+        "tmdb_id": 93896,
+        "title": "绝叫",
+        "poster_path": "/bdZpEIiBWAeL3WkOy1AQi4WORxc.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 93870,
+        "title": "SAS：叛逆勇士",
+        "poster_path": "/28ZQIvxIFt4cEPabAijNfWyaB7i.jpg",
+        "vote_average": 7.819
+      },
+      {
+        "tmdb_id": 93877,
+        "title": "我在未来等你",
+        "poster_path": "/wu2y8J9yeRcEvdA3s7RORrcDp1j.jpg",
+        "vote_average": 7.9
+      },
+      {
+        "tmdb_id": 93879,
+        "title": "特战荣耀",
+        "poster_path": "/hok7iwxSDXWgHnRGx5UAxpTXOkN.jpg",
+        "vote_average": 6.444
+      },
+      {
+        "tmdb_id": 93781,
+        "title": "战败之都",
+        "poster_path": "/vKWqlJ61exCULoGanpKLtevURwN.jpg",
+        "vote_average": 6.5
+      }
+    ]
+  },
+  "36675942": {
+    "tmdb_id": 285625,
+    "tmdb_type": "tv",
+    "original_title": "小城良方",
+    "overview": "讲述了当天才医生刘铮亮遭遇人生滑铁卢，被迫返回家乡从零开始的故事。他就地集结一群“不靠谱”的人，热血操刀着“最靠谱”的事，在烟火气中以人情暖意编织市井日常，开出一剂剂疗愈心灵的人生处方。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-10-21",
+    "backdrop_path": "/nhQKKALP3SOi1Ft5MZU6KU05VcY.jpg",
+    "poster_path": "/fONYOXlKcphO290BSGxSCjnMPZg.jpg",
+    "countries": [
+      "CN"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "肖战",
+        "character": "Liu Zhengliang",
+        "profile_path": "/468n73j2sSJIbfZvsIZvDpvUaS8.jpg"
+      },
+      {
+        "name": "倪大红",
+        "character": "Long Dongdong",
+        "profile_path": "/4Eo2UHZTIyo6WU5I3zqIb60je9U.jpg"
+      },
+      {
+        "name": "姜妍",
+        "character": "Ai Chen",
+        "profile_path": "/o5TZh9UN3h4tlGgCIMQWf4kW23m.jpg"
+      },
+      {
+        "name": "史彭元",
+        "character": "Liu Zhengguang",
+        "profile_path": "/f9XbRis8WOXcFnLGD79jRBD2a2V.jpg"
+      },
+      {
+        "name": "菅纫姿",
+        "character": "Che Mingming",
+        "profile_path": "/VY9otsacIuIIfXhz4XYHqU1TcT.jpg"
+      },
+      {
+        "name": "张国强",
+        "character": "Huang Dongsheng",
+        "profile_path": "/ako7Cv49GuZfl4ew6sWOvBUqBug.jpg"
+      },
+      {
+        "name": "王彦霖",
+        "character": "Chen Junnan",
+        "profile_path": "/bl4wKqUhYdPNVg0p4rXJ2ZVO3T0.jpg"
+      },
+      {
+        "name": "丁嘉丽",
+        "character": "Lao Duan",
+        "profile_path": "/fHwGwYVMtgDL4OBMUdrdNru5KCo.jpg"
+      }
+    ],
+    "stills": [
+      "/nhQKKALP3SOi1Ft5MZU6KU05VcY.jpg",
+      "/trg8ENfPMtnreAIKcEXeCKjPrNz.jpg",
+      "/qZ489AiL77hIWSUDwF8BCQoKDJq.jpg",
+      "/63BVa0C1iUZa7blZcseBrufqu3G.jpg",
+      "/kQ5YiPw0gR4WRz1ob5HtEZhmJ46.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 93972,
+        "title": "偏偏爱上你",
+        "poster_path": "/sKS1XwEaareXoH6kuuKC1p0op2A.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 93975,
+        "title": "与爱同居",
+        "poster_path": "/ss2eWO7iOtSyLnNoG5kz1RePMf5.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 93795,
+        "title": "孤高的手术刀",
+        "poster_path": "/31SIbFUsF5QUEVzJ0dxpTInHIPF.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 93820,
+        "title": "恶党：犯罪者追踪调查",
+        "poster_path": "/5xGLQO7UdOuppw0zScSk9Znd8DL.jpg",
+        "vote_average": 8.4
+      },
+      {
+        "tmdb_id": 93870,
+        "title": "SAS：叛逆勇士",
+        "poster_path": "/28ZQIvxIFt4cEPabAijNfWyaB7i.jpg",
+        "vote_average": 7.819
+      },
+      {
+        "tmdb_id": 93877,
+        "title": "我在未来等你",
+        "poster_path": "/wu2y8J9yeRcEvdA3s7RORrcDp1j.jpg",
+        "vote_average": 7.9
+      },
+      {
+        "tmdb_id": 93879,
+        "title": "特战荣耀",
+        "poster_path": "/hok7iwxSDXWgHnRGx5UAxpTXOkN.jpg",
+        "vote_average": 6.444
+      },
+      {
+        "tmdb_id": 93784,
+        "title": "环形物语",
+        "poster_path": "/1BGvGfZGxCAwPVkbFzLhT5XiDYf.jpg",
+        "vote_average": 7.04
+      }
+    ]
+  },
+  "36754329": {
+    "tmdb_id": 301449,
+    "tmdb_type": "tv",
+    "original_title": "콩 심은 데 콩 나서 웃음팡 행복팡 해외탐방",
+    "overview": "講述的是在《豆豆飯飯》中成功完成任務的 KKPP 職員們以探索公司發展的洞察力爲目的，前往墨西哥海外探訪的故事，這是《種豆得豆》的第二個衍生節目。KKPP 食品代表理事李光洙和本部長都敬秀（D.O.）一起，還有他們的至親金宇彬加入。特別是三人將親自制定國家、宿舍、活動等海外探訪日程，在支援海外探訪費用總公司的資金壓力下，爲了達到預算而努力，有時他們還會試圖進行協商。",
+    "genres": [
+      "真人秀"
+    ],
+    "runtime": null,
+    "release_date": "2025-10-17",
+    "backdrop_path": "/xRLzHRBYsHEleE7rzGVI1VliBlo.jpg",
+    "poster_path": "/k4oenZF14FK4YW59Wsracnk9DXU.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "罗暎锡",
+    "cast": [
+      {
+        "name": "李光洙",
+        "character": "Self",
+        "profile_path": "/eqjZXCV4EutnoVxZwOveK6Nl5W9.jpg"
+      },
+      {
+        "name": "金宇彬",
+        "character": "Self",
+        "profile_path": "/AjMMxxWbTNdafyWuY41xAHFPVou.jpg"
+      },
+      {
+        "name": "都敬秀",
+        "character": "Self",
+        "profile_path": "/fYjYGWxYydmVxPle1h6QoeRk2b0.jpg"
+      }
+    ],
+    "stills": [
+      "/m2jJOyRbeJyob5qR3GXzFPSKJIj.jpg",
+      "/8xsGWvJsZOC5fw6tIcWmiI4bxSV.jpg",
+      "/xRLzHRBYsHEleE7rzGVI1VliBlo.jpg",
+      "/uIvLWRPBrsa3DzpfAYsHUGAr81e.jpg",
+      "/jWJeyINvjb8DWx5DNUx8K4NQsJX.jpg",
+      "/3njRh5YU8idUqfYdJ7Wbl7jnXrX.jpg",
+      "/t876EnDZOYIGMiDWZ5CF7sAcPZX.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 116250,
+        "title": "璀璨帝国",
+        "poster_path": "/wiPeSkj8WaU1A3PL4Y0he0Ouacz.jpg",
+        "vote_average": 6.931
+      },
+      {
+        "tmdb_id": 85904,
+        "title": "诱惑岛",
+        "poster_path": "/7ABC84sjxDZ5qCmemulT7ItzXhi.jpg",
+        "vote_average": 6.9
+      },
+      {
+        "tmdb_id": 154521,
+        "title": "The Kardashians",
+        "poster_path": "/aiYvdzzdsiCOjpOuqqthp7ioyvU.jpg",
+        "vote_average": 8.472
+      },
+      {
+        "tmdb_id": 14814,
+        "title": "与卡戴珊一家同行",
+        "poster_path": "/iUkIyWW0flxld3OALijNmmDsIYo.jpg",
+        "vote_average": 7.333
+      },
+      {
+        "tmdb_id": 4940,
+        "title": "Bad Girls Club",
+        "poster_path": "/cEMlNl2madv94cfsNHbPiFBCaFg.jpg",
+        "vote_average": 6.3
+      },
+      {
+        "tmdb_id": 262469,
+        "title": "裸体约会：英国",
+        "poster_path": "/tWHl9QaUaz4sKEUk1qCaGqQDARq.jpg",
+        "vote_average": 7.891
+      },
+      {
+        "tmdb_id": 78533,
+        "title": "泽西海岸：家庭度假",
+        "poster_path": "/6YH3rdUqxIR07h7ZvyT4jf8ADzi.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 155431,
+        "title": "RuPaul's Drag Race UK vs The World",
+        "poster_path": "/aVDyuOULmPFAMvTTfZnUr8GDcWa.jpg",
+        "vote_average": 6.3
+      }
+    ]
+  },
+  "36809864": {
+    "tmdb_id": 1500536,
+    "tmdb_type": "movie",
+    "original_title": "南京照相馆",
+    "overview": "1937年南京大屠杀期间，一群生活在南京的普通百姓躲进吉祥照相馆避难。为了活下去，他们被迫帮助侵华日军摄影师冲洗底片，却意外冲印出记录日军屠城暴行的罪证照片。原本只想在战乱中保全性命的他们，在一次次面对照片中触目惊心的暴行后，逐渐意识到这些影像所承载的意义，并决定冒着生命危险将这份罪证保存下来，让历史的真相得以留存……",
+    "genres": [
+      "战争",
+      "剧情",
+      "历史"
+    ],
+    "runtime": 137,
+    "release_date": "2025-07-19",
+    "backdrop_path": "/iyIYSfyMTRlaLQWzKWxNRPVkt8Z.jpg",
+    "poster_path": "/lwrANgpPEBmYZ59oExpCiuv34Ou.jpg",
+    "countries": [
+      "China"
+    ],
+    "director": "申奥",
+    "cast": [
+      {
+        "name": "刘昊然",
+        "character": "Su Liuchang",
+        "profile_path": "/3m6zJtGo0oQSxvmUOn0urhEY7fg.jpg"
+      },
+      {
+        "name": "王传君",
+        "character": "Wang Guanghai",
+        "profile_path": "/ilFW1ONI5UILya7nC1SuqZtkGRG.jpg"
+      },
+      {
+        "name": "高叶",
+        "character": "Lin Yuxiu",
+        "profile_path": "/iowwWeVy1IlA2h42c08FpmzLCvq.jpg"
+      },
+      {
+        "name": "王骁",
+        "character": "Jin Chengzong",
+        "profile_path": "/sLnMwjp8kX423aCXScG1IOacS1r.jpg"
+      },
+      {
+        "name": "周游",
+        "character": "Song Cunyi",
+        "profile_path": "/rKMgNYEXxQQ0Qp2g40YSATJ4fuv.jpg"
+      },
+      {
+        "name": "杨恩又",
+        "character": "Jin Wanyi",
+        "profile_path": ""
+      },
+      {
+        "name": "原岛大地",
+        "character": "Hideo Ito",
+        "profile_path": "/v2t7UaEVHnDseceqXugob9Pvr1g.jpg"
+      },
+      {
+        "name": "王真儿",
+        "character": "Zhao Yifang",
+        "profile_path": "/83e4Dk51l1U2dxz7viU2VVvJIzm.jpg"
+      }
+    ],
+    "stills": [
+      "/iyIYSfyMTRlaLQWzKWxNRPVkt8Z.jpg",
+      "/faoZLhs1QqIxZZ6LViRf6x6byWz.jpg",
+      "/8GyOBWEfZTCqyW9pgvSPKi3KvsT.jpg",
+      "/ngLgoY3MTfLANqv9cpXr96saaFV.jpg",
+      "/qiu0u5fa5OnHtGTOmzOffw5FpkW.jpg",
+      "/kqTC9Te1PdsmkMIdT1TaitHfIOE.jpg",
+      "/fHosNUswz8uPcr3YyxslAKx07BR.jpg",
+      "/lCRLLe8kiwb99JOlkTPAfchhqwk.jpg",
+      "/cY91L52nr8ujtxyxAcM9vMLd8iR.jpg",
+      "/lPaaYRaayQ7VBQef05kgtbPRf0m.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1715,
+        "title": "苹果酒屋法则",
+        "poster_path": "/7bXqIpqobjnDMtGXURosMXdy5SB.jpg",
+        "vote_average": 7.087
+      },
+      {
+        "tmdb_id": 1830,
+        "title": "战争之王",
+        "poster_path": "/s9G6AFTi6tzzpzekijKECUB1ayW.jpg",
+        "vote_average": 7.351
+      },
+      {
+        "tmdb_id": 1427472,
+        "title": "Pour le meilleur",
+        "poster_path": "/zA41CDRXu3mUa04i6Y18dVDhP8g.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 455002,
+        "title": "Johnny Shiloh",
+        "poster_path": "/b9zmQsCNR2W6xGMddJAZ5QCYk6d.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 1786,
+        "title": "再见，孩子们",
+        "poster_path": "/q5z9yZuOHqIFOSMPmxtlh2W5kwC.jpg",
+        "vote_average": 7.532
+      },
+      {
+        "tmdb_id": 1228060,
+        "title": "The Alpha Wolves of Yellowstone",
+        "poster_path": "/7j6IPEn3B3eqaNcCxUrf9EZOvFr.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 641530,
+        "title": "阿虎",
+        "poster_path": "/6tgxs8NN1o23By8oNtzXK0Ybn3r.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 268253,
+        "title": "仁慈之心",
+        "poster_path": "/yWeWhqIUbyAwcljdilrrd8pbfzD.jpg",
+        "vote_average": 6.3
+      }
+    ]
+  },
+  "37239408": {
+    "tmdb_id": 250307,
+    "tmdb_type": "tv",
+    "original_title": "The Pitt",
+    "overview": "聚焦匹兹堡创伤医疗中心急诊科的一群医护人员，他们每天在人员短缺、资源紧张和高强度救治中争分夺秒。医生、护士和实习生不仅要面对生死攸关的急救，也要处理各自的压力、创伤与人生困境。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2025-01-09",
+    "backdrop_path": "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
+    "poster_path": "/rk5W0FDxBmUu2vIh2QgRr7XvmBM.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "R.斯科特·格雷米尔",
+    "cast": [
+      {
+        "name": "诺亚·怀尔",
+        "character": "Dr. Michael 'Robby' Robinavitch",
+        "profile_path": "/nwyLCQepwg8FX7OXJ4AT4ej8c7i.jpg"
+      },
+      {
+        "name": "帕特里克·鲍尔",
+        "character": "Dr. Frank Langdon",
+        "profile_path": "/288Y2VT4f5UUvt8DZ877KWzPCnY.jpg"
+      },
+      {
+        "name": "凱瑟琳·拉娜莎",
+        "character": "Charge Nurse Dana Evans",
+        "profile_path": "/7X3f4MG24XLG2fNPJt5H38d8YCV.jpg"
+      },
+      {
+        "name": "苏普丽亚·加内什",
+        "character": "Dr. Samira Mohan",
+        "profile_path": "/575OVjibWikBVA3kOqQ6Jdxn5qi.jpg"
+      },
+      {
+        "name": "菲奥娜·道里夫",
+        "character": "Dr. Cassie McKay",
+        "profile_path": "/gs0aMwWWJ2FRY4sSvvAefIT5sAC.jpg"
+      },
+      {
+        "name": "泰勒·德尔登",
+        "character": "Dr. Melissa King",
+        "profile_path": "/9FQlLsWxiheH8QJvOaISsHg6KvZ.jpg"
+      },
+      {
+        "name": "伊莎·布里昂斯",
+        "character": "Dr. Trinity Santos",
+        "profile_path": "/5x93Cg0Ac29PPLwiDzCxkaUonrR.jpg"
+      },
+      {
+        "name": "格伦·霍威尔",
+        "character": "Student Doctor Dennis Whitaker",
+        "profile_path": "/tl0qUpzS4mVhQmjRklrtNiJwuHY.jpg"
+      }
+    ],
+    "stills": [
+      "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
+      "/7Sgo1XdCrIpJpiNsTPMi9vwKSuC.jpg",
+      "/6uPBHw488MUW6x51zZ2OCJo6Dgp.jpg",
+      "/q1z0W19F4T5Xs2qka3xJSmFjv9a.jpg",
+      "/aawwu2SzF2hrfTUy1L4k0exbe2W.jpg",
+      "/58uwPn7t9ZGZIRgzcBfxCv60GZ1.jpg",
+      "/rp6EgvnXc5r5gVz0ivZ6UMpz0l1.jpg",
+      "/jjCT2038q56jRJ2UrxZgm65DfBE.jpg",
+      "/vzxDaHIXb3fX3v5QoBqOElXu9yZ.jpg",
+      "/emYVQDiLjZA3N6R435h8l6qoIXs.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 24,
+        "title": "Presidio Med",
+        "poster_path": "/dpsbrvlgr48nshG1MS8i2saaINQ.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 30,
+        "title": "波城杏话",
+        "poster_path": "/mEfcA56iisaOfnK8FsY1sSE2wLu.jpg",
+        "vote_average": 5.7
+      },
+      {
+        "tmdb_id": 93872,
+        "title": "神魔一家亲 第二季",
+        "poster_path": "/eaHEXixNQZxSm7NnkbfFxwJpffd.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 93795,
+        "title": "孤高的手术刀",
+        "poster_path": "/31SIbFUsF5QUEVzJ0dxpTInHIPF.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 94607,
+        "title": "Benim Adım Melek",
+        "poster_path": "/kTU4D2yQ3x0wb314Qlx7etZlPe7.jpg",
+        "vote_average": 6.7
+      },
+      {
+        "tmdb_id": 658,
+        "title": "歌唱神探",
+        "poster_path": "/1xUAh6d239ABRU8KiTqXOijNPuJ.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 1042,
+        "title": "少女革命",
+        "poster_path": "/pOjDuclpsWGV13Nj7XtZukuZj6f.jpg",
+        "vote_average": 8.1
+      },
+      {
+        "tmdb_id": 1021,
+        "title": "急诊室的故事",
+        "poster_path": "/ahqMUNIUeGIBQSkShEV32085IFZ.jpg",
+        "vote_average": 6.233
+      }
+    ]
+  },
+  "37657523": {
+    "tmdb_id": 303724,
+    "tmdb_type": "tv",
+    "original_title": "สืบลับจับใจ",
+    "overview": "一位权势显赫的警官之女，在躲过数次暗杀后悄然加入精英训练计划。在这里她邂逅了一位纪律严明、直觉敏锐的军官，两人被迫同住一室，暧昧情愫悄然滋长。然而政治阴谋、未解命案与错综往事即将撕裂这段关系。当一方发现对方的父亲竟与自己家族悲剧有所牵连时，在职责、危险与真相代价的层层考验下，两人不得不在正义和意外降临的爱情间做出抉择。",
+    "genres": [
+      "剧情",
+      "动作冒险"
+    ],
+    "runtime": null,
+    "release_date": "2026-02-12",
+    "backdrop_path": "/2yZZ41uw1xe4wDtMwZ8EVWSeUgK.jpg",
+    "poster_path": "/jQvrRQgHpGqUCc5oT3GxSfvDWqO.jpg",
+    "countries": [
+      "TH"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "Nitchanart Pommart",
+        "character": "'Vicky' Phawika Ratchanon",
+        "profile_path": "/lyIfnnQUc6BQb2DcHqTItv4gSg2.jpg"
+      },
+      {
+        "name": "Pattarawadee Laosa",
+        "character": "'Than' Thara Krahan",
+        "profile_path": "/x83yL24XUC2qsDCcIjJH55monVN.jpg"
+      },
+      {
+        "name": "Boy Surat Rungputtikul",
+        "character": "Bawornthat",
+        "profile_path": "/8TTqzPYDWYfalVec7ZsFs6ySi2f.jpg"
+      },
+      {
+        "name": "ฐานัตถ์ จิรรัชชกิจ",
+        "character": "Pete",
+        "profile_path": "/2m1bIwSJk53rGnyTN23Yys4P5Yx.jpg"
+      },
+      {
+        "name": "ตฤณ เศรษฐโชค",
+        "character": "Phakphum",
+        "profile_path": "/x1uwpXmISKVbaEEpy0WFe3IFJg2.jpg"
+      },
+      {
+        "name": "Athiwad Sanidwong Na Ayoodthayaa",
+        "character": "Burin",
+        "profile_path": "/1J8dCA06JmcQ5QVTRXaLIFtmJ3u.jpg"
+      },
+      {
+        "name": "พัทระ เชื้อจำพร",
+        "character": "X",
+        "profile_path": "/cF61uHPgyFxpVakUJEIXkerAyCF.jpg"
+      },
+      {
+        "name": "派泰·普洛伊米卡",
+        "character": "Ken",
+        "profile_path": "/92kDcRQklQgeQAvHtmjbmEob8wo.jpg"
+      }
+    ],
+    "stills": [
+      "/2yZZ41uw1xe4wDtMwZ8EVWSeUgK.jpg",
+      "/sPXZ3of4Lf1D1LXY0PUI1RpsYo6.jpg",
+      "/1YX42jBpGkbNqgveRmh43V1XWkH.jpg",
+      "/93wOmiNaktCA5eXUGf2HP3cIh4A.jpg",
+      "/ejVXdJMAkqGRNCwuNpQsgPNX1b1.jpg",
+      "/EEao5yWI4vtnBMcUALS5SfK90J.jpg",
+      "/3sNXMzhXlmPMHBYYvLHTOQxFwGy.jpg",
+      "/dX9iRmIeGHvl2PDeJ3QE02ikCRH.jpg",
+      "/zmS0KgzcuJi4tkgXr28TcerZUu6.jpg",
+      "/eslMGp2XBfCYWVIjfWI6qunwKOZ.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 93972,
+        "title": "偏偏爱上你",
+        "poster_path": "/sKS1XwEaareXoH6kuuKC1p0op2A.jpg",
+        "vote_average": 7.043
+      },
+      {
+        "tmdb_id": 93975,
+        "title": "与爱同居",
+        "poster_path": "/ss2eWO7iOtSyLnNoG5kz1RePMf5.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 150,
+        "title": "This Life",
+        "poster_path": "/wC8V4g0AsyWO6ZFCRqg7bkNsmVC.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 93814,
+        "title": "来自星星的你（泰版）",
+        "poster_path": "/pSv4ClZhdZrCyvXOIHxBQT1FzYq.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 210525,
+        "title": "彩虹王子",
+        "poster_path": "/xe72jcLBYbnfQdRrpLRPDQi4J0N.jpg",
+        "vote_average": 8.3
+      },
+      {
+        "tmdb_id": 59987,
+        "title": "แก้วลืมคอน",
+        "poster_path": "/jltYNFjHFSDKWQzBPB5o7ACdq8z.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 59989,
+        "title": "หัวใจช็อกโกแลต",
+        "poster_path": "/c54DGsqS4t2dL8lfAcgEQUQORJN.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 59991,
+        "title": "明天我依然爱你",
+        "poster_path": "/5MGJRQylXkqn1vAc3rkXmRiUrHl.jpg",
+        "vote_average": 9.0
+      }
+    ]
+  },
+  "38188936": {
+    "tmdb_id": 313670,
+    "tmdb_type": "tv",
+    "original_title": "네 가지 소원",
+    "overview": "韩国智斗综艺《四个愿望》（The Four Wishes/네ラ지소원）由大学生创作团队MINDZERO制作，2026年1月报道，全素人首发。节目聚焦高智商博弈，参赛者包括名校学生、密室设计师、魔方冠军等9位代表，代表人物有Lee Choongmyung（李忠明）、Kil Hojong、Bae Chaewoon等，因高规则完成度被称为“小《血之游戏》”",
+    "genres": [
+      "真人秀"
+    ],
+    "runtime": null,
+    "release_date": "2026-01-02",
+    "backdrop_path": "/pMoes5wotMDyaau0IIsYLy5flXF.jpg",
+    "poster_path": "/gcxnLHhmA7AkOOwcGFcdfBCvPel.jpg",
+    "countries": [
+      "KR"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "충명",
+        "character": "延世大学学生，香港数学竞赛冠军，魔鬼计划S2玩测者",
+        "profile_path": ""
+      },
+      {
+        "name": "길호종",
+        "character": "韩国科学技术院学生，计算机科学专业，韩国科学技术院啦啦队长",
+        "profile_path": ""
+      },
+      {
+        "name": "裴彩云",
+        "character": "韩国科学技术院博士生，魔方公式记录保持者，独立游戏开发者",
+        "profile_path": ""
+      },
+      {
+        "name": "权惠秀",
+        "character": "密室逃脱设计师，学院讲师",
+        "profile_path": ""
+      },
+      {
+        "name": "朴智惠",
+        "character": "推理俱乐部“Essence Of Reasoning”经理",
+        "profile_path": ""
+      },
+      {
+        "name": "裴俊成",
+        "character": "高丽大学学生，英语教育专业",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/pMoes5wotMDyaau0IIsYLy5flXF.jpg",
+      "/djeCALoXNxiOlxWKqKTQj7FjKRH.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 77696,
+        "title": "奔跑吧，防弹！",
+        "poster_path": "/xi6fnObkhQI7onZWeSB9rA80Abs.jpg",
+        "vote_average": 8.6
+      },
+      {
+        "tmdb_id": 85904,
+        "title": "诱惑岛",
+        "poster_path": "/7ABC84sjxDZ5qCmemulT7ItzXhi.jpg",
+        "vote_average": 6.9
+      },
+      {
+        "tmdb_id": 204082,
+        "title": "鱿鱼游戏：真人挑战赛",
+        "poster_path": "/iovQgLvsvYdH9J8JGqW0s69FnxN.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 2778,
+        "title": "Wheel of Fortune",
+        "poster_path": "/4S36URhKU4sBL1gC2B5UxmTlZMl.jpg",
+        "vote_average": 6.831
+      },
+      {
+        "tmdb_id": 62,
+        "title": "The Challenge",
+        "poster_path": "/A8pSOaknOrNCPRssEyRYsHCRLZ3.jpg",
+        "vote_average": 7.198
+      },
+      {
+        "tmdb_id": 30810,
+        "title": "Pointless",
+        "poster_path": "/dZCnPXsQnRtK7meIDnHL9T4HkYo.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 61575,
+        "title": "到美国结婚去",
+        "poster_path": "/wJVDf4ZysdxhoREQIHlOM4phRNp.jpg",
+        "vote_average": 7.1
+      },
+      {
+        "tmdb_id": 62481,
+        "title": "打败巴比富雷",
+        "poster_path": "/wA9c9cGTPcgsUnN4KPoERB9hSGO.jpg",
+        "vote_average": 6.5
       }
     ]
   }
