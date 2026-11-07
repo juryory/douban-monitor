@@ -1,201 +1,158 @@
 # OpenClaw 豆瓣高分监控 Skill
 
-这个项目是一个运行在 OpenClaw 环境中的豆瓣高分影视监控 skill，用来发现豆瓣里"近期新出现并达到门槛"的电影、剧集、综艺等内容。
+发现热门电影、剧集等候选，累计展示历史达标作品。退出榜单本身不会让作品从网页消失。
 
-默认规则：
+默认首次收录及隐藏后恢复的条件：**豆瓣评分 ≥ 8.0，评分人数 > 3000**。评分人数沿用原有严格大于门槛；评分统一包含 8.0。
 
-- 豆瓣评分大于 `8.0`
-- 豆瓣评分人数大于 `3000`
+## 快速开始
 
-## 快速开始（新手）
+需要 Python **3.11+**，只使用标准库，无需安装第三方依赖。
 
-第一次拉取仓库后，按下面几步就能跑通：
+1. 可选：复制 `.env.example` 为 `.env`，填写 `TMDB_API_KEY` 或 `TMDB_BEARER_TOKEN`。
+2. 检查 `config.toml`。`auto_git_push = true` 会拉取远端、提交并推送生成数据；只希望本地写入时设为 `false`，或设置环境变量 `DOUBAN_MONITOR_NO_PUSH=1`。
+3. 在仓库根目录运行 `python scripts/monitor.py`。
+4. 打开 `index.html` 或查看 `reports/douban-monitor-YYYYMMDD.md`。
 
-1. **准备环境**
-   需要 Python **3.11+**（脚本用到标准库 `tomllib`，3.11 起才内置）。无第三方依赖，不用 `pip install`。
+常规运行会请求豆瓣和 TMDB。`DOUBAN_MONITOR_NO_PUSH=1` 仅关闭 Git 同步，不关闭网络。国内网络通常更适合豆瓣抓取；抓取失败会保留已有有效数据。
 
-2. **配置 TMDB Key（可选但推荐）**
-   ```bash
-   cp .env.example .env
-   # 编辑 .env，填入 TMDB_API_KEY（或 TMDB_BEARER_TOKEN，二选一）
-   ```
-   不填也能运行，但不会有封面、简介和 TMDB 候选源。`config.toml` 里的阈值和榜单开箱即用，一般不用改。
+## 累计展示规则
 
-3. **在仓库根目录运行**
-   ```bash
-   python scripts/monitor.py
-   ```
-   ⚠️ **建议在国内网络环境运行**：豆瓣对机房 / 境外 IP 有不稳定的限流，境外环境（含 GitHub runner）实测有时能正常抓取、有时会被拦。若某次豆瓣全部失败（当日候选为 0），脚本会保留上一份旧数据，不会覆盖成空列表。
+网页继续读取统一的 `data/douban-monitor-result.json`，展示资格来自持久化历史库，独立于本轮候选、观察归档状态和旧版 `qualified` 标记。
 
-4. **查看结果**
-   浏览器直接打开根目录 `index.html`，或查看 `reports/douban-monitor-YYYYMMDD.md`。
+| 情况 | 处理 |
+| --- | --- |
+| 首次评分 ≥ 8.0 且人数 > 3000 | 首次收录并展示 |
+| 已展示，成功获得评分 ≥ 8.0 | 更新评分并保留，人数缺失也不会隐藏 |
+| 成功获得有效评分 < 8.0 | 隐藏，保留历史、首次达标日期及缓存；人数缺失也可隐藏 |
+| 请求失败或评分缺失 | 保留上次有效评分、人数、标题及展示状态 |
+| 从未达标的观察记录 | 不展示 |
+| 已隐藏作品再次获得评分 ≥ 8.0 且人数 > 3000 | 恢复展示，保留原始首次达标日期 |
+| 观察窗口到期或观察记录归档 | 不直接改变历史达标作品的展示资格 |
 
-> 想用 GitHub Actions 自动跑，见文末「自动运行」一节。
+`qualified_at` 表示首次达标时间，恢复展示不会重置。日期无法恢复的历史记录允许为空，不会写入迁移当天。`first_discovered_at` 同样保留。
 
-## 运行模式
+结果字段保持前端兼容：历史库 `last_rating`、`last_rating_count` 分别映射为 `rating`、`rating_count`。作品按稳定标识去重，输出顺序确定。`total` 仍表示本轮扫描数，累计展示数量使用独立字段 `display_count`；页面显示“累计收录 X 部 · 本轮扫描 Y 条”。手动收藏仍由 `data/douban-monitor-favorites.json` 配置并合并展示。
 
-按是否托管到 GitHub，分两种用法，靠 `config.toml` 的 `auto_git_push` 切换：
+## 离榜判断与评分核验
 
-### 模式 A：纯本地
+候选发现和榜单成员关系分别处理：
 
-不托管 GitHub，数据只留在本地，跑完看结果就行。
+- 每个豆瓣榜单分别保存最近一次有效的成员 ID 集合。只有成功且通过基本结构、成员和完整性检查的结果才更新集合；失败、空结果或异常结果保留上一次集合。
+- 作品从已知在榜变为所有受监控榜单都不再包含时，创建一次离榜核验任务。仍在任一榜单中就不算离榜。
+- 任务以豆瓣 ID 为主键，多榜单不会为同一作品重复请求。重新上榜会重置本次离榜核验状态，下一次离榜可以再次触发。
+- 离榜核验评分 ≥ 8.0 时保留；评分 < 8.0 时隐藏；失败或评分为空时保留历史数据并等待重试。
+- 本轮已通过榜单或其他路径取得有效豆瓣评分时复用该结果，不再为队列重复请求。
+- TMDB 只补充候选发现和网页元数据，TMDB 本轮未返回某作品不能作为豆瓣离榜依据。
 
-- 配置 `auto_git_push = false`（或运行时加环境变量 `DOUBAN_MONITOR_NO_PUSH=1`），第 8 步会跳过 git 同步。
-- 运行 `python scripts/monitor.py`，结果写入 `data/`、`reports/`，直接打开 `index.html` 查看，或让 skill 在对话里汇报当天「新增命中」。
+每榜默认仅抓取前 **20** 条，可通过 `douban_collection_max_items` 为榜单配置上限。因此这里的“离榜”实际表示退出项目监控的榜单范围，可能仍在豆瓣完整榜单的更后位置。
 
-### 模式 B：本地 + GitHub 双跑兜底
+**接受的更新延迟：离榜核验通过后，持续离榜期间不会主动刷新评分；之后的降分可能无法及时发现。** 再次上榜或其他已有采集路径返回有效评分时仍可更新。队列等待、失败重试和限流冷却也会延迟评分更新，网页显示的是最近一次有效评分。
 
-托管到 GitHub，本地和 Action 各跑一次、错开时段，互相兜底。
+## 历史迁移
 
-- 配置 `auto_git_push = true`（默认），两边都推送到同一仓库。
-- 推荐排班：**本地北京时间 09:00**（国内网络，稳）+ **GitHub Action 21:00**（境外兜底）。
-- 兜底机制：某次抓取失败（当日候选为 0）会保留上一份好数据不覆盖；第 8 步先 `git pull --rebase --autostash` 再推送，错峰运行不会冲突。任意一边挂了，另一边的结果仍在仓库里。
-- GitHub 侧的 Secret、写权限和 cron 配置见下文「自动运行」。
-
-## 工作方式
-
-纯 HTTP 抓取，不需要浏览器环境：
-
-- **豆瓣**
-  统一通过 Rexxar API（`m.douban.com` 移动网页版接口，无需签名和 apiKey）抓取，是当前豆瓣抓取的唯一通道
-- **TMDB**
-  提供额外候选和展示元数据来源（封面、简介、类型等）
-
-默认抓取的豆瓣榜单（见 `config.toml` 的 `douban_collection_urls`）：
-
-- 电影：热门、实时热门、一周口碑
-- 剧集：热门、实时热门、华语一周口碑、全球一周口碑
-
-综艺（国内 / 国外）已停用：TMDB 几乎没有对应封面，命中率太低。
-
-## 目录结构
-
-- `SKILL.md`
-  skill 规则与策略说明
-- `config.toml`
-  非敏感运行参数
-- `.env.example`
-  环境变量模板（TMDB API key）
-- `index.html`
-  可视化网页，展示监控库中的达标内容
-- `scripts/monitor.py`
-  主执行脚本（8 步流程）
-- `scripts/fetch_favorites.py`
-  读取 `data/douban-monitor-favorites.json` 中的豆瓣 ID，获取手动收藏详情
-- `scripts/fetch_posters.py`
-  从 TMDB 获取封面图 URL
-- `scripts/fetch_metadata.py`
-  从 TMDB 获取简介、类型、时长等元数据
-- `scripts/fetch_reviews.py`
-  从豆瓣获取短评
-- `scripts/generate_detail_pages.py`
-  为每个达标条目生成 `detail/<douban_id>.html` 详情页
-- `data/`
-  运行产生的 JSON 数据文件（state、library、result、favorites、posters、metadata、reviews）
-- `detail/`
-  各条目静态详情页 HTML
-- `reports/`
-  每日 Markdown 报告
-- `.github/workflows/monitor.yml`
-  GitHub Actions 执行配置（每天 21:00 定时 + 手动触发）
-- `references/`
-  示例配置、状态文件和实现说明
-
-## 运行依赖
-
-仅使用 Python 标准库，无额外依赖。
-
-### TMDB 数据
-
-封面和元数据获取需要 `TMDB_API_KEY`，参考 `.env.example` 配置：
+首次启用新规则会执行一次带版本号的幂等迁移，也可先离线运行：
 
 ```bash
-cp .env.example .env
-# 编辑 .env 填入你的 TMDB API Key
+python scripts/monitor.py --offline-rebuild
 ```
 
-## 配置建议
+此命令只读取仓库现有数据、迁移历史库并重建结果，不联网、不执行配套抓取、不执行 Git 操作。离线重建保留现有结果的扫描数和采集时间语义，不把历史作品当作本轮扫描候选。
 
-- `SKILL.md`
-  放监控规则、默认行为、已知限制和后续扩展方向
-- `.env`
-  只放密钥或敏感环境变量，例如 `TMDB_API_KEY`
-- `config.toml`
-  放非敏感运行参数，例如阈值、观察期、冷却窗口、多榜单候选源地址和 TMDB 设置
+迁移优先使用历史库 `qualified_at`，必要时结合 state 的 `first_qualified_at` 和旧版 `qualified` 证明作品曾达标：
 
-## 运行方式
+1. 曾达标且最后有效评分 ≥ 8.0 的作品恢复展示。
+2. 有可靠有效低分的作品隐藏；评分缺失的曾达标作品先保留并等待核验。缺失或占位的 0 分不能当作有效低分。
+3. 当前离榜或缺少可靠榜单状态的历史达标作品进入 `migration` 历史核验队列；本轮已有有效评分时直接使用。
+4. 从未达标的记录不因迁移展示；无法恢复首次达标日期时保留空值。
+5. 写入迁移版本，后续运行不会重复迁移或重复创建同一任务。
 
-本地在仓库根目录运行即可：
+迁移只创建积压任务，不会一次请求所有历史作品。没有豆瓣 ID 的记录无法发起豆瓣核验，不会为其创建无效请求任务。曾达标但当前评分缺失的在榜作品保留待核验任务，等待常规榜单/详情采集取得有效评分；额外队列跳过在榜作品，避免常规采集失败后立即重复请求。
+
+## 额外请求预算与重试
+
+历史迁移与正常离榜使用同一持久化队列和预算，配置如下：
+
+```toml
+rating_recheck_daily_limit = 20
+rating_recheck_interval_seconds = 3
+rating_recheck_max_retries = 3
+rating_recheck_retry_delay_hours = 24
+```
+
+| 配置 | 默认值与含义 |
+| --- | --- |
+| `rating_recheck_daily_limit` | 北京时间自然日额外评分请求上限 20 次；设为 0 可暂停额外核验 |
+| `rating_recheck_interval_seconds` | 额外评分请求之间至少间隔 3 秒 |
+| `rating_recheck_max_retries` | 首次失败后最多重试 3 次，即连续失败 4 次后暂停该任务 |
+| `rating_recheck_retry_delay_hours` | 普通失败至少等待 24 小时 |
+
+每次实际发出的额外评分请求都占预算，包括失败请求。请求前先持久化预算占用，同日多次运行或进程重启不会重置。正常离榜任务优先，同时定期处理等待最久的历史任务，避免历史积压长期饥饿。超过重试上限的任务标记 `paused`，持续离榜时不会在下一轮重新入队。
+
+遇到明确风控或限流响应会停止本轮额外核验，并持久化至少 24 小时的冷却时间。剩余队列不影响完整结果生成。
+
+**该上限只限制新增的历史及离榜核验请求**，不限制现有榜单采集、候选补详情、手动收藏或封面/元数据/短评等配套请求，不能理解为整个项目的网络请求总上限。
+
+同一工作区使用进程锁保护状态和预算；GitHub Actions 使用固定并发组串行执行，不取消运行中的任务。多机器部署必须共享最新持久化状态并错开运行；本地文件锁不能协调独立克隆之间的并发写入，严格的跨机器全局预算需要外部共享锁/存储。
+
+## 持久化字段
+
+现有条目、历史日期和缓存保留，新增状态集中在 `data/douban-monitor-library.json`：
+
+| 位置 | 字段及用途 |
+| --- | --- |
+| 每个历史条目 | `ever_qualified`：是否曾达标；`display_eligible`：是否展示；`hidden_reason`：隐藏原因 |
+| 每个历史条目 | `last_valid_rating_at`：最近一次有效评分时间；`known_collections`：已知所属榜单；`off_list_verified`：本次持续离榜是否已核验；`membership_status` / `departure_pending`：成员关系及待确认离榜 |
+| 库级别 | `migration_version`：已完成的迁移版本；`collections`：各榜单最近有效成员快照 |
+| 库级别 | `rating_rechecks`：豆瓣 ID 到核验任务的映射；任务包含 `reason`（`off_list`/`migration`）、`status`、`created_at`、`failures`、`next_retry_at` 等 |
+| 库级别 | `rating_recheck_budget`：北京时间日期与已用预算，以及请求间隔、公平调度和限流冷却所需状态 |
+
+预算与队列随历史库一起保存，请勿在同日删除或回滚这些状态后继续联网运行，否则会丢失已用预算记录。
+
+## 缓存和详情页
+
+封面、元数据和短评脚本读取完整展示结果，优先复用现有缓存；未命中或失败记录等待 **7 天**再重试，状态保存在 `data/douban-monitor-asset-retries.json`，避免每轮集中重查全部历史作品。单个作品失败不会中断整个列表，也不会清理隐藏作品缓存。恢复展示后，`generate_detail_pages.py` 可使用已有结果和缓存生成详情页；收藏获取失败时保留其上次有效数据。
+
+## 运行输出与容错
+
+常规监控依次采集豆瓣、TMDB 候选，补详情，维护历史库/队列/通知状态，写日报和前端结果，再运行收藏、封面、元数据、短评和详情页脚本。`auto_git_push = true` 时由主脚本统一同步和提交生成文件。
+
+主要文件：
+
+- `data/douban-monitor-library.json`：历史库、展示资格、榜单状态、核验队列及预算。
+- `data/douban-monitor-state.json`：首次命中及二次提醒状态。
+- `data/douban-monitor-result.json`：前端统一结果。
+- `data/douban-monitor-favorites-result.json`：手动收藏详情。
+- `data/douban-monitor-{posters,metadata,reviews}.json`：配套缓存。
+- `detail/<douban_id>.html`：静态详情页。
+- `reports/douban-monitor-YYYYMMDD.md`：日报。
+
+本轮全部采集失败时，榜单快照和历史有效数据仍保留，前端结果仍可从历史库完整生成，`total` 为本轮扫描数 0。Git 拉取失败或待提交文件含冲突标记时中止同步。
+
+## 离线验证
 
 ```bash
-python scripts/monitor.py
+python -m unittest discover -s tests
+python scripts/monitor.py --offline-rebuild
 ```
 
-在 OpenClaw 环境中，可使用绝对路径运行：
+测试使用固定数据和模拟响应，覆盖历史保留、跨榜单离榜、失败保护、8.0 边界、重新上榜、幂等迁移、自然日预算、重试暂停、首次日期、收藏及缓存兼容。验证时无需运行会联网和自动推送的完整监控流程。
 
-```bash
-python3 /home/node/.openclaw/skills/douban-monitor/scripts/monitor.py
-```
+前端脚本回归使用可选 Node.js 和最小 DOM 模拟，不安装 npm 依赖、不联网；无 Node.js 时自动跳过这两项。它验证数据和详情渲染，不验证浏览器布局或远程图片加载。
 
-运行后依次执行 8 个步骤，并写入以下文件：
-
-- `data/douban-monitor-state.json`（状态文件）
-- `data/douban-monitor-library.json`（监控库，带 `qualified_at` / `first_discovered_at`）
-- `data/douban-monitor-result.json`（达标结果，条目携带入库时间，供前端"最近入库"排序）
-- `data/douban-monitor-favorites-result.json`（手动收藏详情）
-- `data/douban-monitor-posters.json`（封面 URL）
-- `data/douban-monitor-metadata.json`（TMDB 元数据）
-- `data/douban-monitor-reviews.json`（豆瓣短评）
-- `reports/douban-monitor-YYYYMMDD.md`（Markdown 报告）
-
-步骤 6 生成前端结果数据 `douban-monitor-result.json`。
-步骤 7 会自动调用 `fetch_favorites.py`、`fetch_posters.py`、`fetch_metadata.py`、`fetch_reviews.py`、`generate_detail_pages.py` 生成网页所需数据和详情页。
-步骤 8 会自动将 `data/`、`detail/`、`reports/`、`posters/` 的变更提交并推送到 GitHub。
-
-**容错**：若第 1、2 步抓取全部失败，当日候选为 0 时，脚本跳过第 5、6 步对报告和 `result.json` 的写入，保留上一份好数据；若第 8 步 `git pull --rebase` 失败，或待提交文件里出现合并冲突标记，脚本立即中止，不提交或推送。
+2026-11-08 使用仓库数据离线迁移：展示由 **16 部恢复至 132 部**，历史待核验 **140 个**（包括已知低分隐藏的 8 部），额外评分请求 **0 次**；原有 1,569 条记录、首次达标日期和发现日期全部保留，本轮扫描数仍为原结果的 59。已用本地缓存生成所有展示作品的详情页。明细见 [离线迁移报告](reports/offline-migration-20261108.json)。
 
 ## 自动运行
 
-项目配置了 GitHub Actions（`.github/workflows/monitor.yml`），支持每天北京时间 21:00 定时运行（`schedule`），也可在 Actions 页面手动触发（workflow_dispatch）。
+`.github/workflows/monitor.yml` 支持每天北京时间 **21:00**（UTC `0 13 * * *`）及手动触发。需要：
 
-> 关于境外 IP：早期认为豆瓣完全拒绝境外 IP，实测发现 GitHub 托管 runner **有时能成功抓到豆瓣**（曾单次跑出 132 条候选、16 条达标），但豆瓣对机房 IP 的限流**时好时坏**，单次成功不代表每次都通。因此把 GitHub 定时作为国内本地运行的**兜底**（模式 B），稳定抓取仍以国内网络环境为主。
+1. 在仓库 Secrets 配置可选的 `TMDB_API_KEY` / `TMDB_BEARER_TOKEN`。
+2. 在 Actions 的 Workflow permissions 开启 **Read and write permissions**。
+3. 若本地也定时运行，安排不同时间，并确保联网前同步同一份历史库状态。
 
-启用前需要在仓库里做三步配置：
-
-1. **配置 Secret**
-   Settings → Secrets and variables → Actions，添加 `TMDB_API_KEY`（若改用 Bearer，则添加 `TMDB_BEARER_TOKEN`，二者对应 workflow 中读取的两个环境变量）。
-2. **开启写权限**
-   Settings → Actions → General → Workflow permissions 选择 **Read and write permissions**，否则 workflow 里的 `git push` 会因为没有写权限而报 403。
-3. **（模式 B 兜底）定时已启用**
-   `monitor.yml` 已开启每天北京时间 21:00 的 cron（`0 13 * * *`，UTC），Action 晚上自动跑，和本地早上的运行错峰兜底。如需关闭，注释掉 `schedule` 即可。
-
-> 提示：workflow 自带的提交步骤只 `git add data/ reports/`，不含 `detail/`、`posters/`；如需 Action 也提交详情页，需自行对齐（脚本 step 8 已包含这几个目录）。
-
-## 当前状态
-
-当前版本已经具备这些能力：
-
-- 多榜单候选抓取（电影 / 剧集 榜单，综艺已停用）
-- 豆瓣详情页评分和评分人数核验
-- 状态文件与监控库维护（含入库时间戳）
-- Markdown 报告生成
-- 新增命中与继续观察判定
-- 网页可视化展示（瀑布流卡片、封面、简介、评分、短评）
-- 手动收藏：在 `data/douban-monitor-favorites.json` 填豆瓣 ID 即可
-- 最近入库排序：按真实入库时间倒序
-- TMDB 封面和元数据自动获取
-- 静态详情页生成（`detail/<douban_id>.html`）
-- GitHub Actions 手动触发运行
-- 抓取失败与推送冲突兜底：自动保留历史数据，不覆盖、不提交坏文件
+工作流先配置 bot 身份，再调用主脚本；Git 同步和提交仅执行一套。豆瓣对机房及境外 IP 的限制可能导致采集失败，GitHub 运行适合作为兜底。
 
 ## 已知限制
 
-- 豆瓣抓取全部依赖 Rexxar API（`m.douban.com` 移动网页版接口，无需签名）。若 Rexxar 整体宕机，本次运行会跳过日报和前端结果写入，保留上一份好数据
-- 豆瓣对机房 / 境外 IP 有不稳定的限流：GitHub runner 实测有时能抓、有时被拦，单次成功不代表能稳定定时运行，稳定抓取建议放在国内网络环境（如国内 Docker）
-- 未配置 `TMDB_API_KEY` 时，TMDB 候选源和网页封面/元数据不会生效
-
-## 后续方向
-
-- 支持豆瓣 Cookie，提升抓取稳定性
-- 接入 MoviePilot，实现命中内容自动推送或下载
-- 生成适合公众号发布的内容稿件
+- 豆瓣数据依赖 Rexxar 接口；故障、限流和评分缺失时只能保留旧值。
+- 持续离榜且核验完成的作品不主动刷新，评分可能长期滞后。
+- 未配置 TMDB 凭据时，不提供 TMDB 候选和新封面/元数据。

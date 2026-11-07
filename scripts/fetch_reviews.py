@@ -18,6 +18,7 @@ if _ENV_FILE.exists():
 
 sys.path.insert(0, str(Path(__file__).parent))
 from monitor import rexxar_get
+from asset_cache import AssetRetryCache
 
 DATA_DIR = _ROOT / "data"
 RESULT_FILE = DATA_DIR / "douban-monitor-result.json"
@@ -101,9 +102,10 @@ def main() -> None:
                 reviews = {}
 
     total = len(all_items)
+    retries = AssetRetryCache()
     for i, item in enumerate(all_items):
         did = item["douban_id"]
-        title = item["title"]
+        title = item.get("title") or did
         prefix = f"[{i+1}/{total}]"
 
         if did in reviews and reviews[did]:
@@ -111,8 +113,9 @@ def main() -> None:
             continue
 
         print(f"{prefix} {title}", end="  ", flush=True)
-        revs = _fetch_reviews(did)
-        reviews[did] = revs
+        revs = retries.fetch("reviews", did, lambda: _fetch_reviews(did))
+        if revs:
+            reviews[did] = revs
         time.sleep(0.5)
         print(f"{len(revs)} 条短评" if revs else "(无短评)")
 

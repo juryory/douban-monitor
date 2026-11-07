@@ -27,6 +27,7 @@ if _ENV_FILE.exists():
 
 sys.path.insert(0, str(Path(__file__).parent))
 from monitor import tmdb_get, DEFAULT_CONFIG
+from asset_cache import AssetRetryCache, preserve_valid
 
 DATA_DIR = _ROOT / "data"
 FAVORITES_FILE = DATA_DIR / "douban-monitor-favorites.json"
@@ -151,6 +152,8 @@ def _fetch_tmdb_detail(tmdb_id: int, tmdb_type: str, config: dict) -> dict:
             "append_to_response": "credits,images,similar,recommendations",
             "include_image_language": "null,zh,en",
         })
+        if not d.get("id"):
+            return {}
         genres = [g["name"] for g in (d.get("genres") or [])]
         runtime = d.get("runtime")
         if runtime is None:
@@ -225,13 +228,15 @@ def _fetch_tmdb_detail(tmdb_id: int, tmdb_type: str, config: dict) -> dict:
 
 
 def main() -> None:
-    # Load favorites (one douban ID per line, plain text)
+    # Accept both the documented JSON array and the existing one-ID-per-line file.
     fav_ids: list[str] = []
     if FAVORITES_FILE.exists():
-        for line in FAVORITES_FILE.read_text(encoding="utf-8").splitlines():
-            line = line.strip()
-            if line and not line.startswith("#"):
-                fav_ids.append(line)
+        text = FAVORITES_FILE.read_text(encoding="utf-8").strip()
+        if text.startswith("["):
+            fav_ids = [str(did).strip() for did in json.loads(text)]
+        else:
+            fav_ids = [line.strip() for line in text.splitlines() if line.strip() and not line.strip().startswith("#")]
+    fav_ids = list(dict.fromkeys(did for did in fav_ids if did))
 
     if not fav_ids:
         print("收藏列表为空，跳过")
@@ -267,6 +272,12 @@ def main() -> None:
     # Load existing poster/metadata stores
     posters: dict[str, str] = _load_json(POSTERS_FILE) if POSTERS_FILE.exists() else {}
     meta: dict[str, dict] = _load_json(META_FILE) if META_FILE.exists() else {}
+    previous_result = _load_json(FAVORITES_RESULT_FILE)
+    previous_items = {
+        str(item["douban_id"]): item
+        for item in (previous_result.get("qualified") or []) if item.get("douban_id")
+    } if isinstance(previous_result, dict) else {}
+    retries = AssetRetryCache()
 
     config = {**DEFAULT_CONFIG, "tmdb_language": "zh-CN", "tmdb_region": "CN"}
 
@@ -278,10 +289,13 @@ def main() -> None:
         print(f"{prefix} {did}", end="  ", flush=True)
 
         # Fetch from Douban
-        info = _fetch_subject(did)
+        info = retries.fetch("favorite", did, lambda: _fetch_subject(did))
         if not info:
-            print("(豆瓣获取失败)")
-            continue
+            print("(豆瓣获取失败 / 冷却中，保留旧结果)", end="  ", flush=True)
+            info = previous_items.get(did)
+            if not info:
+                continue
+        info = preserve_valid(previous_items.get(did) or {}, info)
 
         title = info["title"]
         print(f"{title}", end="  ", flush=True)
@@ -293,19 +307,18 @@ def main() -> None:
 
         # Fetch TMDB data (poster + metadata) if not already cached
         if did not in posters or (did not in meta or "backdrop_path" not in (meta.get(did) or {})):
-            found = _find_tmdb(info.get("imdb_id"), title, info["category"], info["year"], config)
-            time.sleep(0.2)
+            def fetch_assets() -> dict:
+                found = _find_tmdb(info.get("imdb_id"), title, info["category"], str(info.get("year") or ""), config)
+                time.sleep(0.2)
+                return _fetch_tmdb_detail(found[0], found[1], config) if found else {}
 
-            if found:
-                tmdb_id, tmdb_type = found
-                print(f"tmdb={tmdb_id}", end="  ", flush=True)
-                detail = _fetch_tmdb_detail(tmdb_id, tmdb_type, config)
-
+            detail = retries.fetch("favorite_assets", did, fetch_assets)
+            if detail:
                 if detail.get("poster_path") and did not in posters:
                     posters[did] = f"{TMDB_IMAGE_BASE}{detail['poster_path']}"
 
                 if detail.get("metadata") and (did not in meta or "backdrop_path" not in (meta.get(did) or {})):
-                    meta[did] = detail["metadata"]
+                    meta[did] = preserve_valid(meta.get(did) or {}, detail["metadata"])
 
                 time.sleep(0.2)
             else:

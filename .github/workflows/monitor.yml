@@ -8,6 +8,11 @@ on:
     - cron: '0 13 * * *'   # 北京时间 21:00
   workflow_dispatch: # 手动触发（境外 runner 实测有时能抓豆瓣，但机房 IP 限流不稳定，稳定定时抓取由国内 Docker 负责）
 
+# 共享持久化队列和每日预算的任务必须串行，运行中任务不被新任务取消。
+concurrency:
+  group: douban-monitor-data
+  cancel-in-progress: false
+
 jobs:
   monitor:
     runs-on: ubuntu-latest
@@ -23,21 +28,14 @@ jobs:
         with:
           python-version: '3.13'
 
-      - name: 运行监控（轻量模式）
+      - name: 配置数据提交身份
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      # monitor.py 负责唯一一次同步和提交；拉取失败时不会继续提交旧状态。
+      - name: 运行监控
         run: python scripts/monitor.py
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           TMDB_BEARER_TOKEN: ${{ secrets.TMDB_BEARER_TOKEN }}
-
-      - name: 提交并推送数据
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase --autostash || true
-          git add data/ reports/
-          if git diff --cached --quiet; then
-            echo "没有数据变更，跳过提交"
-          else
-            git commit -m "chore: 更新监控数据 $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M')"
-            git push
-          fi

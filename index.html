@@ -475,7 +475,7 @@
 
 <section class="site-intro">
   <p class="site-intro-label">什么是豆瓣高分监控？</p>
-  <p class="site-intro-body">每天自动抓取豆瓣热门榜单，筛选出评分 ≥ 8.0 分、且有 3000 人以上打分的电影和剧集，集中展示在这里。你不需要每天刷豆瓣，只需要来这里看看——值得一看的好片都在了。</p>
+  <p class="site-intro-body">每天从豆瓣热门榜单发现评分 ≥ 8.0 分、且评分人数超过 3000 的电影和剧集，并累计展示已收录作品。作品离榜后核验一次评分，低于 8.0 分时隐藏；核验通过后，持续离榜期间的评分可能不会及时更新。</p>
 </section>
 
 <main>
@@ -549,6 +549,7 @@
   }
 
   function fmt(n) {
+    if (n == null || !Number.isFinite(Number(n))) return '—';
     if (n >= 100000) return Math.round(n/10000) + '万';
     if (n >= 10000)  return (n/10000).toFixed(1) + '万';
     return n.toString();
@@ -644,7 +645,7 @@
           ${posterImg}
           <div class="card-badges">
             <span class="badge-cat badge-${it.category}">${esc(label)}</span>
-            <span class="badge-rating">${it.rating}</span>
+            <span class="badge-rating">${it.rating ?? '—'}</span>
           </div>
         </div>
         <div class="card-body">
@@ -973,7 +974,7 @@
         hour:'2-digit', minute:'2-digit'
       });
       document.getElementById('meta').textContent =
-        `共 ${allItems.length} 部 · 扫描 ${result.total||'?'} 条 · 更新于 ${ts}`;
+        `累计收录 ${allItems.length} 部 · 本轮扫描 ${result.total ?? '?'} 条 · 更新于 ${ts}`;
 
       document.getElementById('loading').style.display = 'none';
       document.getElementById('grid').removeAttribute('style');

@@ -35,8 +35,8 @@ def generate_detail_html(item: dict, metadata: dict, posters: dict) -> str:
     """Generate a minimal HTML page with OG meta tags for sharing."""
     douban_id = item.get("douban_id", "")
     title = item.get("title", "未知")
-    rating = item.get("rating", "N/A")
-    rating_count = item.get("rating_count", 0)
+    rating = item.get("rating") if item.get("rating") is not None else "N/A"
+    rating_count = item.get("rating_count") or 0
     year = item.get("year", "")
     category = item.get("category", "")
 
@@ -191,9 +191,13 @@ def main() -> None:
         douban_id = item.get("douban_id", "")
         title = item.get("title", "未知")
 
-        html = generate_detail_html(item, metadata, posters)
-        output_path = DETAIL_DIR / f"{douban_id}.html"
-        output_path.write_text(html, encoding="utf-8")
+        try:
+            html = generate_detail_html(item, metadata, posters)
+            output_path = DETAIL_DIR / f"{douban_id}.html"
+            output_path.write_text(html, encoding="utf-8")
+        except Exception as exc:
+            print(f"  [FAIL] {title} ({douban_id}): {exc}")
+            continue
         generated += 1
         print(f"  [OK] {title} ({douban_id})")
 

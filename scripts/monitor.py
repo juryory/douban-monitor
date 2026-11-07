@@ -1,18 +1,33 @@
 from __future__ import annotations
 
 import json
+import argparse
 import os
 import re
 import subprocess
 import sys
 import time
+import tempfile
 import tomllib
 import urllib.parse
+import urllib.error
 import urllib.request
 from dataclasses import asdict, dataclass, field
+from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+
+if __package__:
+    from .rating_policy import (
+        RateLimited, apply_rating, migrate_library, process_recheck_queue,
+        update_memberships, valid_count, valid_rating,
+    )
+else:
+    from rating_policy import (
+        RateLimited, apply_rating, migrate_library, process_recheck_queue,
+        update_memberships, valid_count, valid_rating,
+    )
 
 CST = timezone(timedelta(hours=8))
 
@@ -28,7 +43,11 @@ def iso(dt: datetime | None) -> str | None:
 def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
-    return datetime.fromisoformat(value)
+    try:
+        parsed = datetime.fromisoformat(value)
+        return parsed.replace(tzinfo=CST) if parsed.tzinfo is None else parsed
+    except (TypeError, ValueError):
+        return None
 
 
 def log_step(title: str) -> None:
@@ -107,7 +126,6 @@ DEFAULT_CONFIG = {
     "min_rating_count": 3000,
     "admission_min_rating": 7.5,
     "admission_min_rating_count": 1000,
-    "drop_rating_threshold": 7.5,
     "realert_cooldown_days": 7,
     "high_watch_days": 30,
     "medium_watch_days": 14,
@@ -128,6 +146,10 @@ DEFAULT_CONFIG = {
         "https://m.douban.com/subject_collection/show_global_best_weekly",
     ],
     "request_timeout_seconds": 20,
+    "rating_recheck_daily_limit": 20,
+    "rating_recheck_interval_seconds": 3,
+    "rating_recheck_max_retries": 3,
+    "rating_recheck_retry_delay_hours": 24,
     # 模式 A（纯本地）设为 false，跳过第 8 步 git 同步；模式 B（托管 GitHub）保持 true。
     # 也可用环境变量 DOUBAN_MONITOR_NO_PUSH=1 临时关闭，优先级高于配置。
     "auto_git_push": True,
@@ -151,7 +173,47 @@ def load_toml(path: Path) -> dict[str, Any]:
 
 def save_json(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    # Budget reservations must reach disk before a request; replace atomically so
+    # interruption cannot truncate the only copy of the historical library.
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, delete=False) as handle:
+            temporary = Path(handle.name)
+            json.dump(payload, handle, ensure_ascii=False, indent=2)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary, path)
+    finally:
+        if temporary and temporary.exists():
+            temporary.unlink()
+
+
+@contextmanager
+def monitor_lock(project_root: Path):
+    """An OS lock survives the whole run and is released even after a crash."""
+    path = project_root / ".douban-monitor.lock"
+    with path.open("a+b") as handle:
+        if handle.tell() == 0:
+            handle.write(b"0")
+            handle.flush()
+        handle.seek(0)
+        try:
+            if os.name == "nt":
+                import msvcrt
+                msvcrt.locking(handle.fileno(), msvcrt.LK_NBLCK, 1)
+            else:
+                import fcntl
+                fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except OSError as exc:
+            raise RuntimeError("已有监控/离线重建进程正在使用此工作区，请稍后再试") from exc
+        try:
+            yield
+        finally:
+            handle.seek(0)
+            if os.name == "nt":
+                msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)
+            else:
+                fcntl.flock(handle, fcntl.LOCK_UN)
 
 
 def candidate_key(candidate: Candidate) -> str:
@@ -201,8 +263,26 @@ def rexxar_get(path: str, params: dict[str, Any] | None = None, config: dict[str
             "Referer": "https://m.douban.com/",
         },
     )
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        return json.loads(response.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            body = response.read().decode("utf-8")
+            try:
+                payload = json.loads(body)
+            except json.JSONDecodeError:
+                if any(word in body.lower() for word in ("captcha", "验证码", "访问频繁", "访问受限")):
+                    raise RateLimited("豆瓣返回验证或访问限制页面")
+                raise
+    except urllib.error.HTTPError as exc:
+        if exc.code in (403, 418, 429):
+            retry_after = valid_count(exc.headers.get("Retry-After")) if exc.headers else None
+            raise RateLimited(f"豆瓣限制响应 HTTP {exc.code}", retry_after_seconds=retry_after or 0) from exc
+        raise
+    if not isinstance(payload, dict):
+        raise ValueError("豆瓣响应不是对象")
+    message = " ".join(str(payload.get(k, "")) for k in ("message", "msg", "error", "localized_message")).lower()
+    if any(word in message for word in ("rate limit", "too many requests", "captcha", "访问频繁", "请求频繁", "验证码", "访问受限")):
+        raise RateLimited(message)
+    return payload
 
 
 
@@ -212,30 +292,47 @@ def _get_collection_max_items(collection_id: str, config: dict[str, Any]) -> int
     return max_items_map.get(collection_id, 20)  # Default 20
 
 def fetch_douban_collection_via_rexxar(collection_id: str, config: dict[str, Any]) -> list[dict[str, Any]]:
-    """通过 Rexxar API 抓取榜单分页。"""
-    max_items = _get_collection_max_items(collection_id, config)
+    """Only return a complete, nonempty monitored range; reject partial pages."""
+    max_items = int(_get_collection_max_items(collection_id, config))
+    if max_items <= 0:
+        raise ValueError("榜单监控条数必须为正数")
     all_items: list[dict[str, Any]] = []
     start = 0
-    count = 20
+    expected_total = None
     while True:
+        count = min(20, max_items - start)
         data = rexxar_get(
             f"/subject_collection/{collection_id}/items",
             params={"start": start, "count": count},
             config=config,
         )
-        items = data.get("subject_collection_items") or []
-        if not items:
-            break
-        all_items.extend(items)
-        if len(all_items) >= max_items:
-            all_items = all_items[:max_items]
-            break
-        total = data.get("total", 0)
-        start += count
-        if start >= total:
+        items = data.get("subject_collection_items")
+        total = valid_count(data.get("total"))
+        if not isinstance(items, list) or not items or total is None or total <= 0:
+            raise ValueError("榜单为空或缺少有效总数，保留上次成员集合")
+        if expected_total is not None and expected_total != total:
+            raise ValueError("分页期间榜单总数变化，保留上次成员集合")
+        expected_total = total
+        if len(items) != min(count, total - start):
+            raise ValueError("榜单分页不完整，保留上次成员集合")
+        all_items.extend(items[:count])
+        start += len(items[:count])
+        if start >= min(total, max_items):
             break
         time.sleep(0.5)
+    subjects = [_collection_subject(item) for item in all_items]
+    ids = [str(subject.get("id", "")) for subject in subjects]
+    if any(not value.isdigit() for value in ids) or len(set(ids)) != len(ids):
+        raise ValueError("榜单包含无效或重复ID，保留上次成员集合")
+    if any(not subject.get("title") for subject in subjects):
+        raise ValueError("榜单缺少作品标题，保留上次成员集合")
     return all_items
+
+
+def _collection_subject(item: Any) -> dict[str, Any]:
+    if not isinstance(item, dict):
+        return {}
+    return item.get("subject") if isinstance(item.get("subject"), dict) else item
 
 
 def fetch_douban_subject_detail_via_rexxar(douban_id: str, config: dict[str, Any]) -> dict[str, Any]:
@@ -243,6 +340,8 @@ def fetch_douban_subject_detail_via_rexxar(douban_id: str, config: dict[str, Any
     for media_type in ("movie", "tv"):
         try:
             return rexxar_get(f"/{media_type}/{douban_id}", config=config)
+        except RateLimited:
+            raise
         except Exception:
             continue
     return {}
@@ -277,31 +376,41 @@ def _category_and_source_from_collection(url_text: str) -> tuple[str, str]:
     return "unknown", "douban_weekly"
 
 
-def fetch_douban_weekly_candidates_lite(config: dict[str, Any]) -> list[Candidate]:
+def fetch_douban_weekly_candidates_lite(config: dict[str, Any]) -> tuple[list[Candidate], dict[str, Any]]:
     """Fetch weekly candidates via Rexxar API。"""
     candidates: list[Candidate] = []
+    snapshots: dict[str, Any] = {}
     collection_urls = config.get("douban_collection_urls") or []
     for collection_url in collection_urls:
         url_text = str(collection_url)
         collection_id = _collection_id_from_url(url_text)
+        snapshots[collection_id] = {"success": False, "ids": []}
         category, source = _category_and_source_from_collection(url_text)
         items: list[dict[str, Any]] = []
         try:
             items = fetch_douban_collection_via_rexxar(collection_id, config)
+            if not items:
+                raise ValueError("榜单为空")
+            snapshots[collection_id] = {
+                "success": True,
+                "ids": [str(_collection_subject(item)["id"]) for item in items],
+            }
             log_kv(f"Rexxar 榜单 {collection_id} 成功", f"{len(items)} 条")
         except Exception as exc:
+            snapshots[collection_id]["rate_limited"] = isinstance(exc, RateLimited)
+            snapshots[collection_id]["error"] = str(exc)
             log_kv(f"Rexxar 榜单 {collection_id} 失败", str(exc))
             continue
         if not items:
             continue
         for item in items:
-            subject = item if "id" in item else item.get("subject") or item
+            subject = _collection_subject(item)
             douban_id = str(subject.get("id", "")).strip() or None
             title = subject.get("title") or ""
-            rating_info = subject.get("rating") or {}
+            rating_info = subject.get("rating") if isinstance(subject.get("rating"), dict) else {}
             rating_val = rating_info.get("value")
             rating_count = rating_info.get("count")
-            year_str = subject.get("year") or ""
+            year_str = str(subject.get("year") or "")
             year = int(year_str) if year_str and year_str.isdigit() else None
             url = f"https://movie.douban.com/subject/{douban_id}/" if douban_id else None
             candidates.append(
@@ -312,12 +421,12 @@ def fetch_douban_weekly_candidates_lite(config: dict[str, Any]) -> list[Candidat
                     douban_id=douban_id,
                     url=url,
                     year=year,
-                    rating=float(rating_val) if rating_val else None,
-                    rating_count=int(rating_count) if rating_count else None,
+                    rating=valid_rating(rating_val),
+                    rating_count=valid_count(rating_count),
                 )
             )
         time.sleep(0.5)
-    return candidates
+    return candidates, snapshots
 
 
 def fetch_douban_subject_detail_lite(candidate: Candidate, config: dict[str, Any]) -> Candidate:
@@ -332,14 +441,14 @@ def fetch_douban_subject_detail_lite(candidate: Candidate, config: dict[str, Any
     title = data.get("title")
     if title:
         candidate.title = title
-    rating_info = data.get("rating") or {}
+    rating_info = data.get("rating") if isinstance(data.get("rating"), dict) else {}
     rating_val = rating_info.get("value")
     rating_count = rating_info.get("count")
-    if rating_val is not None:
-        candidate.rating = float(rating_val)
-    if rating_count is not None:
-        candidate.rating_count = int(rating_count)
-    year_str = data.get("year") or ""
+    if valid_rating(rating_val) is not None:
+        candidate.rating = valid_rating(rating_val)
+    if valid_count(rating_count) is not None:
+        candidate.rating_count = valid_count(rating_count)
+    year_str = str(data.get("year") or "")
     if year_str and year_str.isdigit() and candidate.year is None:
         candidate.year = int(year_str)
     return candidate
@@ -466,19 +575,20 @@ def admission_reason(candidate: Candidate, config: dict[str, Any]) -> str | None
 
 
 def should_qualify(candidate: Candidate, config: dict[str, Any]) -> bool:
-    return (candidate.rating or 0.0) > config["min_rating"] and (candidate.rating_count or 0) > config["min_rating_count"]
+    rating, count = valid_rating(candidate.rating), valid_count(candidate.rating_count)
+    return rating is not None and rating >= config["min_rating"] and count is not None and count > config["min_rating_count"]
 
 
 def update_library(library_data: dict[str, Any], candidates: list[Candidate], config: dict[str, Any], now: datetime) -> dict[str, Any]:
     items = library_data.setdefault("items", {})
     for candidate in candidates:
-        reason = admission_reason(candidate, config)
-        if not reason:
-            continue
         key = candidate_key(candidate)
+        entry = items.get(key)
+        reason = admission_reason(candidate, config)
+        if not reason and not entry:
+            continue
         tier = assign_watch_tier(candidate, config)
         expires_at = now + timedelta(days=watch_days_for_tier(tier, config))
-        entry = items.get(key)
         if not entry:
             item = LibraryItem(
                 key=key,
@@ -498,28 +608,31 @@ def update_library(library_data: dict[str, Any], candidates: list[Candidate], co
                 imdb_id=candidate.imdb_id,
                 url=candidate.url,
                 year=candidate.year,
-                last_rating=candidate.rating,
-                last_rating_count=candidate.rating_count,
+                last_rating=None,
+                last_rating_count=None,
                 last_checked_at=iso(now),
-                qualified=should_qualify(candidate, config),
-                qualified_at=iso(now) if should_qualify(candidate, config) else None,
+                qualified=False,
             )
-            items[key] = asdict(item)
-            continue
-        entry["title"] = candidate.title
-        entry["category"] = candidate.category
-        entry["url"] = candidate.url
+            entry = items[key] = asdict(item)
+        for name in ("title", "category", "url", "douban_id", "tmdb_id", "imdb_id", "year"):
+            value = getattr(candidate, name)
+            if value is not None and value != "" and value != "unknown":
+                if name == "title" and value.startswith("douban-subject-") and entry.get("title"):
+                    continue
+                entry[name] = value
         entry["last_discovered_at"] = iso(now)
         entry["last_seen_in_sources_at"] = iso(now)
         entry["watch_tier"] = tier
         entry["watch_expires_at"] = iso(expires_at)
         entry["last_checked_at"] = iso(now)
-        entry["last_rating"] = candidate.rating
-        entry["last_rating_count"] = candidate.rating_count
-        entry["qualified"] = should_qualify(candidate, config)
-        if entry["qualified"] and not entry.get("qualified_at"):
-            entry["qualified_at"] = iso(now)
-        if candidate.source not in entry["sources"]:
+        entry.setdefault("ever_qualified", False)
+        entry.setdefault("display_eligible", False)
+        entry.setdefault("hidden_reason", None)
+        if valid_rating(candidate.rating) is not None:
+            if candidate.rating < config["min_rating"] or valid_count(candidate.rating_count) is not None:
+                entry["qualified"] = should_qualify(candidate, config)
+        apply_rating(entry, candidate.rating, candidate.rating_count, config, now)
+        if candidate.source not in entry.setdefault("sources", []):
             entry["sources"].append(candidate.source)
     library_data["updated_at"] = iso(now)
     return library_data
@@ -535,8 +648,8 @@ def archive_expired_library_items(library_data: dict[str, Any], config: dict[str
             entry["archived_at"] = iso(now)
             entry["archive_reason"] = "watch_window_expired_without_qualification"
             continue
-        rating = entry.get("last_rating") or 0.0
-        if rating < config["drop_rating_threshold"]:
+        rating = valid_rating(entry.get("last_rating"))
+        if rating is not None and rating < config["min_rating"]:
             entry["watch_status"] = "archived"
             entry["archived_at"] = iso(now)
             entry["archive_reason"] = "rating_below_threshold"
@@ -576,16 +689,19 @@ def update_state(state_data: dict[str, Any], candidates: list[Candidate], config
 
         previous_rating = entry.get("last_rating") or 0.0
         previous_count = entry.get("last_rating_count") or 0
-        entry["title"] = candidate.title
-        entry["category"] = candidate.category
-        entry["url"] = candidate.url
+        for name in ("title", "category", "url"):
+            value = getattr(candidate, name)
+            if value and value != "unknown" and not (name == "title" and value.startswith("douban-subject-")):
+                entry[name] = value
         entry["last_seen_at"] = iso(now)
-        entry["last_rating"] = candidate.rating
-        entry["last_rating_count"] = candidate.rating_count
+        if valid_rating(candidate.rating) is not None:
+            entry["last_rating"] = valid_rating(candidate.rating)
+        if valid_count(candidate.rating_count) is not None:
+            entry["last_rating_count"] = valid_count(candidate.rating_count)
         entry["peak_rating"] = max(entry.get("peak_rating") or 0.0, candidate.rating or 0.0)
         entry["peak_rating_count"] = max(entry.get("peak_rating_count") or 0, candidate.rating_count or 0)
 
-        if qualifies and not entry.get("first_qualified_at"):
+        if qualifies and not entry.get("first_qualified_at") and not entry.get("qualified"):
             entry["first_qualified_at"] = iso(now)
             entry["last_notified_at"] = iso(now)
             entry["notified_stage"] = "initial"
@@ -655,29 +771,33 @@ def render_report(new_qualified: list[Candidate], second_look: list[tuple[Candid
     return "\n".join(lines) + "\n"
 
 
-def build_result_json(candidates: list[Candidate], config: dict[str, Any], now: datetime, library_data: dict[str, Any]) -> dict[str, Any]:
-    """Build the result.json consumed by the frontend (index.html)."""
-    qualified = [
-        c for c in candidates if should_qualify(c, config)
-    ]
+def build_result_json(candidates: list[Candidate], config: dict[str, Any], now: datetime, library_data: dict[str, Any], *, scan_total: int | None = None) -> dict[str, Any]:
+    """Render the persistent display library, independent of watch/archive state."""
     library_items = library_data.get("items", {})
-    items = []
-    for c in qualified:
-        entry = library_items.get(candidate_key(c)) or {}
+    by_identity: dict[str, dict[str, Any]] = {}
+    # Prefer the most recently validated duplicate, with key as a stable tie-break.
+    for key, entry in sorted(library_items.items(), key=lambda pair: (pair[1].get("last_valid_rating_at") or "", pair[0])):
+        identity = str(entry.get("douban_id") or entry.get("imdb_id") or (f"tmdb:{entry['tmdb_id']}" if entry.get("tmdb_id") else key))
+        by_identity[identity] = entry
+    items: list[dict[str, Any]] = []
+    for identity, entry in sorted(by_identity.items()):
+        if not entry.get("display_eligible") or not entry.get("ever_qualified"):
+            continue
         items.append({
-            "title": c.title,
-            "category": c.category,
-            "douban_id": c.douban_id,
-            "rating": c.rating,
-            "rating_count": c.rating_count,
-            "year": str(c.year) if c.year else "",
-            "url": c.url or "",
+            "title": entry.get("title") or "",
+            "category": entry.get("category") or "unknown",
+            "douban_id": entry.get("douban_id"),
+            "rating": entry.get("last_rating"),
+            "rating_count": entry.get("last_rating_count"),
+            "year": str(entry["year"]) if entry.get("year") else "",
+            "url": entry.get("url") or (f"https://movie.douban.com/subject/{entry['douban_id']}/" if entry.get("douban_id") else ""),
             "qualified_at": entry.get("qualified_at"),
             "first_discovered_at": entry.get("first_discovered_at"),
         })
     return {
         "run_at": iso(now),
-        "total": len(candidates),
+        "total": len(candidates) if scan_total is None else scan_total,
+        "display_count": len(items),
         "qualified": items,
         "status": "has_qualified" if items else "no_qualified",
     }
@@ -760,7 +880,53 @@ def build_metadata_json(candidates: list[Candidate], config: dict[str, Any]) -> 
     return meta
 
 
+def fetch_recheck_rating(douban_id: str, entry: dict[str, Any], config: dict[str, Any]) -> dict[str, Any]:
+    """Exactly one HTTP request per reserved queue slot, without fallback retries."""
+    media_type = "tv" if entry.get("category") in ("tv", "variety") else "movie"
+    data = rexxar_get(f"/{media_type}/{douban_id}", config=config)
+    if data.get("id") is not None and str(data["id"]) != douban_id:
+        raise ValueError("评分核验返回了其他作品")
+    rating = data.get("rating") if isinstance(data.get("rating"), dict) else {}
+    return {"rating": valid_rating(rating.get("value")), "count": valid_count(rating.get("count"))}
+
+
+def offline_rebuild(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Any]:
+    """Migrate and render existing files only. No requests, asset fetches or Git."""
+    project_root = base_dir.parent
+    config = {**DEFAULT_CONFIG, **load_toml(project_root / "config.toml"), **(config or {})}
+    with monitor_lock(project_root):
+        now = now_cst()
+        library_path = project_root / "data" / "douban-monitor-library.json"
+        state_path = project_root / "data" / "douban-monitor-state.json"
+        result_path = project_root / "data" / "douban-monitor-result.json"
+        library = load_json(library_path, {"version": 1, "items": {}})
+        state = load_json(state_path, {"version": 1, "items": {}})
+        previous = load_json(result_path, {})
+        migrate_library(library, state, config, now)
+        update_memberships(library, {}, config, now, {})
+        result = build_result_json([], config, parse_dt(previous.get("run_at")) or now, library,
+                                   scan_total=previous.get("total", 0))
+        result["rebuilt_at"] = iso(now)
+        library["updated_at"] = iso(now)
+        save_json(library_path, library)
+        save_json(result_path, result)
+        summary = {
+            "before_display_count": len(previous.get("qualified", [])),
+            "after_display_count": len(result["qualified"]),
+            "historical_pending_count": sum(task.get("status") == "pending" and task.get("reason") == "migration"
+                                            for task in library.get("rating_rechecks", {}).values()),
+            "extra_rating_requests": 0,
+        }
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return summary
+
+
 def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]:
+    with monitor_lock(base_dir.parent):
+        return _run(base_dir, config)
+
+
+def _run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]:
     project_root = base_dir.parent
     file_config = load_toml(project_root / "config.toml")
     config = {**DEFAULT_CONFIG, **file_config, **(config or {})}
@@ -791,7 +957,8 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     library_data = load_json(library_path, {"version": 1, "updated_at": None, "items": {}})
 
     log_step("[1/8] 抓取豆瓣榜单候选...")
-    douban_candidates = fetch_douban_weekly_candidates_lite(config)
+    douban_candidates, collection_snapshots = fetch_douban_weekly_candidates_lite(config)
+    rate_limited = any(snapshot.get("rate_limited") for snapshot in collection_snapshots.values())
     log_kv("豆瓣榜单候选数", len(douban_candidates))
 
     log_step("[2/8] 抓取 TMDB 候选...")
@@ -809,7 +976,12 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
         if item.rating is not None and item.rating_count is not None:
             enriched.append(enrich_with_tmdb(item))
         else:
-            enriched.append(enrich_with_tmdb(fetch_douban_subject_detail_lite(item, config)))
+            try:
+                item = fetch_douban_subject_detail_lite(item, config)
+            except Exception as exc:
+                rate_limited = rate_limited or isinstance(exc, RateLimited)
+                log_kv(f"详情获取失败 {candidate_key(item)}（保留历史数据）", str(exc))
+            enriched.append(enrich_with_tmdb(item))
             time.sleep(0.3)
     candidates = enriched
     detail_ready = sum(1 for item in candidates if item.url)
@@ -820,7 +992,22 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     log_kv("已获取评分人数", rating_count_ready)
 
     log_step("[4/8] 更新状态与监控库...")
+    migrate_library(library_data, state_data, config, now)
     library_data = update_library(library_data, candidates, config, now)
+    fresh_ratings = {str(item.douban_id): {"rating": item.rating, "count": item.rating_count}
+                     for item in candidates if item.douban_id and valid_rating(item.rating) is not None}
+    update_memberships(library_data, collection_snapshots, config, now, fresh_ratings)
+    if rate_limited:
+        budget = library_data.setdefault("rating_recheck_budget", {})
+        until = now_cst() + timedelta(hours=max(24, config["rating_recheck_retry_delay_hours"]))
+        previous_cooldown = parse_dt(budget.get("cooldown_until"))
+        budget["cooldown_until"] = iso(max(until, previous_cooldown) if previous_cooldown else until)
+    extra_requests = process_recheck_queue(
+        library_data, config, now_cst(),
+        lambda douban_id, entry: fetch_recheck_rating(douban_id, entry, config),
+        lambda: save_json(library_path, library_data),
+    )
+    log_kv("历史/离榜额外评分请求数", extra_requests)
     library_data = archive_expired_library_items(library_data, config, now)
     state_data, new_qualified, second_look = update_state(state_data, candidates, config, now)
     report = render_report(new_qualified, second_look, candidates, config, now)
@@ -831,8 +1018,7 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
     log_kv("监控库条目数", len(library_data.get("items", {})))
     log_kv("状态条目数", len(state_data.get("items", {})))
 
-    # 若本次一条候选都没拉到（豆瓣/TMDB 全挂），跳过日报和前端数据的写入，
-    # 保留上一份好数据，避免网页刷新出空列表。state/library 只是 updated_at 微更新，照常写。
+    # 日报仍只记录本轮发现；页面始终从持久化历史库重建。
     fetch_empty = len(candidates) == 0
 
     log_step("[5/8] 写入状态与报告...")
@@ -848,13 +1034,10 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
         log_kv("报告文件", report_path)
 
     log_step("[6/8] 生成前端数据...")
-    if fetch_empty:
-        log_kv("跳过前端结果写入", "候选为 0，保留上一份")
-    else:
-        result_data = build_result_json(candidates, config, now, library_data)
-        save_json(result_path, result_data)
-        log_kv("前端结果文件", result_path)
-        log_kv("达标条目数", len(result_data["qualified"]))
+    result_data = build_result_json(candidates, config, now, library_data)
+    save_json(result_path, result_data)
+    log_kv("前端结果文件", result_path)
+    log_kv("累计展示条目数", len(result_data["qualified"]))
 
     log_step("[7/8] 生成网页数据（封面 + 元数据）...")
     python = sys.executable
@@ -922,4 +1105,10 @@ def run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path]
 
 
 if __name__ == "__main__":
-    run(Path(__file__).resolve().parent)
+    parser = argparse.ArgumentParser(description="豆瓣高分监控")
+    parser.add_argument("--offline-rebuild", action="store_true", help="仅用本地历史库迁移并重建结果；不联网或操作Git")
+    args = parser.parse_args()
+    if args.offline_rebuild:
+        offline_rebuild(Path(__file__).resolve().parent)
+    else:
+        run(Path(__file__).resolve().parent)

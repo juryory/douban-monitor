@@ -5,3 +5,4 @@ __pycache__/
 .claude/settings.local.json
 *-security-audit/
 logs/
+.douban-monitor.lock

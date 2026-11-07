@@ -20,6 +20,7 @@ if _ENV_FILE.exists():
 
 sys.path.insert(0, str(Path(__file__).parent))
 from monitor import rexxar_get, tmdb_get, DEFAULT_CONFIG
+from asset_cache import AssetRetryCache, preserve_valid
 
 DATA_DIR = _ROOT / "data"
 RESULT_FILE = DATA_DIR / "douban-monitor-result.json"
@@ -112,6 +113,8 @@ def _fetch_detail(tmdb_id: int, tmdb_type: str, config: dict) -> dict:
             "append_to_response": "credits,images,similar,recommendations",
             "include_image_language": "null,zh,en",
         })
+        if not d.get("id"):
+            return {}
         genres = [g["name"] for g in (d.get("genres") or [])]
         runtime = d.get("runtime")
         if runtime is None:
@@ -189,6 +192,21 @@ def _fetch_detail(tmdb_id: int, tmdb_type: str, config: dict) -> dict:
         return {}
 
 
+def _fetch_metadata(item: dict, existing: dict, config: dict) -> dict:
+    if existing.get("tmdb_id") and existing.get("tmdb_type"):
+        return _fetch_detail(existing["tmdb_id"], existing["tmdb_type"], config)
+    found = None
+    category = item.get("category", "movie")
+    if category not in ("show", "variety"):
+        imdb_id = item.get("imdb_id") or _get_imdb(item["douban_id"])
+        time.sleep(0.3)
+        if imdb_id:
+            found = _find_by_imdb(imdb_id, config)
+    if not found:
+        found = _find_by_search(item.get("title") or "", category, str(item.get("year") or ""), config)
+    return _fetch_detail(found[0], found[1], config) if found else {}
+
+
 def main() -> None:
     text = RESULT_FILE.read_text(encoding="utf-8").strip() if RESULT_FILE.exists() else ""
     if not text:
@@ -216,13 +234,12 @@ def main() -> None:
             meta = json.loads(text)
 
     config = {**DEFAULT_CONFIG, "tmdb_language": "zh-CN", "tmdb_region": "CN"}
+    retries = AssetRetryCache()
     total = len(unique)
 
     for i, item in enumerate(unique):
         did      = item["douban_id"]
-        title    = item["title"]
-        category = item.get("category", "movie")
-        year     = str(item.get("year") or "")
+        title    = item.get("title") or did
         prefix   = f"[{i+1}/{total}]"
 
         if did in meta and "backdrop_path" in meta[did]:
@@ -230,30 +247,12 @@ def main() -> None:
             print(f"{prefix} skip {mark} {title}")
             continue
 
-        print(f"{prefix} {title} ({category})", end="  ", flush=True)
-        found: tuple[int, str] | None = None
-
-        if category != "show":
-            imdb_id = _get_imdb(did)
-            time.sleep(0.3)
-            if imdb_id:
-                found = _find_by_imdb(imdb_id, config)
-                if found:
-                    print(f"imdb={imdb_id}", end=" ", flush=True)
-                time.sleep(0.2)
-
-        if not found:
-            found = _find_by_search(title, category, year, config)
-            if found:
-                print(f"tmdb={found[0]}", end=" ", flush=True)
-
-        if not found:
-            meta[did] = {}
-            print("(not found)")
+        print(f"{prefix} {title}", end="  ", flush=True)
+        detail = retries.fetch("metadata", did, lambda: _fetch_metadata(item, meta.get(did) or {}, config))
+        if not detail:
+            print("(not found / retry later)")
             continue
-
-        detail = _fetch_detail(found[0], found[1], config)
-        meta[did] = detail
+        meta[did] = preserve_valid(meta.get(did) or {}, detail)
         time.sleep(0.25)
         ov = detail.get("overview") or ""
         print(ov[:60] + "…" if len(ov) > 60 else (ov or "(no overview)"))

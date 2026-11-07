@@ -26,6 +26,7 @@ if _ENV_FILE.exists():
 
 sys.path.insert(0, str(Path(__file__).parent))
 from monitor import rexxar_get, tmdb_get, DEFAULT_CONFIG
+from asset_cache import AssetRetryCache
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 RESULT_FILE = DATA_DIR / "douban-monitor-result.json"
@@ -164,6 +165,28 @@ def search_poster_fuzzy(title: str, category: str, year: str, config: dict) -> s
 # Main
 # ---------------------------------------------------------------------------
 
+def _fetch_poster(item: dict, metadata: dict, config: dict) -> str:
+    did = item["douban_id"]
+    meta = metadata.get(did) or {}
+    if meta.get("poster_path"):
+        return f"{TMDB_IMAGE_BASE}{meta['poster_path']}"
+    # Reuse resolved identifiers before requesting the Douban detail again.
+    if meta.get("tmdb_id") and meta.get("tmdb_type"):
+        try:
+            data = tmdb_get(f"/{meta['tmdb_type']}/{meta['tmdb_id']}", config, {"language": "zh-CN"})
+            if data.get("poster_path"):
+                return f"{TMDB_IMAGE_BASE}{data['poster_path']}"
+        except Exception:
+            pass
+    imdb_id = item.get("imdb_id") or get_imdb_id_from_rexxar(did)
+    time.sleep(0.3)
+    if imdb_id:
+        url = find_poster_by_imdb(imdb_id, config)
+        if url:
+            return url
+    return search_poster_fuzzy(item.get("title") or "", item.get("category", "movie"), str(item.get("year") or ""), config)
+
+
 def main() -> None:
     text = RESULT_FILE.read_text(encoding="utf-8").strip() if RESULT_FILE.exists() else ""
     if not text:
@@ -199,13 +222,12 @@ def main() -> None:
             pass
 
     config = {**DEFAULT_CONFIG, "tmdb_language": "zh-CN", "tmdb_region": "CN"}
+    retries = AssetRetryCache()
 
     total = len(unique)
     for i, item in enumerate(unique):
         did = item["douban_id"]
-        title = item["title"]
-        category = item.get("category", "movie")
-        year = str(item.get("year") or "")
+        title = item.get("title") or did
         prefix = f"[{i+1}/{total}]"
 
         # Skip only when a non-empty poster URL is already cached
@@ -213,44 +235,11 @@ def main() -> None:
             print(f"{prefix} skip [OK] {title}")
             continue
 
-        print(f"{prefix} {title} ({category})", end="  ", flush=True)
-        url = ""
-
-        # Step 0: use poster_path already stored in metadata (most reliable)
-        meta = metadata.get(did, {})
-        if meta.get("poster_path"):
-            url = f"{TMDB_IMAGE_BASE}{meta['poster_path']}"
-            print(f"meta={meta['poster_path']}", end=" ", flush=True)
-
-        # Step 1: IMDB → TMDB /find
-        if not url:
-            imdb_id = get_imdb_id_from_rexxar(did)
-            time.sleep(0.3)
-            if imdb_id:
-                print(f"imdb={imdb_id}", end=" ", flush=True)
-                url = find_poster_by_imdb(imdb_id, config)
-                time.sleep(0.2)
-
-        # Step 2: direct TMDB id lookup (tmdb_id stored in metadata)
-        if not url and meta.get("tmdb_id") and meta.get("tmdb_type"):
-            tmdb_type = meta["tmdb_type"]
-            tmdb_id = meta["tmdb_id"]
-            try:
-                d = tmdb_get(f"/{tmdb_type}/{tmdb_id}", config, {"language": "zh-CN"})
-                path = d.get("poster_path") or ""
-                if path:
-                    url = f"{TMDB_IMAGE_BASE}{path}"
-                    print(f"tmdb_id={tmdb_id}", end=" ", flush=True)
-            except Exception:
-                pass
-            time.sleep(0.2)
-
-        # Step 3: TMDB fuzzy search
-        if not url:
-            url = search_poster_fuzzy(title, category, year, config)
-            time.sleep(0.2)
-
-        posters[did] = url
+        print(f"{prefix} {title}", end="  ", flush=True)
+        url = retries.fetch("poster", did, lambda: _fetch_poster(item, metadata, config))
+        if url:
+            posters[did] = url
+        url = url or ""
         short = (url[:72] + "…") if len(url) > 72 else url
         print(short or "(none)")
 

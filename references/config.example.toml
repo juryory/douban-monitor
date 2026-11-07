@@ -1,6 +1,6 @@
 # 豆瓣高分监控示例配置
 
-# 最终提醒阈值
+# 首次达标/隐藏恢复：评分 >= min_rating，人数 > min_rating_count
 min_rating = 8.0
 min_rating_count = 3000
 
@@ -37,3 +37,11 @@ tmdb_tv_pages = 1
 
 # 请求设置
 request_timeout_seconds = 20
+
+# 历史迁移与离榜核验共用的额外请求预算（北京时间自然日）
+# 不包含现有榜单采集、候选补详情、收藏或网页配套请求
+rating_recheck_daily_limit = 20
+rating_recheck_interval_seconds = 3
+# 首次失败后最多自动重试 3 次，即最多失败 4 次后暂停
+rating_recheck_max_retries = 3
+rating_recheck_retry_delay_hours = 24
