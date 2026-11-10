@@ -17265,5 +17265,130 @@
         "vote_average": 10.0
       }
     ]
+  },
+  "36600459": {
+    "tmdb_id": 1419406,
+    "tmdb_type": "movie",
+    "original_title": "捕风追影",
+    "overview": "一伙天才盗匪劫走数亿资产，却凭借超强反侦察能力全身而退，戏耍警方“天眼”系统。一筹莫展之际，澳门司警局请回了隐退多年的跟踪专家黄德忠，他培养年轻司警何秋果等人，重组“神秘跟踪队”，最终锁定了盗匪团的幕后狼王傅隆生。当警方布下天罗地网之时，盗匪团也设下局中局，斗智斗勇斗心眼，一场高端猫鼠局拉开帷幕……",
+    "genres": [
+      "动作",
+      "犯罪",
+      "剧情",
+      "惊悚"
+    ],
+    "runtime": 141,
+    "release_date": "2025-08-16",
+    "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+    "poster_path": "/o25Tk1FYQi2BLk0OEAvx2h69QvB.jpg",
+    "countries": [
+      "China",
+      "Hong Kong"
+    ],
+    "director": "杨子",
+    "cast": [
+      {
+        "name": "成龙",
+        "character": "Wong Tak Chung",
+        "profile_path": "/nraZoTzwJQPHspAVsKfgl3RXKKa.jpg"
+      },
+      {
+        "name": "张子枫",
+        "character": "He Qiuguo",
+        "profile_path": "/3S8yEnTVqH8T3bTVf9FmtXxWcu2.jpg"
+      },
+      {
+        "name": "梁家辉",
+        "character": "Fu Longsheng",
+        "profile_path": "/sPDShFDtDx1pMNwHEx14o4WHrEH.jpg"
+      },
+      {
+        "name": "此沙",
+        "character": "Xi Meng / Xi Wang",
+        "profile_path": "/eWytg5M0VUCb0aHEKpUDijQ7JxF.jpg"
+      },
+      {
+        "name": "文俊辉",
+        "character": "Hu Feng",
+        "profile_path": "/z1seXrQQWG7nsQVHqSWKefJQ8DO.jpg"
+      },
+      {
+        "name": "周政杰",
+        "character": "Liu Jinxiao",
+        "profile_path": "/9n4vnXt6SIrfUfDDXxz4ewxhbSf.jpg"
+      },
+      {
+        "name": "王杍逸",
+        "character": "Wu Yaolei",
+        "profile_path": "/6xOEI8NnQuvRwe6nSDXYGAamKzO.jpg"
+      },
+      {
+        "name": "郎月婷",
+        "character": "Madam Wang",
+        "profile_path": "/bdyJhQrIG7ai9B2Tp2kD2M0F32X.jpg"
+      }
+    ],
+    "stills": [
+      "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+      "/62nZvQlq0WyLjiXJXrajImyARWK.jpg",
+      "/zXINNssll2zsPGqd7F7Llrw7Uql.jpg",
+      "/tn95fumbkVAgXjOuw9CQOg0aYQz.jpg",
+      "/va9BcW9AK2iWIgixB3UGXeptb8.jpg",
+      "/t2cGCvRLjZw0i89DPwvp982g3ra.jpg",
+      "/5htusrnQhBC4k0kpJYcuVMKz3o5.jpg",
+      "/i3UQNKxVNhRH7R70VblmAXdn1Ag.jpg",
+      "/oeBy8U3c8K3J5yZcHhimciCPt8H.jpg",
+      "/hPmAyKTfkB81k8OAMggVRLINGqF.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 95,
+        "title": "世界末日",
+        "poster_path": "/mc5zKzCcyxMnVTjc7V8yfq6tnA6.jpg",
+        "vote_average": 6.834
+      },
+      {
+        "tmdb_id": 1475200,
+        "title": "Fiddler’s Green",
+        "poster_path": "/5K1cxXiALtYJeC0x2jvn0rIvviL.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 42592,
+        "title": "凯撒大帝",
+        "poster_path": "/rGSB4RHTHRg1UwqGLMWfkmUJKmx.jpg",
+        "vote_average": 5.9
+      },
+      {
+        "tmdb_id": 42619,
+        "title": "追凶三千里",
+        "poster_path": "/jHgVrkklycUdjKtzGiKgGzwCEnl.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 1667868,
+        "title": "Um pequeno poeta",
+        "poster_path": "/w5wfuBdlBUE38O7QoHlESxtVjzN.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 310767,
+        "title": "ಬಂಗಾರದ ಮನುಷ್ಯ",
+        "poster_path": "/utXNMv28ZIthgoDuntm9zRymvf8.jpg",
+        "vote_average": 9.4
+      },
+      {
+        "tmdb_id": 42495,
+        "title": "李尔王",
+        "poster_path": "/3d0CvkgokhZGpl6EIRMZ1MNgntU.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 1475770,
+        "title": "Foxhole",
+        "poster_path": "/yfozfilCNLg7noGjVS8Rr44SuuM.jpg",
+        "vote_average": 7.3
+      }
+    ]
   }
 }
