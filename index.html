@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>豆瓣高分监控</title>
+  <link rel="alternate" type="application/rss+xml" title="豆瓣高分监控 · 电影" href="data/rss/movie.xml" />
+  <link rel="alternate" type="application/rss+xml" title="豆瓣高分监控 · 剧集" href="data/rss/tv.xml" />
+  <link rel="alternate" type="application/rss+xml" title="豆瓣高分监控 · 综艺" href="data/rss/variety.xml" />
+  <link rel="alternate" type="application/rss+xml" title="豆瓣高分监控 · 全部" href="data/rss/all.xml" />
   <meta property="og:title"       content="豆瓣高分监控" />
   <meta property="og:description" content="持续追踪豆瓣高分影视" />
   <meta property="og:type"        content="website" />
@@ -452,6 +456,8 @@
       .detail-content { padding: 24px 16px 56px; }
     }
 
+    .rss-links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 12px; font-size: 13px; color: var(--muted); }
+    .rss-links a { color: var(--ink); text-underline-offset: 3px; }
   </style>
 </head>
 <body>
@@ -479,6 +485,13 @@
 </section>
 
 <main>
+  <nav class="rss-links" aria-label="RSS 订阅">
+    <span>RSS 订阅</span>
+    <a href="data/rss/movie.xml">电影</a>
+    <a href="data/rss/tv.xml">剧集</a>
+    <a href="data/rss/variety.xml">综艺</a>
+    <a href="data/rss/all.xml">全部</a>
+  </nav>
   <div class="tabs" id="tabs"></div>
   <div id="loading"><div class="spinner"></div><span>加载数据中…</span></div>
   <div id="error"></div>

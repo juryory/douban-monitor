@@ -1041,7 +1041,7 @@ def _run(base_dir: Path, config: dict[str, Any] | None = None) -> dict[str, Path
 
     log_step("[7/8] 生成网页数据（封面 + 元数据）...")
     python = sys.executable
-    for script_name in ("fetch_favorites.py", "fetch_posters.py", "fetch_metadata.py", "fetch_reviews.py", "generate_detail_pages.py"):
+    for script_name in ("fetch_favorites.py", "fetch_posters.py", "fetch_metadata.py", "fetch_reviews.py", "generate_detail_pages.py", "generate_rss.py"):
         script_path = base_dir / script_name
         if not script_path.exists():
             continue

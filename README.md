@@ -151,6 +151,31 @@ python scripts/monitor.py --offline-rebuild
 
 工作流先配置 bot 身份，再调用主脚本；Git 同步和提交仅执行一套。豆瓣对机房及境外 IP 的限制可能导致采集失败，GitHub 运行适合作为兜底。
 
+## RSS 订阅接口
+
+提供四个静态 RSS 2.0 接口，可直接粘贴到 RSS 阅读器：
+
+| 分类 | 订阅地址 |
+| --- | --- |
+| 电影 | https://douban.juryory.com/data/rss/movie.xml |
+| 剧集 | https://douban.juryory.com/data/rss/tv.xml |
+| 综艺 | https://douban.juryory.com/data/rss/variety.xml |
+| 全部 | https://douban.juryory.com/data/rss/all.xml |
+
+网页提供订阅入口和 RSS 自动发现标签。接口随每日监控自动生成，包含当前展示作品及手动收藏，按豆瓣 ID 去重；不包含隐藏或仅观察的作品。综艺暂无收录时仍返回有效的空订阅。
+
+每条包含标题、分类、年份、评分、评分人数和豆瓣链接，点击条目进入本站详情页。按首次达标时间倒序，缺失时使用首次发现时间；历史日期均缺失时不填写发布日期。固定 GUID 使用豆瓣 ID，评分更新或恢复展示不会创建新的条目标识。初次订阅会获取当前全部收录，阅读器是否再次提醒由其自身设置决定。
+
+这些地址是本站原生 RSS，不是 `rsshub.app` 的专用路由，也无需 RSSHub 即可订阅。如需在 RSSHub 中提供专用路由，需另行在 RSSHub 实例中接入。
+
+只用已有本地结果重新生成订阅（无需联网，不执行 Git 操作）：
+
+```bash
+python scripts/generate_rss.py
+```
+
+文件输出到 `data/rss/`，随现有数据提交及静态站点部署发布。新增接口在部署包含这些文件的版本后生效。
+
 ## 已知限制
 
 - 豆瓣数据依赖 Rexxar 接口；故障、限流和评分缺失时只能保留旧值。
