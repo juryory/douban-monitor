@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>豆瓣高分监控 · 综艺</title>
     <link>https://douban.juryory.com/</link>
@@ -14,10 +14,102 @@
       <guid isPermaLink="false">urn:douban:subject:36754329</guid>
       <category>综艺</category>
       <pubDate>Tue, 19 May 2026 00:08:06 +0800</pubDate>
-      <description>分类：综艺
-豆瓣评分：9.0
-评分人数：6316
-豆瓣链接：https://movie.douban.com/subject/36754329/</description>
+      <description>&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w500/k4oenZF14FK4YW59Wsracnk9DXU.jpg" alt="豆豆笑笑 海报" width="260" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;콩 심은 데 콩 나서 웃음팡 행복팡 해외탐방&lt;/p&gt;
+&lt;p&gt;综艺 · KR&lt;/p&gt;
+&lt;p&gt;类型：真人秀&lt;/p&gt;
+&lt;p&gt;首播 / 上映日期：2025-10-17&lt;/p&gt;
+&lt;p&gt;豆瓣评分：9.0 / 10　评分人数：6316&lt;/p&gt;
+&lt;p&gt;导演 / 主创：罗暎锡&lt;/p&gt;
+&lt;h2&gt;剧情简介&lt;/h2&gt;
+&lt;p&gt;講述的是在《豆豆飯飯》中成功完成任務的 KKPP 職員們以探索公司發展的洞察力爲目的，前往墨西哥海外探訪的故事，這是《種豆得豆》的第二個衍生節目。KKPP 食品代表理事李光洙和本部長都敬秀（D.O.）一起，還有他們的至親金宇彬加入。特別是三人將親自制定國家、宿舍、活動等海外探訪日程，在支援海外探訪費用總公司的資金壓力下，爲了達到預算而努力，有時他們還會試圖進行協商。&lt;/p&gt;
+&lt;h2&gt;主演&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;img src="https://image.tmdb.org/t/p/w185/eqjZXCV4EutnoVxZwOveK6Nl5W9.jpg" alt="李光洙" width="64" style="max-width:100%;height:auto;" /&gt; 李光洙 — Self&lt;/li&gt;
+&lt;li&gt;&lt;img src="https://image.tmdb.org/t/p/w185/AjMMxxWbTNdafyWuY41xAHFPVou.jpg" alt="金宇彬" width="64" style="max-width:100%;height:auto;" /&gt; 金宇彬 — Self&lt;/li&gt;
+&lt;li&gt;&lt;img src="https://image.tmdb.org/t/p/w185/fYjYGWxYydmVxPle1h6QoeRk2b0.jpg" alt="都敬秀" width="64" style="max-width:100%;height:auto;" /&gt; 都敬秀 — Self&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;剧照&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/m2jJOyRbeJyob5qR3GXzFPSKJIj.jpg" alt="豆豆笑笑 剧照 1" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/8xsGWvJsZOC5fw6tIcWmiI4bxSV.jpg" alt="豆豆笑笑 剧照 2" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/xRLzHRBYsHEleE7rzGVI1VliBlo.jpg" alt="豆豆笑笑 剧照 3" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/uIvLWRPBrsa3DzpfAYsHUGAr81e.jpg" alt="豆豆笑笑 剧照 4" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/jWJeyINvjb8DWx5DNUx8K4NQsJX.jpg" alt="豆豆笑笑 剧照 5" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/3njRh5YU8idUqfYdJ7Wbl7jnXrX.jpg" alt="豆豆笑笑 剧照 6" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/t876EnDZOYIGMiDWZ5CF7sAcPZX.jpg" alt="豆豆笑笑 剧照 7" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;h2&gt;豆瓣短评&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;遇到困难睡大觉 · 2025-10-29 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;韩国人怎么能把旅行综艺拍得这么有趣…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;懵星 · 2025-10-26 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;说不上哪里好看，就是不知不觉看完一集，然后发现下一集还要等一周，好惨！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;屁味渗透垫下👑 · 2025-10-28 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;剪辑特别可爱、像《办公室》、像《约翰·威尔逊的十万个怎么做》、像内森·菲尔德、像伪纪录片、像伪高中同学拍的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pam · 2025-12-04 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;最大的优势是真实，其次都是其次。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;柯里昂 · 2025-10-26 · ★★★☆☆（3/5）&lt;/p&gt;
+&lt;p&gt;南韩第一搞笑人李光洙Hard carry again，罗PD的团队现在做节目越来越会省事了……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;没有为什么 · 2025-10-28 · ★★★★☆（4/5）&lt;/p&gt;
+&lt;p&gt;老罗从来不上价值也不纯搞笑，就是吃吃喝喝说说笑笑走走停停，当代最简单自然的心灵马杀鸡&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://douban.juryory.com/detail/36754329.html"&gt;查看完整详情&lt;/a&gt; · &lt;a href="https://movie.douban.com/subject/36754329/"&gt;豆瓣作品页&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded>&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w500/k4oenZF14FK4YW59Wsracnk9DXU.jpg" alt="豆豆笑笑 海报" width="260" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;콩 심은 데 콩 나서 웃음팡 행복팡 해외탐방&lt;/p&gt;
+&lt;p&gt;综艺 · KR&lt;/p&gt;
+&lt;p&gt;类型：真人秀&lt;/p&gt;
+&lt;p&gt;首播 / 上映日期：2025-10-17&lt;/p&gt;
+&lt;p&gt;豆瓣评分：9.0 / 10　评分人数：6316&lt;/p&gt;
+&lt;p&gt;导演 / 主创：罗暎锡&lt;/p&gt;
+&lt;h2&gt;剧情简介&lt;/h2&gt;
+&lt;p&gt;講述的是在《豆豆飯飯》中成功完成任務的 KKPP 職員們以探索公司發展的洞察力爲目的，前往墨西哥海外探訪的故事，這是《種豆得豆》的第二個衍生節目。KKPP 食品代表理事李光洙和本部長都敬秀（D.O.）一起，還有他們的至親金宇彬加入。特別是三人將親自制定國家、宿舍、活動等海外探訪日程，在支援海外探訪費用總公司的資金壓力下，爲了達到預算而努力，有時他們還會試圖進行協商。&lt;/p&gt;
+&lt;h2&gt;主演&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;img src="https://image.tmdb.org/t/p/w185/eqjZXCV4EutnoVxZwOveK6Nl5W9.jpg" alt="李光洙" width="64" style="max-width:100%;height:auto;" /&gt; 李光洙 — Self&lt;/li&gt;
+&lt;li&gt;&lt;img src="https://image.tmdb.org/t/p/w185/AjMMxxWbTNdafyWuY41xAHFPVou.jpg" alt="金宇彬" width="64" style="max-width:100%;height:auto;" /&gt; 金宇彬 — Self&lt;/li&gt;
+&lt;li&gt;&lt;img src="https://image.tmdb.org/t/p/w185/fYjYGWxYydmVxPle1h6QoeRk2b0.jpg" alt="都敬秀" width="64" style="max-width:100%;height:auto;" /&gt; 都敬秀 — Self&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;剧照&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/m2jJOyRbeJyob5qR3GXzFPSKJIj.jpg" alt="豆豆笑笑 剧照 1" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/8xsGWvJsZOC5fw6tIcWmiI4bxSV.jpg" alt="豆豆笑笑 剧照 2" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/xRLzHRBYsHEleE7rzGVI1VliBlo.jpg" alt="豆豆笑笑 剧照 3" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/uIvLWRPBrsa3DzpfAYsHUGAr81e.jpg" alt="豆豆笑笑 剧照 4" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/jWJeyINvjb8DWx5DNUx8K4NQsJX.jpg" alt="豆豆笑笑 剧照 5" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/3njRh5YU8idUqfYdJ7Wbl7jnXrX.jpg" alt="豆豆笑笑 剧照 6" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/t876EnDZOYIGMiDWZ5CF7sAcPZX.jpg" alt="豆豆笑笑 剧照 7" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;h2&gt;豆瓣短评&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;遇到困难睡大觉 · 2025-10-29 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;韩国人怎么能把旅行综艺拍得这么有趣…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;懵星 · 2025-10-26 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;说不上哪里好看，就是不知不觉看完一集，然后发现下一集还要等一周，好惨！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;屁味渗透垫下👑 · 2025-10-28 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;剪辑特别可爱、像《办公室》、像《约翰·威尔逊的十万个怎么做》、像内森·菲尔德、像伪纪录片、像伪高中同学拍的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pam · 2025-12-04 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;最大的优势是真实，其次都是其次。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;柯里昂 · 2025-10-26 · ★★★☆☆（3/5）&lt;/p&gt;
+&lt;p&gt;南韩第一搞笑人李光洙Hard carry again，罗PD的团队现在做节目越来越会省事了……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;没有为什么 · 2025-10-28 · ★★★★☆（4/5）&lt;/p&gt;
+&lt;p&gt;老罗从来不上价值也不纯搞笑，就是吃吃喝喝说说笑笑走走停停，当代最简单自然的心灵马杀鸡&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://douban.juryory.com/detail/36754329.html"&gt;查看完整详情&lt;/a&gt; · &lt;a href="https://movie.douban.com/subject/36754329/"&gt;豆瓣作品页&lt;/a&gt;&lt;/p&gt;</content:encoded>
     </item>
     <item>
       <title>四个愿望</title>
@@ -25,10 +117,96 @@
       <guid isPermaLink="false">urn:douban:subject:38188936</guid>
       <category>综艺</category>
       <pubDate>Fri, 10 Apr 2026 18:24:50 +0800</pubDate>
-      <description>分类：综艺
-豆瓣评分：9.3
-评分人数：5381
-豆瓣链接：https://movie.douban.com/subject/38188936/</description>
+      <description>&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w500/gcxnLHhmA7AkOOwcGFcdfBCvPel.jpg" alt="四个愿望 海报" width="260" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;네 가지 소원&lt;/p&gt;
+&lt;p&gt;综艺 · KR&lt;/p&gt;
+&lt;p&gt;类型：真人秀&lt;/p&gt;
+&lt;p&gt;首播 / 上映日期：2026-01-02&lt;/p&gt;
+&lt;p&gt;豆瓣评分：9.3 / 10　评分人数：5381&lt;/p&gt;
+&lt;h2&gt;剧情简介&lt;/h2&gt;
+&lt;p&gt;韩国智斗综艺《四个愿望》（The Four Wishes/네ラ지소원）由大学生创作团队MINDZERO制作，2026年1月报道，全素人首发。节目聚焦高智商博弈，参赛者包括名校学生、密室设计师、魔方冠军等9位代表，代表人物有Lee Choongmyung（李忠明）、Kil Hojong、Bae Chaewoon等，因高规则完成度被称为“小《血之游戏》”&lt;/p&gt;
+&lt;h2&gt;主演&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;충명 — 延世大学学生，香港数学竞赛冠军，魔鬼计划S2玩测者&lt;/li&gt;
+&lt;li&gt;길호종 — 韩国科学技术院学生，计算机科学专业，韩国科学技术院啦啦队长&lt;/li&gt;
+&lt;li&gt;裴彩云 — 韩国科学技术院博士生，魔方公式记录保持者，独立游戏开发者&lt;/li&gt;
+&lt;li&gt;权惠秀 — 密室逃脱设计师，学院讲师&lt;/li&gt;
+&lt;li&gt;朴智惠 — 推理俱乐部“Essence Of Reasoning”经理&lt;/li&gt;
+&lt;li&gt;裴俊成 — 高丽大学学生，英语教育专业&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;剧照&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/pMoes5wotMDyaau0IIsYLy5flXF.jpg" alt="四个愿望 剧照 1" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/djeCALoXNxiOlxWKqKTQj7FjKRH.jpg" alt="四个愿望 剧照 2" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;h2&gt;豆瓣短评&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;phpechoes · 2026-02-04 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;有途径的油管频道MINDZERO哪怕点赞留言支持一下吧，小成本制作这个水平简直难以置信。上头追了大半随手查了一下背景信息：场地是租的，游戏是大学生+校友团队设计的，制作是砸个人资金的，剪辑是一点点弄才迟一年多发布的。&lt;br /&gt;反正看完第七集说实话游法竞卖集已经被我抛到脑后了，这个道具和局中局复杂度加上整个设计淡淡的哲思色彩，还有3:1转三人缠斗背叛场面每一步都爽飞……怎么说呢，有这么精妙的规则设计人性考验还怕没有节目效果没有冲突剪辑点？&lt;br /&gt;网飞+ 李世乭+洪榛浩+张东民解说拿什么赢？(跪谢被抛弃字幕组)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;木更津江宰 · 2026-01-20 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;游戏制作者遇到这么一群旗鼓相当的玩家一定也很兴奋吧。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;zy · 2026-02-20 · ★★★★☆（4/5）&lt;/p&gt;
+&lt;p&gt;最后一集的出现方式甚至有些元(meta)了。//正巧我在别处读到了一句话，也许可以作为这个节目的注脚：“对于蠢人来说，规则即是服从，对于智者来说，规则只是参考。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;M4rx · 2026-01-17 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;从某种角度来说，说是超越游法也不为过&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Marni · 2026-02-02 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;再次证明，一个综艺的灵魂永远是优秀的脚本。选手固然出众，但脚本更是出神入化，一个低成本素人综艺，被拍成了险象环生、张力拉满的震撼大作。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;白墨微音 · 2026-02-02 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;真平替吗？感觉这个节目的游戏设计到顶了，远大于以往的其它节目。有几个游戏，如果是同一群玩家在彻底参透规则后再重新玩一轮就更有意思了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://douban.juryory.com/detail/38188936.html"&gt;查看完整详情&lt;/a&gt; · &lt;a href="https://movie.douban.com/subject/38188936/"&gt;豆瓣作品页&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded>&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w500/gcxnLHhmA7AkOOwcGFcdfBCvPel.jpg" alt="四个愿望 海报" width="260" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;네 가지 소원&lt;/p&gt;
+&lt;p&gt;综艺 · KR&lt;/p&gt;
+&lt;p&gt;类型：真人秀&lt;/p&gt;
+&lt;p&gt;首播 / 上映日期：2026-01-02&lt;/p&gt;
+&lt;p&gt;豆瓣评分：9.3 / 10　评分人数：5381&lt;/p&gt;
+&lt;h2&gt;剧情简介&lt;/h2&gt;
+&lt;p&gt;韩国智斗综艺《四个愿望》（The Four Wishes/네ラ지소원）由大学生创作团队MINDZERO制作，2026年1月报道，全素人首发。节目聚焦高智商博弈，参赛者包括名校学生、密室设计师、魔方冠军等9位代表，代表人物有Lee Choongmyung（李忠明）、Kil Hojong、Bae Chaewoon等，因高规则完成度被称为“小《血之游戏》”&lt;/p&gt;
+&lt;h2&gt;主演&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;충명 — 延世大学学生，香港数学竞赛冠军，魔鬼计划S2玩测者&lt;/li&gt;
+&lt;li&gt;길호종 — 韩国科学技术院学生，计算机科学专业，韩国科学技术院啦啦队长&lt;/li&gt;
+&lt;li&gt;裴彩云 — 韩国科学技术院博士生，魔方公式记录保持者，独立游戏开发者&lt;/li&gt;
+&lt;li&gt;权惠秀 — 密室逃脱设计师，学院讲师&lt;/li&gt;
+&lt;li&gt;朴智惠 — 推理俱乐部“Essence Of Reasoning”经理&lt;/li&gt;
+&lt;li&gt;裴俊成 — 高丽大学学生，英语教育专业&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;剧照&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/pMoes5wotMDyaau0IIsYLy5flXF.jpg" alt="四个愿望 剧照 1" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.tmdb.org/t/p/w780/djeCALoXNxiOlxWKqKTQj7FjKRH.jpg" alt="四个愿望 剧照 2" width="720" style="max-width:100%;height:auto;" /&gt;&lt;/p&gt;
+&lt;h2&gt;豆瓣短评&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;phpechoes · 2026-02-04 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;有途径的油管频道MINDZERO哪怕点赞留言支持一下吧，小成本制作这个水平简直难以置信。上头追了大半随手查了一下背景信息：场地是租的，游戏是大学生+校友团队设计的，制作是砸个人资金的，剪辑是一点点弄才迟一年多发布的。&lt;br /&gt;反正看完第七集说实话游法竞卖集已经被我抛到脑后了，这个道具和局中局复杂度加上整个设计淡淡的哲思色彩，还有3:1转三人缠斗背叛场面每一步都爽飞……怎么说呢，有这么精妙的规则设计人性考验还怕没有节目效果没有冲突剪辑点？&lt;br /&gt;网飞+ 李世乭+洪榛浩+张东民解说拿什么赢？(跪谢被抛弃字幕组)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;木更津江宰 · 2026-01-20 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;游戏制作者遇到这么一群旗鼓相当的玩家一定也很兴奋吧。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;zy · 2026-02-20 · ★★★★☆（4/5）&lt;/p&gt;
+&lt;p&gt;最后一集的出现方式甚至有些元(meta)了。//正巧我在别处读到了一句话，也许可以作为这个节目的注脚：“对于蠢人来说，规则即是服从，对于智者来说，规则只是参考。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;M4rx · 2026-01-17 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;从某种角度来说，说是超越游法也不为过&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Marni · 2026-02-02 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;再次证明，一个综艺的灵魂永远是优秀的脚本。选手固然出众，但脚本更是出神入化，一个低成本素人综艺，被拍成了险象环生、张力拉满的震撼大作。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;白墨微音 · 2026-02-02 · ★★★★★（5/5）&lt;/p&gt;
+&lt;p&gt;真平替吗？感觉这个节目的游戏设计到顶了，远大于以往的其它节目。有几个游戏，如果是同一群玩家在彻底参透规则后再重新玩一轮就更有意思了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://douban.juryory.com/detail/38188936.html"&gt;查看完整详情&lt;/a&gt; · &lt;a href="https://movie.douban.com/subject/38188936/"&gt;豆瓣作品页&lt;/a&gt;&lt;/p&gt;</content:encoded>
     </item>
   </channel>
 </rss>
