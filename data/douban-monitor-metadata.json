@@ -17390,5 +17390,127 @@
         "vote_average": 7.3
       }
     ]
+  },
+  "26952704": {
+    "tmdb_id": 537996,
+    "tmdb_type": "movie",
+    "original_title": "The Ballad of Buster Scruggs",
+    "overview": "《巴斯特·斯克鲁格斯的歌谣》是由六个部分组成的西部题材选集电影，乔尔·科恩和伊桑·科恩利用他们独树一帜又无与伦比的视角，讲述了关于美国边境的系列故事。电影的每一章都讲述了一则独特的美国西部故事。",
+    "genres": [
+      "西部",
+      "喜剧"
+    ],
+    "runtime": 133,
+    "release_date": "2018-11-09",
+    "backdrop_path": "/12RXkIWUXwOHXgAmlxJNIWRGrri.jpg",
+    "poster_path": "/zC2a6TJXY8Sn3qBfWjxLtusGh9s.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "乔尔·科恩",
+    "cast": [
+      {
+        "name": "蒂姆·布雷克·尼尔森",
+        "character": "Buster Scruggs (segment \"The Ballad of Buster Scruggs\")",
+        "profile_path": "/rWuTGiAMaaHIJ30eRkQS23LbRSW.jpg"
+      },
+      {
+        "name": "威利·沃森",
+        "character": "The Kid (segment \"The Ballad of Buster Scruggs\")",
+        "profile_path": "/cwRO9aHLnWDIpf9PRoLkA14LcGC.jpg"
+      },
+      {
+        "name": "克兰西·布朗",
+        "character": "Curly Joe (segment \"The Ballad of Buster Scruggs\")",
+        "profile_path": "/1JeBRNG7VS7r64V9lOvej9bZXW5.jpg"
+      },
+      {
+        "name": "丹尼·麦卡锡",
+        "character": "Curly Joe's Brother (segment \"The Ballad of Buster Scruggs\")",
+        "profile_path": "/jTYHl6SGo6hrHrezVCNHvEr4a5g.jpg"
+      },
+      {
+        "name": "大卫·克鲁姆霍兹",
+        "character": "Frenchman (segment \"The Ballad of Buster Scruggs\")",
+        "profile_path": "/2vaimzfyPQVxZGHbQS5M3z3tZw0.jpg"
+      },
+      {
+        "name": "Thomas Wingate",
+        "character": "Gun Check Man (segment \"The Ballad of Buster Scruggs\")",
+        "profile_path": "/qucWMK2cxMqOuIohJxswhaZ8S5N.jpg"
+      },
+      {
+        "name": "蒂姆·德·赞",
+        "character": "Mean-Eyed Card Player (segment \"The Ballad of Buster Scruggs\")",
+        "profile_path": "/tduRqomAU3LARfuDa2OMKFAd1rR.jpg"
+      },
+      {
+        "name": "E.E. Bell",
+        "character": "Piano Player (segment \"The Ballad of Buster Scruggs\")",
+        "profile_path": "/jjF03SCjfsAeel7IFrlXne1uFcQ.jpg"
+      }
+    ],
+    "stills": [
+      "/12RXkIWUXwOHXgAmlxJNIWRGrri.jpg",
+      "/mUkYlB3Ofim9qjgdqKwumfuhabS.jpg",
+      "/f1QSRkTPLNilbrJlvadKPyUhesY.jpg",
+      "/90kmxuSwU28dVy1ghVSHI4x1wb8.jpg",
+      "/8ZwaQCK7awHyK9Oqt4y16dl6w6Y.jpg",
+      "/mbnnVT5BxsLdWsHyc0Nsil6EetG.jpg",
+      "/iXn9sPHZLcGOj3hMbo58r8hVDLe.jpg",
+      "/7K8F49CamvU3R1KV5IF1dJtOTXe.jpg",
+      "/kwuQAV46dGaxIsLVpbxAFVYxZhF.jpg",
+      "/bJjkbwZm8L2q7D8qkzJ5Y37lV02.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 1269,
+        "title": "新警探笑翻天",
+        "poster_path": "/miD6UUIcikgDHWHhS9HxySDcS92.jpg",
+        "vote_average": 6.516
+      },
+      {
+        "tmdb_id": 1285,
+        "title": "Torrente 3: El protector",
+        "poster_path": "/wDPujLAIQTfUCkrS21l8FXGXb5E.jpg",
+        "vote_average": 5.421
+      },
+      {
+        "tmdb_id": 1363,
+        "title": "乡间高低路",
+        "poster_path": "/1bC63XzaUEWJArFUQFKwUy77lZS.jpg",
+        "vote_average": 6.019
+      },
+      {
+        "tmdb_id": 268800,
+        "title": "Novela",
+        "poster_path": "/zmFdHb2CDYcF3Qh68TBEiiFHBfg.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 1430671,
+        "title": "ธี่หด",
+        "poster_path": "/71xjlSIAqyhaFafM7IcChpqOBqT.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 1961,
+        "title": "我叫布鲁斯",
+        "poster_path": "/et2f1JBW533ZzYiCEA2T7nwzcs1.jpg",
+        "vote_average": 5.798
+      },
+      {
+        "tmdb_id": 1969,
+        "title": "侠盗魅影",
+        "poster_path": "/31wgXG6OxDaXbp5IzyNoUJdVS5e.jpg",
+        "vote_average": 6.1
+      },
+      {
+        "tmdb_id": 2055,
+        "title": "天地无限",
+        "poster_path": "/bLPMhOKavyAW9G7NoSjoX7G7b9B.jpg",
+        "vote_average": 7.217
+      }
+    ]
   }
 }
