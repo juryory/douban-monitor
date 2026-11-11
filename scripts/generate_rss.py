@@ -72,17 +72,6 @@ def render_content(item: dict, meta: dict, poster: str | None, reviews: list[dic
     if meta.get("overview"):
         parts.append("<h2>剧情简介</h2>")
         paragraph(meta["overview"])
-    cast = meta.get("cast") or []
-    if cast:
-        parts.append("<h2>主演</h2><ul>")
-        for actor in cast:
-            photo = image_url(actor.get("profile_path"), "w185")
-            label = actor.get("name") or "未知演员"
-            if actor.get("character"):
-                label += " — " + actor["character"]
-            parts.append("<li>" + (image(photo, actor.get("name") or "演员", 64) + " " if photo else "")
-                         + text_html(label) + "</li>")
-        parts.append("</ul>")
     stills = list(dict.fromkeys(url for path in (meta.get("stills") or [])
                                if (url := image_url(path))))
     if stills:
