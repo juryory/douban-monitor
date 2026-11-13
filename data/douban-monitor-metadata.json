@@ -17512,5 +17512,128 @@
         "vote_average": 7.217
       }
     ]
+  },
+  "1296666": {
+    "tmdb_id": 196,
+    "tmdb_type": "movie",
+    "original_title": "Back to the Future Part III",
+    "overview": "　　马丁（麦克·J·福克斯饰）从他生活的八十年代来到了1955年，根据好朋友埃米·布朗博士（克里斯托弗·劳埃德饰）于1885年留下的信件，马丁找到了博士研制的时空穿梭机。本以为可以乘坐着这台机器回到未来，马丁却意外发现了博士的墓碑，原来他在留下那封信后不久便被人杀害。为了拯救埃米博士，马丁乘坐时空穿梭机来到了1885年的美国西部。马丁能否改变历史，拯救博士的生命？二人能否成功回到未来？“回到未来三部曲”完结篇，一起与马丁乘坐时空穿梭机畅游时间。",
+    "genres": [
+      "冒险",
+      "喜剧",
+      "科幻"
+    ],
+    "runtime": 119,
+    "release_date": "1990-05-25",
+    "backdrop_path": "/AtF7TESJEMmImBRUj9Z7HmW2ZH0.jpg",
+    "poster_path": "/x2g9y6MHwuslZmDuKgrX1tRAbci.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "罗伯特·泽米吉斯",
+    "cast": [
+      {
+        "name": "迈克尔·J·福克斯",
+        "character": "Marty McFly / Seamus McFly",
+        "profile_path": "/2JB4FMgQmnhbBlQ4SxWFN9EIVDi.jpg"
+      },
+      {
+        "name": "克里斯托弗·劳埃德",
+        "character": "Doctor Emmett Brown",
+        "profile_path": "/nxVjpyb3UrfbPZnEyDNlQVlFAs5.jpg"
+      },
+      {
+        "name": "玛丽·斯汀伯根",
+        "character": "Clara Clayton",
+        "profile_path": "/yJhfuqS3yXW7kLSyvRU6n3b35mq.jpg"
+      },
+      {
+        "name": "托马斯·F·威尔森",
+        "character": "Buford 'Mad Dog' Tannen / Biff Tannen",
+        "profile_path": "/mVhm65ZVBIRIptWGiMIvoUy0Khi.jpg"
+      },
+      {
+        "name": "莉·汤普森",
+        "character": "Maggie McFly / Lorraine McFly",
+        "profile_path": "/85E9NTEfkRdUdK4kTrrnk5of25w.jpg"
+      },
+      {
+        "name": "伊丽莎白·苏",
+        "character": "Jennifer",
+        "profile_path": "/1pmjDSLvOuqKW1P2KRPlpFMeUFe.jpg"
+      },
+      {
+        "name": "马特·克拉克",
+        "character": "Bartender",
+        "profile_path": "/n5TJz5CaTqRXLpAOl0wHJXrPQOk.jpg"
+      },
+      {
+        "name": "理查德·戴萨特",
+        "character": "Barbwire Salesman",
+        "profile_path": "/yQOaZexN3YbqGWOguu2VrjsvX2G.jpg"
+      }
+    ],
+    "stills": [
+      "/AtF7TESJEMmImBRUj9Z7HmW2ZH0.jpg",
+      "/vKp3NvqBkcjHkCHSGi6EbcP7g4J.jpg",
+      "/fSi8FrkYjlqwCM6cUS8iQ2f92cZ.jpg",
+      "/igaRMweCynEGoS6w4Rsim7JPnKu.jpg",
+      "/nh6mrOtIvD8MMC6JQIzwNDZi2G0.jpg",
+      "/dwvpUfoCB9NMoVedQQBhyaOqoSq.jpg",
+      "/1q7SYwQWkBJAGD0SRP8PrBhLfRx.jpg",
+      "/57HcVH6ZiuSmQltP028PCjQfE49.jpg",
+      "/r3GONqVzUqL7woAegZtCVz6vihM.jpg",
+      "/45jgfArN9qupeVfVcKStshQBeN0.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 13,
+        "title": "阿甘正传",
+        "poster_path": "/pplybKImR7LKzSVzRylK6Cl4dzm.jpg",
+        "vote_average": 8.461
+      },
+      {
+        "tmdb_id": 19,
+        "title": "大都会",
+        "poster_path": "/vODOVn29fr0nLF9MVfpfKDcxuXF.jpg",
+        "vote_average": 8.085
+      },
+      {
+        "tmdb_id": 266147,
+        "title": "吻我吧，青蛙王子",
+        "poster_path": "/zAX7DaLajADtlHLuOX6z2UoQ51B.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 453643,
+        "title": "Eye of the Storm",
+        "poster_path": "/lyFAGUhvGZahpN4NpQxXu5tEmi7.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 453579,
+        "title": "Evil Cult",
+        "poster_path": "/wP8gENNsWDZKygeT24Z0RGdplRU.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 266267,
+        "title": "Να πεθερός, να μάλαμα!",
+        "poster_path": "/tJOeONTid3cf4vg30fMlMdWetE0.jpg",
+        "vote_average": 4.7
+      },
+      {
+        "tmdb_id": 266422,
+        "title": "Two-Gun Caballero",
+        "poster_path": "/kZewb8gpDGgdETbebhEzeOtx7qC.jpg",
+        "vote_average": 4.8
+      },
+      {
+        "tmdb_id": 266457,
+        "title": "Put oko sveta",
+        "poster_path": "/zG5WJbk8FqAmvyN8lHrBausFXyW.jpg",
+        "vote_average": 5.8
+      }
+    ]
   }
 }
