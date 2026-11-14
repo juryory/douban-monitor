@@ -17635,5 +17635,98 @@
         "vote_average": 5.8
       }
     ]
+  },
+  "19955828": {
+    "tmdb_id": 197082,
+    "tmdb_type": "movie",
+    "original_title": "La Vénus à la fourrure",
+    "overview": "巴黎某家话剧院，为即将新推出的话剧进行选角的Thomas（马修·阿马立克 Mathieu Amalric 饰）经过整整一天的面试后，对着电话抱怨候选人水平太差，没有一个人能担当主角。正当他准备离去时，Vanda（艾玛纽尔·塞尼耶 Emmanuelle Seigner 饰）出现了。她精力充沛， 我行我素，调皮机灵。她的身上集中了所有Thomas所讨厌的特点。她粗野、轻率、千方百计争取角色。Thomas硬着头皮让她试演，结果却出乎意料，Vanda似乎完全变了一个人。她不仅带着配饰和服装，而且对人物的理解也完全到位（她的名字也和主人公一模一样），对台词也熟记于心。“试演”不断延长，逐渐紧张， Thomas从最初的欣赏到最后被深深吸引......",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 96,
+    "release_date": "2013-05-28",
+    "backdrop_path": "/psJG4SMKuZ9ReaSEikxwOweH0kv.jpg",
+    "poster_path": "/1dDf4Agwx9V4WzwT1RlwDD4Zy4B.jpg",
+    "countries": [
+      "France",
+      "Poland",
+      "Belgium"
+    ],
+    "director": "罗曼·波兰斯基",
+    "cast": [
+      {
+        "name": "艾玛纽尔·塞尼耶",
+        "character": "Vanda",
+        "profile_path": "/sOB2jxOcOXsAJ4531h1sCPQCZmI.jpg"
+      },
+      {
+        "name": "马修·阿马立克",
+        "character": "Thomas",
+        "profile_path": "/fMhfoTbjlXQy2Iojp7oYx49hLQl.jpg"
+      }
+    ],
+    "stills": [
+      "/psJG4SMKuZ9ReaSEikxwOweH0kv.jpg",
+      "/vELoPdRAeijQDHSZnETl5qy5lj7.jpg",
+      "/hnZHCl96Mikva8tEeOxe2l8oCHP.jpg",
+      "/rhT0AWtULzbhexol2XzhFsr6Sby.jpg",
+      "/9OZBgxriOtS0XgNgiQX4BhhkSVv.jpg",
+      "/bhoR9Jhw0hgB25FBSoAZZfqQ5LJ.jpg",
+      "/c3cPhqHyVPXbbzmHAMxfCNhON0N.jpg",
+      "/smfXz6h7JQHDz47kN1QcKwuOWF3.jpg",
+      "/r6KZiKC9NKXG2qcY3lvMsxsLcdi.jpg",
+      "/g0iOqFjMpg5Wd389ja2Ibtmwdrc.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 8512,
+        "title": "蓝衣魔鬼",
+        "poster_path": "/yZ9vNEKOkd0GWWozsopW3SqflYQ.jpg",
+        "vote_average": 6.46
+      },
+      {
+        "tmdb_id": 8618,
+        "title": "历史系男生",
+        "poster_path": "/a8JNAt4SAmY1c36Ux5zvsmOKh4h.jpg",
+        "vote_average": 6.619
+      },
+      {
+        "tmdb_id": 1237266,
+        "title": "Runt",
+        "poster_path": "/ycSTEW0v36BlhG4FPDTy9ykrEAv.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 273153,
+        "title": "美好时节",
+        "poster_path": "/ovMmODOytr5ZdrVxkzdvrLSk9ci.jpg",
+        "vote_average": 6.649
+      },
+      {
+        "tmdb_id": 8649,
+        "title": "穿梭阴阳界",
+        "poster_path": "/gE2Q8mL0m0EA6HakRyc92uzSPJn.jpg",
+        "vote_average": 6.604
+      },
+      {
+        "tmdb_id": 8653,
+        "title": "漂流欲室",
+        "poster_path": "/cVuUOUDCgZbtjkTdrTkGJwMINw6.jpg",
+        "vote_average": 6.895
+      },
+      {
+        "tmdb_id": 8741,
+        "title": "细细的红线",
+        "poster_path": "/3lpxGYOeV4GKnpdQDf5XRrsbyOJ.jpg",
+        "vote_average": 7.442
+      },
+      {
+        "tmdb_id": 8749,
+        "title": "王子复仇新记",
+        "poster_path": "/4ISSRbhwLo8TMjgA800etwhzxVn.jpg",
+        "vote_average": 6.69
+      }
+    ]
   }
 }
