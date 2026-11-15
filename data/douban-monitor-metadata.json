@@ -17847,5 +17847,74 @@
         "vote_average": 5.5
       }
     ]
+  },
+  "38456015": {
+    "tmdb_id": 335326,
+    "tmdb_type": "tv",
+    "original_title": "70 Up",
+    "overview": "阿西夫·卡帕迪亚将为 ITV 长篇纪录片系列《人生七年》画上句号，最后一集将于今年播出。\n\n该系列节目始于 1964 年，并在 2024 年被评为过去 50 年中最具影响力的英国电视节目。该节目每隔七年跟踪拍摄一群人从童年到成年的生活，现在又开始关注他们步入老年后的生活。\n\n该系列的长期导演迈克尔·艾普特于 2021 年去世。卡帕迪亚以其关于艾米·怀恩豪斯、艾尔顿·塞纳和迭戈·马拉多纳的纪录片而闻名，现在他接手了该系列，并称这项任命是“莫大的荣幸和特权”。\n\n卡帕迪亚表示，这部纪录片是他最喜欢的，他认为原版系列是“对人类生活的终极刻画”。\n\nITV 纪实节目主管兼《70 Up》节目委托人乔·克林顿-戴维斯称该系列节目是电影制作的里程碑之作，“已成为我们文化结构的一部分”，并表示最后一集是对艾普特的致敬。\n\n她说：“阿西夫·卡帕迪亚是一位杰出的导演，他将以他的热情、创造力和非凡的才华，在守护《人生七年》珍贵遗产的同时，为影片注入新的活力。最终，这要归功于所有被拍摄者的勇气，他们继续与我们分享他们的生活，让我们能够从他们身上看到自己的影子。”",
+    "genres": [],
+    "runtime": null,
+    "release_date": "",
+    "backdrop_path": "/se2W0UpEsTTkQuAqz7zI5eIB5ri.jpg",
+    "poster_path": "/pIVJLlgGDel3UsBa5igXDuDbCdf.jpg",
+    "countries": [
+      "US"
+    ],
+    "director": "",
+    "cast": [],
+    "stills": [
+      "/se2W0UpEsTTkQuAqz7zI5eIB5ri.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 4500,
+        "title": "纯真年代",
+        "poster_path": "/tkaduqdhFrF1vp8L55OJfB5jw8Z.jpg",
+        "vote_average": 8.354
+      },
+      {
+        "tmdb_id": 3365,
+        "title": "Grange Hill",
+        "poster_path": "/8SziJYek4dEumfweUY9GnnOtcJS.jpg",
+        "vote_average": 6.7
+      },
+      {
+        "tmdb_id": 21762,
+        "title": "为人父母",
+        "poster_path": "/9KjKLJrrUI1sU9bNsQaQ5H8kTyY.jpg",
+        "vote_average": 7.49
+      },
+      {
+        "tmdb_id": 384,
+        "title": "阿德日记",
+        "poster_path": "/fEzGDVHsUlOhU59EKSePobldyIf.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 19077,
+        "title": "福塞特世家",
+        "poster_path": "/rvcdVpJjUMb086r6y9eR9YxTQVJ.jpg",
+        "vote_average": 7.9
+      },
+      {
+        "tmdb_id": 2199,
+        "title": "惊奇轶事",
+        "poster_path": "/vfG5gafbtxtfMvgDdNi56evx4Og.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 2824,
+        "title": "The Adventures of Pete & Pete",
+        "poster_path": "/hfDDYKx5v7esCSidKxrDLDGTu3m.jpg",
+        "vote_average": 7.7
+      },
+      {
+        "tmdb_id": 46928,
+        "title": "小公主苏菲亚",
+        "poster_path": "/4LvC2hP4EnxL5CDYjKJz8RWixSP.jpg",
+        "vote_average": 7.218
+      }
+    ]
   }
 }
