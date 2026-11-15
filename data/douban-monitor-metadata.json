@@ -17728,5 +17728,124 @@
         "vote_average": 6.69
       }
     ]
+  },
+  "6844868": {
+    "tmdb_id": 128246,
+    "tmdb_type": "movie",
+    "original_title": "늑대소년",
+    "overview": "因患有肺病需要疗养，少女顺伊随母亲和妹妹从首尔搬到乡下生活。一天，她们在新家附近发现了一个衣衫褴褛、不会说话，举止如同野兽般的神秘男孩。由于一时找不到合适的安置去处，顺伊的母亲暂时将他收留下来，并给他取名哲秀。顺伊起初十分排斥这个狼吞虎咽又难以沟通的陌生人，却渐渐开始教他正常吃饭、穿衣、认字和生活中的各种规矩，而哲秀也几乎只听从她的话。随着朝夕相处，原本孤僻的顺伊逐渐向哲秀敞开心扉，两人之间产生了超越普通陪伴的感情。然而，哲秀身上不同寻常的一面也开始显露出来，顺伊身边的智泰又对他充满敌意，这段原本平静的乡村生活逐渐被打破……",
+    "genres": [
+      "爱情",
+      "奇幻"
+    ],
+    "runtime": 122,
+    "release_date": "2012-10-31",
+    "backdrop_path": "/8wKDBmmSoLRMtf42dhu7uUDKS1c.jpg",
+    "poster_path": "/qAFgffldcqJ9zlUNf9ZR9Yu3GZL.jpg",
+    "countries": [
+      "South Korea"
+    ],
+    "director": "赵圣熙",
+    "cast": [
+      {
+        "name": "宋仲基",
+        "character": "Wolf-Boy / Chul-soo",
+        "profile_path": "/kgjb5OppOVTh5tz3hhnfDVnTvDv.jpg"
+      },
+      {
+        "name": "朴宝英",
+        "character": "Young Sun-yi / Eun-ju",
+        "profile_path": "/oMJyJZOpRzQ83MSL4G3fUjbhLWx.jpg"
+      },
+      {
+        "name": "柳演锡",
+        "character": "Ji-tae",
+        "profile_path": "/cB95no6uPnMu5FdlVWK3cO9k5xR.jpg"
+      },
+      {
+        "name": "李英兰",
+        "character": "Sun-yi",
+        "profile_path": "/omNEg66dsVXP04DWJEWzaHetAdz.jpg"
+      },
+      {
+        "name": "张荣男",
+        "character": "Sun-yi's Mother",
+        "profile_path": "/u0hl8WSswFhKVaKwaMAERU0xUJk.jpg"
+      },
+      {
+        "name": "金香起",
+        "character": "Sun-ja",
+        "profile_path": "/fjxmH4T3JAVVNvGkBHVwpqE0JZo.jpg"
+      },
+      {
+        "name": "柳承穆",
+        "character": "Professor Kang Tae-shik",
+        "profile_path": "/jbHLHMMSuWYR27znM8ZSA6m2kJw.jpg"
+      },
+      {
+        "name": "申菲",
+        "character": "Dong-mi",
+        "profile_path": "/dx4NhqFIM2OswEfqSj905aEBag8.jpg"
+      }
+    ],
+    "stills": [
+      "/8wKDBmmSoLRMtf42dhu7uUDKS1c.jpg",
+      "/a5YX9snwNZFgbppxfcNta4v4m1H.jpg",
+      "/fysSNDLnK1wRSHVn7Anzt8I3HWm.jpg",
+      "/i8mwcILjEMMHQG571yODB82BL9U.jpg",
+      "/dKyb015dK9bjMUeJsxmCGFuv613.jpg",
+      "/deW1o3MyQZL4U1L0ckEciwF3tXn.jpg",
+      "/tARiVAqQSua9rwLImZ31k4tyfo8.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 13350,
+        "title": "史酷比与食尸鬼学校",
+        "poster_path": "/duMdoHLQvnzRDZm2CD66DT4PvS5.jpg",
+        "vote_average": 7.4
+      },
+      {
+        "tmdb_id": 654325,
+        "title": "Nachtwacht: Het Duistere Hart",
+        "poster_path": "/84Hqg8p3WOozCuObXe2qKmUxGuw.jpg",
+        "vote_average": 8.9
+      },
+      {
+        "tmdb_id": 13789,
+        "title": "蜜桃",
+        "poster_path": "/g8AYzOdaDyZH71Bth1IkcMsOGLp.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 14320,
+        "title": "远大前程",
+        "poster_path": "/ynaFuVvW2jaG06pMV67dOhzMYfJ.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 14499,
+        "title": "超时空战士",
+        "poster_path": "/3C5JsV8Id21pVfOAmWBZjrMZ6GZ.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 14219,
+        "title": "剥皮行者",
+        "poster_path": "/88YhyDVF1XYn7e7cM01UDmaGvMV.jpg",
+        "vote_average": 5.123
+      },
+      {
+        "tmdb_id": 13819,
+        "title": "月桂谷",
+        "poster_path": "/z7knajZv3nxqN0o2Jq8kIOkpgu6.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 277636,
+        "title": "As Fábulas Negras",
+        "poster_path": "/vgbDS2j5HgJU9PzN42X2uk5iZzm.jpg",
+        "vote_average": 5.5
+      }
+    ]
   }
 }
