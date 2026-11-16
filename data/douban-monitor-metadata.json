@@ -17916,5 +17916,128 @@
         "vote_average": 7.218
       }
     ]
+  },
+  "1292260": {
+    "tmdb_id": 28,
+    "tmdb_type": "movie",
+    "original_title": "Apocalypse Now",
+    "overview": "越战期间，威拉德上尉受命执行一项危险任务，深入柬埔寨刺杀一位脱离建制的叛变上校——此人已在当地部落自封神明。",
+    "genres": [
+      "剧情",
+      "战争"
+    ],
+    "runtime": 202,
+    "release_date": "1979-05-19",
+    "backdrop_path": "/49fzLedFVKgGgFChLMuulDJBY1c.jpg",
+    "poster_path": "/3HrefgjXZTY5PZkhFBBLq6Rpxaa.jpg",
+    "countries": [
+      "United States of America",
+      "Philippines"
+    ],
+    "director": "弗朗西斯·科波拉",
+    "cast": [
+      {
+        "name": "马丁·辛",
+        "character": "Captain Benjamin Willard",
+        "profile_path": "/m2Y3Q0uyuW6htrn2W9UWCWMkpZu.jpg"
+      },
+      {
+        "name": "马龙·白兰度",
+        "character": "Colonel Walter Kurtz",
+        "profile_path": "/yIvLpf9U9NfAvC7fuAgOQ8tu51T.jpg"
+      },
+      {
+        "name": "弗雷德里克·福雷斯特",
+        "character": "Jay 'Chef' Hicks",
+        "profile_path": "/daSNber2lZjvxrlOR3WcEX0CFZM.jpg"
+      },
+      {
+        "name": "阿尔伯特·海尔",
+        "character": "Chief Phillips",
+        "profile_path": "/jvcOpEO0vSNy3KaDkhIldI1CoaU.jpg"
+      },
+      {
+        "name": "劳伦斯·菲什伯恩",
+        "character": "Tyrone 'Clean' Miller",
+        "profile_path": "/2GbXERENPpl5MmlqOLlPVaVtifD.jpg"
+      },
+      {
+        "name": "山姆·伯顿斯",
+        "character": "Lance B. Johnson",
+        "profile_path": "/82ACmkTCHtKAuw42Jwx4JbjuVw0.jpg"
+      },
+      {
+        "name": "罗伯特·杜瓦尔",
+        "character": "Lieutenant Colonel Bill Kilgore",
+        "profile_path": "/3tcKxC5Sc3DJ6XPDKKC2EAomEWn.jpg"
+      },
+      {
+        "name": "格瓦斯·杜安·斯普拉德林",
+        "character": "General Corman",
+        "profile_path": "/pWNa9H3ABB3Ug9CwTfVNtHsCFjV.jpg"
+      }
+    ],
+    "stills": [
+      "/49fzLedFVKgGgFChLMuulDJBY1c.jpg",
+      "/9Qs9oyn4iE8QtQjGZ0Hp2WyYNXT.jpg",
+      "/8viWxsL4lwmQZB8QHOCHwMvBGXd.jpg",
+      "/1oWqzZft4AfDvtu48Z1J8t93DDM.jpg",
+      "/1wLx5AaCo4v8czLkLwwZEWSd9Hk.jpg",
+      "/k1lFbIu1HIGuFIWMkWMlRoKXM8q.jpg",
+      "/9kOObQGYqSGfj21hwkEUQJQKKFh.jpg",
+      "/xogh0kIID6iF977w6hImTfHKR8m.jpg",
+      "/qJZZ49mzE5fDafbhVvnZQwlaWOl.jpg",
+      "/dkScBMTxF57lxZSDJSOAWDiYyt2.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 38759,
+        "title": "科斯塔·柏林的故事",
+        "poster_path": "/k3k9JvjrUVgGNKSyOzFim2uXLNg.jpg",
+        "vote_average": 6.6
+      },
+      {
+        "tmdb_id": 38834,
+        "title": "Suden vuosi",
+        "poster_path": "/xlmIEcoAtx5qIiU0fyWsGVH3UOS.jpg",
+        "vote_average": 5.8
+      },
+      {
+        "tmdb_id": 39008,
+        "title": "Jäniksen vuosi",
+        "poster_path": "/h0QUhDSy4g2jQ4juOTCtUV6V1am.jpg",
+        "vote_average": 7.3
+      },
+      {
+        "tmdb_id": 39009,
+        "title": "Kuu on vaarallinen",
+        "poster_path": "/x5FiCbCtsZVYKbp6H39nmYucGSS.jpg",
+        "vote_average": 4.5
+      },
+      {
+        "tmdb_id": 39011,
+        "title": "欢迎来到隔离病房",
+        "poster_path": "/94HsOFZGKqHTJUQFzrLt3yXEYHY.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 39013,
+        "title": "冬天的骨头",
+        "poster_path": "/kIe9cD1QpqnDxm6RomdCacvY8SG.jpg",
+        "vote_average": 6.8
+      },
+      {
+        "tmdb_id": 38940,
+        "title": "魔鬼悍将",
+        "poster_path": "/rrwG9foUMulWBI2Nk7s6Bcgwfim.jpg",
+        "vote_average": 5.2
+      },
+      {
+        "tmdb_id": 38984,
+        "title": "香奈儿秘密情史",
+        "poster_path": "/gfnBY4gMErWej5afiID9ksTcJPf.jpg",
+        "vote_average": 6.1
+      }
+    ]
   }
 }
