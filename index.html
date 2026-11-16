@@ -94,20 +94,63 @@
     }
     .sort-select:hover { border-color: rgba(240,191,98,0.35); }
     .sort-select option { background: #1c1c1c; color: #f5efdf; }
-
-    .site-intro {
-      padding: 28px 28px 0;
-      max-width: 680px;
+    .header-actions { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+    .rss-toggle {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border-radius: 50%; cursor: pointer;
+      background: rgba(255,255,255,0.06); border: 1px solid var(--line);
+      color: var(--accent);
     }
+    .rss-toggle:hover, .rss-toggle[aria-expanded="true"] {
+      background: var(--accent-soft); border-color: rgba(240,191,98,0.35);
+    }
+    .rss-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .rss-panel {
+      position: fixed; inset: auto; margin: 0; padding: 20px;
+      width: 300px; max-width: calc(100vw - 24px);
+      max-height: calc(100dvh - 24px); overflow: auto;
+      color: var(--ink); background: #191715;
+      border: 1px solid var(--line); border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+    }
+
+    .site-overview {
+      padding: 24px; margin-bottom: 24px;
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .site-intro { max-width: 960px; min-width: 0; }
     .site-intro-label {
       font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em;
       text-transform: uppercase; color: var(--accent);
-      margin: 0 0 8px;
+      margin: 0 0 8px; line-height: 1.5;
     }
     .site-intro-body {
       font-size: 0.92rem; line-height: 1.75;
       color: var(--muted);
       margin: 0;
+    }
+    .site-subscribe-title {
+      font-size: 0.84rem; font-weight: 600; line-height: 1.5;
+    }
+    .site-subscribe-note {
+      margin-top: 6px; font-size: 0.76rem; line-height: 1.6; color: var(--muted);
+    }
+    .rss-links {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;
+    }
+    .rss-links a {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 40px; padding: 8px 12px; border-radius: 999px;
+      border: 1px solid var(--line); background: rgba(255,255,255,0.04);
+      color: var(--ink); font-size: 0.8rem; text-decoration: none;
+      transition: border-color 160ms, background 160ms;
+    }
+    .rss-links a:hover {
+      border-color: rgba(240,191,98,0.35); background: var(--accent-soft);
+    }
+    .rss-links a:focus-visible {
+      outline: 2px solid var(--accent); outline-offset: 3px;
     }
 
     /* ── Main ── */
@@ -295,6 +338,8 @@
     @media (max-width: 600px) {
       header { padding: 12px 16px; }
       main   { padding: 16px 12px 56px; }
+      .site-overview { padding: 18px; margin-bottom: 20px; }
+      .site-intro-body { font-size: 0.84rem; }
     }
 
     /* ── Detail Page ── */
@@ -456,8 +501,6 @@
       .detail-content { padding: 24px 16px 56px; }
     }
 
-    .rss-links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 12px; font-size: 13px; color: var(--muted); }
-    .rss-links a { color: var(--ink); text-underline-offset: 3px; }
   </style>
 </head>
 <body>
@@ -470,28 +513,41 @@
     </div>
     <div class="header-meta" id="meta">正在加载…</div>
   </div>
-  <select class="sort-select" id="sortSelect">
-    <option value="added_desc">最近入库</option>
-    <option value="rating_desc">评分最高</option>
-    <option value="count_desc">评价最多</option>
-    <option value="year_desc">最新优先</option>
-    <option value="title_asc">标题排序</option>
-  </select>
+  <div class="header-actions">
+    <select class="sort-select" id="sortSelect" aria-label="作品排序">
+      <option value="added_desc">最近入库</option>
+      <option value="rating_desc">评分最高</option>
+      <option value="count_desc">评价最多</option>
+      <option value="year_desc">最新优先</option>
+      <option value="title_asc">标题排序</option>
+    </select>
+    <button class="rss-toggle" id="rssToggle" type="button" popovertarget="rssPanel" aria-label="RSS 订阅" aria-expanded="false" title="RSS 订阅">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="5" cy="19" r="1" fill="currentColor" />
+        <path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16" />
+      </svg>
+    </button>
+  </div>
 </header>
 
-<section class="site-intro">
-  <p class="site-intro-label">什么是豆瓣高分监控？</p>
-  <p class="site-intro-body">每天从豆瓣热门榜单发现评分 ≥ 8.0 分、且评分人数超过 3000 的电影和剧集，并累计展示已收录作品。作品离榜后核验一次评分，低于 8.0 分时隐藏；核验通过后，持续离榜期间的评分可能不会及时更新。</p>
-</section>
-
-<main>
+<aside class="rss-panel" id="rssPanel" popover aria-labelledby="subscribeTitle">
+  <h2 class="site-subscribe-title" id="subscribeTitle">RSS 订阅</h2>
+  <p class="site-subscribe-note">在阅读器中接收新收录的高分作品</p>
   <nav class="rss-links" aria-label="RSS 订阅">
-    <span>RSS 订阅</span>
-    <a href="data/rss/movie.xml">电影</a>
+    <a href="data/rss/movie.xml" autofocus>电影</a>
     <a href="data/rss/tv.xml">剧集</a>
     <a href="data/rss/variety.xml">综艺</a>
     <a href="data/rss/all.xml">全部</a>
   </nav>
+</aside>
+
+<main>
+  <section class="site-overview" aria-label="项目介绍">
+    <div class="site-intro">
+      <h1 class="site-intro-label">什么是豆瓣高分监控？</h1>
+      <p class="site-intro-body">每天从豆瓣热门榜单发现评分 ≥ 8.0 分、且评分人数超过 3000 的电影和剧集，并累计展示已收录作品。作品离榜后核验一次评分，低于 8.0 分时隐藏；核验通过后，持续离榜期间的评分可能不会及时更新。</p>
+    </div>
+  </section>
   <div class="tabs" id="tabs"></div>
   <div id="loading"><div class="spinner"></div><span>加载数据中…</span></div>
   <div id="error"></div>
@@ -503,6 +559,24 @@
 <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><span class="material-symbols-rounded">keyboard_arrow_up</span></button>
 
 <script>
+  const rssToggle = document.getElementById('rssToggle');
+  const rssPanel = document.getElementById('rssPanel');
+  function positionRssPanel() {
+    const anchor = rssToggle.getBoundingClientRect();
+    rssPanel.style.top = `${anchor.bottom + 12}px`;
+    rssPanel.style.right = `${Math.max(12, window.innerWidth - anchor.right)}px`;
+    rssPanel.style.maxHeight = `calc(100dvh - ${anchor.bottom + 24}px)`;
+  }
+  rssPanel.addEventListener('beforetoggle', event => {
+    const open = event.newState === 'open';
+    rssToggle.setAttribute('aria-expanded', String(open));
+    if (open) positionRssPanel();
+  });
+  window.addEventListener('resize', () => {
+    if (rssPanel.matches(':popover-open')) positionRssPanel();
+  });
+  window.addEventListener('hashchange', () => rssPanel.hidePopover());
+
   // ── Back to top ────────────────────────────────────────────────────────────
   window.addEventListener('scroll', () => {
     document.getElementById('backTop').classList.toggle('show', window.scrollY > 400);
