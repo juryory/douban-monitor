@@ -89,6 +89,7 @@ const instrumented = scripts.replace(/\binit\(\);\s*$/, 'globalThis.ready = init
   context.handleRoute();
   process.stdout.write(JSON.stringify({
     card_count: cardCount,
+    card_ids: [...gridHtml.matchAll(/onclick="location.hash='#detail\/([^']+)'"/g)].map(match => match[1]),
     item_count: items.length,
     expected_count: expectedIds.length,
     detail_count: items.length,
@@ -118,6 +119,26 @@ class FrontendTests(unittest.TestCase):
         self.assertEqual(output["detail_count"], output["expected_count"])
         self.assertEqual(output["fetched_count"], 5)
         self.assertIn(f"累计收录 {output['item_count']} 部", output["meta"])
+
+    def test_latest_first_uses_release_date_then_year_fallback(self):
+        output = self.run_page({
+            "douban-monitor-result.json": {"qualified": [
+                {"douban_id": "990000001", "title": "Early", "category": "movie", "year": 2026},
+                {"douban_id": "990000002", "title": "Late", "category": "tv", "year": 2026},
+                {"douban_id": "990000003", "title": "Year only", "category": "movie", "year": 2026},
+                {"douban_id": "990000004", "title": "Older", "category": "movie", "year": 2025},
+                {"douban_id": "990000005", "title": "Unknown", "category": "movie"},
+            ]},
+            "douban-monitor-metadata.json": {
+                "990000001": {"release_date": "2026-01-20"},
+                "990000002": {"release_date": "2026-11-01"},
+                "990000004": {"release_date": "2025-12-31"},
+            },
+            "douban-monitor-favorites-result.json": {"qualified": []},
+            "douban-monitor-posters.json": {},
+            "douban-monitor-reviews.json": {},
+        })
+        self.assertEqual(output["card_ids"], ["990000002", "990000001", "990000003", "990000004", "990000005"])
 
     def test_favorites_dedupe_missing_scores_and_zero_scan_count(self):
         output = self.run_page({

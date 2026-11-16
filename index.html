@@ -662,9 +662,15 @@
     });
     if (sort === 'rating_desc') a.sort((x,y) => y.rating - x.rating);
     if (sort === 'count_desc')  a.sort((x,y) => y.rating_count - x.rating_count);
-    if (sort === 'year_desc')   a.sort((x,y) => (y.year||0) - (x.year||0));
+    if (sort === 'year_desc')   a.sort((x,y) => releaseDateKey(y) - releaseDateKey(x));
     if (sort === 'title_asc')   a.sort((x,y) => x.title.localeCompare(y.title));
     return a;
+  }
+
+  function releaseDateKey(item) {
+    const date = metadata[item.douban_id]?.release_date || item.release_date || String(item.year || '');
+    const [year, month, day] = date.split('-').map(Number);
+    return (year || 0) * 10000 + (month || 0) * 100 + (day || 0);
   }
 
   function fmtDate(dateStr) {
