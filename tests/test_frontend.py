@@ -23,7 +23,7 @@ const html = fs.readFileSync(path.join(input.root, 'index.html'), 'utf8');
 const elements = new Map();
 function element(key) {
   if (!elements.has(key)) elements.set(key, {
-    innerHTML: '', textContent: '', value: key === 'sortSelect' ? 'added_desc' : '',
+    innerHTML: '', textContent: '', value: key === 'sortSelect' ? 'year_desc' : '',
     style: {removeProperty(name) {delete this[name];}},
     classList: {add() {}, remove() {}, toggle() {}},
     addEventListener() {}, setAttribute() {}, removeAttribute() {},
