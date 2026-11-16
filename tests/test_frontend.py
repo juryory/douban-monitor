@@ -72,7 +72,7 @@ const instrumented = scripts.replace(/\binit\(\);\s*$/, 'globalThis.ready = init
   const expectedIds = [...new Set([
     ...(files['douban-monitor-result.json'].qualified || []),
     ...(files['douban-monitor-favorites-result.json'].qualified || [])
-  ].map(item => item.douban_id))];
+  ].filter(item => item.category !== 'variety').map(item => item.douban_id))];
   assert.deepEqual([...items.map(item => item.douban_id)].sort(), expectedIds.sort());
   const gridHtml = element('grid').innerHTML;
   const cardCount = (gridHtml.match(/<div class="card"/g) || []).length;
@@ -127,11 +127,13 @@ class FrontendTests(unittest.TestCase):
                     {"douban_id": "990000001", "title": "Historical <work>", "category": "movie",
                      "rating": None, "rating_count": None, "year": 2020, "qualified_at": "2020-01-01"},
                     {"douban_id": "990000002", "title": "Missing count", "category": "tv", "rating": 8.0},
+                    {"douban_id": "990000004", "title": "Hidden variety", "category": "variety", "rating": 9.0},
                 ],
             },
             "douban-monitor-favorites-result.json": {"qualified": [
                 {"douban_id": "990000001", "title": "Duplicate favorite", "category": "movie"},
                 {"douban_id": "990000003", "title": "Favorite", "category": "movie", "rating": 8.5, "rating_count": 5000},
+                {"douban_id": "990000005", "title": "Hidden variety favorite", "category": "variety", "rating": 8.5},
             ]},
             "douban-monitor-posters.json": {},
             "douban-monitor-metadata.json": {},

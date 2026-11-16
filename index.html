@@ -6,7 +6,6 @@
   <title>豆瓣高分监控</title>
   <link rel="alternate" type="application/rss+xml" title="豆瓣高分监控 · 电影" href="data/rss/movie.xml" />
   <link rel="alternate" type="application/rss+xml" title="豆瓣高分监控 · 剧集" href="data/rss/tv.xml" />
-  <link rel="alternate" type="application/rss+xml" title="豆瓣高分监控 · 综艺" href="data/rss/variety.xml" />
   <link rel="alternate" type="application/rss+xml" title="豆瓣高分监控 · 全部" href="data/rss/all.xml" />
   <meta property="og:title"       content="豆瓣高分监控" />
   <meta property="og:description" content="持续追踪豆瓣高分影视" />
@@ -536,7 +535,6 @@
   <nav class="rss-links" aria-label="RSS 订阅">
     <a href="data/rss/movie.xml" autofocus>电影</a>
     <a href="data/rss/tv.xml">剧集</a>
-    <a href="data/rss/variety.xml">综艺</a>
     <a href="data/rss/all.xml">全部</a>
   </nav>
 </aside>
@@ -620,8 +618,8 @@
 
   window.addEventListener('resize', masonryLater);
 
-  const CAT_LABEL = { movie:'电影', tv:'剧集', variety:'综艺' };
-  const CAT_ICON  = { movie:'🎬', tv:'📺', variety:'🎤' };
+  const CAT_LABEL = { movie:'电影', tv:'剧集' };
+  const CAT_ICON  = { movie:'🎬', tv:'📺' };
   const TMDB_IMG  = 'https://image.tmdb.org/t/p/';
 
   let allItems = [];
@@ -1053,7 +1051,7 @@
       if (fRes && fRes.ok) try { favItems = (await fRes.json()).qualified || []; } catch(_){}
 
       const merged = [...(result.qualified || []), ...favItems];
-      allItems = dedupe(merged.map((it, i) => ({ ...it, _idx: i })));
+      allItems = dedupe(merged.filter(it => it.category !== 'variety').map((it, i) => ({ ...it, _idx: i })));
 
       const runAt = new Date(result.run_at);
       const ts = runAt.toLocaleString('zh-CN', {
