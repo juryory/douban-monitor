@@ -18039,5 +18039,94 @@
         "vote_average": 6.1
       }
     ]
+  },
+  "36689621": {
+    "tmdb_id": 307853,
+    "tmdb_type": "tv",
+    "original_title": "今天是太阳雨",
+    "overview": "倔强少女郑雨与孤独少年陈砚周的故事。郑雨因家庭贫困被迫扛起重担，陈砚周因兄长离世陷入自我封闭，两人从校园竞争对手逐渐成为彼此生命中的光，共同面对人生暴雨。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": null,
+    "release_date": "2026-11-06",
+    "backdrop_path": "/9LtN1ac91JAqXMke8CAJ6BiBSLS.jpg",
+    "poster_path": "/znoLZauHNWfXHq1PcH8wRf42m2e.jpg",
+    "countries": [
+      "CN"
+    ],
+    "director": "",
+    "cast": [
+      {
+        "name": "杨超越",
+        "character": "Zheng Yu",
+        "profile_path": "/vwzuCGmg99Fh66Re5sbpSoBrWAO.jpg"
+      },
+      {
+        "name": "董思成",
+        "character": "Chen Yanzhou",
+        "profile_path": "/vvYUbbfjLAYYogInHhHPHs1PqNz.jpg"
+      }
+    ],
+    "stills": [
+      "/9LtN1ac91JAqXMke8CAJ6BiBSLS.jpg",
+      "/75Sfiyecl9b3Xw5OmxD1jJkuHU4.jpg",
+      "/vEblATTj0r5aQiWErXLy25ohL2h.jpg",
+      "/3d0tcjjfbL710Tj0BkypXpXdKVR.jpg",
+      "/hQwmwOFLg0V8X2oVt7rScalP3rZ.jpg",
+      "/tmZRpGqz9FSI3fB3Dn5ilyks3Bm.jpg",
+      "/6vZIHCiBc1WkE8wEPjlsbToBkZp.jpg",
+      "/zcN8jLAfQJEg9LMzEhEEcn5DI63.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 312310,
+        "title": "Cenizas y diamantes",
+        "poster_path": "/kJL35umDDLKJoJSu3NPN9RPwlQE.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 244237,
+        "title": "玄璃美人煞",
+        "poster_path": "/tpwKXqY5u6quioLTQvZNhQzrsdA.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 312494,
+        "title": "Lo blanco y lo negro",
+        "poster_path": "/7pkUiAdBJUg2eabC3yiGSnyEkKd.jpg",
+        "vote_average": 8.5
+      },
+      {
+        "tmdb_id": 244330,
+        "title": "埃尔克霍恩",
+        "poster_path": "/yzX3D3AiBD5Fv7dmAlMHZCs4K5P.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 60956,
+        "title": "Doctor异乡人",
+        "poster_path": "/7SWQFPjUW4tPoT8dIJHMXERjDuA.jpg",
+        "vote_average": 8.018
+      },
+      {
+        "tmdb_id": 60957,
+        "title": "来自星星的你",
+        "poster_path": "/sTnmGQ2v6CG7s6OcCCAuVVlkjiH.jpg",
+        "vote_average": 8.302
+      },
+      {
+        "tmdb_id": 95041,
+        "title": "绝境岛",
+        "poster_path": "/hqjKKbGl234nIlTlbc1C34bVxBf.jpg",
+        "vote_average": 6.7
+      },
+      {
+        "tmdb_id": 95044,
+        "title": "余生，请多指教",
+        "poster_path": "/nUhdvkGfT9Vl7kLwj2M9XtINdg1.jpg",
+        "vote_average": 6.929
+      }
+    ]
   }
 }
