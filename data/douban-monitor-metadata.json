@@ -18352,5 +18352,126 @@
         "vote_average": 10.0
       }
     ]
+  },
+  "1292719": {
+    "tmdb_id": 405,
+    "tmdb_type": "movie",
+    "original_title": "La strada",
+    "overview": "由于生活所迫，母亲把弱智女孩杰索米娜卖给了江湖艺人藏巴诺。在相处中，女孩却发现这个空有一身蛮力的家伙，根本不懂得照顾女人，他卖她只是为了让她做牛做马，在他演出的时候扮演小丑，平时给他做饭，陪她睡觉。这种粗暴蛮横的家伙，让她萌生逃离的念头，然而，几次出逃，均告失败。在一次观看高空走钢丝表演的时候，杰索米娜认识了绰号“傻瓜”的马戏团艺人——玛托，并且在他的引导下学会了演奏乐器。她非常感激，对这个男人产生了依恋。然而，但是藏巴诺的出现，再次打破了她的一切幻想，毁掉了来之不易的幸福……",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 108,
+    "release_date": "1954-09-23",
+    "backdrop_path": "/p6qM3hlviWYIgpPq4zNwrttn6Io.jpg",
+    "poster_path": "/kmWtXoqVDC9ICAoq286E0lUBYu6.jpg",
+    "countries": [
+      "Italy"
+    ],
+    "director": "费德里科·费里尼",
+    "cast": [
+      {
+        "name": "朱丽叶塔·马西纳",
+        "character": "Gelsomina",
+        "profile_path": "/rngVu8zHDnzjWKSMpAV4kwoCLjj.jpg"
+      },
+      {
+        "name": "安东尼·奎恩",
+        "character": "Zampanò",
+        "profile_path": "/aBxjWWvZR63rTQfrtBPiI0CbGKA.jpg"
+      },
+      {
+        "name": "理查德·巴塞哈特",
+        "character": "Matto",
+        "profile_path": "/rlk0wF1UbQH7DPGmkXKd1tMzDWo.jpg"
+      },
+      {
+        "name": "Aldo Silvani",
+        "character": "Mr. Giraffa",
+        "profile_path": "/vKwW85TjlEQylYBpJreVcV78bok.jpg"
+      },
+      {
+        "name": "Marcella Rovere",
+        "character": "Widow",
+        "profile_path": "/xlXWNdtI5d4AssM2wz8uqWZB5ZH.jpg"
+      },
+      {
+        "name": "Livia Venturini",
+        "character": "Nun",
+        "profile_path": ""
+      },
+      {
+        "name": "Pietro Ceccarelli",
+        "character": "Innkeeper (uncredited)",
+        "profile_path": "/wZJuNSgCiB7Y8X1V9zK6FAxqVuu.jpg"
+      },
+      {
+        "name": "Giovanna Galli",
+        "character": "Prostitute at Inn (uncredited)",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/p6qM3hlviWYIgpPq4zNwrttn6Io.jpg",
+      "/47e3IdEudaLxRfnn3TaX7l9aWO1.jpg",
+      "/5Pl47mB0Jnrg4oHoO0sVdJ6WMRL.jpg",
+      "/9LgzbC3V1l9YCZaTdYIf0xGGspO.jpg",
+      "/pkDnxl20gLSh3tWgGccspZczdIS.jpg",
+      "/vefhAAN2LEjxYDbKLAiz9Qj90kX.jpg",
+      "/fyR8BFe4H9fu8yKYqRNGWHwnwRm.jpg",
+      "/oc8BXWLUzlmOaXjRlcHV4m6XTGk.jpg",
+      "/ggB9OMM91XRYhdv58LIuOK4mEfU.jpg",
+      "/OdzsLhe47CEDClWGzu9Hkh50MU.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 842,
+        "title": "刺杀尼克松",
+        "poster_path": "/5jOOvAVvP0XtwC5yYQpQCy4cjq1.jpg",
+        "vote_average": 6.5
+      },
+      {
+        "tmdb_id": 843,
+        "title": "花样年华",
+        "poster_path": "/1Z32pKrmWW2nkLFYGoc79MzJin6.jpg",
+        "vote_average": 8.086
+      },
+      {
+        "tmdb_id": 801,
+        "title": "早安越南",
+        "poster_path": "/sreISlFUn5TyR41QNjlfAdX5SEW.jpg",
+        "vote_average": 7.298
+      },
+      {
+        "tmdb_id": 804,
+        "title": "罗马假日",
+        "poster_path": "/aeBMNasmLkeegbIVQYCmSVZMgRc.jpg",
+        "vote_average": 7.89
+      },
+      {
+        "tmdb_id": 805,
+        "title": "罗斯玛丽的婴儿",
+        "poster_path": "/kKvQ0pyMnJweWVz2Pwbyeivq5Zk.jpg",
+        "vote_average": 7.815
+      },
+      {
+        "tmdb_id": 885,
+        "title": "纽约船坞",
+        "poster_path": "/rCMZpfPAHeuy02nMCttEX3OJt4B.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 887,
+        "title": "黄金时代",
+        "poster_path": "/gd5EoAU4MM57sW3vlWxJ0NMM8cV.jpg",
+        "vote_average": 7.742
+      },
+      {
+        "tmdb_id": 851,
+        "title": "相见恨晚",
+        "poster_path": "/jC9EwLJcGhYMSQAHu2LxkKN5v7O.jpg",
+        "vote_average": 7.718
+      }
+    ]
   }
 }
