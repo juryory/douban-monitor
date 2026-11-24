@@ -18473,5 +18473,378 @@
         "vote_average": 7.718
       }
     ]
+  },
+  "36720554": {
+    "tmdb_id": 1226841,
+    "tmdb_type": "movie",
+    "original_title": "The Greatest Night in Pop",
+    "overview": "1985 年 1 月的一个夜晚，音乐界最大牌的明星聚在一起，录制《四海一家》。这部纪录片带我们走进该历史性事件的幕后。",
+    "genres": [
+      "纪录",
+      "音乐"
+    ],
+    "runtime": 97,
+    "release_date": "2024-01-19",
+    "backdrop_path": "/2YAsgcRDuISJbp2Fum9wvMCkLZe.jpg",
+    "poster_path": "/ukMnJgdDGVV2dGjQTRCHwIRfctv.jpg",
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "director": "Bao Nguyen",
+    "cast": [
+      {
+        "name": "莱昂纳尔·里奇",
+        "character": "Self",
+        "profile_path": "/fths3YsxhPuPw6NCKOdUjqKCtZa.jpg"
+      },
+      {
+        "name": "Bruce Springsteen",
+        "character": "Self",
+        "profile_path": "/et5hx6xJRnquGgEHGshmiAZZwgN.jpg"
+      },
+      {
+        "name": "Dionne Warwick",
+        "character": "Self",
+        "profile_path": "/aubfx1cK4hlkLWzBDTykRqLQXyI.jpg"
+      },
+      {
+        "name": "肯尼·罗根斯",
+        "character": "Self",
+        "profile_path": "/gQedHZofnObpKN8cWMHFi7W9ekV.jpg"
+      },
+      {
+        "name": "休伊·刘易斯",
+        "character": "Self",
+        "profile_path": "/fmoKV2EW0Cjn0w4NGPnzex3MQLB.jpg"
+      },
+      {
+        "name": "辛蒂·羅波",
+        "character": "Self",
+        "profile_path": "/gNVAWP5wuIlXjFkQmmePuTOX2NP.jpg"
+      },
+      {
+        "name": "Sheila E.",
+        "character": "Self",
+        "profile_path": "/aDLWuYqi1R9ffzuKAnx59EdPDft.jpg"
+      },
+      {
+        "name": "斯莫基·罗宾逊",
+        "character": "Self",
+        "profile_path": "/uAvpLcAVrZ2w4BvLYRGJpscDJ0P.jpg"
+      }
+    ],
+    "stills": [
+      "/2YAsgcRDuISJbp2Fum9wvMCkLZe.jpg",
+      "/Amb16QpgV4ZxdU8C80SW6JNySp9.jpg",
+      "/1vkfq3WuymRv4okQVVpfRX9Re6c.jpg",
+      "/jVTvnvsI4fg4JBh9YWMkeFkHedd.jpg",
+      "/5S31uyun3UTEHKOPtILe4i7VBAX.jpg",
+      "/qmIJRIQ1BfHhVWlG1PnuLYOyJbR.jpg",
+      "/teCOdcTyDC0E2Cv90gYLu9t2e6M.jpg",
+      "/g8JEH7Z0xKJtjIC2t5kCIEUhdZT.jpg",
+      "/jqvxVkqIp9LWyHorJU5P4IjVohO.jpg",
+      "/uRj0JtvKyaIvrsEJOxER0ymsS0u.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 455958,
+        "title": "Behind the Scenes of Palo Alto",
+        "poster_path": "/15X6d1uEwS93UcMSNV9m7PBF1r1.jpg",
+        "vote_average": 6.0
+      },
+      {
+        "tmdb_id": 1233518,
+        "title": "Mommy, What's a Funkadelic?",
+        "poster_path": "/wBHkVImdxWdgwlWbisGqkQsV2Sz.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1433342,
+        "title": "Estimada Sa Bastida",
+        "poster_path": "/hosbVPi0CxPveNtmHpKUz3QuIjl.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 1435153,
+        "title": "Les enfants de la lanterne magique",
+        "poster_path": "/g28dCMYrTTFmVGqxKF0r3ZQRLxv.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 457333,
+        "title": "Stranger than Fiction",
+        "poster_path": "/4U0t0O5ZrjDa0iYKrFMSTVPSOIL.jpg",
+        "vote_average": 8.0
+      },
+      {
+        "tmdb_id": 457336,
+        "title": "Stranger than Fiction 2: From Script to Screen",
+        "poster_path": "/7OUtLX4TI0rMLWE9YLS3sRtWKsK.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 457337,
+        "title": "Bidding Adieu: A Video Diary",
+        "poster_path": "/dnEuJ7n1IBFaQhtln1WIl4T9cZm.jpg",
+        "vote_average": 7.5
+      },
+      {
+        "tmdb_id": 1435269,
+        "title": "I'm Carl Lewis!",
+        "poster_path": "/89zaETDv5O6KnHJ03yUrqalqle5.jpg",
+        "vote_average": 1.0
+      }
+    ]
+  },
+  "37154591": {
+    "tmdb_id": 1400940,
+    "tmdb_type": "movie",
+    "original_title": "Clayface",
+    "overview": "好莱坞新星马特·哈根遭犯罪头目毁容后，为恢复容貌接受先进治疗，却意外陷入疯狂，走上复仇之路。",
+    "genres": [
+      "恐怖",
+      "惊悚",
+      "科幻"
+    ],
+    "runtime": 109,
+    "release_date": "2026-10-19",
+    "backdrop_path": "/f1TVhqJJdxMvUsUDuKHS0ekgYkk.jpg",
+    "poster_path": "/8AKvV4bJsfUBUZ7cgW41iv3EYaG.jpg",
+    "countries": [
+      "United States of America"
+    ],
+    "director": "詹姆斯·沃特金斯",
+    "cast": [
+      {
+        "name": "汤姆·里斯·哈里斯",
+        "character": "Matt Hagen / Clayface",
+        "profile_path": "/elxvpHPqOxGcKe6U2hcArIcpyWo.jpg"
+      },
+      {
+        "name": "娜奥米·阿基",
+        "character": "Caitlyn Corr",
+        "profile_path": "/dijwuTAEZUzQtoJfK49S4X80fQw.jpg"
+      },
+      {
+        "name": "埃迪·马森",
+        "character": "Frank Fitzpatrick",
+        "profile_path": "/9atfOgIxhfOKvv2be8HEp6SzOct.jpg"
+      },
+      {
+        "name": "麦克思·明格拉",
+        "character": "John Borrelli",
+        "profile_path": "/AhVDxsOOoAnwwVBL7ZY8W0mGsYJ.jpg"
+      },
+      {
+        "name": "大卫·丹西克",
+        "character": "Markos Szabo",
+        "profile_path": "/q5wLADc6yYd3owxSEG8VKbf7YWV.jpg"
+      },
+      {
+        "name": "Francesca Corney",
+        "character": "Rosie",
+        "profile_path": "/p2B2dYAvl0TMUtbrZxzOdNgBbSE.jpg"
+      },
+      {
+        "name": "Ruby Sear",
+        "character": "Theresa",
+        "profile_path": "/hNlLm6NaHPjakDJhPEY1suGcxKi.jpg"
+      },
+      {
+        "name": "威尔·科班",
+        "character": "Bones",
+        "profile_path": "/73REwJckTBMNJoiGIrrGhcCdTqf.jpg"
+      }
+    ],
+    "stills": [
+      "/f1TVhqJJdxMvUsUDuKHS0ekgYkk.jpg",
+      "/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
+      "/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
+      "/kVtOcoUJ68chBD2tmERkdWz7lK5.jpg",
+      "/VnT9D7NogVWrmN2UuT30exIYPh.jpg",
+      "/1maUuFiGGmCATYaSMJTL4MbDXma.jpg",
+      "/3YHeDqu5MCyqan4ptiY8q726vzU.jpg",
+      "/mEVNRsP4csNzB9vv9JGmQlW7rNB.jpg",
+      "/7tqNQlkGpmV6t5xhZkcmhF2325T.jpg",
+      "/pwWR1DRjoFxwdH0jI2elBdXTF1F.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 4824,
+        "title": "狙击职业杀手",
+        "poster_path": "/bM5BAqLZn8zMxzrtugH6PfzDrsF.jpg",
+        "vote_average": 6.41
+      },
+      {
+        "tmdb_id": 460218,
+        "title": "夺命五头鲨",
+        "poster_path": "/xpGeKpePszrBqc7jr3zcJ6wVYUP.jpg",
+        "vote_average": 4.2
+      },
+      {
+        "tmdb_id": 460059,
+        "title": "筋疲力尽",
+        "poster_path": "/fVWcI3ZwHgBjbz24jZerJjRALYN.jpg",
+        "vote_average": 6.716
+      },
+      {
+        "tmdb_id": 460082,
+        "title": "ゴーストスクワッド",
+        "poster_path": "/mYYKDfAvr9w3WsQpmPJAnSo9aDm.jpg",
+        "vote_average": 4.4
+      },
+      {
+        "tmdb_id": 1237456,
+        "title": "Vexanthrone",
+        "poster_path": "/qGByiCd75IsNzoTWzKfry35dDVS.jpg",
+        "vote_average": 5.0
+      },
+      {
+        "tmdb_id": 5060,
+        "title": "猛鬼嬉春",
+        "poster_path": "/wdx7B9BjOBSmMJYYdmdbY55JquJ.jpg",
+        "vote_average": 6.479
+      },
+      {
+        "tmdb_id": 272108,
+        "title": "异星淫兽",
+        "poster_path": "/iRel9pEZjbGafxFV9lz2b0lmtxD.jpg",
+        "vote_average": 6.2
+      },
+      {
+        "tmdb_id": 4954,
+        "title": "终极特区",
+        "poster_path": "/2AnguJel4FIm1AUjHLrhi4ztsYU.jpg",
+        "vote_average": 5.776
+      }
+    ]
+  },
+  "37168181": {
+    "tmdb_id": 1401459,
+    "tmdb_type": "movie",
+    "original_title": "Fjord",
+    "overview": "一对虔诚的罗马尼亚裔挪威夫妇带着五个孩子搬到挪威一座小镇，与邻居逐渐熟络。然而，当女儿带着不明伤痕出现在学校，夫妇二人因涉嫌虐待孩子而受到调查。",
+    "genres": [
+      "剧情"
+    ],
+    "runtime": 147,
+    "release_date": "2026-06-13",
+    "backdrop_path": "/iPVAMaI0W4lr7Rl56m0H388eR5.jpg",
+    "poster_path": "/wPehV9BD0hnhoXSTyV7uslaqUEu.jpg",
+    "countries": [
+      "Romania",
+      "Norway",
+      "France",
+      "Finland",
+      "Denmark",
+      "Sweden",
+      "United States of America"
+    ],
+    "director": "克里斯蒂安·蒙吉",
+    "cast": [
+      {
+        "name": "塞巴斯蒂安·斯坦",
+        "character": "Mihai Gheorghiu",
+        "profile_path": "/v20RLWst39klatsqUgSrwHxhwee.jpg"
+      },
+      {
+        "name": "雷娜特·赖因斯夫",
+        "character": "Lisbet Gheorghiu",
+        "profile_path": "/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
+      },
+      {
+        "name": "Lisa Carlehed",
+        "character": "Mia Halberg",
+        "profile_path": "/r6vxXVZfiTgOHumGRtPTQpXQtKz.jpg"
+      },
+      {
+        "name": "Ellen Dorrit Petersen",
+        "character": "Gunda",
+        "profile_path": "/ynXvnMlMCCn0Uk6AOwRHLQRF9nZ.jpg"
+      },
+      {
+        "name": "丽莎·洛文·孔斯利",
+        "character": "Frida",
+        "profile_path": "/pm5y6qrZqinsYZW0Rud1DjYU4mP.jpg"
+      },
+      {
+        "name": "Henrikke Lund Olsen",
+        "character": "Noora Halberg",
+        "profile_path": "/1uGyDvAwm9uyhLtnXtPahhnUYHY.jpg"
+      },
+      {
+        "name": "Markus Tønseth",
+        "character": "Mats Halberg",
+        "profile_path": "/ubDlfMGerK0RePOESlud0mpTpJu.jpg"
+      },
+      {
+        "name": "Vanessa Ceban",
+        "character": "Elia Gheorghiu",
+        "profile_path": ""
+      }
+    ],
+    "stills": [
+      "/iPVAMaI0W4lr7Rl56m0H388eR5.jpg",
+      "/rCYzSP07jCA1HuFvrwgaEAPHitT.jpg",
+      "/uEkMNYTmAgLr1YNETawturHtf7i.jpg",
+      "/mkzwS3ihBAyjrNZALu6cM7F1mHu.jpg",
+      "/oiLW8MorGKqHTOZLsnni0DiHZfO.jpg",
+      "/6wMoHrnRJkOA6XFcq4V34z3RxkI.jpg",
+      "/pVm69wGYKkqFgTGweqj3cM8oQHI.jpg",
+      "/85EaXPVhX89bBnDlrGJT3YjItux.jpg",
+      "/1on8a6DEzhBTjHOKyLWGyaG58jF.jpg",
+      "/cwAX59yVTiH1bRQckdWcymVCrdp.jpg"
+    ],
+    "similar": [
+      {
+        "tmdb_id": 455954,
+        "title": "关原之战",
+        "poster_path": "/x4QnKcDMtxbzNhVq4Y6sQJtnQbN.jpg",
+        "vote_average": 7.0
+      },
+      {
+        "tmdb_id": 1625720,
+        "title": "Gerron's Last Film",
+        "poster_path": "",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 568,
+        "title": "阿波罗13号",
+        "poster_path": "/1duzTW0Roht7PV3ivFOSQxbzYux.jpg",
+        "vote_average": 7.463
+      },
+      {
+        "tmdb_id": 456293,
+        "title": "Skriti spomin Angele Vode",
+        "poster_path": "/nzfMG2vHJmHIvv27VcWbAseqz0M.jpg",
+        "vote_average": 0
+      },
+      {
+        "tmdb_id": 471,
+        "title": "Bandyta",
+        "poster_path": "/70K4s4ei10oOkyY6njEoJB1mjF9.jpg",
+        "vote_average": 5.7
+      },
+      {
+        "tmdb_id": 480,
+        "title": "季风婚宴",
+        "poster_path": "/nchsMqHcTE7kIylMKQjmEZb4E6H.jpg",
+        "vote_average": 6.781
+      },
+      {
+        "tmdb_id": 442,
+        "title": "卫杜拉的歌",
+        "poster_path": "/28TLfHa3df8jF7hOIlHmuRcPOts.jpg",
+        "vote_average": 6.257
+      },
+      {
+        "tmdb_id": 453,
+        "title": "美丽心灵",
+        "poster_path": "/fCKdh2Y5uYHlshpdkdIE7WxgZ5R.jpg",
+        "vote_average": 7.855
+      }
+    ]
   }
 }
